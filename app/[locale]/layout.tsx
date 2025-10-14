@@ -20,7 +20,8 @@ interface LocaleLayoutProps {
 
 
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
-  const locale = (await params).locale; // ✅ Awaiting params
+
+  const { locale } = params;
 
   if (!i18nConfig.locales.includes(locale)) {
     notFound(); // Return 404 if locale is unsupported
