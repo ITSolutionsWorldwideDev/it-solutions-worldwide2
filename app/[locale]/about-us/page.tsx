@@ -2,7 +2,7 @@
 
 import initServerI18n from "@/utils/serverTranslation";
 import BannerSection from "@/components/layout/banner-section";
-import { type LocalePageProps } from "@/types/next";
+// import { type LocalePageProps } from "@/types/next";
 import ImageSection from "@/components/layout/image-section";
 import ImageSectionBgBlue from "@/components/layout/image-section-bg-blue";
 import FAQSection from "@/components/layout/FAQ-section";
@@ -13,10 +13,10 @@ import MissionVisionSection from "@/components/layout/our-mission-section";
 //   params: { locale: string };
 // }
 
-export async function generateMetadata({
+/* export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
   const { locale } = await params;
   const i18nInstance = await initServerI18n(locale);
@@ -26,7 +26,7 @@ export async function generateMetadata({
     title: t("aboutus.heading_1"),
     description: t("aboutus.text_1"),
   };
-}
+} */
 
 export default async function AboutUsPage({
   params,

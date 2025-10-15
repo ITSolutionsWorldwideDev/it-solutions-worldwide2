@@ -12,7 +12,7 @@ import { ClientLogosSlider } from "@/components/layout/home/AnimationComponents"
 export default async function RemoteVirtualStaffing({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 
@@ -91,27 +91,6 @@ export default async function RemoteVirtualStaffing({
       <li>{t("remotestff.listitem10")}</li>
     </>
   );
-
-  const logos = [
-    { src: "/assets/images/bol.png" },
-    { src: "/assets/images/hitech.png" },
-    { src: "/assets/images/jumbosports.png" },
-    { src: "/assets/images/albelli.png" },
-    { src: "/assets/images/kent.png" },
-    { src: "/assets/images/ddgroup.png" },
-    { src: "/assets/images/bol.png" },
-    { src: "/assets/images/hitech.png" },
-    { src: "/assets/images/jumbosports.png" },
-    { src: "/assets/images/albelli.png" },
-    { src: "/assets/images/kent.png" },
-    { src: "/assets/images/ddgroup.png" },
-    { src: "/assets/images/bol.png" },
-    { src: "/assets/images/hitech.png" },
-    { src: "/assets/images/jumbosports.png" },
-    { src: "/assets/images/albelli.png" },
-    { src: "/assets/images/kent.png" },
-    { src: "/assets/images/ddgroup.png" },
-  ];
 
   const slidesData2 = [
     {

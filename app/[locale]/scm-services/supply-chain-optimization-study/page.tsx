@@ -2,7 +2,7 @@
 
 import initServerI18n from "@/utils/serverTranslation";
 import ImageSection from "@/components/layout/image-section";
-import InfoSection from "@/components/layout/info-section";
+// import InfoSection from "@/components/layout/info-section";
 import ImageSection2 from "@/components/layout/image-section-2";
 import ProcessFlow from "@/components/layout/process-flow";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
@@ -12,7 +12,7 @@ import BannerSection2 from "@/components/layout/banner-section-2";
 export default async function SupplyChainOptimizationStudy({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 

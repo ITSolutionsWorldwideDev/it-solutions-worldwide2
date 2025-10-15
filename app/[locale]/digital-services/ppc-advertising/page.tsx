@@ -11,7 +11,7 @@ import MarketingBanner from "@/components/ui/marketing-banner";
 export default async function PPCAdvertising({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 
@@ -35,7 +35,7 @@ export default async function PPCAdvertising({
       {t("ppc.text_3")}
     </>
   );
-  const cards = [
+  /* const cards = [
     {
       title: t("scmservices.card2_heading_1"),
       description: t("scmservices.card2_text_1"),
@@ -48,7 +48,7 @@ export default async function PPCAdvertising({
       title: t("scmservices.card2_heading_3"),
       description: t("scmservices.card2_text_3"),
     },
-  ];
+  ]; */
 
   const cards2 = [
     {

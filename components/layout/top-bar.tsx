@@ -1,13 +1,13 @@
-import { Button } from "@/components/ui/button";
-import { ChevronDown, ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { cn } from "@/lib/utils";
+/* import { Button } from "@/components/ui/button";
+import {  ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
+// import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
 import React from "react";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -32,7 +32,7 @@ export default function TopBar({ locale, dictionary }: TopBarProps) {
     <div className="bg-background text-foreground border-b border-border text-sm">
       <div className="container mx-auto px-2 sm:px-4">
         <div className="flex items-center h-10 gap-2 flex-nowrap md:gap-0">
-          {/* Mobile Wholesale Button - Visible on small screens */}
+
 
           <Button
             variant="link"
@@ -52,7 +52,6 @@ export default function TopBar({ locale, dictionary }: TopBarProps) {
             )}
           </Button>
 
-          {/* Announcements - Sliding/Marquee effect, always visible, fixed width */}
           <div className="flex-1 flex justify-center min-w-0">
             <div className="w-full max-w-[350px] sm:max-w-[400px] md:max-w-[500px] overflow-hidden relative h-10">
               <div
@@ -71,9 +70,9 @@ export default function TopBar({ locale, dictionary }: TopBarProps) {
             </div>
           </div>
 
-          {/* Right Side Actions */}
+
           <div className="flex items-center space-x-2 flex-shrink-0">
-            {/* Wholesale - Hidden on mobile */}
+
 
             <Button
               variant="link"
@@ -93,39 +92,17 @@ export default function TopBar({ locale, dictionary }: TopBarProps) {
               )}
             </Button>
 
-            {/* Theme Toggle */}
             <ThemeToggle />
 
-            {/* Language Selector */}
-            {/* <Select defaultValue="en">
-              <SelectTrigger className="w-[90px] sm:w-[100px] border-none">
-                <SelectValue placeholder="Language" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="en">English</SelectItem>
-                <SelectItem value="es">Español</SelectItem>
-                <SelectItem value="fr">Français</SelectItem>
-              </SelectContent>
-            </Select> */}
+
             <div className="flex flex-col gap-2">
               <LanguageSwitcher currentLocale={locale} />
             </div>
             <CurrencySwitcher></CurrencySwitcher>
 
-            {/* Currency Selector */}
-            {/* <Select defaultValue="usd">
-              <SelectTrigger className="w-[100px] sm:w-[140px] border-none">
-                <SelectValue placeholder="Currency" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="usd">USD ($)</SelectItem>
-                <SelectItem value="eur">EUR (€)</SelectItem>
-                <SelectItem value="gbp">GBP (£)</SelectItem>
-              </SelectContent>
-            </Select> */}
           </div>
         </div>
       </div>
     </div>
   );
-}
+} */

@@ -1,5 +1,5 @@
 // components/layout/header.tsx
-"use client";
+/* "use client";
 import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -161,10 +161,10 @@ export function Header({ locale, dictionary }: HeaderProps) {
           </nav>
 
           <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4 flex-shrink-0 justify-end">
-            {/* Search icon hidden on mobile, visible on md+ */}
-            {/* <Button variant="ghost" size="icon" className="hidden md:flex">
+            Search icon hidden on mobile, visible on md+
+            <Button variant="ghost" size="icon" className="hidden md:flex">
               <Search className="h-5 w-5" />
-            </Button> */}
+            </Button>
 
             {!loading && !user && (
               <Link href="/login">
@@ -224,4 +224,4 @@ export function Header({ locale, dictionary }: HeaderProps) {
       </div>
     </header>
   );
-}
+} */

@@ -10,6 +10,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import Link from "next/link";
 
 type SocialLinks = {
   facebook?: string;
@@ -47,14 +48,14 @@ export default async function GetInTouchSection({
             <div>
               <p className="text-sm">{t("home.contactemail")}</p>
               <p className="font-medium">
-                <a
+                <Link
                   href="mailto:info@itsolutionsworldwide.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline"
                 >
                   info@itsolutionsworldwide.com
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -67,14 +68,14 @@ export default async function GetInTouchSection({
             <div>
               <p className="text-sm">{t("home.contactephone")}</p>
               <p className="font-medium">
-                <a
+                <Link
                   href="https://wa.me/+31107660786"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline"
                 >
                   +31 10 766 0786
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -85,7 +86,7 @@ export default async function GetInTouchSection({
           <p className="text-sm mb-2">{t("home.contactconnect")}</p>
           <div className="flex space-x-4">
             {socialLinks.facebook && (
-              <a
+              <Link
                 href={socialLinks.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -93,10 +94,10 @@ export default async function GetInTouchSection({
                 className="p-2 bg-[#278083] rounded-full hover:bg-[#236B7A]"
               >
                 <Facebook className="h-5 w-5 text-white" />
-              </a>
+              </Link>
             )}
             {socialLinks.twitter && (
-              <a
+              <Link
                 href={socialLinks.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -104,10 +105,10 @@ export default async function GetInTouchSection({
                 className="p-2 bg-[#278083] rounded-full hover:bg-[#236B7A]"
               >
                 <Twitter className="h-5 w-5 text-white" />
-              </a>
+              </Link>
             )}
             {socialLinks.linkedin && (
-              <a
+              <Link
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -115,10 +116,10 @@ export default async function GetInTouchSection({
                 className="p-2 bg-[#278083] rounded-full hover:bg-[#236B7A]"
               >
                 <Linkedin className="h-5 w-5 text-white" />
-              </a>
+              </Link>
             )}
             {socialLinks.instagram && (
-              <a
+              <Link
                 href={socialLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -126,7 +127,7 @@ export default async function GetInTouchSection({
                 className="p-2 bg-[#278083] rounded-full hover:bg-[#236B7A]"
               >
                 <Instagram className="h-5 w-5 text-white" />
-              </a>
+              </Link>
             )}
           </div>
         </div>

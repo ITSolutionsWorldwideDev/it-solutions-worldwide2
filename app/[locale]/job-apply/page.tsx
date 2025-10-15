@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 export default async function JobApplyPage({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string; }>;
 }) {
-  const { locale } = params;
+  const { locale } = await params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");

@@ -11,7 +11,7 @@ import DynamicTabs from "@/components/ui/dynamic-tabs";
 export default async function LeanSixSigmaImplementation({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 

@@ -10,6 +10,7 @@ import {
   FaInstagram,
   FaTiktok,
 } from 'react-icons/fa';
+import Link from 'next/link';
 
 type FormData = {
   fullName: string;
@@ -102,38 +103,38 @@ const ContactSection: React.FC = () => {
               <span className="bg-white/20 p-3 rounded-full">
                 <FaPhoneAlt className="text-xl text-white" />
               </span>
-              <a
+              <Link
                 href="https://wa.me/+31107660786?text=I%27m%20interested%20in%20your%20services"
                 className="text-lg"
               >
                 +31 10 766 0786
-              </a>
+              </Link>
             </div>
             <div className="flex items-center space-x-3">
               <span className="bg-white/20 p-3 rounded-full">
                 <FaEnvelope className="text-xl text-white" />
               </span>
-              <a href="mailto:info@itsolutionsworldwide.com" className="text-lg">
+              <Link href="mailto:info@itsolutionsworldwide.com" className="text-lg">
                 info@itsolutionsworldwide.com
-              </a>
+              </Link>
             </div>
           </address>
 
           <div>
             <p className="text-lg mb-2">Connect with us:</p>
             <div className="flex space-x-4" aria-label="Social media links">
-              <a href="https://www.facebook.com/itsolutionsww" aria-label="Facebook">
+              <Link href="https://www.facebook.com/itsolutionsww" aria-label="Facebook">
                 <FaFacebook className="text-2xl hover:text-[#F5A623]" />
-              </a>
-              <a href="https://www.linkedin.com/company/it-solutions-worldwide-bv" aria-label="LinkedIn">
+              </Link>
+              <Link href="https://www.linkedin.com/company/it-solutions-worldwide-bv" aria-label="LinkedIn">
                 <FaLinkedin className="text-2xl hover:text-[#F5A623]" />
-              </a>
-              <a href="https://www.instagram.com/itsolutionsworldwide" aria-label="Instagram">
+              </Link>
+              <Link href="https://www.instagram.com/itsolutionsworldwide" aria-label="Instagram">
                 <FaInstagram className="text-2xl hover:text-[#F5A623]" />
-              </a>
-              <a href="https://www.tiktok.com/@itsolutionsworldwide" aria-label="TikTok">
+              </Link>
+              <Link href="https://www.tiktok.com/@itsolutionsworldwide" aria-label="TikTok">
                 <FaTiktok className="text-2xl hover:text-[#F5A623]" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

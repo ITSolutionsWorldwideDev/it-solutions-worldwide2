@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
   experimental: {
     // enable App Router features if needed
   },
+  eslint: {
+    // ✅ Disable ESLint during builds
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;

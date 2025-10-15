@@ -13,7 +13,7 @@ import CardSection from "@/components/layout/card-section";
 export default async function Career({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 

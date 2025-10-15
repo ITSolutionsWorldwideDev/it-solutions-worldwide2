@@ -1,6 +1,7 @@
 // components/layout/banner-section-2.tsx
 "use client";
 
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 type Slide = {
@@ -50,43 +51,43 @@ const BannerSection2: React.FC<BannerSectionProps> = ({ slides }) => {
             {slides[currentSlide].text}
           </p>
           {slides[currentSlide].button ? <div className="flex justify-start gap-4 mt-2">
-            <a
+            <Link
               href="/contact-us" target="_blank" //change for pop-up later
               className={`bg-white ${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
             >
               {slides[currentSlide].button}
               
-            </a>
+            </Link>
               
           </div>: ''}
           {slides[currentSlide].button2? <div className="flex justify-start gap-4 mt-2">
-            <a
+            <Link
               href="#"
               className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
             >
               {slides[currentSlide].button2}
               
-            </a>
+            </Link>
               
           </div> : ''}
           {slides[currentSlide].button3? <div className="flex justify-start gap-4 mt-2">
-            <a
+            <Link
               href="#"
               className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
             >
               {slides[currentSlide].button3}
               
-            </a>
+            </Link>
               
           </div> : ''}
           {slides[currentSlide].button4? <div className="flex justify-start gap-4 mt-2">
-            <a
+            <Link
               href="#"
               className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
             >
               {slides[currentSlide].button4}
               
-            </a>
+            </Link>
               
           </div> : ''}
         

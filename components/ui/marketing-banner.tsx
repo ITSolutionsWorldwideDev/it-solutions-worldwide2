@@ -2,6 +2,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 type MarketingBannerProps = {
   imageSrc: string;
@@ -44,31 +45,31 @@ export default function MarketingBanner({
 
         <div className="mt-4 flex flex-wrap gap-2">
           {buttonText && (
-            <a
+            <Link
               href={buttonLink}
               className="inline-flex items-center px-3 py-2 bg-white text-[#9B51E0] font-medium rounded-lg shadow hover:bg-gray-200 transition"
             >
               {buttonText}
               <span className="ml-2">↗</span>
-            </a>
+            </Link>
           )}
           {buttonText2 && (
-            <a
+            <Link
               href={buttonLink}
               className="inline-flex items-center px-3 py-2 bg-white text-[#9B51E0] font-medium rounded-lg shadow hover:bg-gray-200 transition"
             >
               {buttonText2}
               <span className="ml-2">↗</span>
-            </a>
+            </Link>
           )}
           {buttonText3 && (
-            <a
+            <Link
               href={buttonLink}
               className="inline-flex items-center px-3 py-2 bg-white text-[#9B51E0] font-medium rounded-lg shadow hover:bg-gray-200 transition"
             >
               {buttonText3}
               <span className="ml-2">↗</span>
-            </a>
+            </Link>
           )}
         </div>
 

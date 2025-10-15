@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import PopUp from "./popUp";
+import Link from 'next/link';
 
 interface Slide {
   backgroundImage: string;
@@ -74,7 +75,7 @@ const ConsultationSection: React.FC<ConsultationSectionProps> = ({
 
           {/* Slide Button */}
           {slides[currentSlide].buttonText && slides[currentSlide].buttonLink && (
-            <a
+            <Link
               href={slides[currentSlide].buttonLink}
               className={`mt-4 inline-block py-2 px-6 rounded-lg font-semibold shadow-md transition-colors`}
               style={{
@@ -91,7 +92,7 @@ const ConsultationSection: React.FC<ConsultationSectionProps> = ({
               }}
             >
               {slides[currentSlide].buttonText}
-            </a>
+            </Link>
           )}
 
           {/* CTA Button for Popup */}

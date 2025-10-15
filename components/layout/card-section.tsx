@@ -5,6 +5,7 @@
 import Image from "next/image";
 import { Phone, MapPin } from "lucide-react";
 import React from "react";
+import Link from "next/link";
 
 type CardSectionProps = {
   heading: string;
@@ -56,14 +57,14 @@ const CardSection: React.FC<CardSectionProps> = ({ heading, text }) => {
                 {/* Phone */}
                 <div className="flex flex-col items-center" itemProp="telephone">
                   <Phone className="text-[#278083] w-6 h-6" />
-                  <a
+                  <Link
                     href={card.phoneLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-2 text-blue-600 hover:underline"
                   >
                     {card.phone}
-                  </a>
+                  </Link>
                 </div>
 
                 {/* Address */}

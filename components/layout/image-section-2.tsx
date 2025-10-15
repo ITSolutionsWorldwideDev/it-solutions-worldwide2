@@ -75,16 +75,15 @@ const ImageSection2 = ({
       {buttonText && (
         <div className="mt-4">
           {isInternalLink ? (
-            <Link href={buttonLink}>
-              <a
-                className="text-white px-4 py-2 rounded font-semibold"
-                style={{ backgroundColor: bgButton }}
-              >
-                {buttonText}
-              </a>
+            <Link
+              href={buttonLink}
+              className="text-white px-4 py-2 rounded font-semibold"
+              style={{ backgroundColor: bgButton }}
+            >
+              {buttonText}
             </Link>
           ) : (
-            <a
+            <Link
               href={buttonLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -92,7 +91,7 @@ const ImageSection2 = ({
               style={{ backgroundColor: bgButton }}
             >
               {buttonText}
-            </a>
+            </Link>
           )}
         </div>
       )}

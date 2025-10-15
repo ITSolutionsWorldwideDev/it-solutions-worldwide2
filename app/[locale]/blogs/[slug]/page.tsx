@@ -1,6 +1,6 @@
 // app/[locale]/blogs/[slug]/page.tsx
 import { loadBlogs } from "@/lib/loadBlogs";
-import initServerI18n from "@/utils/serverTranslation";
+// import initServerI18n from "@/utils/serverTranslation";
 import { notFound } from "next/navigation";
 
 type Props = {
@@ -10,15 +10,19 @@ type Props = {
   };
 };
 
-export default async function BlogPostPage({ params }: Props) {
-  const { locale, slug } = params;
+export default async function BlogPostPage({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}) {
+  const { locale, slug } = await params;
   const blogs = await loadBlogs();
   const blog = blogs.find((b) => b.slug === slug);
 
   if (!blog) return notFound();
 
-  const i18n = await initServerI18n(locale);
-  const t = await i18n.getFixedT(locale, "common");
+  // const i18n = await initServerI18n(locale);
+  // const t = await i18n.getFixedT(locale, "common");
 
   return (
     <>

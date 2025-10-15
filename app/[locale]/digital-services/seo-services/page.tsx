@@ -12,8 +12,8 @@ import MarketingBanner from "@/components/ui/marketing-banner";
 export default async function SEOServices({
   params,
 }: {
-  params: Promise<{ locale: string }>;
-}) {
+  params: Promise<{ locale: string; }>;
+})  {
   const { locale } = await params;
 
   const i18nInstance = await initServerI18n(locale);

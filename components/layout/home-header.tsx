@@ -1,4 +1,5 @@
 // components/layout/home-header.tsx
+import Link from "next/link";
 import AnimatedBorderCard from "./home/AnimatedBorderCard";
 // import { Logo } from "./logo";
 import NavbarHome from "./nav-bar-home";
@@ -44,11 +45,11 @@ export default function Header() {
           </div>
 
           {/* CTA Button */}
-          <a href="/contact-us" target="_blank">
+          <Link href="/contact-us" target="_blank">
             <button className="bg-[#0FB6AE] hover:bg-white text-white hover:text-black px-6 py-3 rounded-lg font-medium transition-colors">
               Get FREE Consultation
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

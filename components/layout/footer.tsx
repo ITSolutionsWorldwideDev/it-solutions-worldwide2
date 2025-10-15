@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 // components/layout/footer.tsx
 export default function Footer() {
   return (
@@ -7,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-12">
           {/* Column 1: Logo + Company Info + Social Icons */}
           <div className="md:col-span-1">
-            <img
+            <Image
               className="w-auto"
               src="/assets/footer-logo.png"
               alt="IT Solutions Worldwide"
@@ -26,49 +29,49 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-3 text-gray-500">
               <li>
-                <a href="/about-us" className="text-base hover:text-[#236B7A]">
+                <Link href="/about-us" className="text-base hover:text-[#236B7A]">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/scm-services"
                   className="text-base hover:text-[#236B7A]"
                 >
                   SCM Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/supply-health-check-info"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Supply Health Check
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/contact-us"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/digital-services"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Digital Services
-                </a>
+                </Link>
               </li>
                <li>
-                <a
+                <Link
                   href="/blogs"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Blogs
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -80,44 +83,44 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-3 text-gray-500">
               <li>
-                <a
+                <Link
                   href="/scm-services"
                   className="text-base hover:text-[#236B7A]"
                 >
                   SCM Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/it-support"
                   className="text-base hover:text-[#236B7A]"
                 >
                   IT Support
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/oracle-cloud"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Oracle Cloud
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/digital-services"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Digital Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/staffing-support"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Staffing Support
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -129,41 +132,41 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-3 text-gray-500">
               <li>
-                <a
+                <Link
                   href="/contact-us"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Help Center
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/about-us/#faq"
                   className="text-base hover:text-[#236B7A]"
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/career" className="text-base hover:text-[#236B7A]">
+                <Link href="/career" className="text-base hover:text-[#236B7A]">
                   Career
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/terms-and-conditions"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/privacy-policy"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -178,13 +181,13 @@ export default function Footer() {
             © IT Solutions Worldwide. All rights reserved
           </p>
           <span className="text-sm text-[#236B7A]">
-            <a
+            <Link
               href="mailto:info@itsolutionsworldwide.com"
               target="_blank"
               rel="noreferrer"
             >
               info@itsolutionsworldwide.com
-            </a>
+            </Link>
           </span>
           <span className="text-sm text-[#236B7A]">
             Chamber of Commerce No. 72768916

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AnimatedBorderCard() {
   const data = {
     image: {
@@ -13,7 +15,7 @@ export default function AnimatedBorderCard() {
     },
   };
   return (
-    <a href="/supply-health-check-info" target="_blank">
+    <Link href="/supply-health-check-info" target="_blank">
       <div className="bg-[#000] grid place-items-center">
         {/* The container for our animated border */}
         <div className="moving-border">
@@ -31,6 +33,6 @@ export default function AnimatedBorderCard() {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }

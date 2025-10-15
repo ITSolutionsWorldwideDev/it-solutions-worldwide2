@@ -6,14 +6,14 @@ import InfoSection from "@/components/layout/info-section";
 import ImageSection2 from "@/components/layout/image-section-2";
 import ProcessFlow from "@/components/layout/process-flow";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
-import ConsultationSection from "@/components/layout/consultation-section";
+// import ConsultationSection from "@/components/layout/consultation-section";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import MarketingBanner from "@/components/ui/marketing-banner";
 
 export default async function WebsiteDesignDevelopment({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 

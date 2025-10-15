@@ -3,7 +3,7 @@
 import initServerI18n from "@/utils/serverTranslation";
 import { loadBlogs } from "@/lib/loadBlogs";
 import BlogCard from "@/components/layout/home/BlogCard";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 
 type Props = {
   params: {
@@ -11,8 +11,14 @@ type Props = {
   };
 };
 
-export default async function Blogs({ params }: Props) {
-  const { locale } = params;
+// export default async function Blogs({ params }: Props) {
+export default async function Blogs({
+  params,
+}: {
+  params: Promise<{ locale: string; }>;
+}) {
+  const { locale } = await params;
+  // const { locale } = params;
   const blogs = await loadBlogs();
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
@@ -62,42 +68,4 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function Blogs({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const blogs = loadBlogs();
-  const { locale } = await params;
-
-  const i18nInstance = await initServerI18n(locale);
-  const t = await i18nInstance.getFixedT(locale, "common");
-
-  return (
-    <div className="container mx-auto">
-      <div className="flex flex-col min-h-screen ">
-        <main className="flex-1 p-8">
-          <h1 className="text-3xl font-bold text-center mb-8">Latest Blogs</h1>
-
-          <div className="grid grid-cols-2 justify-center gap-6">
-            {blogs.map(({ slug, title, sections }) => (
-              <div className="">
-                <BlogCard
-                  key={slug}
-                  slug={slug}
-                  image={sections?.[0]?.image || "https://placehold.co/400"}
-                  title={title}
-                  description={
-                    sections?.[0]?.content
-                      ? sections[0].content.substring(0, 120) + "..."
-                      : "No description available."
-                  }
-                />
-              </div>
-            ))}
-          </div>
-        </main>
-      </div>
-    </div>
-  );
-} */
+ */

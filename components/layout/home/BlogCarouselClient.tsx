@@ -11,7 +11,7 @@ import type { BlogEntry } from "@/types/blogs";
 
 // export default function BlogCarouselClient({ posts }: { posts: any[] }) {
 
-export default function BlogCarouselClient({ posts }: { posts: BlogEntry[] }) {
+export default function BlogCarouselClient({ posts, locale, }: { posts: BlogEntry[]; locale: string; }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -40,7 +40,7 @@ export default function BlogCarouselClient({ posts }: { posts: BlogEntry[] }) {
       >
         {posts.map((post, index) => (
           <SwiperSlide key={index}>
-            <BlogCard post={post} />
+            <BlogCard post={post} locale={locale} />
           </SwiperSlide>
         ))}
       </Swiper>

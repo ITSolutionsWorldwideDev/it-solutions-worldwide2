@@ -12,7 +12,7 @@ import MarketingBanner from "@/components/ui/marketing-banner";
 export default async function DigitalServices({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 

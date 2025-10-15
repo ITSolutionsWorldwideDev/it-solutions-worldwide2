@@ -3,7 +3,7 @@
 import initServerI18n from "@/utils/serverTranslation";
 import ImageSection from "@/components/layout/image-section";
 import InfoSection from "@/components/layout/info-section";
-import ImageSection2 from "@/components/layout/image-section-2";
+// import ImageSection2 from "@/components/layout/image-section-2";
 import ProcessFlow from "@/components/layout/process-flow";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
 import ConsultationSection from "@/components/layout/consultation-section";
@@ -13,7 +13,7 @@ import ImageSectionBgBlue from "@/components/layout/image-section-bg-blue";
 export default async function SoftwareDevelopment({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 

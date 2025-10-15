@@ -1,6 +1,7 @@
 // components/layout/FAQ-section.tsx
 'use client';
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 interface FAQItem {
@@ -49,20 +50,20 @@ const FAQSection = ({
             <p className="text-gray-600">{description}</p>
           </div>
           <div className="flex gap-4">
-            <a
+            <Link
               href={helpCenterLink}
               className="flex items-center gap-2 px-4 py-2 bg-[#278083] text-white rounded hover:bg-opacity-90"
               aria-label="Go to Help Center"
             >
               Help Center
-            </a>
-            <a
+            </Link>
+            <Link
               href={privacyPolicyLink}
               className="px-4 py-2 border-2 border-[#278083] text-[#278083] rounded hover:bg-[#f0fdfc]"
               aria-label="Read Privacy Policy"
             >
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -35,7 +35,7 @@ const ImageSection: FC<ImageSectionProps> = ({
 }) => {
   const isInternalLink = buttonLink?.startsWith("/");
   // Determine if buttonLink is internal (starts with "/")
-//   const isInternalLink = buttonLink && buttonLink.startsWith("/");
+  //   const isInternalLink = buttonLink && buttonLink.startsWith("/");
 
   return (
     <section
@@ -62,20 +62,22 @@ const ImageSection: FC<ImageSectionProps> = ({
           {buttonText && buttonLink && (
             <div className="mt-4">
               {isInternalLink ? (
-                <Link href={buttonLink} passHref>
-                  <a className="bg-[#9B51E0] text-white px-4 py-2 rounded font-semibold">
-                    {buttonText}
-                  </a>
+                <Link
+                  href={buttonLink}
+                  className="bg-[#9B51E0] text-white px-4 py-2 rounded font-semibold"
+                  passHref
+                >
+                  {buttonText}
                 </Link>
               ) : (
-                <a
+                <Link
                   href={buttonLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#9B51E0] text-white px-4 py-2 rounded font-semibold"
                 >
                   {buttonText}
-                </a>
+                </Link>
               )}
             </div>
           )}

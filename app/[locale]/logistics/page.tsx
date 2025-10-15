@@ -12,7 +12,7 @@ import ImageSection2 from "@/components/layout/image-section-2";
 export default async function Logistics({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 

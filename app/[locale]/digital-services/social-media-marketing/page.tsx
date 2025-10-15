@@ -12,7 +12,7 @@ import { ClientLogosSlider } from "@/components/layout/home/AnimationComponents"
 export default async function SocialMediaMarketing({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 
@@ -91,7 +91,7 @@ export default async function SocialMediaMarketing({
     </>
   );
 
-  const logos = [
+  /* const logos = [
     { src: "/assets/images/bol.png" },
     { src: "/assets/images/hitech.png" },
     { src: "/assets/images/jumbosports.png" },
@@ -110,7 +110,7 @@ export default async function SocialMediaMarketing({
     { src: "/assets/images/albelli.png" },
     { src: "/assets/images/kent.png" },
     { src: "/assets/images/ddgroup.png" },
-  ];
+  ]; */
 
   return (
     <div>

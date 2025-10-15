@@ -11,7 +11,7 @@ import BannerSection2 from "@/components/layout/banner-section-2";
 export default async function SmartWarehouseSolutions({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 

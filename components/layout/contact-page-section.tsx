@@ -1,6 +1,6 @@
 // components/layout/contact-page-section.tsx
 
-import Image from "next/image";
+// import Image from "next/image";
 import initServerI18n from "@/utils/serverTranslation";
 import {
   Mail,
@@ -10,6 +10,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import Link from "next/link";
 
 type Props = {
   locale: string;
@@ -41,13 +42,13 @@ export default async function ContactCard({ locale }: Props) {
                 <div>
                   <p className="text-sm">{t("home.contactemail")}</p>
                   <p className="font-medium break-all">
-                    <a
+                    <Link
                       href="mailto:info@itsolutionsworldwide.com"
                       target="_blank"
                       rel="noreferrer"
                     >
                       info@itsolutionsworldwide.com
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
@@ -60,13 +61,13 @@ export default async function ContactCard({ locale }: Props) {
                 <div>
                   <p className="text-sm">{t("home.contactephone")}</p>
                   <p className="font-medium">
-                    <a
+                    <Link
                       href="https://wa.me/+31107660786"
                       target="_blank"
                       rel="noreferrer"
                     >
                       +31 10 766 0786
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
@@ -98,7 +99,7 @@ export default async function ContactCard({ locale }: Props) {
                     label: "Instagram",
                   },
                 ].map(({ href, Icon, label }) => (
-                  <a
+                  <Link
                     key={label}
                     href={href}
                     target="_blank"
@@ -107,7 +108,7 @@ export default async function ContactCard({ locale }: Props) {
                     className="p-2 bg-[#29A1B6] rounded-full hover:bg-[#236B7A] transition"
                   >
                     <Icon className="h-5 w-5 text-white" />
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

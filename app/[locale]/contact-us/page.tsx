@@ -10,7 +10,7 @@ import LocationMap from "@/components/layout/location-map";
 export default async function ContactUs({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string; }>;
 }) {
   const { locale } = await params;
 
