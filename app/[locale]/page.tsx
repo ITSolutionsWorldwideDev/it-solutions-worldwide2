@@ -25,6 +25,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        
         <AnimationArea />
         <BlogCarousel locale={locale} />
         <ContactSection />
