@@ -1,5 +1,25 @@
 // utils/serverTranslation.ts
-import i18next from 'i18next';
+import enCommon from "../public/locales/en/common.json";
+import nlCommon from "../public/locales/nl/common.json";
+import i18next from "i18next";
+
+const resources = {
+  en: { common: enCommon },
+  nl: { common: nlCommon },
+};
+
+export default async function initServerI18n(locale: string) {
+  const i18nInstance = i18next.createInstance();
+  await i18nInstance.init({
+    lng: locale,
+    fallbackLng: "en",
+    resources,
+  });
+  return i18nInstance;
+}
+
+
+/* import i18next from 'i18next';
 import Backend from 'i18next-fs-backend';
 import path from 'path';
 
@@ -24,7 +44,7 @@ const initServerI18n = async (locale: string, namespaces: string[] = ['common'])
   return i18nInstance;
 };
 
-export default initServerI18n;
+export default initServerI18n; */
 
 /* // utils/serverTranslation.ts
 import i18next from 'i18next';
