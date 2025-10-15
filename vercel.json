@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/**/*": {
+    "**": {
       "includeFiles": "i18n/locales/**"
     }
   }
