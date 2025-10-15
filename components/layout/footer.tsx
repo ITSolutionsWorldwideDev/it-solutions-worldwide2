@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-12">
           {/* Column 1: Logo + Company Info + Social Icons */}
           <div className="md:col-span-1">
-            <Image
+            <img
               className="w-auto"
               src="/assets/footer-logo.png"
               alt="IT Solutions Worldwide"
