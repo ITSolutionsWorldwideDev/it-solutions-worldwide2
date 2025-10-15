@@ -137,6 +137,29 @@
     animation: slide 15s linear infinite;
   }
 
+  
+  /* The moving-border utility class */
+  .moving-border {
+    position: relative;
+    padding: 4px; /* adjust as needed */
+  }
+
+  /* Pseudo-elements for the animated gradient */
+  .moving-border::before,
+  .moving-border::after {
+    content: '';
+    position: absolute;
+    inset: -0.2rem; /* adjust border thickness as needed */
+    z-index: -1;
+    background: linear-gradient(var(--angle), #194a59, #c3f2ff, #0fb6ae);
+    animation: rotate 10s linear infinite;
+  }
+
+  .moving-border::after {
+    /* Slight blur for a glow effect */
+    filter: blur(10px);
+  }
+
   /* .animate-slide:hover {
     animation-play-state: paused;
   } */

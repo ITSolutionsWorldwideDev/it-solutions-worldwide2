@@ -837,7 +837,7 @@ export function PinnedProgressSection() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full h-screen overflow-hidden bg-white z-10"
+      className="w-[95%] relative h-screen overflow-hidden bg-white z-10"
     >
       {industriesData.map((slide, i) => (
         <div
