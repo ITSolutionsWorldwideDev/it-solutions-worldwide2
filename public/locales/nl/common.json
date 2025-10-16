@@ -154,6 +154,18 @@
     "text_2": "Zakelijk adviesdiensten helpen organisaties bij het identificeren van uitdagingen, het ontwikkelen van strategieën en het implementeren van effectieve oplossingen voor groei. Of het nu gaat om procesoptimalisatie, veranderingsbeheer of strategische planning, zakelijke consultants brengen expertise om prestaties te verbeteren.",
     "text_3": "Onze consultants werken nauw samen met klanten om kansen te identificeren, operationele efficiëntie te verbeteren en duurzame groei te stimuleren door middel van datagestuurde besluitvorming.",
     "heading_3": "Onze Aanpak",
+    "card_heading_1": "Strategische Planning en Advies",
+    "card_text_1": "Wij helpen bedrijven duidelijke doelen te stellen, middelen op elkaar af te stemmen en uitvoerbare strategieën te ontwikkelen voor duurzame groei.",
+
+    "card_heading_2": "Procesoptimalisatie",
+    "card_text_2": "Onze experts stroomlijnen werkprocessen, verbeteren de efficiëntie en implementeren oplossingen die kosten verlagen en prestaties verbeteren.",
+
+    "card_heading_3": "Digitale Transformatie",
+    "card_text_3": "Wij begeleiden organisaties bij het omarmen van moderne technologieën om te innoveren, automatiseren en concurrerend te blijven in een digitale wereld.",
+
+    "card_heading_4": "Risico- en Nalevingsbeheer",
+    "card_text_4": "Wij identificeren potentiële risico’s, zorgen voor naleving van regelgeving en bouwen raamwerken die uw bedrijfsvoering en reputatie beschermen.",
+
     "step1": "Beoordeling",
     "step1_text": "Analyse van uw huidige bedrijfsprocessen, structuur en strategische doelen.",
     "step2": "Strategieontwikkeling",
@@ -262,7 +274,8 @@
     "card3_text": "Gebruik technologiegestuurde oplossingen voor nauwkeurig voorraadbeheer en orderafhandeling.",
     "card4_heading": "Leveringsbeheer",
     "card4_text": "Zorg voor tijdige en foutloze leveringen met onze geavanceerde leveringsoplossingen.",
-    "heading_4": "Waarom voor ons kiezen?",
+    "heading_4": "Onze Aanpak van Supply Chain Uitvoering",
+    "text_4": "Bij IT Solutions Worldwide combineren we efficiëntie, wendbaarheid en technologie in onze aanpak van supply chain uitvoering om een naadloze end-to-end prestatie te leveren. We integreren ERP-, WMS- en TMS-systemen om realtime zichtbaarheid te creëren binnen uw operaties, zodat elk proces aansluit bij de bedrijfsdoelen en met maximale efficiëntie verloopt. Door gebruik te maken van branchegerichte best practices, nauwe samenwerking met partners te bevorderen en belangrijke prestatie-indicatoren continu te monitoren, maken we snellere en slimmere besluitvorming mogelijk. Onze focus op flexibiliteit, risicobeheer en duurzaamheid zorgt ervoor dat uw supply chain veerkrachtig, adaptief en in staat blijft om blijvende waarde te creëren in een voortdurend veranderende markt.",
     "listitem1": "Realtime zichtbaarheid in uw supply chain.",
     "listitem2": "Flexibele en schaalbare oplossingen voor elke sector.",
     "listitem3": "Data-analyse voor continue prestatieverbetering.",
@@ -569,6 +582,18 @@
     "text_2": "Personeelsondersteuning omvat het leveren van tijdelijk, contract- of vast personeel om aan de personeelsbehoeften van organisaties te voldoen. Wij helpen bedrijven bij het vinden van gekwalificeerde professionals die bijdragen aan hun groei.",
     "text_3": "Of u nu op zoek bent naar kortetermijnondersteuning of een gespecialiseerd team, wij bieden betrouwbare en schaalbare oplossingen voor elk type organisatie.",
     "heading_3": "Onze Personeelsdiensten",
+    "card_heading_1": "Nederland",
+    "card_text_1": "Bouw een sterk personeelsbestand op in het innovatiecentrum van Europa met deskundige wervingsoplossingen die aansluiten bij uw bedrijfsvisie.",
+
+    "card_heading_2": "Qatar",
+    "card_text_2": "Breid met vertrouwen uit in een groeiende markt met toegang tot gekwalificeerde professionals uit meerdere sectoren.",
+
+    "card_heading_3": "Saoedi-Arabië",
+    "card_text_3": "Versterk uw aanwezigheid in het Koninkrijk met betrouwbare, conforme en hoogwaardige personeelsondersteuning.",
+
+    "card_heading_4": "Dubai",
+    "card_text_4": "Schaal uw activiteiten op in een van ’s werelds toonaangevende zakencentra met flexibele en efficiënte wervingsdiensten.",
+
     "card1_heading": "IT-personeel",
     "card1_text": "Levering van hooggekwalificeerde IT-professionals voor projecten en ondersteuning.",
     "card2_heading": "Zakelijke Consultants",
@@ -1475,10 +1500,11 @@
     "listitem6-1": "Experts in Reverse Logistics en Retourbeheer",
 
     "heading_4": "Belangrijkste Diensten",
-    "card_heading_1": "Lean Implementatie-expertise",
-    "card_heading_2": "Lean Implementatie-expertise",
-    "card_heading_3": "Lean Implementatie-expertise",
-    "card_heading_4": "Lean Implementatie-expertise",
+    "card_heading_1": "Expeditie",
+    "card_heading_2": "Magazijn- en Voorraadbeheer",
+    "card_heading_3": "Douaneafhandeling en Naleving",
+    "card_heading_4": "Transport en Distributie",
+
     "heading_5": "Waarom Kiezen voor Onze Specialisten?",
     "listitem5": "Deskundige logistieke oplossingen",
     "listitem6": "Bewezen staat van dienst",
@@ -1641,12 +1667,15 @@
     "text_2": "Bedrijven zoeken niet alleen naar gekwalificeerde kandidaten, maar ook naar professionals die passen bij hun bedrijfscultuur.",
     "text_3": "Gespecialiseerde staffing levert talent met specifieke vaardigheden, certificeringen en branchekennis.",
     "heading_3": "Onze Diensten",
-    "card_heading_1": "Zorgsector Staffing",
-    "card_text_1": "Verbindt gekwalificeerd medisch personeel met zorginstellingen voor optimale patiëntenzorg.",
-    "card_heading_2": "Productie Staffing",
-    "card_text_2": "Levert technisch geschoolde werknemers om productie-efficiëntie te verbeteren.",
-    "card_heading_3": "Logistiek Staffing",
-    "card_text_3": "Biedt ervaren personeel voor soepele supply chain-operaties en tijdige leveringen.",
+    "card_heading_1": "Industriespecifieke Talentverwerving",
+    "card_text_1": "Wij vinden en werven professionals met gespecialiseerde expertise die perfect aansluit bij de behoeften van uw sector.",
+
+    "card_heading_2": "Oplossingen voor Tijdelijke en Permanente Personeelsinzet",
+    "card_text_2": "Flexibele personeelsmodellen die zowel kortetermijncontracten als langdurige plaatsingen bieden om uw teams soepel op te schalen.",
+
+    "card_heading_3": "Executive- en Leiderschapsrekrutering",
+    "card_text_3": "Gespecialiseerde werving voor senior functies, gericht op strategische aanstellingen die groei en innovatie stimuleren.",
+
     "heading_4": "Waarom Kiezen voor Gespecialiseerde Staffing?",
     "listitem1": "Branchespecifieke kennis",
     "listitem2": "Snellere werving",

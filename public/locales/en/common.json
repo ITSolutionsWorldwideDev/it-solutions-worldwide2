@@ -155,14 +155,14 @@
     "text_3": "Business consultants work with businesses across various industries to resolve operational problems and organizational inefficiencies by implementing advanced technologies.",
     "text_4": "Business consultants provide services such as process automation and optimization, strategic planning, technology implementation, and change management.",
     "heading_3": "Our Business Consulting Services",
-    "card_heading_1": "Managed IT Support Services",
-    "card_text_1": "Highlight solutions for financial institutions (e.g., logistics optimization, compliance).",
-    "card_heading_2": "Remote IT Support Services",
-    "card_text_2": "Highlight solutions for financial institutions (e.g., logistics optimization, compliance).",
-    "card_heading_3": "IT Network Support Services",
-    "card_text_3": "Highlight solutions for financial institutions (e.g., logistics optimization, compliance).",
-    "card_heading_4": "Outsourced IT Support Services",
-    "card_text_4": "Highlight solutions for financial institutions (e.g., logistics optimization, compliance).",
+    "card_heading_1": "Strategic Planning & Advisory",
+    "card_text_1": "We help businesses define clear goals, align resources, and develop actionable strategies for sustainable growth.",
+    "card_heading_2": "Process Optimization",
+    "card_text_2": "Our experts streamline workflows, enhance efficiency, and implement solutions that reduce costs and improve performance.",
+    "card_heading_3": "Digital Transformation",
+    "card_text_3": "We guide organizations in adopting modern technologies to innovate, automate, and stay competitive in a digital-first world.",
+    "card_heading_4": "Risk & Compliance Management",
+    "card_text_4": "We identify potential risks, ensure regulatory compliance, and build frameworks that protect your operations and reputation.",
     "heading_4": "Benefits of Business Consulting for Your Organization",
     "listitem1": "Faster problem solving",
     "listitem2": "Strategic growth",
@@ -270,7 +270,7 @@
     "card_heading_4": "Supply Chain Visibility & Analytics",
     "card_text_4": "Gain actionable insights with advanced analytics to enhance decision-making and operational transparency",
     "heading_4": "Our Approach to Supply Chain Execution",
-    "text_4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus eu nulla fringilla, interdum dapibus nibh luctus. Praesent faucibus, lectus sed tempor interdumLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus eu nulla fringilla, interdum dapibus nibh luctus. Praesent faucibus, lectus sed tempor interdumLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus eu nulla fringilla, interdum dapibus nibh luctus. Praesent faucibus, lectus sed tempor interdum",
+    "text_4": "At IT Solutions Worldwide, our approach to supply chain execution combines efficiency, agility, and technology to deliver seamless end-to-end performance. We integrate ERP, WMS, and TMS systems to create real-time visibility across your operations, ensuring every process aligns with business goals and runs at peak efficiency. By applying industry best practices, fostering close collaboration with partners, and continuously monitoring key performance metrics, we enable faster, smarter decision-making. Our focus on flexibility, risk management, and sustainability ensures that your supply chain remains resilient, adaptive, and capable of driving lasting value in a constantly evolving market.",
     "heading_5": "Benefits of Supply Chain Execution Solutions",
     "listitem1": "Streamlined processes result in faster and more efficient supply chain operations",
     "listitem2": "Optimized routes and an organized inventory save labor and transport costs",
@@ -818,8 +818,6 @@
     "card_heading_5": "Managed Services",
     "card_text_5": "Continuous monitoring, optimization, and support to keep your cloud and data ecosystem performing at its best.",
 
-    
-
     "card_heading_6": "Lorem Ispum",
     "card_text_6": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus",
 
@@ -1176,16 +1174,16 @@
     "heading_3": "Expanding Your Workforce Across the Globe",
 
     "card_heading_1": "Netherland",
-    "card_text_1": "Highlight solutions for financial institutions (e.g., logistics optimization, compliance).",
+    "card_text_1": "Build a strong workforce in Europe’s innovation hub with expert staffing solutions that match your business vision.",
 
     "card_heading_2": "Qatar",
-    "card_text_2": "Highlight solutions for financial institutions (e.g., logistics optimization, compliance).",
+    "card_text_2": "Expand confidently in a growing market with access to skilled professionals across multiple industries.",
 
     "card_heading_3": "Saudi",
-    "card_text_3": "Highlight solutions for financial institutions (e.g., logistics optimization, compliance).",
+    "card_text_3": "Strengthen your presence in the Kingdom with reliable, compliant, and high-quality workforce support.",
 
     "card_heading_4": "Dubai",
-    "card_text_4": "Highlight solutions for financial institutions (e.g., logistics optimization, compliance).",
+    "card_text_4": "Scale your operations in one of the world’s leading business centers with flexible and efficient staffing services.",
 
     "heading_4": "Why Partner with Us for Your Staffing Needs?",
     "point1": "Proven record of sourcing and placing dedicated and talented staff across various industries.",
@@ -1402,10 +1400,10 @@
     "listitem6-1": "Reverse Logistics & Returns Management Experts",
 
     "heading_4": "Key Services Offered",
-    "card_heading_1": "Lean Implementation Expertise",
-    "card_heading_2": "Lean Implementation Expertise",
-    "card_heading_3": "Lean Implementation Expertise",
-    "card_heading_4": "Lean Implementation Expertise",
+    "card_heading_1": "Freight Forwarding",
+    "card_heading_2": "Warehouse & Inventory Management",
+    "card_heading_3": "Customs Clearance & Compliance",
+    "card_heading_4": "Transportation & Distribution",
 
     "heading_5": "Why Choose Our Specialists?",
     "listitem5": "Expert logistics solutions",
@@ -1635,14 +1633,14 @@
     "text_3": "Specialised industry staffing services provide staffing solutions for niche industries that require employees with a specific skill set, qualification, and certification.",
 
     "heading_3": "Our Services",
-    "card_heading_1": "Healthcare staffing",
-    "card_text_1": "Connecting top medical professionals with healthcare facilities to ensure quality patient care and seamless operations",
+    "card_heading_1": "Industry-Specific Talent Sourcing",
+    "card_text_1": "We locate and onboard professionals with niche expertise that aligns precisely to your industry needs.",
 
-    "card_heading_2": "Manufacturing staffing",
-    "card_text_2": "Supplying skilled workers and specialized talent to optimize production efficiency and maintain industry standards",
+    "card_heading_2": "Contract & Permanent Staffing Solutions",
+    "card_text_2": "Flexible workforce models offering both short-term contract and long-term placements to scale your teams seamlessly.",
 
-    "card_heading_3": "Logistics staffing",
-    "card_text_3": "industrystaffingProviding experienced personnel to keep supply chains running smoothly, ensuring timely deliveries and operational excellence",
+    "card_heading_3": "Executive & Leadership Recruitment",
+    "card_text_3": "Specialized headhunting for senior roles, ensuring strategic hires that drive growth and innovation.",
 
     "heading_4": "Why Choose Specialized Industry Staffing?",
     "listitem1": "Industry-specific expertise",
