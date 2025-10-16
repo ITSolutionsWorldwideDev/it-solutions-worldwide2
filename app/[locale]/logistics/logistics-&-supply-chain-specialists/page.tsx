@@ -74,6 +74,8 @@ export default async function LogisticSupplyChainSpecialists({
       <li>{t("logandsupplychain.listitem2")}</li>
       <li>{t("logandsupplychain.listitem3")}</li>
       <li>{t("logandsupplychain.listitem4")}</li>
+      <li>{t("logandsupplychain.listitem5-1")}</li>
+      <li>{t("logandsupplychain.listitem6-1")}</li>
     </>
   );
 

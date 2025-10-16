@@ -57,14 +57,14 @@ export default async function CloudDataAISolutions({
       title: t("clouddata.card_heading_5"),
       description: t("clouddata.card_text_5"),
     },
-    {
-      title: t("clouddata.card_heading_6"),
-      description: t("clouddata.card_text_6"),
-    },
-    {
-      title: t("clouddata.card_heading_7"),
-      description: t("clouddata.card_text_7"),
-    },
+    // {
+    //   title: t("clouddata.card_heading_6"),
+    //   description: t("clouddata.card_text_6"),
+    // },
+    // {
+    //   title: t("clouddata.card_heading_7"),
+    //   description: t("clouddata.card_text_7"),
+    // },
   ];
 
   const questions = [

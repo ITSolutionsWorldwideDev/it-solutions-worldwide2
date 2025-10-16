@@ -1068,17 +1068,23 @@
     "text_2": "Cloud-databeheersystemen helpen bedrijven hun IT-infrastructuur te schalen op een flexibele en kosteneffectieve manier. Cloudomgevingen maken het mogelijk om gegevens op te slaan, te beheren, te delen en te updaten vanuit één uniform systeem over verschillende platforms.",
     "text_3": "AI in combinatie met cloudservices helpt bedrijven processen te automatiseren, beveiliging te verbeteren en datagestuurde beslissingen te nemen. Door clouddata-oplossingen en AI-technologieën te integreren, kunnen bedrijven sneller groeien, hun time-to-market verkorten en een naadloze workflow creëren.",
     "heading_3": "Onze Diensten",
-    "text_4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus eu nulla fringilla, interdum dapibus nibh luctus. Praesent faucibus, lectus.",
-    "card_heading_1": "Lorem Ipsum",
-    "card_text_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus.",
-    "card_heading_2": "Lorem Ipsum",
-    "card_text_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus.",
-    "card_heading_3": "Lorem Ipsum",
-    "card_text_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus.",
-    "card_heading_4": "Lorem Ipsum",
-    "card_text_4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus.",
-    "card_heading_5": "Lorem Ipsum",
-    "card_text_5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus.",
+    "text_4": "Bij IT Solutions Worldwide leveren we end-to-end Cloud-, Data- en AI-diensten die organisaties helpen hun bedrijfsvoering te moderniseren, inzichten te benutten en innovatie te versnellen.",
+
+    "card_heading_1": "Cloudstrategie en Migratie",
+    "card_text_1": "Beoordeel, plan en implementeer naadloze overgangen naar Oracle Cloud met schaalbare en veilige architecturen.",
+
+    "card_heading_2": "Datamodernisering",
+    "card_text_2": "Transformeer verouderde systemen in intelligente dataplatforms met gecentraliseerde data lakes, warehouses en realtime datastromen.",
+
+    "card_heading_3": "Analyse en Kunstmatige Intelligentie (AI)",
+    "card_text_3": "Maak slimmere beslissingen mogelijk via geavanceerde analyses, voorspellende inzichten en AI-gestuurde automatisering.",
+
+    "card_heading_4": "Integratie en Governance",
+    "card_text_4": "Verbind systemen binnen hybride of multi-cloudomgevingen en waarborg tegelijkertijd databeveiliging en naleving.",
+
+    "card_heading_5": "Beheerde Diensten",
+    "card_text_5": "Continue monitoring, optimalisatie en ondersteuning om ervoor te zorgen dat uw cloud- en data-ecosysteem optimaal presteert.",
+
     "card_heading_6": "Lorem Ipsum",
     "card_text_6": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus.",
     "card_heading_7": "Lorem Ipsum",
@@ -1461,10 +1467,14 @@
     "heading_2": "Introductie tot Logistiek- en Supply Chain-specialisten",
     "text_2": "Logistiek- en Supply Chain-specialisten zijn verantwoordelijk voor het toezicht op de toeleveringsketen, waaronder voorraadbeheer, opslag, distributie, transport en tijdige leveringen. Zij optimaliseren operationele processen om efficiëntie en productiviteit te verbeteren en vertragingen te minimaliseren.",
     "heading_3": "Soorten Logistieke Specialisten die Wij Aanbieden",
-    "listitem1": "Voordelen van samenwerken met onze experts",
-    "listitem2": "Voordelen van samenwerken met onze experts",
-    "listitem3": "Voordelen van samenwerken met onze experts",
-    "listitem4": "Voordelen van samenwerken met onze experts",
+
+    "listitem1": "Experts in Transport- en Vrachtbeheer",
+    "listitem2": "Specialisten in Magazijn- en Voorraadbeheer",
+    "listitem3": "Douane- en Handelsnalevingsfunctionarissen",
+    "listitem4": "Consultants voor Supply Chain Strategie en Planning",
+    "listitem5-1": "Integrators van Technologie en Automatisering",
+    "listitem6-1": "Experts in Reverse Logistics en Retourbeheer",
+
     "heading_4": "Belangrijkste Diensten",
     "card_heading_1": "Lean Implementatie-expertise",
     "card_heading_2": "Lean Implementatie-expertise",

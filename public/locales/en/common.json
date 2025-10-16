@@ -801,22 +801,24 @@
     "text_2": "Cloud data management solutions help businesses to scale their IT infrastructure, which is flexible and cost-effective. Cloud environments allow you to store, manage, share, and update data from a unified system across different systems.",
     "text_3": "AI, in combination with cloud services, helps businesses to automate tasks, enhance security, and make data-driven intelligent decisions. By utilising cloud data solutions and integrating AI technologies, businesses can grow rapidly, improve time-to-market, and develop a seamless workflow.",
     "heading_3": "Our Services",
-    "text_4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus eu nulla fringilla, interdum dapibus nibh luctus. Praesent faucibus, lectus ",
+    "text_4": "At IT Solutions Worldwide, we deliver end-to-end Cloud, Data, and AI services that help organizations modernize operations, unlock insights, and accelerate innovation. ",
 
-    "card_heading_1": "Lorem Ispum",
-    "card_text_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus",
+    "card_heading_1": "Cloud Strategy & Migration",
+    "card_text_1": "Assess, plan, and implement seamless transitions to Oracle Cloud with scalable, secure architectures.",
 
-    "card_heading_2": "Lorem Ispum",
-    "card_text_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus",
+    "card_heading_2": "Data Modernization",
+    "card_text_2": "Transform legacy systems into intelligent data platforms with centralized lakes, warehouses, and real-time pipelines.",
 
-    "card_heading_3": "Lorem Ispum",
-    "card_text_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus",
+    "card_heading_3": "Analytics & AI",
+    "card_text_3": "Enable smarter decisions through advanced analytics, predictive insights, and AI-powered automation.",
 
-    "card_heading_4": "Lorem Ispum",
-    "card_text_4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus",
+    "card_heading_4": "Integration & Governance",
+    "card_text_4": "Connect systems across hybrid or multi-cloud environments while ensuring data security and compliance.",
 
-    "card_heading_5": "Lorem Ispum",
-    "card_text_5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus",
+    "card_heading_5": "Managed Services",
+    "card_text_5": "Continuous monitoring, optimization, and support to keep your cloud and data ecosystem performing at its best.",
+
+    
 
     "card_heading_6": "Lorem Ispum",
     "card_text_6": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus",
@@ -1392,10 +1394,12 @@
     "text_2": "Logistics and Supply Chain Specialists are responsible for overseeing the supply chain operations, such as inventory management, warehousing, product distribution, transportation, and timely deliveries. These professionals manage and optimize supply chain operations to improve overall work efficiency and productivity, reducing delivery delays.",
 
     "heading_3": "Types of Logistics Specialists We Offer",
-    "listitem1": "The Advantages of Working with Our Experts",
-    "listitem2": "The Advantages of Working with Our Experts",
-    "listitem3": "The Advantages of Working with Our Experts",
-    "listitem4": "The Advantages of Working with Our Experts",
+    "listitem1": "Transportation & Freight Management Experts",
+    "listitem2": "Warehouse & Inventory Control Specialists",
+    "listitem3": "Customs & Trade Compliance Officers",
+    "listitem4": "Supply Chain Strategy & Planning Consultants",
+    "listitem5-1": "Technology & Automation Integrators",
+    "listitem6-1": "Reverse Logistics & Returns Management Experts",
 
     "heading_4": "Key Services Offered",
     "card_heading_1": "Lean Implementation Expertise",
