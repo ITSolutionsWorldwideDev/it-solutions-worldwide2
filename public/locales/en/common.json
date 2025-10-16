@@ -51,21 +51,24 @@
     "contactheading": "Get in Touch",
     "contactemail": "Email Us",
     "contactephone": "Phone Number",
-    "contactconnect": "Connect with us:"
+    "contactconnect": "Connect with us:",
+    "contactform": "Contact Form",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "sendmessage": "Send Message"
   },
-
   "aboutus": {
     "heading_1": "About Us | IT Solutions Worldwide",
     "text_1": "We combines expertise in management consulting and implementation of business applications",
     "heading_2": "Who We Are",
     "text_2": "IT Solutions Worldwide is a leading company that provides the best-updated solutions to a comprehensive range of industries. With X years of experience, we aim to implement simple and innovative tech solutions to help achieve businesses greater success with greater efficiency. With a proven success record, we optimize businesses through supply chain management, IT support, digital marketing services, and operational excellence. We help modernize businesses with our best technical professionals available."
   },
-
   "contactus": {
     "heading_1": "Contact Us | IT Solutions Worldwide",
-    "text_1": "We combines expertise in management consulting and implementation of business applications"
+    "text_1": "We combine expertise in management consulting and implementation of business applications"
   },
-
   "career": {
     "heading_1": "CAREER",
     "heading_2": "Join Our Team and Shape the Future",
@@ -76,7 +79,6 @@
     "heading_4": "Discover Our Global Network of Offices",
     "text_4": "Experience our expansive network of offices across the world, connecting you to our exceptional services wherever you are."
   },
-
   "scmservices": {
     "heading_1": "Supply Chain Management Services in Netherlands",
     "text_1": "Your trusted partner in optimizing efficiency, reducing risks, and enhancing service delivery.",
@@ -123,7 +125,6 @@
     "question5": "What industries benefit from Supply Chain Management?",
     "answer5": "SCM provides services that are beneficial for several different industries such as manufacturing, logistics, healthcare, finance, and retail. It helps optimize their operations and increase productivity."
   },
-
   "scmconsultancy": {
     "heading_1": "Supply Chain Management Consultancy Services",
     "text_1": "Optimize your logistics, inventory, and procurement processes with solutions that deliver real results.",
@@ -145,7 +146,6 @@
     "question5": "Do you offer customised solutions for different industries?",
     "answer5": "Yes, we offer customised solutions for different industries that fit their needs and requirements. We ensure that the solutions we provide are effective and feasible."
   },
-
   "businessconsultancy": {
     "heading_1": "Transform Your Business with Expert Consultancy Services",
     "text_1": "Expert advice and solutions to streamline processes, improve efficiency, and unlock new opportunities",
@@ -186,7 +186,6 @@
     "question5": "How do I choose the right business consultant for my needs?",
     "answer5": "Look for a consultant with experience in your industry, a proven track record of success, and an approach that aligns with your business goals to provide customized solutions to your needs."
   },
-
   "supplychainoptimizationstudy": {
     "heading_1": "Supply Chain Optimization Study",
     "text_1": "Identify inefficiencies, reduce costs, and enhance performance with a tailored supply chain optimization assessment.",
@@ -220,7 +219,6 @@
     "answer6_part3": "Supplier and vendor information",
     "answer6_part4": "Technology infrastructure"
   },
-
   "supplychainperformancecheck": {
     "heading_1": "ASSESS AND OPTIMIZE YOUR SCM PERFORMANCE",
     "text_1": "Identify gaps, optimize processes, and enhance decision-making with regular SCM performance assessments.",
@@ -256,7 +254,6 @@
     "question5": "What areas of the supply chain are assessed in the performance check?",
     "answer5": "There are some key metrics of a business that are assessed in the SCM performance check such as supplier performance, order fulfillment, lead time, cost control, customer complaint, etc."
   },
-
   "supplychainexecution": {
     "heading_1": "Supply Chain Execution Services",
     "text_1": "Implement innovative solutions that enhance visibility, coordination, and execution across your entire supply chain.",
@@ -297,7 +294,6 @@
     "question5": "How do I get started with your services?",
     "answer5": "Contact us via email at  info@itsolutionsworldwide.com or reach us directly to book a consultation and to know more about our services."
   },
-
   "trainingservices": {
     "heading_1": "UNLOCK YOUR WORKFORCE’S POTENTIAL WITH PROFESSIONAL TRAINING SERVICES",
     "text_1": "Empower your team with the expertise they need to succeed, boosting productivity and fostering innovation.",
@@ -337,7 +333,6 @@
     "question5": "Can employees take the training while continuing their work?",
     "answer5": "Yes, we provide flexible training sessions so the staff can easily manage their work along with the training sessions."
   },
-
   "itsupport": {
     "heading_1": "Reliable IT Support Services",
     "text_1": "Fast, reliable, and scalable IT support to solve your technology challenges and enhance your business operations.",
@@ -501,1410 +496,6 @@
     "description": "Whether you’re in Amsterdam, Rotterdam, or beyond – we build e-commerce webshops that convert visitors into buyers.",
     "buttonText2": "Book a Free Strategy Call"
   },
-
-  "ClothingStore": {
-    "headline_1": "Clothing Store Website Design Tailored to Your Fashion Brand",
-    "subheadline_1": "We create custom clothing store websites that combine sleek design with full functionality – ready to showcase your collection, manage inventory, and drive sales.",
-
-    "heading_1": "Professional Clothing Store Website Design – Tailored for Your Brand",
-    "text_1": "Whether you're opening a boutique in Lelystad or growing your fashion label in Amsterdam, we build clothing store websites that are:",
-    "listitem_1": "Stylish and modern – designed around your brand identity",
-    "listitem_2": "Mobile and desktop responsive – your customers shop seamlessly anywhere",
-    "listitem_3": "Equipped with inventory and size tracking",
-    "listitem_4": "Complete with lookbooks and collection pages",
-    "listitem_5": "Ready for payments – including iDEAL, credit card, and more",
-    "listitem_6": "Search engine optimization (SEO) to attract more shoppers",
-    "text_2": "We combine the best clothing store website design practices with a fast, conversion-driven setup.",
-
-    "title1": "Need a Clothing Store Website Template?",
-    "description1": "Want a quick-start solution? We also offer clothing store website templates that are easy to customize, mobile-ready, and fully optimized for product display and checkout flow.",
-
-    "heading_2": "Included in Every Webshop Package",
-    "text_3": "Whether you're building from scratch or using a website template for your clothing store, here’s what’s included:",
-    "listitem_7": "Domain and hosting setup",
-    "listitem_8": "CMS (Shopify, WooCommerce, or custom)",
-    "listitem_9": "Lookbook, size guide, and product filters",
-    "listitem_10": "Secure payment integration (Stripe, iDEAL, PayPal)",
-    "listitem_11": "Speed optimization for fast-loading",
-    "listitem_12": "SEO setup with keywords like clothing store websites, fashion webshop, online clothing store website",
-
-    "heading_3": "How Much Does It Cost to Build a Clothing Store Website?",
-    "text_4": "The price of your fashion webshop depends on:",
-    "listitem_13": "Number of products",
-    "listitem_14": "Design complexity",
-    "listitem_15": "Features (inventory management, size variants, shipping integration)",
-    "listitem_16": "Choice between custom design or clothing store website templates",
-
-    "faq_heading": "FAQs – Building a Clothing Store Website",
-    "question1": " How do I create a clothing store website quickly?",
-    "answer1": "We offer quick-launch options using modern clothing store website templates. Get your store live in days.",
-    "question2": "What's the best website builder for a clothing store?",
-    "answer2": "We recommend Shopify for ease of use, WooCommerce for WordPress users, and custom development for unique branding.",
-    "question3": "Are your e-commerce websites mobile-friendly?",
-    "answer3": "Yes, our webshops include full inventory management with size tracking and stock updates.",
-    "question4": "Can you design a basic clothing store website?",
-    "answer4": "Absolutely! Whether you want a basic or advanced store, we’ll tailor it to your needs.",
-
-    "heading_4": "Ready to Launch Your Online Clothing Store?",
-    "text_5": "If you're searching for:",
-    "listitem_17": "Clothing store website in Utrecht",
-    "listitem_18": "Best website builder for clothing store in Amsterdam",
-    "listitem_19": "Clothing store website design in Groningen",
-    "listitem_20": "Create a clothing store website in Rotterdam",
-    "text_6": "We’re your full-service web design partner for fashion.",
-
-    "button1": "Contact us today for a personalized, free quote!",
-    "button2": "Call us today"
-  },
-  "AutoParts": {
-    "headline_1": "Professional Auto Parts Website Development for Online Sales",
-    "subheadline_1": "Looking to create your own auto parts webshop and start selling online? At IT Solutions Worldwide, we design and develop high-performing e-commerce websites specifically for the automotive industry—perfect for parts dealers, suppliers, and retailers.",
-
-    "heading_1": "Launch Your Own Auto Parts Webshop",
-    "sub_heading_1": "Key Benefits",
-    "text_1": "We build custom e-commerce platforms tailored for the automotive industry. Whether you sell brake pads or engine components, your webshop will be fast, secure, and easy to use.",
-    "listitem_1": "Custom design focused on automotive buyers",
-    "listitem_2": "Mobile-optimized for high conversions",
-    "listitem_3": "Clear product categorization and navigation",
-    "listitem_4": "Scalable to match your business growth",
-
-    "heading_2": "What’s Included in Your Auto Parts E-commerce Website",
-    "text_2": "Each website we create is tailored to fit your product range, user behavior, and brand identity.",
-    "sub_heading_2": "Core Features",
-    "listitem_5": "Product search with vehicle compatibility",
-    "listitem_6": "Bulk product import (CSV/Excel)",
-    "listitem_7": "Cart and checkout optimization",
-    "listitem_8": "Multilingual, multi-currency options",
-    "listitem_9": "Integrated analytics to track performance",
-
-    "heading_3": "Why Choose IT Solutions Worldwide",
-    "text_3": "We specialize in building data-driven auto parts platforms with clean code, SEO structure, and intuitive design.",
-    "sub_heading_3": "Why We’re Trusted",
-    "listitem_10": "10+ years of e-commerce experience",
-    "listitem_11": "Focused on functionality + conversions",
-    "listitem_12": "Full ownership – no hidden monthly fees",
-    "listitem_13": "Post-launch training and support",
-
-    "heading_4": "How Much Does It Cost to Build an Auto Parts Website?",
-    "text_4": "Our pricing is based on your scope. Whether you need a basic webshop or a complex catalog, we give you upfront estimates.",
-    "sub_heading_4": "Pricing Benefits",
-    "listitem_14": "Transparent packages – no surprises",
-    "listitem_15": "Scalable plans for growing businesses",
-    "listitem_16": "Payment in milestones",
-
-    "faq_heading": "FAQ Section",
-    "question1": " What makes your auto parts websites better than templates?",
-    "answer1": "We don’t use templates. Each site is custom-designed to match your customer’s buying journey, which results in better engagement and conversions.",
-    "question2": "Can I manage my inventory easily?",
-    "answer2": "Yes, with an intuitive dashboard to update prices, stock, and product specs.",
-    "question3": "Do you offer support after the website is live?",
-    "answer3": "Absolutely. We offer technical support, training, and optional maintenance packages.",
-    "question4": "Will my website be mobile-friendly?",
-    "answer4": "Yes. All our websites are fully responsive and optimized for mobile-first indexing.",
-    "question5": "How long does development take?",
-    "answer5": "On average, 3 to 6 weeks depending on project complexity.",
-    "question6": "Do I own the website?",
-    "answer6": "100% ownership. No recurring license fees.",
-
-    "btnhead1": "Ready to go online?",
-    "btn1": "Request a free consultation",
-    "btnhead2": "Want a custom feature list for your business?",
-    "btn2": "Contact us for a free feature walkthrough",
-    "btnhead3": "Talk to our developers today.",
-    "btn3": "Schedule a 15-minute discovery call",
-    "btnhead4": "Need a budget estimate?",
-    "btn4": "Request a free quote now",
-
-    "title": "Start Selling Auto Parts Online Today",
-    "description": "Make your inventory accessible to buyers across the country. We help you sell faster and more efficiently with our tailored online stores.",
-    "buttonText2": "View Our Demo Auto Parts Websites",
-
-    "title2": "Ready to Build Your Auto Parts Webshop?",
-    "description2": "Let’s create a professional, powerful online store for your automotive business. Whether you’re starting small or scaling up, we’ll design a platform tailored to your brand and customers.",
-    "buttonText3": "Book Your Free Consultation",
-    "text": "We respond within 24 hours. Let’s turn your auto parts business into a 24/7 online sales machine."
-  },
-
-  "Motorcycle": {
-    "headline_1": "Build a Powerful Website for Your Motorcycle Shop or Garage",
-    "subheadline_1": "Showcase your bikes, attract local customers, and boost sales with a custom website made for motorcycle businesses in Hoogvliet, Zoetermeer, Delft, and Rotterdam.",
-    "button_1": "Schedule a Free Strategy Call",
-
-    "heading_1": "Custom Web Design for Motorcycle Businesses",
-    "sub_heading_1": "What We Offer:",
-    "text_1": "We create tailor-made websites for motorcycle dealers, garages, and service centers. Whether you sell bikes, offer maintenance, or buy used motorcycles — your website will reflect professionalism, clarity, and performance.",
-    "listitem_1": "Custom web design built for speed & user experience",
-    "listitem_2": "Showroom-style layouts with photo galleries and filters",
-    "listitem_3": "Appointment booking modules for service or test rides",
-    "listitem_4": "Full CMS to manage inventory, content, and leads",
-    "listitem_5": "Mobile-friendly and SEO-optimized structure",
-
-    "heading_2": "Designed for Motorcycle Sales, Maintenance & Trade-ins",
-    "text_2": "From single-location workshops to multi-location dealerships — we create digital platforms that make your services accessible and appealing.",
-    "sub_heading_2": "We Build:",
-    "listitem_6": "Websites for selling and buying motorcycles",
-    "listitem_7": "Online portals for motorcycle maintenance and repairs",
-    "listitem_8": "Used motorcycle listing platforms with CMS control",
-    "listitem_9": "Trade-in forms and online quote requests",
-    "listitem_10": "Dealer websites with professional branding",
-
-    "heading_3": "SEO + Local Visibility in Your City",
-    "text_3": "We target your exact location with proper SEO structure so your motorcycle business is found by people nearby. Whether you’re in Delft, Zoetermeer, Hoogvliet, or Rotterdam — we optimize your site for your region.",
-    "sub_heading_3": "SEO Benefits Include:",
-    "listitem_11": "Optimized title tags, meta, and URL structure",
-    "listitem_12": "Google-friendly pre-owned listings",
-    "listitem_13": "Google Business integration for local visibility",
-    "listitem_14": "Faster loading for better rankings",
-
-    "heading_4": "Powerful Features for Motorcycle Shops",
-    "text_4": "Your motorcycle website will include the features you need to attract, convert, and retain customers.",
-    "sub_heading_4": "Features Include:",
-    "listitem_15": "Full inventory & CMS management",
-    "listitem_16": "Digital showroom with categories & filters",
-    "listitem_17": "Mobile-first design for all screen sizes",
-    "listitem_18": "Appointment scheduler for service bookings",
-    "listitem_19": "WhatsApp/live chat integration",
-    "listitem_20": "Easy update tools for your team",
-
-    "heading_6": "How Much Does a Motorcycle Shop Website Cost?",
-    "text_6": "Prices depend on the features you need. We offer scalable packages tailored to your shop size and goals.",
-    "sub_heading_6": "What’s Included:",
-    "listitem_21": "Free strategy consultation",
-    "listitem_22": "Transparent proposal",
-    "listitem_23": "Flexible payment options",
-    "listitem_24": "Zero hidden fees",
-    "listitem_25": "Optional monthly support after launch",
-
-    "heading_7": "Get Started in 3 Simple Steps",
-    "listitem_26": "Book a free call or request a quote",
-    "listitem_27": "We plan your design and features",
-    "listitem_28": "Your website is delivered, tested, and launched",
-
-    "faq_heading": "FAQ (Frequently Asked Questions)",
-    "question1": " Can you list used motorcycles on the site?",
-    "answer1": " Yes! We create a user-friendly CMS where you can upload, edit, and remove bike listings any time.",
-    "question2": "Do you support appointment booking for service?",
-    "answer2": "Absolutely. We include a calendar module that allows customers to book test rides or service appointments.",
-    "question3": "Will the website be SEO optimized?",
-    "answer3": "Yes. We build every page with proper tags, structured data, mobile responsiveness, and local SEO.",
-    "question4": "Can I manage the website myself?",
-    "answer4": "Yes. We provide CMS access and basic training so you can add bikes, edit text, or change images easily.",
-    "question5": "What platforms do you use?",
-    "answer5": "We primarily use WordPress with WooCommerce or Laravel-based CMS depending on your needs.",
-
-    "heading_8": "Let’s Build Your Motorcycle Shop Website Today",
-    "text_8": "Whether you run a motorcycle showroom, buy and sell used bikes, or operate a full-service garage, we’ll create a website that’s tailored to your goals and optimized for your market.",
-    "sub_heading_8": "What’s Included:",
-    "listitem_29": "Custom design",
-    "listitem_30": "Local SEO targeting",
-    "listitem_31": "Inventory management",
-    "listitem_32": "Appointment booking",
-
-    "step1": "Step1",
-    "step2": "Step2",
-    "step3": "Step3",
-
-    "btnhead1": "Ready to showcase your bikes online?",
-    "btn1": "Request your free quote now",
-    "btnhead2": "Need a bike-selling website with full control?",
-    "btn2": "Let’s start planning today",
-    "btnhead3": "Want to dominate your local area search?",
-    "btn3": "Schedule a free strategy call",
-    "btnhead4": "Want a feature-packed website?",
-    "btn4": "See our previous work or get a quote",
-    "btnhead5": "Need a price now?",
-    "btn5": "Request a free quote",
-    "btnhead6": "📞 Let’s turn your motorcycle garage into a digital business.",
-    "btn6": "Book your free consultation today",
-    "btn7": "Book a Free Consultation",
-
-    "heading_5": "Ready to Build Your Auto Parts Webshop?",
-    "text_5": "Let’s create a professional, powerful online store for your automotive business. Whether you’re starting small or scaling up, we’ll design a platform tailored to your brand and customers."
-  },
-
-  "BeautySalon": {
-    "headline_1": "Professional Website Design for Beauty Salons in the Netherlands",
-    "subheadline_1": "Make your beauty salon stand out online with a custom, mobile-friendly website that converts visitors into clients.",
-    "button_1": "Schedule a Consultation",
-
-    "heading_1": "Want to Build a Website for Your Beauty Salon?",
-    "text_1": "Are you a beauty specialist in the Netherlands looking to professionally present your salon, attract more clients, and increase bookings? At IT Solutions Worldwide, we create stylish, high-performing websites designed specifically for beauty salons. Whether you run a nail studio, offer facial treatments, or manage a full-service salon, we’ll make sure your business looks beautiful online and ranks well on Google.",
-
-    "heading_2": "Web Design That Reflects Your Style and Converts Visitors",
-    "text_2": "Your website should look stunning—but it must also function smoothly and help grow your salon. Our design approach is based on three pillars: beauty, usability, and results. We create websites that are fast, responsive, and optimized for mobile, tablet, and desktop. With an integrated booking system, your clients can book appointments 24/7—reducing phone calls and increasing revenue.",
-
-    "heading_3": "What We Offer for Your Beauty Salon",
-    "listitem_1": "Custom website design aligned with your brand",
-    "listitem_2": "Responsive design that works on all devices",
-    "listitem_3": "Integrated online booking system",
-    "listitem_4": "Clear display of treatment menus and price lists",
-    "listitem_5": "High-quality image galleries and client testimonials",
-    "listitem_6": "SEO-optimized content to rank better on Google",
-    "listitem_7": "Simple content management system (CMS) to update your website easily",
-    "listitem_8": "Integration with social media, reviews, contact forms, and Google Maps",
-
-    "heading_4": "Be Found by Local Clients Searching Online",
-    "text_4": "We specialize in creating region-specific beauty salon websites across the Netherlands. By targeting local keywords and optimizing for local SEO, we help your salon appear in relevant Google searches. Whether you’re located in:",
-    "listitem_9": "Drenthe (Emmen, Assen)",
-    "listitem_10": "Zeeland (Vlissingen, Middelburg)",
-    "listitem_11": "Groningen (City and Province)",
-    "listitem_12": "Apeldoorn (Veluwe region)",
-    "listitem_13": "Lelystad (Flevoland)",
-    "listitem_14": "Roosendaal (West Brabant)",
-    "text_5": "we’ll help your beauty salon website show up and stand out.",
-
-    "heading_5": "A Website Is a Smart Investment for Your Salon",
-    "text_6": "More than just an online presence, your website is your digital front door. It builds trust, educates clients, and converts interest into appointments. Our websites are designed to:",
-    "listitem_15": "Reflect your salon’s personality and professionalism",
-    "listitem_16": "Convert more visitors into loyal clients",
-    "listitem_17": "Include essential tools like booking systems, menus, and testimonials",
-    "listitem_18": "Work seamlessly on all devices",
-    "listitem_19": "Remain affordable without compromising quality",
-
-    "faq_heading": "Frequently Asked Questions",
-    "question1": " How do I create a website for my beauty salon?",
-    "answer1": " We handle everything—from design and development to hosting and launch. You’ll have a ready-to-use website that’s optimized and easy to manage.",
-    "question2": "What does a beauty salon website cost?",
-    "answer2": "Prices depend on your requirements. Basic sites are affordable, while more advanced features like online booking and photo galleries add to the cost. Contact us for a tailored quote.",
-    "question3": "Can my website include appointment booking?",
-    "answer3": "Yes, all our beauty salon websites can include a user-friendly booking system so clients can schedule treatments online anytime.",
-    "question4": "Do you have examples of salon websites?",
-    "answer4": "Absolutely. We can show you real examples of beauty salon websites we’ve designed for other professionals across the Netherlands.",
-
-    "marketingtitle": "Ready to Launch Your Beauty Salon Website?",
-    "marketingdescription": "Let us help you attract more clients, build credibility, and make your salon shine online. Whether you're in Drenthe, Zeeland, Groningen, or beyond—IT Solutions Worldwide has the tools and experience to help your salon succeed.",
-    "marketingbuttontext2": "Get a Free Quote"
-  },
-
-  "Dentist": {
-    "headline_1": "Build a Professional Website for Your Dental Practice",
-    "subheadline_1": "Modern, secure, and conversion-focused dental websites designed to attract more patients and streamline your practice—available for dentists across the Netherlands.",
-    "button_1": "Schedule a Free Consultation",
-
-    "heading_1": "Looking to Grow Your Dental Practice Online?",
-    "text_1": "Whether you're an independent dentist or run a multi-location clinic, having a professional and user-friendly website is essential. At IT Solutions Worldwide, we specialize in custom dental website design tailored to clinics in the Netherlands. From showcasing treatments to integrating booking systems, we help you create a digital presence that builds trust and drives appointments.",
-    "text_2": "We work with dental professionals across Drenthe, Zeeland, Groningen, Apeldoorn, Lelystad, and Roosendaal, delivering websites that reflect your professionalism and meet the highest privacy standards.",
-
-    "heading_2": "What Makes Our Dental Websites Different?",
-    "sub_heading_2": "Digitally Strong, Medically Trusted",
-    "text_3": "Your dental website is the first impression many patients will have of your clinic. That’s why we focus on three things:",
-    "listitem_1": "Professional design that builds trust",
-    "listitem_2": "Functional features that improve patient experience",
-    "listitem_3": "SEO and mobile optimization that increase online visibility",
-
-    "heading_3": "Smart Features for Modern Dental Clinics",
-    "listitem_4": "Custom design aligned with your brand",
-    "listitem_5": "Mobile-friendly and responsive layout",
-    "listitem_6": "Online appointment booking module (24/7 access for patients)",
-    "listitem_7": "Detailed service and treatment pages with pricing",
-    "listitem_8": "Dentist and staff bios with qualifications",
-    "listitem_9": "Integration with patient portals and practice management systems",
-    "listitem_10": "Contact form, Google Maps, and social media integration",
-    "listitem_11": "Patient testimonials and review widgets",
-    "listitem_12": "Multi-language support if needed",
-
-    "heading_4": "Why Dentists Choose IT Solutions Worldwide",
-    "sub_heading_4": "We Speak the Language of Healthcare and Design",
-    "text_4": "We understand how a dental website must balance visual appeal, medical professionalism, and technical performance. With years of experience in healthcare web design, we ensure your practice benefits from:",
-    "listitem_13": "Clear messaging and user flow",
-    "listitem_14": "Fast loading speed and mobile usability",
-    "listitem_15": "SEO-ready pages for Google visibility",
-    "listitem_16": "Ongoing support and regular maintenance",
-
-    "heading_5": "Pricing: What Does a Dental Website Cost?",
-    "text_5": "We offer flexible, competitively priced packages based on your clinic’s needs. Most packages include:",
-    "listitem_17": "Custom design and layout",
-    "listitem_18": "Development and secure launch",
-    "listitem_19": "Online booking system",
-    "listitem_20": "SEO-optimized content and metadata",
-    "listitem_21": "Domain and hosting setup",
-    "listitem_22": "Post-launch support",
-
-    "heading_6": "Find out how affordable a great website can be.",
-    "button": "Request a Free Quote",
-
-    "faq_heading": "Frequently Asked Questions (FAQs)",
-    "question1": " How do I create a website for my dental practice?",
-    "answer1": " We guide you through every step—from discovery and wireframes to launch and support. You don’t need any technical knowledge.",
-    "question2": "What’s the best design for a dental website?",
-    "answer2": "Clean, calm, and trustworthy designs with clear appointment options and mobile responsiveness work best for dental clinics.",
-    "question3": "Can I have an online booking system?",
-    "answer3": "Yes. All our dental websites include a 24/7 appointment module to reduce admin work and make it easy for patients to book.",
-    "question4": "Do you design dental websites for practices in the Netherlands?",
-    "answer4": "Absolutely. We serve clinics throughout the Netherlands including Drenthe, Zeeland, Groningen, Apeldoorn, Lelystad, and Roosendaal.",
-    "question5": "Is the website GDPR-compliant?",
-    "answer5": "Yes. All websites we build follow GDPR rules, include secure data handling, and cookie/privacy policy integration.",
-
-    "marketingtitle": "Ready to Launch Your Dental Practice Website?",
-    "marketingdescription": "We’re here to help you attract new patients, build credibility, and operate more efficiently with a smart, future-ready dental website. Whether your practice is in a city center or a rural region, our team can build you a professional online presence that works for your goals and budget.",
-    "marketingbuttontext2": "Start My Website Project"
-  },
-
-  "MainLanding": {
-    "headline_1": "We Design and Develop Websites That Drive Real Results",
-    "subtext": "Whether you're launching a new brand, refreshing an outdated site, or scaling your digital presence — we craft websites that combine powerful design with flawless functionality. Our team ensures every project is responsive across devices, optimized for search engines, and tailored to guide your visitors toward meaningful actions. From user experience and visual identity to loading speed, security, and CMS integration — we handle every layer of your website with strategic focus and technical precision.",
-
-    "heading_1": "Ecommerce:",
-    "text_1": "The ecommerce website is built on WordPress and offers various features, including product management, secure checkout, responsive design, and easy customization, providing a flexible and user-friendly online shopping experience.",
-
-    "heading_2": "Taxi/Transport:",
-    "text_2": "This taxi/transport website is built with Next.js, ensuring fast performance and modern design. It includes a secure payment method and various features to enhance user convenience and booking efficiency.",
-
-    "heading_3": "Garage:",
-    "text_3": "This garage website is built using MongoDB, ensuring efficient data handling. It features mobile responsiveness for easy access on all devices and includes additional tools for service booking and customer interaction.",
-
-    "heading_4": "Travel:",
-    "text_4": "This travel website offers excellent customer support and responsive design for seamless user experience. It includes secure payment methods and various other features to simplify booking and enhance travel planning.",
-
-    "heading_5": "Retail:",
-    "text_5": "This retail website offers full language support in both English and Dutch, ensuring accessibility for a wider audience. It includes various features for seamless shopping, product browsing, and secure checkout.",
-
-    "card2_heading_1": "Ecommerce:",
-    "card2_text_1": "Our e-commerce websites are crafted for performance, scalability, and conversion. Whether you're launching a new brand or expanding online, we develop fully customized e-commerce platforms with seamless checkout, product filters, backend management tools, and secure payment gateways to drive consistent sales.",
-    "card2_heading_2": "Taxi/Transport:",
-    "card2_text_2": "Whether you operate a single taxi service or manage a full-scale transport fleet, we build responsive, high-performance websites that simplify bookings and boost visibility. With features like live tracking, fare calculators, and mobile-optimized interfaces, we help you deliver seamless transportation experiences online.",
-    "card2_heading_3": "Garage:",
-    "card2_text_3": "Your garage deserves a website that reflects professionalism and builds trust. We design clean, functional websites for garages and auto service centers—integrated with service booking forms, maintenance schedules, and customer reviews—to keep your bays full and your brand miles ahead of the competition.",
-    "card2_heading_4": "Travel:",
-    "card2_text_4": "We create visually stunning, conversion-driven travel websites tailored for agencies, tour operators, and experience providers. From detailed itineraries to integrated booking engines and multi-language support, our platforms are built to attract global travelers and turn interest into instant reservations.",
-    "card2_heading_5": "Retail:",
-    "card2_text_5": "We help retail businesses thrive online with smart, engaging websites that connect brands with buyers. Whether you need a digital catalog, location-based features, or online order management, we build responsive retail platforms that blend aesthetic appeal with functionality—designed to boost both traffic and trust.",
-    "card2_heading_6": "Shopify:",
-    "card2_text_6": "As certified Shopify experts, we build and scale online stores that are fast, flexible, and sales-focused. From theme customization to app integrations and conversion optimization, we tailor every Shopify site to match your brand and business goals—delivering an effortless shopping experience that sells.",
-
-    "heading_6": "Our Portfolio",
-    "heading_7": "Our Clients",
-    "heading_8": "Our Expertise",
-
-    "heading_9": "Reliable customer support and affordable services ensure satisfaction and value for every client.",
-    "button_1": "Get a free Quote",
-    "button_2": "Request More Details",
-    "heading_10": "Our Proven Process",
-
-    "title_1": "Planning",
-    "title_2": "Design",
-    "title_3": "Development",
-    "title_4": "Testing",
-    "title_5": "Launch",
-
-    "heading_11": "Who We Are",
-    "text_6": "IT Solutions Worldwide is a leading company that provides the best-updated solutions to a comprehensive range of industries. With X years of experience, we aim to implement simple and innovative tech solutions to help achieve businesses greater success with greater efficiency. With a proven success record, we optimize businesses through supply chain management, IT support, digital marketing services, and operational excellence. We help modernize businesses with our best technical professionals available.",
-
-    "faq_heading": "Frequently Asked Questions",
-
-    "question1": "What is the difference between web design and web development?",
-    "answer1": "Web design refers to creating visuals and layout for the website, whereas web development refers to building the website infrastructure and functionalities of how the website may work.",
-
-    "question2": "Do you offer custom web designs?",
-    "answer2": "Yes, we offer customizable web designs for every business's needs and requirements. We analyze a few metrics, such as complexity, flexibility, scalability, and scope, to construct a web design.",
-
-    "question3": "Are your websites mobile-friendly and responsive?",
-    "answer3": "Our design and development team ensures that the website structure is fully responsive and optimized so that the users have a seamless user experience.",
-
-    "question4": "How long does it take to develop a website?",
-    "answer4": "Typically, a basic website may take 2 to 4 weeks to develop, an E-commerce website may take up to 6 to 12 weeks, and a custom website may take more than 12 weeks. The design and development usually depend on the project’s size, scope, integration time, and complexity.",
-
-    "question5": "Can you redesign an existing website?",
-    "answer5": "Yes, we can redesign an existing website for you in a better way, ensuring that it is fully responsive and optimized and you get a seamless user experience."
-  },
-
-  "VALanding": {
-    "headline_1": "Huur een Virtuele Assistent in Nederland en Bespaar Tijd",
-    "button_1": "Plan een Gratis Consultatie",
-
-    "heading_1": "Besteed taken uit aan een professionele Virtuele Assistent",
-    "text_1": "Ben je een ondernemer, drukke professional of agency in Nederland die tijd tekortkomt?",
-    "text_2": "IT Solutions Worldwide helpt je met het uitbesteden van dagelijkse taken aan een getrainde en betrouwbare virtuele assistent. Zo houd jij meer tijd over voor groei en strategie.",
-    "text_3": "Onze VAs spreken vloeiend Engels (en optioneel Nederlands) en zijn flexibel inzetbaar voor allerlei werkzaamheden.",
-    "button_2": "Vraag een gratis offerte aan",
-
-    "heading_2": "Waarom kiezen voor onze Virtuele Assistent-diensten?",
-    "listitem_1": "Ervaren en goed getrainde assistenten",
-    "listitem_2": "Volledige ondersteuning op afstand",
-    "listitem_3": "Beschikbaar in verschillende tijdzones",
-    "listitem_4": "Flexibele contracten (per uur, per week of maand)",
-    "listitem_5": "Talen: Engels en Nederlands beschikbaar",
-    "listitem_6": "Betaalbaar, schaalbaar en betrouwbaar",
-
-    "heading_3": "Wat doet een Virtuele Assistent voor jouw bedrijf?",
-    "text_4": "Onze virtuele assistenten kunnen je ondersteunen met onder andere:",
-    "listitem_7": "E-mailbeheer en agendabeheer",
-    "listitem_8": "Klantenservice (telefoon, e-mail en chat)",
-    "listitem_9": "Administratie en gegevensinvoer",
-    "listitem_10": "Online onderzoek en rapportages",
-    "listitem_11": "Social media beheer en planning",
-    "listitem_12": "Webshop ondersteuning (zoals Shopify of WooCommerce)",
-    "listitem_13": "Contentbewerking en vertaling (Engels/Nederlands)",
-
-    "heading_4": "VoZo werkt het in 4 simpele stappen",
-    "listitem_14": "Plan een gratis adviesgesprek",
-    "listitem_15": "Vertel ons welke taken je wilt uitbesteden",
-    "listitem_16": "Wij koppelen je aan de juiste virtuele assistent",
-    "listitem_17": "Start direct en ervaar het verschil",
-
-    "heading_5": "Flexibele tarieven op maat",
-    "text_5": "Wij bieden verschillende prijsopties aan, afhankelijk van je behoeften. Al beschikbaar vanaf €XX per uur of €XXX per maand.",
-    "button": "Vraag een offerte op maat aan",
-
-    "heading_6": "Klaar om slimmer te werken met een Virtuele Assistent?",
-    "text_6": "Laat het dagelijkse werk aan ons over en focus je op waar jij het beste in bent. IT Solutions Worldwide staat klaar om jouw bedrijf te ondersteunen.",
-    "button2": "Gratis kennismaking plannen"
-  },
-  "SMManager": {
-    "headline_1": "Social Media Manager Inhuren – Vergroot je Online Bereik en Merkzichtbaarheid",
-    "button_1": "Plan een Gratis Consultatie",
-
-    "heading_1": "Waarom een Externe Social Media Manager het Verschil Maakt voor Jouw Bedrijf",
-    "text_1": "In de huidige digitale economie is een actieve en doordachte aanwezigheid op sociale media essentieel. Of je nu een webshop runt, een lokaal dienstverlener bent of een groeiend merk bouwt – onze social media managers helpen je om op te vallen, betrokkenheid te verhogen en conversies te genereren.",
-    "text_2": "Bij IT Solutions Worldwide huur je een ervaren specialist in die werkt alsof hij deel uitmaakt van jouw team, maar zonder de lasten van een vaste medewerker.",
-
-    "heading_2": "Wat Doet Onze Social Media Manager Voor Jouw Merk?",
-    "text_3": "Onze social media experts zijn gespecialiseerd in:",
-    "listitem_1": "Strategieontwikkeling voor social media",
-    "listitem_2": "Dagelijkse contentplanning en -publicatie",
-    "listitem_3": "Ontwerpen van visuals & creatieve posts",
-    "listitem_4": "Hashtag- en doelgroepanalyse",
-    "listitem_5": "Community management (reacties, DM's)",
-    "listitem_6": "Advertentiebeheer (Facebook, Instagram, LinkedIn, TikTok)",
-    "listitem_7": "Statistische rapportages en optimalisatie",
-    "listitem_8": "Influencer outreach en merkpromotie",
-
-    "heading_3": "Voor Welke Platforms Beheren Wij Content?",
-    "text_4": "We beheren professioneel content op onder andere:",
-    "listitem_9": "Facebook",
-    "listitem_10": "Instagram",
-    "listitem_11": "LinkedIn",
-    "listitem_12": "TikTok",
-    "listitem_13": "Pinterest",
-    "listitem_14": "X (voorheen Twitter)",
-    "listitem_15": "YouTube Shorts & Reels",
-    "text_5": "Elk platform heeft een eigen aanpak en doelgroep. Wij stemmen onze strategie daarop af om maximaal resultaat te behalen.",
-
-    "heading_4": "Uurtarief Social Media Manager – Betaalbaar en Flexibel",
-    "text_6": "Onze social media managers zijn beschikbaar vanaf slechts € XX per uur (afhankelijk van de taken, frequentie en platform).",
-    "text_7": "We bieden ook maandelijkse pakketten aan voor bedrijven die structurele ondersteuning zoeken.",
-    "button_2": "Ontvang een offerte op maat",
-
-    "heading_5": "Hoe Werkt het Samenwerken met IT Solutions Worldwide?",
-    "listitem_16": "Kennismaking: Jij vertelt ons je doelen, kanalen en doelgroep",
-    "listitem_17": "Strategie & planning: Wij stellen een maandplan en contentkalender op",
-    "listitem_18": "Uitvoering: We posten namens jouw merk en beheren interacties",
-    "listitem_19": "Analyse & optimalisatie: We sturen maandelijks rapportages met verbeterpunten",
-    "text_8": "Transparant, resultaatgericht en meetbaar.",
-
-    "heading_6": "Waarom Bedrijven in Nederland Kiezen Voor Ons Team",
-    "listitem_20": "Jarenlange ervaring met B2B en B2C merken",
-    "listitem_21": "Creatieve contentcreatie met doelgroepgerichte insteek",
-    "listitem_22": "Ervaren in tools zoals Hootsuite, Canva, Meta Business Suite, Later & Buffer",
-    "listitem_23": "Multidisciplinair team: design + copy + strategie",
-    "listitem_24": "Beschikbaar in het Nederlands en Engels",
-    "listitem_25": "Snelle communicatie via Slack, WhatsApp of e-mail",
-
-    "heading_7": "Voor Welke Sectoren Werken Onze Social Media Managers?",
-    "listitem_26": "E-commerce & retail",
-    "listitem_27": "Gezondheidszorg & beauty",
-    "listitem_28": "Horeca & evenementen",
-    "listitem_29": "Opleidingen en coaching",
-    "listitem_30": "Juridisch en financieel",
-    "listitem_31": "B2B-diensten & startups",
-    "text_9": "Geen branche is ons vreemd – wij passen onze toon en content aan op jouw doelgroep.",
-
-    "heading_8": "Start Vandaag Nog met Jouw Social Media Succes",
-    "text_10": "Wil je jouw online zichtbaarheid vergroten, maar ontbreekt het je aan tijd, kennis of creativiteit? Laat ons team het werk doen en richt je op je bedrijf.",
-    "button2": "Start vandaag nog met social media beheer"
-  },
-  "ContentCreator": {
-    "headline_1": "Professionele Content Creator & Copywriter Inhuren voor Jouw Bedrijf",
-    "button_1": "Plan een Gratis Consultatie",
-
-    "heading_1": "Versterk Jouw Online Aanwezigheid met Overtuigende Content",
-    "text_1": "Goede content is de sleutel tot zichtbaarheid, autoriteit en conversie. Of het nu gaat om een pakkende landingspagina, informatieve blogartikelen of creatieve social media captions – onze content creators en copywriters leveren resultaatgerichte teksten die jouw doelgroep aanspreken.",
-
-    "heading_2": "Wat Kun Je Verwachten van Onze Contentdiensten?",
-    "text_2": "Bij IT Solutions Worldwide combineren we creativiteit met strategie. Onze content creators en copywriters bieden:",
-    "listitem_1": "SEO-geoptimaliseerde webteksten",
-    "listitem_2": "Blogartikelen en nieuwsberichten",
-    "listitem_3": "Social media content en captions",
-    "listitem_4": "E-mailmarketing teksten en nieuwsbrieven",
-    "listitem_5": "Advertentiecopy (Google, Meta, LinkedIn)",
-    "listitem_6": "Productomschrijvingen voor e-commerce",
-    "listitem_7": "Scriptwriting voor video of podcast",
-    "text_3": "Wij zorgen ervoor dat jouw merkverhaal duidelijk en overtuigend overkomt.",
-
-    "heading_3": "Waarom IT Solutions Worldwide voor Content Creatie en Copywriting?",
-    "listitem_8": "Ervaren native en near-native Nederlandstalige schrijvers",
-    "listitem_9": "Aangepast op jouw tone of voice en doelgroep",
-    "listitem_10": "Gericht op conversie, SEO en leesbaarheid",
-    "listitem_11": "Creatieve insteek met commerciële focus",
-    "listitem_12": "Snelle levering en directe communicatie",
-    "text_4": "Of je nu een start-up bent of een groeiend bedrijf, wij leveren content die aansluit op jouw doelstellingen.",
-
-    "heading_4": "Flexibele Samenwerking – Uurtarief en Maatwerkpakketten",
-    "text_5": "Onze tarieven zijn transparant en flexibel:",
-    "listitem_13": "Uurtarief vanaf € XX per uur",
-    "listitem_14": "Maandpakketten voor structurele contentbehoeften",
-    "listitem_15": "Projectprijzen voor grotere opdrachten (zoals websites of campagnes)",
-    "text_6": "Je betaalt alleen voor wat je nodig hebt – zonder verborgen kosten.",
-
-    "heading_5": "Voor Welke Sectoren Schrijven Wij Content?",
-    "text_7": "Onze copywriters hebben ervaring in diverse branches, waaronder:",
-    "listitem_16": "E-commerce",
-    "listitem_17": "Coaching en educatie",
-    "listitem_18": "Gezondheidszorg en wellness",
-    "listitem_19": "Finance en vastgoed",
-    "listitem_20": "B2B-diensten",
-    "listitem_21": "Tech en innovatie",
-    "text_8": "Jouw sector niet genoemd? Geen probleem – wij verdiepen ons graag in jouw markt.",
-
-    "heading_6": "Onze Werkwijze – Van Briefing tot Kwalitatieve Tekst",
-    "listitem_22": "Kennismaking & briefing – Jij vertelt ons over je merk, doelgroep en doelen",
-    "listitem_23": "Onderzoek & contentstrategie – We analyseren je niche en bepalen de juiste toon",
-    "listitem_24": "Creatie & feedbackronde – Je ontvangt een eerste versie met ruimte voor revisie",
-    "listitem_25": "Oplevering & publicatie – De teksten zijn klaar voor gebruik op jouw platformen",
-    "text_9": "Snelle levering en duidelijke communicatie zijn bij ons standaard.",
-
-    "heading_7": "Klaar om Te Starten met Krachtige Content?",
-    "text_10": "Wil je jouw boodschap helder overbrengen en je doelgroep écht raken? Neem vandaag nog contact op met ons contentteam.",
-    "button2": "Ontvang jouw persoonlijke contentvoorstel"
-  },
-  "OnlineMarketer": {
-    "headline_1": "Online Marketeer Inhuren – Laat Jouw Bedrijf Digitaal Groeien",
-    "button_1": "Plan een Gratis Consultatie",
-
-    "heading_1": "Waarom Een Online Marketeer Onmisbaar is voor Jouw Digitale Strategie",
-    "text_1": "In een steeds competitievere markt is online zichtbaarheid geen luxe, maar een noodzaak. Een professionele online marketeer helpt jouw bedrijf groeien met slimme strategieën, data-analyse en creatieve campagnes. Of je nu leads wilt genereren, je omzet wilt verhogen of je merk wilt versterken – wij bieden de juiste oplossing.",
-
-    "heading_2": "Wat Doet Onze Online Marketeer Voor Jou?",
-    "text_2": "Onze online marketeers zijn breed inzetbaar en gespecialiseerd in:",
-    "listitem_1": "SEO (zoekmachineoptimalisatie)",
-    "listitem_2": "SEA (advertenties via Google Ads, Bing, etc.)",
-    "listitem_3": "Social Media Marketing (organisch en betaald)",
-    "listitem_4": "E-mailmarketing & automatisering",
-    "listitem_5": "Conversie-optimalisatie (CRO)",
-    "listitem_6": "Contentstrategie & planning",
-    "listitem_7": "Webanalyse (Google Analytics, Tag Manager, Hotjar)",
-    "text_3": "Alles met focus op rendement, data en klantgerichtheid.",
-
-    "heading_3": "Online Marketing Diensten Afgestemd op Jouw Doelen",
-    "text_4": "Bij IT Solutions Worldwide werken we niet met standaardpakketten, maar met maatwerkoplossingen. Onze online marketeers passen hun strategie aan op:",
-    "listitem_8": "Jouw doelgroep en marktsegment",
-    "listitem_9": "De fase van je onderneming (startend, groeiend, gevestigd)",
-    "listitem_10": "Je bestaande kanalen en tools",
-    "listitem_11": "Budget en doelstellingen (ROI)",
-
-    "heading_4": "Uurtarief Online Marketeer – Flexibel en Transparant",
-    "text_5": "Wij bieden onze online marketingdiensten aan tegen scherpe tarieven:",
-    "listitem_12": "Vanaf € XX per uur, afhankelijk van specialisatie en complexiteit",
-    "listitem_13": "Korting bij langdurige samenwerking of maandpakketten",
-    "listitem_14": "Geen verborgen kosten of lange contracten",
-
-    "heading_5": "Voor Wie Werken Onze Online Marketeers?",
-    "text_6": "Onze klanten variëren van lokale ondernemers tot internationale webshops. Enkele sectoren waarin we actief zijn:",
-    "listitem_15": "Detailhandel & e-commerce",
-    "listitem_16": "Gezondheidszorg & beauty",
-    "listitem_17": "Horeca & recreatie",
-    "listitem_18": "Coaching & educatie",
-    "listitem_19": "Vastgoed & financiële diensten",
-    "listitem_20": "B2B-dienstverlening",
-
-    "heading_6": "Onze Aanpak – Resultaatgericht en Transparant",
-    "listitem_21": "Strategische intake – We analyseren jouw doelen, doelgroep en concurrentie",
-    "listitem_22": "Plan van aanpak – Heldere roadmap met prioriteiten en KPI’s",
-    "listitem_23": "Implementatie – Campagnes, optimalisaties en content",
-    "listitem_24": "Monitoring & rapportage – Doorlopende bijsturing op basis van data",
-    "text_7": "Jij behoudt altijd inzicht en controle over de voortgang.",
-
-    "heading_7": "Direct Online Marketing Hulp Nodig?",
-    "text_8": "Wil je direct meer verkeer, leads of verkopen genereren? Of ben je op zoek naar structurele digitale groei? Onze online marketeers staan klaar om jouw bedrijf naar een hoger niveau te tillen.",
-    "button2": "Plan een gratis strategisch gesprek"
-  },
-  "WebDeveloper": {
-    "headline_1": "Web designer of Web developer Inhuren – Bouw Jouw Online Succes",
-
-    "heading_1": "Professionele Websites en Webapplicaties Voor Elk Bedrijf",
-    "text_1": "Een goed ontworpen website is het visitekaartje van jouw bedrijf. Onze webdesigners en developers combineren visueel design met technische expertise om websites te bouwen die niet alleen mooi zijn, maar ook snel, veilig en gebruiksvriendelijk.",
-    "text_2": "Wij ontwerpen én ontwikkelen websites die:",
-    "listitem_1": "Perfect werken op mobiel, tablet en desktop",
-    "listitem_2": "SEO-geoptimaliseerd zijn vanaf de basis",
-    "listitem_3": "Conversiegericht gebouwd zijn",
-    "listitem_4": "Volledig maatwerk of gebaseerd op CMS zoals WordPress, Shopify of Webflow",
-
-    "heading_2": "Wat Biedt Onze Webdesigner / Developer aan?",
-    "text_3": "Onze specialisten kunnen je ondersteunen bij onder andere:",
-    "listitem_5": "Custom webdesign (UI/UX)",
-    "listitem_6": "Front-end ontwikkeling (HTML, CSS, JavaScript, React, Vue)",
-    "listitem_7": "Back-end ontwikkeling (PHP, Node.js, Laravel, etc.)",
-    "listitem_8": "CMS-implementaties (WordPress, WooCommerce, Shopify, Webflow)",
-    "listitem_9": "Webshops en e-commerce oplossingen",
-    "listitem_10": "Webapplicaties en platforms",
-    "listitem_11": "Website onderhoud, updates en optimalisatie",
-    "listitem_12": "Hosting, beveiliging en laadsnelheidoptimalisatie",
-
-    "heading_3": "Op Maat Gemaakte Weboplossingen Voor Jouw Branche",
-    "text_4": "Elke sector heeft andere behoeften. Wij leveren websites op maat voor:",
-    "listitem_13": "E-commerce & retail",
-    "listitem_14": "Zorg & welzijn",
-    "listitem_15": "Onderwijs & coaching",
-    "listitem_16": "Horeca & toerisme",
-    "listitem_17": "Finance & vastgoed",
-    "listitem_18": "Start-ups & SaaS-platformen",
-    "text_5": "Heb je specifieke eisen? Onze developers denken technisch én strategisch met je mee.",
-
-    "heading_4": "Uurtarief Webdesigner / Developer – Transparant en Flexibel",
-    "text_6": "Onze tarieven zijn afgestemd op jouw wensen en het soort project:",
-    "listitem_19": "Uurtarief vanaf € XX per uur",
-    "listitem_20": "Korting bij grotere projecten of maandelijkse ondersteuning",
-    "listitem_21": "Maatwerkpakketten voor nieuwe websites of onderhoud",
-    "text_7": "Je ontvangt altijd een duidelijke offerte vooraf, zonder verrassingen.",
-
-    "heading_5": "Onze Werkwijze – Van Idee tot Live Website",
-    "listitem_22": "Strategie & briefing – Wat wil je bereiken met je website?",
-    "listitem_23": "Designfase – Wireframes en visuele mock-ups die jouw merk versterken",
-    "listitem_24": "Ontwikkeling & testen – Snel, responsief en gebruiksvriendelijk",
-    "listitem_25": "Livegang & nazorg – Inclusief optimalisatie, support en updates",
-    "text_8": "Samen bouwen we aan een website die écht werkt voor jouw bedrijf.",
-
-    "heading_6": "Waarom Kiezen Voor IT Solutions Worldwide?",
-    "listitem_26": "Ervaren webdesigners en full-stack developers",
-    "listitem_27": "Maatwerkoplossingen voor elk budget",
-    "listitem_28": "Snel schakelen, heldere communicatie",
-    "listitem_29": "Internationale expertise, lokale focus",
-    "listitem_30": "Ondersteuning van idee tot onderhoud",
-
-    "heading_7": "Klaar Voor een Professionele Website of Webapp?",
-    "text_9": "Of je nu een nieuwe website wilt bouwen of een bestaande site wilt verbeteren, wij staan voor je klaar. Laat jouw digitale visitekaartje het verschil maken.",
-    "button2": "Start vandaag nog met jouw project"
-  },
-  "GraphicDesigner": {
-    "headline_1": "Grafisch Ontwerper Inhuren – Creatieve Designs Die Impact Maken",
-
-    "heading_1": "Professionele Vormgeving voor Merkidentiteit en Communicatie",
-    "text_1": "Visuele communicatie is essentieel in elk bedrijfsverhaal. Onze grafisch ontwerpers combineren creativiteit met strategisch denken om ontwerpen te maken die de juiste indruk achterlaten. Van logo’s tot brochures, wij leveren alles op maat.",
-
-    "heading_2": "Wat Kan Onze Grafisch Ontwerper Voor Jouw Bedrijf Betekenen?",
-    "text_2": "Wij ondersteunen bedrijven met uiteenlopende designopdrachten, waaronder:",
-    "listitem_1": "Logo- en huisstijlontwikkeling",
-    "listitem_2": "Flyers, posters en brochures",
-    "listitem_3": "Visitekaartjes en briefpapier",
-    "listitem_4": "Webdesign en UI/UX-ontwerpen",
-    "listitem_5": "Social media visuals en advertenties",
-    "listitem_6": "Presentaties en pitch decks",
-    "listitem_7": "Packaging design",
-    "listitem_8": "Infographics en banners",
-    "text_3": "Onze focus ligt op herkenbaarheid, consistentie en professionaliteit.",
-
-    "heading_3": "Creatieve Designs voor Elke Branche en Doelgroep",
-    "text_4": "Onze grafisch ontwerpers hebben ervaring in diverse sectoren, zoals:",
-    "listitem_9": "Retail & e-commerce",
-    "listitem_10": "Gezondheidszorg en beauty",
-    "listitem_11": "Horeca & toerisme",
-    "listitem_12": "Vastgoed & bouw",
-    "listitem_13": "Onderwijs & educatie",
-    "listitem_14": "Start-ups & scale-ups",
-    "text_5": "We stemmen het design af op jouw tone-of-voice, doelgroep en merkpersoonlijkheid.",
-
-    "heading_4": "Uurtarief Grafisch Ontwerper – Betaalbaar en Transparant",
-    "text_6": "Bij IT Solutions Worldwide werken we met flexibele tarieven, afhankelijk van het projecttype:",
-    "listitem_15": "Vanaf € XX per uur, afhankelijk van complexiteit en specialisatie",
-    "listitem_16": "Korting bij langdurige opdrachten of designpakketten",
-    "listitem_17": "Heldere communicatie vooraf, zonder verborgen kosten",
-
-    "heading_5": "Designproces – Van Concept tot Oplevering",
-    "listitem_18": "Briefing & inspiratie – We leren jouw merk, doelen en voorkeuren kennen",
-    "listitem_19": "Conceptontwikkeling – Eerste schetsen en ideeën",
-    "listitem_20": "Ontwerp & revisie – Interactie en aanpassingen op basis van feedback",
-    "listitem_21": "Oplevering in alle formaten – Klaar voor print, online of gebruik in campagnes",
-    "text_7": "We zorgen dat je bestanden ontvangt in hoge kwaliteit en in meerdere formaten.",
-
-    "heading_6": "Waarom Kiezen Voor Onze Grafisch Ontwerpers?",
-    "listitem_22": "Creatief, strategisch en technisch sterk",
-    "listitem_23": "Ruime ervaring in zowel digitaal als print",
-    "listitem_24": "Snelle oplevering zonder kwaliteitsverlies",
-    "listitem_25": "Design op maat, volledig afgestemd op jouw merk",
-    "listitem_26": "Eén aanspreekpunt voor al je grafische wensen",
-
-    "heading_7": "Klaar Om Jouw Visuele Communicatie Te Versterken?",
-    "text_9": "Of je nu een volledig nieuwe huisstijl nodig hebt of ondersteuning bij een specifieke campagne, wij helpen je graag met opvallend, doordacht en professioneel design.",
-    "button2": "Plan een gratis kennismakingsgesprek"
-  },
-  "CustomerSupport": {
-    "headline_1": "Customer Support Agent Inhuren – Professionele Klantenservice op Afstand",
-
-    "heading_1": "Excellente Klantenservice Voor Jouw Bedrijf, 100% Remote",
-    "text_1": "In een tijd waarin klanttevredenheid het verschil maakt, is een goede klantenservice onmisbaar. Onze remote Customer Support Agents bieden professionele, meertalige ondersteuning via telefoon, e-mail, chat of sociale media. Snel, vriendelijk en resultaatgericht.",
-
-    "heading_2": "Wat Kun Je Verwachten van Onze Customer Support Medewerkers?",
-    "text_2": "Onze remote support agents zijn getraind in het leveren van uitstekende service, afgestemd op jouw merkidentiteit. Ze helpen met:",
-    "listitem_1": "Beantwoorden van klantvragen (NL / EN / meertalig)",
-    "listitem_2": "Orderverwerking en retourafhandeling",
-    "listitem_3": "Klachtbehandeling en probleemoplossing",
-    "listitem_4": "Ondersteuning via live chat, e-mail, telefoon en social media",
-    "listitem_5": "CRM-systeembeheer (Zendesk, Hubspot, Freshdesk, etc.)",
-    "listitem_6": "Up-selling en cross-selling waar relevant",
-    "listitem_7": "24/7 of tijdens piekuren beschikbaar",
-
-    "heading_3": "Customer Support Voor Elke Sector en Elk Kanaal",
-    "text_3": "Wij leveren klantenservice op maat voor:",
-    "listitem_8": "Webshops & e-commerce",
-    "listitem_9": "Softwarebedrijven (SaaS)",
-    "listitem_10": "Logistiek & transport",
-    "listitem_11": "Hospitality & toerisme",
-    "listitem_12": "Dienstverlenende sector",
-    "listitem_13": "Start-ups en groeibedrijven",
-    "text_4": "Onze remote agents zijn flexibel inzetbaar en snel operationeel.",
-
-    "heading_4": "Uurtarief Customer Support Agent – Flexibele Pakketten",
-    "text_5": "Je betaalt alleen voor de uren die je nodig hebt:",
-    "listitem_14": "Vanaf € XX per uur, afhankelijk van complexiteit & talen",
-    "listitem_15": "Kortingen voor langdurige opdrachten of meerdere agents",
-    "listitem_16": "Duidelijke afspraken en geen verborgen kosten",
-
-    "heading_5": "Onze Werkwijze – Snel en Efficiënt aan de Slag",
-    "listitem_17": "Inventarisatie van je behoeften",
-    "listitem_18": "Selectie van geschikte support agent(s)",
-    "listitem_19": "Training op jouw systemen en tone of voice",
-    "listitem_20": "Live inzet en regelmatige rapportage",
-    "text_6": "Je behoudt volledige controle, zonder de personeelslast.",
-
-    "heading_6": "Waarom Kiezen Voor IT Solutions Worldwide?",
-    "listitem_21": "Ervaren support agents, direct inzetbaar",
-    "listitem_22": "Meertalige ondersteuning (NL, EN, DE, FR...)",
-    "listitem_23": "Remote & flexibel inzetbaar (tijdzones en 24/7 optioneel)",
-    "listitem_24": "Kostenbesparend zonder in te leveren op kwaliteit",
-    "listitem_25": "Jouw merk, jouw regels – wij passen ons aan",
-
-    "heading_7": "Klaar Voor Betrouwbare Klantenservice op Afstand?",
-    "text_9": "Verbeter je klantrelaties en laat je klanten professioneel en snel helpen. Onze remote Customer Support Agents staan klaar om jouw bedrijf te versterken.",
-    "button2": "Plan een gratis intakegesprek"
-  },
-  "DataEntry": {
-    "headline_1": "Data Entry Specialist Inhuren – Efficiënte en Nauwkeurige Gegevensverwerking op Afstand",
-
-    "heading_1": "Betrouwbare Data Entry Ondersteuning voor Jouw Bedrijf",
-    "text_1": "Onze remote Data Entry Specialisten zorgen voor foutloze en gestructureerde gegevensinvoer, essentieel voor jouw administratie, rapportages en systemen. Wij helpen je bij het digitaliseren, bijwerken en organiseren van data, zodat jij tijd en kosten bespaart.",
-
-    "heading_2": "Wat Doet Een Data Entry Specialist Concreet Voor Jou?",
-    "text_2": "Onze experts zijn gespecialiseerd in:",
-    "listitem_1": "Invoeren van klantgegevens, productinformatie en formulieren",
-    "listitem_2": "Overzetten van data tussen systemen of software (CRM, ERP)",
-    "listitem_3": "Facturatie- en voorraadbeheer",
-    "listitem_4": "E-mail- en contactlijsten bijhouden",
-    "listitem_5": "Document- en archiefdigitalisatie",
-    "listitem_6": "Data cleaning & formatting",
-    "listitem_7": "Excel- en databasebeheer",
-    "text_3": "We zorgen voor snelheid én precisie, met oog voor detail.",
-
-    "heading_3": "Data Entry Ondersteuning Voor Elke Sector",
-    "text_4": "Onze specialisten werken voor bedrijven in onder andere:",
-    "listitem_8": "E-commerce & retail",
-    "listitem_9": "Gezondheidszorg & zorgadministratie",
-    "listitem_10": "Financiële diensten",
-    "listitem_11": "Onderwijs & opleidingsorganisaties",
-    "listitem_12": "Logistiek en transport",
-    "listitem_13": "HR & recruitment",
-    "text_5": "Of je nu een tijdelijke boost nodig hebt of structurele ondersteuning zoekt, wij leveren de juiste oplossing.",
-
-    "heading_4": "Uurtarief Data Entry Specialist – Transparant en Betaalbaar",
-    "text_6": "Onze tarieven zijn flexibel:",
-    "listitem_14": "Vanaf € XX per uur, afhankelijk van projectvolume en systemen",
-    "listitem_15": "Korting bij langdurige samenwerking of vaste uren per maand",
-    "listitem_16": "Geen verborgen kosten – duidelijke offerte vooraf",
-
-    "heading_5": "Ons Proces – Snel en Zorgeloos Van Start",
-    "listitem_17": "Intake en projectafstemming",
-    "listitem_18": "Selectie van een passende specialist",
-    "listitem_19": "Introductie en toegang tot systemen",
-    "listitem_20": "Live gegevensinvoer met regelmatige updates",
-    "listitem_21": "Veilige opslag en overdracht van data",
-    "text_7": "We gebruiken veilige tools en houden ons aan jouw beveiligingsrichtlijnen.",
-
-    "heading_6": "Waarom Kiezen Voor IT Solutions Worldwide?",
-    "listitem_22": "Ervaren en getrainde Data Entry Specialisten",
-    "listitem_23": "Snel inzetbaar en remote beschikbaar",
-    "listitem_24": "Hoge nauwkeurigheid en betrouwbaarheid",
-    "listitem_25": "Flexibel in tijdzones en werktijden",
-    "listitem_26": "Schaalbaar volgens jouw groei of seizoensdrukte",
-
-    "heading_7": "Klaar Om Gegevensinvoer Uit Te Besteden?",
-    "text_8": "Verspil geen tijd aan handmatig werk. Laat onze specialisten het zware werk doen, zodat jij je kunt focussen op strategie en groei.",
-    "button2": "Plan een gratis intakegesprek"
-  },
-  "FrontDeveloper": {
-    "headline_1": "Front-end Developer Inhuren – Professionele Webontwikkeling op Afstand",
-
-    "heading_1": "Ervaren Front-end Developers Voor Elke Digitale Uitdaging",
-    "text_1": "Onze remote front-end developers bouwen pixel-perfect, responsive en snelle websites en webapplicaties. Ze zorgen voor de visuele en functionele gebruikerservaring, en werken nauw samen met jouw back-end team of designer.",
-
-    "heading_2": "Wat Doet Een Front-end Developer Voor Jouw Project?",
-    "text_2": "Onze specialisten zijn bedreven in:",
-    "listitem_1": "HTML5, CSS3, JavaScript",
-    "listitem_2": "React, Vue.js, Angular",
-    "listitem_3": "Responsive en mobile-first design",
-    "listitem_4": "Integratie met REST API’s",
-    "listitem_5": "Optimalisatie van laadtijd en performance",
-    "listitem_6": "UX/UI-aanpassingen en implementatie van designbestanden",
-    "listitem_7": "Werken met tools als Git, Figma, Webpack, Tailwind en Bootstrap",
-    "text_3": "Of het nu gaat om een nieuwe website, webshop, dashboard of onderhoud, wij leveren kwaliteit.",
-
-    "heading_3": "Voor Welke Sectoren Werken Onze Front-end Developers?",
-    "text_4": "Onze developers zijn inzetbaar voor:",
-    "listitem_8": "Startups en SaaS-bedrijven",
-    "listitem_9": "E-commerce platforms",
-    "listitem_10": "Marketing- en reclamebureaus",
-    "listitem_11": "Onderwijsplatforms",
-    "listitem_12": "Gezondheidszorg en medische software",
-    "listitem_13": "Financiële en zakelijke applicaties",
-
-    "heading_4": "Uurtarief Front-end Developer – Transparant en Flexibel",
-    "text_5": "Onze tarieven zijn afgestemd op jouw project:",
-    "listitem_14": "Vanaf € XX per uur, afhankelijk van technologie en looptijd",
-    "listitem_15": "Maandelijkse pakketten voor structurele ondersteuning",
-    "listitem_16": "Korting bij langdurige of fulltime inzet",
-
-    "heading_5": "Ons Proces – Snel, Veilig en Efficiënt",
-    "listitem_17": "Intakegesprek en projectanalyse",
-    "listitem_18": "Selectie van geschikte developer(s)",
-    "listitem_19": "Technische afstemming en toegang tot systemen",
-    "listitem_20": "Ontwikkeling, testen en oplevering",
-    "listitem_21": "Regelmatige updates en overlegmomenten",
-    "text_6": "Wij werken met duidelijke sprintplanningen en waar nodig met Agile methodiek.",
-
-    "heading_6": "Waarom Kiezen Voor IT Solutions Worldwide?",
-    "listitem_22": "Gekwalificeerde front-end developers met up-to-date skills",
-    "listitem_23": "Beschikbaar in verschillende tijdzones",
-    "listitem_24": "Veilige samenwerking via projecttools en NDA’s",
-    "listitem_25": "Mogelijkheid tot tijdelijke of langdurige samenwerking",
-    "listitem_26": "Schaalbaar ontwikkelteam op aanvraag",
-
-    "heading_7": "Klaar Om Jouw Webinterface Te Laten Bouwen of Optimaliseren?",
-    "text_7": "Of je nu een MVP ontwikkelt of een complete front-end herbouwt, wij leveren de juiste specialist om jouw project tot leven te brengen."
-  },
-  "FullDeveloper": {
-    "headline_1": "Full-Stack Developer Inhuren – Complete Webontwikkeling Vanuit Eén Hand",
-
-    "heading_1": "Allround Ontwikkelaar Voor Jouw Digitale Projecten",
-    "text_1": "Een full-stack developer combineert front-end en back-end expertise, en is de perfecte partner voor bedrijven die één aanspreekpunt willen voor het hele ontwikkeltraject. Of je nu een MVP, platform of maatwerkapplicatie ontwikkelt – wij leveren de juiste specialist op afstand.",
-
-    "heading_2": "Wat Doet Een Full-Stack Developer Concreet Voor Jou?",
-    "text_2": "Onze full-stack developers zijn onderlegd in:",
-    "listitem_1": "Front-end: HTML, CSS, JavaScript, React, Angular, Vue.js",
-    "listitem_2": "Back-end: Node.js, PHP, Laravel, Python, .NET, Ruby on Rails",
-    "listitem_3": "Databases: MySQL, PostgreSQL, MongoDB",
-    "listitem_4": "Versiebeheer: Git, GitHub, GitLab",
-    "listitem_5": "Cloud & DevOps: AWS, Azure, CI/CD integraties",
-    "listitem_6": "API-koppelingen: RESTful, GraphQL, externe integraties",
-    "text_3": "Je profiteert van een complete technische oplossing, zonder meerdere ontwikkelaars te moeten aansturen.",
-
-    "heading_3": "Voor Welke Soorten Projecten Is Een Full-Stack Developer Ideaal?",
-    "listitem_7": "SaaS-platforms en webapplicaties",
-    "listitem_8": "E-commerce oplossingen en maatwerk webshops",
-    "listitem_9": "Backoffice systemen en dashboards",
-    "listitem_10": "API-ontwikkeling en mobiele webapp-integraties",
-    "listitem_11": "MVP’s en prototypes voor startups",
-    "text_4": "Onze developers passen zich aan aan jouw stack en workflow.",
-
-    "heading_4": "Uurtarief Full-Stack Developer – Flexibele Oplossingen Voor Elk Budget",
-    "text_5": "Wij hanteren transparante tarieven:",
-    "listitem_12": "Vanaf € XX per uur, afhankelijk van technologie en complexiteit",
-    "listitem_13": "Korting bij fulltime inzet of langdurige samenwerking",
-    "listitem_14": "Maandelijkse pakketten of projectbasis mogelijk",
-
-    "heading_5": "Veilig en Efficiënt Werken met Onze Remote Developers",
-    "listitem_15": "Intake en technische briefing",
-    "listitem_16": "Selectie van geschikte full-stack specialist",
-    "listitem_17": "Opstartfase met duidelijke taken en deadlines",
-    "listitem_18": "Doorlopende communicatie en codeoverdracht",
-    "listitem_19": "Afronding en nazorg, indien nodig opschaling",
-    "text_6": "Onze werkwijze is gestructureerd, transparant en schaalbaar.",
-
-    "heading_6": "Waarom IT Solutions Worldwide?",
-    "listitem_20": "Gescreende full-stack professionals met aantoonbare ervaring",
-    "listitem_21": "Bewezen kennis van moderne frameworks en tools",
-    "listitem_22": "Flexibel inzetbaar op afstand",
-    "listitem_23": "Ondersteuning in het Nederlands en Engels",
-    "listitem_24": "Volledige controle over projectvoortgang en documentatie",
-
-    "heading_7": "Klaar Om Jouw Volledige Applicatie Te Laten Bouwen?",
-    "text_7": "Met een ervaren full-stack developer haal je alles in huis: snelheid, efficiëntie en technisch inzicht."
-  },
-  "AppDeveloper": {
-    "headline_1": "App Developer Inhuren – Maatwerk iOS & Android Apps",
-
-    "heading_1": "Ervaren App Developers Voor Native en Cross-Platform Oplossingen",
-    "text_1": "Bij ITSolutionsWorldwide kun je een professionele app developer inhuren die volledig remote werkt. Onze specialisten bouwen gebruiksvriendelijke, snelle en veilige mobiele apps voor iOS, Android of beide platformen tegelijk.",
-
-    "heading_2": "Welke Technologieën Gebruiken Onze App Developers?",
-    "text_2": "Afhankelijk van jouw wensen werken onze developers met:",
-    "listitem_1": "Native iOS: Swift, Objective-C",
-    "listitem_2": "Native Android: Kotlin, Java",
-    "listitem_3": "Cross-platform: Flutter, React Native, Xamarin",
-    "listitem_4": "Back-end ondersteuning: Firebase, Node.js, Laravel",
-    "listitem_5": "API-koppelingen: RESTful en GraphQL",
-    "listitem_6": "App Stores: App Store & Google Play publicatieproces",
-
-    "heading_3": "Voor Welke Toepassingen Kun Je Een App Developer Inzetten?",
-    "listitem_7": "E-commerce en bestelapps",
-    "listitem_8": "Interne bedrijfsapplicaties (ERP, CRM)",
-    "listitem_9": "SaaS-apps voor mobiel gebruik",
-    "listitem_10": "Gezondheidszorg en fitness-apps",
-    "listitem_11": "Onderwijs- en e-learning apps",
-    "listitem_12": "Loyaltyprogramma’s en klantportalen",
-    "text_4": "Onze ontwikkelaars zorgen voor een vlotte UX/UI en solide performance.",
-
-    "heading_4": "Uurtarief App Developer – Flexibel en Transparant",
-    "text_5": "Onze tarieven zijn afgestemd op jouw projectbehoefte:",
-    "listitem_13": "Vanaf € XX per uur, afhankelijk van de technologie en projectomvang",
-    "listitem_14": "Dag- en maandtarieven beschikbaar",
-    "listitem_15": "Mogelijkheid tot vaste afspraken bij langdurige samenwerking",
-
-    "heading_5": "Hoe Werkt Het Inhuren Van Een App Developer Bij Ons?",
-    "listitem_16": "Kennismaking en functionele briefing",
-    "listitem_17": "Match met geschikte developer(s)",
-    "listitem_18": "Start ontwikkeltraject: van prototype tot publicatie",
-    "listitem_19": "Wekelijkse updates en feedbackmomenten",
-    "listitem_20": "Oplevering, support en eventueel doorontwikkeling",
-    "text_6": "Je behoudt volledige controle over het proces, terwijl wij zorgen voor technische uitvoering.",
-
-    "heading_6": "Waarom IT Solutions Worldwide Voor Jouw App-ontwikkeling?",
-    "listitem_21": "Gekwalificeerde app developers met ervaring in diverse branches",
-    "listitem_22": "Snelle opstart en duidelijke communicatie",
-    "listitem_23": "Remote inzetbaar met flexibele beschikbaarheid",
-    "listitem_24": "Beveiligde overdracht van broncode en data",
-    "listitem_25": "Ondersteuning bij publicatie en updates",
-
-    "heading_7": "Klaar Voor Een Krachtige App Die Jouw Bedrijf Laat Groeien?",
-    "text_7": "Wij leveren app developers die meedenken, bouwen en opleveren binnen jouw deadline en budget."
-  },
-  "SoftwareTester": {
-    "headline_1": "Software Tester Inhuren – Zorg Voor Een Foutloos Digitaal Product",
-
-    "heading_1": "Waarom Een QA Specialist Onmisbaar Is Voor Jouw Software",
-    "text_1": "Een goede software tester (Quality Assurance specialist) zorgt ervoor dat jouw applicatie niet alleen werkt, maar ook veilig, gebruiksvriendelijk en stabiel is. Bij ITSolutionsWorldwide huur je remote QA-professionals in die gespecialiseerd zijn in teststrategieën op maat.",
-
-    "heading_2": "Onze Testmethodes en Tools",
-    "text_2": "Onze QA-specialisten beheersen zowel handmatig als geautomatiseerd testen, waaronder:",
-    "listitem_1": "Functioneel testen",
-    "listitem_2": "Regressie- en integratietesten",
-    "listitem_3": "Performance en load testing",
-    "listitem_4": "Security testing",
-    "listitem_5": "Cross-browser en cross-platform tests",
-    "listitem_6": "Automated testing: Selenium, Cypress, Postman",
-    "listitem_7": "Bugtracking tools: Jira, Bugzilla, TestRail",
-    "text_3": "Met ons testproces sporen we problemen op vóórdat jouw eindgebruiker ze tegenkomt.",
-
-    "heading_3": "QA Voor Elk Type Project of Platform",
-    "text_4": "Onze testers zijn inzetbaar voor onder andere:",
-    "listitem_8": "Webapplicaties",
-    "listitem_9": "Mobiele apps (iOS/Android)",
-    "listitem_10": "SaaS-platforms",
-    "listitem_11": "E-commerce oplossingen",
-    "listitem_12": "API’s en koppelingen",
-    "listitem_13": "Desktopsoftware",
-    "text_5": "We stemmen onze testaanpak af op jouw technologische stack en releaseplanning.",
-
-    "heading_4": "Uurtarief Software Tester – Betaalbaar en Flexibel",
-    "text_6": "Bij ITSolutionsWorldwide kies je voor kwaliteit én transparantie:",
-    "listitem_14": "Vanaf € XX per uur, afhankelijk van projectcomplexiteit",
-    "listitem_15": "Maand- of projectbasis mogelijk",
-    "listitem_16": "Korting bij langdurige inzet of meerdere testers",
-
-    "heading_5": "Zo Werkt Het Samenwerken Met Onze QA Experts",
-    "listitem_17": "Analyse van jouw applicatie of ontwikkeltraject",
-    "listitem_18": "Opstellen van testplan en testscenario’s",
-    "listitem_19": "Dagelijkse of wekelijkse testrondes",
-    "listitem_20": "Duidelijke rapportage van bugs en aanbevelingen",
-    "listitem_21": "Samenwerking met ontwikkelaars voor bugfixes",
-    "listitem_22": "Hertesten en goedkeuring vóór release",
-    "text_7": "Je houdt grip op kwaliteit en deadlines zonder extra druk op je eigen team.",
-
-    "heading_6": "Waarom Kiezen Voor IT Solutions Worldwide?",
-    "listitem_23": "Gescreende testers met ervaring in verschillende sectoren",
-    "listitem_24": "Teststrategieën afgestemd op jouw type product",
-    "listitem_25": "Flexibele inzet en schaalbaarheid",
-    "listitem_26": "Volledig remote en direct beschikbaar",
-    "listitem_27": "Ondersteuning in het Nederlands en Engels",
-
-    "heading_7": "Klaar Voor Een Soepele, Foutloze Lancering?",
-    "text_8": "Met een ervaren QA-expert aan je zijde ben je verzekerd van een professioneel getest eindproduct dat aan alle kwaliteitsnormen voldoet."
-  },
-  "ITSupport": {
-    "headline_1": "IT Support Inhuren – Remote Ondersteuning voor Jouw Bedrijf",
-
-    "heading_1": "Direct Toegang Tot Betrouwbare IT Support Specialisten",
-    "text_1": "IT Solutions Worldwide levert ervaren IT support agents die volledig op afstand werken. Of het nu gaat om dagelijkse technische ondersteuning, systeembeheer of netwerkproblemen, wij zorgen voor snelle en deskundige hulp.",
-
-    "heading_2": "Wat Kun Je Verwachten Van Onze Remote IT Support?",
-    "text_2": "Onze IT-supportdiensten zijn gericht op:",
-    "listitem_1": "Eerste- en tweedelijns helpdesk",
-    "listitem_2": "Ondersteuning via telefoon, e-mail of chat",
-    "listitem_3": "Installatie en onderhoud van software",
-    "listitem_4": "Netwerk- en serverbeheer (Windows, macOS, Linux)",
-    "listitem_5": "Microsoft 365 en Google Workspace ondersteuning",
-    "listitem_6": "Monitoring en probleemoplossing",
-    "listitem_7": "Ondersteuning voor eindgebruikers en kleine teams",
-
-    "heading_3": "IT Support Voor Elk Type Organisatie",
-    "text_3": "Onze remote IT support specialisten zijn inzetbaar voor:",
-    "listitem_8": "KMO's en startups",
-    "listitem_9": "E-commerce platforms",
-    "listitem_10": "IT-dienstverleners",
-    "listitem_11": "Interne afdelingen van grotere bedrijven",
-    "listitem_12": "Projectmatige ondersteuning of vaste samenwerking",
-
-    "heading_4": "Welke Tools en Systemen Beheersen Onze IT Support Experts?",
-    "text_4": "Onze medewerkers zijn ervaren met:",
-    "listitem_13": "Remote support tools: TeamViewer, AnyDesk, Zoho Assist",
-    "listitem_14": "Ticketing systemen: Zendesk, Freshdesk, Jira Service Management",
-    "listitem_15": "Systeembeheer: Active Directory, Intune, SCCM",
-    "listitem_16": "Cloud platforms: Azure, AWS, Google Cloud",
-    "listitem_17": "Beveiligingstools en back-upoplossingen",
-
-    "heading_5": "Uurtarief IT Support – Flexibel en Transparant",
-    "text_5": "Onze tarieven zijn afgestemd op jouw behoeften:",
-    "listitem_18": "Vanaf € XX per uur",
-    "listitem_19": "Maatwerkpakketten voor dagelijks of wekelijks support",
-    "listitem_20": "Tijdelijke ondersteuning of langdurige samenwerking",
-
-    "heading_6": "Zo Werkt Het Inhuren Van Remote IT Support Via Ons",
-    "listitem_21": "Intakegesprek om jouw supportbehoefte te bepalen",
-    "listitem_22": "Toewijzing van een geschikte IT support medewerker",
-    "listitem_23": "Snelle opstart en toegang tot jouw systemen",
-    "listitem_24": "Heldere communicatie en rapportages",
-    "listitem_25": "Continue ondersteuning en schaalbare inzet",
-
-    "heading_7": "Waarom Kiezen Voor IT Solutions Worldwide?",
-    "listitem_26": "Snel inzetbare remote IT support experts",
-    "listitem_27": "Beschikbaarheid op Nederlandse werktijden",
-    "listitem_28": "Proactieve monitoring en probleemoplossing",
-    "listitem_29": "Meertalige ondersteuning mogelijk (Nederlands & Engels)",
-    "listitem_30": "Kostenefficiënt zonder in te leveren op kwaliteit",
-
-    "heading_8": "Ondersteuning Nodig Voor Jouw Team of Klanten?",
-    "text_6": "Kies voor remote IT support van ITSolutionsWorldwide en geef jouw team of klanten de zekerheid van directe en deskundige ondersteuning."
-  },
-  "DataAnalyst": {
-    "headline_1": "Data-analist Inhuren – Slimme Inzichten Voor Beter Besluitvorming",
-
-    "heading_1": "Haal Het Maximale Uit Jouw Data",
-    "text_1": "Onze remote data-analisten helpen je om data om te zetten in concrete actiepunten. Of je nu klantgedrag wilt analyseren, processen wilt optimaliseren of KPI’s wilt volgen – wij leveren specialisten die data begrijpelijk en bruikbaar maken.",
-
-    "heading_2": "Taken Die Onze Data-analisten Uitvoeren",
-    "text_2": "Onze analisten kunnen jou ondersteunen met:",
-    "listitem_1": "Gegevensverzameling en validatie",
-    "listitem_2": "Analyse van klant-, verkoop- en operationele data",
-    "listitem_3": "Opzetten van dashboards (Power BI, Tableau, Google Data Studio)",
-    "listitem_4": "Rapportages en presentaties voor stakeholders",
-    "listitem_5": "Marktanalyses en voorspellende modellen",
-    "listitem_6": "SQL-query’s en automatisering van rapportages",
-
-    "heading_3": "Expertise In Verschillende Sectoren",
-    "text_3": "Wij leveren data-analisten voor o.a.:",
-    "listitem_7": "E-commerce en retail",
-    "listitem_8": "Financiële dienstverlening",
-    "listitem_9": "Logistiek en transport",
-    "listitem_10": "Gezondheidszorg",
-    "listitem_11": "SaaS en IT-bedrijven",
-    "text_4": "Onze specialisten stemmen de analyse af op jouw sector en doelstellingen.",
-
-    "heading_4": "Tools & Platforms Waarmee Wij Werken",
-    "text_5": "Onze data-analisten zijn vertrouwd met:",
-    "listitem_12": "Analyse tools: Excel, Python (Pandas, NumPy), R",
-    "listitem_13": "Datavisualisatie: Power BI, Tableau, Looker Studio",
-    "listitem_14": "Databases: SQL Server, MySQL, PostgreSQL",
-    "listitem_15": "Data cleaning: OpenRefine, Excel, Python scripts",
-    "listitem_16": "Cloud-platforms: Google BigQuery, AWS Redshift, Azure",
-
-    "heading_5": "Uurtarief Data-analist – Transparant en Schaalbaar",
-    "text_6": "Onze tarieven zijn flexibel:",
-    "listitem_17": "Vanaf € XX per uur, afhankelijk van het project",
-    "listitem_18": "Korting bij langere looptijd of meerdere specialisten",
-    "listitem_19": "Maandelijkse pakketten op maat mogelijk",
-
-    "heading_6": "Onze Werkwijze in 5 Stappen",
-    "listitem_20": "Kennismaking & briefing van jouw databehoefte",
-    "listitem_21": "Analyseplan en selectie van databronnen",
-    "listitem_22": "Uitvoering van analyses en opbouw van dashboards",
-    "listitem_23": "Presentatie van inzichten en aanbevelingen",
-    "listitem_24": "Doorlopende optimalisatie & monitoring (optioneel)",
-
-    "heading_7": "Waarom Kiezen Voor IT Solutions Worldwide?",
-    "listitem_25": "Gescreende data-analisten met bewezen ervaring",
-    "listitem_26": "Snel inzetbaar en volledig remote beschikbaar",
-    "listitem_27": "Flexibele inzet per uur, week of maand",
-    "listitem_28": "Rapportages in het Nederlands en/of Engels",
-    "listitem_29": "Koppeling met jouw bestaande BI-tools en databronnen",
-
-    "heading_8": "Klaar Voor Meer Inzicht En Efficiëntie?",
-    "text_7": "Met een remote data-analist van ITSolutionsWorldwide krijg je grip op je cijfers én op je strategie."
-  },
-  "PowerBI": {
-    "headline_1": "Power BI / Tableau Specialist Inhuren – Professionele Dashboards op Afstand",
-
-    "heading_1": "Zet Data Om in Visuele Inzichten",
-    "text_1": "Onze remote Power BI en Tableau specialisten helpen jou om complexe data overzichtelijk en actiegericht te presenteren. Of je nu real-time dashboards nodig hebt of strategische rapportages, wij leveren de expertise die je zoekt.",
-
-    "heading_2": "Wat Kan Onze Specialist Voor Jou Betekenen?",
-    "text_2": "Onze Power BI en Tableau experts ondersteunen met:",
-    "listitem_1": "Opzetten en structureren van datamodellen",
-    "listitem_2": "Creëren van interactieve dashboards en rapportages",
-    "listitem_3": "Visualiseren van KPI’s en trends",
-    "listitem_4": "Automatiseren van datastromen en updates",
-    "listitem_5": "Integratie met Excel, Google Sheets, CRM’s en databases",
-    "listitem_6": "Ondersteuning bij datacleansing en -transformatie (ETL)",
-
-    "heading_3": "Voor Welke Sectoren Zijn Wij Inzetbaar?",
-    "text_3": "Onze dashboard specialisten zijn actief in:",
-    "listitem_7": "Retail en e-commerce",
-    "listitem_8": "Financiële instellingen",
-    "listitem_9": "Logistiek en supply chain",
-    "listitem_10": "Zorginstellingen",
-    "listitem_11": "SaaS en digitale platforms",
-    "listitem_12": "Overheid en non-profitorganisaties",
-
-    "heading_4": "Tools, Skills & Integraties",
-    "text_4": "Onze specialisten beheersen o.a.:",
-    "listitem_13": "Power BI: DAX, Power Query, Dataflows, Paginated Reports",
-    "listitem_14": "Tableau: Tableau Prep, Tableau Server, Tableau Online",
-    "listitem_15": "Databronnen: SQL Server, MySQL, PostgreSQL, Excel, APIs",
-    "listitem_16": "ETL Tools: Alteryx, Python, Power Automate",
-    "listitem_17": "Cloud & BI-integraties: Azure, AWS, Google Cloud, Salesforce",
-
-    "heading_5": "Uurtarief Power BI / Tableau Specialist – Flexibel en Transparant",
-    "text_5": "We bieden flexibele inzet:",
-    "listitem_18": "Vanaf € XX per uur",
-    "listitem_19": "Korting bij langdurige inzet of grotere projecten",
-    "listitem_20": "Dag- of weektarieven op aanvraag beschikbaar",
-
-    "heading_6": "Hoe Werkt Samenwerken Met Ons?",
-    "listitem_21": "Kennismaking en doelen vastleggen",
-    "listitem_22": "Keuze van tools (Power BI of Tableau)",
-    "listitem_23": "Ontwikkeling en visualisatie van dashboards",
-    "listitem_24": "Iteratieve optimalisatie op basis van feedback",
-    "listitem_25": "Onderhoud, updates en support (indien gewenst)",
-
-    "heading_7": "Waarom IT Solutions Worldwide Voor Datavisualisatie?",
-    "listitem_26": "Gescreende BI-specialisten met ervaring in Power BI en Tableau",
-    "listitem_27": "Snel beschikbaar, volledig remote inzetbaar",
-    "listitem_28": "Rapporten in jouw huisstijl en afgestemd op jouw KPIs",
-    "listitem_29": "Efficiënte communicatie en samenwerking via online tools",
-    "listitem_30": "Flexibele contracten per uur, project of langdurige samenwerking",
-
-    "heading_8": "Start Vandaag Nog Met Datagedreven Inzicht",
-    "text_7": "Breng je data tot leven met heldere dashboards die echt iets zeggen. Huur een remote Power BI / Tableau expert in en krijg grip op je performance."
-  },
-  "TravelAdviser": {
-    "headline_1": "Online Reisadviseur Inhuren – Jouw Expert Voor Reizen op Afstand",
-
-    "heading_1": "Professioneel Reisadvies Op Maat, Waar En Wanneer Jij Wilt",
-    "text_1": "Onze remote reisadviseurs helpen je met persoonlijke reisplannen, het vinden van de beste deals en het organiseren van complete reizen. Of het nu gaat om vakantie, zakenreis of groepsreizen, wij zorgen voor een zorgeloze ervaring.",
-
-    "heading_2": "Wat Doet Een Online Reisadviseur Voor Jou?",
-    "listitem_1": "Uitgebreide reisplanning en routeadvies",
-    "listitem_2": "Vergelijken van vliegtickets, hotels en vervoer",
-    "listitem_3": "Organiseren van visa en reisdocumenten",
-    "listitem_4": "Aanbevelingen voor activiteiten, restaurants en bezienswaardigheden",
-    "listitem_5": "24/7 ondersteuning tijdens je reis (optioneel)",
-    "listitem_6": "Budgetoptimalisatie en pakketdeals",
-
-    "heading_3": "Voor Wie Zijn Onze Reisadviseurs Geschikt?",
-    "text_2": "Onze experts bedienen:",
-    "listitem_7": "Vakantiegangers en gezinnen",
-    "listitem_8": "Zakenreizigers en bedrijven",
-    "listitem_9": "Groeps- en incentive-reizen",
-    "listitem_10": "Avontuurlijke reizigers en natuurliefhebbers",
-    "listitem_11": "Luxe reizigers en budgetreizigers",
-
-    "heading_4": "Tools en Technologieën Die Wij Gebruiken",
-    "listitem_12": "Reissystemen: Amadeus, Sabre, Travelport",
-    "listitem_13": "Vergelijkingssites en prijsalerts",
-    "listitem_14": "Online boekingssystemen en CRM",
-    "listitem_15": "Klantenportalen en communicatietools (Zoom, Teams)",
-
-    "heading_5": "Uurtarief Online Reisadviseur – Transparant en Betaalbaar",
-    "text_3": "Onze tarieven zijn helder:",
-    "listitem_16": "Vanaf € XX per uur, afhankelijk van ervaring en complexiteit",
-    "listitem_17": "Mogelijkheid voor project- of pakketprijzen",
-    "listitem_18": "Flexibele contracten per uur of maand",
-
-    "heading_6": "Zo Werkt Het Samenwerken Met Ons",
-    "listitem_19": "Intake en wensen bespreken",
-    "listitem_20": "Opstellen van een reisvoorstel op maat",
-    "listitem_21": "Boekingen en planning verzorgen",
-    "listitem_22": "Regelmatige updates en contactmomenten",
-    "listitem_23": "Nazorg en ondersteuning tijdens de reis",
-
-    "heading_7": "Waarom Kiezen Voor IT Solutions Worldwide?",
-    "listitem_24": "Deskundige reisadviseurs met actuele kennis",
-    "listitem_25": "Volledig remote inzetbaar, overal ter wereld",
-    "listitem_26": "Flexibele tarieven en contracten op maat",
-    "listitem_27": "Persoonlijke aandacht en uitstekende klantenservice",
-    "listitem_28": "Focus op jouw wensen en budget",
-
-    "heading_8": "Begin Vandaag Nog Met Jouw Perfecte Reis",
-    "text_4": "Met een online reisadviseur van IT Solutions Worldwide is jouw volgende reis in goede handen. Persoonlijk advies, scherpe prijzen en betrouwbare service."
-  },
-  "CustomerTravelAgency": {
-    "headline_1": "Klantenservice Reisbureau Inhuren – Deskundige Ondersteuning Voor Jouw Reizigers",
-
-    "heading_1": "Wat Biedt Onze Klantenservice Voor Reisagenten?",
-    "listitem_1": "Beantwoorden van vragen over boekingen, betalingen en annuleringsvoorwaarden",
-    "listitem_2": "Ondersteuning bij wijzigingen in reisplannen",
-    "listitem_3": "Proactief informeren over vertragingen, visum- of documentvereisten",
-    "listitem_4": "Afhandelen van klachten en feedback met empathie en oplossingsgerichtheid",
-    "listitem_5": "24/7 bereikbaarheid voor dringende vragen (optioneel)",
-
-    "heading_2": "Voor Wie Is Onze Klantenservice Geschikt?",
-    "listitem_6": "Reisbureaus en touroperators",
-    "listitem_7": "Online reisplatforms",
-    "listitem_8": "Zakelijke reisorganisaties",
-    "listitem_9": "Vakantie- en groepsreisorganisatoren",
-
-    "heading_3": "Voordelen Van Een Remote Klantenservice Reisbureau",
-    "listitem_10": "Kostenbesparing op kantoorruimte en apparatuur",
-    "listitem_11": "Flexibele inzetbaarheid, ook buiten reguliere kantooruren",
-    "listitem_12": "Professionele medewerkers met ervaring in de reisbranche",
-    "listitem_13": "Snelle en effectieve communicatie met klanten",
-    "listitem_14": "Verhoogde klanttevredenheid en loyaliteit",
-
-    "heading_4": "Onze Gebruikte Tools en Systemen",
-    "listitem_15": "CRM- en ticketingsystemen zoals Zendesk, Freshdesk",
-    "listitem_16": "Communicatietools: telefoon, e-mail, live chat, WhatsApp",
-    "listitem_17": "Reissystemen voor actuele boekingsinformatie",
-    "listitem_18": "Klantportalen voor snelle zelfservice",
-
-    "heading_5": "Uurtarief Klantenservice Reisbureau – Transparant en Flexibel",
-    "text_1": "Onze tarieven:",
-    "listitem_19": "Vanaf € XX per uur afhankelijk van ervaring en complexiteit",
-    "listitem_20": "Mogelijkheid tot vaste pakketten en maandtarieven",
-    "listitem_21": "Flexibele contracten afgestemd op jouw wensen",
-
-    "heading_6": "Samenwerkingsproces – Zo Werkt Het",
-    "listitem_22": "Inventarisatie van jouw klantenservicebehoeften",
-    "listitem_23": "Selectie en training van medewerkers",
-    "listitem_24": "Integratie met jouw systemen",
-    "listitem_25": "Start met het beantwoorden van klantvragen",
-    "listitem_26": "Periodieke evaluatie en rapportage",
-
-    "heading_7": "Waarom IT Solutions Worldwide Kiezen Voor Jouw Klantenservice?",
-    "listitem_27": "Specialisten met ervaring in de reisbranche",
-    "listitem_28": "Flexibele, schaalbare oplossingen op afstand",
-    "listitem_29": "Hoog serviceniveau en klantgerichte aanpak",
-    "listitem_30": "Transparante communicatie en rapportages",
-    "listitem_31": "Kostenbesparend en zonder personeel in dienst nemen",
-
-    "heading_8": "Begin Vandaag Nog Met Jouw Professionele Reisbureau Klantenservice",
-    "text_2": "Verbeter de klantenservice van jouw reisbureau met onze remote professionals. Efficiënt, betrouwbaar en klantgericht."
-  },
-  "FAAssistant": {
-    "headline_1": "Boekhouder of Financieel Assistent Inhuren – Professionele Hulp bij Jouw Financiële Administratie",
-
-    "heading_1": "Zorgeloze Boekhouding met Onze Remote Specialisten",
-    "text_1": "Een foutloze administratie is essentieel voor elk bedrijf. Onze remote boekhouders en financiële assistenten bieden ondersteuning bij dagelijkse boekhoudtaken, rapportages en belastingvoorbereiding. Betrouwbaar, discreet en altijd beschikbaar.",
-
-    "heading_2": "Wat Doet Een Boekhouder of Financieel Assistent Voor Jou?",
-    "text_2": "Onze specialisten helpen je onder andere met:",
-    "listitem_1": "Inboeken van facturen en bonnetjes",
-    "listitem_2": "Bankafschriften verwerken",
-    "listitem_3": "Debiteuren- en crediteurenbeheer",
-    "listitem_4": "BTW-aangiftes voorbereiden",
-    "listitem_5": "Opstellen van financiële rapportages",
-    "listitem_6": "Ondersteuning bij jaarafsluiting",
-    "listitem_7": "Samenwerken met je accountant of belastingadviseur",
-    "text_3": "Alle werkzaamheden worden uitgevoerd volgens de Nederlandse regelgeving.",
-
-    "heading_3": "Financiële Ondersteuning voor MKB, ZZP en Groeiende Bedrijven",
-    "text_4": "Of je nu een zelfstandig ondernemer bent, een MKB runt of een snelgroeiend team hebt, onze boekhouders en assistenten zijn flexibel inzetbaar en schaalbaar.",
-    "text_5": "Wij werken met o.a.:",
-    "listitem_8": "Exact Online",
-    "listitem_9": "Moneybird",
-    "listitem_10": "SnelStart",
-    "listitem_11": "Twinfield",
-    "listitem_12": "E-boekhouden.nl",
-
-    "heading_4": "Uurtarief Boekhouder / Financieel Assistent – Transparante Tarieven",
-    "text_6": "Onze dienstverlening is betaalbaar en schaalbaar:",
-    "listitem_13": "Vanaf € XX per uur, afhankelijk van complexiteit en frequentie",
-    "listitem_14": "Pakketten op basis van maandelijkse of wekelijkse inzet",
-    "listitem_15": "Mogelijkheid voor projectbasis of structurele samenwerking",
-
-    "heading_5": "Onze Aanpak – Veilig, Efficiënt en Persoonlijk",
-    "listitem_16": "Kennismaking en inventarisatie van je behoeften",
-    "listitem_17": "Toewijzing van een geschikte financieel specialist",
-    "listitem_18": "Opstarten en toegang tot jouw boekhoudsoftware",
-    "listitem_19": "Regelmatige communicatie en rapportage",
-    "listitem_20": "Volledige controle en inzicht in jouw financiële situatie",
-    "text_7": "Wij werken veilig, AVG-proof en met duidelijke afspraken.",
-
-    "heading_6": "Waarom IT Solutions Worldwide Kiezen Voor Boekhoudondersteuning?",
-    "listitem_21": "Gekwalificeerde professionals met ervaring in Nederlandse boekhouding",
-    "listitem_22": "Flexibel inzetbaar op afstand",
-    "listitem_23": "Vertrouwelijke en veilige verwerking van financiële gegevens",
-    "listitem_24": "Geschikt voor zowel eenmalige als doorlopende opdrachten",
-    "listitem_25": "Kostenbesparend en efficiënt",
-
-    "heading_7": "Klaar Voor Financiële Rust en Overzicht?",
-    "text_8": "Bespaar tijd en geld door je financiële administratie uit te besteden aan onze betrouwbare remote experts.",
-    "button2": "Plan een gratis intakegesprek"
-  },
-
-  "Travel": {
-    "headline_1": "BUILD A PROFESSIONAL WEBSITE FOR YOUR TRAVEL AGENCY ",
-    "subheadline_1": "Modern, secure, conversion-focused travel websites designed to attract more bookings and streamline your business — available to travel agents across the Netherlands.",
-    "button_1": "Schedule a Free Consultation",
-
-    "heading_1": "Have a professional travel website built – including booking system and responsive design",
-    "text_1": "Do you want to have a website made for your travel agency or tour operator? We build modern, professional websites for travel organizations – complete with booking system, customer account, search filters and integration of your travel offers. Whether you are located in Roosendaal, Lelystad, Groningen, Utrecht, Amsterdam or Rotterdam – we design a travel website that perfectly matches your target group.",
-    "text_2": "",
-
-    "heading_2": "Your digital travel agency starts here",
-    "sub_heading_2": "",
-    "text_3": "Our travel agency websites are:",
-    "listitem_1": "Professionally designed for trust and conversion",
-    "listitem_2": "Fully responsive (mobile friendly)",
-    "listitem_3": "Equipped with an online booking system for travel agencies",
-    "listitem_30": "Including search filter, last-minute module and customer accounts",
-    "listitem_31": "Ready to promote group travel, tours, last-minutes and tailor-made solutions",
-
-    "heading_3": "Web design for travel agencies in your region",
-    "text_6": "We create custom travel websites in, among others:",
-    "listitem_4": "Have a travel agency website created in Roosendaal",
-    "listitem_5": "Build a professional travel website in Lelystad",
-    "listitem_6": "Web design for tour operators in Groningen",
-    "listitem_7": "Customised holiday website in Utrecht",
-    "listitem_8": "Start an online travel agency in Amsterdam",
-    "listitem_9": "Responsive travel agency website in Rotterdam",
-
-    "heading_4": "Examples of travel websites we have designed",
-    "sub_heading_4": "",
-    "text_4": "Looking for inspiration? Check out our examples of digital travel agency websites with booking modules, beautiful photography, customer accounts and custom forms.",
-    "listitem_13": "Clear display of journeys and user-friendly navigation",
-    "listitem_14": "SEO optimized and mobile friendly pages",
-    "listitem_15": "Fast loading times and scalable solutions",
-    "listitem_16": "Ongoing support and reliable updates",
-
-    "heading_5": "How much does a website cost for a travel organization?",
-    "text_5": "The cost of building a website for a travel agency depends on your needs. Think about:",
-    "listitem_17": "number of trips/packages",
-    "listitem_18": "integration booking system",
-    "listitem_19": "design style (custom or template)",
-    "listitem_20": "multilingualism",
-
-    "heading_6": "Discover how affordable a professional website can be.",
-    "button": "Request a Free Quote",
-
-    "faq_heading": "Frequently Asked Questions About Travel Agency Websites",
-    "question1": " How do I create a website for my travel agency?",
-    "answer1": " We guide you from A to Z: domain, hosting, design, booking system, SEO, and more.",
-    "question2": "What is the best website for online travel booking?",
-    "answer2": "A website with a booking module, search filters and clear offers converts best — that's what we build.",
-    "question3": "Can I also show last-minute offers or group trips?",
-    "answer3": "Sure! Our websites offer modules for last-minutes, group travel, tours and custom packages.",
-
-    "marketingtitle": "Want to start a new travel website right away?",
-    "marketingdescription": "Are you looking to have a tour operator website built in Groningen, a travel agency website with booking module in Amsterdam, or a holiday website design in Utrecht? We will help you quickly and professionally.",
-    "marketingbuttontext2": "Contact Us"
-  },
-
   "softwaredev": {
     "heading_1": "Software Development Services",
     "text_1": "Designed for your business, built for the future—software solutions that scale with you.",
@@ -1943,7 +534,6 @@
     "question5": "What industries do you serve?",
     "answer5": "We develop custom software for different industries such as manufacturing, retail, healthcare, finance, and E-commerce."
   },
-
   "crmsolutions": {
     "heading_1": "Advanced CRM Solutions for Business Growth",
     "text_1": "Optimize your customer interactions, drive efficiency, and enhance decision-making.",
@@ -1975,7 +565,6 @@
     "question5": "How long does it take to implement a CRM system?",
     "answer5": "CRM implementation time may vary from business to business, depending on their complexity and business needs but it typically takes a few weeks or a few months."
   },
-
   "automationservices": {
     "heading_1": "Process & Industrial Automation in the Netherlands",
     "text_1": "Get in touch today to discover how our automation services can revolutionize your operations!",
@@ -2016,7 +605,6 @@
     "question5": "How long does it take to implement an automation solution?",
     "answer5": "The implementation time may vary from project-to-project. Simple automation may take up to 1 to 4 weeks whereas complex automation may take up to 2 to 6 months."
   },
-
   "erpsolutions": {
     "heading_1": "ERP Solutions: Empower Your Business with Integrated Enterprise Management",
     "text_1": "Gain real-time insights, improve resource management, and accelerate business growth with cutting-edge ERP systems",
@@ -2068,7 +656,6 @@
     "answer_list_3": "Faster implementation",
     "answer_list_4": "Cost efficiency"
   },
-
   "oraclecloud": {
     "heading_1": "Oracle Cloud Services – Transform Your Business with Scalable Cloud Solutions",
     "text_1": "Empowering businesses with cutting-edge Oracle Cloud infrastructure, AI, and application services",
@@ -2137,7 +724,6 @@
     "question5": "Can I migrate my existing applications to Oracle Cloud Infrastructure?",
     "answer5": "Yes, with the help of OCI migration facilities such as Lift-and-shift migration, database migration, etc, you can migrate your existing applications to the OCI."
   },
-
   "cloudtransformation": {
     "heading_1": "Cloud Transformation & Migration Services | IT Solutions Worldwide",
     "text_1": "Smooth, efficient cloud migration solutions designed to enhance agility, reduce costs, and accelerate digital transformation.",
@@ -2207,7 +793,6 @@
     "question5": "How do I choose the right cloud service provider for my business?",
     "answer5": "Choosing the right cloud service provider depends upon your business requirements, size, scalability, and performance. You can choose accordingly from among the popular cloud service providers such as Oracle Cloud, AWS, Azure, and Google Cloud."
   },
-
   "clouddata": {
     "heading_1": "Empower Your Business with Cloud Data & AI Solutions",
     "text_1": "Unlock insights, improve efficiency, and scale your business using advanced cloud-based AI solutions.",
@@ -2261,7 +846,6 @@
     "question5": "How secure are your cloud services?",
     "answer5": "To protect data stored in the cloud, cloud providers may provide advanced security methods such as encryption, two-factor authentication, and access controls. It is advised that businesses implement best practices to secure their data."
   },
-
   "digitalservices": {
     "heading_1": "Best Digital Marketing Agency in the Netherlands",
     "text_1": "Empowering businesses to succeed online with tailored strategies, expert SEO, and creative branding solutions.",
@@ -2318,7 +902,6 @@
     "question5": "Do I need a website for digital marketing?",
     "answer5": "Yes, having an official brand website helps enhance brand credibility and provides an official platform for the customers to explore and access the products and services."
   },
-
   "webdev": {
     "heading_1": "Your Vision, Our Code - SEO Optimized Websites, Seamless Experience",
     "text_1": "From concept to launch—fast, responsive, and scalable websites tailored to your needs",
@@ -2376,7 +959,6 @@
     "question5": "Can you redesign an existing website?",
     "answer5": "Yes, we can redesign an existing website for you in a better way, ensuring that it is fully responsive and optimized and you get a seamless user experience."
   },
-
   "ecommerce": {
     "heading_1": "Professional E-commerce Development Services | IT Solutions Worldwide",
     "text_1": "Optimized e-commerce platforms designed to boost engagement, sales, and customer loyalty",
@@ -2434,7 +1016,6 @@
     "question5": "How do I manage my online store after development?",
     "answer5": "Once your e-commerce site is developed, we offer training and ongoing support to ensure you can manage your products, process orders, and update your content with ease. We also provide maintenance services as needed."
   },
-
   "ppc": {
     "heading_1": "Expert PPC Advertising Services | IT Solutions Worldwide",
     "text_1": "Smart bidding, targeted, data-driven ads that drive traffic, generate leads, and maximize ROI.",
@@ -2491,7 +1072,6 @@
     "question5": "Can PPC work for small businesses?",
     "answer5": "Yes, PPC is an effective way for small businesses to drive targeted traffic to their websites quickly. With the right budget and strategy, even small businesses can maximize ROI from well-managed PPC campaigns."
   },
-
   "seo": {
     "heading_1": "Boost Your Online Visibility with Expert SEO Services",
     "text_1": "Drive More Traffic, Increase Conversions, and Rank Higher with Tailored SEO Strategies",
@@ -2541,7 +1121,6 @@
     "question5": "Do you provide regular SEO audits?",
     "answer5": "Yes, we perform regular SEO audits to identify issues, track progress, and improve strategies."
   },
-
   "socialmedia": {
     "heading_1": "Elevate Your Brand with Expert Social Media Marketing",
     "text_1": "Engage, Connect, and Grow Your Audience with Tailored Strategies Across All Social Platforms",
@@ -2585,7 +1164,6 @@
     "question5": "How do you create social media marketing strategies?",
     "answer5": "Yes, we perform regular SEO audits to identify issues, track progress, and improve strategies."
   },
-
   "staffingsupport": {
     "heading_1": "Staffing Support Services – Expand Your Workforce Globally",
     "text_1": "Empowering businesses to scale with expert workforce solutions in the Netherlands, USA, Dubai, Qatar, and Saudi Arabia.",
@@ -2628,7 +1206,6 @@
     "question5": "Can I request a custom staffing solution for my business?",
     "answer5": "Yes, you can request a tailored staffing service for your business. We are here to provide you with professional staffing services on a short-term, temporary basis and long-term contract basis that will analyse your needs and requirements and provide you with the best solutions."
   },
-
   "tempstaffing": {
     "heading_1": "Flexible & Reliable Temporary Staffing Solutions",
     "text_1": "Scale Your Workforce Quickly with Skilled Temporary Talent for Short-Term or Project-Based Needs",
@@ -2674,7 +1251,6 @@
     "question5": "Do you offer customised temporary staffing services?",
     "answer5": "Yes, we customise staffing solutions to your specific business needs, ensuring the right talent, skills, and duration that align with your goals."
   },
-
   "managedstff": {
     "heading_1": "Optimize Your Workforce with Expert Managed Staffing Services",
     "text_1": "Streamline Talent Acquisition, Improve Efficiency, and Scale Your Team with Customized Staffing Solutions",
@@ -2719,7 +1295,6 @@
     "question5": "What is the process for hiring through managed staffing?",
     "answer5": "We assess your needs, recruit top talent, and ensure smooth onboarding and workforce management."
   },
-
   "remotestff": {
     "heading_1": "Build a High-Performing Remote Team with Virtual Staffing Solutions",
     "text_1": "Access Global Talent, Reduce Costs, and Scale Your Business with Flexible Remote Staffing Services",
@@ -2764,7 +1339,6 @@
     "question5": "What is fractional remote staffing?",
     "answer5": "Fractional remote staffing allows businesses to hire part-time or project-based professionals, optimizing costs while accessing specialized expertise."
   },
-
   "logistics": {
     "heading_1": "Logistics Services | Top International Logistics Service Provider",
     "text_1": "Streamline operations, reduce costs, and enhance delivery precision with expert-driven solutions.",
@@ -2810,7 +1384,6 @@
     "question5": "How do you manage inventory in logistics?",
     "answer5": "We use automated inventory management systems that help track stock levels, reorder, and organize while optimizing costs."
   },
-
   "logandsupplychain": {
     "heading_1": "Logistics and Supply Chain Specialists | Expertise in Global Operations",
     "text_1": "From strategy to execution, we optimize every step of your supply chain for maximum efficiency",
@@ -2852,7 +1425,6 @@
     "question5": "How can a logistics specialist improve my business?",
     "answer5": "A logistics specialist ensures that the operations are streamlined, and he focuses on optimising costs, reducing delivery delays, ensuring compliance with regulations, and improving overall efficiency and customer satisfaction."
   },
-
   "warehousedesign": {
     "heading_1": "Warehouse Design and Layouts Services in the Netherlands | IT Solutions Worldwide",
     "text_1": "Transform your warehouse with Data-Driven designs and efficient layouts",
@@ -2901,7 +1473,6 @@
     "question5": "What are the main types of warehouse layouts?",
     "answer5": "Grid layout, Flow layout, Cellular layout, and Dynamic layout are the main types of warehouse layouts."
   },
-
   "smartwarehouse": {
     "heading_1": "Smart Warehousing Solutions To Transform Your Logistics",
     "text_1": "Revolutionize your supply chain with smart warehousing, IoT, and AI, to streamline operations and increase efficiency.",
@@ -2946,7 +1517,6 @@
     "question5": "How do I get started with innovative warehousing?",
     "answer5": "You can book a consultation call with our expert team so we can assess your warehouse, identify any inefficiencies that you may be experiencing, and provide you with the best suitable warehouse solutions."
   },
-
   "leansixsigma": {
     "heading_1": "Lean and Six Sigma Implementation | IT Solutions Worldwide",
     "text_1": "Data-driven technologies to streamline operations, improve quality, and sustain long-term business success.",
@@ -3018,7 +1588,6 @@
     "question5": "How can I get started with Lean and Six Sigma?",
     "answer5": "You can book a consultation with our team and our experts will help assess and analyze your project, providing you with efficient methodologies and techniques."
   },
-
   "erpimplementation": {
     "heading_1": "Accelerate Growth with Seamless ERP Implementation",
     "text_1": "From planning to execution, we deliver ERP systems that streamline operations and drive productivity.",
@@ -3053,7 +1622,6 @@
     "question5": "Can ERP solutions be customized?",
     "answer5": "Yes, we provide customizable ERP solutions by analyzing an organization’s needs and requirements, complexity, scope, and budget."
   },
-
   "industrystaffing": {
     "heading_1": "Expert Staffing Solutions for Specialized Industries",
     "text_1": "Find the Right Talent with Industry-Specific Expertise to Drive Your Business Forward",
@@ -3101,7 +1669,6 @@
     "question5": "How can managed services improve staffing operations?",
     "answer5": "Managed staffing services optimize workforce management by handling recruitment, onboarding, payroll, and compliance, reducing costs and improving operational efficiency."
   },
-
   "staffingconsulting": {
     "heading_1": "Optimize Your Hiring Strategy with Expert Staffing Consultancy",
     "text_1": "Find the Right Talent Faster By Streamlining Your Hiring & Workforce Strategy",
@@ -3147,7 +1714,6 @@
     "question5": "How do staffing consulting services improve workforce efficiency?",
     "answer5": "By streamlining recruitment, reducing hiring risks, and ensuring the right skill match, staffing services enhance productivity, lower turnover, and optimise workforce management.   "
   },
-
   "notfound": {
     "homeButton": "Back Home",
     "message": "Page is Unavailable"

@@ -137,28 +137,74 @@
     animation: slide 15s linear infinite;
   }
 
-  
   /* The moving-border utility class */
-  .moving-border {
+  /* .moving-border {
+    position: relative;
+    padding: 4px; 
+  } */
+
+  /* CSS custom property animation support */
+  @property --angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+  }
+
+  .movingBorder {
     position: relative;
     padding: 4px; /* adjust as needed */
+    border-radius: 8px;
+    width: 90px;
+    height: 100px;
+    background-color: #000; /* fallback */
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .movingBorder::before,
+  .movingBorder::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: conic-gradient(
+      var(--angle),
+      #194a59,
+      #c3f2ff,
+      #0fb6ae,
+      #194a59
+    );
+    animation: rotate 10s linear infinite;
+  }
+
+  .movingBorder::after {
+    filter: blur(10px);
+  }
+
+  @keyframes rotate {
+    0% {
+      --angle: 0deg;
+    }
+    100% {
+      --angle: 360deg;
+    }
   }
 
   /* Pseudo-elements for the animated gradient */
-  .moving-border::before,
+  /* .moving-border::before,
   .moving-border::after {
     content: '';
     position: absolute;
-    inset: -0.2rem; /* adjust border thickness as needed */
+    inset: -0.2rem; 
     z-index: -1;
     background: linear-gradient(var(--angle), #194a59, #c3f2ff, #0fb6ae);
     animation: rotate 10s linear infinite;
   }
 
   .moving-border::after {
-    /* Slight blur for a glow effect */
     filter: blur(10px);
-  }
+  } */
 
   /* .animate-slide:hover {
     animation-play-state: paused;

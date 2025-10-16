@@ -1,36 +1,39 @@
-'use client';
+// components/LanguageSwitcher.tsx
+"use client";
 
-import { usePathname, useRouter } from 'next/navigation';
-import { useTransition } from 'react';
-import i18nConfig from '@/i18n/i18nConfig';
-// import nlFlag from '@/assets/images/united-kingdom-flag-icon.png';
-// import enFlag from '@/assets/images/netherlands-flag-icon.png'; // Update flag paths accordingly
-import Image from 'next/image';
-
-// import ukFlag from '../assets/images/united-kingdom-flag-icon.png';
-// import nlFlag from '../assets/images/netherlands-flag-icon.png';
+import { usePathname, useRouter } from "next/navigation";
+import { useTransition } from "react";
+import i18nConfig from "@/i18n/i18nConfig";
+import Image from "next/image";
+import Cookies from "js-cookie";
 
 export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
 
-  const currentLocale = i18nConfig.locales.find(locale =>
-    pathname?.startsWith(`/${locale}`)
-  ) || i18nConfig.defaultLocale;
+  const currentLocale =
+    i18nConfig.locales.find((locale) => pathname?.startsWith(`/${locale}`)) ||
+    i18nConfig.defaultLocale;
 
   const toggleLocale = () => {
-    const newLocale = currentLocale === 'en' ? 'nl' : 'en';
-    const pathWithoutLocale = pathname?.replace(`/${currentLocale}`, '') || '';
+    const newLocale = currentLocale === "en" ? "nl" : "en";
+    const pathWithoutLocale = pathname?.replace(`/${currentLocale}`, "") || "";
     const newPath = `/${newLocale}${pathWithoutLocale}`;
+
+    // 💾 Save user preference
+    Cookies.set("NEXT_LOCALE", newLocale, { expires: 365 });
 
     startTransition(() => {
       router.push(newPath);
     });
   };
 
-  const flag = currentLocale === 'en' ? '/assets/images/flags/nl.png' : '/assets/images/flags/uk.png';
-  const label = currentLocale === 'en' ? 'Dutch' : 'English';
+  const flag =
+    currentLocale === "en"
+      ? "/assets/images/flags/nl.png"
+      : "/assets/images/flags/uk.png";
+  const label = currentLocale === "en" ? "Dutch" : "English";
 
   return (
     <button

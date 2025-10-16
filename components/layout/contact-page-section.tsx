@@ -17,11 +17,9 @@ type Props = {
 };
 
 export default async function ContactCard({ locale }: Props) {
-  console.log("ContactCard locale ===", locale);
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
-  console.log("ContactCard t ===", t);
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
