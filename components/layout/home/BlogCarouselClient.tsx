@@ -47,7 +47,7 @@ export default function BlogCarouselClient({ posts, locale, }: { posts: BlogEntr
 
       <div className="absolute top-16 right-4 flex gap-2 z-40">
         <button
-          className={`blog-prev-btn w-10 h-10 flex items-center justify-center rounded-full 
+          className={`blog-prev-btn w-10 h-10 flex items-center justify-center rounded-full cursor-pointer 
           ${
             activeIndex === 0
               ? "bg-gray-300 text-white"
@@ -57,7 +57,7 @@ export default function BlogCarouselClient({ posts, locale, }: { posts: BlogEntr
           ←
         </button>
         <button
-          className={`blog-next-btn w-10 h-10 flex items-center justify-center rounded-full 
+          className={`blog-next-btn w-10 h-10 flex items-center justify-center rounded-full cursor-pointer
           ${
             activeIndex === posts.length - 1
               ? "bg-gray-300 text-white"

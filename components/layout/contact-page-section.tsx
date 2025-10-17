@@ -180,7 +180,7 @@ export default async function ContactCard({ locale }: Props) {
             </div>
             <button
               type="submit"
-              className="w-full md:w-auto bg-[#278083] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#1f6f69] transition duration-300 transform hover:scale-105"
+              className="w-full md:w-auto bg-[#278083] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#1f6f69] transition duration-300 transform hover:scale-105 cursor-pointer"
             >
               {t("home.sendmessage")}
             </button>

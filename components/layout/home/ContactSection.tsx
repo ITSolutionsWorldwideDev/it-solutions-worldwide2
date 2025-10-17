@@ -224,7 +224,7 @@ const ContactSection: React.FC = () => {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="bg-white text-[#0C415C] px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-300"
+                className="bg-white text-[#0C415C] px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-300 cursor-pointer"
                 disabled={isLoading}
               >
                 

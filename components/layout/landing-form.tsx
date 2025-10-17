@@ -202,7 +202,7 @@ const LandingForm = () => {
         <div className="flex justify-end">
           <button
             type="submit"
-            className="bg-white text-[#0C415C] px-6 py-3 rounded-md text-lg font-medium flex items-center space-x-2 hover:bg-gray-300"
+            className="bg-white text-[#0C415C] px-6 py-3 rounded-md text-lg font-medium flex items-center space-x-2 hover:bg-gray-300 cursor-pointer"
           >
             <span>{isLoading ? 'Sending...' : 'Send Message'}</span>
             <span className="ml-2">→</span>

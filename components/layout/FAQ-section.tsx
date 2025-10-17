@@ -75,7 +75,7 @@ const FAQSection = ({
                 <dt>
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="flex justify-between items-center w-full py-4 text-left focus:outline-none"
+                    className="flex justify-between items-center w-full py-4 text-left focus:outline-none cursor-pointer"
                     aria-expanded={activeIndex === index}
                     aria-controls={`faq-${index}`}
                   >

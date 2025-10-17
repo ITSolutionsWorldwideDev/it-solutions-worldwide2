@@ -39,7 +39,7 @@ export default function DynamicTabs({
                 backgroundColor:
                   activeIndex === index ? activeColor : inactiveColor,
               }}
-              className={`p-4 text-left rounded-lg shadow transition duration-300 ${
+              className={`p-4 text-left rounded-lg shadow transition duration-300 cursor-pointer ${
                 activeIndex === index ? "text-white" : "text-black"
               }`}
             >

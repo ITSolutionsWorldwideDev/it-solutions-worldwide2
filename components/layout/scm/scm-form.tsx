@@ -6,10 +6,11 @@ import { useTranslation } from "react-i18next";
 import { Chart } from "chart.js";
 // import initServerI18n from "@/utils/serverTranslation";
 import SpiderWebChart from "./spider-web-chart";
-// import WarehouseQuestionnaire from '../../components/scm_tool/WarehouseQuestionaaire';
-// import ProcureToPay from '../../components/scm_tool/Procuretopay';
-// import Transport from '../../components/scm_tool/Transport';
-// import Logistics from '../../components/scm_tool/Logistics';
+import ProcureToPay from "./procure-to-pay";
+import Link from "next/link";
+import WarehouseQuestionnaire from "./warehouse-questionaaire";
+import Transport from "./transport";
+import Logistics from "./logistics";
 
 type SCMFormProps = {
   locale: string;
@@ -61,19 +62,14 @@ export default function SCMForm({ locale, translations }: SCMFormProps) {
     position: "",
   });
   const [errors, setErrors] = useState<PersonalInfoErrors>({});
+  const [responses, setResponses] = useState<Record<string, number>>({});
 
-  const [responses, setResponses] = useState<QuestionnaireResponse[]>([]);
   const [departmentScores, setDepartmentScores] = useState<DepartmentScores>(
     {}
   );
   const [departmentSummaries, setDepartmentSummaries] =
     useState<DepartmentSummaries>({});
   const [totalScore, setTotalScore] = useState<number>(0);
-
-  //   const [responses, setResponses] = useState([]);
-  //   const [departmentScores, setDepartmentScores] = useState({});
-  //   const [departmentSummaries, setDepartmentSummaries] = useState({});
-  //   const [totalScore, setTotalScore] = useState(0);
   const [selectedQuestionnaire, setSelectedQuestionnaire] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [emailStatus, setEmailStatus] = useState<string | null>(null);
@@ -112,18 +108,17 @@ export default function SCMForm({ locale, translations }: SCMFormProps) {
   };
 
   const handleQuestionnaireSelect = (questionnaire: string) => {
+    console.log("questionnaire ==== ", questionnaire);
     setSelectedQuestionnaire(questionnaire);
     setStep(3);
   };
 
-  //   type QuestionnaireResponse = any;
-
   const handleQuestionnaireSubmit = (
-    responses: QuestionnaireResponse[],
-    departmentScores: DepartmentScores,
+    responses: Record<string, number>,
+    departmentScores: Record<string, number>,
     totalScore: number,
-    departmentSummaries: DepartmentSummaries
-  ) => {
+    departmentSummaries: Record<string, string>
+  ): void => {
     setResponses(responses);
     setDepartmentScores(departmentScores);
     setTotalScore(totalScore);
@@ -131,20 +126,6 @@ export default function SCMForm({ locale, translations }: SCMFormProps) {
     setStep(4);
     setIsChartReady(false);
   };
-
-  /* const handleQuestionnaireSubmit = (
-    responses,
-    departmentScores,
-    totalScore,
-    departmentSummaries
-  ) => {
-    setResponses(responses);
-    setDepartmentScores(departmentScores);
-    setTotalScore(totalScore);
-    setDepartmentSummaries(departmentSummaries);
-    setStep(4);
-    setIsChartReady(false);
-  }; */
 
   const handleSendToMail = async () => {
     if (chartRef.current && isChartReady) {
@@ -191,7 +172,7 @@ export default function SCMForm({ locale, translations }: SCMFormProps) {
       position: "",
     });
     setErrors({});
-    setResponses([]);
+    setResponses({});
     setDepartmentScores({});
     setTotalScore(0);
     setEmailStatus(null);
@@ -210,9 +191,9 @@ export default function SCMForm({ locale, translations }: SCMFormProps) {
   }, [step, isChartReady]);
 
   return (
-    <div>
+    <div className="container mx-auto ">
       <div className="flex-grow flex items-center justify-center p-4 ">
-        <div className="max-w-3xl w-full bg-white p-6 rounded shadow-md">
+        <div className="lg:p-20 w-full ">
           {step === 1 ? (
             <div>
               <h2 className="text-xl font-bold mb-4">Personal Information</h2>
@@ -301,13 +282,13 @@ export default function SCMForm({ locale, translations }: SCMFormProps) {
               </div>
               <button
                 onClick={handlePersonalInfoSubmit}
-                className="bg-[#278083] text-white px-4 py-2 rounded"
+                className="bg-[#278083] text-white px-4 py-2 rounded cursor-pointer"
               >
                 Proceed To Select Department
               </button>
             </div>
           ) : step === 2 ? (
-            <div className="mr-4">
+            <div className=" max-w-3xl m-auto">
               <h2 className="text-xl font-bold mb-10">
                 Please Select The Department You Would Like To Conduct A Health
                 Check For.
@@ -316,7 +297,7 @@ export default function SCMForm({ locale, translations }: SCMFormProps) {
               <div className="flex flex-wrap sm:flex-col">
                 <button
                   onClick={() => handleQuestionnaireSelect("Procure-to-pay")}
-                  className="bg-[#278083] text-white px-4 py-2 rounded mr-4 mb-3"
+                  className="bg-[#278083] text-white px-4 py-2 rounded mr-4 mb-3 cursor-pointer"
                 >
                   Procure-to-pay
                 </button>
@@ -324,7 +305,7 @@ export default function SCMForm({ locale, translations }: SCMFormProps) {
                   onClick={() =>
                     handleQuestionnaireSelect("Transport Management")
                   }
-                  className="bg-[#278083] text-white px-4 py-2 rounded mr-4 mb-3"
+                  className="bg-[#278083] text-white px-4 py-2 rounded mr-4 mb-3 cursor-pointer"
                 >
                   Transport Management
                 </button>
@@ -332,29 +313,32 @@ export default function SCMForm({ locale, translations }: SCMFormProps) {
                   onClick={() =>
                     handleQuestionnaireSelect("Logistics Planning")
                   }
-                  className="bg-[#278083] text-white px-4 py-2 rounded mr-4 mb-3"
+                  className="bg-[#278083] text-white px-4 py-2 rounded mr-4 mb-3 cursor-pointer"
                 >
                   Logistic Planning
                 </button>
                 <button
                   onClick={() => handleQuestionnaireSelect("Warehousing")}
-                  className="bg-[#278083] text-white px-4 py-2 rounded mr-4 mb-3"
+                  className="bg-[#278083] text-white px-4 py-2 rounded mr-4 mb-3 cursor-pointer"
                 >
                   Warehouse Management
                 </button>
               </div>
             </div>
-          ) : step === 3 ? null : (
+          ) : step === 3 ? (
+            <>
+              {selectedQuestionnaire === "Procure-to-pay" ? (
+                <ProcureToPay onSubmit={handleQuestionnaireSubmit} />
+              ) : selectedQuestionnaire === "Transport Management" ? (
+                <Transport onSubmit={handleQuestionnaireSubmit} />
+              ) : selectedQuestionnaire === "Logistics Planning" ? (
+                <Logistics onSubmit={handleQuestionnaireSubmit} />
+              ) : selectedQuestionnaire === "Warehousing" ? (
+                <WarehouseQuestionnaire onSubmit={handleQuestionnaireSubmit} />
+              ) : null}
+            </>
+          ) : (
             <div>
-              selectedQuestionnaire === "Procure-to-pay" ? (
-              {/* <ProcureToPay onSubmit={handleQuestionnaireSubmit} />) : */}
-              selectedQuestionnaire === "Transport Management" ? (
-              {/* <Transport onSubmit={handleQuestionnaireSubmit} /> */}) :
-              selectedQuestionnaire === "Logistics Planning" ? (
-              {/* <Logistics onSubmit={handleQuestionnaireSubmit} /> */}) :
-              selectedQuestionnaire === "Warehousing" ? (
-              {/* <WarehouseQuestionnaire onSubmit={handleQuestionnaireSubmit} /> */}
-              ) : null
               {/* <SpiderWebChart
                 responses={responses}
                 departmentScores={departmentScores}
@@ -391,14 +375,14 @@ export default function SCMForm({ locale, translations }: SCMFormProps) {
                 completely free of charge. For the general terms and conditions,
                 please get in touch. We appreciate your trust in our services.
               </p>
-              <a href="/supply-health-check">
+              <Link href="/supply-health-check">
                 <button
                   onClick={handleRestart}
-                  className="bg-[#278083] text-white px-4 py-2 rounded mt-4"
+                  className="bg-[#278083] text-white px-4 py-2 rounded mt-4 cursor-pointer"
                 >
                   Restart
                 </button>
-              </a>
+              </Link>
             </div>
           )}
         </div>

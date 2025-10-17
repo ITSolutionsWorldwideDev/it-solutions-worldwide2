@@ -37,7 +37,7 @@ export default function LanguageSwitcher() {
 
   return (
     <button
-      className="z-50 fixed right-0 top-1/2 transform -translate-y-1/2 -rotate-90 flex items-center text-black bg-white rounded-sm border-2 border-gray-300 px-3 py-2 hover:bg-gray-100 -mr-10 shadow-md"
+      className="z-50 fixed right-0 top-1/2 transform -translate-y-1/2 -rotate-90 flex items-center text-black bg-white rounded-sm border-2 border-gray-300 px-3 py-2 hover:bg-gray-100 -mr-10 shadow-md cursor-pointer"
       onClick={toggleLocale}
       disabled={isPending}
     >

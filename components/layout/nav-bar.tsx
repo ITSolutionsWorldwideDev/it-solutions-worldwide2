@@ -49,7 +49,7 @@ export default function Navbar() {
           </div>
 
           <div className="xl:hidden">
-            {/* <button onClick={toggleMenu} className="focus:outline-none">
+            {/* <button onClick={toggleMenu} className="focus:outline-none cursor-pointer">
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -70,7 +70,7 @@ export default function Navbar() {
             </button> */}
 
             <button
-              className="lg:hidden text-[#278083] focus:outline-none"
+              className="lg:hidden text-[#278083] focus:outline-none cursor-pointer"
               onClick={toggleMenu}
             >
               <svg
@@ -132,12 +132,12 @@ export default function Navbar() {
 
           <div className="hidden xl:block">
             <Link href="/supply-health-check-info">
-              <button className="bg-[#278083] text-white px-4 py-2 rounded-md hover:bg-[#278083] transition mr-2">
+              <button className="bg-[#278083] text-white px-4 py-2 rounded-md hover:bg-[#278083] transition mr-2 cursor-pointer">
                 Free SCM Check
               </button>
             </Link>
             <Link href="/contact-us">
-              <button className="bg-[#278083] text-white px-4 py-2 rounded-md hover:bg-[#278083] transition">
+              <button className="bg-[#278083] text-white px-4 py-2 rounded-md hover:bg-[#278083] transition cursor-pointer">
                 Contact Us
               </button>
             </Link>
@@ -167,7 +167,7 @@ export default function Navbar() {
                     {item.dropdown && (
                       <button
                         onClick={() => toggleDropdown(item.label)}
-                        className="focus:outline-none"
+                        className="focus:outline-none cursor-pointer"
                       >
                         <svg
                           className={`h-5 w-5 transform ${

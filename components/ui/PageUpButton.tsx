@@ -22,7 +22,7 @@ export default function PageUpButton() {
   return (
     <button
       onClick={scrollToTop}
-      className={`z-50 transition-opacity duration-300 ${
+      className={`z-50 transition-opacity duration-300 cursor-pointer ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       style={{
@@ -43,4 +43,3 @@ export default function PageUpButton() {
     ><ArrowUp className="mx-auto" size={20} /></button>
   );
 }
-/* ↑ */

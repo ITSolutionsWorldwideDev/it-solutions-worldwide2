@@ -385,8 +385,8 @@ export default function JobApplyForm({ translations }: JobApplyFormProps) {
               <button
                 type="submit"
                 disabled={sending}
-                className={`group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 mt-4 ${
-                  sending ? "opacity-50 cursor-not-allowed" : ""
+                className={`group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-teal-600  hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 mt-4 ${
+                  sending ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
                 }`}
               >
                 {sending ? "Submitting..." : "Send Now"}

@@ -35,7 +35,7 @@ const PopUp: React.FC<PopUpProps> = ({ showPopup, onClose }) => {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-white hover:text-gray-300 text-3xl font-bold focus:outline-none"
+          className="absolute top-4 right-4 text-white hover:text-gray-300 text-3xl font-bold focus:outline-none cursor-pointer"
           aria-label="Close popup"
         >
           &times;

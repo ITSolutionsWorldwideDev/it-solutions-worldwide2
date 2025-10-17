@@ -99,7 +99,7 @@ const ImageSection2 = ({
       {popup && (
         <button
           onClick={handlePopupOpen}
-          className="mt-4 bg-[#236b7a] text-white px-4 py-2 rounded font-semibold"
+          className="mt-4 bg-[#236b7a] text-white px-4 py-2 rounded font-semibold cursor-pointer"
           type="button"
         >
           {ctabuttonText}

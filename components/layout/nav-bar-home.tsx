@@ -48,7 +48,7 @@ export default function NavbarHome() {
         </div>
 
         <div className="xl:hidden">
-          <button onClick={toggleMenu} className="focus:outline-none">
+          <button onClick={toggleMenu} className="focus:outline-none cursor-pointer">
             <svg
               className="h-6 w-6"
               fill="none"
@@ -101,7 +101,7 @@ export default function NavbarHome() {
         </ul>
         <div className="hidden xl:block">
           <Link href="/contact-us">
-            <button className="border border-white px-4 py-2 rounded hover:bg-white hover:text-black transition-colors">
+            <button className="border border-white px-4 py-2 rounded hover:bg-white hover:text-black transition-colors cursor-pointer">
               Contact Us
             </button>
           </Link>
@@ -129,7 +129,7 @@ export default function NavbarHome() {
                     {item.dropdown && (
                       <button
                         onClick={() => toggleDropdown(item.label)}
-                        className="focus:outline-none"
+                        className="focus:outline-none cursor-pointer"
                       >
                         <svg
                           className={`h-5 w-5 transform ${

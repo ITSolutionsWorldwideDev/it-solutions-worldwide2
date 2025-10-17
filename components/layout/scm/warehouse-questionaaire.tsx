@@ -1,14 +1,44 @@
 // app\[locale]\supply-health-check\warehouse-questionaaire.tsx
-// "use client";
-import { useState, useEffect, useRef } from "react";
-import Head from "next/head";
 
-// Shuffle function (client-side only)
-const shuffleArray = (array: any) => {
-  return array.sort(() => Math.random() - 0.5);
+import React, { useState, useEffect, useRef } from "react";
+
+interface QuestionData {
+  question: string;
+  options: [string, number][];
+  department: string;
+  questionIndex: number;
+}
+
+export interface DepartmentData {
+  weight: number;
+  questions: {
+    question: string;
+    options: [string, number][];
+  }[];
+}
+
+export interface SubmitData {
+  responses: Record<string, number>;
+  departmentScores: Record<string, number>;
+  totalScore: number;
+  departmentSummaries: Record<string, string>;
+}
+
+type Props = {
+  onSubmit: (
+    responses: SubmitData["responses"],
+    departmentScores: SubmitData["departmentScores"],
+    totalScore: number,
+    departmentSummaries: SubmitData["departmentSummaries"]
+  ) => void;
 };
 
-const departmentsData = {
+// Shuffle function to randomize the questions
+const shuffleArray = <T,>(array: T[]): T[] => {
+  return [...array].sort(() => Math.random() - 0.5);
+};
+
+const departmentsData: Record<string, DepartmentData> = {
   Systems: {
     weight: 0.2,
     questions: [
@@ -331,26 +361,27 @@ const departmentsData = {
   },
 };
 
-/* export default function SCMQuestionnaire({ onSubmit }) {
-  // We'll keep your original states and refs
-  const [responses, setResponses] = useState({});
-  const [shuffledQuestions, setShuffledQuestions] = useState([]);
-  const [currentPage, setCurrentPage] = useState(0);
-  const [answered, setAnswered] = useState(false);
+const WarehouseQuestionnaire: React.FC<Props> = ({ onSubmit }) => {
+  const [responses, setResponses] = useState<Record<string, number>>({});
+  const [shuffledQuestions, setShuffledQuestions] = useState<QuestionData[]>(
+    []
+  );
+  const [currentPage, setCurrentPage] = useState<number>(0);
+  const [answered, setAnswered] = useState<boolean>(false);
 
   const questionsPerPage = 5;
   const totalPages = Math.ceil(shuffledQuestions.length / questionsPerPage);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
-  const containerRef = useRef(null);
-
+  // 🔁 Scroll to top on page change
   useEffect(() => {
     if (containerRef.current) {
       containerRef.current.scrollTop = 0;
     }
   }, [currentPage]);
 
+  // 🎲 Shuffle questions on load
   useEffect(() => {
-    // Shuffle questions on mount - client-side only
     const allQuestions = Object.keys(departmentsData).flatMap((department) =>
       departmentsData[department].questions.map((question, index) => ({
         ...question,
@@ -366,31 +397,87 @@ const departmentsData = {
     const end = start + questionsPerPage;
     const currentQuestions = shuffledQuestions.slice(start, end);
 
-    const allAnswered = currentQuestions.every(
-      (questionData) =>
-        responses[
-          `${questionData.department}-${questionData.questionIndex}`
-        ] !== undefined
-    );
+    const allAnswered = currentQuestions.every((q) => {
+      const key = `${q.department}-${q.questionIndex}`;
+      return responses[key] !== undefined;
+    });
+
     setAnswered(allAnswered);
   }, [responses, currentPage, shuffledQuestions]);
 
-  const handleOptionChange = (department, questionIndex, value) => {
-    setResponses({
-      ...responses,
+  const handleOptionChange = (
+    department: string,
+    questionIndex: number,
+    value: number
+  ) => {
+    setResponses((prev) => ({
+      ...prev,
       [`${department}-${questionIndex}`]: value,
-    });
+    }));
   };
 
-  // Your getDepartmentSummary and handleSubmit functions unchanged,
-  // but we define onSubmit locally here for demonstration:
+  const getDepartmentSummary = (department: string, score: number): string => {
+    if (department === "Systems") {
+      if (score <= 2)
+        return "Systems likely need upgrades to streamline procurement. Investing in digital tools can improve efficiency.";
+      if (score <= 3.5)
+        return "Acceptable, though updates to systems would boost performance.";
+      if (score <= 4.5)
+        return "Efficient systems contributing to smooth procurement processes.";
+      return "Outstanding systems, ensuring a seamless procure-to-pay cycle.";
+    } else if (department === "Process") {
+      if (score <= 2)
+        return "Processes appear ineffective, potentially causing delays. Streamlining may help.";
+      if (score <= 3.5)
+        return "Adequate, though refinements could improve flow.";
+      if (score <= 4.5) return "Effective processes, with minimal bottlenecks.";
+      return "Excellent! Your processes are well-optimized for procurement efficiency.";
+    } else if (department === "Analytics") {
+      if (score <= 2)
+        return "Limited analytics hinder decision-making. Implementing robust analytics is recommended.";
+      if (score <= 3.5)
+        return "Adequate analytics, though further integration could enhance insights.";
+      if (score <= 4.5)
+        return "Strong analytics, providing valuable data for procurement.";
+      return "Excellent! Data-driven decisions are well-supported by analytics.";
+    } else if (department === "S&OP") {
+      if (score <= 2)
+        return "Sales and operations planning needs restructuring for better procurement alignment.";
+      if (score <= 3.5)
+        return "Some coordination exists, though further alignment could help.";
+      if (score <= 4.5)
+        return "Good coordination between S&OP, supporting procurement.";
+      return "Excellent! S&OP is highly integrated, fostering seamless operations.";
+    } else if (department === "Enviroment & Sustainability") {
+      if (score <= 2)
+        return "Limited environmental focus. Incorporating sustainability could benefit brand value.";
+      if (score <= 3.5)
+        return "Average focus on sustainability. Further improvements may help.";
+      if (score <= 4.5)
+        return "Good commitment to sustainable procurement practices.";
+      return "Excellent! Sustainability in procurement is fully optimized.";
+    }
+
+    return "No summary available.";
+  };
+
+  type Department =
+    | "Systems"
+    | "Process"
+    | "Analytics"
+    | "S&OP"
+    | "Enviroment & Sustainability";
+
+  type DepartmentScores = Record<Department, number>;
+  type DepartmentSummaries = Record<Department, string>;
+
   const handleSubmit = () => {
     let totalScore = 0;
-    const departmentScores = {};
-    const departmentSummaries = {};
+    const departmentScores: Partial<DepartmentScores> = {};
+    const departmentSummaries: Partial<DepartmentSummaries> = {};
 
     Object.keys(departmentsData).forEach((department) => {
-      const { weight, questions } = departmentsData[department];
+      const { weight, questions } = departmentsData[department as Department];
       let departmentScore = 0;
 
       questions.forEach((question, index) => {
@@ -400,118 +487,100 @@ const departmentsData = {
         }
       });
 
-      departmentScore = (
-        (departmentScore / (questions.length * 5)) *
-        5
-      ).toFixed(1);
-      departmentScores[department] = parseFloat(departmentScore);
-      // Here you can add your summary logic if needed
-      totalScore += departmentScores[department] / 5;
+      const fixedScore = parseFloat(
+        ((departmentScore / (questions.length * 5)) * 5).toFixed(1)
+      );
+
+      departmentScores[department as Department] = fixedScore;
+      departmentSummaries[department as Department] = getDepartmentSummary(
+        department as Department,
+        fixedScore
+      );
+      totalScore += fixedScore / 5;
     });
 
-    totalScore = totalScore.toFixed(2);
-    alert(`Total Score: ${totalScore}`); // Example output - replace with your real onSubmit logic
+    const total = parseFloat(totalScore.toFixed(2));
+    onSubmit(responses, departmentScores, total, departmentSummaries);
   };
 
   const progressPercentage = ((currentPage + 1) / totalPages) * 100;
 
   return (
-    <>
-      <Head>
-        <title>Warehouse Management Questionnaire</title>
-        <meta
-          name="description"
-          content="Take our Warehouse Management Questionnaire to assess your supply chain readiness."
+    <div className="bg-white p-6 rounded shadow-md">
+      <h2 className="text-xl font-bold mb-4">Procure-To-Pay Questionnaire</h2>
+
+      <div ref={containerRef} className="overflow-y-auto max-h-80">
+        {shuffledQuestions
+          .slice(
+            currentPage * questionsPerPage,
+            (currentPage + 1) * questionsPerPage
+          )
+          .map((questionData, index) => (
+            <div key={index} className="mb-4">
+              <p className="font-medium mb-2">{questionData.question}</p>
+              <div>
+                {questionData.options.map(([optionText, optionValue]) => (
+                  <label key={optionValue} className="block">
+                    <input
+                      type="radio"
+                      name={`${questionData.department}-${questionData.questionIndex}`}
+                      value={optionValue}
+                      checked={
+                        responses[
+                          `${questionData.department}-${questionData.questionIndex}`
+                        ] === optionValue
+                      }
+                      onChange={() =>
+                        handleOptionChange(
+                          questionData.department,
+                          questionData.questionIndex,
+                          optionValue
+                        )
+                      }
+                      className="mr-2"
+                    />
+                    {optionText}
+                  </label>
+                ))}
+              </div>
+            </div>
+          ))}
+      </div>
+
+      <div className="w-full bg-gray-300 h-4 rounded mt-4">
+        <div
+          className="bg-[#278083] h-4 rounded"
+          style={{ width: `${progressPercentage}%` }}
         />
-      </Head>
-      <main className="max-w-3xl mx-auto p-6 bg-white rounded shadow-md mt-6">
-        <h1 className="text-2xl font-bold mb-6">
-          Warehouse Management Questionnaire
-        </h1>
+      </div>
 
-        <section
-          ref={containerRef}
-          className="overflow-y-auto max-h-80 mb-6"
-          aria-live="polite"
-        >
-          {shuffledQuestions
-            .slice(
-              currentPage * questionsPerPage,
-              (currentPage + 1) * questionsPerPage
-            )
-            .map((questionData, index) => (
-              <article key={index} className="mb-6">
-                <p className="font-semibold mb-2">{questionData.question}</p>
-                <fieldset>
-                  {questionData.options.map(([optionText, optionValue]) => (
-                    <label
-                      key={optionValue}
-                      className="block cursor-pointer mb-1"
-                    >
-                      <input
-                        type="radio"
-                        name={`${questionData.department}-${questionData.questionIndex}`}
-                        value={optionValue}
-                        checked={
-                          responses[
-                            `${questionData.department}-${questionData.questionIndex}`
-                          ] === optionValue
-                        }
-                        onChange={() =>
-                          handleOptionChange(
-                            questionData.department,
-                            questionData.questionIndex,
-                            optionValue
-                          )
-                        }
-                        className="mr-2"
-                      />
-                      {optionText}
-                    </label>
-                  ))}
-                </fieldset>
-              </article>
-            ))}
-        </section>
-
-        <div className="w-full bg-gray-300 h-4 rounded mb-6">
-          <div
-            className="bg-[#278083] h-4 rounded transition-width duration-300"
-            style={{ width: `${progressPercentage}%` }}
-          />
-        </div>
-
-        <div className="flex justify-center">
-          {currentPage < totalPages - 1 ? (
-            <button
-              type="button"
-              onClick={() => setCurrentPage(currentPage + 1)}
-              disabled={!answered}
-              className={`p-3 rounded ${
-                answered
-                  ? "bg-[#278083] text-white"
-                  : "bg-gray-300 text-gray-500"
-              }`}
-            >
-              Next Page
-            </button>
-          ) : (
-            <button
-              type="button"
-              onClick={handleSubmit}
-              disabled={!answered}
-              className={`p-3 rounded ${
-                answered
-                  ? "bg-[#278083] text-white"
-                  : "bg-gray-300 text-gray-500"
-              }`}
-            >
-              Submit
-            </button>
-          )}
-        </div>
-      </main>
-    </>
+      <div className="mt-6 flex justify-center">
+        {currentPage < totalPages - 1 ? (
+          <button
+            type="button"
+            onClick={() => setCurrentPage(currentPage + 1)}
+            disabled={!answered}
+            className={`p-2 rounded cursor-pointer ${
+              answered ? "bg-[#278083] text-white" : "bg-gray-300 text-gray-500"
+            }`}
+          >
+            Next Page
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={handleSubmit}
+            disabled={!answered}
+            className={`p-2 rounded cursor-pointer ${
+              answered ? "bg-[#278083] text-white" : "bg-gray-300 text-gray-500"
+            }`}
+          >
+            Submit
+          </button>
+        )}
+      </div>
+    </div>
   );
-}
- */
+};
+
+export default WarehouseQuestionnaire;
