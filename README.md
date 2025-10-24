@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 IT Solutions Worldwide | Business Efficiency Platform (Next.js)
 
-## Getting Started
+IT Solutions Worldwide is a leading company that delivers cutting-edge solutions across multiple industries. This repository contains the codebase for our supply chain health check tool, built using **Next.js**, designed to streamline operations and deliver business insights effortlessly.
 
-First, run the development server:
+With years of proven expertise, we specialize in implementing simple yet innovative tech solutions across **Supply Chain Management**, **IT Support**, **Digital Marketing**, and **Operational Excellence**.
+
+---
+
+## 🚀 Live Demo
+
+👉 [View the Live Application](https://itsolutionsworldwide.com/)
+
+---
+
+## 📌 Features
+
+- ✅ Multi-step form to assess supply chain efficiency
+- ✅ Dynamic department-based questionnaires (Procure-to-Pay, Transport, etc.)
+- ✅ Real-time validation and scoring
+- ✅ Chart generation for visual feedback
+- ✅ Email delivery of results via cloud function
+- ✅ Internationalization (i18n) support
+- ✅ Fully responsive design using Tailwind CSS
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech         | Description                          |
+|--------------|--------------------------------------|
+| [Next.js](https://nextjs.org/) | React framework for server-side rendering |
+| [TypeScript](https://www.typescriptlang.org/) | Strong typing for safer code |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first CSS framework |
+| [i18next](https://www.i18next.com/) | Internationalization |
+| [Chart.js](https://www.chartjs.org/) | Data visualization |
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/ITSolutionsWorldwideDev/it-solutions-worldwide2.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

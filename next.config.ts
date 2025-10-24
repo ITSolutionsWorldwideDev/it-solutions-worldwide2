@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   // i18n,
   reactStrictMode: true,
+  output: 'export',
   experimental: {
     // enable App Router features if needed
   },
