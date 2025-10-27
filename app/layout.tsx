@@ -10,12 +10,13 @@ const lexend = Lexend({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
   title: {
-    default: "My Next.js App",
-    template: "%s | My Next.js App",
+    default: "Empowering Businesses with Smart IT Solutions | IT Solutions Worldwide",
+    template: "%s | IT Solutions Worldwide",
   },
-  description: "A modern Next.js application with dynamic titles and favicons.",
+  description: "Get expert marketing automation & professional services automation software in the Netherlands. Scalable solutions tailored to your business needs.",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },

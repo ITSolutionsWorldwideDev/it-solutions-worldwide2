@@ -132,12 +132,12 @@ export default function Navbar() {
 
           <div className="hidden xl:block">
             <Link href="/supply-health-check-info">
-              <button className="bg-[#278083] text-white px-4 py-2 rounded-md hover:bg-[#278083] transition mr-2 cursor-pointer">
+              <button className="bg-[#278083] text-white md:my-2  px-4 py-2 rounded-md hover:bg-[#278083] transition mr-2 cursor-pointer">
                 Free SCM Check
               </button>
             </Link>
             <Link href="/contact-us">
-              <button className="bg-[#278083] text-white px-4 py-2 rounded-md hover:bg-[#278083] transition cursor-pointer">
+              <button className="bg-[#278083] text-white md:my-2  px-4 py-2 rounded-md hover:bg-[#278083] transition cursor-pointer">
                 Contact Us
               </button>
             </Link>
