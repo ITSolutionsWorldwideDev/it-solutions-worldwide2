@@ -1,28 +1,5 @@
 export const jobsData = [
-  {
-    title: 'Sales Intern',
-    type: 'Full-Time, Intenship',
-    location: 'On-Site',
-    pdfUrl: '/job/sales-intern-new.pdf',
-  },
-  {
-    title: 'Admin Intern',
-    type: 'Full-Time, Internship',
-    location: 'On-Site',
-    pdfUrl: '/job/admin-intern-new.pdf',
-  },
-  {
-    title: 'Backoffice Assistant',
-    type: 'Full-Time, Contract',
-    location: 'On-Site',
-    pdfUrl: '/job/backoffice-assistant.pdf',
-  },
-  {
-    title: 'Procurement Specialist',
-    type: 'Full-Time, Contract',
-    location: 'On-Site',
-    pdfUrl: '/job/procurement-specialist-g-rollz.pdf',
-  },
+
   {
     title: 'Supply Chain Planner',
     type: 'Full-Time, Contract',
@@ -35,12 +12,12 @@ export const jobsData = [
     location: 'On-Site',
     pdfUrl: '/job/warehouse-manager.pdf',
   },
-  {
-    title: 'Supply Chain Analyst Intern',
-    type: 'Full-Time, Contract',
-    location: 'On-Site',
-    pdfUrl: '/job/supply-chain-intern.pdf',
-  },
+  // {
+  //   title: 'Supply Chain Analyst Intern',
+  //   type: 'Full-Time, Contract',
+  //   location: 'On-Site',
+  //   pdfUrl: '/job/supply-chain-intern.pdf',
+  // },
   {
     title: 'Sales Intern',
     type: 'Full-Time, Contract',
