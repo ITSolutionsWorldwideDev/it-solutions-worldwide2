@@ -81,7 +81,17 @@ export default function JobApplyForm({ translations }: JobApplyFormProps) {
         body: fileFormData,
       });
 
-      if (!uploadRes.ok) throw new Error("Failed to upload resume.");
+      const handleResponseError = async (res: Response) => {
+        const text = await res.text();
+        try {
+          const json = JSON.parse(text);
+          throw new Error(json.error?.message || res.statusText);
+        } catch {
+          throw new Error(text || res.statusText);
+        }
+      };
+
+      if (!uploadRes.ok) await handleResponseError(uploadRes);
 
       const uploadData = await uploadRes.json();
       const resumeFileId = uploadData[0]?.id;
@@ -92,10 +102,10 @@ export default function JobApplyForm({ translations }: JobApplyFormProps) {
         email,
         phone,
         address,
-        job_category_id: selectedJob.id,
         hear: hearAbout,
         message,
         resume: resumeFileId,
+        job_category_id: selectedJob.id,
       };
 
       const applicationRes = await fetch(`${strapiUrl}/api/job-applications`, {
@@ -276,9 +286,10 @@ export default function JobApplyForm({ translations }: JobApplyFormProps) {
               <select
                 id="hearAbout"
                 name="hearAbout"
-                // onChange={handleHearAboutChange}
-                onChange={(e) => setCategory(e.target.value)}
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900  focus:outline-none focus:ring-teal-500 focus:border-teal-500 focus:z-10 sm:text-sm mt-2"
+                value={hearAbout}
+                onChange={(e) => setHearAbout(e.target.value)} // ✅ correct
+                required
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 ..."
               >
                 <option value="">How did you hear about us?</option>
                 <option value="LinkedIn">LinkedIn</option>
@@ -317,70 +328,6 @@ export default function JobApplyForm({ translations }: JobApplyFormProps) {
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-teal-500 focus:border-teal-500 focus:z-10 sm:text-sm mt-2"
               />
             </div>
-            {/* <input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="input"
-            />
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-              required
-              className="input"
-            />
-            <textarea
-              placeholder="Address"
-              value={address}
-              onChange={(e) => setAddress(e.target.value)}
-              required
-              className="input"
-            />
-            <select
-              required
-              value={category}
-              onChange={(e) => setCategory(e.target.value)}
-              className="input"
-            >
-              <option value="">Select Job Type</option>
-              {jobs.map((job) => (
-                <option key={job.id} value={job.attributes.title}>
-                  {job.attributes.title}
-                </option>
-              ))}
-            </select>
-            <select
-              required
-              value={hearAbout}
-              onChange={(e) => setHearAbout(e.target.value)}
-              className="input"
-            >
-              <option value="">How did you hear about us?</option>
-              <option value="LinkedIn">LinkedIn</option>
-              <option value="Facebook">Facebook</option>
-              <option value="Twitter">Twitter</option>
-              <option value="Friend/Family">Friend/Family</option>
-              <option value="Website">Website</option>
-              <option value="Other">Other</option>
-            </select>
-            <textarea
-              placeholder="Cover Letter (Optional)"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className="input"
-            />
-            <input
-              type="file"
-              accept=".pdf,.doc,.docx"
-              onChange={handleResumeChange}
-              required
-              className="input"
-            /> */}
-
             <div>
               <button
                 type="submit"
