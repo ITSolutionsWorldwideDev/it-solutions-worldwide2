@@ -95,6 +95,11 @@ export async function POST(req: NextRequest) {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
+    //   logger: true,
+    //   debug: true,
+      pool: true, // enable connection pooling
+      maxConnections: 3, // up to 3 concurrent SMTP connections
+      maxMessages: 10, // reuse each connection for up to 10 emails
     });
 
     // Email to Applicant
@@ -148,10 +153,13 @@ export async function POST(req: NextRequest) {
     };
 
     // Send both emails
-    await Promise.all([
-      transporter.sendMail(applicantMail),
-      transporter.sendMail(hrMail),
-    ]);
+    // await Promise.all([
+    //   transporter.sendMail(applicantMail),
+    //   transporter.sendMail(hrMail),
+    // ]);
+
+    await transporter.sendMail(applicantMail);
+    await transporter.sendMail(hrMail);
 
     return NextResponse.json({
       message: "Application submitted successfully!",
