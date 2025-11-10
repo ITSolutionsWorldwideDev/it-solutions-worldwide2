@@ -83,7 +83,7 @@ export default function JobApplyForm({ translations }: JobApplyFormProps) {
     setCategoryId(selectedId);
 
     // Find the matching job title
-    const selectedJob = jobs.find((job) => job.job_info_id === selectedId);
+    const selectedJob = jobs.find((job) => job.job_info_id == selectedId);
     setCategoryTitle(selectedJob ? selectedJob.title : "");
   };
 
