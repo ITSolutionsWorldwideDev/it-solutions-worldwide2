@@ -1,0 +1,206 @@
+// app/api/job-applications/route.ts
+import { NextRequest, NextResponse } from "next/server";
+import fs from "fs";
+import path from "path";
+import nodemailer from "nodemailer";
+import pool from "@/lib/db"; // your PostgreSQL/MySQL pool
+
+// Utility to escape SQL strings
+function escape(str: string) {
+  return str.replace(/'/g, "''");
+}
+
+export async function POST(req: NextRequest) {
+  try {
+    // Parse incoming multipart/form-data
+    const formData = await req.formData();
+
+    const name = formData.get("name")?.toString();
+    const email = formData.get("email")?.toString();
+    const phone = formData.get("phone")?.toString();
+    const address = formData.get("address")?.toString();
+    const hear = formData.get("hear")?.toString();
+    const job_category = formData.get("job_category")?.toString();
+    const message = formData.get("message")?.toString();
+    const job_category_id = formData.get("job_category_id")?.toString();
+    const resumeFile = formData.get("resume") as File;
+
+    if (!name || !email || !phone || !resumeFile) {
+      return NextResponse.json(
+        { error: "Missing required fields." },
+        { status: 400 }
+      );
+    }
+
+    // Convert resume file to Buffer (for attachment + optional saving)
+    const arrayBuffer = await resumeFile.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+    const safeFileName = resumeFile.name.replace(/\s+/g, "_");
+    const timestamp = Date.now();
+    const savedFileName = `${timestamp}_${safeFileName}`;
+
+    // Save file to public/assets/job-applicants
+    const uploadDir = path.join(process.cwd(), "public/assets/job-applicants");
+    if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
+    const filePath = path.join(uploadDir, savedFileName);
+    fs.writeFileSync(filePath, buffer);
+
+    // fs.writeFileSync(filePath, Buffer.from(arrayBuffer));
+    const resumeUrl = `/assets/job-applicants/${savedFileName}`;
+
+    // Save form data to database
+    const query = `
+      INSERT INTO job_applications
+      (name, email, phone, address, hear, message, job_category_id, job_category, resume_url)
+      VALUES
+      ('${escape(name)}', '${escape(email)}', '${escape(phone)}', '${escape(
+      address || ""
+    )}', '${escape(hear || "")}', '${escape(message || "")}', ${escape(
+      job_category_id || "NULL"
+    )}, '${escape(job_category || "")}', '${resumeUrl}')
+    `;
+
+    await pool.query(query);
+
+    // Configure mail transporter
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT) || 465,
+      secure: process.env.SMTP_SECURE === "true",
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    });
+
+    // Email to Applicant
+    const applicantMail = {
+      from: `"IT Solutions Hub2010 Careers" <${process.env.SMTP_USER}>`,
+      to: email,
+      subject: `Thank You for Reaching Out to IT Solutions Hub2010`,
+      html: `
+        <p>Dear <strong>${name}</strong>,</p>
+        <p>Thank you for contacting IT Solutions Hub 2010 and applying for <strong>${job_category}</strong>. </p>
+        
+        <p>Your application has been received and forwarded to the relevant department.</p>
+        <p>A member of our team will get back to you as soon as possible. We appreciate your interest and the time you've taken to connect with us, 
+        whether it's regarding career opportunities, business inquiries, or general information.</p>
+        <p>Please note that in case of job applications, shortlisted candidates will be contacted for further steps.</p>
+        <p>We thank you once again for reaching out to us.</p><br>
+        <p>Best regards,</p>
+        <p>HR Department</p>
+        <p>IT Solutions Hub 2010</p>
+        <p>B-17, Islamabad, Pakistan</p>
+        `,
+    };
+
+    // Email to HR
+    const hrMail = {
+      from: `"IT Solutions Hub2010 Careers" <${process.env.SMTP_USER}>`,
+      to: process.env.HR_EMAIL,
+      cc: process.env.CC_EMAIL,
+      subject: `Job application for ${job_category} - ${name}`,
+      html: `
+            <p>Dear <strong>HR Manager</strong>,</p>
+            <p>Here is a job application for the post of <strong>${job_category}</strong>. </p>          
+            <p><strong>Applicant details:</strong></p>
+            <ul>
+                <li><strong>Name:</strong> ${name}</li>
+                <li><strong>Email:</strong> ${email}</li>
+                <li><strong>Phone:</strong> ${phone}</li>
+                <li><strong>Address:</strong> ${address}</li>
+                <li><strong>Hear From:</strong> ${hear}</li>
+                <li><strong>Message:</strong> ${message}</li>
+            </ul>
+            <p>The applicant’s resume is attached to this email.</p>
+          `,
+      attachments: [
+        {
+          filename: safeFileName,
+          content: buffer, // directly attach from uploaded file
+          contentType: resumeFile.type || "application/octet-stream",
+        },
+      ],
+    };
+
+    // Send both emails
+    await Promise.all([
+      transporter.sendMail(applicantMail),
+      transporter.sendMail(hrMail),
+    ]);
+
+    return NextResponse.json({
+      message: "Application submitted successfully!",
+      resumeUrl,
+    });
+  } catch (err: any) {
+    console.error(err);
+    return NextResponse.json(
+      { error: err.message || "Something went wrong." },
+      { status: 500 }
+    );
+  }
+}
+
+/*
+    const cc_email = "info@itsolutionsworldwide.com";
+
+        // console.log('attachments ==== ',attachments);
+
+        await strapi.plugin('email').service('email').send({
+          to: email_hr,
+          cc: cc_email,
+          subject: email_subject,
+          html: `
+            <p>Dear <strong>HR Manager</strong>,</p>
+            <p>Here is a job application for the post of <strong>${jobTitle}</strong>. </p>          
+            <p><strong>Applicant details</strong></p>
+            <p></p>
+            <p><strong>Name: </strong>${name}</p>
+            <p><strong>Email: </strong>${email}</p>
+            <p><strong>Phone: </strong>${phone}</p>
+            <p><strong>Address: </strong>${address}</p>
+            <p><strong>Hear From: </strong>${hear}</p>
+            <p><strong>Message: </strong>${message}</p>
+          `,
+          attachments,
+        });
+    
+    */
+
+/* await Promise.all([
+      fetch(`${strapiUrl}/api/send-application-email`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          name,
+          jobTitle: selectedJob.attributes.title,
+          phone,
+          address,
+          hear: hearAbout,
+          message,
+          resume: resumeUrl,
+          email_subject: `Thank You for Reaching Out to IT Solutions Hub2010`,
+          email_hr: "info@itsolutionshub2010.com",
+          type: 1,
+        }),
+      }),
+      fetch(`${strapiUrl}/api/send-application-email`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          name,
+          jobTitle: selectedJob.attributes.title,
+          phone,
+          address,
+          hear: hearAbout,
+          message,
+          resume: resumeUrl,
+          email_subject: `Job application for ${selectedJob.attributes.title}`,
+          email_hr: "info@itsolutionshub2010.com",
+          type: 2,
+        }),
+      }),
+    ]); */

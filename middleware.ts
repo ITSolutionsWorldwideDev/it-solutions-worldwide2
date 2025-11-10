@@ -1,6 +1,4 @@
 // middleware.ts
-
-// middleware.ts
 import { NextRequest, NextResponse } from 'next/server';
 import acceptLanguage from 'accept-language';
 import i18nConfig from './i18n/i18nConfig';
