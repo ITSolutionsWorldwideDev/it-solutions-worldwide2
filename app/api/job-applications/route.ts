@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
       INSERT INTO job_applications
       (name, email, phone, address, hear, message, job_category_id, job_category, resume_filename, resume_mime, resume_data)
       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
-      RETURNING id
+      RETURNING job_applications_id
     `;
     const values = [
       name,
@@ -155,7 +155,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       message: "Application submitted successfully!",
-      id: applicationId,
+      job_applications_id: applicationId,
     });
   } catch (err: any) {
     console.error(err);
