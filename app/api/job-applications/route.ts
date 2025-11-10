@@ -72,7 +72,7 @@ export async function POST(req: NextRequest) {
     ];
 
     const result = await pool.query(query, values);
-    const applicationId = result.rows?.[0]?.id;
+    const applicationId = result.rows?.[0]?.job_applications_id;
     /* const query = `
       INSERT INTO job_applications
       (name, email, phone, address, hear, message, job_category_id, job_category, resume_filename, resume_mime, resume_data)
