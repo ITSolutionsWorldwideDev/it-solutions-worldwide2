@@ -36,22 +36,46 @@ export async function POST(req: NextRequest) {
     const arrayBuffer = await resumeFile.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
     const safeFileName = resumeFile.name.replace(/\s+/g, "_");
-    const timestamp = Date.now();
-    const savedFileName = `${timestamp}_${safeFileName}`;
+    const mimeType = resumeFile.type || "application/octet-stream";
 
     // Save file to public/assets/job-applicants
-    const uploadDir = path.join(process.cwd(), "public/assets/job-applicants");
-    if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
-    const filePath = path.join(uploadDir, savedFileName);
-    fs.writeFileSync(filePath, buffer);
+    // const timestamp = Date.now();
+    // const savedFileName = `${timestamp}_${safeFileName}`;
+    // const uploadDir = path.join(process.cwd(), "public/assets/job-applicants");
+    // if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
+    // const filePath = path.join(uploadDir, savedFileName);
+    // fs.writeFileSync(filePath, buffer);
 
-    // fs.writeFileSync(filePath, Buffer.from(arrayBuffer));
-    const resumeUrl = `/assets/job-applicants/${savedFileName}`;
+    // // fs.writeFileSync(filePath, Buffer.from(arrayBuffer));
+    // const resumeUrl = `/assets/job-applicants/${savedFileName}`;
 
     // Save form data to database
+
     const query = `
       INSERT INTO job_applications
-      (name, email, phone, address, hear, message, job_category_id, job_category, resume_url)
+      (name, email, phone, address, hear, message, job_category_id, job_category, resume_filename, resume_mime, resume_data)
+      VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
+      RETURNING id
+    `;
+    const values = [
+      name,
+      email,
+      phone,
+      address || "",
+      hear || "",
+      message || "",
+      job_category_id || null,
+      job_category || "",
+      safeFileName,
+      mimeType,
+      buffer,
+    ];
+
+    const result = await pool.query(query, values);
+    const applicationId = result.rows?.[0]?.id;
+    /* const query = `
+      INSERT INTO job_applications
+      (name, email, phone, address, hear, message, job_category_id, job_category, resume_filename, resume_mime, resume_data)
       VALUES
       ('${escape(name)}', '${escape(email)}', '${escape(phone)}', '${escape(
       address || ""
@@ -60,7 +84,7 @@ export async function POST(req: NextRequest) {
     )}, '${escape(job_category || "")}', '${resumeUrl}')
     `;
 
-    await pool.query(query);
+    await pool.query(query); */
 
     // Configure mail transporter
     const transporter = nodemailer.createTransport({
@@ -131,7 +155,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       message: "Application submitted successfully!",
-      resumeUrl,
+      id: applicationId,
     });
   } catch (err: any) {
     console.error(err);

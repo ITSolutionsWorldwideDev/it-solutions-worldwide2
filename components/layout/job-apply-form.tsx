@@ -389,7 +389,7 @@ export default function JobApplyForm({ translations }: JobApplyFormProps) {
                 value={hearAbout}
                 onChange={(e) => setHearAbout(e.target.value)} // ✅ correct
                 required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 ..."
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900  focus:outline-none focus:ring-teal-500 focus:border-teal-500 focus:z-10 sm:text-sm mt-2"
               >
                 <option value="">How did you hear about us?</option>
                 <option value="LinkedIn">LinkedIn</option>
