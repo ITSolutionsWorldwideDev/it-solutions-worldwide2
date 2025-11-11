@@ -53,8 +53,8 @@ export async function POST(req: NextRequest) {
 
     const query = `
       INSERT INTO job_applications
-      (name, email, phone, address, hear, message, job_category_id, job_category, resume_filename, resume_mime, resume_data)
-      VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
+      (name, email, phone, address, hear, message, job_category_id, job_category, resume_filename, resume_mime, resume_data, created_at, updated_at, published_at)
+      VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11, NOW(), NOW(), NOW())
       RETURNING job_applications_id
     `;
     const values = [
