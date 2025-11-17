@@ -8,8 +8,9 @@ import ProfileInfoSection from "@/components/layout/profile-info-section";
 import TechStackSection from "@/components/layout/about/tech-stack-section";
 import GetInTouchSection from "@/components/layout/about/get-in-touch-section";
 import TeamMembersTabsSection from "@/components/layout/about/team-members-tabs-section";
+import BannerSection3 from "@/components/layout/banner-section-3";
 
-export default async function AboutUsPage({
+export default async function ProfilePage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -34,6 +35,18 @@ export default async function AboutUsPage({
       image: "/assets/images/profile/fluent_person-support-16-filled.svg",
       title: t("profile.card_heading_3"),
       description: t("profile.card_text_3"),
+    },
+  ];
+
+  const slides = [
+    {
+      backgroundImage: "/assets/images/profile/banner_bg.png",
+      backgroundMainImage: "/assets/images/profile/banner_rightside_bg.png",
+      heading: "From idea to impact",// t("ecommerce.heading_1"),
+      text: "we handle it all.",//t("ecommerce.text_1"),
+      button: "Discover Now",//t("ecommerce.button_1"),
+      button2: "Our Services",// t("ecommerce.button_1"),
+      textcolor: "#0000",
     },
   ];
 
@@ -79,7 +92,8 @@ export default async function AboutUsPage({
   return (
     <>
       <div className="container mx-auto max-w-7xl">
-        <Group9252 />
+        <BannerSection3 slides={slides} />
+        {/* <Group9252 /> */}
         <ProfileInfoSection
           heading={t("profile.cards_main_heading")}
           cards={cards2}

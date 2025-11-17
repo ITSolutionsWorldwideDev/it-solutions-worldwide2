@@ -23,8 +23,8 @@ const GetInTouchSection: NextPage = () => {
         }}
         role="img"
       >
-        <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 ">
-          <div className="relative grid pt-20 text-center">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 ">
+          {/* <div className="relative grid pt-20 text-center">
             <div className="font-semibold">Make an Appointment</div>
             <div className="text-justify">
               <div className="relative mx-auto">
@@ -80,92 +80,11 @@ const GetInTouchSection: NextPage = () => {
             </div>
             <div className="">
               <div className="font-semibold">3000+ Client Reviews</div>
-              {/* <div className="absolute top-[0px] left-[0px] flex items-center gap-[3.1px]">
-                  <div className="h-num-29_6 w-num-30_9 relative">
-                    <Image
-                      className="absolute h-full w-[50.16%] top-[0%] right-[49.84%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
-                      width={15.5}
-                      height={29.6}
-                      sizes="100vw"
-                      alt="" src="/assets/images/aboutus/"
-                    />
-                    <Image
-                      className="absolute h-full w-[50.16%] top-[0%] right-[0.03%] bottom-[0%] left-[49.81%] max-w-full overflow-hidden max-h-full object-contain"
-                      width={15.5}
-                      height={29.6}
-                      sizes="100vw"
-                      alt="" src="/assets/images/aboutus/"
-                    />
-                  </div>
-                  <div className="h-num-29_6 w-num-30_9 relative">
-                    <Image
-                      className="absolute h-full w-[50.16%] top-[0%] right-[49.84%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
-                      width={15.5}
-                      height={29.6}
-                      sizes="100vw"
-                      alt="" src="/assets/images/aboutus/"
-                    />
-                    <Image
-                      className="absolute h-full w-[50.16%] top-[0%] right-[0.03%] bottom-[0%] left-[49.81%] max-w-full overflow-hidden max-h-full object-contain"
-                      width={15.5}
-                      height={29.6}
-                      sizes="100vw"
-                      alt="" src="/assets/images/aboutus/"
-                    />
-                  </div>
-                  <div className="h-num-29_6 w-num-30_9 relative">
-                    <Image
-                      className="absolute h-full w-[50.16%] top-[0%] right-[49.84%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
-                      width={15.5}
-                      height={29.6}
-                      sizes="100vw"
-                      alt="" src="/assets/images/aboutus/"
-                    />
-                    <Image
-                      className="absolute h-full w-[50.16%] top-[0%] right-[0.03%] bottom-[0%] left-[49.81%] max-w-full overflow-hidden max-h-full object-contain"
-                      width={15.5}
-                      height={29.6}
-                      sizes="100vw"
-                      alt="" src="/assets/images/aboutus/"
-                    />
-                  </div>
-                  <div className="h-num-29_6 w-num-30_9 relative">
-                    <Image
-                      className="absolute h-full w-[50.16%] top-[0%] right-[49.84%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
-                      width={15.5}
-                      height={29.6}
-                      sizes="100vw"
-                      alt="" src="/assets/images/aboutus/"
-                    />
-                    <Image
-                      className="absolute h-full w-[50.16%] top-[0%] right-[0.03%] bottom-[0%] left-[49.81%] max-w-full overflow-hidden max-h-full object-contain"
-                      width={15.5}
-                      height={29.6}
-                      sizes="100vw"
-                      alt="" src="/assets/images/aboutus/"
-                    />
-                  </div>
-                  <div className="h-num-29_6 w-num-30_9 relative">
-                    <Image
-                      className="absolute h-full w-[50.16%] top-[0%] right-[49.84%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
-                      width={15.5}
-                      height={29.6}
-                      sizes="100vw"
-                      alt="" src="/assets/images/aboutus/"
-                    />
-                    <Image
-                      className="absolute h-full w-[50.16%] top-[0%] right-[0.03%] bottom-[0%] left-[49.81%] max-w-full overflow-hidden max-h-full object-contain"
-                      width={15.5}
-                      height={29.6}
-                      sizes="100vw"
-                      alt="" src="/assets/images/aboutus/"
-                    />
-                  </div>
-                </div> */}
+              
             </div>
-          </div>
+          </div> */}
 
-          <div className="relative grid pt-20 text-center text-lg">
+          <div className="relative grid pt-20 text-left text-lg">
             <div className="text-[45px] font-semibold">Get In Touch</div>
             <div className="text-justify flex flex-row gap-4">
               <div className="w-auto">
@@ -221,7 +140,7 @@ const GetInTouchSection: NextPage = () => {
               >
                 Contact Us
                 <Image
-                  className="w-6 h-6 align-middle"
+                  className="w-6 h-6 ml-2 self-center"
                   width={24}
                   height={24}
                   sizes="100vw"
