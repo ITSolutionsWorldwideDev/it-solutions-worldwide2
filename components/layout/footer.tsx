@@ -33,6 +33,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/profile" className="text-base hover:text-[#236B7A]">
+                  Profile
+                </Link>
+              </li>
+              <li>
                 <Link
                   href="/scm-services"
                   className="text-base hover:text-[#236B7A]"

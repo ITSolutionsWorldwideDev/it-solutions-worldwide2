@@ -59,7 +59,31 @@
     "message": "Bericht",
     "sendmessage": "Verstuur Bericht"
   },
+  "profile": {
+    "cards_main_heading": "Maak uw bedrijf toekomstbestendig — gebouwd om zich aan te passen, klaar om te leiden.",
+    "card_heading_1": "Slimme oplossingen, naadloze werking",
+    "card_text_1": "Wij vereenvoudigen complexe workflows met op maat gemaakte IT- en cloudoplossingen die de efficiëntie verhogen, kosten verlagen en met uw groei meegroeien. Van infrastructuur tot automatisering: wij bouwen systemen die zich ontwikkelen met uw bedrijf.",
+
+    "card_heading_2": "Digitale groei die resultaat levert",
+    "card_text_2": "Onze digitale marketing- en e-commercestrategieën zijn ontworpen om echte resultaten te realiseren — meer zichtbaarheid, betrokkenheid en conversie. Met data-gedreven campagnes en geoptimaliseerde platforms helpen we u te excelleren in de digitale wereld.",
+
+    "card_heading_3": "Wendbare ondersteuning, betrouwbaar talent",
+    "card_text_3": "Blijf vooroplopen met flexibele staffing en deskundige ondersteuning die zich aanpast aan uw behoeften. Of u nu teams opschaalt of technische uitdagingen oplost, wij bieden de juiste mensen en tools om uw bedrijf vooruit te helpen."
+  },
+
   "aboutus": {
+    "expertise_heading_1": "Supply Chain-diensten",
+    "expertise_text_1": "Het stroomlijnen van logistiek en operaties voor snellere, slimmere levering.",
+
+    "expertise_heading_2": "IT- en Cloudoplossingen",
+    "expertise_text_2": "Veilige, schaalbare systemen die zijn gebouwd voor de moderne zakelijke behoeften.",
+
+    "expertise_heading_3": "Digitale Marketing & E-commerce",
+    "expertise_text_3": "Online groei stimuleren via strategie, content en conversie.",
+
+    "expertise_heading_4": "Personeelsvoorziening en Ondersteuning",
+    "expertise_text_4": "Flexibel talent en technische ondersteuning om u sterk draaiende te houden.",
+
     "heading_1": "Over Ons | IT Solutions Worldwide",
     "text_1": "Wij combineren expertise in managementadvies en de implementatie van bedrijfsapplicaties.",
     "heading_2": "Wie Wij Zijn",

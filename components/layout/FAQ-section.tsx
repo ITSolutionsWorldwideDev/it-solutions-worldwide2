@@ -1,8 +1,9 @@
 // components/layout/FAQ-section.tsx
-'use client';
+"use client";
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface FAQItem {
   question: string;
@@ -31,7 +32,7 @@ const FAQSection = ({
   };
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.location.hash) {
+    if (typeof window !== "undefined" && window.location.hash) {
       const id = window.location.hash.substring(1);
       const element = document.getElementById(id);
       if (element) {
@@ -41,12 +42,33 @@ const FAQSection = ({
   }, []);
 
   return (
-    <section id="faq" className="max-w-6xl mx-auto p-6 py-12" aria-labelledby="faq-heading">
+    <section
+      id="faq"
+      className=" mx-auto p-6 py-12"
+      aria-labelledby="faq-heading"
+    >
+      {/* max-w-6xl */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         {/* Left Section */}
-        <div>
+        <div className="flex flex-col items-start gap-[50.4px]">
+          <div className="shadow-[0px_0px_1.05px_rgba(44,_58,_114,_0.05),_0px_2.098883628845215px_6.3px_rgba(44,_58,_114,_0.05),_0px_10.494418144226074px_18.89px_rgba(58,_76,_146,_0.1)] rounded-[20.99px] bg-white border-lightsteelblue border-solid border-[1px] flex items-center py-[8.4px] px-[12.6px] gap-[8.4px] text-center">
+            <Image
+              className="h-[21px] w-[21px] relative object-cover"
+              width={21}
+              height={21}
+              sizes="100vw"
+              alt=""
+              src="/assets/images/aboutus/small-eyebrow-tag-label-icon-ai.svg"
+            />
+            <div className="relative leading-[160%] font-medium">FAQ</div>
+          </div>
           <div className="mb-8">
-            <h1 id="faq-heading" className="text-3xl font-bold mb-2">{title}</h1>
+            <h1
+              id="faq-heading"
+              className="text-3xl font-bold mb-2 flex flex-col items-start gap-[33.6px] text-[50.37px] text-gray relative tracking-[-0.02em] leading-[62.97px]"
+            >
+              {title}
+            </h1>
             <p className="text-gray-600">{description}</p>
           </div>
           <div className="flex gap-4">
@@ -71,7 +93,10 @@ const FAQSection = ({
         <div className="bg-[#278083] text-white rounded-lg shadow p-6">
           <dl className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="border-b border-white last:border-b-0">
+              <div
+                key={index}
+                className="border-b border-white last:border-b-0"
+              >
                 <dt>
                   <button
                     onClick={() => toggleFAQ(index)}

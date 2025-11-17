@@ -3,6 +3,7 @@
 import AnimationArea from "@/components/layout/home/AnimationArea";
 import BlogCarousel from "@/components/layout/home/BlogCarousel";
 import ContactSection from "@/components/layout/home/ContactSection";
+import SegmentTabs from "@/components/layout/home/SegmentTabComponent";
 
 export default async function HomePage({
   params,
@@ -13,8 +14,10 @@ export default async function HomePage({
   return (
     <>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <SegmentTabs />
         <AnimationArea />
         <BlogCarousel locale={locale} />
+        
         <ContactSection />
       </main>
     </>

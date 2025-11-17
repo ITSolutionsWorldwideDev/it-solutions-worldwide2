@@ -59,7 +59,30 @@
     "message": "Message",
     "sendmessage": "Send Message"
   },
+  "profile": {
+    "cards_main_heading":"Make your Business future proof built to adapt, ready to lead.",
+    "card_heading_1": "Smart Solutions, Seamless Operation",
+    "card_text_1": "We simplify complex workflows with tailored IT and cloud solutions that boost efficiency, reduce costs, and scale with your growth. From infrastructure to automation, we build systems that evolve with your business.",
+
+    "card_heading_2": "Digital Growth That Delivers",
+    "card_text_2": "Our digital marketing and e-commerce strategies are designed to drive real resultsenhancing visibility, engagement, and conversion. We help you lead in the digital space with data-driven campaigns and optimized platforms.",
+
+    "card_heading_3": "Agile Support, Reliable Talent",
+    "card_text_3": "Stay ahead with flexible staffing and expert support that adapts to your needs. Whether scaling teams or solving technical challenges, we provide the right people and tools to keep your business moving forward."
+  },
   "aboutus": {
+    "expertise_heading_1": "Supply Chain Services",
+    "expertise_text_1": "Streamlining logistics and operations for faster, smarter delivery.",
+
+    "expertise_heading_2": "IT and Cloud Solutions",
+    "expertise_text_2": "Secure, scalable systems built for modern business needs.",
+
+    "expertise_heading_3": "Digital Marketing & E-commerce",
+    "expertise_text_3": "Driving online growth through strategy, content, and conversion.",
+
+    "expertise_heading_4": "Staffing and Support",
+    "expertise_text_4": "Flexible talent and technical support to keep you running strong.",
+    
     "heading_1": "About Us | IT Solutions Worldwide",
     "text_1": "We combines expertise in management consulting and implementation of business applications",
     "heading_2": "Who We Are",

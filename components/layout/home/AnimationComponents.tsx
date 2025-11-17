@@ -297,7 +297,7 @@ export function AnimatedList() {
   // Render animated version for larger screens
   return (
     <div
-      className="h-screen flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:items-start"
+      className="flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:items-start"
       ref={sectionRef}
     >
       <section className="relative flex flex-col items-center md:flex-row md:justify-center lg:-space-x-16 md:-space-x-28 px-4 pt-20">
