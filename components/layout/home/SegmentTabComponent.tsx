@@ -92,13 +92,14 @@ export default function SegmentTabs() {
   const steps = ["Service", "Option", "Enquiry"];
 
   return (
-    <div className="w-full mt-20 max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+    <div className="w-full mt-20 max-w-3xl mx-auto bg-white text-[#356666] opacity-90 p-8 rounded-xl shadow-lg">
+      <div>
       {/* Progress Bar */}
       <div className="flex items-center justify-between mb-8 relative">
         {steps.map((s, i) => (
           <div key={s} className="flex-1 flex items-center relative">
             <div
-              className={`w-8 h-8 rounded-full flex items-center justify-center z-10 text-white font-semibold ${
+              className={`w-8 h-8 rounded-full flex items-center justify-center z-10 font-semibold  text-white ${
                 step > i ? "bg-[#467a7e]" : "bg-gray-300"
               }`}
             >
@@ -278,6 +279,8 @@ export default function SegmentTabs() {
           </motion.div>
         )}
       </AnimatePresence>
+      
+      </div>
     </div>
   );
 }

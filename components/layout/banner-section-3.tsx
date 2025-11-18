@@ -37,7 +37,7 @@ const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
     : "text-black";
 
   return (
-    <div className="relative w-full py-2">
+    <div className="relative w-full py-2 mt-2">
       <div
         className="relative bg-cover bg-center w-full h-[600px] md:h-[400px] lg:h-[600px] mx-auto rounded-xl shadow-lg overflow-hidden flex items-center"
         style={{

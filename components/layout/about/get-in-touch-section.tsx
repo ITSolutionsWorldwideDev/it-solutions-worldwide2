@@ -119,7 +119,7 @@ const GetInTouchSection: NextPage = () => {
               <div className="w-auto">
                 <div className="leading-[30px] capitalize">Phone Number</div>
                 <div className="text-[15px] tracking-[0.01em] leading-[100%] lowercase font-medium text-silver">
-                  265-45489-4884-452
+                  +31 10 766 0786
                 </div>
               </div>
             </div>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import AnimatedBorderCard from "./home/AnimatedBorderCard";
 // import { Logo } from "./logo";
 import NavbarHome from "./nav-bar-home";
+import SegmentTabs from "./home/SegmentTabComponent";
 
 export default function Header() {
   const isBgLoaded = true;
@@ -50,6 +51,8 @@ export default function Header() {
               Get FREE Consultation
             </button>
           </Link>
+
+          <SegmentTabs />
         </div>
       </div>
     </div>
