@@ -101,7 +101,7 @@ const GetInTouchSection: NextPage = () => {
               <div className="w-auto">
                 <div className="leading-[30px] capitalize">Email us</div>
                 <div className="text-[15px] tracking-[0.01em] leading-[100%] lowercase font-medium text-silver">
-                  info@itsolutionsworldwide.com
+                  <a href="mailto:info@itsolutionsworldwide.com">info@itsolutionsworldwide.com</a>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ const GetInTouchSection: NextPage = () => {
               <div className="w-auto">
                 <div className="leading-[30px] capitalize">Phone Number</div>
                 <div className="text-[15px] tracking-[0.01em] leading-[100%] lowercase font-medium text-silver">
-                  +31 10 766 0786
+                  <a href="tel:+31107660786">+31 10 766 0786</a>
                 </div>
               </div>
             </div>

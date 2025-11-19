@@ -40,7 +40,7 @@ const ProfilePgTeamMember: React.FC<ProfilePgTeamMemberProps> = ({
           height={350}
           className="rounded-lg absolute top-[-20px] w-full h-[370px] transition-transform duration-300 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 rounded-lg transition-all flex items-center justify-center text-white">
+        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 rounded-3xl transition-all flex items-center justify-center text-white">
           <div>
             <div className="font-semibold text-lg">{name}</div>
             <div className="text-sm text-[#467a7e]">{role}</div>
@@ -49,6 +49,130 @@ const ProfilePgTeamMember: React.FC<ProfilePgTeamMemberProps> = ({
       </div>
 
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <div className="items-center text-center pb-10">
+          <div className="w-full relative text-justify text-xl text-gray font-lexend">
+            <div className="flex sm:flex-col md:flex-row  px-[5%]">
+
+              <div className="w-1/3">
+                <Image
+                  className="rounded-[10.89px] w-[388px] h-[541px] object-cover p-[5%] pt-10"
+                  width={388}
+                  height={541}
+                  sizes="100vw"
+                  alt=""
+                  src={image || "/assets/images/profile/avatar.jpg"}
+                />
+              </div>
+
+              <div className="w-2/3 pt-15">
+                <div className="text-left text-[25px] text-[#467a7e]">
+                  <div className="text-[40px] font-semibold text-black">
+                    {name}
+                  </div>
+                  <div className="">{role}</div>
+                </div>
+                <div className="mt-10 text-[#898989] text-justify font-lexend text-[18px] not-italic font-normal leading-normal">
+                  {bio || "Bio coming soon..."}
+                </div>
+                <div className="mt-2 text-[#898989] text-justify font-lexend text-[18px] not-italic font-normal leading-normal">
+                  {bio2 || "..."}
+                </div>
+
+                <div className="flex sm:flex-col md:flex-row md:gap-5 md:mt-5">
+                  <div className="text-lg text-black">
+                    <div className=" w-[400px] flex flex-row rounded-[11px] border-gainsboro border-solid border-[2px] box-border p-5">
+                      <div className="w-[50px]">
+                        <Image
+                          className=" bg-[#DBF7F8] rounded-4xl p-2"
+                          width={36}
+                          height={36}
+                          sizes="100vw"
+                          alt=""
+                          src="/assets/images/aboutus/modal-email.svg"
+                        />
+                      </div>
+                      <div className="">
+                        <div className="capitalize text-[18px] ">Email:</div>
+                        <div className="tracking-[0.01em] lowercase mt-1 text-[#898989] text-justify font-lexend text-[18px] not-italic font-normal leading-normal">
+                          <a href="mailto:info@itsolutionsworldwide.com">info@itsolutionsworldwide.com</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="text-lg text-black">
+                    <div className=" w-[400px] flex flex-row rounded-[11px] border-gainsboro border-solid border-[2px] box-border p-5">
+                      <div className="w-[50px]">
+                        <Image
+                          className=" bg-[#DBF7F8] rounded-4xl p-2"
+                          width={36}
+                          height={36}
+                          sizes="100vw"
+                          alt=""
+                          src="/assets/images/aboutus/modal-phone.svg"
+                        />
+                      </div>
+                      <div className="">
+                        <div className="capitalize text-[18px]">
+                          Phone Call:
+                        </div>
+                        <div className="tracking-[0.01em] lowercase mt-1 text-[#898989] text-justify font-lexend text-[18px] not-italic font-normal leading-normal">
+                          <a href="tel:+31107660786">+31 10 766 0786</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="inline-flex md:mt-5 md:gap-4">
+                  <div className="w-[40.4px] h-[40.4px]">
+                    <Image
+                      className="max-w-full overflow-hidden max-h-full"
+                      width={40.4}
+                      height={40.4}
+                      sizes="100vw"
+                      alt=""
+                      src="/assets/images/aboutus/facebook.svg"
+                    />
+                  </div>
+                  <div className="w-[40.4px] h-[40.4px]">
+                    <Image
+                      className="max-w-full overflow-hidden max-h-full"
+                      width={40.4}
+                      height={40.4}
+                      sizes="100vw"
+                      alt=""
+                      src="/assets/images/aboutus/instagram.svg"
+                    />
+                  </div>
+                  <div className="w-[40.4px] h-[40.4px]">
+                    <Image
+                      className="max-w-full overflow-hidden max-h-full"
+                      width={40.4}
+                      height={40.4}
+                      sizes="100vw"
+                      alt=""
+                      src="/assets/images/aboutus/twiter.svg"
+                    />
+                  </div>
+                  <div className="w-[40.4px] h-[40.4px]">
+                    <Image
+                      className="max-w-full overflow-hidden max-h-full"
+                      width={40.4}
+                      height={40.4}
+                      sizes="100vw"
+                      alt=""
+                      src="/assets/images/aboutus/linkedin.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Modal>
+
+      {/* <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <div className="flex flex-col items-center text-center">
           <div className="w-full h-[661px] relative text-justify text-xl text-gray font-lexend">
             <div className="absolute top-[0px] left-[0px] w-[1318px] h-[661px]">
@@ -158,7 +282,7 @@ const ProfilePgTeamMember: React.FC<ProfilePgTeamMemberProps> = ({
             </div>
           </div>
         </div>
-      </Modal>
+      </Modal> */}
     </>
   );
 };

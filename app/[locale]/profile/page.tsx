@@ -1,8 +1,6 @@
 // app/[locale]/profile/page.tsx
-
 import initServerI18n from "@/utils/serverTranslation";
 import FAQSection from "@/components/layout/FAQ-section";
-import Group9252 from "@/components/layout/about/group-9252";
 import ProjectSection from "@/components/layout/about/project-section";
 import ProfileInfoSection from "@/components/layout/profile-info-section";
 import TechStackSection from "@/components/layout/about/tech-stack-section";
@@ -27,7 +25,8 @@ export default async function ProfilePage({
       description: t("profile.card_text_1"),
     },
     {
-      image: "/assets/images/profile/streamline_decent-work-and-economic-growth-solid.svg",
+      image:
+        "/assets/images/profile/streamline_decent-work-and-economic-growth-solid.svg",
       title: t("profile.card_heading_2"),
       description: t("profile.card_text_2"),
     },
@@ -42,10 +41,10 @@ export default async function ProfilePage({
     {
       backgroundImage: "/assets/images/profile/banner_bg.png",
       backgroundMainImage: "/assets/images/profile/banner_rightside_bg.png",
-      heading: "From idea to impact",// t("ecommerce.heading_1"),
-      text: "we handle it all.",//t("ecommerce.text_1"),
-      button: "Discover Now",//t("ecommerce.button_1"),
-      button2: "Our Services",// t("ecommerce.button_1"),
+      heading: "From idea to impact", // t("ecommerce.heading_1"),
+      text: "we handle it all.", //t("ecommerce.text_1"),
+      button: "Discover Now", //t("ecommerce.button_1"),
+      button2: "Our Services", // t("ecommerce.button_1"),
       textcolor: "#0000",
     },
   ];
@@ -93,7 +92,6 @@ export default async function ProfilePage({
     <>
       <div className="container mx-auto max-w-7xl">
         <BannerSection3 slides={slides} />
-        {/* <Group9252 /> */}
         <ProfileInfoSection
           heading={t("profile.cards_main_heading")}
           cards={cards2}

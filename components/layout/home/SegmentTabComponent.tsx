@@ -13,6 +13,12 @@ const services: Option[] = [
   { label: "Web Development", value: "web-dev" },
   { label: "UI/UX Design", value: "ui-ux" },
   { label: "Digital Marketing", value: "digital-marketing" },
+  { label: "PPC Specialist", value: "ppc specialist" },
+  { label: "Recruitter", value: "recruitter" },
+  { label: "Virtual Assistant", value: "virtual-assistant" },
+  { label: "ERP Specialist", value: "erp-specialist" },
+  { label: "Supply Chain Automation Consultant", value: "supply-chain" },
+  { label: "BI Developer", value: "bi-developer" },
 ];
 
 const serviceOptions: Record<string, Option[]> = {
@@ -20,14 +26,101 @@ const serviceOptions: Record<string, Option[]> = {
     { label: "Frontend", value: "frontend" },
     { label: "Backend", value: "backend" },
     { label: "Full Stack", value: "fullstack" },
+    { label: "Mobile Apps", value: "mobile application development" },
+    { label: "Custom Tools", value: "customized tool development" },
+    { label: "Integrations", value: "integrations" },
+    { label: "I'd like your guidance.", value: "req for web-dev advise" },
   ],
   "ui-ux": [
-    { label: "Wireframing", value: "wireframing" },
-    { label: "Prototyping", value: "prototyping" },
+    { label: "Branding", value: "branding" },
+    { label: "Marketing Materials", value: "marketing materials" },
+    { label: "Website Design", value: "website design" },
+    { label: "App Graphics", value: "app graphics" },
+    { label: "Image and Video", value: "image and video" },
+    { label: "3D modeling", value: "3D modeling" },
+    { label: "App Graphics", value: "app graphics" },
+    { label: "I'd like your guidance.", value: "req for ui-ux advise" },
   ],
   "digital-marketing": [
     { label: "SEO", value: "seo" },
     { label: "Content Marketing", value: "content" },
+  ],
+  "ppc specialist": [
+    { label: "Linkedin Adds", value: "linkedin adds" },
+    { label: "Meta Adds", value: "meta adds" },
+    { label: "various", value: "various" },
+    { label: "I'd like your guidance.", value: "req for PPC advise" },
+  ],
+  recruitter: [
+    { label: "Engineering", value: "engineering" },
+    { label: "Chemicals", value: "chemicals" },
+    { label: "Retail", value: "retail" },
+    { label: "Ecommerce", value: "ecommerce" },
+    { label: "Technology", value: "technology" },
+    { label: "Finance", value: "finance" },
+    { label: "Healthcare", value: "healthcare" },
+    { label: "Hospitality", value: "hospitality" },
+    { label: "Other", value: "other" },
+    { label: "I'd like your guidance.", value: "req for recruitter advise" },
+  ],
+  "virtual-assistant": [
+    { label: "Customer Services", value: "customer services" },
+    { label: "Bookkeeping", value: "bookkeeping" },
+    { label: "General Adminsitration", value: "general adminsitration" },
+    { label: "Marketing", value: "marketing" },
+    { label: "Technical", value: "technical" },
+    { label: "Specialized Services", value: "specialized services" },
+    { label: "I'd like your guidance.", value: "req for recruitter advise" },
+  ],
+  "erp-specialist": [
+    { label: "SAP", value: "SAP" },
+    { label: "ORACLE CLOUD", value: "ORACLE CLOUD" },
+    { label: "ODOO", value: "ODOO" },
+    { label: "ORACLE EBS", value: "ORACLE EBS" },
+    { label: "QUICKBOOKS", value: "QUICKBOOKS" },
+    { label: "Microsoft Dynamics", value: "Microsoft dynamics" },
+    { label: "Workday", value: "workday" },
+    { label: "Monday.com", value: "Monday.com" },
+    { label: "Others", value: "others" },
+    { label: "I'd like your guidance.", value: "req for recruitter advise" },
+  ],
+  "supply-chain": [
+    { label: "AI Supply Chain Agent", value: "AI supply chain agent" },
+    { label: "Warehouse Automation", value: "warehouse automation" },
+    { label: "Transport & Logistics", value: "transport & logistics" },
+    {
+      label: "Robotic Process Automation",
+      value: "robotic process automation",
+    },
+    {
+      label: "Procurement & Demand Forecasting",
+      value: "procurement & demand forecasting",
+    },
+    {
+      label: "Data and Inetgration Automation",
+      value: "data and inetgration automation",
+    },
+    { label: "I'd like your guidance.", value: "req for recruitter advise" },
+  ],
+  "bi-developer": [
+    { label: "Databases (like SQL Server, Oracle)", value: "databases" },
+    {
+      label: "ETL tools (such as SSIS, Informatica, Talend)",
+      value: "ETL tools",
+    },
+    {
+      label: "BI platforms (Power BI, Tableau, Qlik)",
+      value: "BI platforms (Power BI, Tableau, Qlik)",
+    },
+    {
+      label: "Cloud Services (AWS, Azure, GCP)",
+      value: "cloud services (AWS, Azure, GCP)",
+    },
+    {
+      label: "Programming Languages (SQL, Python, DAX)",
+      value: "programming languages (SQL,Python,DAX)",
+    },
+    { label: "I'd like your guidance.", value: "req for recruitter advise" },
   ],
 };
 
@@ -60,7 +153,9 @@ export default function SegmentTabs() {
   const handleBack = () => setStep((prev) => prev - 1);
   const handleSkip = () => setStep((prev) => prev + 1);
 
-  const handleFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleFormChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -75,11 +170,21 @@ export default function SegmentTabs() {
       const res = await fetch("/api/send-enquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, service: selectedService, option: selectedOption }),
+        body: JSON.stringify({
+          ...formData,
+          service: selectedService,
+          option: selectedOption,
+        }),
       });
       if (res.ok) {
         setSuccess(true);
-        setFormData({ email: "", name: "", phone: "", country: "Netherlands", city: "" });
+        setFormData({
+          email: "",
+          name: "",
+          phone: "",
+          country: "Netherlands",
+          city: "",
+        });
       } else alert("Failed to send enquiry. Please try again.");
     } catch (err) {
       console.error(err);
@@ -94,197 +199,214 @@ export default function SegmentTabs() {
   return (
     <div className="w-full mt-20 max-w-3xl mx-auto bg-white text-[#356666] opacity-90 p-8 rounded-xl shadow-lg">
       <div>
-      {/* Progress Bar */}
-      <div className="flex items-center justify-between mb-8 relative">
-        {steps.map((s, i) => (
-          <div key={s} className="flex-1 flex items-center relative">
-            <div
-              className={`w-8 h-8 rounded-full flex items-center justify-center z-10 font-semibold  text-white ${
-                step > i ? "bg-[#467a7e]" : "bg-gray-300"
-              }`}
-            >
-              {i + 1}
-            </div>
-            {i !== steps.length - 1 && (
+        {/* Progress Bar */}
+        <div className="flex items-center justify-between mb-8 relative">
+          {steps.map((s, i) => (
+            <div key={s} className="flex-1 flex items-center relative">
               <div
-                className={`absolute top-3.5 left-10 h-1 flex-1 ${
-                  step > i + 1 ? "bg-[#467a7e]" : "bg-gray-300"
-                }`}
-              ></div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      <AnimatePresence mode="wait">
-        {/* Step 1: Service */}
-        {step === 1 && (
-          <motion.div
-            key="step1"
-            initial={{ x: 50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -50, opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            className="flex flex-col gap-4"
-          >
-            <h2 className="text-2xl font-semibold">Select a Service</h2>
-            <select
-              value={selectedService}
-              onChange={(e) => setSelectedService(e.target.value)}
-              className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
-            >
-              <option value="">-- Select Service --</option>
-              {services.map((s) => (
-                <option key={s.value} value={s.value}>
-                  {s.label}
-                </option>
-              ))}
-            </select>
-            <div className="flex justify-between mt-4">
-              <button onClick={handleSkip} className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">
-                Skip
-              </button>
-              <button
-                disabled={!selectedService}
-                onClick={handleNext}
-                className={`px-4 py-2 bg-[#467a7e] text-white rounded ${
-                  !selectedService ? "opacity-50 cursor-not-allowed" : "hover:bg-[#356666]"
+                className={`w-8 h-8 rounded-full flex items-center justify-center z-10 font-semibold  text-white ${
+                  step > i ? "bg-[#467a7e]" : "bg-gray-300"
                 }`}
               >
-                Continue
-              </button>
+                {i + 1}
+              </div>
+              {i !== steps.length - 1 && (
+                <div
+                  className={`absolute top-3.5 left-10 h-1 flex-1 ${
+                    step > i + 1 ? "bg-[#467a7e]" : "bg-gray-300"
+                  }`}
+                ></div>
+              )}
             </div>
-          </motion.div>
-        )}
+          ))}
+        </div>
 
-        {/* Step 2: Option */}
-        {step === 2 && (
-          <motion.div
-            key="step2"
-            initial={{ x: 50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -50, opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            className="flex flex-col gap-4"
-          >
-            <h2 className="text-2xl font-semibold">Select Option</h2>
-            <select
-              value={selectedOption}
-              onChange={(e) => setSelectedOption(e.target.value)}
-              className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+        <AnimatePresence mode="wait">
+          {/* Step 1: Service */}
+          {step === 1 && (
+            <motion.div
+              key="step1"
+              initial={{ x: 50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -50, opacity: 0 }}
+              transition={{ duration: 0.4 }}
+              className="flex flex-col gap-4"
             >
-              <option value="">-- Select Option --</option>
-              {selectedService &&
-                serviceOptions[selectedService].map((opt) => (
-                  <option key={opt.value} value={opt.value}>
-                    {opt.label}
+              <h2 className="text-2xl font-semibold">Select a Service</h2>
+              <select
+                value={selectedService}
+                onChange={(e) => setSelectedService(e.target.value)}
+                className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+              >
+                <option value="">-- Select Service --</option>
+                {services.map((s) => (
+                  <option key={s.value} value={s.value}>
+                    {s.label}
                   </option>
                 ))}
-            </select>
-            <div className="flex justify-between mt-4">
-              <button onClick={handleBack} className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">
-                Go Back
-              </button>
-              <div className="flex gap-2">
-                <button onClick={handleSkip} className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">
+              </select>
+              <div className="flex justify-between mt-4">
+                <button
+                  onClick={handleSkip}
+                  className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+                >
                   Skip
                 </button>
                 <button
-                  disabled={!selectedOption}
+                  disabled={!selectedService}
                   onClick={handleNext}
                   className={`px-4 py-2 bg-[#467a7e] text-white rounded ${
-                    !selectedOption ? "opacity-50 cursor-not-allowed" : "hover:bg-[#356666]"
+                    !selectedService
+                      ? "opacity-50 cursor-not-allowed"
+                      : "hover:bg-[#356666]"
                   }`}
                 >
                   Continue
                 </button>
               </div>
-            </div>
-          </motion.div>
-        )}
+            </motion.div>
+          )}
 
-        {/* Step 3: Enquiry Form */}
-        {step === 3 && (
-          <motion.div
-            key="step3"
-            initial={{ x: 50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -50, opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            className="flex flex-col gap-4"
-          >
-            <h2 className="text-2xl font-semibold">Enquiry Form</h2>
-            {success && (
-              <div className="p-4 bg-green-100 text-green-800 rounded">Enquiry sent successfully!</div>
-            )}
-            <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email (required)"
-                required
-                value={formData.email}
-                onChange={handleFormChange}
-                className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
-              />
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={formData.name}
-                onChange={handleFormChange}
-                className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
-              />
-              <input
-                type="text"
-                name="phone"
-                placeholder="Phone"
-                value={formData.phone}
-                onChange={handleFormChange}
-                className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
-              />
+          {/* Step 2: Option */}
+          {step === 2 && (
+            <motion.div
+              key="step2"
+              initial={{ x: 50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -50, opacity: 0 }}
+              transition={{ duration: 0.4 }}
+              className="flex flex-col gap-4"
+            >
+              <h2 className="text-2xl font-semibold">Select Option</h2>
               <select
-                name="country"
-                value={formData.country}
-                onChange={handleFormChange}
+                value={selectedOption}
+                onChange={(e) => setSelectedOption(e.target.value)}
                 className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
               >
-                {euCountries.map((c) => (
-                  <option key={c} value={c}>
-                    {c}
-                  </option>
-                ))}
+                <option value="">-- Select Option --</option>
+                {selectedService &&
+                  serviceOptions[selectedService].map((opt) => (
+                    <option key={opt.value} value={opt.value}>
+                      {opt.label}
+                    </option>
+                  ))}
               </select>
-              <input
-                type="text"
-                name="city"
-                placeholder="City"
-                value={formData.city}
-                onChange={handleFormChange}
-                className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
-              />
-              <div className="flex justify-between mt-2">
-                <button onClick={handleBack} type="button" className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">
+              <div className="flex justify-between mt-4">
+                <button
+                  onClick={handleBack}
+                  className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+                >
                   Go Back
                 </button>
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="px-4 py-2 bg-[#467a7e] text-white rounded hover:bg-[#356666]"
-                >
-                  {loading ? "Sending..." : "Submit"}
-                </button>
+                <div className="flex gap-2">
+                  <button
+                    onClick={handleSkip}
+                    className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+                  >
+                    Skip
+                  </button>
+                  <button
+                    disabled={!selectedOption}
+                    onClick={handleNext}
+                    className={`px-4 py-2 bg-[#467a7e] text-white rounded ${
+                      !selectedOption
+                        ? "opacity-50 cursor-not-allowed"
+                        : "hover:bg-[#356666]"
+                    }`}
+                  >
+                    Continue
+                  </button>
+                </div>
               </div>
-            </form>
-          </motion.div>
-        )}
-      </AnimatePresence>
-      
+            </motion.div>
+          )}
+
+          {/* Step 3: Enquiry Form */}
+          {step === 3 && (
+            <motion.div
+              key="step3"
+              initial={{ x: 50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -50, opacity: 0 }}
+              transition={{ duration: 0.4 }}
+              className="flex flex-col gap-4"
+            >
+              <h2 className="text-2xl font-semibold">Enquiry Form</h2>
+              {success && (
+                <div className="p-4 bg-green-100 text-green-800 rounded">
+                  Enquiry sent successfully!
+                </div>
+              )}
+              <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email (required)"
+                  required
+                  value={formData.email}
+                  onChange={handleFormChange}
+                  className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={formData.name}
+                  onChange={handleFormChange}
+                  className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                />
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone"
+                  value={formData.phone}
+                  onChange={handleFormChange}
+                  className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                />
+                <select
+                  name="country"
+                  value={formData.country}
+                  onChange={handleFormChange}
+                  className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                >
+                  {euCountries.map((c) => (
+                    <option key={c} value={c}>
+                      {c}
+                    </option>
+                  ))}
+                </select>
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="City"
+                  value={formData.city}
+                  onChange={handleFormChange}
+                  className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                />
+                <div className="flex justify-between mt-2">
+                  <button
+                    onClick={handleBack}
+                    type="button"
+                    className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+                  >
+                    Go Back
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="px-4 py-2 bg-[#467a7e] text-white rounded hover:bg-[#356666]"
+                  >
+                    {loading ? "Sending..." : "Submit"}
+                  </button>
+                </div>
+              </form>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
 }
-
 
 /* "use client";
 import { useState } from "react";

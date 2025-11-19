@@ -6,21 +6,36 @@ import Image from "next/image";
 
 const TechStackSection: NextPage = () => {
   const techStack = [
+
+
+    { name: "power-bi", icon: "/assets/icons/tech/power-bi.svg" },
+    // { name: "FDI", icon: "/assets/icons/tech/g" },
+    { name: "MS Fabrics", icon: "/assets/icons/tech/ms_fabric.svg" },
+    { name: "Microsoft Dynamics", icon: "/assets/icons/tech/microsoft-dynamics-365.png" },
+    { name: "Oracle Cloud", icon: "/assets/icons/tech/oracle-logo.png" },
+    { name: "SAP", icon: "/assets/icons/tech/sap.svg" },
+    { name: "Odoo", icon: "/assets/icons/tech/odoo_logo.png" },
+    { name: "Oracle E-Business Suite", icon: "/assets/icons/tech/oracle-logo.png" },
+    { name: "Monday.com", icon: "/assets/icons/tech/monday.com.webp" },
+    { name: "Quickbooks", icon: "/assets/icons/tech/quickbooks.png" },
+    { name: "Workday", icon: "/assets/icons/tech/workday.svg" },
+
+
     { name: "Next.js", icon: "/assets/icons/tech/nextjs.svg" },
     { name: "React", icon: "/assets/icons/tech/react.svg" },
     { name: "TypeScript", icon: "/assets/icons/tech/typescript.svg" },
     { name: "TailwindCSS", icon: "/assets/icons/tech/tailwind.svg" },
-    { name: "Node.js", icon: "/assets/icons/tech/nodejs.svg" },
+    { name: "Node.js", icon: "/assets/icons/tech/nodejs.png" },
     { name: "Figma", icon: "/assets/icons/tech/figma.svg" },
-    { name: "MongoDB", icon: "/assets/icons/tech/mongodb.svg" },
+    { name: "MongoDB", icon: "/assets/icons/tech/mongodb.png" },
     { name: "AWS", icon: "/assets/icons/tech/aws.svg" },
 
 
     { name: "Adobe", icon: "/assets/icons/tech/adobe.svg" },
     { name: "Adobe Firefly", icon: "/assets/icons/tech/adobefirefly.svg" },
     { name: "AE", icon: "/assets/icons/tech/ae.svg" },
-    { name: "Affinity", icon: "/assets/icons/tech/affinity.svg" },
-    { name: "Affinity Designer.js", icon: "/assets/icons/tech/affinitydesigner.svg" },
+    { name: "Affinity", icon: "/assets/icons/tech/affinity-photo.png" },
+    { name: "Affinity Designer.js", icon: "/assets/icons/tech/affinity-designer.png" },
     { name: "Affinity Photo", icon: "/assets/icons/tech/affinityphoto.svg" },
     { name: "Affinity Publisher", icon: "/assets/icons/tech/affinitypublisher.svg" },
     { name: "AI", icon: "/assets/icons/tech/ai.svg" },
@@ -28,7 +43,7 @@ const TechStackSection: NextPage = () => {
     { name: "AI 360", icon: "/assets/icons/tech/ai360.svg" },
     { name: "AI Hub Mix", icon: "/assets/icons/tech/aihubmix.svg" },
     { name: "Analytics", icon: "/assets/icons/tech/analytics.svg" },
-    { name: "Android", icon: "/assets/icons/tech/android.svg" },
+    { name: "Android", icon: "/assets/icons/tech/android.png" },
     { name: "Angular", icon: "/assets/icons/tech/angular.svg" },
     { name: "Angular 17", icon: "/assets/icons/tech/angular17.svg" },
     { name: "Anima App", icon: "/assets/icons/tech/animaapp.svg" },

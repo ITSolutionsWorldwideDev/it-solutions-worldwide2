@@ -4,32 +4,41 @@ import TeamMember from "./TeamMember";
 const Group9304: NextPage = () => {
   const team = [
     {
-      name: "Daniel Smith",
-      role: "Digital Marketer",
-      image: "/assets/images/aboutus/creative_team-1.png",
-      bio: "Ambert is the driving force behind IT Solutions Worldwide, blending strategic insight with hands-on creativity to lead the company’s global digital transformation efforts. With a deep understanding of both technical infrastructure and artistic direction, he guides everything from branding and workflow optimization to music and visual identity",
-      bio2: "Known for his emotionally intelligent leadership and ultra-concise communication style, Mutahar empowers teams to deliver impactful, scalable solutions across industries.",
+      name: "Sheetal Devi",
+      role: "(co-founder)",
+      bg_image: "/assets/images/profile/member_bg_red.png",
+      image: "/assets/images/profile/sheetal_devi.jpeg",
+      bio: "Sheetal Devi founded the company in 2018 with a clear goal: help businesses work smarter through practical technology and supply-chain solutions.",
+      bio2: "What began as a small consultancy has now grown into a two-branch operation in the Netherlands and South Asia, delivering AI-driven systems, digital automation, and operational improvements to clients worldwide. With deep experience in logistics, warehousing, and supply-chain optimization, Sheetal leads the company with a focus on efficiency, innovation, and creating solutions that genuinely move businesses forward.",
     },
     {
-      name: "Ambert Daniel",
-      role: "CEO & Founder",
-      image: "/assets/images/aboutus/creative_team-2.png",
-      bio: "Ambert is the driving force behind IT Solutions Worldwide, blending strategic insight with hands-on creativity to lead the company’s global digital transformation efforts. With a deep understanding of both technical infrastructure and artistic direction, he guides everything from branding and workflow optimization to music and visual identity",
-      bio2: "Known for his emotionally intelligent leadership and ultra-concise communication style, Mutahar empowers teams to deliver impactful, scalable solutions across industries.",
+      name: "Zeb Raja",
+      role: "(co-founder)",
+      bg_image: "/assets/images/profile/member_bg_blue.png",
+      image: "/assets/images/profile/avatar.png",
+      // image: "/assets/images/profile/team_member_6.png",
+      bio: "Zeb Raja is the co-founder and Head of Marketing at IT Solutions Worldwide, responsible for shaping the company's brand, digital presence, and growth strategy. With a background spanning transport, IT, and digital marketing, he combines operational understanding with sharp commercial insight to drive high-impact marketing initiatives.",
+      bio2: "Zeb leads the company’s global marketing direction—building strong client relationships, developing data-driven campaigns, and positioning the company as a forward-thinking provider of AI, tech, and outsourcing solutions. His experience across international markets helps the brand connect with diverse audiences and scale effectively.",
     },
     {
-      name: "Milano Digits",
-      role: "CO-Founder",
-      image: "/assets/images/aboutus/creative_team-3.png",
-      bio: "Ambert is the driving force behind IT Solutions Worldwide, blending strategic insight with hands-on creativity to lead the company’s global digital transformation efforts. With a deep understanding of both technical infrastructure and artistic direction, he guides everything from branding and workflow optimization to music and visual identity",
-      bio2: "Known for his emotionally intelligent leadership and ultra-concise communication style, Mutahar empowers teams to deliver impactful, scalable solutions across industries.",
+      name: "Turab",
+      role: "HR Manager",
+      department: "HR",
+      bg_image: "/assets/images/profile/member_bg_yellow.png",
+      image: "/assets/images/profile/turab.jpeg",
+      bio: "Turab Ahmad manages HR operations for IT Solutions Hub Pakistan and supports HR processes for IT Solutions Worldwide in the Netherlands. He specializes in recruitment, HR policy development, performance management, employee documentation, and legal compliance.",
+      bio2: "He also led ISO 9001:2015 & ISO 27001:2022 documentation for the company. Turab is committed to building a strong, professional, and globally aligned workforce.",
     },
+
     {
-      name: "Latina Lucas",
-      role: "Network Engineer",
-      image: "/assets/images/aboutus/creative_team-4.png",
-      bio: "Ambert is the driving force behind IT Solutions Worldwide, blending strategic insight with hands-on creativity to lead the company’s global digital transformation efforts. With a deep understanding of both technical infrastructure and artistic direction, he guides everything from branding and workflow optimization to music and visual identity",
-      bio2: "Known for his emotionally intelligent leadership and ultra-concise communication style, Mutahar empowers teams to deliver impactful, scalable solutions across industries.",
+      name: "Amer",
+      role: "Senior Full Stack Developer",
+      department: "IT",
+      bg_image: "/assets/images/profile/member_bg_purple.png",
+      // image: "/assets/images/profile/team_member_7.png",
+      image: "/assets/images/profile/avatar.png",
+      bio: "Amer is a Senior Full Stack Developer with more than 12 years of experience delivering complex, cloud-based web applications. Specializing in the MEAN stack (MongoDB, Express.js, Angular, Node.js), he builds scalable, high-performance systems using microservices, API-driven architecture, and modern CI/CD pipelines.",
+      bio2: "With hands-on expertise in AWS and Azure, Amer designs and deploys reliable solutions that support growth and heavy workloads. He brings solid leadership to development teams, mentors junior engineers, and works efficiently within agile environments to ensure smooth delivery of enterprise-grade projects. Amer is known for his Agile engineering approach, strong problem-solving skills, and consistent track record of achieving outstanding client satisfaction.",
     },
   ];
 
@@ -41,7 +50,10 @@ const Group9304: NextPage = () => {
           your teammates.
         </div>
         <div className="leading-[86px] font-semibold inline-block">
-          <span>The Creative team <br />behind </span>
+          <span>
+            The Creative team <br />
+            behind{" "}
+          </span>
           <span className="text-[#467a7e]">the door</span>
         </div>
       </div>

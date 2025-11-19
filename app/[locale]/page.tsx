@@ -2,6 +2,7 @@
 
 import AnimationArea from "@/components/layout/home/AnimationArea";
 import BlogCarousel from "@/components/layout/home/BlogCarousel";
+import Certifications from "@/components/layout/home/Certification";
 import ContactSection from "@/components/layout/home/ContactSection";
 
 export default async function HomePage({
@@ -16,6 +17,7 @@ export default async function HomePage({
         
         <AnimationArea />
         <BlogCarousel locale={locale} />
+        <Certifications />
         
         <ContactSection />
       </main>
