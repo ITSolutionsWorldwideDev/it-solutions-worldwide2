@@ -3,7 +3,6 @@ import initServerI18n from "@/utils/serverTranslation";
 import Group9295 from "@/components/layout/about/group-9295";
 import Group9268 from "@/components/layout/about/group-9268";
 import Group9309 from "@/components/layout/about/group-9309";
-import Group9252 from "@/components/layout/about/group-9252";
 import Group9304 from "@/components/layout/about/group-9304";
 import GetInTouchSection from "@/components/layout/about/get-in-touch-section";
 import MaskGroup from "@/components/layout/about/mask-group";
@@ -47,38 +46,32 @@ export default async function AboutUsPage({
   ];
 
   const faqData = {
-    title: "Frequently asked questions",
-    description: "Feel free to make a call to our customer support helpline.",
+    title: t("aboutus.faq_title"),
+    description: t("aboutus.faq_desc"),
     faqs: [
       {
-        question: " What does your company do?",
-        answer:
-          "We provide various services, including Supply Chain Management, CRM, ERP, Logistics, IT Support, and Cloud Services. We aim to help businesses improve efficiency, increase growth, and achieve long-term success with customized solutions and expert guidance.",
+        question: t("aboutus.question1"),
+        answer: t("aboutus.answer1"),
       },
       {
-        question: "What industries do you serve?",
-        answer:
-          "We work with businesses in various industries, including healthcare, manufacturing, supply chain management, technology, logistics, and finance.",
+        question: t("aboutus.question2"),
+        answer: t("aboutus.answer2"),
       },
       {
-        question: "How can I get in touch with you?",
-        answer:
-          "You can email us at  info@itsolutionsworldwide.com or call us at +31 10 766 0786. We are always ready to assist you!",
+        question: t("aboutus.question3"),
+        answer: t("aboutus.answer3"),
       },
       {
-        question: "Do you offer ongoing support after service delivery?",
-        answer:
-          "Yes, we offer regular, ongoing support after a project's completion and delivery to ensure seamless work operations and long-term success.",
+        question: t("aboutus.question4"),
+        answer: t("aboutus.answer4"),
       },
       {
-        question: "Do you provide consultations before starting a project?",
-        answer:
-          "Absolutely! We offer consultations to analyze and understand your requirements, goals, and challenges so we can provide you with the best solutions.",
+        question: t("aboutus.question5"),
+        answer: t("aboutus.answer5"),
       },
       {
-        question: "How can I learn more about your services?",
-        answer:
-          "To explore more about our services, please visit our website https://itsolutionsworldwide.com or feel free to contact us directly for more detailed information.",
+        question: t("aboutus.question6"),
+        answer: t("aboutus.answer6"),
       },
     ],
     helpCenterLink: "/Contact-Us",
@@ -89,45 +82,43 @@ export default async function AboutUsPage({
     {
       backgroundImage: "/assets/images/aboutus/about-us-banner.png",
       // backgroundMainImage: "/assets/images/profile/banner_rightside_bg.png",
-      heading: "ABOUT US", // t("ecommerce.heading_1"),
-      text: "We combines expertise in management consulting and implementation of business applications", //t("ecommerce.text_1"),
-      button: "Get in Touch", //t("ecommerce.button_1"),
-      button2: "", // t("ecommerce.button_1"),
+      heading: t("aboutus.banner_heading"),
+      text: t("aboutus.banner_text"),
+      button: t("aboutus.contactheading"),
+      button2: "",
       textcolor: "#0000",
     },
   ];
+
+  const vision = {
+    heading: t("aboutus.our_vision_heading"),
+    text: t("aboutus.our_vision_text"),
+    imageUrl:
+      "/assets/images/aboutus/d-0035-a-757-d-44406901-c-3-a-6-f-1-c-10-c-1-f-1-copy-1.png",
+    leftColor: "#278083",
+    rightColor: "#000",
+  };
+
+  const processFlow = {
+    steps: expertise,
+    circleColor: "#467a7e",
+    lineColor: "#467a7e",
+    textColor: "#000",
+    heading: t("aboutus.process_flow_heading"),
+    subheading: "",
+  };
 
   return (
     <>
       <div className="container mx-auto max-w-7xl">
         <BannerSection2 slides={slides} />
-        {/* <Group9252 /> */}
         <Group9319 />
         <Group9268 />
         <Group9295 />
-        <VisionSection
-          heading="Our Vision"
-          text="Our vision is to emerge as one of the leading IT companies known and
-          recognized for our IT solution services, innovation, and integrity. We
-          look forward to building a strong committed bond with our clients to
-          optimise their business operations and be recognized for their work
-          and services. We believe in automating your business with the help of
-          cutting-edge technology services, and we aim to build a platform where
-          businesses can integrate advanced technology and grow to their full
-          potential."
-          imageUrl="/assets/images/aboutus/d-0035-a-757-d-44406901-c-3-a-6-f-1-c-10-c-1-f-1-copy-1.png"
-          leftColor="#278083"
-          rightColor="#000"
-        />
+        <VisionSection {...vision} />
         <Group9309 />
         <Group9304 />
-        <AboutUsProcessFlow
-          heading="Our Expertise"
-          steps={expertise}
-          circleColor="#467a7e"
-          lineColor="#467a7e"
-          textColor="#000"
-        />
+        <AboutUsProcessFlow {...processFlow} />
         <MaskGroup />
         <FAQSection {...faqData} />
         <GetInTouchSection />
@@ -135,3 +126,11 @@ export default async function AboutUsPage({
     </>
   );
 }
+/* Our vision is to emerge as one of the leading IT companies known and
+          recognized for our IT solution services, innovation, and integrity. We
+          look forward to building a strong committed bond with our clients to
+          optimise their business operations and be recognized for their work
+          and services. We believe in automating your business with the help of
+          cutting-edge technology services, and we aim to build a platform where
+          businesses can integrate advanced technology and grow to their full
+          potential. */

@@ -72,22 +72,46 @@
   },
 
   "aboutus": {
-    "expertise_heading_1": "Supply Chain-diensten",
-    "expertise_text_1": "Het stroomlijnen van logistiek en operaties voor snellere, slimmere levering.",
+    "banner_heading": "OVER ONS",
+    "banner_text": "Wij combineren expertise in management consulting en de implementatie van bedrijfsapplicaties.",
+    
+    "contactheading": "Neem contact op",
+
+    "expertise_heading_1": "Supply Chain Services",
+    "expertise_text_1": "Optimaliseren van logistiek en operaties voor snellere en slimmere levering.",
 
     "expertise_heading_2": "IT- en Cloudoplossingen",
-    "expertise_text_2": "Veilige, schaalbare systemen die zijn gebouwd voor de moderne zakelijke behoeften.",
+    "expertise_text_2": "Veilige, schaalbare systemen gebouwd voor de moderne zakelijke behoeften.",
 
     "expertise_heading_3": "Digitale Marketing & E-commerce",
     "expertise_text_3": "Online groei stimuleren via strategie, content en conversie.",
 
-    "expertise_heading_4": "Personeelsvoorziening en Ondersteuning",
-    "expertise_text_4": "Flexibel talent en technische ondersteuning om u sterk draaiende te houden.",
+    "expertise_heading_4": "Staffing en Ondersteuning",
+    "expertise_text_4": "Flexibel talent en technische ondersteuning om uw bedrijfsvoering sterk te houden.",
 
+    "our_vision_heading": "Onze Visie voor de Toekomst",
+    "our_vision_text": "Technologie staat nooit stil, en wij ook niet. Wij investeren voortdurend in de nieuwste tools, frameworks en innovaties—van AI-integraties tot cloudoplossingen en procesautomatisering—om bedrijven een voorsprong te geven. Met een wereldwijde blik en lokale betrokkenheid bedienen wij klanten in diverse sectoren, van startups en mkb’s tot gevestigde ondernemingen. Ons doel is simpel: digitale oplossingen leveren die bedrijven sterker, slimmer en succesvoller maken, tegen een prijs die bij elk budget past.",
+
+    "process_flow_heading": "Onze Expertise",
     "heading_1": "Over Ons | IT Solutions Worldwide",
-    "text_1": "Wij combineren expertise in managementadvies en de implementatie van bedrijfsapplicaties.",
+    "text_1": "Wij combineren expertise in management consulting en de implementatie van bedrijfsapplicaties.",
     "heading_2": "Wie Wij Zijn",
-    "text_2": "IT Solutions Worldwide is een toonaangevend bedrijf dat de meest geavanceerde oplossingen biedt aan een breed scala van sectoren. Met jarenlange ervaring streven wij ernaar eenvoudige en innovatieve technologische oplossingen te implementeren om bedrijven te helpen meer succes te behalen met meer efficiëntie. Met een bewezen staat van dienst optimaliseren wij bedrijven door middel van supply chain management, IT-ondersteuning, digitale marketingdiensten en operationele uitmuntendheid. Wij helpen bedrijven te moderniseren met onze beste technische professionals."
+    "text_2": "IT Solutions Worldwide is een toonaangevend bedrijf dat de meest actuele oplossingen biedt aan een breed scala van industrieën. Met X jaar ervaring streven wij ernaar eenvoudige en innovatieve technologische oplossingen te implementeren, zodat bedrijven meer succes en efficiëntie behalen. Met een bewezen staat van dienst optimaliseren wij bedrijven via supply chain management, IT-ondersteuning, digitale marketingdiensten en operationele excellentie. Wij helpen bedrijven te moderniseren met onze beste technische professionals.",
+
+    "faq_title": "Veelgestelde vragen",
+    "faq_desc": "Bel gerust onze klantenservice-helpdesk.",
+    "question1": "Wat doet uw bedrijf?",
+    "answer1": "Wij bieden diverse diensten, waaronder Supply Chain Management, CRM, ERP, Logistiek, IT-ondersteuning en Cloudservices. Ons doel is bedrijven te helpen de efficiëntie te verbeteren, groei te stimuleren en langdurig succes te bereiken met op maat gemaakte oplossingen en deskundige begeleiding.",
+    "question2": "Welke sectoren bedient u?",
+    "answer2": "Wij werken met bedrijven in verschillende sectoren, waaronder gezondheidszorg, productie, supply chain management, technologie, logistiek en financiën.",
+    "question3": "Hoe kan ik contact met u opnemen?",
+    "answer3": "U kunt ons e-mailen via info@itsolutionsworldwide.com of bellen naar +31 10 766 0786. Wij staan altijd klaar om u te helpen!",
+    "question4": "Biedt u ondersteuning na oplevering van een project?",
+    "answer4": "Ja, wij bieden regelmatige en voortdurende ondersteuning na voltooiing en oplevering van een project om een soepele bedrijfsvoering en langdurig succes te garanderen.",
+    "question5": "Biedt u consultaties voordat een project start?",
+    "answer5": "Zeker! Wij bieden consultaties om uw behoeften, doelen en uitdagingen te analyseren en te begrijpen, zodat we u de beste oplossingen kunnen bieden.",
+    "question6": "Hoe kan ik meer te weten komen over uw diensten?",
+    "answer6": "Bezoek onze website voor meer informatie of neem direct contact met ons op voor uitgebreidere details."
   },
   "contactus": {
     "heading_1": "Contacteer Ons | IT Solutions Worldwide",
