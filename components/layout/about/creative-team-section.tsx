@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import TeamMember from "./TeamMember";
 
-const Group9304: NextPage = () => {
+const CreativeTeamSection: NextPage = () => {
   const team = [
     {
       name: "Sheetal Devi",
@@ -43,7 +43,7 @@ const Group9304: NextPage = () => {
   ];
 
   return (
-    <div className="w-full relative text-left text-[84px] text-black font-lexend">
+    <div className="w-full relative text-left text-[84px] text-black font-lexend mx-auto py-3 md:py-4 lg:py-12  px-4 md:px-0 lg:px-0">
       <div className="">
         <div className="text-xl opacity-[0.6] pb-4">
           Ask not what your teammates can do for you. Ask what you can do for
@@ -67,7 +67,7 @@ const Group9304: NextPage = () => {
   );
 };
 
-export default Group9304;
+export default CreativeTeamSection;
 
 {
   /* <div className="absolute top-[296px] left-[678.72px] w-[301.4px] h-[349.8px] text-[5.26px]">

@@ -1,16 +1,16 @@
 // app/[locale]/about-us/page.tsx
 import initServerI18n from "@/utils/serverTranslation";
-import Group9295 from "@/components/layout/about/group-9295";
-import Group9268 from "@/components/layout/about/group-9268";
-import Group9309 from "@/components/layout/about/group-9309";
-import Group9304 from "@/components/layout/about/group-9304";
+import OurMission from "@/components/layout/about/our-mission";
+import WhyUsSection from "@/components/layout/about/why-us-section";
+import OurValuesSection from "@/components/layout/about/our-values-section";
+import CreativeTeamSection from "@/components/layout/about/creative-team-section";
 import GetInTouchSection from "@/components/layout/about/get-in-touch-section";
 import MaskGroup from "@/components/layout/about/mask-group";
 import Group9319 from "@/components/layout/about/group-9319";
 import VisionSection from "@/components/layout/vision-section";
 import FAQSection from "@/components/layout/FAQ-section";
 import AboutUsProcessFlow from "@/components/layout/aboutus-process-flow";
-import BannerSection2 from "@/components/layout/banner-section-2";
+import BannerSectionAboutUs from "@/components/layout/about/banner-section";
 
 export default async function AboutUsPage({
   params,
@@ -74,14 +74,14 @@ export default async function AboutUsPage({
         answer: t("aboutus.answer6"),
       },
     ],
-    helpCenterLink: "/Contact-Us",
-    privacyPolicyLink: "",
+    helpCenterLink: "/contact-us",
+    privacyPolicyLink: "/privacy-policy",
   };
 
   const slides = [
     {
       backgroundImage: "/assets/images/aboutus/about-us-banner.png",
-      // backgroundMainImage: "/assets/images/profile/banner_rightside_bg.png",
+      backgroundMainImage: "",
       heading: t("aboutus.banner_heading"),
       text: t("aboutus.banner_text"),
       button: t("aboutus.contactheading"),
@@ -111,13 +111,13 @@ export default async function AboutUsPage({
   return (
     <>
       <div className="container mx-auto max-w-7xl">
-        <BannerSection2 slides={slides} />
+        <BannerSectionAboutUs slides={slides} />
         <Group9319 />
-        <Group9268 />
-        <Group9295 />
+        <WhyUsSection locale={locale} />
+        <OurMission />
         <VisionSection {...vision} />
-        <Group9309 />
-        <Group9304 />
+        <OurValuesSection />
+        <CreativeTeamSection />
         <AboutUsProcessFlow {...processFlow} />
         <MaskGroup />
         <FAQSection {...faqData} />

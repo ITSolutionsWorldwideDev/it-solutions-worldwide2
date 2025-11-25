@@ -59,7 +59,12 @@
     "message": "Bericht",
     "sendmessage": "Verstuur Bericht"
   },
-  "profile": {
+  "profile": {    
+    "banner_heading": "Van idee naar impact",
+    "banner_text": "wij regelen alles.",
+    "button_text": "Ontdek Nu",
+    "button2_text": "Onze Diensten",
+
     "cards_main_heading": "Maak uw bedrijf toekomstbestendig — gebouwd om zich aan te passen, klaar om te leiden.",
     "card_heading_1": "Slimme oplossingen, naadloze werking",
     "card_text_1": "Wij vereenvoudigen complexe workflows met op maat gemaakte IT- en cloudoplossingen die de efficiëntie verhogen, kosten verlagen en met uw groei meegroeien. Van infrastructuur tot automatisering: wij bouwen systemen die zich ontwikkelen met uw bedrijf.",
@@ -76,6 +81,9 @@
     "banner_text": "Wij combineren expertise in management consulting en de implementatie van bedrijfsapplicaties.",
     
     "contactheading": "Neem contact op",
+
+    "why_us_heading": "Over Ons Bedrijf",
+    "why_us_heading_2": "Waarom Kiezen Voor",
 
     "expertise_heading_1": "Supply Chain Services",
     "expertise_text_1": "Optimaliseren van logistiek en operaties voor snellere en slimmere levering.",

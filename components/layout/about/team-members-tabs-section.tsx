@@ -5,10 +5,7 @@ import { useState } from "react";
 import ProfilePgTeamMember from "./profile-page-team-members";
 
 const TeamMembersTabsSection: NextPage = () => {
-
-
   const team = [
-    
     {
       name: "Ritban",
       role: "Business Consultant",
@@ -18,7 +15,7 @@ const TeamMembersTabsSection: NextPage = () => {
       bio: "Ritban helps our clients turn complex supply chain, logistics, and e-commerce challenges into smart, actionable solutions. With more than 7 years of experience, including ERP implementations on Oracle Cloud, NetSuite, and Oracle mobile apps, he ensures projects are efficient, user-friendly, and deliver real business impact.",
       bio2: "",
     },
-    
+
     {
       name: "Tasmia",
       role: "Back-Office Recruiter",
@@ -131,7 +128,14 @@ const TeamMembersTabsSection: NextPage = () => {
     },
   ];
 
-  const tabs = ["All", "Designer", "IT Specialist", "HR", "IT Manager", "Supply Chain"];
+  const tabs = [
+    "All",
+    "Designer",
+    "IT Specialist",
+    "HR",
+    "IT Manager",
+    "Supply Chain",
+  ];
 
   const [activeTab, setActiveTab] = useState("All");
 
@@ -148,13 +152,13 @@ const TeamMembersTabsSection: NextPage = () => {
         </div>
       </div>
 
-      <div className="mt-10 flex justify-center">
-        <div className="flex gap-6 pb-2 border rounded-full px-6 py-3 shadow-sm">
+      <div className="mt-10 md:flex justify-center">
+        <div className="md:flex gap-6 pb-2 border rounded-full px-6 py-3 shadow-sm">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`pb-1 px-4 text-lg font-semibold transition-all
+              className={`pb-1 px-4 text-lg font-semibold transition-all w-1/2 cursor-pointer
           ${
             activeTab === tab
               ? "text-[#467a7e] border-b-2 border-[#467a7e]"
@@ -177,7 +181,6 @@ const TeamMembersTabsSection: NextPage = () => {
           <p className="text-center text-gray-500">No team members found.</p>
         )}
       </section>
-      
     </div>
   );
 };

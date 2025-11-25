@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Group9319: NextPage = () => {
   return (
-    <div className="w-full relative text-white font-lexend">
+    <div className="w-full relative text-white font-lexend mx-2 md:mx-0">
       {/* Background Image */}
-      <div className="relative w-full h-[180px] md:h-[200px]">
+      <div className="relative w-full h-[680px] md:h-[200px]">
         <Image
           src="/assets/images/aboutus/rectangle-140.png"
           alt=""

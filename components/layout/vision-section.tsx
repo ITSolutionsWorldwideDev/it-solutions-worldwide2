@@ -40,7 +40,7 @@ const VisionSection: FC<VisionSectionProps> = ({
   return (
     <section
       aria-label={heading}
-      className="mx-auto my-12 py-3 md:py-4 lg:py-12 px-4 md:px-4 lg:px-10 rounded-md"
+      className="mx-4 md:mx-auto my-12 py-3 md:py-4 lg:py-12 px-4 md:px-4 lg:px-10 rounded-md"
       style={{
         // maxWidth: "1152px",
         background: `linear-gradient(to right, ${leftColor}, ${rightColor})`,

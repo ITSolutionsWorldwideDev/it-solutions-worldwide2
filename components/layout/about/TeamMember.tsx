@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Modal from "./Modal";
+import Link from "next/link";
 
 interface TeamMemberProps {
   name: string;
@@ -28,7 +29,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
     <>
       <div
         onClick={() => setIsOpen(true)}
-        className="relative cursor-pointer group w-[301px] h-[350px]"
+        className="relative cursor-pointer group w-[301px] h-[350px]  pt-5 overflow-auto"
       >
         <Image
           src={image || "/assets/images/profile/avatar.jpg"}
@@ -48,9 +49,8 @@ const TeamMember: React.FC<TeamMemberProps> = ({
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <div className="items-center text-center pb-10">
           <div className="w-full relative text-justify text-xl text-gray font-lexend">
-            <div className="flex sm:flex-col md:flex-row  px-[5%]">
-
-              <div className="w-1/3">
+            <div className="flex flex-col md:flex-row  px-[5%]">
+              <div className="md:w-1/3">
                 <Image
                   className="rounded-[10.89px] w-[388px] h-[541px] object-cover p-[5%] pt-10"
                   width={388}
@@ -61,7 +61,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
                 />
               </div>
 
-              <div className="w-2/3 pt-15">
+              <div className="md:w-2/3 pt-15">
                 <div className="text-left text-[25px] text-[#467a7e]">
                   <div className="text-[40px] font-semibold text-black">
                     {name}
@@ -75,9 +75,9 @@ const TeamMember: React.FC<TeamMemberProps> = ({
                   {bio2 || "..."}
                 </div>
 
-                <div className="flex sm:flex-col md:flex-row md:gap-5 md:mt-5">
+                <div className="flex flex-col md:flex-row md:gap-5 md:mt-5">
                   <div className="text-lg text-black">
-                    <div className=" w-[400px] flex flex-row rounded-[11px] border-gainsboro border-solid border-[2px] box-border p-5">
+                    <div className=" md:w-[400px] flex flex-col md:flex-row rounded-[11px] border-gainsboro border-solid border-2 box-border p-5">
                       <div className="w-[50px]">
                         <Image
                           className=" bg-[#DBF7F8] rounded-4xl p-2"
@@ -91,14 +91,20 @@ const TeamMember: React.FC<TeamMemberProps> = ({
                       <div className="">
                         <div className="capitalize text-[18px] ">Email:</div>
                         <div className="tracking-[0.01em] lowercase mt-1 text-[#898989] text-justify font-lexend text-[18px] not-italic font-normal leading-normal">
-                          <a href="mailto:info@itsolutionsworldwide.com">info@itsolutionsworldwide.com</a>
+                          <Link
+                            href="mailto:info@itsolutionsworldwide.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            info@itsolutionsworldwide.com
+                          </Link>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="text-lg text-black">
-                    <div className=" w-[400px] flex flex-row rounded-[11px] border-gainsboro border-solid border-[2px] box-border p-5">
+                  <div className="text-lg text-black  my-2 md:my-0">
+                    <div className=" md:w-[400px] flex flex-col md:flex-row rounded-[11px] border-gainsboro border-solid border-2 box-border p-5">
                       <div className="w-[50px]">
                         <Image
                           className=" bg-[#DBF7F8] rounded-4xl p-2"
@@ -114,15 +120,77 @@ const TeamMember: React.FC<TeamMemberProps> = ({
                           Phone Call:
                         </div>
                         <div className="tracking-[0.01em] lowercase mt-1 text-[#898989] text-justify font-lexend text-[18px] not-italic font-normal leading-normal">
-                          <a href="tel:+31107660786">+31 10 766 0786</a>
+                          <Link
+                            href="https://wa.me/+31107660786"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            +31 10 766 0786
+                          </Link>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="inline-flex md:mt-5 md:gap-4">
-                  <div className="w-[40.4px] h-[40.4px]">
+                <div className="inline-flex mt-5 md:gap-4">
+                  <div className="flex space-x-4">
+                    {[
+                      {
+                        href: "https://www.facebook.com/itsolutionsww/",
+                        src: "/assets/images/aboutus/facebook.svg",
+                        label: "Facebook",
+                      },
+                      {
+                        href: "https://twitter.com/ITSolutionsBV",
+                        src: "/assets/images/aboutus/twiter.svg",
+                        label: "Twitter",
+                      },
+                      {
+                        href: "https://nl.linkedin.com/company/it-solutions-worldwide-bv",
+                        src: "/assets/images/aboutus/linkedin.svg",
+                        label: "LinkedIn",
+                      },
+                      {
+                        href: "https://www.instagram.com/itsolutionsworldwide/",
+                        src: "/assets/images/aboutus/instagram.svg",
+                        label: "Instagram",
+                      },
+                    ].map(({ href, src, label }) => (
+                      <Link
+                        key={label}
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={label}
+                        className="p-1 rounded-full hover:bg-[#236B7A] transition"
+                      >
+                        <Image
+                          className="max-w-full overflow-hidden max-h-full transition"
+                          width={40.4}
+                          height={40.4}
+                          sizes="100vw"
+                          alt={label}
+                          title={label}
+                          src={src}
+                        />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Modal>
+    </>
+  );
+};
+
+export default TeamMember;
+
+
+                  {/* <div className="w-[40.4px] h-[40.4px]">
                     <Image
                       className="max-w-full overflow-hidden max-h-full"
                       width={40.4}
@@ -161,15 +229,4 @@ const TeamMember: React.FC<TeamMemberProps> = ({
                       alt=""
                       src="/assets/images/aboutus/linkedin.svg"
                     />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Modal>
-    </>
-  );
-};
-
-export default TeamMember;
+                  </div> */}

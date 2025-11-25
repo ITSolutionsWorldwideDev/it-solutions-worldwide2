@@ -51,7 +51,7 @@ const FAQSection = ({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         {/* Left Section */}
         <div className="flex flex-col items-start gap-[50.4px]">
-          <div className="shadow-[0px_0px_1.05px_rgba(44,_58,_114,_0.05),_0px_2.098883628845215px_6.3px_rgba(44,_58,_114,_0.05),_0px_10.494418144226074px_18.89px_rgba(58,_76,_146,_0.1)] rounded-[20.99px] bg-white border-lightsteelblue border-solid border-[1px] flex items-center py-[8.4px] px-[12.6px] gap-[8.4px] text-center">
+          <div className="shadow-[0px_0px_1.05px_rgba(44,_58,_114,_0.05),_0px_2.098883628845215px_6.3px_rgba(44,_58,_114,_0.05),_0px_10.494418144226074px_18.89px_rgba(58,_76,_146,_0.1)] rounded-[20.99px] bg-white border-lightsteelblue border-solid border flex items-center py-[8.4px] px-[12.6px] gap-[8.4px] text-center">
             <Image
               className="h-[21px] w-[21px] relative object-cover"
               width={21}

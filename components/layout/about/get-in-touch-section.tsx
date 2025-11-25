@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const GetInTouchSection: NextPage = () => {
   return (
-    <div className="w-full  h-[511px] relative text-left text-[25px] text-white font-lexend">
+    <div className="w-full  md:h-[511px] relative text-left text-[25px] text-white font-lexend">
       {/* <div className="">
         <Image
           className="rounded-[27px] w-full [background:linear-gradient(90deg,_#278083,_#000)] h-[428px] object-contain opacity-80"
@@ -86,7 +86,8 @@ const GetInTouchSection: NextPage = () => {
 
           <div className="relative grid pt-20 text-left text-lg">
             <div className="text-[45px] font-semibold">Get In Touch</div>
-            <div className="text-justify flex flex-row gap-4">
+
+            <div className="text-justify flex flex-row gap-4 mt-5 md:mt-0">
               <div className="w-auto">
                 <Image
                   className="w-9 h-9"
@@ -100,12 +101,13 @@ const GetInTouchSection: NextPage = () => {
 
               <div className="w-auto">
                 <div className="leading-[30px] capitalize">Email us</div>
-                <div className="text-[15px] tracking-[0.01em] leading-[100%] lowercase font-medium text-silver">
+                <div className="text-[15px] tracking-[0.01em] leading-[100%] lowercase font-medium text-silver mt-2 md:mt-0">
                   <a href="mailto:info@itsolutionsworldwide.com">info@itsolutionsworldwide.com</a>
                 </div>
               </div>
             </div>
-            <div className="text-justify flex flex-row gap-4">
+
+            <div className="text-justify flex flex-row gap-4 mt-5 md:mt-0">
               <div className="w-auto">
                 <Image
                   className=" w-9 h-9"
@@ -118,12 +120,12 @@ const GetInTouchSection: NextPage = () => {
               </div>
               <div className="w-auto">
                 <div className="leading-[30px] capitalize">Phone Number</div>
-                <div className="text-[15px] tracking-[0.01em] leading-[100%] lowercase font-medium text-silver">
+                <div className="text-[15px] tracking-[0.01em] leading-[100%] lowercase font-medium text-silver mt-2 md:mt-0">
                   <a href="tel:+31107660786">+31 10 766 0786</a>
                 </div>
               </div>
             </div>
-            <div className="">
+            <div className="mt-10 md:mt-0">
               {/* <b className=" leading-[50.37px] capitalize">Contact Us</b>
                 <Image
                   className="w-6 h-6"
@@ -151,9 +153,9 @@ const GetInTouchSection: NextPage = () => {
             </div>
           </div>
 
-          <div className="relative w-[550px] h-[500px]">
+          <div className="md:relative md:w-[550px] md:h-[500px]">
             <Image
-              className=" absolute  top-[-40px]"
+              className=" md:absolute  md:-top-10"
               width={550}
               height={565}
               sizes="100vw"

@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 
-const Group9309: NextPage = () => {
+const OurValuesSection: NextPage = () => {
   return (
     <div className="w-full relative text-justify text-lg text-gray mx-auto my-12 py-3 md:py-4 lg:py-12 px-4 md:px-4 lg:px-5  ">
       <div className=" w-full text-center">
@@ -87,4 +87,4 @@ const Group9309: NextPage = () => {
   );
 };
 
-export default Group9309;
+export default OurValuesSection;

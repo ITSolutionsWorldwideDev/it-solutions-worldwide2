@@ -60,6 +60,11 @@
     "sendmessage": "Send Message"
   },
   "profile": {
+    "banner_heading": "From idea to impact",
+    "banner_text": "we handle it all.",
+    "button_text": "Discover Now",
+    "button2_text": "Our Services",
+
     "cards_main_heading":"Make your Business future proof built to adapt, ready to lead.",
     "card_heading_1": "Smart Solutions, Seamless Operation",
     "card_text_1": "We simplify complex workflows with tailored IT and cloud solutions that boost efficiency, reduce costs, and scale with your growth. From infrastructure to automation, we build systems that evolve with your business.",
@@ -73,8 +78,11 @@
   "aboutus": {
     "banner_heading": "ABOUT US",
     "banner_text": "We combines expertise in management consulting and implementation of business applications",
-    
+
     "contactheading": "Get in Touch",
+
+    "why_us_heading": "About Our Company",
+    "why_us_heading_2": "Why Choose",
 
     "expertise_heading_1": "Supply Chain Services",
     "expertise_text_1": "Streamlining logistics and operations for faster, smarter delivery.",

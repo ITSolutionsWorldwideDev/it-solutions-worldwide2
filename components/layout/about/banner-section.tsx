@@ -1,4 +1,4 @@
-// components/layout/banner-section-3.tsx
+// components/layout/about/banner-section.tsx
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +20,7 @@ type BannerSectionProps = {
   slides: Slide[];
 };
 
-const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
+const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -39,24 +39,22 @@ const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
   return (
     <div className="relative w-full py-2 mt-2">
       <div
-        className="relative bg-cover bg-center w-full h-[900px] md:h-[400px] lg:h-[600px] mx-auto rounded-xl shadow-lg overflow-hidden flex items-center"
+        className="relative bg-cover bg-center w-full h-[600px] md:h-[400px] lg:h-[600px] mx-auto rounded-xl shadow-lg overflow-hidden flex items-center"
         style={{
           backgroundImage: `url(${slides[currentSlide].backgroundImage})`,
         }}
       >
         <div className="relative w-full h-full  z-10 text-left text-white px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 w-full h-full ">
-            <div className="relative  self-center">
-              <h1 className="bg-linear-to-r from-[#1A2980] to-[#26D0CE] bg-clip-text text-transparent font-lexend text-[54.636px] md:text-[84.636px] font-bold leading-[81.009px] uppercase">
+            <div className="  self-center">
+              <h1 className="uppercase text-xl md:text-3xl lg:text-4xl font-bold mb-1 sm:mb-4 w-[90%] md:w-[90%] lg:w-1/2">
                 {slides[currentSlide].heading}
               </h1>
-              {/* uppercase text-xl md:text-3xl lg:text-4xl font-bold mb-1 sm:mb-4 w-[90%] md:w-[90%] lg:w-1/2  */}
-              <p className=" text-black font-lexend text-[34.636px] md:text-[61.395px] font-normal leading-[58.764px]">
+              <p className="text-sm sm:text-base w-[90%] md:w-[90%] lg:w-1/2">
                 {slides[currentSlide].text}
               </p>
-              {/* text-sm sm:text-base w-[90%] md:w-[90%] lg:w-1/2 */}
               {slides[currentSlide].button ? (
-                <div className=" gap-4 mt-2 inline-flex align-middle sm:w-full" >
+                <div className=" gap-4 mt-2 inline-flex align-middle">
                   <Link
                     href="/contact-us"
                     target="_blank" //change for pop-up later
@@ -78,7 +76,7 @@ const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
                 ""
               )}
               {slides[currentSlide].button2 ? (
-                <div className=" justify-start gap-4 mt-2 inline-flex align-middle md:ml-10 sm:w-full">
+                <div className=" justify-start gap-4 mt-2 inline-flex align-middle ml-10">
                   <Link
                     href="#"
                     className={`bg-white transition px-4 py-2 rounded-[10px] border border-[#418F92] text-[#418F92]  shrink-0 text-base leading-[50.37px] text-[16.79px] inline-flex align-middle hover:text-[#236B7A]`}
@@ -124,12 +122,16 @@ const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
               )}
             </div>
             <div className="relative">
-              <Image
-                className=""
-                fill
-                alt=""
-                src={slides[currentSlide].backgroundMainImage}
-              />
+              {slides[currentSlide].backgroundMainImage ? (
+                <Image
+                  className=""
+                  fill
+                  alt=""
+                  src={slides[currentSlide].backgroundMainImage}
+                />
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>
@@ -138,4 +140,4 @@ const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
   );
 };
 
-export default BannerSection3;
+export default BannerSectionAboutUs;

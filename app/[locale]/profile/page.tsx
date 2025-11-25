@@ -41,15 +41,50 @@ export default async function ProfilePage({
     {
       backgroundImage: "/assets/images/profile/banner_bg.png",
       backgroundMainImage: "/assets/images/profile/banner_rightside_bg.png",
-      heading: "From idea to impact", // t("ecommerce.heading_1"),
-      text: "we handle it all.", //t("ecommerce.text_1"),
-      button: "Discover Now", //t("ecommerce.button_1"),
-      button2: "Our Services", // t("ecommerce.button_1"),
+      heading:  t("profile.banner_heading"),
+      text: t("profile.banner_text"),
+      button: t("profile.button_text"),
+      button2:  t("profile.button2_text"),
       textcolor: "#0000",
     },
   ];
 
+  
+
   const faqData = {
+    title: t("aboutus.faq_title"),
+    description: t("aboutus.faq_desc"),
+    faqs: [
+      {
+        question: t("aboutus.question1"),
+        answer: t("aboutus.answer1"),
+      },
+      {
+        question: t("aboutus.question2"),
+        answer: t("aboutus.answer2"),
+      },
+      {
+        question: t("aboutus.question3"),
+        answer: t("aboutus.answer3"),
+      },
+      {
+        question: t("aboutus.question4"),
+        answer: t("aboutus.answer4"),
+      },
+      {
+        question: t("aboutus.question5"),
+        answer: t("aboutus.answer5"),
+      },
+      {
+        question: t("aboutus.question6"),
+        answer: t("aboutus.answer6"),
+      },
+    ],
+    helpCenterLink: "/contact-us",
+    privacyPolicyLink: "/privacy-policy",
+  };
+
+  /* const faqData = {
     title: "Frequently asked questions",
     description: "Feel free to make a call to our customer support helpline.",
     faqs: [
@@ -86,7 +121,7 @@ export default async function ProfilePage({
     ],
     helpCenterLink: "/Contact-Us",
     privacyPolicyLink: "",
-  };
+  }; */
 
   return (
     <>
