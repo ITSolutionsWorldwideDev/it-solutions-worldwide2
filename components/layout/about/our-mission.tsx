@@ -1,7 +1,10 @@
-import type { NextPage } from "next";
+// components/layout/about/our-mission.tsx
 import Image from "next/image";
+import initServerI18n from "@/utils/serverTranslation";
 
-const OurMission: NextPage = () => {
+export default async function OurMission({ locale }: { locale: string }) {
+  const i18nInstance = await initServerI18n(locale);
+  const t = await i18nInstance.getFixedT(locale, "common");
   return (
     <div
       className="
@@ -17,10 +20,8 @@ const OurMission: NextPage = () => {
     px-4 md:px-4 lg:px-10"
     >
       <div className="w-full">
-        <div className=" text-[#467a7e]-100 text-center">
-          It Time For A Revolution
-        </div>
-        <div className="text-[70px] font-semibold text-center">Our Mission</div>
+        <div className=" text-[#467a7e]-100 text-center">{t("aboutus.our_mission_main_heading")}</div>
+        <div className="text-[70px] font-semibold text-center">{t("aboutus.our_mission_main_heading")}</div>
         <div className="w-full md:max-w-6xl m-auto">
           <div className=" flex flex-col md:flex-row md:gap-12 text-[22px]">
             <div className="w-full md:w-1/2">
@@ -35,14 +36,8 @@ const OurMission: NextPage = () => {
                     src="/assets/images/aboutus/fluent-arrow-growth-20-filled.svg"
                   />
                   <div className="">
-                    <div className="font-semibold">
-                      Web Development & Maintenance
-                    </div>
-                    <div className="text-[15px] text-gray text-justify flex items-center">
-                      Scalable, fast, and secure websites and platforms, from
-                      corporate sites to advanced e-commerce solutions in
-                      Magento and WooCommerce.
-                    </div>
+                    <div className="font-semibold">{t("aboutus.our_mission_widget_heading1")}</div>
+                    <div className="text-[15px] text-gray text-justify flex items-center">{t("aboutus.our_mission_widget_text1")}</div>
                   </div>
                 </div>
               </div>
@@ -58,12 +53,8 @@ const OurMission: NextPage = () => {
                     src="/assets/images/aboutus/fluent-code-24-filled.svg"
                   />
                   <div className="">
-                    <div className="font-semibold">Web & App Development</div>
-                    <div className=" left-0 text-[15px] text-gray text-justify flex items-center  md:w-[359px]">
-                      Modern frameworks and technologies to create web apps and
-                      mobile applications that optimize processes and
-                      future-proof businesses.
-                    </div>
+                    <div className="font-semibold">{t("aboutus.our_mission_widget_heading2")}</div>
+                    <div className=" left-0 text-[15px] text-gray text-justify flex items-center  md:w-[359px]">{t("aboutus.our_mission_widget_text2")}</div>
                   </div>
                 </div>
               </div>
@@ -79,11 +70,8 @@ const OurMission: NextPage = () => {
                     src="/assets/images/aboutus/material-symbols-avg-pace.svg"
                   />
                   <div className="">
-                    <div className="font-semibold">E-commerce & Webshops</div>
-                    <div className="text-[15px] text-gray text-justify flex items-center  md:w-[359px]">
-                      User-friendly, conversion-focused online stores with
-                      secure payment solutions and seamless integrations.
-                    </div>
+                    <div className="font-semibold">{t("aboutus.our_mission_widget_heading3")}</div>
+                    <div className="text-[15px] text-gray text-justify flex items-center  md:w-[359px]">{t("aboutus.our_mission_widget_text3")}</div>
                   </div>
                 </div>
               </div>
@@ -99,12 +87,8 @@ const OurMission: NextPage = () => {
                     src="/assets/images/aboutus/fluent-arrow-growth-20-filled.svg"
                   />
                   <div className="">
-                    <div className="font-semibold">Process Automation</div>
-                    <div className="text-[15px] text-gray text-justify flex items-center">
-                      Streamlining business operations, reducing manual
-                      workloads, and improving efficiency across all
-                      departments.
-                    </div>
+                    <div className="font-semibold">{t("aboutus.our_mission_widget_heading4")}</div>
+                    <div className="text-[15px] text-gray text-justify flex items-center">{t("aboutus.our_mission_widget_text4")}</div>
                   </div>
                 </div>
               </div>
@@ -120,12 +104,8 @@ const OurMission: NextPage = () => {
                     src="/assets/images/aboutus/fluent-code-24-filled.svg"
                   />
                   <div className="">
-                    <div className="font-semibold">AI Services</div>
-                    <div className=" left-0 text-[15px] text-gray text-justify flex items-center  md:w-[359px]">
-                      Implementing artificial intelligence solutions to provide
-                      actionable insights, enhance decision-making, and drive
-                      innovation.
-                    </div>
+                    <div className="font-semibold">{t("aboutus.our_mission_widget_heading5")}</div>
+                    <div className=" left-0 text-[15px] text-gray text-justify flex items-center  md:w-[359px]">{t("aboutus.our_mission_widget_text5")}</div>
                   </div>
                 </div>
               </div>
@@ -198,26 +178,12 @@ const OurMission: NextPage = () => {
             <div className="w-full md:w-1/2 text-[18.17px] text-gray">
               <div className=" text-[34.61px] text-black">
                 <div className=" md:w-[466px]  md:h-[167px]">
-                  <div className="font-semibold">
-                    Where Digital Excellence <br />
-                    Meets Seamless Execution <br />
-                    and Scalable Growth
-                  </div>
+                  <div className="font-semibold">{t("aboutus.our_mission_heading")}</div>
                 </div>
               </div>
 
               <div className="text-justify flex items-center  mb-5">
-                At IT Solutions Worldwide, our mission is simple: to help
-                businesses grow through smart, future-ready IT solutions. In a
-                rapidly evolving technological landscape, we ensure
-                organizations don’t just keep up—they lead. We combine deep
-                technical expertise with practical experience. Our team of
-                developers, designers, and marketing specialists creates
-                innovative solutions that empower businesses digitally. Whether
-                it’s building a user-friendly website, developing a complex web
-                application, automating business processes, or leveraging AI, we
-                deliver tailor-made strategies that meet each client’s unique
-                needs.
+                {t("aboutus.our_mission_text")}
                 {/* At IT Solutions Worldwide, our mission is to simplify complexity
                 and accelerate growth for businesses across industries. We
                 believe that technology should be intuitive, scalable, and
@@ -252,12 +218,8 @@ const OurMission: NextPage = () => {
                     src="/assets/images/aboutus/material-symbols-avg-pace.svg"
                   />
                   <div className="">
-                    <div className="font-semibold">Marketing & Campaigns</div>
-                    <div className="text-[15px] text-gray text-justify flex items-center  md:w-[359px]">
-                      Complete digital marketing strategies, including branding,
-                      SEO, social media management, and PPC campaigns for
-                      measurable results.
-                    </div>
+                    <div className="font-semibold">{t("aboutus.our_mission_widget_heading6")}</div>
+                    <div className="text-[15px] text-gray text-justify flex items-center  md:w-[359px]">{t("aboutus.our_mission_widget_text6")}</div>
                   </div>
                 </div>
               </div>
@@ -268,5 +230,3 @@ const OurMission: NextPage = () => {
     </div>
   );
 };
-
-export default OurMission;

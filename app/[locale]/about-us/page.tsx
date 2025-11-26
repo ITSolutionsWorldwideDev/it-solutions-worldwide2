@@ -114,10 +114,10 @@ export default async function AboutUsPage({
         <BannerSectionAboutUs slides={slides} />
         <Group9319 />
         <WhyUsSection locale={locale} />
-        <OurMission />
+        <OurMission locale={locale} />
         <VisionSection {...vision} />
-        <OurValuesSection />
-        <CreativeTeamSection />
+        <OurValuesSection locale={locale} />
+        <CreativeTeamSection locale={locale} />
         <AboutUsProcessFlow {...processFlow} />
         <MaskGroup />
         <FAQSection {...faqData} />

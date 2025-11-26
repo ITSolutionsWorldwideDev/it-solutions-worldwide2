@@ -59,7 +59,7 @@
     "message": "Bericht",
     "sendmessage": "Verstuur Bericht"
   },
-  "profile": {    
+  "profile": {
     "banner_heading": "Van idee naar impact",
     "banner_text": "wij regelen alles.",
     "button_text": "Ontdek Nu",
@@ -79,11 +79,55 @@
   "aboutus": {
     "banner_heading": "OVER ONS",
     "banner_text": "Wij combineren expertise in management consulting en de implementatie van bedrijfsapplicaties.",
-    
+
     "contactheading": "Neem contact op",
 
     "why_us_heading": "Over Ons Bedrijf",
     "why_us_heading_2": "Waarom Kiezen Voor",
+    "why_us_text": "Wij onderscheiden ons door technische excellentie, klantgerichtheid en betaalbaarheid. Onze oplossingen zijn van hoge kwaliteit en toch scherp geprijsd, zodat klanten maximale waarde ontvangen. We bouwen geen systemen alleen — we creëren oplossingen die waarde toevoegen, efficiëntie verhogen en veiligheid, schaalbaarheid en prestaties prioriteren. Wij geloven in langdurige partnerschappen. Onze klanten zien ons niet enkel als een leverancier, maar als een strategische partner die vooruitdenkt, deskundig adviseert en betrouwbaar ondersteunt. Transparante processen, duidelijke communicatie en betrouwbare support vormen de basis van het vertrouwen dat wij opbouwen.",
+
+    "why_us_widget_heading1": "Impact in Alle Sectoren",
+    "why_us_widget_heading2": "Bewezen Expertise",
+    "why_us_widget_heading3": "Modernisering Door Talent",
+
+    "why_us_widget_text1": "IT Solutions Worldwide levert geavanceerde technologische oplossingen aan diverse industrieën, en stimuleert succes en efficiëntie.",
+    "why_us_widget_text2": "Met X jaar ervaring en een bewezen trackrecord zijn wij gespecialiseerd in supply chain optimalisatie, IT-support, digitale marketing en operationele excellentie.",
+    "why_us_widget_text3": "Onze hooggekwalificeerde technische professionals helpen bedrijven te evolueren met eenvoudige, innovatieve en toekomstbestendige strategieën.",
+
+    "our_mission_main_heading": "Onze Missie",
+    "our_mission_main_subheading": "Het Is Tijd Voor Een Revolutie",
+
+    "our_mission_heading": "Waar Digitale Excellentie Samenkomen met Naadloze Uitvoering en Schaalbare Groei",
+    "our_mission_text": "Bij IT Solutions Worldwide is onze missie eenvoudig: bedrijven helpen groeien met slimme, toekomstbestendige IT-oplossingen. In een snel veranderend technologisch landschap zorgen wij ervoor dat organisaties niet alleen bijblijven — maar vooroplopen. We combineren diepgaande technische expertise met praktische ervaring. Ons team van ontwikkelaars, ontwerpers en marketingspecialisten creëert innovatieve oplossingen die bedrijven digitaal versterken. Of het nu gaat om het bouwen van een gebruiksvriendelijke website, het ontwikkelen van een complexe webapplicatie, het automatiseren van bedrijfsprocessen of het inzetten van AI — wij leveren maatwerkstrategieën die aansluiten op de unieke behoeften van elke klant.",
+
+    "our_mission_widget_heading1": "Webontwikkeling & Onderhoud",
+    "our_mission_widget_heading2": "Web- & App-ontwikkeling",
+    "our_mission_widget_heading3": "E-commerce & Webshops",
+    "our_mission_widget_heading4": "Procesautomatisering",
+    "our_mission_widget_heading5": "AI-diensten",
+    "our_mission_widget_heading6": "Marketing & Campagnes",
+
+    "our_mission_widget_text1": "Schaalbare, snelle en veilige websites en platforms, van bedrijfssites tot geavanceerde e-commerceoplossingen in Magento en WooCommerce.",
+    "our_mission_widget_text2": "Moderne frameworks en technologieën voor het creëren van web- en mobiele applicaties die processen optimaliseren en bedrijven toekomstbestendig maken.",
+    "our_mission_widget_text3": "Gebruiksvriendelijke, conversiegerichte webshops met veilige betalingsoplossingen en naadloze integraties.",
+    "our_mission_widget_text4": "Het stroomlijnen van bedrijfsactiviteiten, het verminderen van handmatige werkzaamheden en het verbeteren van efficiëntie in alle afdelingen.",
+    "our_mission_widget_text5": "Het implementeren van AI-oplossingen die bruikbare inzichten bieden, besluitvorming verbeteren en innovatie stimuleren.",
+    "our_mission_widget_text6": "Complete digitale marketingstrategieën, inclusief branding, SEO, social media beheer en PPC-campagnes voor meetbare resultaten.",
+
+    "our_values_main_heading": "Onze Kernwaarden",
+    "our_values_main_subheading": "De Fundamenten van Alles Wat Wij Doen",
+    "our_values_main_text": "Bij IT Solutions Worldwide sturen onze waarden elke beslissing, elke oplossing en elke samenwerking. Ze weerspiegelen onze toewijding aan excellentie, innovatie en integriteit in een snel evoluerende digitale wereld.",
+
+    "our_values_widget_heading1": "Klantgerichtheid & Operationele Excellentie",
+    "our_values_widget_heading2": "Innovatie & Aanpassingsvermogen",
+    "our_values_widget_heading3": "Samenwerking & Integriteit",
+
+    "our_values_widget_text1": "Wij streven ernaar hoogwaardige IT-oplossingen te leveren die bedrijfsprocessen verbeteren, efficiëntie verhogen en duurzame relaties opbouwen met klanten, stakeholders en partners.",
+    "our_values_widget_text2": "Wij omarmen moderne technologieën en agile-denken om efficiënte, toekomstgerichte oplossingen te creëren die resultaten leveren in dynamische markten.",
+    "our_values_widget_text3": "Wij stimuleren sterke, transparante relaties — intern en extern — gebaseerd op vertrouwen, teamwork en het gezamenlijke streven naar excellentie.",
+
+    "creative_team_heading": "Het Creatieve Team Achter de Deur",
+    "creative_team_subheading": "Vraag niet wat je teamgenoten voor jou kunnen doen. Vraag wat jij voor je teamgenoten kunt doen.",
 
     "expertise_heading_1": "Supply Chain Services",
     "expertise_text_1": "Optimaliseren van logistiek en operaties voor snellere en slimmere levering.",

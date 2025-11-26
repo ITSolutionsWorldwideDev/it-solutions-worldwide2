@@ -1,7 +1,13 @@
 import type { NextPage } from "next";
 import TeamMember from "./TeamMember";
 
-const CreativeTeamSection: NextPage = () => {
+// const CreativeTeamSection: NextPage = () => {
+import Image from "next/image";
+import initServerI18n from "@/utils/serverTranslation";
+
+export default async function CreativeTeamSection({ locale }: { locale: string }) {
+  const i18nInstance = await initServerI18n(locale);
+  const t = await i18nInstance.getFixedT(locale, "common");
   const team = [
     {
       name: "Sheetal Devi",
@@ -45,16 +51,10 @@ const CreativeTeamSection: NextPage = () => {
   return (
     <div className="w-full relative text-left text-[84px] text-black font-lexend mx-auto py-3 md:py-4 lg:py-12  px-4 md:px-0 lg:px-0">
       <div className="">
-        <div className="text-xl opacity-[0.6] pb-4">
-          Ask not what your teammates can do for you. Ask what you can do for
-          your teammates.
-        </div>
+        <div className="text-xl opacity-[0.6] pb-4">{t("aboutus.creative_team_subheading")}</div>
         <div className="leading-[86px] font-semibold inline-block">
-          <span>
-            The Creative team <br />
-            behind{" "}
-          </span>
-          <span className="text-[#467a7e]">the door</span>
+          <span>{t("aboutus.creative_team_heading")}</span>
+          {/* <span className="text-[#467a7e]"></span> */}
         </div>
       </div>
 
@@ -66,8 +66,6 @@ const CreativeTeamSection: NextPage = () => {
     </div>
   );
 };
-
-export default CreativeTeamSection;
 
 {
   /* <div className="absolute top-[296px] left-[678.72px] w-[301.4px] h-[349.8px] text-[5.26px]">

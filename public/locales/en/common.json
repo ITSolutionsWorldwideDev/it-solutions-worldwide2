@@ -83,7 +83,52 @@
 
     "why_us_heading": "About Our Company",
     "why_us_heading_2": "Why Choose",
+    "why_us_text": "We stand out through technical excellence, client focus, and affordability. Our solutions are high-quality yet competitively priced, ensuring clients receive maximum value. We don’t just build systems—we create solutions that add value, boost efficiency, and prioritize security, scalability, and performance. We believe in long-term partnerships. Our clients see us not just as a provider, but as a strategic partner that thinks ahead, advises wisely, and supports reliably. Transparent processes,  clear communication, and dependable support are the foundation of the trust we build.",
 
+    "why_us_widget_heading1": "Industry-Wide Impact",
+    "why_us_widget_heading2": "Proven Expertise",
+    "why_us_widget_heading3": "Modernization Through Talent",
+
+    "why_us_widget_text1": "IT Solutions Worldwide delivers cutting-edge tech solutions across diverse industries, driving success and efficiency",
+    "why_us_widget_text2": "With X years of experience and a strong track record, we specialize in supply chain optimization, IT support, digital marketing, and operational excellence.",
+    "why_us_widget_text3": "Our top-tier technical professionals help businesses evolve with simple, innovative, and future-ready strategies.",
+
+    "our_mission_main_heading": "Our Mission",
+    "our_mission_main_subheading": "It Time For A Revolution",
+
+    "our_mission_heading": "Where Digital Excellence Meets Seamless Execution and Scalable Growth",
+    "our_mission_text": "At IT Solutions Worldwide, our mission is simple: to help businesses grow through smart, future-ready IT solutions. In a rapidly evolving technological landscape, we ensure organizations don’t just keep up—they lead. We combine deep technical expertise with practical experience. Our team of  developers, designers, and marketing specialists creates innovative solutions that empower businesses digitally. Whether it’s building a user-friendly website, developing a complex web application, automating business processes, or leveraging AI, we deliver tailor-made strategies that meet each client’s unique needs.",
+
+    "our_mission_widget_heading1": "Web Development & Maintenance",
+    "our_mission_widget_heading2": "Web & App Development",
+    "our_mission_widget_heading3": "E-commerce & Webshops",
+    "our_mission_widget_heading4": "Process Automation",
+    "our_mission_widget_heading5": "AI Services",
+    "our_mission_widget_heading6": "Marketing & Campaigns",
+
+    "our_mission_widget_text1": "Scalable, fast, and secure websites and platforms, from corporate sites to advanced e-commerce solutions in Magento and WooCommerce.",
+    "our_mission_widget_text2": "Modern frameworks and technologies to create web apps and mobile applications that optimize processes and future-proof businesses.",
+    "our_mission_widget_text3": "User-friendly, conversion-focused online stores with secure payment solutions and seamless integrations.",
+    "our_mission_widget_text4": "Streamlining business operations, reducing manual workloads, and improving efficiency across all departments.",
+    "our_mission_widget_text5": "Implementing artificial intelligence solutions to provide actionable insights, enhance decision-making, and drive innovation.",
+    "our_mission_widget_text6": "Complete digital marketing strategies, including branding, SEO, social media management, and PPC campaigns for measurable results.",
+
+
+    "our_values_main_heading": "Our Core Values",
+    "our_values_main_subheading": "The Foundation of Everything We Do",
+    "our_values_main_text": " At IT Solutions Worldwide, our values guide every decision, every solution, and every relationship. They reflect our commitment to excellence, innovation, and integrity in a rapidly evolving digital world.",
+
+    "our_values_widget_heading1": "Client Commitment & Operational Excellence",
+    "our_values_widget_heading2": "Innovation & Adaptability",
+    "our_values_widget_heading3": "Collaboration & Integrity",
+
+    "our_values_widget_text1": "We prioritize delivering top-tier IT solutions that enhance business operations, boost efficiency, and build lasting partnerships with clients, stakeholders, and collaborators.",
+    "our_values_widget_text2": "We embrace modern technologies and agile thinking to craft efficient, forward-looking solutions that drive real results in dynamic markets.",
+    "our_values_widget_text3": "We foster strong, transparent relationships—internally and externally—grounded in trust, teamwork, and a shared pursuit of excellence.",
+
+    "creative_team_heading": "The Creative team behind the door",
+    "creative_team_subheading": "Ask not what your teammates can do for you. Ask what you can do for your teammates.",
+    
     "expertise_heading_1": "Supply Chain Services",
     "expertise_text_1": "Streamlining logistics and operations for faster, smarter delivery.",
 

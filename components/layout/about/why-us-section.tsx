@@ -1,5 +1,5 @@
 // components/layout/about/why-us-section.tsx
-import type { NextPage } from "next";
+// import type { NextPage } from "next";
 import Image from "next/image";
 import initServerI18n from "@/utils/serverTranslation";
 
@@ -36,16 +36,7 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
               {t("aboutus.why_us_heading_2")} IT Solutions Worldwide{/* What Define Us */}
             </div>
             <div className=" text-lg text-gray flex items-center sm:w-auto md:w-[549px] mb-4">
-              We stand out through technical excellence, client focus, and
-              affordability. Our solutions are high-quality yet competitively
-              priced, ensuring clients receive maximum value. We don’t just
-              build systems—we create solutions that add value, boost
-              efficiency, and prioritize security, scalability, and performance.
-              We believe in long-term partnerships. Our clients see us not just
-              as a provider, but as a strategic partner that thinks ahead,
-              advises wisely, and supports reliably. Transparent processes,
-              clear communication, and dependable support are the foundation of
-              the trust we build.
+               {t("aboutus.why_us_text")}
               {/*  IT Solutions Worldwide is a leading company that provides the
               best-updated solutions to a comprehensive range of industries */}
             </div>
@@ -62,11 +53,8 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
                 />
 
                 <div className="">
-                  <div className="font-semibold">Industry-Wide Impact</div>
-                  <div className=" text-[15px] text-gray text-justify flex items-center sm:w-auto md:w-[434px]">
-                    IT Solutions Worldwide delivers cutting-edge tech solutions
-                    across diverse industries, driving success and efficiency
-                  </div>
+                  <div className="font-semibold"> {t("aboutus.why_us_widget_heading1")}</div>
+                  <div className=" text-[15px] text-gray text-justify flex items-center sm:w-auto md:w-[434px]">{t("aboutus.why_us_widget_text1")}</div>
                 </div>
               </div>
             </div>
@@ -83,12 +71,8 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
                 />
 
                 <div className="">
-                  <div className="font-semibold">Proven Expertise</div>
-                  <div className=" text-[15px] text-gray text-justify flex items-center sm:w-auto md:w-[434px]">
-                    With X years of experience and a strong track record, we
-                    specialize in supply chain optimization, IT support, digital
-                    marketing, and operational excellence.
-                  </div>
+                  <div className="font-semibold">{t("aboutus.why_us_widget_heading2")}</div>
+                  <div className=" text-[15px] text-gray text-justify flex items-center sm:w-auto md:w-[434px]">{t("aboutus.why_us_widget_text2")}</div>
                 </div>
               </div>
             </div>
@@ -105,13 +89,8 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
                 />
 
                 <div className="">
-                  <div className="font-semibold">
-                    Modernization Through Talent
-                  </div>
-                  <div className=" text-[15px] text-gray text-justify flex items-center sm:w-auto md:w-[434px]">
-                    Our top-tier technical professionals help businesses evolve
-                    with simple, innovative, and future-ready strategies.
-                  </div>
+                  <div className="font-semibold">{t("aboutus.why_us_widget_heading3")}</div>
+                  <div className=" text-[15px] text-gray text-justify flex items-center sm:w-auto md:w-[434px]">{t("aboutus.why_us_widget_text3")}</div>
                 </div>
               </div>
             </div>
@@ -160,5 +139,3 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
     </div>
   );
 }
-
-// export default WhyUsSection;
