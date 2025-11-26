@@ -4,6 +4,7 @@ import { Lexend } from "next/font/google";
 import PageUpButton from "@/components/ui/PageUpButton";
 import type { Metadata } from "next";
 import MetaPixel from "@/components/MetaPixel";
+import GoogleTagManager from "@/components/GoogleTagManager";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html lang="en" className={lexend.className} suppressHydrationWarning>
       <body>
         <MetaPixel pixelId="1766535074073515" />
+        <GoogleTagManager gtmId="GTM-NX66K4BC" />
         {children}
         <PageUpButton />
       </body>
