@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
-const siteUrl = 'https://itsolutionsworldwide.com';// process.env.NEXT_PUBLIC_SITE_URL || 
+const siteUrl =  process.env.NEXT_PUBLIC_SITE_URL ||  'https://www.itsolutionsworldwide.com';
 
 module.exports = {
   siteUrl,
@@ -18,9 +18,5 @@ module.exports = {
       href: `${siteUrl}/nl`,
       hreflang: 'nl',
     },
-    // {
-    //   href: `${siteUrl}/de`,
-    //   hreflang: 'de',
-    // },
   ],
 };
