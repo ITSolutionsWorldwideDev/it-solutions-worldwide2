@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: http://localhost:4000/en
+Host: https://itsolutionsworldwide.com
 
 # Sitemaps
-Sitemap: http://localhost:4000/en/sitemap.xml
+Sitemap: https://itsolutionsworldwide.com/sitemap.xml
