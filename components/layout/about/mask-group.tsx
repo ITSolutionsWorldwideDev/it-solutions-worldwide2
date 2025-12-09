@@ -13,28 +13,16 @@ import "swiper/css/navigation";
 
 const testimonials = [
   {
-    text: "Amet morbi enim sodales quis dui, in habitant pharetra...",
-    name: "Ralph Edwards",
-    role: "Product Designer",
-    img: "/assets/images/aboutus/Hellena-thumb.png",
+    text: "Ik ben erg tevreden met de website die het team voor mij heeft gebouwd en de ondersteuning die ik heb ontvangen. Alles werkt perfect, ze kwamen met goede opties om het nog verder te optimaliseren en de samenwerking kan ik zeker aanbevelen. <br><br>Heel erg bedankt voor al jullie werk, ik waardeer het enorm! <br>Reageren<br><br> ❤️1",
+    name: "Babylon Logistics",
+    // role: "Product Designer",
+    img: "/assets/images/babylonlogisticsinternational.webp",
   },
   {
-    text: "Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla. Lacus, ut congue sagittis vel nisi integer imperdiet a vitae.",
-    name: "Hellena John",
-    role: "Co-founder",
-    img: "/assets/images/aboutus/Hellena-thumb.png",
-  },
-  {
-    text: "A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed lorem cursus.",
-    name: "David Oshodi",
-    role: "Manager",
-    img: "/assets/images/aboutus/david-thumb.png",
-  },
-  {
-    text: "Magna egestas aliquet ut integer non. Sed diam enim nibh sit. Aliquam laoreet aenean metus nibh eu scelerisque.",
-    name: "Charolette Hanlin",
-    role: "CEO",
-    img: "/assets/images/aboutus/Hellena-thumb.png",
+    text: "Over the last 2 years, I worked with IT Solutions Worldwide BV on implementing Oracle Cloud in The Netherlands (Albelli) and France (MonAlbum Photo). <br><br>In addition to a great and innovative mind, they are possibly the most hardworking, professional and conscientious team I have ever worked with. If you are looking for sustainable solutions in Supply Chain Management, look no further than IT Solutions Worldwide BV. Their knowledge of issues is unquestionably and the ability to meet the interests of several stakeholders is impeccable.",
+    name: "Albelli",
+    // role: "Co-founder",
+    img: "/assets/images/logos/albelli.png",
   },
 ];
 
@@ -44,7 +32,6 @@ const MaskGroup: NextPage = () => {
 
   return (
     <div className="relative w-full font-lexend text-white overflow-hidden rounded-[23px]">
-
       {/* Background Image */}
       <Image
         src="/assets/images/aboutus/bg-copy-1.png"
@@ -81,17 +68,24 @@ const MaskGroup: NextPage = () => {
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           className="relative"
           breakpoints={{
-            640: { slidesPerView: 1.5 },
+            640: { slidesPerView: 2 },
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            1024: { slidesPerView: 2 },
           }}
         >
           {testimonials.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white rounded-[20px] shadow-xl p-8 text-black">
-                <p className="leading-[160%] mb-6">{item.text}</p>
+              <div className="bg-white rounded-[20px] min-h-96 shadow-xl p-8 text-black">
+                {/* <p className="leading-[160%] mb-6">{item.text}</p> */}
 
-                <div className="flex items-center gap-4">
+                <p
+                  className="leading-[160%] mb-6 text-center"
+                  dangerouslySetInnerHTML={{
+                    __html: item.text.replace(/\n/g, "<br>"),
+                  }}
+                />
+
+                <div className="flex items-center gap-4 bottom-0">
                   <Image
                     src={item.img}
                     width={64}
@@ -102,7 +96,7 @@ const MaskGroup: NextPage = () => {
                   <div>
                     <b className="block leading-[160%]">{item.name}</b>
                     <span className="text-gray-500 text-[16px]">
-                      {item.role}
+                      {/* {item.role} */}
                     </span>
                   </div>
                 </div>
@@ -126,7 +120,6 @@ const MaskGroup: NextPage = () => {
             ></button>
           ))}
         </div>
-
       </div>
     </div>
   );
@@ -134,6 +127,18 @@ const MaskGroup: NextPage = () => {
 
 export default MaskGroup;
 
+/* {
+    text: "A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed lorem cursus.",
+    name: "David Oshodi",
+    role: "Manager",
+    img: "/assets/images/aboutus/david-thumb.png",
+  },
+  {
+    text: "Magna egestas aliquet ut integer non. Sed diam enim nibh sit. Aliquam laoreet aenean metus nibh eu scelerisque.",
+    name: "Charolette Hanlin",
+    role: "CEO",
+    img: "/assets/images/aboutus/Hellena-thumb.png",
+  }, */
 
 /* import type { NextPage } from "next";
 import Image from "next/image";
