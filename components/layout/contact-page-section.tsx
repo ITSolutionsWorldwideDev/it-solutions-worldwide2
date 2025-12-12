@@ -1,16 +1,6 @@
 // components/layout/contact-page-section.tsx
-
-// import Image from "next/image";
 import initServerI18n from "@/utils/serverTranslation";
-import {
-  Mail,
-  Phone,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-} from "lucide-react";
-import Link from "next/link";
+import ContactCardClient from "./contact-page-section.client";
 
 type Props = {
   locale: string;
@@ -20,11 +10,34 @@ export default async function ContactCard({ locale }: Props) {
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
+  const translations = {
+    contactform: t("home.contactform"),
+    name: t("home.name"),
+    email: t("home.email"),
+    subject: t("home.subject"),
+    message: t("home.message"),
+    sendmessage: t("home.sendmessage"),
+    sending: t("sending"),
 
-  return (
+    thanks: t("thanks"),
+    messageSent: t("messageSent"),
+    redirecting: t("redirecting"),
+    goNow: t("goNow"),
+
+    contactheading: t("home.contactheading"),
+    contactemail: t("home.contactemail"),
+    contactephone: t("home.contactephone"),
+    contactconnect: t("home.contactconnect"),
+  };
+
+  return <ContactCardClient translations={translations} />;
+}
+
+
+  /* return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       <div className="bg-white rounded-lg shadow-xl flex flex-wrap lg:flex-nowrap">
-        {/* Left Side */}
+     
         <div className="w-full lg:w-1/2 bg-[#278083] text-white p-8 flex flex-col justify-center rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -32,7 +45,7 @@ export default async function ContactCard({ locale }: Props) {
             </h2>
 
             <div className="space-y-6">
-              {/* Email */}
+
               <div className="flex items-center space-x-4">
                 <div className="bg-[#29A1B6] p-3 rounded-full hover:bg-[#236B7A] transition">
                   <Mail className="h-6 w-6" />
@@ -51,7 +64,7 @@ export default async function ContactCard({ locale }: Props) {
                 </div>
               </div>
 
-              {/* Phone */}
+
               <div className="flex items-center space-x-4">
                 <div className="bg-[#29A1B6] p-3 rounded-full hover:bg-[#236B7A] transition">
                   <Phone className="h-6 w-6" />
@@ -71,7 +84,7 @@ export default async function ContactCard({ locale }: Props) {
               </div>
             </div>
 
-            {/* Social Media */}
+
             <div className="mt-6">
               <p className="text-sm mb-2">{t("home.contactconnect")}</p>
               <div className="flex space-x-4">
@@ -113,7 +126,7 @@ export default async function ContactCard({ locale }: Props) {
           </div>
         </div>
 
-        {/* Right Side: Contact Form */}
+
         <div className="w-full lg:w-1/2 bg-white p-8 rounded-b-lg lg:rounded-r-lg lg:rounded-bl-none shadow-lg">
           <h2 className="text-3xl font-semibold mb-6 text-gray-800 text-center lg:text-left">
             {t("home.contactform")}
@@ -188,5 +201,5 @@ export default async function ContactCard({ locale }: Props) {
         </div>
       </div>
     </div>
-  );
-}
+  ); */
+

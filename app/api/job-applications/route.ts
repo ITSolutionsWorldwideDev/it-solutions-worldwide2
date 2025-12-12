@@ -104,12 +104,12 @@ export async function POST(req: NextRequest) {
 
     // Email to Applicant
     const applicantMail = {
-      from: `"IT Solutions Hub2010 Careers" <${process.env.SMTP_USER}>`,
+      from: `"IT Solutions Worldwide Careers" <${process.env.SMTP_USER}>`,
       to: email,
-      subject: `Thank You for Reaching Out to IT Solutions Hub2010`,
+      subject: `Thank You for Reaching Out to IT Solutions Worldwide`,
       html: `
         <p>Dear <strong>${name}</strong>,</p>
-        <p>Thank you for contacting IT Solutions Hub 2010 and applying for <strong>${job_category}</strong>. </p>
+        <p>Thank you for contacting IT Solutions Worldwide and applying for <strong>${job_category}</strong>. </p>
         
         <p>Your application has been received and forwarded to the relevant department.</p>
         <p>A member of our team will get back to you as soon as possible. We appreciate your interest and the time you've taken to connect with us, 
@@ -118,14 +118,14 @@ export async function POST(req: NextRequest) {
         <p>We thank you once again for reaching out to us.</p><br>
         <p>Best regards,</p>
         <p>HR Department</p>
-        <p>IT Solutions Hub 2010</p>
-        <p>B-17, Islamabad, Pakistan</p>
+        <p>IT Solutions Worldwide</p>
+        <p>Mandenmakerstraat 100C, 3194DG, Hoogvliet Rotterdam</p>
         `,
     };
 
     // Email to HR
     const hrMail = {
-      from: `"IT Solutions Hub2010 Careers" <${process.env.SMTP_USER}>`,
+      from: `"IT Solutions Worldwide Careers" <${process.env.SMTP_USER}>`,
       to: process.env.HR_EMAIL,
       cc: process.env.CC_EMAIL,
       subject: `Job application for ${job_category} - ${name}`,
@@ -213,8 +213,8 @@ export async function POST(req: NextRequest) {
           hear: hearAbout,
           message,
           resume: resumeUrl,
-          email_subject: `Thank You for Reaching Out to IT Solutions Hub2010`,
-          email_hr: "info@itsolutionshub2010.com",
+          email_subject: `Thank You for Reaching Out to IT Solutions Worldwide`,
+          email_hr: "info@itsolutionsworldwide.com",
           type: 1,
         }),
       }),
@@ -231,7 +231,7 @@ export async function POST(req: NextRequest) {
           message,
           resume: resumeUrl,
           email_subject: `Job application for ${selectedJob.attributes.title}`,
-          email_hr: "info@itsolutionshub2010.com",
+          email_hr: "info@itsolutionsworldwide.com",
           type: 2,
         }),
       }),
