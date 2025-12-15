@@ -1,9 +1,24 @@
 // app/[locale]/blogs/page.tsx
 
+import BlogsClient from "@/components/layout/home/BlogsClient";
+import initServerI18n from "@/utils/serverTranslation";
+
+
+export default async function BlogsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const i18nInstance = await initServerI18n(locale);
+  const t = await i18nInstance.getFixedT(locale, "common");
+
+  return <BlogsClient locale={locale} title={t("latest_blogs", "Latest Blogs")} />;
+}
+/* 
 import initServerI18n from "@/utils/serverTranslation";
 import { loadBlogs } from "@/lib/loadBlogs";
 import BlogCard from "@/components/layout/home/BlogCard";
-// import { Metadata } from "next";
 
 type Props = {
   params: {
@@ -11,7 +26,7 @@ type Props = {
   };
 };
 
-// export default async function Blogs({ params }: Props) {
+
 export default async function Blogs({
   params,
 }: {
@@ -38,7 +53,7 @@ export default async function Blogs({
       </main>
     </div>
   );
-}
+} */
 
 /* 
 
