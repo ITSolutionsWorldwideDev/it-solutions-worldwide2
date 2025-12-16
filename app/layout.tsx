@@ -12,13 +12,14 @@ const lexend = Lexend({
   display: "swap",
 });
 
-
 export const metadata: Metadata = {
   title: {
-    default: "Empowering Businesses with Smart IT Solutions | IT Solutions Worldwide",
+    default:
+      "Empowering Businesses with Smart IT Solutions | IT Solutions Worldwide",
     template: "%s | IT Solutions Worldwide",
   },
-  description: "Get expert marketing automation & professional services automation software in the Netherlands. Scalable solutions tailored to your business needs.",
+  description:
+    "Get expert marketing automation & professional services automation software in the Netherlands. Scalable solutions tailored to your business needs.",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -34,6 +35,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={lexend.className} suppressHydrationWarning>
+      <head>
+        <meta
+          name="facebook-domain-verification"
+          content="0ryxazzsetmvipkqgt60umo33s7ti7"
+        />
+      </head>
       <body>
         <MetaPixel pixelId="1766535074073515" />
         <GoogleTagManager gtmId="GTM-NX66K4BC" />
