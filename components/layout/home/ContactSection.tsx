@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, useEffect, ChangeEvent, FormEvent } from 'react';
 import emailjs from 'emailjs-com';
 import {
   FaPhoneAlt,
@@ -11,9 +11,10 @@ import {
   FaTiktok,
 } from 'react-icons/fa';
 import Link from 'next/link';
+import { useRouter } from "next/navigation";
 
 type FormData = {
-  fullName: string;
+  name: string;
   email: string;
   subject: string;
   message: string;
@@ -22,61 +23,61 @@ type FormData = {
 type Errors = Partial<FormData>;
 
 const ContactSection: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    fullName: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
+  const router = useRouter();
+
+  const [status, setStatus] = useState<null | "success" | "error">(null);
+  const [showModal, setShowModal] = useState(false);
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
   const [errors, setErrors] = useState<Errors>({});
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [emailStatus, setEmailStatus] = useState<string | null>(null);
 
-  const validateEmail = (email: string): boolean =>
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const [sending, setSending] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
+  useEffect(() => {
+    if (showModal) {
+      const timer = setTimeout(() => router.push("/"), 8000);
+      return () => clearTimeout(timer);
+    }
+  }, [showModal]);
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const newErrors: Errors = {};
+    setSending(true);
 
-    if (!formData.fullName) newErrors.fullName = 'Full name is required';
-    if (!formData.email || !validateEmail(formData.email)) newErrors.email = 'Invalid email';
-    if (!formData.subject) newErrors.subject = 'Subject is required';
-    if (!formData.message) newErrors.message = 'Message is required';
+    try {
+      const formData = new FormData();
+      formData.append("name", name);
+      formData.append("email", email);
+      formData.append("subject", subject);
+      formData.append("message", message);
 
-    setErrors(newErrors);
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        body: formData,
+      });
 
-    if (Object.keys(newErrors).length === 0) {
-      setIsLoading(true);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to send message.");
 
-      const templateParams = {
-        name: formData.fullName,
-        email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-      };
+      setShowModal(true);
+      setStatus("success");
 
-      try {
-        await emailjs.send(
-          'service_cnlhcq5', // Your service ID
-          'template_esshcqn', // Your template ID
-          templateParams,
-          '2rwwu502Od15TPbDz' // Your public key
-        );
-        setEmailStatus('Email sent successfully!');
-        setFormData({ fullName: '', email: '', subject: '', message: '' }); // Clear form
-      } catch (error) {
-        console.error('Error:', error);
-        setEmailStatus('Failed to send email. Please try again later.');
-      } finally {
-        setIsLoading(false);
-      }
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+    } catch (err: any) {
+      setStatus("error");
+      setResponseMessage(err.message);
+    } finally {
+      setSending(false);
     }
   };
 
@@ -150,16 +151,12 @@ const ContactSection: React.FC = () => {
                 </label>
                 <input
                   type="text"
-                  id="fullName"
-                  name="fullName"
-                  value={formData.fullName}
-                  onChange={handleInputChange}
+                  id="name"
+                  name="name"
                   placeholder="John Doe"
                   className="p-3 w-full bg-white/10 border border-gray-400 rounded-md text-white placeholder-gray-300"
                   required
-                  aria-invalid={!!errors.fullName}
                 />
-                {errors.fullName && <p className="text-[#F5A623] text-sm mt-1">{errors.fullName}</p>}
               </div>
 
               {/* Email */}
@@ -171,14 +168,10 @@ const ContactSection: React.FC = () => {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
                   placeholder="johndoe@example.com"
                   className="p-3 w-full bg-white/10 border border-gray-400 rounded-md text-white placeholder-gray-300"
                   required
-                  aria-invalid={!!errors.email}
                 />
-                {errors.email && <p className="text-[#F5A623] text-sm mt-1">{errors.email}</p>}
               </div>
             </div>
 
@@ -191,14 +184,10 @@ const ContactSection: React.FC = () => {
                 type="text"
                 id="subject"
                 name="subject"
-                value={formData.subject}
-                onChange={handleInputChange}
                 placeholder="Need Web Development Services"
                 className="p-3 w-full bg-white/10 border border-gray-400 rounded-md text-white placeholder-gray-300"
                 required
-                aria-invalid={!!errors.subject}
               />
-              {errors.subject && <p className="text-[#F5A623] text-sm mt-1">{errors.subject}</p>}
             </div>
 
             {/* Message */}
@@ -209,15 +198,11 @@ const ContactSection: React.FC = () => {
               <textarea
                 id="message"
                 name="message"
-                value={formData.message}
-                onChange={handleInputChange}
                 placeholder="Provide details about your project"
                 rows={6}
                 className="p-3 w-full bg-white/10 border border-gray-400 rounded-md text-white placeholder-gray-300"
                 required
-                aria-invalid={!!errors.message}
               />
-              {errors.message && <p className="text-[#F5A623] text-sm mt-1">{errors.message}</p>}
             </div>
 
             {/* Submit */}
@@ -233,6 +218,18 @@ const ContactSection: React.FC = () => {
               </button>
             </div>
           </form>
+
+              {status === "success" && (
+                <p className="mt-4 text-green-600 font-semibold">
+                  Your message has been sent!
+                </p>
+              )}
+
+              {status === "error" && (
+                <p className="mt-4 text-red-600 font-semibold">
+                  Something went wrong. Please try again.
+                </p>
+              )}
 
           {/* Status Message */}
           {emailStatus && (

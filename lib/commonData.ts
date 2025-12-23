@@ -60,8 +60,8 @@ export const clientLogos = [
     alt: "Bosman",
   },
   {
-    src: "/assets/images/babylonlogisticsinternational.webp",
-    alt: "Babylon Logistics International",
+    src: "/assets/images/babylon.svg",
+    alt: "Babylon Logistics",
   },
   {
     src: "/assets/images/g-rollz.png",
@@ -80,13 +80,17 @@ export const clientLogos = [
     alt: "Hitachi",
   },
   {
-    src: "/assets/images/VFS.jpg",
-    alt: "VFS",
+    src: "/assets/images/VST Fire Solutions.png",
+    alt: "VST Fire Solutions",
   },
-  {
-    src: "/assets/images/2go.png",
-    alt: "2go",
-  },
+  // {
+  //   src: "/assets/images/VFS.jpg",
+  //   alt: "VFS",
+  // },
+  // {
+  //   src: "/assets/images/2go.png",
+  //   alt: "2go",
+  // },
   {
     src: "/assets/images/SSL-Electrotechneik.webp",
     alt: "SSL",
@@ -123,7 +127,7 @@ export const logosSlider = [
   "/assets/images/ddgroup.png",
 
   "/assets/images/bosman.svg",
-  "/assets/images/babylonlogisticsinternational.webp",
+  "/assets/images/babylon.svg",
   "/assets/images/g-rollz.png",
   "/assets/images/THE_NEWWAYS_LOGO.png",
   "/assets/images/rifasopleidingsinstituut.png",
