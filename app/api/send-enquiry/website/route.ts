@@ -102,7 +102,7 @@ export async function POST(req: NextRequest) {
 
     /** 4️⃣ Visitor Confirmation Email */
     await transporter.sendMail({
-      from: `"Your Company" <${process.env.SMTP_USER}>`,
+      from: `"IT Solutions Worldwide " <${process.env.SMTP_USER}>`,
       to: email,
       subject: "We received your enquiry 🎉",
       html: `

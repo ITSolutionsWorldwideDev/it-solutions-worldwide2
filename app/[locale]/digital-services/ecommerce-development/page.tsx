@@ -6,8 +6,8 @@ import InfoSection from "@/components/layout/info-section";
 import ImageSection2 from "@/components/layout/image-section-2";
 import ProcessFlow from "@/components/layout/process-flow";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
-import BannerSection2 from "@/components/layout/banner-section-2";
 import MarketingBanner from "@/components/ui/marketing-banner";
+import BannerInquirySection from "@/components/layout/banner-inquiry-section";
 
 export default async function EcommerceDevelopment({
   params,
@@ -26,6 +26,7 @@ export default async function EcommerceDevelopment({
       text: t("ecommerce.text_1"),
       button: t("ecommerce.button_1"),
       textcolor: "#0000",
+      buttonLink: "/digital-services/website-design-&-development/inquiry",
     },
   ];
   const imagetext = (
@@ -116,7 +117,7 @@ export default async function EcommerceDevelopment({
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerInquirySection slides={slides} />
       <ImageSection2
         heading={t("ecommerce.heading_2")}
         text={imagetext}

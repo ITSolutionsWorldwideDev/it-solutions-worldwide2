@@ -2,16 +2,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import Loader from "@/components/ui/Loader";
 import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
 import { Building2, Mail, Package, Phone, Sparkles, User } from "lucide-react";
 
 import { useForm } from "react-hook-form";
+
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
+
 import {
   Select,
   SelectContent,
@@ -19,7 +21,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Checkbox } from "@/components/ui/checkbox";
 
 type WebsiteInquiryFormProps = {
   translations: {
@@ -91,6 +92,7 @@ export default function WebsiteInquiryForm({
   const onSubmit = async (data: FormData) => {
     try {
       setSending(true);
+      setLoading(true);
       setResponseMessage("");
 
       const res = await fetch("/api/send-enquiry/website", {
@@ -110,9 +112,9 @@ export default function WebsiteInquiryForm({
       setResponseMessage("Application submitted successfully!");
       setShowModal(true);
     } catch (err: any) {
-      alert(err.message || "Something went wrong");
+      setResponseMessage(err.message || "Something went wrong");
     } finally {
-      setSending(false);
+      setLoading(false);
     }
   };
 
@@ -179,6 +181,7 @@ export default function WebsiteInquiryForm({
 
   return (
     <>
+    
       {showModal && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full text-center">
@@ -198,9 +201,12 @@ export default function WebsiteInquiryForm({
           </div>
         </div>
       )}
+
       <div className="flex flex-col items-center justify-center px-4">
         <div className="w-full max-w-5xl mx-auto px-4 py-16">
+
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+
             {/* Contact Information Card */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center gap-2">
@@ -512,7 +518,6 @@ export default function WebsiteInquiryForm({
               )}
             </div>
 
-            {/* Submit Button */}
             <div className="pt-4">
               <Button
                 type="submit"
@@ -526,7 +531,9 @@ export default function WebsiteInquiryForm({
                 We'll respond within 24 hours with a detailed proposal
               </p>
             </div>
+
           </form>
+
         </div>
       </div>
     </>
