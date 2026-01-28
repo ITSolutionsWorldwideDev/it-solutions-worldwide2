@@ -77,6 +77,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: `"Website Enquiry" <${process.env.SMTP_USER}>`,
       to: process.env.HR_EMAIL,
+      cc: process.env.MK_EMAIL,
       subject: `New Website Enquiry #${enquiryId}`,
       html: `
         <h3>New Website Enquiry</h3>
