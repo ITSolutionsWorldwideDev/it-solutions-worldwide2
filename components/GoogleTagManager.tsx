@@ -1,9 +1,31 @@
-// components\GoogleTagManager.tsx
+// components/GoogleTagManager.tsx
 "use client";
 
 import Script from "next/script";
 
+import { useEffect, useState } from "react";
+import { getConsent } from "@/lib/cookieConsent";
+
 export default function GoogleTagManager({ gtmId }: { gtmId: string }) {
+
+  const [enabled, setEnabled] = useState<boolean>(false);
+
+  useEffect(() => {
+    const checkConsent = () => {
+      const consent = getConsent();
+      // setEnabled(!!consent?.advertising);
+      setEnabled(!!consent?.analytics);
+    };
+
+    checkConsent();
+    window.addEventListener("cookie-consent-changed", checkConsent);
+
+    return () =>
+      window.removeEventListener("cookie-consent-changed", checkConsent);
+  }, []);
+
+  if (!enabled) return null;
+
   return (
     <>
       {/* Google Tag Manager Script */}
@@ -38,3 +60,8 @@ export default function GoogleTagManager({ gtmId }: { gtmId: string }) {
     </>
   );
 }
+  
+    // const consent = getConsent();
+  
+    // // Only run if user accepted analytics cookies
+    // if (!consent?.analytics) return null;

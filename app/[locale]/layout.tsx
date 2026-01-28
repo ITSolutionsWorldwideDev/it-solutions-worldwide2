@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import i18nConfig from '@/i18n/i18nConfig';
 import LayoutWrapper from '../layout-wrapper';
 import { ThemeProvider } from '@/components/theme-provider';
+import CookieConsent from '@/components/CookieConsent';
 import '../globals.css';
 
 export default async function LocaleLayout({
@@ -29,6 +30,7 @@ export default async function LocaleLayout({
     >
       <LayoutWrapper locale={locale}>
         {children}
+        <CookieConsent />
       </LayoutWrapper>
     </ThemeProvider>
   );

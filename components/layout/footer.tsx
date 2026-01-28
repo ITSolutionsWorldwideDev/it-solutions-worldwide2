@@ -3,7 +3,7 @@ import Link from "next/link";
 // components/layout/footer.tsx
 export default function Footer() {
   return (
-    <footer className="bg-white py-12 sm:pt-16">
+    <footer className="bg-white py-12 sm:pt-16  text-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top section: 4 columns on md+ screens */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-12">
@@ -28,12 +28,18 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-3 text-gray-500">
               <li>
-                <Link href="/about-us" className="text-base hover:text-[#236B7A]">
+                <Link
+                  href="/about-us"
+                  className="text-base hover:text-[#236B7A]"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/profile" className="text-base hover:text-[#236B7A]">
+                <Link
+                  href="/profile"
+                  className="text-base hover:text-[#236B7A]"
+                >
                   Profile
                 </Link>
               </li>
@@ -69,11 +75,8 @@ export default function Footer() {
                   Digital Services
                 </Link>
               </li>
-               <li>
-                <Link
-                  href="/blogs"
-                  className="text-base hover:text-[#236B7A]"
-                >
+              <li>
+                <Link href="/blogs" className="text-base hover:text-[#236B7A]">
                   Blogs
                 </Link>
               </li>
@@ -198,8 +201,12 @@ export default function Footer() {
           </span>
         </div>
       </div>
+      <button
+        onClick={() => window.dispatchEvent(new Event("open-cookie-settings"))}
+        className="text-sm text-gray-500 hover:underline mt-4"
+      >
+        Cookie Settings
+      </button>
     </footer>
   );
 }
-
-

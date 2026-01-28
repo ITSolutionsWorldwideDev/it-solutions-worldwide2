@@ -2,7 +2,27 @@
 
 import Script from "next/script";
 
+import { useEffect, useState } from "react";
+import { getConsent } from "@/lib/cookieConsent";
+
 export default function MetaPixel({ pixelId }: { pixelId: string }) {
+  const [enabled, setEnabled] = useState(false);
+
+  useEffect(() => {
+    const checkConsent = () => {
+      const consent = getConsent();
+      setEnabled(!!consent?.advertising);
+    };
+
+    checkConsent();
+    window.addEventListener("cookie-consent-changed", checkConsent);
+
+    return () =>
+      window.removeEventListener("cookie-consent-changed", checkConsent);
+  }, []);
+
+  if (!enabled) return null;
+
   return (
     <>
       {/* Facebook Pixel Base Code */}
@@ -37,3 +57,9 @@ export default function MetaPixel({ pixelId }: { pixelId: string }) {
     </>
   );
 }
+
+
+  // const consent = getConsent();
+
+  // // Only run if user accepted advertising/analytics cookies
+  // if (!consent?.advertising) return null;
