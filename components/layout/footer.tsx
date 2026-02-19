@@ -28,6 +28,11 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-3 text-gray-500">
               <li>
+                <Link href="/blogs" className="text-base hover:text-[#236B7A]">
+                  Blogs
+                </Link>
+              </li>
+              <li>
                 <Link
                   href="/about-us"
                   className="text-base hover:text-[#236B7A]"
@@ -43,6 +48,7 @@ export default function Footer() {
                   Profile
                 </Link>
               </li>
+              {/* 
               <li>
                 <Link
                   href="/scm-services"
@@ -50,34 +56,24 @@ export default function Footer() {
                 >
                   SCM Services
                 </Link>
-              </li>
+              </li> 
+              */}
               <li>
                 <Link
-                  href="/supply-health-check-info"
-                  className="text-base hover:text-[#236B7A]"
+                  target="_blank"
+                  href="/assets/Branding_Guide_For_ITWW.pdf"
+                  className="text-base hover:text-[#236b7a]"
                 >
-                  Supply Health Check
+                  Our Branding
                 </Link>
               </li>
               <li>
                 <Link
                   href="/contact-us"
+                  target="_blank"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/digital-services"
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  Digital Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/blogs" className="text-base hover:text-[#236B7A]">
-                  Blogs
                 </Link>
               </li>
             </ul>
@@ -127,6 +123,14 @@ export default function Footer() {
                   className="text-base hover:text-[#236B7A]"
                 >
                   Staffing Support
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/supply-health-check-info"
+                  className="text-base hover:text-[#236B7A]"
+                >
+                  Supply Health Check
                 </Link>
               </li>
             </ul>
