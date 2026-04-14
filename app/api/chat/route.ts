@@ -1,7 +1,7 @@
 // /app/api/chat/route.ts
 import OpenAI from "openai";
 
-const client = new OpenAI({
+/* const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
@@ -40,4 +40,4 @@ export async function POST(req: Request) {
   return Response.json({
     reply: completion.choices[0].message.content,
   });
-}
+} */
