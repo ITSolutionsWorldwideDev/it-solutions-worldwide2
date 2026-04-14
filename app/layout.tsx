@@ -43,7 +43,8 @@ export default function RootLayout({
       </head>
       <body>
         <MetaPixel pixelId="1766535074073515" />
-        <GoogleTagManager gtmId="GTM-NX66K4BC" />
+        <GoogleTagManager gtmId="GTM-PH8FNRK6" />
+        {/* <GoogleTagManager gtmId="GTM-NX66K4BC" /> */}
         {children}
         <PageUpButton />
       </body>
