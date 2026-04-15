@@ -60,8 +60,3 @@ export default function GoogleTagManager({ gtmId }: { gtmId: string }) {
     </>
   );
 }
-  
-    // const consent = getConsent();
-  
-    // // Only run if user accepted analytics cookies
-    // if (!consent?.analytics) return null;

@@ -4,6 +4,7 @@ import { Lexend } from "next/font/google";
 import PageUpButton from "@/components/ui/PageUpButton";
 import type { Metadata } from "next";
 import MetaPixel from "@/components/MetaPixel";
+import GoogleTag from "@/components/GoogleTag";
 import GoogleTagManager from "@/components/GoogleTagManager";
 
 const lexend = Lexend({
@@ -44,6 +45,7 @@ export default function RootLayout({
       <body>
         <MetaPixel pixelId="1766535074073515" />
         <GoogleTagManager gtmId="GTM-PH8FNRK6" />
+        <GoogleTag tagId="AW-945961160" />
         {/* <GoogleTagManager gtmId="GTM-NX66K4BC" /> */}
         {children}
         <PageUpButton />
