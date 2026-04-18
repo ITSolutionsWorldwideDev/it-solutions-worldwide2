@@ -151,11 +151,12 @@ const ConsultationForm = () => {
           className="border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent bg-white"
         >
           <option value="">Select a service</option>
-          <option value="admin">Administrative Support</option>
-          <option value="marketing">Digital Marketing</option>
-          <option value="customer">Customer Service</option>
-          <option value="data">Data Entry</option>
-          <option value="research">Research & Analysis</option>
+          <option value="admin">Virtual Assistant</option>
+          <option value="marketing"> Full Stack Developer</option>
+          <option value="customer"> Data Engineer</option>
+          <option value="data">Ecommerce Assistant</option>
+          <option value="research">Electrical Engineer</option>
+          <option value="research">AI Engineer</option>
         </select>
       </div>
 

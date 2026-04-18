@@ -11,9 +11,9 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   return (
     <div>
       <HiringHeader slug={slug} />
-      <HiringHeroSection slug={slug} />
-      <HiringPricing slug={slug} />
-      <HiringCTA slug={slug} />
+      {/* <HiringHeroSection slug={slug} /> */}
+      {/* <HiringPricing slug={slug} /> */}
+      {/* <HiringCTA slug={slug} /> */}
     </div>
   );
 };

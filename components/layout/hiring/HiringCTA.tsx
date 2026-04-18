@@ -4,7 +4,9 @@ import Link from "next/link";
 type Props = {
   slug: string;
 };
-export default function HiringCTA({ slug }: Props) {
+export default function HiringCTA({service}:any) {
+
+  // const service='virtual assistant'
   return (
     <section className="relative w-full min-h-[420px] flex items-center justify-center overflow-hidden bg-linear-to-br from-[#156F76F2] to-[#194B5AF2]">
       {/* Background grid overlay */}
@@ -26,12 +28,12 @@ export default function HiringCTA({ slug }: Props) {
       <div className="relative z-10 flex flex-col items-center text-center px-6 py-16 max-w-3xl mx-auto gap-6">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-          Ready to hire your virtual assistant?
+          Ready to hire your {service}?
         </h2>
 
         {/* Subtext */}
         <p className="text-white/80 text-lg max-w-xl">
-          Let us help you find the perfect virtual assistant for your business
+          Let us help you find the perfect {service} for your business
           or personal needs.
         </p>
 

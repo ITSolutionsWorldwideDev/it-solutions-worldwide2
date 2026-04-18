@@ -1,70 +1,71 @@
 import { Check } from "lucide-react";
 import Link from "next/link";
 
-
 type Props = {
   slug: string;
 };
-const plans = [
-  {
-    name: "Starter Plan",
-    description: "Part-time support for light admin tasks.",
-    price: "€800",
-    period: "/month",
-    note: "Save €2,000+ vs local hiring",
-    features: [
-      "20 hours/month",
-      "Email & calendar support",
-      "Basic admin tasks",
-      "Weekly reports",
-      "Email support",
-    ],
-    cta: "Get Started",
-    highlighted: false,
-  },
-  {
-    name: "Growth Plan",
-    description: "Dedicated assistant for daily operations.",
-    price: "€1,600",
-    period: "/month",
-    note: null,
-    features: [
-      "Full-time support (160hrs)",
-      "All Starter features",
-      "Customer support",
-      "Social media management",
-      "Priority support",
-      "Dedicated account manager",
-    ],
-    cta: "Get Started",
-    highlighted: true,
-  },
-  {
-    name: "Scale Plan",
-    description: "Multiple assistants or specialized support.",
-    price: "Custom",
-    period: null,
-    note: null,
-    features: [
-      "Multiple VAs",
-      "All Growth features",
-      "Specialized skills",
-      "Custom workflows",
-      "Dedicated account manager",
-      "SLA guarantee",
-    ],
-    cta: "Contact us",
-    highlighted: false,
-  },
-];
+// const plans = [
+//   {
+//     name: "Starter Plan",
+//     description: "Part-time support for light admin tasks.",
+//     price: "€800",
+//     period: "/month",
+//     note: "Save €2,000+ vs local hiring",
+//     features: [
+//       "20 hours/month",
+//       "Email & calendar support",
+//       "Basic admin tasks",
+//       "Weekly reports",
+//       "Email support",
+//     ],
+//     cta: "Get Started",
+//     highlighted: false,
+//   },
+//   {
+//     name: "Growth Plan",
+//     description: "Dedicated assistant for daily operations.",
+//     price: "€1,600",
+//     period: "/month",
+//     note: null,
+//     features: [
+//       "Full-time support (160hrs)",
+//       "All Starter features",
+//       "Customer support",
+//       "Social media management",
+//       "Priority support",
+//       "Dedicated account manager",
+//     ],
+//     cta: "Get Started",
+//     highlighted: true,
+//   },
+//   {
+//     name: "Scale Plan",
+//     description: "Multiple assistants or specialized support.",
+//     price: "Custom",
+//     period: null,
+//     note: null,
+//     features: [
+//       "Multiple VAs",
+//       "All Growth features",
+//       "Specialized skills",
+//       "Custom workflows",
+//       "Dedicated account manager",
+//       "SLA guarantee",
+//     ],
+//     cta: "Contact us",
+//     highlighted: false,
+//   },
+// ];
 
-export default function HiringPricing({slug}:Props) {
+// const title = "Virtual Assistant Plans";
+
+export default function HiringPricing({ plans, service }: any) {
   return (
     <section className="min-h-screen bg-white py-20 px-4" id="pricing">
       {/* Header */}
       <div className="text-center mb-14">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Affordable Virtual Assistant Plans
+          Affordable {service}
         </h1>
         <p className="text-gray-500 text-lg max-w-xl mx-auto">
           We offer flexible packages based on your workload and business needs.
@@ -74,7 +75,7 @@ export default function HiringPricing({slug}:Props) {
 
       {/* Cards */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-        {plans.map((plan) => (
+        {plans.map((plan: any) => (
           <div
             key={plan.name}
             className={`rounded-2xl p-8 flex flex-col justify-between shadow-md transition-transform hover:-translate-y-1 duration-200 ${
@@ -126,7 +127,7 @@ export default function HiringPricing({slug}:Props) {
 
               {/* Features */}
               <ul className="space-y-3 mt-6">
-                {plan.features.map((feature) => (
+                {plan.features.map((feature: any) => (
                   <li key={feature} className="flex items-center gap-3">
                     <span
                       className={`shrink-0 w-5 h-5 rounded-full flex items-center justify-center border ${
