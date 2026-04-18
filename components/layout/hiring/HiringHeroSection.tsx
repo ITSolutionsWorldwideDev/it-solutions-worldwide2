@@ -16,6 +16,10 @@ import { User } from "lucide-react";
 import { CircleCheck } from "lucide-react";
 import Link from "next/link";
 
+
+type Props = {
+  slug: string;
+};
 // ── Types ────────────────────────────────────────────────────────────────────
 interface Feature {
   icon: ReactNode;
@@ -154,7 +158,7 @@ function ServiceCard({ icon, title, bg, items }: Service) {
 }
 
 // ── Main Page Component ───────────────────────────────────────────────────────
-export default function HiringHeroSection() {
+export default function HiringHeroSection({slug}:Props) {
   return (
     <main className=" font-sans">
       {/* Hero Section */}

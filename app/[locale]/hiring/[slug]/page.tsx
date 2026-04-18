@@ -4,13 +4,16 @@ import HiringHeroSection from "@/components/layout/hiring/HiringHeroSection";
 import HiringPricing from "@/components/layout/hiring/HiringPricing";
 import React from "react";
 
-const page = () => {
+const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
+
+  console.log(slug);
   return (
     <div>
-      {/* <HiringHeader />
-      <HiringHeroSection />
-      <HiringPricing />
-      <HiringCTA /> */}
+      <HiringHeader slug={slug} />
+      <HiringHeroSection slug={slug} />
+      <HiringPricing slug={slug} />
+      <HiringCTA slug={slug} />
     </div>
   );
 };

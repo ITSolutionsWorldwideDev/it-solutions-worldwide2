@@ -1,7 +1,10 @@
 import { CheckCircle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export default function HiringCTA() {
+type Props = {
+  slug: string;
+};
+export default function HiringCTA({ slug }: Props) {
   return (
     <section className="relative w-full min-h-[420px] flex items-center justify-center overflow-hidden bg-linear-to-br from-[#156F76F2] to-[#194B5AF2]">
       {/* Background grid overlay */}

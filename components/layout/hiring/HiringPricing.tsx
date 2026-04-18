@@ -1,6 +1,10 @@
 import { Check } from "lucide-react";
 import Link from "next/link";
 
+
+type Props = {
+  slug: string;
+};
 const plans = [
   {
     name: "Starter Plan",
@@ -54,7 +58,7 @@ const plans = [
   },
 ];
 
-export default function HiringPricing() {
+export default function HiringPricing({slug}:Props) {
   return (
     <section className="min-h-screen bg-white py-20 px-4" id="pricing">
       {/* Header */}
