@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   console.log(await params);
   return {
     alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${locale}/hiring/${slug}`,
+      canonical: `https://www.itsolutionsworldwide.com/${locale}/staffing-support/${slug}`,
     },
   };
 }
