@@ -1,8 +1,27 @@
-import HiringCTA from "@/components/layout/hiring/HiringCTA";
 import HiringHeader from "@/components/layout/hiring/HiringHeader";
-import HiringHeroSection from "@/components/layout/hiring/HiringHeroSection";
-import HiringPricing from "@/components/layout/hiring/HiringPricing";
+import { Metadata } from "next";
 import React from "react";
+
+type Props = {
+  params: Promise<{ slug: string;locale:string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug,locale } = await params;
+  console.log(locale,slug)
+  console.log(await params);
+  return {
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${locale}/hiring/${slug}`,
+      // languages: {
+      //   en: `${process.env.NEXT_PUBLIC_BASE_URL}/en/hiring/${slug}`,
+      //   nl: `${process.env.NEXT_PUBLIC_BASE_URL}/nl/hiring/${slug}`,
+      // },
+    },
+  };
+}
+
+
 
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
@@ -11,9 +30,6 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   return (
     <div>
       <HiringHeader slug={slug} />
-      {/* <HiringHeroSection slug={slug} /> */}
-      {/* <HiringPricing slug={slug} /> */}
-      {/* <HiringCTA slug={slug} /> */}
     </div>
   );
 };

@@ -64,9 +64,9 @@ export default function HiringPricing({ plans, service }: any) {
     <section className="min-h-screen bg-white py-20 px-4" id="pricing">
       {/* Header */}
       <div className="text-center mb-14">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           Affordable {service}
-        </h1>
+        </h3>
         <p className="text-gray-500 text-lg max-w-xl mx-auto">
           We offer flexible packages based on your workload and business needs.
           All plans include full management and support.

@@ -128,9 +128,9 @@ export default function HiringHeroSection({services,features,service}:any) {
       {/* Hero Section */}
       <section className="bg-white pt-16 pb-12 px-4">
         <div className="mx-auto text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-10">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-10">
             Hire {service} in the Netherlands Trusted by Businesses Looking to Scale Faster
-          </h1>
+          </h2>
 
           {/* Feature badges */}
           <div className="flex flex-wrap justify-center gap-10">

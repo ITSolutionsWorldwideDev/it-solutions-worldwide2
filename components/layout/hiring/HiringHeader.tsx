@@ -1096,8 +1096,8 @@ export default function HiringHeader({ slug }: Props) {
 
     <div className="bg-teal-800 text-white text-xs sm:text-sm text-center py-4 sm:py-5 px-4">
       ✓ Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands &nbsp;
-      <span className="text-yellow-400">★ 4.8</span>{" "}
-      <span className="text-teal-300">(709 Reviews)</span>
+      <span className="text-yellow-400">★ 5.0</span>{" "}
+      {/* <span className="text-teal-300">(709 Reviews)</span> */}
     </div>
   </div>
 </div>
