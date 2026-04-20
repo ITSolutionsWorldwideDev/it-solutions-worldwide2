@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 const ConsultationForm = () => {
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     fullName: "",
     companyEmail: "",
@@ -21,17 +22,21 @@ const ConsultationForm = () => {
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     try {
+      setLoading(true);
       const res = await fetch("/api/consultation-form", {
         method: "POST",
         headers: {
           "content-Type": "application/json",
         },
+
         body: JSON.stringify(form),
       });
 
       const data = await res.json();
       if (data.success) {
+        setLoading(false);
         alert("Form submitted successfully!");
+
         setForm({
           fullName: "",
           companyEmail: "",
@@ -41,6 +46,7 @@ const ConsultationForm = () => {
           service: "",
         });
       } else {
+        setLoading(false);
         alert("Error submitting form");
       }
     } catch (error) {
@@ -70,6 +76,7 @@ const ConsultationForm = () => {
           <input
             type="text"
             name="fullName"
+            required
             value={form.fullName}
             onChange={handleChange}
             placeholder="Enter your full name"
@@ -86,6 +93,7 @@ const ConsultationForm = () => {
             type="email"
             name="companyEmail"
             value={form.companyEmail}
+            required
             onChange={handleChange}
             placeholder="Enter your company email"
             className="border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
@@ -100,6 +108,7 @@ const ConsultationForm = () => {
           <input
             type="tel"
             name="phone"
+            required
             value={form.phone}
             onChange={handleChange}
             placeholder="+31 123456890"
@@ -115,6 +124,7 @@ const ConsultationForm = () => {
           <input
             type="text"
             name="kvk"
+            required
             value={form.kvk}
             onChange={handleChange}
             placeholder="KVK number"
@@ -131,6 +141,7 @@ const ConsultationForm = () => {
         <input
           type="number"
           name="hoursPerWeek"
+          required
           value={form.hoursPerWeek}
           onChange={handleChange}
           placeholder="e.g. 20"
@@ -147,6 +158,7 @@ const ConsultationForm = () => {
         <select
           name="service"
           value={form.service}
+          required
           onChange={handleChange}
           className="border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent bg-white"
         >
@@ -164,10 +176,10 @@ const ConsultationForm = () => {
 
       <button
         onClick={handleSubmit}
-        className="w-full bg-teal-800 hover:bg-teal-900 text-white font-semibold py-3 rounded-lg transition-colors duration-200 shadow-md"
+        className="w-full bg-teal-800 hover:bg-teal-900 text-white font-semibold py-3 rounded-lg transition-colors duration-200 shadow-md cursor-pointer"
         type="submit"
       >
-        Book a Free Consultation
+        {loading ? "Submitting..." : " Book a Free Consultation"}
       </button>
 
       <p className="text-xs text-slate-400 text-center">
