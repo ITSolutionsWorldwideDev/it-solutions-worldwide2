@@ -641,7 +641,7 @@ const contentMap =
       heading: "Hire Electrical Engineer",
       subText:
         "Engineering projects can't afford gaps in technical knowledge, delayed deliverables, or expensive local hiring processes.",
-      service: "Electric-engineer",
+      service: "Electrical-engineer",
       // trust:
       //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
       // help: "What Your Virtual Assistant Can Help With",
