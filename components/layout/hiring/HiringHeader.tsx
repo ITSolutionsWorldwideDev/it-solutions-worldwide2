@@ -1087,7 +1087,7 @@ export default function HiringHeader({ slug }: Props) {
       </div>
 
       {/* Right Form */}
-      <div className="w-full lg:w-auto ">
+      <div className="w-full lg:w-auto flex-1 ">
         <ConsultationForm />
       </div>
     </main>
