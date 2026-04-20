@@ -123,7 +123,10 @@ export default function HiringPricing({ plans, service }: any) {
             {/* CTA */}
           </div>
         ))}
-        <Link href={"https://wa.me/31107660786"} className="flex items-center justify-center ">
+        <Link
+          href={"https://wa.me/31107660786"}
+          className="flex items-center justify-center "
+        >
           <button
             className={`mt-10 w-md  py-3 rounded-xl font-semibold text-sm transition-colors duration-200 cursor-pointer bg-white text-[#156F76]`}
           >

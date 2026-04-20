@@ -986,7 +986,7 @@ export default function HiringHeader({ slug }: Props) {
             <div className="flex-1 space-y-6 sm:space-y-8 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-[#156F761A] border text-teal-700 text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 rounded-full shadow-sm">
                 <HiBolt />
-                Start in 48 Hours • Save up to 60%
+               Save up to 60%
               </div>
 
               <h1 className="max-w-xl mx-auto lg:mx-0 text-3xl sm:text-4xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
@@ -1032,7 +1032,7 @@ export default function HiringHeader({ slug }: Props) {
                 <div className="flex flex-col items-center gap-1">
                   <Clock className="text-teal-700" />
                   <span className="text-xl sm:text-2xl font-bold text-slate-900">
-                    48hrs
+                    24hrs
                   </span>
                   <span className="text-xs sm:text-sm text-slate-500">
                     Start Time
