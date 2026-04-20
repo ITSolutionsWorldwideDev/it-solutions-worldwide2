@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 const ConsultationForm = () => {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
@@ -13,6 +14,7 @@ const ConsultationForm = () => {
     service: "",
   });
 
+  const router = useRouter();
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
   ) => {
@@ -45,6 +47,7 @@ const ConsultationForm = () => {
           hoursPerWeek: "",
           service: "",
         });
+        router.push("/thank-you");
       } else {
         setLoading(false);
         alert("Error submitting form");
@@ -59,7 +62,7 @@ const ConsultationForm = () => {
 
   console.log(form);
   return (
-    <div className="w-full lg:w-[420px] bg-white rounded-2xl shadow-xl p-8 space-y-5 border border-slate-100">
+    <div className="w-full  bg-white rounded-2xl shadow-xl p-8 space-y-5 border border-slate-100">
       <div>
         <h2 className="text-2xl font-bold text-slate-900">Get Started</h2>
         <p className="text-slate-500 text-sm mt-1">

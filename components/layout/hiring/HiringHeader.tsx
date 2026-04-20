@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { HiBolt } from "react-icons/hi2";
 import { notFound } from "next/navigation";
+
 import {
   ArrowRight,
   Users,
