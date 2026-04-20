@@ -147,7 +147,7 @@ export default function HiringHeroSection({services,features,service}:any) {
           {/* Section header */}
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-              'What Your {service} Can Help With'
+              What Your {service} Can Help With
             </h2>
             <p className="text-gray-500 max-w-xl mx-auto text-sm sm:text-base">
               Our dedicated {service} are trained professionals who can support your business or personal workload immediately.
