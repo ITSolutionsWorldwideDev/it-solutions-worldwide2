@@ -64,7 +64,7 @@ const ConsultationForm = () => {
   return (
     <div className="w-full  bg-white rounded-2xl shadow-xl p-8 space-y-5 border border-slate-100">
       <div>
-        <h2 className="text-2xl font-bold text-slate-900">Get Started</h2>
+        <p className="text-2xl font-bold text-slate-900">Get Started</p>
         <p className="text-slate-500 text-sm mt-1">Fill out the form to hire</p>
       </div>
 
