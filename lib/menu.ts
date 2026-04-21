@@ -73,6 +73,35 @@ export const menuItems = [
         label: "Staffing Consulting Services",
         link: "/staffing-support/staffing-consulting-services",
       },
+
+      {
+        label: "Hire Virtual Assistant",
+        link: "/staffing-support/hire-virtual-assistant",
+      },
+      {
+        label: "Hire Full Stack Developer",
+        link: "/staffing-support/hire-full-stack-developer",
+      },
+
+      {
+        label: "Hire a Data Engineer",
+        link: "/staffing-support/hire-data-engineer",
+      },
+
+      {
+        label: "Hire an Ecommerce Assistant",
+        link: "/staffing-support/hire-ecommerce-assistant",
+      },
+
+      {
+        label: "Hire an Electrical Engineer",
+        link: "/staffing-support/hire-electrical-engineer",
+      },
+
+      {
+        label: " Hire an AI Engineer",
+        link: "/staffing-support/hire-ai-engineer",
+      },
     ],
   },
 ];
