@@ -194,12 +194,12 @@ const ConsultationForm = () => {
           Privacy Policy
         </Link>{" "}
         &amp;{" "}
-        <Link
+        {/* <Link
           href="/terms-and-conditions"
           className="text-teal-600 underline hover:text-teal-800"
         >
           Terms
-        </Link>
+        </Link> */}
         .
       </p>
     </div>

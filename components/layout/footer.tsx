@@ -163,14 +163,14 @@ export default function Footer() {
                   Career
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/terms-and-conditions"
                   className="text-base hover:text-[#236B7A]"
                 >
                   Terms & Conditions
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/privacy-policy"

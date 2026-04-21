@@ -6,7 +6,7 @@ const pages = [
   "", // homepage
   "/about-us",
   "/blogs",
-  "/blogs/[slug]",
+  // "/blogs/[slug]",
   "/career",
   "/contact-us",
   "/digital-services",
