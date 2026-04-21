@@ -74,65 +74,101 @@ export default function HiringPricing({ plans, service }: any) {
       </div>
 
       {/* Cards */}
-      <div className="max-w-3xl mx-auto  justify-center text-white bg-[#156F76] rounded-2xl p-5">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
         {plans.map((plan: any) => (
           <div
             key={plan.name}
-            className={` p-8 flex flex-col justify-between  transition-transform hover:-translate-y-1 duration-200  text-white`}
+            className={`rounded-2xl p-8 flex flex-col justify-between shadow-md transition-transform hover:-translate-y-1 duration-200 ${
+              plan.highlighted
+                ? "bg-teal-800 text-white"
+                : "bg-white border border-gray-200 text-gray-900"
+            }`}
           >
             {/* Top */}
             <div>
-              <h2 className={`text-xl font-bold mb-1 `}>{plan.name}</h2>
-              <p className={`text-sm mb-6 `}>{plan.description}</p>
+              <h2
+                className={`text-xl font-bold mb-1 ${
+                  plan.highlighted ? "text-white" : "text-gray-900"
+                }`}
+              >
+                {plan.name}
+              </h2>
+              <p
+                className={`text-sm mb-6 ${
+                  plan.highlighted ? "text-teal-200" : "text-gray-500"
+                }`}
+              >
+                {plan.description}
+              </p>
 
               {/* Price */}
               <div className="mb-1">
-                <span className={`text-5xl font-extrabold  text-white`}>
+                <span
+                  className={`text-5xl font-extrabold ${
+                    plan.highlighted ? "text-white" : "text-gray-900"
+                  }`}
+                >
                   {plan.price}
                 </span>
                 {plan.period && (
-                  <span className={`text-base font-medium ml-1 `}>
+                  <span
+                    className={`text-base font-medium ml-1 ${
+                      plan.highlighted ? "text-teal-200" : "text-gray-500"
+                    }`}
+                  >
                     {plan.period}
                   </span>
                 )}
               </div>
 
-              {/* {plan.note && (
+              {plan.note && (
                 <p className="text-xs text-gray-400 mb-6">{plan.note}</p>
-              )} */}
+              )}
 
               {/* Features */}
               <ul className="space-y-3 mt-6">
                 {plan.features.map((feature: any) => (
                   <li key={feature} className="flex items-center gap-3">
                     <span
-                      className={`shrink-0 w-5 h-5 rounded-full flex items-center justify-center border `}
+                      className={`shrink-0 w-5 h-5 rounded-full flex items-center justify-center border ${
+                        plan.highlighted
+                          ? "border-teal-300 text-teal-200"
+                          : "border-teal-600 text-teal-600"
+                      }`}
                     >
                       <Check
                         size={12}
                         strokeWidth={3}
-                        className={`font-bold `}
+                        className={`font-bold ${plan.highlighted ? "text-white" : "text-[#156F76]"}`}
                       />
                     </span>
-                    <span className={`text-sm `}>{feature}</span>
+                    <span
+                      className={`text-sm ${
+                        plan.highlighted ? "text-teal-100" : "text-gray-700"
+                      }`}
+                    >
+                      {feature}
+                    </span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* CTA */}
+
+            <Link href={"https://wa.me/31107660786"}>
+              <button
+                className={`mt-10 w-full py-3 rounded-xl font-semibold text-sm transition-colors duration-200 cursor-pointer ${
+                  plan.highlighted
+                    ? "bg-white text-teal-800 hover:bg-teal-50"
+                    : "bg-teal-800 text-white hover:bg-teal-700"
+                }`}
+              >
+                {plan.cta}
+              </button>
+            </Link>
           </div>
         ))}
-        <Link
-          href={"https://wa.me/31107660786"}
-          className="flex items-center justify-center "
-        >
-          <button
-            className={`mt-10 w-md  py-3 rounded-xl font-semibold text-sm transition-colors duration-200 cursor-pointer bg-white text-[#156F76]`}
-          >
-            Get Started
-          </button>
-        </Link>
       </div>
 
       {/* Money-back guarantee */}
