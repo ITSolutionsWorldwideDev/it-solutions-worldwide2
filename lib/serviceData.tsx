@@ -11,8 +11,20 @@ import {
   MessageSquare,
   ShoppingCart,
   User,
+  PanelsTopLeft,
+  Dock,
+  QrCode,
+  BetweenHorizontalStart,
+  Warehouse,
+  ChartNoAxesCombined,
+  Database,
+  CloudCog,
+  PackageSearch,
+  FileSliders,
 } from "lucide-react";
-export  const contentMap: ServicePageConfig =
+import { MdOutlineSupportAgent, MdSupportAgent } from "react-icons/md";
+
+export const contentMap: ServicePageConfig =
   // : Record<
   //   string,
   //   {
@@ -56,7 +68,7 @@ export  const contentMap: ServicePageConfig =
       ],
       services: [
         {
-          icon: <Mail />,
+          icon: <MdOutlineSupportAgent />,
           title: "Administrative Support",
           bg: "bg-blue-500",
           items: [
@@ -211,7 +223,7 @@ export  const contentMap: ServicePageConfig =
       ],
       services: [
         {
-          icon: <Mail />,
+          icon: <Dock />,
           title: "Web Applications",
           bg: "bg-blue-500",
           items: [
@@ -224,7 +236,7 @@ export  const contentMap: ServicePageConfig =
           ],
         },
         {
-          icon: <Calendar />,
+          icon: <QrCode />,
           title: "Web Development",
           bg: "bg-purple-500",
           items: [
@@ -235,7 +247,7 @@ export  const contentMap: ServicePageConfig =
           ],
         },
         {
-          icon: <MessageSquare />,
+          icon: <ShoppingCart />,
           title: "Ecommerce Development",
           bg: "bg-green-500",
           items: [
@@ -258,7 +270,7 @@ export  const contentMap: ServicePageConfig =
           items: ["Node.js", "PHP", "Python", "API development"],
         },
         {
-          icon: <User />,
+          icon: <MdSupportAgent />,
           title: "Support & Maintenance",
           bg: "bg-violet-500",
           items: [
@@ -367,7 +379,7 @@ export  const contentMap: ServicePageConfig =
       ],
       services: [
         {
-          icon: <Mail />,
+          icon: <BetweenHorizontalStart />,
           title: "Data Pipelines",
           bg: "bg-blue-500",
           items: [
@@ -378,7 +390,7 @@ export  const contentMap: ServicePageConfig =
           ],
         },
         {
-          icon: <Calendar />,
+          icon: <Warehouse />,
           title: "Data Warehousing",
           bg: "bg-purple-500",
           items: [
@@ -389,7 +401,7 @@ export  const contentMap: ServicePageConfig =
           ],
         },
         {
-          icon: <MessageSquare />,
+          icon: <ChartNoAxesCombined />,
           title: "Analytics & Reporting Infrastructure",
           bg: "bg-green-500",
           items: [
@@ -400,7 +412,7 @@ export  const contentMap: ServicePageConfig =
           ],
         },
         {
-          icon: <ChartColumnDecreasing />,
+          icon: <Database />,
           title: "Database Management",
           bg: "bg-orange-500",
           items: [
@@ -411,7 +423,7 @@ export  const contentMap: ServicePageConfig =
           ],
         },
         {
-          icon: <ShoppingCart />,
+          icon: <CloudCog />,
           title: "Cloud Data Infrastructure",
           bg: "bg-pink-500",
           items: [
@@ -527,7 +539,7 @@ export  const contentMap: ServicePageConfig =
       ],
       services: [
         {
-          icon: <Mail />,
+          icon: <PackageSearch />,
           title: "Product Management",
           bg: "bg-blue-500",
           items: [
@@ -575,7 +587,7 @@ export  const contentMap: ServicePageConfig =
           ],
         },
         {
-          icon: <ShoppingCart />,
+          icon: <MdSupportAgent />,
           title: "Platform Support",
           bg: "bg-pink-500",
           items: [
@@ -587,7 +599,7 @@ export  const contentMap: ServicePageConfig =
           ],
         },
         {
-          icon: <User />,
+          icon: <FileSliders />,
           title: "Reporting & Admin",
           bg: "bg-violet-500",
           items: [
