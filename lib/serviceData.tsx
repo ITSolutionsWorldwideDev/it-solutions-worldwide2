@@ -47,25 +47,7 @@ export const contentMap: ServicePageConfig =
       // help: "What Your Virtual Assistant Can Help With",
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
-      features: [
-        {
-          icon: <Users />,
-          label: "Dedicated Virtual Assistants",
-          bg: "bg-blue-500",
-        },
-        { icon: <Clock />, label: "Start in 48 Hours", bg: "bg-green-500" },
-        { icon: <DollarSign />, label: "Save up to 60%", bg: "bg-emerald-500" },
-        {
-          icon: <Bookmark />,
-          label: "Fully Managed Support",
-          bg: "bg-purple-500",
-        },
-        {
-          icon: <TrendingUp />,
-          label: "Flexible Monthly Plans",
-          bg: "bg-orange-500",
-        },
-      ],
+     
       services: [
         {
           icon: <MdOutlineSupportAgent />,
@@ -194,33 +176,7 @@ export const contentMap: ServicePageConfig =
         "Stop delaying your project because of slow hiring, unreliable freelancers, or lack of technical expertise.",
       service: "full-stack-developer",
 
-      features: [
-        {
-          icon: <Users />,
-          label: "      Dedicated Full Stack Developers",
-          bg: "bg-blue-500",
-        },
-        {
-          icon: <Clock />,
-          label: "Start in Days, Not Months",
-          bg: "bg-green-500",
-        },
-        {
-          icon: <DollarSign />,
-          label: "Save up to 60% on Hiring Costs",
-          bg: "bg-emerald-500",
-        },
-        {
-          icon: <Bookmark />,
-          label: "Fully Managed Support",
-          bg: "bg-purple-500",
-        },
-        {
-          icon: <TrendingUp />,
-          label: "Flexible Monthly Plans",
-          bg: "bg-orange-500",
-        },
-      ],
+     
       services: [
         {
           icon: <Dock />,
@@ -350,33 +306,7 @@ export const contentMap: ServicePageConfig =
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
 
-      features: [
-        {
-          icon: <Users />,
-          label: "Dedicated Data Engineers",
-          bg: "bg-blue-500",
-        },
-        {
-          icon: <Clock />,
-          label: "Start in Days, Not Months",
-          bg: "bg-green-500",
-        },
-        {
-          icon: <DollarSign />,
-          label: "Save up to 60% on Hiring Costs",
-          bg: "bg-emerald-500",
-        },
-        {
-          icon: <Bookmark />,
-          label: "Flexible Monthly Plans",
-          bg: "bg-purple-500",
-        },
-        {
-          icon: <TrendingUp />,
-          label: "Fully Managed Support",
-          bg: "bg-orange-500",
-        },
-      ],
+      
       services: [
         {
           icon: <BetweenHorizontalStart />,
@@ -510,33 +440,7 @@ export const contentMap: ServicePageConfig =
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
 
-      features: [
-        {
-          icon: <Users />,
-          label: "Dedicated Ecommerce Support",
-          bg: "bg-blue-500",
-        },
-        {
-          icon: <Clock />,
-          label: "Start in Days, Not Months",
-          bg: "bg-green-500",
-        },
-        {
-          icon: <DollarSign />,
-          label: "Save up to 60% on Staffing Costs",
-          bg: "bg-emerald-500",
-        },
-        {
-          icon: <Bookmark />,
-          label: "Fully Managed and Reliable",
-          bg: "bg-purple-500",
-        },
-        {
-          icon: <TrendingUp />,
-          label: "Flexible Monthly Plans",
-          bg: "bg-orange-500",
-        },
-      ],
+      
       services: [
         {
           icon: <PackageSearch />,
@@ -674,33 +578,7 @@ export const contentMap: ServicePageConfig =
       // help: "What Your Virtual Assistant Can Help With",
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
-      features: [
-        {
-          icon: <Users />,
-          label: "Dedicated Electrical Engineers",
-          bg: "bg-blue-500",
-        },
-        {
-          icon: <Clock />,
-          label: "Start in Days, Not Months",
-          bg: "bg-green-500",
-        },
-        {
-          icon: <DollarSign />,
-          label: "Save up to 60% on Engineering Costs",
-          bg: "bg-emerald-500",
-        },
-        {
-          icon: <Bookmark />,
-          label: "Fully Managed Support",
-          bg: "bg-purple-500",
-        },
-        {
-          icon: <TrendingUp />,
-          label: "Flexible Monthly Plans",
-          bg: "bg-orange-500",
-        },
-      ],
+      
       services: [
         {
           icon: <Mail />,
@@ -839,33 +717,7 @@ export const contentMap: ServicePageConfig =
       // help: "What Your Virtual Assistant Can Help With",
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
-      features: [
-        {
-          icon: <Users />,
-          label: "Dedicated AI Engineers",
-          bg: "bg-blue-500",
-        },
-        {
-          icon: <Clock />,
-          label: "Start in Days, Not Months",
-          bg: "bg-green-500",
-        },
-        {
-          icon: <DollarSign />,
-          label: "Save up to 60% on Hiring Costs",
-          bg: "bg-emerald-500",
-        },
-        {
-          icon: <Bookmark />,
-          label: "Fully Managed Support",
-          bg: "bg-purple-500",
-        },
-        {
-          icon: <TrendingUp />,
-          label: "Flexible Monthly Plans",
-          bg: "bg-orange-500",
-        },
-      ],
+      
       services: [
         {
           icon: <Mail />,
@@ -934,6 +786,287 @@ export const contentMap: ServicePageConfig =
             "Model deployment on cloud platforms",
             "Monitoring and performance tracking",
             "Scalable AI infrastructure setup",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+     "hire-social-media-manager": {
+      heading: "Hire Social Media Manager",
+      subText:
+        "Your brand is being judged on social media every day — businesses that show up consistently build trust faster and convert more customers.",
+      service: "Social-media-manager",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+     
+      services: [
+        {
+          icon: <Mail />,
+          title: "Content Creation",
+          bg: "bg-blue-500",
+          items: [
+            "Social media post creation",
+            "Caption writing and copywriting",
+            "Graphic design coordination",
+            "Reel and short video scripting",
+            "Content calendar planning",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Platform Management",
+          bg: "bg-purple-500",
+          items: [
+            "Instagram management",
+            "LinkedIn management",
+            "Facebook page management",
+            "TikTok account management",
+            "Pinterest and Twitter/X management",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Community Management",
+          bg: "bg-green-500",
+          items: [
+            "Comment moderation and replies",
+            "DM handling and lead responses",
+            "Audience engagement strategies",
+            "Review monitoring and response",
+            "Community growth tactics",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Strategy & Planning",
+          bg: "bg-orange-500",
+          items: [
+            "Social media strategy development",
+            "Competitor analysis",
+            "Hashtag research",
+            "Trend monitoring",
+            "Monthly performance planning",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Analytics & Reporting",
+          bg: "bg-pink-500",
+          items: [
+            "Weekly and monthly performance reports",
+            "Engagement rate tracking",
+            "Follower growth analysis",
+            "Content performance review",
+            "Data-driven optimisation recommendations",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Paid Social Support",
+          bg: "bg-violet-500",
+          items: [
+            "Meta Ads basic setup support",
+            "Boosted post management",
+            "Audience targeting assistance",
+            "Ad performance monitoring",
+            "Coordination with your ads team",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+
+     "hire-content-creator-copywriter": {
+      heading: "Hire Content Creator Copywriter",
+      subText:
+        "Businesses that publish consistent, high-quality content attract more traffic, build stronger brands, and convert more customers — without spending a fortune on agencies.",
+      service: "Content-creator-copywriter",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+     
+      services: [
+        {
+          icon: <Mail />,
+          title: "Content Creation",
+          bg: "bg-blue-500",
+          items: [
+            "Social media post creation",
+            "Caption writing and copywriting",
+            "Graphic design coordination",
+            "Reel and short video scripting",
+            "Content calendar planning",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Platform Management",
+          bg: "bg-purple-500",
+          items: [
+            "Instagram management",
+            "LinkedIn management",
+            "Facebook page management",
+            "TikTok account management",
+            "Pinterest and Twitter/X management",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Community Management",
+          bg: "bg-green-500",
+          items: [
+            "Comment moderation and replies",
+            "DM handling and lead responses",
+            "Audience engagement strategies",
+            "Review monitoring and response",
+            "Community growth tactics",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Strategy & Planning",
+          bg: "bg-orange-500",
+          items: [
+            "Social media strategy development",
+            "Competitor analysis",
+            "Hashtag research",
+            "Trend monitoring",
+            "Monthly performance planning",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Analytics & Reporting",
+          bg: "bg-pink-500",
+          items: [
+            "Weekly and monthly performance reports",
+            "Engagement rate tracking",
+            "Follower growth analysis",
+            "Content performance review",
+            "Data-driven optimisation recommendations",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Paid Social Support",
+          bg: "bg-violet-500",
+          items: [
+            "Meta Ads basic setup support",
+            "Boosted post management",
+            "Audience targeting assistance",
+            "Ad performance monitoring",
+            "Coordination with your ads team",
           ],
         },
       ],

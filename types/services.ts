@@ -2,13 +2,13 @@ import { ReactElement } from "react";
 
 // ─── Atomic types ────────────────────────────────────────────────────────────
 
-export interface FeatureBadge {
-  /** Lucide (or any) icon element */
-  icon: ReactElement;
-  label: string;
-  /** Tailwind background colour class, e.g. "bg-blue-500" */
-  bg: string;
-}
+// export interface FeatureBadge {
+//   /** Lucide (or any) icon element */
+//   icon: ReactElement;
+//   label: string;
+//   /** Tailwind background colour class, e.g. "bg-blue-500" */
+//   bg: string;
+// }
 
 export interface ServiceCard {
   /** Lucide (or any) icon element */
@@ -49,7 +49,7 @@ export interface ServicePageEntry {
   service: string;
 
   /** Icon + label badges rendered in the hero or feature strip */
-  features: FeatureBadge[];
+  // features: FeatureBadge[];
 
   /** Cards listing the specific capabilities offered */
   services: ServiceCard[];

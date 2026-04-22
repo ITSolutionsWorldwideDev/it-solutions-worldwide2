@@ -1,5 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
-const siteUrl =  process.env.NEXT_PUBLIC_SITE_URL ||  'https://www.itsolutionsworldwide.com';
+const siteUrl =  process.env.NEXT_PUBLIC_SITE_URL || 'https://www.itsolutionsworldwide.com';
+
+//  
+//  ;
 
 const locales = ["en", "nl"];
 const pages = [
@@ -22,14 +25,15 @@ const pages = [
   "/it-support/software-development",
   "/job-apply",
   "/logistics",
-  "/logistics/lean-&-six-sigma-implementation",
+  // "/logistics/lean-&-six-sigma-implementation",
   "/logistics/logistics-&-supply-chain-specialists",
   "/logistics/smart-warehouse-solutions",
   "/logistics/warehouse-design-&-layouts",
   "/oracle-cloud",
-  "/oracle-cloud/cloud-data-&-ai-solutions",
-  "/oracle-cloud/cloud-transformation-&-migration",
+  // "/oracle-cloud/cloud-data-&-ai-solutions",
+  // "/oracle-cloud/cloud-transformation-&-migration",
   "/privacy-policy",
+  // "/privacy-policy/[slug]",
   "/profile",
   "/scm-services",
   "/scm-services/business-consultancy",
@@ -43,9 +47,17 @@ const pages = [
   "/staffing-support/specialized-industry-staffing",
   "/staffing-support/staffing-consulting-services",
   "/staffing-support/temporary-staffing",
+  // "/staffing-support/[slug]",
   "/supply-health-check",
   "/supply-health-check-info",
 ];
+
+// async function fetchBlogSlugs() {
+//   const res = await fetch(`${siteUrl}/api/sitemap-slugs`);
+//   const data = await res.json();
+//   console.log(data)
+//   return data.map((item) => item.slug); // ["seo-tips-2025", "webflow-guide", ...]
+// }
 
 module.exports = {
   siteUrl,
@@ -58,9 +70,15 @@ module.exports = {
   additionalPaths: async (config) => {
     const urls = [];
 
+  //   const [blogSlugs, staffingSlugs] = await Promise.all([
+  //   fetchBlogSlugs(),
+  //   // fetchStaffingSlugs(),
+  // ]);
+
     locales.forEach((locale) => {
       pages.forEach((p) => {
         // Special case: homepage
+        if (p.includes("[slug]")) return;
         const loc = p === "" ? `/${locale}` : `/${locale}${p}`;
 
         urls.push({
@@ -70,6 +88,8 @@ module.exports = {
           lastmod: new Date().toISOString(),
         });
       });
+
+
     });
 
     // locales.forEach((locale) => {

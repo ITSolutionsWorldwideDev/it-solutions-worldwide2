@@ -22,7 +22,7 @@ export default function HiringHeader({ slug }: Props) {
   if (!data) {
     return notFound();
   }
-  const { heading, subText, service, services, plans, features } =
+  const { heading, subText, service, services, plans} =
     contentMap[slug as keyof typeof contentMap] ||
     contentMap["hire-virtual-assistant"];
 
@@ -119,7 +119,7 @@ export default function HiringHeader({ slug }: Props) {
       <HiringHeroSection
         slug={slug}
         service={service}
-        features={features}
+        // features={features}
         services={services}
       />
       <HiringPricing slug={slug} plans={plans} service={service} />
