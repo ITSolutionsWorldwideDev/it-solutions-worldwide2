@@ -47,7 +47,7 @@ export const contentMap: ServicePageConfig =
       // help: "What Your Virtual Assistant Can Help With",
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
-     
+
       services: [
         {
           icon: <MdOutlineSupportAgent />,
@@ -176,7 +176,6 @@ export const contentMap: ServicePageConfig =
         "Stop delaying your project because of slow hiring, unreliable freelancers, or lack of technical expertise.",
       service: "full-stack-developer",
 
-     
       services: [
         {
           icon: <Dock />,
@@ -306,7 +305,6 @@ export const contentMap: ServicePageConfig =
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
 
-      
       services: [
         {
           icon: <BetweenHorizontalStart />,
@@ -440,7 +438,6 @@ export const contentMap: ServicePageConfig =
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
 
-      
       services: [
         {
           icon: <PackageSearch />,
@@ -578,7 +575,7 @@ export const contentMap: ServicePageConfig =
       // help: "What Your Virtual Assistant Can Help With",
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
-      
+
       services: [
         {
           icon: <Mail />,
@@ -717,7 +714,7 @@ export const contentMap: ServicePageConfig =
       // help: "What Your Virtual Assistant Can Help With",
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
-      
+
       services: [
         {
           icon: <Mail />,
@@ -844,7 +841,7 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-     "hire-social-media-manager": {
+    "hire-social-media-manager": {
       heading: "Hire Social Media Manager",
       subText:
         "Your brand is being judged on social media every day — businesses that show up consistently build trust faster and convert more customers.",
@@ -854,7 +851,7 @@ export const contentMap: ServicePageConfig =
       // help: "What Your Virtual Assistant Can Help With",
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
-     
+
       services: [
         {
           icon: <Mail />,
@@ -984,8 +981,7 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-
-     "hire-content-creator-copywriter": {
+    "hire-content-creator-copywriter": {
       heading: "Hire Content Creator Copywriter",
       subText:
         "Businesses that publish consistent, high-quality content attract more traffic, build stronger brands, and convert more customers — without spending a fortune on agencies.",
@@ -995,78 +991,359 @@ export const contentMap: ServicePageConfig =
       // help: "What Your Virtual Assistant Can Help With",
       // dedication:
       //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
-     
+
       services: [
         {
           icon: <Mail />,
-          title: "Content Creation",
+          title: " Blog & Article Writing",
           bg: "bg-blue-500",
           items: [
-            "Social media post creation",
-            "Caption writing and copywriting",
-            "Graphic design coordination",
-            "Reel and short video scripting",
-            "Content calendar planning",
+            "SEO blog post writing",
+            "Long-form article creation",
+            "Thought leadership content",
+            "Industry news and commentary",
+            "Guest post writing",
           ],
         },
         {
           icon: <Calendar />,
-          title: "Platform Management",
+          title: "Website Copywriting",
           bg: "bg-purple-500",
           items: [
-            "Instagram management",
-            "LinkedIn management",
-            "Facebook page management",
-            "TikTok account management",
-            "Pinterest and Twitter/X management",
+            "Homepage and landing page copy",
+            "Service and product page writing",
+            "About us and brand story pages",
+            "CTA and conversion copy",
+            "Website content audits and rewrites",
           ],
         },
         {
           icon: <MessageSquare />,
-          title: "Community Management",
+          title: "Social Media Content",
           bg: "bg-green-500",
           items: [
-            "Comment moderation and replies",
-            "DM handling and lead responses",
-            "Audience engagement strategies",
-            "Review monitoring and response",
-            "Community growth tactics",
+            "Post captions and copy",
+            "LinkedIn articles and posts",
+            "Facebook and Instagram content",
+            "Twitter/X threads",
+            "Content calendar creation",
           ],
         },
         {
           icon: <ChartColumnDecreasing />,
-          title: "Strategy & Planning",
+          title: "Email Marketing",
           bg: "bg-orange-500",
           items: [
-            "Social media strategy development",
-            "Competitor analysis",
-            "Hashtag research",
-            "Trend monitoring",
-            "Monthly performance planning",
+            "Email sequence writing",
+            "Newsletter creation",
+            "Promotional email copy",
+            "Automated drip campaign content",
+            "Subject line and CTA optimisation",
           ],
         },
         {
           icon: <ShoppingCart />,
-          title: "Analytics & Reporting",
+          title: "SEO Content",
           bg: "bg-pink-500",
           items: [
-            "Weekly and monthly performance reports",
-            "Engagement rate tracking",
-            "Follower growth analysis",
-            "Content performance review",
-            "Data-driven optimisation recommendations",
+            "Keyword research and mapping",
+            "SEO-optimised blog content",
+            "Meta title and description writing",
+            "Internal linking strategy content",
+            "Content briefs and outlines",
           ],
         },
         {
           icon: <User />,
-          title: "Paid Social Support",
+          title: "Brand & Ad Copywriting",
           bg: "bg-violet-500",
           items: [
-            "Meta Ads basic setup support",
-            "Boosted post management",
-            "Audience targeting assistance",
-            "Ad performance monitoring",
-            "Coordination with your ads team",
+            "Brand voice development",
+            "Google Ads copy",
+            "Social media ad copy",
+            "Product descriptions",
+            "Brochure and sales material copy",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+     "hire-online-marketeer": {
+      heading: "Hire Online Marketeer",
+      subText:
+        "Growing your business online requires consistent strategy, execution, and optimisation — not a one-time campaign. Get a dedicated marketeer who delivers results month after month.",
+      service: "Content-creator-copywriter",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Search Engine Optimisation (SEO)",
+          bg: "bg-blue-500",
+          items: [
+            "On-page and technical SEO",
+            "Keyword research and strategy",
+            "Content optimisation",
+            "Link building outreach",
+            "Monthly SEO reporting",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Google Ads (PPC)",
+          bg: "bg-purple-500",
+          items: [
+            "Campaign setup and management",
+            "Search, display, and shopping ads",
+            "Keyword bidding and optimisation",
+            "Ad copy writing and testing",
+            "Conversion tracking setup",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: " Email Marketing",
+          bg: "bg-green-500",
+          items: [
+            "Email campaign strategy",
+            "Newsletter creation and scheduling",
+            "Automated email sequences",
+            "List segmentation and management",
+            "Open rate and conversion optimisation",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Social Media Marketing",
+          bg: "bg-orange-500",
+          items: [
+            "Organic social strategy",
+            "Paid social campaign support",
+            "Platform growth tactics",
+            "Content scheduling and posting",
+            "Engagement and community growth",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Lead Generation",
+          bg: "bg-pink-500",
+          items: [
+            "Lead magnet creation and strategy",
+            "Landing page optimisation",
+            "CRM setup and management",
+            "Lead nurturing campaigns",
+            "Conversion funnel optimisation",
+          ],
+        },
+        {
+          icon: <User />,
+          title: " Analytics & Reporting",
+          bg: "bg-violet-500",
+          items: [
+            "Google Analytics 4 setup and tracking",
+            "Monthly performance dashboards",
+            "Campaign ROI reporting",
+            "Data-driven strategy adjustments",
+            "Competitor benchmarking",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+
+     "hire-webdesigner-developer": {
+      heading: "Hire Web-Designer and Developer",
+      subText:
+        "Your website is your most important sales tool. Get a dedicated web designer and developer who builds fast, beautiful, conversion-focused websites without agency delays or costs.",
+      service: "Web-Designer and Developer",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Website Design",
+          bg: "bg-blue-500",
+          items: [
+            "Custom website design",
+            "Landing page design",
+            "UI/UX design and wireframing",
+            "Mobile-responsive design",
+            "Brand-consistent visual design",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: " Web Development",
+          bg: "bg-purple-500",
+          items: [
+            "WordPress development",
+            "Custom HTML/CSS/JS development",
+            "CMS setup and customisation",
+            "Website speed optimisation",
+            "Cross-browser compatibility",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: " Ecommerce Web Design",
+          bg: "bg-green-500",
+          items: [
+            "Shopify store design",
+            "WooCommerce development",
+            "Product page design",
+            "Checkout flow optimisation",
+            "Payment gateway integration",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: " Landing Page Development",
+          bg: "bg-orange-500",
+          items: [
+            "High-converting landing pages",
+            "A/B test-ready page builds",
+            "Lead capture page design",
+            "Sales page development",
+            "CTA and form optimisation",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: " Website Maintenance",
+          bg: "bg-pink-500",
+          items: [
+            "Regular updates and backups",
+            "Plugin and theme management",
+            "Security monitoring",
+            "Bug fixing and troubleshooting",
+            "Performance optimisation",
+          ],
+        },
+        {
+          icon: <User />,
+          title: " UI/UX & Redesign",
+          bg: "bg-violet-500",
+          items: [
+            "Full website redesign",
+            "User experience audits",
+            "Conversion rate optimisation design",
+            "Accessibility improvements",
+            "Prototype and mockup creation",
           ],
         },
       ],
