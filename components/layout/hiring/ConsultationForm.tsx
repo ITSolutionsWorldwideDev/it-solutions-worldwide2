@@ -2,9 +2,10 @@
 import React from "react";
 import Link from "next/link";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
-const ConsultationForm = () => {
+import { useRouter, useParams } from "next/navigation";
+const ConsultationForm = ({ slug }: { slug: string }) => {
   const [loading, setLoading] = useState(false);
+  const params = useParams();
   const [form, setForm] = useState({
     fullName: "",
     companyEmail: "",
@@ -28,7 +29,7 @@ const ConsultationForm = () => {
       const res = await fetch("/api/consultation-form", {
         method: "POST",
         headers: {
-          "content-Type": "application/json",
+          "Content-Type": "application/json",
         },
 
         body: JSON.stringify(form),
@@ -36,20 +37,22 @@ const ConsultationForm = () => {
 
       const data = await res.json();
       if (data.success) {
-        setLoading(false);
-        alert("Form submitted successfully!");
+        
+        // alert("Form submitted successfully!");
 
         setForm({
           fullName: "",
           companyEmail: "",
-          phone: "",
-          kvk: "",
-          hoursPerWeek: "",
-          service: "",
-        });
-        router.push("/thank-you");
-      } else {
-        setLoading(false);
+            phone: "",
+            kvk: "",
+            hoursPerWeek: "",
+            service: "",
+          });
+          const locale = (params.locale as string) || "en";
+          router.push(`/${locale}/thank-you?service=${encodeURIComponent(slug)}`);
+          // setLoading(false);
+        } else {
+          setLoading(false);
         alert("Error submitting form");
       }
     } catch (error) {
@@ -154,9 +157,7 @@ const ConsultationForm = () => {
 
         {/* Choose Service */}
         <div className="flex flex-col gap-1">
-          <label className="text-sm font-medium text-slate-700">
-            Choose Service
-          </label>
+          <label className="text-sm font-medium text-slate-700">Service</label>
           <select
             name="service"
             value={form.service}
@@ -165,12 +166,13 @@ const ConsultationForm = () => {
             className="border border-slate-200 rounded-lg px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent bg-white"
           >
             <option value="">Select a service</option>
-            <option value="admin">Virtual Assistant</option>
-            <option value="marketing"> Full Stack Developer</option>
-            <option value="customer"> Data Engineer</option>
-            <option value="data">Ecommerce Assistant</option>
-            <option value="research">Electrical Engineer</option>
-            <option value="research">AI Engineer</option>
+            <option value={`${slug}`}>{slug}</option>
+            {/* <option value="admin">Virtual Assistant</option> */}
+            {/* <option value="marketing"> Full Stack Developer</option> */}
+            {/* <option value="customer"> Data Engineer</option> */}
+            {/* <option value="data">Ecommerce Assistant</option> */}
+            {/* <option value="research">Electrical Engineer</option> */}
+            {/* <option value="research">AI Engineer</option> */}
           </select>
         </div>
 
@@ -179,7 +181,7 @@ const ConsultationForm = () => {
         <button
           type="submit"
           // onClick={handleSubmit}
-          className="w-full bg-teal-800 hover:bg-teal-900 text-white font-semibold py-3 rounded-lg transition-colors duration-200 shadow-md cursor-pointer"
+          className={`w-full bg-teal-800 text-white font-semibold py-3 rounded-lg ${loading ? "disabled:opacity-50 cursor-not-allowed " : " hover:bg-teal-900  transition-colors duration-200 shadow-md cursor-pointer"}`}
           // type="submit"
         >
           {loading ? "Submitting..." : " Book a Free Consultation"}

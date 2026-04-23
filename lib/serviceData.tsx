@@ -1121,11 +1121,11 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-     "hire-online-marketeer": {
-      heading: "Hire Online Marketeer",
+     "hire-online-marketer": {
+      heading: "Hire Online Marketer",
       subText:
         "Growing your business online requires consistent strategy, execution, and optimisation — not a one-time campaign. Get a dedicated marketeer who delivers results month after month.",
-      service: "Content-creator-copywriter",
+      service: "Online Marketer",
       // trust:
       //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
       // help: "What Your Virtual Assistant Can Help With",
@@ -1401,4 +1401,1416 @@ export const contentMap: ServicePageConfig =
         },
       ],
     },
+
+     "hire-graphic-designer": {
+      heading: "Hire Graphic Designer",
+      subText:
+        "Strong visuals build trust, attract attention, and make your brand impossible to ignore. Get a dedicated graphic designer who delivers professional creative work every day — without agency fees",
+      service: "Graphic Designer",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Brand Identity Design",
+          bg: "bg-blue-500",
+          items: [
+            "Logo design and refinement",
+            "Brand style guide creation",
+            "Colour palette and typography",
+            "Brand asset development",
+            "Rebranding projects",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Social Media Design",
+          bg: "bg-purple-500",
+          items: [
+            "Social media post templates",
+            "Instagram and Facebook visuals",
+            "Story and reel graphics",
+            "LinkedIn banners and visuals",
+            "Platform-specific design formats",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Marketing Materials",
+          bg: "bg-green-500",
+          items: [
+            "Flyer and brochure design",
+            "Poster and banner design",
+            "Business card design",
+            "Event material design",
+            "Print-ready file preparation",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: " Digital Design",
+          bg: "bg-orange-500",
+          items: [
+            "Email template design",
+            "Website graphics and banners",
+            "Display ad creatives",
+            "Infographic design",
+            "Presentation design (PowerPoint/Google Slides)",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Packaging & Product Design",
+          bg: "bg-pink-500",
+          items: [
+            "Product packaging design",
+            "Label design",
+            "Box and bag design",
+            "Mockup creation",
+            "Print specification preparation",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Video & Motion Graphics",
+          bg: "bg-violet-500",
+          items: [
+            "Animated social media graphics",
+            "Intro and outro animations",
+            "Motion graphic videos",
+            "Explainer video visuals",
+            "GIF creation for ads and social",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+
+     "hire-customer-support-agent": {
+      heading: "Hire Customer Support Agent",
+      subText:
+        "Every unanswered message and delayed response costs you customers. Get a dedicated remote support agent who handles your customer communication professionally — every single day.",
+      service: "Customer Support Agent",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Email Support",
+          bg: "bg-blue-500",
+          items: [
+            "Customer email handling",
+            "Order and delivery queries",
+            "Complaint management",
+            "Refund and return processing",
+            "Ticket management via helpdesk tools",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Live Chat Support",
+          bg: "bg-purple-500",
+          items: [
+            "Real-time website chat support",
+            "Pre-sale and product enquiries",
+            "Lead qualification via chat",
+            "Chat tool management (Intercom, Tidio, LiveChat)",
+            "Response time optimisation",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Phone & WhatsApp Support",
+          bg: "bg-green-500",
+          items: [
+            "Inbound call handling",
+            "WhatsApp Business management",
+            "Callback scheduling",
+            "Customer issue escalation",
+            "Call notes and CRM logging",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Customer Success",
+          bg: "bg-orange-500",
+          items: [
+            "Onboarding support for new customers",
+            "Follow-up communication",
+            "Retention and churn reduction",
+            "Customer satisfaction tracking",
+            "Upsell and cross-sell assistance",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Helpdesk & CRM Management",
+          bg: "bg-pink-500",
+          items: [
+            "Zendesk, Freshdesk, HubSpot management",
+            "Ticket categorisation and prioritisation",
+            "SLA monitoring and reporting",
+            "Knowledge base maintenance",
+            "FAQ and canned response creation",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Ecommerce Support",
+          bg: "bg-violet-500",
+          items: [
+            "Bol.com and Shopify order support",
+            "Shipping and tracking updates",
+            "Product return coordination",
+            "Negative review management",
+            "Customer loyalty support",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+
+     "hire-data-entry-specialist": {
+      heading: "Hire Data Entry Specialist",
+      subText:
+        "Manual data work takes hours your team doesn't have. Get a dedicated data entry specialist who handles your data accurately and efficiently — so your team can focus on what actually grows your business.",
+      service: "Data Entry Specialist",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Data Processing & Input",
+          bg: "bg-blue-500",
+          items: [
+            "High-volume data entry",
+            "Form and document data input",
+            "Online database population",
+            "Product data entry for webshops",
+            "Invoice and order data processing",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Spreadsheet Management",
+          bg: "bg-purple-500",
+          items: [
+            "Excel and Google Sheets data entry",
+            "Data cleaning and formatting",
+            "Formula setup and maintenance",
+            "Spreadsheet organisation",
+            "Data validation and error checking",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Database Management",
+          bg: "bg-green-500",
+          items: [
+            "CRM data entry and updates (HubSpot, Salesforce)",
+            "Contact list building and management",
+            "Database deduplication and cleanup",
+            "Record creation and maintenance",
+            "Data migration support",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Document & File Processing",
+          bg: "bg-orange-500",
+          items: [
+            "PDF to Excel or Word conversion",
+            "Scanned document digitisation",
+            "Data extraction from documents",
+            "File organisation and naming",
+            "Digital archive management",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Ecommerce Data Support",
+          bg: "bg-pink-500",
+          items: [
+            "Product listing data entry",
+            "SKU and inventory updates",
+            "Price and description updates",
+            "Bol.com and Shopify catalogue management",
+            "Bulk product import preparation",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Research & Data Collection",
+          bg: "bg-violet-500",
+          items: [
+            "Online research and data gathering",
+            "Competitor data collection",
+            "Market research data compilation",
+            "Lead list building",
+            "Contact information verification",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+
+     "hire-accountant-financial-assistant": {
+      heading: "Hire Accountant Financial Assistant",
+      subText:
+        "Inaccurate finances, missed deadlines, and poor reporting cost businesses more than just money — they cost growth opportunities. Get a dedicated accountant or financial assistant who keeps your numbers accurate, compliant, and always up to date.",
+      service: "Accountant Financial Assistant",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Bookkeeping & Accounting",
+          bg: "bg-blue-500",
+          items: [
+            "Daily and monthly bookkeeping",
+            "General ledger management",
+            "Bank reconciliation",
+            "Accounts payable and receivable",
+            "Month-end and year-end closing",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Financial Reporting",
+          bg: "bg-purple-500",
+          items: [
+            "Profit and loss statements",
+            "Balance sheet preparation",
+            "Cash flow statements",
+            "Management reporting",
+            "Budget vs actuals reporting",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Tax Preparation & Compliance",
+          bg: "bg-green-500",
+          items: [
+            "VAT return preparation",
+            "Corporate tax filing support",
+            "Tax document organisation",
+            "Compliance monitoring",
+            "Liaison with external tax advisors",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Payroll Administration",
+          bg: "bg-orange-500",
+          items: [
+            "Monthly payroll processing",
+            "Payslip preparation",
+            "Holiday and leave tracking",
+            "Payroll tax calculation support",
+            "Payroll software management",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Budgeting & Forecasting",
+          bg: "bg-pink-500",
+          items: [
+            "Annual budget preparation",
+            "Rolling financial forecasts",
+            "Cost analysis and control",
+            "Variance analysis and reporting",
+            "Financial scenario planning",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Accounting Software Management",
+          bg: "bg-violet-500",
+          items: [
+            "Exact Online administration",
+            "QuickBooks and Xero management",
+            "Twinfield processing",
+            "Moneybird administration",
+            "Software integration and migration support",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+
+    "hire-front-end-developer": {
+      heading: "Hire Front End Developer",
+      subText:
+        "Your users judge your product in seconds. Get a dedicated front-end developer who builds fast, responsive, and visually polished interfaces that keep users engaged and coming back.",
+      service: "Front End Developer",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "React Development",
+          bg: "bg-blue-500",
+          items: [
+            "React.js application development",
+            "Component library creation",
+            "State management (Redux, Zustand)",
+            "React hooks and context API",
+            "Performance optimisation",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Vue & Angular Development",
+          bg: "bg-purple-500",
+          items: [
+            "Vue.js application development",
+            "Angular component development",
+            "Single-page application (SPA) builds",
+            "Framework migration support",
+            "Progressive web app development",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "UI & Responsive Design Implementation",
+          bg: "bg-green-500",
+          items: [
+            "Pixel-perfect design implementation",
+            "Mobile-first responsive development",
+            "CSS and Tailwind styling",
+            "Cross-browser compatibility",
+            "Accessibility (WCAG) compliance",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "JavaScript & TypeScript",
+          bg: "bg-orange-500",
+          items: [
+            "Vanilla JavaScript development",
+            "TypeScript integration",
+            "ES6+ modern JavaScript",
+            "Browser API utilisation",
+            "Frontend performance tuning",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "CMS & Headless Frontend",
+          bg: "bg-pink-500",
+          items: [
+            "WordPress headless frontend",
+            "Contentful and Sanity integration",
+            "Next.js and Nuxt.js development",
+            "JAMstack architecture",
+            "API-driven frontend builds",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Testing & Optimisation",
+          bg: "bg-violet-500",
+          items: [
+            "Unit and integration testing",
+            "Core Web Vitals optimisation",
+            "Lighthouse performance improvement",
+            "Code reviews and refactoring",
+            "CI/CD frontend pipeline support",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+    "hire-back-end-developer": {
+      heading: "Hire Back End Developer",
+      subText:
+        "The logic, data, and infrastructure behind your product need to be fast, secure, and scalable. Get a dedicated back-end developer who builds and maintains the systems that power your business — reliably and efficiently.",
+      service: "Back End Developer",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Node.js Development",
+          bg: "bg-blue-500",
+          items: [
+            "REST API development",
+            "Express.js and Fastify applications",
+            "Real-time applications with WebSockets",
+            "Microservices architecture",
+            "Background job and queue management",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "PHP & Laravel Development",
+          bg: "bg-purple-500",
+          items: [
+            "Laravel application development",
+            "Custom PHP backend development",
+            "MVC architecture implementation",
+            "Laravel API development",
+            "Legacy PHP modernisation",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Python Development",
+          bg: "bg-green-500",
+          items: [
+            "Django and Flask API development",
+            "Python scripting and automation",
+            "Data processing backends",
+            "FastAPI development",
+            "Python microservices",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Database Engineering",
+          bg: "bg-orange-500",
+          items: [
+            "MySQL and PostgreSQL design",
+            "MongoDB and NoSQL databases",
+            "Database schema design",
+            "Query optimisation and indexing",
+            "Data migration and management",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "API Development & Integration",
+          bg: "bg-pink-500",
+          items: [
+            "RESTful API design and development",
+            "GraphQL API development",
+            "Third-party API integration",
+            "Webhook development",
+            "API documentation",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Cloud & Infrastructure",
+          bg: "bg-violet-500",
+          items: [
+            "AWS and Google Cloud backend setup",
+            "Docker and containerisation",
+            "CI/CD pipeline configuration",
+            "Server security and hardening",
+            "Scalable infrastructure architecture",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+
+    "hire-app-developer": {
+      heading: "Hire App Developer",
+      subText:
+        "Your mobile app idea deserves more than a slow agency process or an unreliable freelancer. Get a dedicated iOS and Android app developer who builds, tests, and launches your app — on time and on budget.",
+      service: "App Developer",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "iOS App Development",
+          bg: "bg-blue-500",
+          items: [
+            "Native iOS app development (Swift)",
+            "iPhone and iPad application builds",
+            "App Store submission and optimisation",
+            "iOS UI/UX implementation",
+            "iOS performance and memory optimisation",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Android App Development",
+          bg: "bg-purple-500",
+          items: [
+            "Native Android development (Kotlin/Java)",
+            "Google Play Store submission",
+            "Android UI with Material Design",
+            "Device compatibility testing",
+            "Android performance optimisation",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Cross-Platform Development",
+          bg: "bg-green-500",
+          items: [
+            "React Native app development",
+            "Flutter application development",
+            "Single codebase for iOS and Android",
+            "Cross-platform UI consistency",
+            "Native module integration",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "App UI/UX Design & Prototyping",
+          bg: "bg-orange-500",
+          items: [
+            "Mobile UI design and wireframing",
+            "Interactive prototype creation",
+            "User flow and navigation design",
+            "Design system implementation",
+            "Figma to code handoff",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "App Backend & API Integration",
+          bg: "bg-pink-500",
+          items: [
+            "Mobile backend development",
+            "REST and GraphQL API integration",
+            "Firebase and Supabase setup",
+            "Push notification systems",
+            "Authentication and user management",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "App Maintenance & Suppor",
+          bg: "bg-violet-500",
+          items: [
+            "Bug fixing and crash resolution",
+            "OS update compatibility",
+            "Feature additions and improvements",
+            "App performance monitoring",
+            "App Store review and rating management",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+
+
+    "hire-software-tester-qa": {
+      heading: "Hire Software Tester Qa",
+      subText:
+        "Bugs that reach your users damage trust, increase churn, and cost more to fix. Get a dedicated software tester who catches issues before they reach production — so your product launches clean and stays reliable.",
+      service: "Software Tester Qa",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Manual Testing",
+          bg: "bg-blue-500",
+          items: [
+            "Functional and regression testing",
+            "Exploratory testing",
+            "User acceptance testing (UAT)",
+            "Cross-browser and cross-device testing",
+            "Test case creation and execution",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Automated Testing",
+          bg: "bg-purple-500",
+          items: [
+            "Test automation framework setup",
+            "Selenium and Playwright automation",
+            "Cypress end-to-end testing",
+            "API automated testing",
+            "CI/CD pipeline test integration",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Mobile App Testing",
+          bg: "bg-green-500",
+          items: [
+            "iOS and Android manual testing",
+            "Mobile automated testing",
+            "Device and OS compatibility testing",
+            "Gesture and interaction testing",
+            "App Store pre-launch testing",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "API & Backend Testing",
+          bg: "bg-orange-500",
+          items: [
+            "REST API testing with Postman",
+            "Load and stress testing",
+            "Integration testing",
+            "Data validation testing",
+            "Security and authentication testing",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Performance Testing",
+          bg: "bg-pink-500",
+          items: [
+            "Load testing with JMeter or k6",
+            "Stress and scalability testing",
+            "Performance bottleneck identification",
+            "Response time benchmarking",
+            "Performance regression monitoring",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Bug Reporting & QA Processes",
+          bg: "bg-violet-500",
+          items: [
+            "Detailed bug reporting and documentation",
+            "Jira and TestRail management",
+            "QA process setup and improvement",
+            "Test coverage analysis",
+            "Sprint-based testing support",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+
+    "hire-it-support-specialist": {
+      heading: "Hire It Support Specialist",
+      subText:
+        "Technical issues that go unresolved slow your team down, create security risks, and cost your business more every hour. Get a dedicated remote IT support specialist who keeps your systems running smoothly — every day.",
+      service: "It Support Specialist",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Helpdesk & End-User Support",
+          bg: "bg-blue-500",
+          items: [
+            "First and second line IT support",
+            "Software installation and configuration",
+            "Password and access management",
+            "Remote desktop troubleshooting",
+            "Ticket management and resolution",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "System Administration",
+          bg: "bg-purple-500",
+          items: [
+            "Windows and Linux server management",
+            "User account and permission management",
+            "System updates and patch management",
+            "Active Directory administration",
+            "Group policy management",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Network Support",
+          bg: "bg-green-500",
+          items: [
+            "Network troubleshooting and monitoring",
+            "VPN setup and management",
+            "Router and firewall configuration",
+            "Network performance optimisation",
+            "Remote connectivity support",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Cloud & SaaS Management",
+          bg: "bg-orange-500",
+          items: [
+            "Microsoft 365 administration",
+            "Google Workspace management",
+            "Cloud storage and backup setup",
+            "SaaS tool onboarding and support",
+            "Cloud security configuration",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Cybersecurity Support",
+          bg: "bg-pink-500",
+          items: [
+            "Antivirus and endpoint protection",
+            "Security audit and risk assessment",
+            "Phishing awareness and response",
+            "Data backup and disaster recovery",
+            "Access control and security policies",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "IT Documentation & Processes",
+          bg: "bg-violet-500",
+          items: [
+            "IT infrastructure documentation",
+            "Standard operating procedure creation",
+            "Asset inventory management",
+            "Onboarding and offboarding IT support",
+            "IT knowledge base maintenance",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+
+
+     "hire-data-analyst": {
+      heading: "Hire Data Analyst",
+      subText:
+        "Data without analysis is just noise. Get a dedicated data analyst who turns your raw business data into clear insights, actionable reports, and decisions that actually move your numbers forward.",
+      service: "Data Analyst",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Data Analysis & Reporting",
+          bg: "bg-blue-500",
+          items: [
+            "Business performance analysis",
+            "Sales and revenue reporting",
+            "Customer behaviour analysis",
+            "Trend identification and forecasting",
+            "Ad hoc data analysis requests",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Dashboard Creation",
+          bg: "bg-purple-500",
+          items: [
+            "Interactive dashboard development",
+            "KPI and metrics dashboard design",
+            "Executive reporting dashboards",
+            "Real-time data monitoring setups",
+            "Self-service analytics dashboards",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Business Intelligence",
+          bg: "bg-green-500",
+          items: [
+            "BI tool setup and management",
+            "Power BI and Tableau reporting",
+            "Data model development",
+            "Automated reporting pipelines",
+            "Cross-departmental data integration",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Data Cleaning & Preparation",
+          bg: "bg-orange-500",
+          items: [
+            "Raw data cleaning and formatting",
+            "Data standardisation and validation",
+            "Duplicate and error removal",
+            "Dataset merging and transformation",
+            "Data quality assessment",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "SQL & Database Querying",
+          bg: "bg-pink-500",
+          items: [
+            "SQL query writing and optimisation",
+            "Database reporting and extraction",
+            "Stored procedure development",
+            "Data aggregation and summarisation",
+            "Multi-source data joining",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Statistical Analysis & Forecasting",
+          bg: "bg-violet-500",
+          items: [
+            "Descriptive and predictive analytics",
+            "Regression and correlation analysis",
+            "A/B test analysis and interpretation",
+            "Demand and sales forecasting",
+            "Python and R statistical modelling",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+
   };
