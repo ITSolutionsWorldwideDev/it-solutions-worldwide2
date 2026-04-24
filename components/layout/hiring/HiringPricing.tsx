@@ -102,7 +102,7 @@ export default function HiringPricing({ plans, service }: any) {
               </p>
 
               {/* Price */}
-              <div className="mb-1">
+              <div className="mb-1 grid sm:flex items-baseline">
                 <span
                   className={`text-5xl font-extrabold ${
                     plan.highlighted ? "text-white" : "text-gray-900"
@@ -112,7 +112,7 @@ export default function HiringPricing({ plans, service }: any) {
                 </span>
                 {plan.period && (
                   <span
-                    className={`text-base font-medium ml-1 ${
+                    className={`text-base font-medium ml-1  ${
                       plan.highlighted ? "text-teal-200" : "text-gray-500"
                     }`}
                   >
