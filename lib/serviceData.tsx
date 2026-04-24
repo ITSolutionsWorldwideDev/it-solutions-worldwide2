@@ -121,7 +121,7 @@ const contentMap: ServicePageConfig =
           name: "Starter Plan",
           description:
             "Part-time support for essential admin and operational tasks.",
-          price: "€37.8",
+          price: "€37.99",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
@@ -136,8 +136,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
-          price: "€29.7",
+          description: "Dedicated Virtual Assistant for results-driven teams",
+          price: "€29.99",
           period: "8",
           note: null,
           features: [
@@ -242,7 +242,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Starter Plan",
           description: "Part-time support for essential development tasks.",
-          price: "€63",
+          price: "€63.95",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
@@ -258,8 +258,8 @@ const contentMap: ServicePageConfig =
         {
           name: "Scale Plan",
           description:
-            "Full development team for complex and large-scale products.",
-          price: "€49.5",
+            "Dedicated Full Stack Developer for results-driven teams",
+          price: "€49.95",
           period: "8",
           // note: "Save €2,000+ vs local hiring",
           features: [
@@ -277,7 +277,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated support for full product development.",
-          price: "€54",
+          price: "€54.95",
           period: "4",
           // note: "Save €2,000+ vs local hiring",
           features: [
@@ -385,7 +385,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Starter Plan",
           description: "Part-time support for essential data engineering tasks.",
-          price: "€66.5",
+          price: "€66.95",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
@@ -400,8 +400,8 @@ const contentMap: ServicePageConfig =
         },
          {
           name: "Scale Plan",
-          description: " Full data engineering team for enterprise data platforms.",
-          price: "€52.25",
+          description: " Dedicated  Data Engineer for results-driven teams",
+          price: "€52.95",
           period: "8",
           note: null,
           features: [
@@ -419,7 +419,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated support for full data infrastructure development.",
-          price: "€57",
+          price: "€57.95",
           period: "4",
           note: null,
           features: [
@@ -525,7 +525,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Dedicated Assistant for Daily Operations",
           description: "Part-time support for essential ecommerce tasks.",
-          price: "€38.5",
+          price: "€38.95",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
@@ -540,8 +540,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Full ecommerce team for high-volume and multi-channel stores.",
-          price: "33",
+          description: "Dedicated Ecommerce Assistant for results-driven teams",
+          price: "33.95",
           period: "8",
           note: null,
           features: [
@@ -559,7 +559,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated support for full ecommerce operations.",
-          price: "€33",
+          price: "€33.95",
           period: "4",
           note: null,
           features: [
@@ -665,7 +665,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Starter Plan",
           description: "Part-time support for essential electrical engineering tasks.",
-          price: "€49",
+          price: "€49.95",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
@@ -680,8 +680,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: " Full engineering team for large-scale and complex projects.",
-          price: "38.5",
+          description: "Dedicated Electrical Engineer for results-driven teams",
+          price: "38.95",
           period: "8",
           note: null,
           features: [
@@ -699,7 +699,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated support for full electrical engineering projects.",
-          price: "€42",
+          price: "€42.95",
           period: "4",
           note: null,
           features: [
@@ -804,7 +804,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Dedicated Assistant for Daily Operations",
           description: "Part-time support for essential AI development tasks.",
-          price: "€73.5",
+          price: "€73.95",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
@@ -819,8 +819,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Full AI team for intelligent product and enterprise AI systems.",
-          price: "57.75",
+          description: "Dedicated AI Engineer for results-driven teams",
+          price: "57.95",
           period: "8",
           note: null,
           features: [
@@ -836,9 +836,9 @@ const contentMap: ServicePageConfig =
           highlighted: true,
         },
         {
-          name: "Growth Plan",
+          name: "Growth Plan", 
           description: "Dedicated support for full AI product development.",
-          price: "€63",
+          price: "€63.95",
           period: "4",
           note: null,
           features: [
