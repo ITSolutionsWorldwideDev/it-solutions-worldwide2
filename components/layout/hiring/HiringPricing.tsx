@@ -116,7 +116,7 @@ export default function HiringPricing({ plans, service }: any) {
                       plan.highlighted ? "text-teal-200" : "text-gray-500"
                     }`}
                   >
-                    {plan.period}/hour/day
+                    {plan.period} hours/day
                   </span>
                 )}
               </div>

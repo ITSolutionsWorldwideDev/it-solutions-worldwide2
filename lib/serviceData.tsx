@@ -122,10 +122,10 @@ const contentMap: ServicePageConfig =
           description:
             "Part-time support for essential admin and operational tasks.",
           price: "€37.8",
-          period: "/2/hour/day",
+          period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -134,15 +134,14 @@ const contentMap: ServicePageConfig =
           cta: "Get Started",
           highlighted: false,
         },
-
         {
           name: "Scale Plan",
           description: "Multiple assistants or specialized support.",
           price: "€29.7",
-          period: "/8/hours/week",
+          period: "8",
           note: null,
           features: [
-            "Multiple virtual assistants",
+            // "Multiple virtual assistants",
             "All Growth features",
             "Social media and content support",
             "Full project and task coordination",
@@ -151,24 +150,25 @@ const contentMap: ServicePageConfig =
             "SLA guarantee",
           ],
           cta: "Contact us",
-          highlighted: false,
+          highlighted: true,
         },
         {
           name: "Growth Plan",
           description: "Dedicated support for daily business operations.",
           price: "€32.4",
-          period: "/4/hour/day",
+          period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer and client support",
             "Priority support",
             "Dedicated account manager",
           ],
           cta: "Get Started",
-          highlighted: true,
+          highlighted: false,
         },
+        
       ],
     },
     "hire-full-stack-developer": {
@@ -246,7 +246,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Bug fixes and improvements",
             "Feature development support",
             "Weekly reports",
@@ -255,7 +255,6 @@ const contentMap: ServicePageConfig =
           cta: "Get Started",
           highlighted: false,
         },
-
         {
           name: "Scale Plan",
           description:
@@ -264,7 +263,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "Multiple full stack developers",
+            // "Multiple full stack developers",
             "All Growth features",
             "Ecommerce and SaaS development",
             " Full maintenance and support",
@@ -273,7 +272,7 @@ const contentMap: ServicePageConfig =
             " SLA guarantee",
           ],
           cta: "Get Started",
-          highlighted: false,
+          highlighted: true,
         },
         {
           name: "Growth Plan",
@@ -293,6 +292,7 @@ const contentMap: ServicePageConfig =
           cta: "Get Started",
           highlighted: false,
         },
+        
       ],
 
       // trust:
@@ -384,13 +384,12 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description:
-            "Part-time support for essential data engineering tasks.",
+          description: "Part-time support for essential data engineering tasks.",
           price: "€66.5",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            " 20 hours/month",
+            // " 20 hours/month",
             " Pipeline development and fixes",
             " Database management",
             "Weekly reports",
@@ -399,16 +398,14 @@ const contentMap: ServicePageConfig =
           cta: "Get Started",
           highlighted: false,
         },
-
-        {
+         {
           name: "Scale Plan",
-          description:
-            " Full data engineering team for enterprise data platforms.",
+          description: " Full data engineering team for enterprise data platforms.",
           price: "€52.25",
           period: "8",
           note: null,
           features: [
-            " Multiple data engineers",
+            // " Multiple data engineers",
             " All Growth features",
             "Analytics engineering and dbt",
             "Full BI tool integration",
@@ -417,17 +414,16 @@ const contentMap: ServicePageConfig =
             "SLA guarantee",
           ],
           cta: "Contact us",
-          highlighted: false,
+          highlighted: true,
         },
         {
           name: "Growth Plan",
-          description:
-            "Dedicated support for full data infrastructure development.",
+          description: "Dedicated support for full data infrastructure development.",
           price: "€57",
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Data warehouse and lake builds",
             " Cloud data infrastructure setup",
@@ -435,8 +431,9 @@ const contentMap: ServicePageConfig =
             "Dedicated account manager",
           ],
           cta: "Get Started",
-          highlighted: true,
+          highlighted: false,
         },
+       
       ],
     },
     "hire-ecommerce-assistant": {
@@ -532,7 +529,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Product management and listings",
             " Order processing support",
             "Weekly reports",
@@ -543,13 +540,12 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description:
-            "Full ecommerce team for high-volume and multi-channel stores.",
+          description: "Full ecommerce team for high-volume and multi-channel stores.",
           price: "33",
           period: "8",
           note: null,
           features: [
-            "Multiple ecommerce assistants",
+            // "Multiple ecommerce assistants",
             "All Growth features",
             "Store optimisation and reporting",
             "Multi-platform management",
@@ -558,7 +554,7 @@ const contentMap: ServicePageConfig =
             " SLA guarantee",
           ],
           cta: "Contact us",
-          highlighted: false,
+          highlighted: true,
         },
         {
           name: "Growth Plan",
@@ -567,7 +563,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support management",
             "Platform and inventory management",
@@ -575,8 +571,9 @@ const contentMap: ServicePageConfig =
             "Dedicated account manager",
           ],
           cta: "Get Started",
-          highlighted: true,
+          highlighted: false,
         },
+        
       ],
     },
     "hire-electrical-engineer": {
@@ -667,13 +664,12 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description:
-            "Part-time support for essential electrical engineering tasks.",
+          description: "Part-time support for essential electrical engineering tasks.",
           price: "€49",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Circuit design and documentation",
             "Technical review support",
             "Weekly reports",
@@ -684,13 +680,12 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description:
-            " Full engineering team for large-scale and complex projects.",
+          description: " Full engineering team for large-scale and complex projects.",
           price: "38.5",
           period: "8",
           note: null,
           features: [
-            " Multiple electrical engineers",
+            // " Multiple electrical engineers",
             "All Growth features",
             "Electrical systems engineering",
             " Compliance and certification support",
@@ -699,17 +694,16 @@ const contentMap: ServicePageConfig =
             " SLA guarantee",
           ],
           cta: "Contact us",
-          highlighted: false,
+          highlighted: true,
         },
         {
           name: "Growth Plan",
-          description:
-            "Dedicated support for full electrical engineering projects.",
+          description: "Dedicated support for full electrical engineering projects.",
           price: "€42",
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             " PCB design and embedded systems",
             "Technical documentation",
@@ -717,8 +711,9 @@ const contentMap: ServicePageConfig =
             "Dedicated account manager",
           ],
           cta: "Get Started",
-          highlighted: true,
+          highlighted: false,
         },
+        
       ],
     },
 
@@ -813,7 +808,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "AI integration and automation",
             "LLM and API development",
             "Weekly reports",
@@ -824,13 +819,12 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description:
-            "Full AI team for intelligent product and enterprise AI systems.",
+          description: "Full AI team for intelligent product and enterprise AI systems.",
           price: "57.75",
           period: "8",
           note: null,
           features: [
-            " Multiple AI engineers",
+            // " Multiple AI engineers",
             "All Growth features",
             "Computer vision and advanced ML",
             "Full AI deployment and infrastructure",
@@ -839,7 +833,7 @@ const contentMap: ServicePageConfig =
             "SLA guarantee",
           ],
           cta: "Contact us",
-          highlighted: false,
+          highlighted: true,
         },
         {
           name: "Growth Plan",
@@ -848,7 +842,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             " Machine learning model development",
             "AI automation and NLP builds",
@@ -856,8 +850,9 @@ const contentMap: ServicePageConfig =
             "Dedicated account manager",
           ],
           cta: "Get Started",
-          highlighted: true,
+          highlighted: false,
         },
+        
       ],
     },
 
@@ -979,7 +974,7 @@ const contentMap: ServicePageConfig =
             "Dedicated account manager",
           ],
           cta: "Get Started",
-          highlighted: true,
+          highlighted: false,
         },
         {
           name: "Scale Plan",
@@ -996,7 +991,7 @@ const contentMap: ServicePageConfig =
             "SLA guarantee",
           ],
           cta: "Contact us",
-          highlighted: false,
+          highlighted: true,
         },
       ],
     },
