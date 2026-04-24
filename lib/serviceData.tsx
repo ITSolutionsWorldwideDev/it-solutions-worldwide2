@@ -23,8 +23,7 @@ import {
   FileSliders,
 } from "lucide-react";
 import { MdOutlineSupportAgent, MdSupportAgent } from "react-icons/md";
-
-export const contentMap: ServicePageConfig =
+const contentMap: ServicePageConfig =
   // : Record<
   //   string,
   //   {
@@ -120,9 +119,10 @@ export const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
-          price: "€29.95",
-          period: "/hour",
+          description:
+            "Part-time support for essential admin and operational tasks.",
+          price: "€37.8",
+          period: "/2/hour/day",
           // note: "Save €2,000+ vs local hiring",
           features: [
             "20 hours/month",
@@ -136,15 +136,14 @@ export const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
-          price: "€31.95",
-          period: "/hour",
+          description: "Dedicated support for daily business operations.",
+          price: "€32.4",
+          period: "/4/hour/day",
           note: null,
           features: [
             "Full-time support (160hrs)",
             "All Starter features",
-            "Customer support",
-            "Social media management",
+            "Customer and client support",
             "Priority support",
             "Dedicated account manager",
           ],
@@ -154,13 +153,14 @@ export const contentMap: ServicePageConfig =
         {
           name: "Scale Plan",
           description: "Multiple assistants or specialized support.",
-          price: "€35.95",
-          period: "/40 hours/week",
+          price: "€29.7",
+          period: "/8/hours/week",
           note: null,
           features: [
-            "Multiple VAs",
+            "Multiple virtual assistants",
             "All Growth features",
-            "Specialized skills",
+            "Social media and content support",
+            "Full project and task coordination",
             "Custom workflows",
             "Dedicated account manager",
             "SLA guarantee",
@@ -240,14 +240,14 @@ export const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
-          price: "€49.95",
-          period: "/hour",
+          description: "Part-time support for essential development tasks.",
+          price: "€63",
+          period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            // "20 hours/month",
-            "Email & calendar support",
-            "Basic admin tasks",
+            "20 hours/month",
+            "Bug fixes and improvements",
+            "Feature development support",
             "Weekly reports",
             "Email support",
           ],
@@ -256,32 +256,37 @@ export const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Part-time support for light admin tasks.",
-          price: "€52.95",
-          period: "/hour",
+          description: "Dedicated support for full product development.",
+          price: "€54",
+          period: "4",
           // note: "Save €2,000+ vs local hiring",
           features: [
             // "20 hours/month",
-            "Email & calendar support",
-            "Basic admin tasks",
-            "Weekly reports",
-            "Email support",
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Web application development",
+            "API and database development",
+            " Priority support",
+            "Dedicated account manager",
           ],
           cta: "Get Started",
           highlighted: false,
         },
         {
           name: "Scale Plan",
-          description: "Part-time support for light admin tasks.",
-          price: "€55.95",
-          period: "/hour",
+          description:
+            "Full development team for complex and large-scale products.",
+          price: "€49.5",
+          period: "8",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
-            "Email & calendar support",
-            "Basic admin tasks",
-            "Weekly reports",
-            "Email support",
+            "Multiple full stack developers",
+            "All Growth features",
+            "Ecommerce and SaaS development",
+            " Full maintenance and support",
+            "Custom workflows",
+            "Dedicated account manager",
+            " SLA guarantee",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -377,14 +382,14 @@ export const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
-          price: "€42.95",
-          period: "/hour",
-          note: "Save €2,000+ vs local hiring",
+          description: "Part-time support for essential data engineering tasks.",
+          price: "€66.5",
+          period: "2",
+          // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
-            "Email & calendar support",
-            "Basic admin tasks",
+            " 20 hours/month",
+            " Pipeline development and fixes",
+            " Database management",
             "Weekly reports",
             "Email support",
           ],
@@ -393,15 +398,15 @@ export const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
-          price: "€59.95",
-          period: "/hour",
+          description: "Dedicated support for full data infrastructure development.",
+          price: "€57",
+          period: "4",
           note: null,
           features: [
             "Full-time support (160hrs)",
             "All Starter features",
-            "Customer support",
-            "Social media management",
+            "Data warehouse and lake builds",
+            " Cloud data infrastructure setup",
             "Priority support",
             "Dedicated account manager",
           ],
@@ -410,16 +415,17 @@ export const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
-          price: "€95.95",
-          period: "/hour",
+          description: " Full data engineering team for enterprise data platforms.",
+          price: "€52.25",
+          period: "8",
           note: null,
           features: [
-            "Multiple VAs",
-            "All Growth features",
-            "Specialized skills",
+            " Multiple data engineers",
+            " All Growth features",
+            "Analytics engineering and dbt",
+            "Full BI tool integration",
             "Custom workflows",
-            "Dedicated account manager",
+            " Dedicated account manager",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -515,14 +521,14 @@ export const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Dedicated Assistant for Daily Operations",
-          description: "Part-time support for light admin tasks.",
-          price: "€17.95",
-          period: "/hour",
-          note: "Save €2,000+ vs local hiring",
+          description: "Part-time support for essential ecommerce tasks.",
+          price: "€38.5",
+          period: "2",
+          // note: "Save €2,000+ vs local hiring",
           features: [
             "20 hours/month",
-            "Email & calendar support",
-            "Basic admin tasks",
+            "Product management and listings",
+            " Order processing support",
             "Weekly reports",
             "Email support",
           ],
@@ -531,15 +537,15 @@ export const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
-          price: "€27.95",
-          period: "/hour",
+          description: "Dedicated support for full ecommerce operations.",
+          price: "€33",
+          period: "4",
           note: null,
           features: [
             "Full-time support (160hrs)",
             "All Starter features",
-            "Customer support",
-            "Social media management",
+            "Customer support management",
+            "Platform and inventory management",
             "Priority support",
             "Dedicated account manager",
           ],
@@ -548,17 +554,18 @@ export const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
-          price: "55.95",
-          period: "/hour",
+          description: "Full ecommerce team for high-volume and multi-channel stores.",
+          price: "33",
+          period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            "Multiple ecommerce assistants",
             "All Growth features",
-            "Specialized skills",
+            "Store optimisation and reporting",
+            "Multi-platform management",
             "Custom workflows",
-            "Dedicated account manager",
-            "SLA guarantee",
+            " Dedicated account manager",
+            " SLA guarantee",
           ],
           cta: "Contact us",
           highlighted: false,
@@ -653,14 +660,14 @@ export const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
-          price: "€35.95",
-          period: "/hour",
+          description: "Part-time support for essential electrical engineering tasks.",
+          price: "€49",
+          period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
             "20 hours/month",
-            "Email & calendar support",
-            "Basic admin tasks",
+            "Circuit design and documentation",
+            "Technical review support",
             "Weekly reports",
             "Email support",
           ],
@@ -669,15 +676,15 @@ export const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
-          price: "€43.95",
-          period: "/hour",
+          description: "Dedicated support for full electrical engineering projects.",
+          price: "€42",
+          period: "4",
           note: null,
           features: [
             "Full-time support (160hrs)",
             "All Starter features",
-            "Customer support",
-            "Social media management",
+            " PCB design and embedded systems",
+            "Technical documentation",
             "Priority support",
             "Dedicated account manager",
           ],
@@ -686,17 +693,18 @@ export const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
-          price: "52.95",
-          period: "/hour",
+          description: " Full engineering team for large-scale and complex projects.",
+          price: "38.5",
+          period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            " Multiple electrical engineers",
             "All Growth features",
-            "Specialized skills",
+            "Electrical systems engineering",
+            " Compliance and certification support",
             "Custom workflows",
             "Dedicated account manager",
-            "SLA guarantee",
+            " SLA guarantee",
           ],
           cta: "Contact us",
           highlighted: false,
@@ -790,14 +798,14 @@ export const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Dedicated Assistant for Daily Operations",
-          description: "Part-time support for light admin tasks.",
-          price: "€49.95",
-          period: "/hour",
+          description: "Part-time support for essential AI development tasks.",
+          price: "€73.5",
+          period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
             "20 hours/month",
-            "Email & calendar support",
-            "Basic admin tasks",
+            "AI integration and automation",
+            "LLM and API development",
             "Weekly reports",
             "Email support",
           ],
@@ -806,15 +814,15 @@ export const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
-          price: "€59.95",
-          period: "/hour",
+          description: "Dedicated support for full AI product development.",
+          price: "€63",
+          period: "4",
           note: null,
           features: [
             "Full-time support (160hrs)",
             "All Starter features",
-            "Customer support",
-            "Social media management",
+            " Machine learning model development",
+            "AI automation and NLP builds",
             "Priority support",
             "Dedicated account manager",
           ],
@@ -823,15 +831,16 @@ export const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
-          price: "69.95",
-          period: "/hour",
+          description: "Full AI team for intelligent product and enterprise AI systems.",
+          price: "57.75",
+          period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            " Multiple AI engineers",
             "All Growth features",
-            "Specialized skills",
-            "Custom workflows",
+            "Computer vision and advanced ML",
+            "Full AI deployment and infrastructure",
+            " Custom workflows",
             "Dedicated account manager",
             "SLA guarantee",
           ],
@@ -1121,7 +1130,7 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-     "hire-online-marketer": {
+    "hire-online-marketer": {
       heading: "Hire Online Marketer",
       subText:
         "Growing your business online requires consistent strategy, execution, and optimisation — not a one-time campaign. Get a dedicated marketeer who delivers results month after month.",
@@ -1261,8 +1270,7 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-
-     "hire-webdesigner-developer": {
+    "hire-webdesigner-developer": {
       heading: "Hire Web-Designer and Developer",
       subText:
         "Your website is your most important sales tool. Get a dedicated web designer and developer who builds fast, beautiful, conversion-focused websites without agency delays or costs.",
@@ -1402,7 +1410,7 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-     "hire-graphic-designer": {
+    "hire-graphic-designer": {
       heading: "Hire Graphic Designer",
       subText:
         "Strong visuals build trust, attract attention, and make your brand impossible to ignore. Get a dedicated graphic designer who delivers professional creative work every day — without agency fees",
@@ -1542,8 +1550,7 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-
-     "hire-customer-support-agent": {
+    "hire-customer-support-agent": {
       heading: "Hire Customer Support Agent",
       subText:
         "Every unanswered message and delayed response costs you customers. Get a dedicated remote support agent who handles your customer communication professionally — every single day.",
@@ -1683,8 +1690,7 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-
-     "hire-data-entry-specialist": {
+    "hire-data-entry-specialist": {
       heading: "Hire Data Entry Specialist",
       subText:
         "Manual data work takes hours your team doesn't have. Get a dedicated data entry specialist who handles your data accurately and efficiently — so your team can focus on what actually grows your business.",
@@ -1824,8 +1830,7 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-
-     "hire-accountant-financial-assistant": {
+    "hire-accountant-financial-assistant": {
       heading: "Hire Accountant Financial Assistant",
       subText:
         "Inaccurate finances, missed deadlines, and poor reporting cost businesses more than just money — they cost growth opportunities. Get a dedicated accountant or financial assistant who keeps your numbers accurate, compliant, and always up to date.",
@@ -1964,7 +1969,6 @@ export const contentMap: ServicePageConfig =
         },
       ],
     },
-
 
     "hire-front-end-developer": {
       heading: "Hire Front End Developer",
@@ -2246,7 +2250,6 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-
     "hire-app-developer": {
       heading: "Hire App Developer",
       subText:
@@ -2386,8 +2389,6 @@ export const contentMap: ServicePageConfig =
         },
       ],
     },
-
-
 
     "hire-software-tester-qa": {
       heading: "Hire Software Tester Qa",
@@ -2529,7 +2530,6 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-
     "hire-it-support-specialist": {
       heading: "Hire It Support Specialist",
       subText:
@@ -2670,9 +2670,7 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
-
-
-     "hire-data-analyst": {
+    "hire-data-analyst": {
       heading: "Hire Data Analyst",
       subText:
         "Data without analysis is just noise. Get a dedicated data analyst who turns your raw business data into clear insights, actionable reports, and decisions that actually move your numbers forward.",
@@ -2812,5 +2810,569 @@ export const contentMap: ServicePageConfig =
       ],
     },
 
+    "hire-power-bi-tableau-specialist": {
+      heading: "Hire Power Bi Tableau Specialist",
+      subText:
+        "Your business data tells a story — but only if it is visualised clearly. Get a dedicated Power BI or Tableau specialist who builds dashboards and reports that give your team instant clarity and smarter decisions.",
+      service: "Power Bi Tableau Specialist",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
 
+      services: [
+        {
+          icon: <Mail />,
+          title: "Power BI Development",
+          bg: "bg-blue-500",
+          items: [
+            "Power BI dashboard design and build",
+            "DAX formula development",
+            "Power Query data transformation",
+            "Report publishing and sharing",
+            "Power BI Service administration",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Tableau Development",
+          bg: "bg-purple-500",
+          items: [
+            "Tableau dashboard creation",
+            "Calculated field and LOD expressions",
+            "Tableau Server and Online publishing",
+            "Interactive visualisation design",
+            "Tableau data source management",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Data Visualisation",
+          bg: "bg-green-500",
+          items: [
+            "Custom chart and graph design",
+            "Executive and management dashboards",
+            "KPI tracking visualisations",
+            "Comparative and trend visualisations",
+            "Mobile-optimised dashboard layouts",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Data Modelling & Transformation",
+          bg: "bg-orange-500",
+          items: [
+            "Data model design for BI tools",
+            "Star and snowflake schema setup",
+            "Power Query and ETL transformation",
+            "Multi-source data integration",
+            "Relationship and hierarchy management",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Reporting Automation",
+          bg: "bg-pink-500",
+          items: [
+            "Scheduled and automated report delivery",
+            "Email report distribution setup",
+            "Real-time data refresh configuration",
+            "Alert and threshold notifications",
+            "Embedded reporting integration",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "BI Strategy & Governance",
+          bg: "bg-violet-500",
+          items: [
+            "BI tool selection and setup consulting",
+            "Data governance best practices",
+            "Dashboard standardisation",
+            "User training and documentation",
+            "BI workspace organisation and management",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+    "hire-google-analytics-specialist": {
+      heading: "Hire Google Analytics Specialist",
+      subText:
+        "If you are running ads or investing in your website without proper analytics tracking, you are making decisions in the dark. Get a dedicated Google Analytics specialist who sets up, manages, and interprets your data so every decision is backed by real insight.",
+      service: "Google Analytics Specialist",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "GA4 Setup & Configuration",
+          bg: "bg-blue-500",
+          items: [
+            "Google Analytics 4 installation",
+            "Property and data stream setup",
+            "Event and conversion tracking",
+            "Cross-domain tracking configuration",
+            "GA4 migration from Universal Analytics",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Google Tag Manager",
+          bg: "bg-purple-500",
+          items: [
+            "GTM account setup and management",
+            "Tag creation and deployment",
+            "Trigger and variable configuration",
+            "Custom event tracking via GTM",
+            "GTM audit and cleanup",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Conversion Tracking",
+          bg: "bg-green-500",
+          items: [
+            "Goal and conversion setup",
+            "Ecommerce conversion tracking",
+            "Form submission tracking",
+            "Phone call and click tracking",
+            "Google Ads conversion linking",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Reporting & Dashboards",
+          bg: "bg-orange-500",
+          items: [
+            "Custom GA4 report creation",
+            "Looker Studio dashboard builds",
+            "Monthly analytics reporting",
+            "Traffic source and behaviour reports",
+            "Executive performance summaries",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Analytics Auditing",
+          bg: "bg-pink-500",
+          items: [
+            "Full GA4 property audit",
+            "Tracking accuracy verification",
+            "Data discrepancy investigation",
+            "Tag and event audit",
+            "Spam and bot filter setup",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Data Insights & Optimisation",
+          bg: "bg-violet-500",
+          items: [
+            "User behaviour analysis",
+            "Funnel and drop-off analysis",
+            "Audience segmentation insights",
+            "Landing page performance analysis",
+            "Data-driven CRO recommendations",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+    "hire-microsoft-excel-specialist": {
+      heading: "Hire Microsoft Excel Specialist",
+      subText:
+        "Manual spreadsheet work that takes your team hours every week can be automated, simplified, and made error-free. Get a dedicated Microsoft Excel specialist who builds powerful, reliable spreadsheet solutions tailored exactly to your business needs.",
+      service: "Microsoft Excel Specialist",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Spreadsheet Development",
+          bg: "bg-blue-500",
+          items: [
+            "Custom spreadsheet design and build",
+            "Multi-sheet workbook creation",
+            "Data input form development",
+            "Template creation and standardisation",
+            "Spreadsheet restructuring and cleanup",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Advanced Formulas & Functions",
+          bg: "bg-purple-500",
+          items: [
+            "VLOOKUP, XLOOKUP, and INDEX/MATCH",
+            "Dynamic array formulas",
+            "Nested IF and logical functions",
+            "Financial and statistical formulas",
+            "Error handling and data validation",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "VBA & Macro Automation",
+          bg: "bg-green-500",
+          items: [
+            "Custom VBA macro development",
+            "Repetitive task automation",
+            "Automated report generation",
+            "User form and button creation",
+            "Excel add-in development",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Microsoft Excel Dashboards & Reporting",
+          bg: "bg-orange-500",
+          items: [
+            "Interactive Excel dashboard creation",
+            "KPI and performance dashboards",
+            "PivotTable and PivotChart builds",
+            "Dynamic chart and graph design",
+            "Management reporting templates",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Data Cleaning & Management",
+          bg: "bg-pink-500",
+          items: [
+            "Large dataset cleaning and formatting",
+            "Duplicate removal and deduplication",
+            "Data import and export management",
+            "Power Query data transformation",
+            "Data validation rules setup",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Financial Modelling",
+          bg: "bg-violet-500",
+          items: [
+            "Financial forecast models",
+            "Budget planning spreadsheets",
+            "Cash flow models",
+            "Profit and loss templates",
+            "Scenario and sensitivity analysis",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
+
+    "hire-online-reisadviseur": {
+      heading: "Hire Online Reisadviseur",
+      subText:
+        "Travel businesses that deliver personalised, fast, and reliable advisory services retain more customers and generate more bookings. Get a dedicated online travel advisor who handles your clients with expertise and care — every day.",
+      service: "Online Reisadviseur",
+      // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+
+      services: [
+        {
+          icon: <Mail />,
+          title: "Trip Planning & Itinerary Creation",
+          bg: "bg-blue-500",
+          items: [
+            "Custom travel itinerary development",
+            "Multi-destination trip planning",
+            "Day-by-day travel schedule creation",
+            "Activity and excursion recommendations",
+            "Travel document checklist preparation",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Flight & Accommodation Research",
+          bg: "bg-purple-500",
+          items: [
+            "Flight option research and comparison",
+            "Hotel and resort research",
+            "Apartment and villa sourcing",
+            "Best price and availability checks",
+            "Travel package research and comparison",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Customer Travel Consultation",
+          bg: "bg-green-500",
+          items: [
+            "Online chat and email travel consultation",
+            "Destination advice and recommendations",
+            "Travel requirement guidance (visas, insurance)",
+            "Group travel planning support",
+            "Honeymoon and special trip planning",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Booking Administration",
+          bg: "bg-orange-500",
+          items: [
+            "Booking confirmation management",
+            "Travel document organisation",
+            "Reservation change and cancellation handling",
+            "Supplier and operator communication",
+            "Pre-departure customer briefings",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Travel Content & Research",
+          bg: "bg-pink-500",
+          items: [
+            "Destination research and guides",
+            "Travel blog and content support",
+            "FAQ and knowledge base creation",
+            "Travel trend monitoring",
+            "Competitor offer monitoring",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Aftersales & Customer Follow-Up",
+          bg: "bg-violet-500",
+          items: [
+            "Post-trip customer follow-up",
+            "Review and feedback collection",
+            "Complaint handling and resolution",
+            "Repeat booking outreach",
+            "Loyalty and return customer management",
+          ],
+        },
+      ],
+
+      plans: [
+        {
+          name: "Dedicated Assistant for Daily Operations",
+          description: "Part-time support for light admin tasks.",
+          price: "€49.95",
+          period: "/hour",
+          // note: "Save €2,000+ vs local hiring",
+          features: [
+            "20 hours/month",
+            "Email & calendar support",
+            "Basic admin tasks",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated assistant for daily operations.",
+          price: "€59.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Full-time support (160hrs)",
+            "All Starter features",
+            "Customer support",
+            "Social media management",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: true,
+        },
+        {
+          name: "Scale Plan",
+          description: "Multiple assistants or specialized support.",
+          price: "69.95",
+          period: "/hour",
+          note: null,
+          features: [
+            "Multiple VAs",
+            "All Growth features",
+            "Specialized skills",
+            "Custom workflows",
+            "Dedicated account manager",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: false,
+        },
+      ],
+    },
   };
+
+export const serviceData = ({ slug }: { slug: string }) => {
+  const data = contentMap[slug as keyof typeof contentMap];
+
+  return data;
+};

@@ -7,7 +7,7 @@ import WhatsAppBtn from "@/components/ui/WhatsAppBtn";
 import HiringHeroSection from "./HiringHeroSection";
 import HiringPricing from "./HiringPricing";
 import HiringCTA from "./HiringCTA";
-import { contentMap } from "@/lib/serviceData";
+import { serviceData } from "@/lib/serviceData";
 import { ArrowRight, Users, Clock, Award } from "lucide-react";
 type Props = {
   slug: string;
@@ -17,14 +17,17 @@ type Props = {
 
 export default function HiringHeader({ slug }: Props) {
   // 🔥 fallback if slug not found
-  const data = contentMap[slug as keyof typeof contentMap];
+  // const data = contentMap[slug as keyof typeof contentMap];
 
+  const data = serviceData({slug: slug as string});
+  console.log(data);
   if (!data) {
     return notFound();
   }
-  const { heading, subText, service, services, plans} =
-    contentMap[slug as keyof typeof contentMap] ||
-    contentMap["hire-virtual-assistant"];
+  const { heading, subText, service, services, plans } = data;
+  
+  // contentMap[slug as keyof typeof contentMap] ||
+  // contentMap["hire-virtual-assistant"];
 
   return (
     <div>
@@ -48,7 +51,10 @@ export default function HiringHeader({ slug }: Props) {
               </p>
 
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4">
-                <Link href="https://wa.me/31107660786">
+                <Link
+                  href={`https://wa.me/31107660786?text=Hi%20there!%20I%20would%20like%20to%20book%20a%20free%20consultation%20for%20hiring%20a%20dedicated%20${service}.`}
+                  target="_blank"
+                >
                   <button className="w-full sm:w-auto bg-teal-800 hover:bg-teal-900 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 shadow-md">
                     Book Free Consultation
                     <ArrowRight />
@@ -102,7 +108,7 @@ export default function HiringHeader({ slug }: Props) {
 
             {/* Right Form */}
             <div className="w-full lg:w-auto flex-1 ">
-              <ConsultationForm slug={slug}/>
+              <ConsultationForm slug={slug} />
             </div>
           </main>
 

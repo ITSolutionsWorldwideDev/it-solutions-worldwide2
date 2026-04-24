@@ -108,7 +108,7 @@ export default function HiringPricing({ plans, service }: any) {
                     plan.highlighted ? "text-white" : "text-gray-900"
                   }`}
                 >
-                  {plan.price}
+                 {plan.price}
                 </span>
                 {plan.period && (
                   <span
@@ -116,7 +116,7 @@ export default function HiringPricing({ plans, service }: any) {
                       plan.highlighted ? "text-teal-200" : "text-gray-500"
                     }`}
                   >
-                    {plan.period}
+                    {plan.period}/hour/day
                   </span>
                 )}
               </div>
@@ -156,7 +156,7 @@ export default function HiringPricing({ plans, service }: any) {
 
             {/* CTA */}
 
-            <Link href={"https://wa.me/31107660786"}>
+            <Link href={`https://wa.me/31107660786?text=Hi%20there!%20I%20would%20like%20to%20book%20a%20${plan.name}%20plan%20for%20%20a%20dedicated%20${service}.`} target="_blank">
               <button
                 className={`mt-10 w-full py-3 rounded-xl font-semibold text-sm transition-colors duration-200 cursor-pointer ${
                   plan.highlighted

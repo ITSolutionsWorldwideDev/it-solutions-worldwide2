@@ -4,8 +4,7 @@ import Link from "next/link";
 type Props = {
   slug: string;
 };
-export default function HiringCTA({service}:any) {
-
+export default function HiringCTA({ service }: any) {
   // const service='virtual assistant'
   return (
     <section className="relative w-full min-h-[420px] flex items-center justify-center overflow-hidden bg-linear-to-br from-[#156F76F2] to-[#194B5AF2]">
@@ -33,8 +32,8 @@ export default function HiringCTA({service}:any) {
 
         {/* Subtext */}
         <p className="text-white/80 text-lg max-w-xl">
-          Let us help you find the perfect {service} for your business
-          or personal needs.
+          Let us help you find the perfect {service} for your business or
+          personal needs.
         </p>
 
         <p className="text-white/70 text-base">
@@ -43,7 +42,11 @@ export default function HiringCTA({service}:any) {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mt-2">
-          <Link href={"https://wa.me/31107660786"}>
+          <Link
+            href={`https://wa.me/31107660786?text=Hi%20there%20I%20would%20like%20to%20book%20a%20free%20consultation%20for%20hiring%20a%20dedicated%20${service}.`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="flex items-center gap-2 bg-white text-teal-800 font-semibold px-7 py-3.5 rounded-md hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
               Book Free Consultation
               <ArrowRight className="w-4 h-4" />
