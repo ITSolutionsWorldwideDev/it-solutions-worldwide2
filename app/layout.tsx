@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import MetaPixel from "@/components/MetaPixel";
 import GoogleTag from "@/components/GoogleTag";
 import GoogleTagManager from "@/components/GoogleTagManager";
-
+import Script from "next/script";
 const lexend = Lexend({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -49,6 +49,11 @@ export default function RootLayout({
 
         {/* <GoogleTagManager gtmId="GTM-NX66K4BC" /> */}
         {children}
+
+        <Script id="clarity-script" strategy="afterInteractive">
+          {`
+          (function(c,l,a,r,i,t,y){         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);     })(window, document, "clarity", "script", "wgjwbc5ugr")`}
+        </Script>
         <PageUpButton />
       </body>
     </html>

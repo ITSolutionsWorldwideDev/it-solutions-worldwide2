@@ -150,7 +150,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            // "Multiple virtual assistants",
+            "Multiple virtual assistants",
             "All Growth features",
             "Social media and content support",
             "Full project and task coordination",
@@ -170,6 +170,7 @@ const contentMap: ServicePageConfig =
           features: [
             // "Full-time support (160hrs)",
             "All Starter features",
+            " Research and reporting",
             "Customer and client support",
             "Priority support",
             "Dedicated account manager",
@@ -290,7 +291,7 @@ const contentMap: ServicePageConfig =
           // note: "Save €2,000+ vs local hiring",
           features: [
             // "20 hours/month",
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Web application development",
             "API and database development",
