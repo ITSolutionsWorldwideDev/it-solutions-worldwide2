@@ -957,7 +957,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -974,7 +974,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -991,7 +991,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -1098,7 +1098,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -1114,7 +1114,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -1131,7 +1131,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -1238,7 +1238,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -1255,7 +1255,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -1272,7 +1272,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -1379,7 +1379,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -1396,7 +1396,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -1413,7 +1413,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -1517,7 +1517,7 @@ const contentMap: ServicePageConfig =
           price: "€47.99", // e.g., 37.99
           period: "2",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -1533,7 +1533,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -1550,7 +1550,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -1650,7 +1650,7 @@ const contentMap: ServicePageConfig =
           price: "€26.99",
           period: "2",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -1666,7 +1666,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -1683,7 +1683,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -1783,7 +1783,7 @@ const contentMap: ServicePageConfig =
           price: "€21.99",
           period: "2",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -1799,7 +1799,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -1816,7 +1816,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -1916,7 +1916,7 @@ const contentMap: ServicePageConfig =
           price: "€38.99",
           period: "2",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -1932,7 +1932,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -1949,7 +1949,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -2049,7 +2049,7 @@ const contentMap: ServicePageConfig =
           price: "€49.99",
           period: "2",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -2065,7 +2065,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -2082,7 +2082,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -2182,7 +2182,7 @@ const contentMap: ServicePageConfig =
           price: "€59.99",
           period: "2",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -2198,7 +2198,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -2215,7 +2215,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -2315,7 +2315,7 @@ const contentMap: ServicePageConfig =
           price: "€52.99",
           period: "2",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -2331,7 +2331,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -2348,7 +2348,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -2448,7 +2448,7 @@ const contentMap: ServicePageConfig =
           price: "€43.99",
           period: "2",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -2464,7 +2464,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -2481,7 +2481,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -2581,7 +2581,7 @@ const contentMap: ServicePageConfig =
           price: "€31.99",
           period: "2",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -2597,7 +2597,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -2614,7 +2614,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -2714,7 +2714,7 @@ const contentMap: ServicePageConfig =
           price: "€52.99",
           period: "2",
           features: [
-            "20 hours/month",
+            // "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -2730,7 +2730,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+            // "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -2747,7 +2747,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+            // "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -2858,7 +2858,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+//             "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -2874,7 +2874,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+//             "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -2891,7 +2891,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+//             "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -2998,7 +2998,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+//             "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -3014,7 +3014,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+//             "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -3031,7 +3031,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+//             "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -3138,7 +3138,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+//             "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -3154,7 +3154,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+//             "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -3171,7 +3171,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+//             "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -3278,7 +3278,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+//             "20 hours/month",
             "Email & calendar support",
             "Basic admin tasks",
             "Weekly reports",
@@ -3295,7 +3295,7 @@ const contentMap: ServicePageConfig =
           period: "8",
           note: null,
           features: [
-            "Multiple VAs",
+//             "Multiple VAs",
             "All Growth features",
             "Specialized skills",
             "Custom workflows",
@@ -3312,7 +3312,7 @@ const contentMap: ServicePageConfig =
           period: "4",
           note: null,
           features: [
-            "Full-time support (160hrs)",
+//             "Full-time support (160hrs)",
             "All Starter features",
             "Customer support",
             "Social media management",
@@ -3419,7 +3419,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+//             "20 hours/month",
             "Booking and reservation processing",
             " Availability calendar management",
             "Weekly reports",
@@ -3561,7 +3561,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+//             "20 hours/month",
             "Email and chat inquiry handling",
             " Basic booking support",
             "Weekly reports",
@@ -3705,7 +3705,7 @@ const contentMap: ServicePageConfig =
           period: "2",
           // note: "Save €2,000+ vs local hiring",
           features: [
-            "20 hours/month",
+//             "20 hours/month",
             " Travel content and social media",
             " Email marketing support",
             "Weekly reports",
@@ -3847,7 +3847,7 @@ const contentMap: ServicePageConfig =
           price: "€38.99",
           period: "2",
           features: [
-            "20 hours/month",
+//             "20 hours/month",
             "HR admin and employee records",
             "Recruitment support",
             "Weekly reports",
@@ -3985,7 +3985,7 @@ const contentMap: ServicePageConfig =
           price: "€38.99",
           period: "2",
           features: [
-            "20 hours/month",
+//             "20 hours/month",
             "Invoicing and accounts receivable",
             "Financial record keeping",
             "Weekly reports",
@@ -4123,7 +4123,7 @@ const contentMap: ServicePageConfig =
           price: "€26.99",
           period: "2",
           features: [
-            "20 hours/month",
+//             "20 hours/month",
             "Client communication and check-ins",
             "Basic CRM management",
             "Weekly reports",
@@ -4260,7 +4260,7 @@ const contentMap: ServicePageConfig =
           price: "€63.99",
           period: "2",
           features: [
-            "20 hours/month",
+//             "20 hours/month",
             "ML model development and evaluation",
             "Basic MLOps pipeline support",
             "Weekly reports",
