@@ -2046,7 +2046,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Starter Plan",
           description: "Part-time support for light admin tasks.",
-          price: "€63.99",
+          price: "€49.99",
           period: "2",
           features: [
             "20 hours/month",
@@ -2061,7 +2061,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Scale Plan",
           description: "Multiple assistants or specialized support.",
-          price: "€49.99",
+          price: "€39.99",
           period: "8",
           note: null,
           features: [
@@ -2078,7 +2078,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated assistant for daily operations.",
-          price: "€53.99",
+          price: "€42.99",
           period: "4",
           note: null,
           features: [
