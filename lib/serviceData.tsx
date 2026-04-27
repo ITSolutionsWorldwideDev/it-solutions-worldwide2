@@ -1514,7 +1514,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Starter Plan",
           description: "Part-time support for light admin tasks.",
-          price: "€[INSERT_PRICE]", // e.g., 37.99
+          price: "€47.99", // e.g., 37.99
           period: "2",
           features: [
             "20 hours/month",
@@ -1529,7 +1529,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Scale Plan",
           description: "Multiple assistants or specialized support.",
-          price: "€[INSERT_PRICE]", // e.g., 29.99
+          price: "€36.99", // e.g., 29.99
           period: "8",
           note: null,
           features: [
@@ -1546,7 +1546,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated assistant for daily operations.",
-          price: "€[INSERT_PRICE]", // e.g., 31.99
+          price: "€39.99", // e.g., 31.99
           period: "4",
           note: null,
           features: [
@@ -1647,7 +1647,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Starter Plan",
           description: "Part-time support for light admin tasks.",
-          price: "€[INSERT_PRICE]",
+          price: "€26.99",
           period: "2",
           features: [
             "20 hours/month",
@@ -1662,7 +1662,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Scale Plan",
           description: "Multiple assistants or specialized support.",
-          price: "€[INSERT_PRICE]",
+          price: "€20.99",
           period: "8",
           note: null,
           features: [
@@ -1679,7 +1679,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated assistant for daily operations.",
-          price: "€[INSERT_PRICE]",
+          price: "€22.99",
           period: "4",
           note: null,
           features: [
@@ -1780,7 +1780,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Starter Plan",
           description: "Part-time support for light admin tasks.",
-          price: "€[INSERT_PRICE]",
+          price: "€21.99",
           period: "2",
           features: [
             "20 hours/month",
@@ -1795,7 +1795,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Scale Plan",
           description: "Multiple assistants or specialized support.",
-          price: "€[INSERT_PRICE]",
+          price: "€17.99",
           period: "8",
           note: null,
           features: [
@@ -1812,7 +1812,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated assistant for daily operations.",
-          price: "€[INSERT_PRICE]",
+          price: "€18.99",
           period: "4",
           note: null,
           features: [
@@ -1913,7 +1913,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Starter Plan",
           description: "Part-time support for light admin tasks.",
-          price: "€[INSERT_PRICE]",
+          price: "€38.99",
           period: "2",
           features: [
             "20 hours/month",
@@ -1928,7 +1928,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Scale Plan",
           description: "Multiple assistants or specialized support.",
-          price: "€[INSERT_PRICE]",
+          price: "€30.99",
           period: "8",
           note: null,
           features: [
@@ -1945,7 +1945,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated assistant for daily operations.",
-          price: "€[INSERT_PRICE]",
+          price: "€32.99",
           period: "4",
           note: null,
           features: [
@@ -2361,8 +2361,8 @@ const contentMap: ServicePageConfig =
       ],
     },
 
-    "hire-software-tester-qa": {
-      heading: "Hire Software Tester Qa",
+    "hire-software-tester": {
+      heading: "Hire Software Tester ",
       subText:
         "Bugs that reach your users damage trust, increase churn, and cost more to fix. Get a dedicated software tester who catches issues before they reach production — so your product launches clean and stays reliable.",
       service: "Software Tester Qa",
@@ -2445,7 +2445,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Starter Plan",
           description: "Part-time support for light admin tasks.",
-          price: "€[INSERT_PRICE]",
+          price: "€43.99",
           period: "2",
           features: [
             "20 hours/month",
@@ -2460,7 +2460,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Scale Plan",
           description: "Multiple assistants or specialized support.",
-          price: "€[INSERT_PRICE]",
+          price: "€34.99",
           period: "8",
           note: null,
           features: [
@@ -2477,7 +2477,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated assistant for daily operations.",
-          price: "€[INSERT_PRICE]",
+          price: "€36.99",
           period: "4",
           note: null,
           features: [
@@ -2578,7 +2578,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Starter Plan",
           description: "Part-time support for light admin tasks.",
-          price: "€[INSERT_PRICE]",
+          price: "€31.99",
           period: "2",
           features: [
             "20 hours/month",
@@ -2593,7 +2593,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Scale Plan",
           description: "Multiple assistants or specialized support.",
-          price: "€[INSERT_PRICE]",
+          price: "€24.99",
           period: "8",
           note: null,
           features: [
@@ -2610,7 +2610,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated assistant for daily operations.",
-          price: "€[INSERT_PRICE]",
+          price: "€26.99",
           period: "4",
           note: null,
           features: [
@@ -2711,7 +2711,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Starter Plan",
           description: "Part-time support for light admin tasks.",
-          price: "€[INSERT_PRICE]",
+          price: "€52.99",
           period: "2",
           features: [
             "20 hours/month",
@@ -2726,7 +2726,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Scale Plan",
           description: "Multiple assistants or specialized support.",
-          price: "€[INSERT_PRICE]",
+          price: "€41.99",
           period: "8",
           note: null,
           features: [
@@ -2743,7 +2743,7 @@ const contentMap: ServicePageConfig =
         {
           name: "Growth Plan",
           description: "Dedicated assistant for daily operations.",
-          price: "€[INSERT_PRICE]",
+          price: "€44.99",
           period: "4",
           note: null,
           features: [
@@ -3184,11 +3184,11 @@ const contentMap: ServicePageConfig =
       ],
     },
 
-    "hire-online-reisadviseur": {
-      heading: "Hire Online Reisadviseur",
+    "hire-online-travel-advisor": {
+      heading: "Hire Online Travel Advisor",
       subText:
         "Travel businesses that deliver personalised, fast, and reliable advisory services retain more customers and generate more bookings. Get a dedicated online travel advisor who handles your clients with expertise and care — every day.",
-      service: "Online Reisadviseur",
+      service: "Online Travel Advisor",
       // trust:
       //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
       // help: "What Your Virtual Assistant Can Help With",
