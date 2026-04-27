@@ -7,6 +7,7 @@ import MetaPixel from "@/components/MetaPixel";
 import GoogleTag from "@/components/GoogleTag";
 import GoogleTagManager from "@/components/GoogleTagManager";
 import Script from "next/script";
+import {GoogleAnalytics} from '@next/third-parties/google'
 const lexend = Lexend({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -45,7 +46,8 @@ export default function RootLayout({
       <body>
         <MetaPixel pixelId="1766535074073515" />
         <GoogleTagManager gtmId="GTM-PH8FNRK6" />
-        <GoogleTag tagId="GT-TQKZR4LS" />
+        <GoogleAnalytics gaId="GT-TQKZR4LS" />
+        {/* <GoogleTag tagId="GT-TQKZR4LS" /> */}
 
         {/* <GoogleTagManager gtmId="GTM-NX66K4BC" /> */}
         {children}
