@@ -155,7 +155,7 @@ const contentMap: ServicePageConfig =
             "Social media and content support",
             "Full project and task coordination",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated virtual assistant",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -173,7 +173,7 @@ const contentMap: ServicePageConfig =
             " Research and reporting",
             "Customer and client support",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated virtual assistant",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -277,7 +277,7 @@ const contentMap: ServicePageConfig =
             "Ecommerce and SaaS development",
             " Full maintenance and support",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated Full Stack Developer",
             " SLA guarantee",
           ],
           cta: "Get Started",
@@ -296,7 +296,7 @@ const contentMap: ServicePageConfig =
             "Web application development",
             "API and database development",
             " Priority support",
-            "Dedicated account manager",
+            "Dedicated Full Stack Developer",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -419,7 +419,7 @@ const contentMap: ServicePageConfig =
             "Analytics engineering and dbt",
             "Full BI tool integration",
             "Custom workflows",
-            " Dedicated account manager",
+            " Dedicated Data Engineer",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -438,7 +438,7 @@ const contentMap: ServicePageConfig =
             "Data warehouse and lake builds",
             " Cloud data infrastructure setup",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Data Engineer",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -549,7 +549,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Dedicated Ecommerce Assistant for results-driven teams",
+          description: "Full ecommerce team for high-volume and multi-channel stores.",
           price: "€29.99",
           period: "8",
           note: null,
@@ -559,7 +559,7 @@ const contentMap: ServicePageConfig =
             "Store optimisation and reporting",
             "Multi-platform management",
             "Custom workflows",
-            " Dedicated account manager",
+            " Dedicated Ecommerce Assistant",
             " SLA guarantee",
           ],
           cta: "Contact us",
@@ -577,7 +577,7 @@ const contentMap: ServicePageConfig =
             "Customer support management",
             "Platform and inventory management",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Ecommerce Assistant",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -689,7 +689,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Dedicated Electrical Engineer for results-driven teams",
+          description: "Full engineering team for large-scale and complex projects.",
           price: "€38.99",
           period: "8",
           note: null,
@@ -699,7 +699,7 @@ const contentMap: ServicePageConfig =
             "Electrical systems engineering",
             " Compliance and certification support",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated Electrical Engineer",
             " SLA guarantee",
           ],
           cta: "Contact us",
@@ -718,7 +718,7 @@ const contentMap: ServicePageConfig =
             " PCB design and embedded systems",
             "Technical documentation",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Electrical Engineer",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -828,7 +828,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Dedicated AI Engineer for results-driven teams",
+          description: " Full AI team for intelligent product and enterprise AI systems.",
           price: "€57.99",
           period: "8",
           note: null,
@@ -838,7 +838,7 @@ const contentMap: ServicePageConfig =
             "Computer vision and advanced ML",
             "Full AI deployment and infrastructure",
             " Custom workflows",
-            "Dedicated account manager",
+            "Dedicated AI Engineer",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -856,7 +856,7 @@ const contentMap: ServicePageConfig =
             " Machine learning model development",
             "AI automation and NLP builds",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated AI Engineer",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -953,7 +953,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: "Part-time support for essential social tasks.",
           price: "€46.99",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
@@ -963,7 +963,7 @@ const contentMap: ServicePageConfig =
             "Up to 4 platforms managed",
             "Community management",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Social Media Manager",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -971,7 +971,7 @@ const contentMap: ServicePageConfig =
 
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: "Multiple platforms or specialised support.",
           price: "€36.99",
           period: "8",
           note: null,
@@ -982,14 +982,14 @@ const contentMap: ServicePageConfig =
             "Full content production",
             "Paid social support",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated Social Media Manager",
           ],
           cta: "Contact us",
           highlighted: true,
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for daily operations.",
           price: "€39.99",
           period: "4",
           note: null,
@@ -999,7 +999,7 @@ const contentMap: ServicePageConfig =
             "Customer support",
             "Social media management",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Social Media Manager",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -1096,7 +1096,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter plan",
-          description: "Part-time support for light admin tasks.",
+          description: "Part-time support for essential content tasks.",
           price: "€42.99",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
@@ -1112,7 +1112,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: "Full content production and multi-channel copy.",
           price: "€33.99",
           period: "8",
           note: null,
@@ -1123,7 +1123,7 @@ const contentMap: ServicePageConfig =
             "Ad and brand copywriting",
             "Multi-channel content strategy",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated Content Creator Copywriter",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -1131,7 +1131,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for daily content operations.",
           price: "€35.99",
           period: "4",
           note: null,
@@ -1141,7 +1141,7 @@ const contentMap: ServicePageConfig =
             "SEO content writing",
             "Email marketing copy",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Content Creator Copywriter",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -1238,7 +1238,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: "Part-time support for essential marketing tasks.",
           price: "€51.99",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
@@ -1255,7 +1255,7 @@ const contentMap: ServicePageConfig =
 
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: "Full marketing team support and multi-channel execution.",
           price: "€40.99",
           period: "8",
           note: null,
@@ -1266,14 +1266,14 @@ const contentMap: ServicePageConfig =
             "Paid and organic strategy",
             "Advanced analytics and reporting",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated Online Marketer",
           ],
           cta: "Contact us",
           highlighted: true,
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for full digital marketing operations.",
           price: "€43.99",
           period: "4",
           note: null,
@@ -1283,7 +1283,7 @@ const contentMap: ServicePageConfig =
             "Multi-channel marketing",
             "Lead generation campaigns",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Online Marketer",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -1380,7 +1380,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter plan",
-          description: "Part-time support for light admin tasks.",
+          description: "Part-time support for essential web tasks.",
           price: "€63.99",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
@@ -1397,7 +1397,7 @@ const contentMap: ServicePageConfig =
 
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: " Full web team for larger projects and ongoing development.",
           price: "€49.99",
           period: "4",
           note: null,
@@ -1414,7 +1414,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for full web design and development.",
           price: "€53.99",
           period: "4",
           note: null,
@@ -1424,7 +1424,7 @@ const contentMap: ServicePageConfig =
             "Custom website design and build",
             "Ecommerce development",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Web Designer and Developer",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -1519,7 +1519,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: "Part-time support for essential design tasks.",
           price: "€47.99", // e.g., 37.99
           period: "2",
           features: [
@@ -1534,7 +1534,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: "Full creative team for high-volume and multi-brand design.",
           price: "€36.99", // e.g., 29.99
           period: "8",
           note: null,
@@ -1545,7 +1545,7 @@ const contentMap: ServicePageConfig =
             "Packaging and product design",
             "Motion graphics and animation",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated graphic designer",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -1553,7 +1553,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: " Dedicated support for daily design operations.",
           price: "€39.99", // e.g., 31.99
           period: "4",
           note: null,
@@ -1563,7 +1563,7 @@ const contentMap: ServicePageConfig =
             "Marketing material design",
             "Brand identity projects",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Graphic Designer",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -1654,7 +1654,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: "Part-time support for essential customer service tasks.",
           price: "€26.99",
           period: "2",
           features: [
@@ -1669,7 +1669,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: "Multiple agents for high-volume and multi-channel support.",
           price: "€20.99",
           period: "8",
           note: null,
@@ -1679,7 +1679,7 @@ const contentMap: ServicePageConfig =
             "Full customer success management",
             "Ecommerce support coverage",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated Customer Support Agent",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -1687,7 +1687,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for daily customer operations.",
           price: "€22.99",
           period: "4",
           note: null,
@@ -1697,7 +1697,7 @@ const contentMap: ServicePageConfig =
             "Phone and WhatsApp support",
             "CRM and helpdesk management",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Customer Support Agent",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -1788,7 +1788,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: "Part-time support for essential data tasks.",
           price: "€21.99",
           period: "2",
           features: [
@@ -1803,7 +1803,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: " Multiple specialists for high-volume data projects.",
           price: "€17.99",
           period: "8",
           note: null,
@@ -1813,7 +1813,7 @@ const contentMap: ServicePageConfig =
             "Ecommerce catalogue management",
             "Research and data collection",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated Data Entry Specialist",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -1821,7 +1821,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for daily data operations.",
           price: "€18.99",
           period: "4",
           note: null,
@@ -1831,7 +1831,7 @@ const contentMap: ServicePageConfig =
             "Database and CRM management",
             "Document processing",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Data Entry Specialist",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -1922,7 +1922,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: " Part-time support for essential accounting tasks.",
           price: "€38.99",
           period: "2",
           features: [
@@ -1937,7 +1937,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: "Full finance team for growing and complex businesses.",
           price: "€30.99",
           period: "8",
           note: null,
@@ -1947,7 +1947,7 @@ const contentMap: ServicePageConfig =
             "Budgeting and forecasting",
             "Full accounting software management",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated Accountant or Financial Assistant",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -1955,7 +1955,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for full financial operations.",
           price: "€32.99",
           period: "4",
           note: null,
@@ -1965,7 +1965,7 @@ const contentMap: ServicePageConfig =
             "Tax preparation and compliance",
             "Payroll administration",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Accountant or Financial Assistant",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -2056,7 +2056,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: " Part-time support for essential front-end tasks.",
           price: "€49.99",
           period: "2",
           features: [
@@ -2071,7 +2071,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: " Full front-end team for large-scale product development.",
           price: "€39.99",
           period: "8",
           note: null,
@@ -2081,7 +2081,7 @@ const contentMap: ServicePageConfig =
             "TypeScript and testing",
             "Performance and Core Web Vitals",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated front-end developer",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -2089,7 +2089,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: " Dedicated support for full front-end development.",
           price: "€42.99",
           period: "4",
           note: null,
@@ -2099,7 +2099,7 @@ const contentMap: ServicePageConfig =
             "React or Vue application development",
             "CMS and headless frontend builds",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated front-end developer",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -2190,7 +2190,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: "Part-time support for essential back-end tasks.",
           price: "€59.99",
           period: "2",
           features: [
@@ -2205,7 +2205,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: " Full back-end team for complex and scalable systems.",
           price: "€46.99",
           period: "8",
           note: null,
@@ -2215,7 +2215,7 @@ const contentMap: ServicePageConfig =
             "Microservices architecture",
             "Advanced cloud and DevOps support",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated back-end developer",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -2223,7 +2223,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for full back-end development.",
           price: "€50.99",
           period: "4",
           note: null,
@@ -2324,7 +2324,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: " Part-time support for essential app development tasks.",
           price: "€52.99",
           period: "2",
           features: [
@@ -2339,7 +2339,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: " Full app team for complex and multi-platform products.",
           price: "€41.99",
           period: "8",
           note: null,
@@ -2349,7 +2349,7 @@ const contentMap: ServicePageConfig =
             "Backend and API development",
             "App Store and Play Store management",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated App Developer",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -2357,7 +2357,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for full app development.",
           price: "€44.99",
           period: "4",
           note: null,
@@ -2367,7 +2367,7 @@ const contentMap: ServicePageConfig =
             "iOS or Android native development",
             "Cross-platform app builds",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated App Developer",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -2458,7 +2458,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: "Part-time support for essential QA and testing tasks.",
           price: "€43.99",
           period: "2",
           features: [
@@ -2473,7 +2473,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: "Full QA team for large-scale product testing.",
           price: "€34.99",
           period: "8",
           note: null,
@@ -2483,7 +2483,7 @@ const contentMap: ServicePageConfig =
             " Performance and load testing",
             "Full CI/CD test pipeline",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated Software Tester",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -2491,7 +2491,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for full QA operations.",
           price: "€36.99",
           period: "4",
           note: null,
@@ -2501,7 +2501,7 @@ const contentMap: ServicePageConfig =
             " Automated testing setup",
             " API and mobile app testing",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Software Tester",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -2592,7 +2592,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: " Part-time support for essential IT tasks.",
           price: "€31.99",
           period: "2",
           features: [
@@ -2607,7 +2607,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: " Full IT support team for growing businesses.",
           price: "€24.99",
           period: "8",
           note: null,
@@ -2617,7 +2617,7 @@ const contentMap: ServicePageConfig =
             "Cybersecurity support",
             "Full infrastructure management",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated IT Support Specialist",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -2625,7 +2625,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: " Dedicated support for full IT operations.",
           price: "€26.99",
           period: "4",
           note: null,
@@ -2635,7 +2635,7 @@ const contentMap: ServicePageConfig =
             "Network and cloud management",
             "Microsoft 365 administration",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated IT Support Specialist",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -2726,7 +2726,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: " Part-time support for essential data analysis tasks.",
           price: "€52.99",
           period: "2",
           features: [
@@ -2741,7 +2741,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: "Full data team for advanced analytics and forecasting.",
           price: "€41.99",
           period: "8",
           note: null,
@@ -2759,7 +2759,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: " Dedicated support for full data analysis operations.",
           price: "€44.99",
           period: "4",
           note: null,
@@ -2769,7 +2769,7 @@ const contentMap: ServicePageConfig =
             "BI tool dashboards and reporting",
             "SQL querying and data preparation",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated Data Analyst",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -2870,7 +2870,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: "Part-time support for essential BI and dashboard tasks.",
           price: "€59.99",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
@@ -2886,7 +2886,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: "Full BI team for enterprise dashboards and data strategy.",
           price: "46.99",
           period: "8",
           note: null,
@@ -2904,7 +2904,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for full BI development and reporting.",
           price: "€50.99",
           period: "4",
           note: null,
@@ -2914,7 +2914,7 @@ const contentMap: ServicePageConfig =
             "Power BI or Tableau full builds",
             "Reporting automation setup",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated BI Specialist",
           ],
           cta: "Get Started",
           highlighted: false,
@@ -3011,7 +3011,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: "Part-time support for essential analytics setup and reporting.",
           price: "€52.99",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
@@ -3027,7 +3027,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: "Full analytics team for advanced tracking and data strategy.",
           price: "41.99",
           period: "8",
           note: null,
@@ -3045,7 +3045,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for full analytics management.",
           price: "€44.99",
           period: "4",
           note: null,
@@ -3152,7 +3152,7 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for light admin tasks.",
+          description: " Part-time support for essential Microsoft Excel tasks.",
           price: "€42.99",
           period: "2",
           // note: "Save €2,000+ vs local hiring",
@@ -3168,7 +3168,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple assistants or specialized support.",
+          description: " Full Microsoft Excel team for complex modelling and enterprise solutions.",
           price: "33.99",
           period: "8",
           note: null,
@@ -3186,7 +3186,7 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated assistant for daily operations.",
+          description: "Dedicated support for full Microsoft Excel development and automation.",
           price: "€35.99",
           period: "4",
           note: null,
@@ -3320,7 +3320,7 @@ const contentMap: ServicePageConfig =
             "Aftersales and customer follow-up",
             "Travel content and research support",
             "Custom workflows",
-            "Dedicated account manager",
+            "Dedicated Travel Advisor",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -3461,7 +3461,7 @@ const contentMap: ServicePageConfig =
             "Multi-channel reservation management",
             " Full reporting and CRM updates",
             " Custom workflows",
-            "  Dedicated account manager",
+            "  Dedicated reservations clerk",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -3604,7 +3604,7 @@ const contentMap: ServicePageConfig =
             "Aftersales and retention management",
             "Full CRM and reporting support",
             " Custom workflows",
-            "  Dedicated account manager",
+            "  Dedicated customer service agent",
             "SLA guarantee",
           ],
           cta: "Contact us",
@@ -3623,7 +3623,7 @@ const contentMap: ServicePageConfig =
             " Complaint and disruption management",
             "Multi-channel communication support",
             "Priority support",
-            "Dedicated account manager",
+            "Dedicated customer service agent",
           ],
           cta: "Get Started",
           highlighted: false,
