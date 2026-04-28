@@ -549,7 +549,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Full ecommerce team for high-volume and multi-channel stores.",
+          description:
+            "Full ecommerce team for high-volume and multi-channel stores.",
           price: "€29.99",
           period: "8",
           note: null,
@@ -689,7 +690,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Full engineering team for large-scale and complex projects.",
+          description:
+            "Full engineering team for large-scale and complex projects.",
           price: "€38.99",
           period: "8",
           note: null,
@@ -828,7 +830,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: " Full AI team for intelligent product and enterprise AI systems.",
+          description:
+            " Full AI team for intelligent product and enterprise AI systems.",
           price: "€57.99",
           period: "8",
           note: null,
@@ -1255,7 +1258,8 @@ const contentMap: ServicePageConfig =
 
         {
           name: "Scale Plan",
-          description: "Full marketing team support and multi-channel execution.",
+          description:
+            "Full marketing team support and multi-channel execution.",
           price: "€40.99",
           period: "8",
           note: null,
@@ -1273,7 +1277,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Growth Plan",
-          description: "Dedicated support for full digital marketing operations.",
+          description:
+            "Dedicated support for full digital marketing operations.",
           price: "€43.99",
           period: "4",
           note: null,
@@ -1397,7 +1402,8 @@ const contentMap: ServicePageConfig =
 
         {
           name: "Scale Plan",
-          description: " Full web team for larger projects and ongoing development.",
+          description:
+            " Full web team for larger projects and ongoing development.",
           price: "€49.99",
           period: "4",
           note: null,
@@ -1407,7 +1413,6 @@ const contentMap: ServicePageConfig =
             "Landing page design",
             "Weekly reports",
             "Email support",
-         
           ],
           cta: "Contact us",
           highlighted: true,
@@ -1431,10 +1436,6 @@ const contentMap: ServicePageConfig =
         },
       ],
     },
-
-
-
-
 
     "hire-graphic-designer": {
       heading: "Hire Graphic Designer",
@@ -1534,7 +1535,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Full creative team for high-volume and multi-brand design.",
+          description:
+            "Full creative team for high-volume and multi-brand design.",
           price: "€36.99", // e.g., 29.99
           period: "8",
           note: null,
@@ -1654,7 +1656,8 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: "Part-time support for essential customer service tasks.",
+          description:
+            "Part-time support for essential customer service tasks.",
           price: "€26.99",
           period: "2",
           features: [
@@ -1669,7 +1672,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: "Multiple agents for high-volume and multi-channel support.",
+          description:
+            "Multiple agents for high-volume and multi-channel support.",
           price: "€20.99",
           period: "8",
           note: null,
@@ -2071,7 +2075,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: " Full front-end team for large-scale product development.",
+          description:
+            " Full front-end team for large-scale product development.",
           price: "€39.99",
           period: "8",
           note: null,
@@ -2324,7 +2329,8 @@ const contentMap: ServicePageConfig =
       plans: [
         {
           name: "Starter Plan",
-          description: " Part-time support for essential app development tasks.",
+          description:
+            " Part-time support for essential app development tasks.",
           price: "€52.99",
           period: "2",
           features: [
@@ -2339,7 +2345,8 @@ const contentMap: ServicePageConfig =
         },
         {
           name: "Scale Plan",
-          description: " Full app team for complex and multi-platform products.",
+          description:
+            " Full app team for complex and multi-platform products.",
           price: "€41.99",
           period: "8",
           note: null,
@@ -2777,1556 +2784,1539 @@ const contentMap: ServicePageConfig =
       ],
     },
 
-
-
-
-
     "hire-power-bi-tableau-specialist": {
-      heading: "Hire Power Bi Tableau Specialist",
-      subText:
-        "Your business data tells a story — but only if it is visualised clearly. Get a dedicated Power BI or Tableau specialist who builds dashboards and reports that give your team instant clarity and smarter decisions.",
-      service: "Power Bi Tableau Specialist",
-      // trust:
-      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
-      // help: "What Your Virtual Assistant Can Help With",
-      // dedication:
-      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+      heading: "Hire Power Bi Tableau Specialist",
+      subText:
+        "Your business data tells a story — but only if it is visualised clearly. Get a dedicated Power BI or Tableau specialist who builds dashboards and reports that give your team instant clarity and smarter decisions.",
+      service: "Power Bi Tableau Specialist", // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+      services: [
+        {
+          icon: <Mail />,
+          title: "Power BI Development",
+          bg: "bg-blue-500",
+          items: [
+            "Power BI dashboard design and build",
+            "DAX formula development",
+            "Power Query data transformation",
+            "Report publishing and sharing",
+            "Power BI Service administration",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Tableau Development",
+          bg: "bg-purple-500",
+          items: [
+            "Tableau dashboard creation",
+            "Calculated field and LOD expressions",
+            "Tableau Server and Online publishing",
+            "Interactive visualisation design",
+            "Tableau data source management",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Data Visualisation",
+          bg: "bg-green-500",
+          items: [
+            "Custom chart and graph design",
+            "Executive and management dashboards",
+            "KPI tracking visualisations",
+            "Comparative and trend visualisations",
+            "Mobile-optimised dashboard layouts",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Data Modelling & Transformation",
+          bg: "bg-orange-500",
+          items: [
+            "Data model design for BI tools",
+            "Star and snowflake schema setup",
+            "Power Query and ETL transformation",
+            "Multi-source data integration",
+            "Relationship and hierarchy management",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Reporting Automation",
+          bg: "bg-pink-500",
+          items: [
+            "Scheduled and automated report delivery",
+            "Email report distribution setup",
+            "Real-time data refresh configuration",
+            "Alert and threshold notifications",
+            "Embedded reporting integration",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "BI Strategy & Governance",
+          bg: "bg-violet-500",
+          items: [
+            "BI tool selection and setup consulting",
+            "Data governance best practices",
+            "Dashboard standardisation",
+            "User training and documentation",
+            "BI workspace organisation and management",
+          ],
+        },
+      ],
 
-      services: [
-        {
-          icon: <Mail />,
-          title: "Power BI Development",
-          bg: "bg-blue-500",
-          items: [
-            "Power BI dashboard design and build",
-            "DAX formula development",
-            "Power Query data transformation",
-            "Report publishing and sharing",
-            "Power BI Service administration",
-          ],
-        },
-        {
-          icon: <Calendar />,
-          title: "Tableau Development",
-          bg: "bg-purple-500",
-          items: [
-            "Tableau dashboard creation",
-            "Calculated field and LOD expressions",
-            "Tableau Server and Online publishing",
-            "Interactive visualisation design",
-            "Tableau data source management",
-          ],
-        },
-        {
-          icon: <MessageSquare />,
-          title: "Data Visualisation",
-          bg: "bg-green-500",
-          items: [
-            "Custom chart and graph design",
-            "Executive and management dashboards",
-            "KPI tracking visualisations",
-            "Comparative and trend visualisations",
-            "Mobile-optimised dashboard layouts",
-          ],
-        },
-        {
-          icon: <ChartColumnDecreasing />,
-          title: "Data Modelling & Transformation",
-          bg: "bg-orange-500",
-          items: [
-            "Data model design for BI tools",
-            "Star and snowflake schema setup",
-            "Power Query and ETL transformation",
-            "Multi-source data integration",
-            "Relationship and hierarchy management",
-          ],
-        },
-        {
-          icon: <ShoppingCart />,
-          title: "Reporting Automation",
-          bg: "bg-pink-500",
-          items: [
-            "Scheduled and automated report delivery",
-            "Email report distribution setup",
-            "Real-time data refresh configuration",
-            "Alert and threshold notifications",
-            "Embedded reporting integration",
-          ],
-        },
-        {
-          icon: <User />,
-          title: "BI Strategy & Governance",
-          bg: "bg-violet-500",
-          items: [
-            "BI tool selection and setup consulting",
-            "Data governance best practices",
-            "Dashboard standardisation",
-            "User training and documentation",
-            "BI workspace organisation and management",
-          ],
-        },
-      ],
+      plans: [
+        {
+          name: "Starter Plan",
+          description:
+            "Part-time support for essential BI and dashboard tasks.",
+          price: "€59.99",
+          period: "2", // note: "Save €2,000+ vs local hiring",
+          features: [
+            //             "20 hours/month",
+            "Dashboard design and development",
+            "Basic data modelling",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Scale Plan",
+          description:
+            "Full BI team for enterprise dashboards and data strategy.",
+          price: "46.99",
+          period: "8",
+          note: null,
+          features: [
+            //             "Multiple VAs",
+            "All Growth features",
+            "Multi-source data integration",
+            "BI governance and strategy",
+            "Custom workflows",
+            "Dedicated Power BI/Tableau specialist",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: true,
+        },
+        {
+          name: "Growth Plan",
+          description:
+            "Dedicated support for full BI development and reporting.",
+          price: "€50.99",
+          period: "4",
+          note: null,
+          features: [
+            //             "Full-time support (160hrs)",
+            "All Starter features",
+            "Power BI or Tableau full builds",
+            "Reporting automation setup",
+            "Priority support",
+            "Dedicated BI Specialist",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+      ],
+    },
 
-      plans: [
-        {
-          name: "Starter Plan",
-          description: "Part-time support for essential BI and dashboard tasks.",
-          price: "€59.99",
-          period: "2",
-          // note: "Save €2,000+ vs local hiring",
-          features: [
-//             "20 hours/month",
-            "Dashboard design and development",
-            "Basic data modelling",
-            "Weekly reports",
-            "Email support",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-        {
-          name: "Scale Plan",
-          description: "Full BI team for enterprise dashboards and data strategy.",
-          price: "46.99",
-          period: "8",
-          note: null,
-          features: [
-//             "Multiple VAs",
-            "All Growth features",
-            "Multi-source data integration",
-            "BI governance and strategy",
-            "Custom workflows",
-            "Dedicated Power BI/Tableau specialist",
-            "SLA guarantee",
-          ],
-          cta: "Contact us",
-          highlighted: true,
-        },
-        {
-          name: "Growth Plan",
-          description: "Dedicated support for full BI development and reporting.",
-          price: "€50.99",
-          period: "4",
-          note: null,
-          features: [
-//             "Full-time support (160hrs)",
-            "All Starter features",
-            "Power BI or Tableau full builds",
-            "Reporting automation setup",
-            "Priority support",
-            "Dedicated BI Specialist",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-      ],
-    },
+    "hire-google-analytics-specialist": {
+      heading: "Hire Google Analytics Specialist",
+      subText:
+        "If you are running ads or investing in your website without proper analytics tracking, you are making decisions in the dark. Get a dedicated Google Analytics specialist who sets up, manages, and interprets your data so every decision is backed by real insight.",
+      service: "Google Analytics Specialist", // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+      services: [
+        {
+          icon: <Mail />,
+          title: "GA4 Setup & Configuration",
+          bg: "bg-blue-500",
+          items: [
+            "Google Analytics 4 installation",
+            "Property and data stream setup",
+            "Event and conversion tracking",
+            "Cross-domain tracking configuration",
+            "GA4 migration from Universal Analytics",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Google Tag Manager",
+          bg: "bg-purple-500",
+          items: [
+            "GTM account setup and management",
+            "Tag creation and deployment",
+            "Trigger and variable configuration",
+            "Custom event tracking via GTM",
+            "GTM audit and cleanup",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Conversion Tracking",
+          bg: "bg-green-500",
+          items: [
+            "Goal and conversion setup",
+            "Ecommerce conversion tracking",
+            "Form submission tracking",
+            "Phone call and click tracking",
+            "Google Ads conversion linking",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Reporting & Dashboards",
+          bg: "bg-orange-500",
+          items: [
+            "Custom GA4 report creation",
+            "Looker Studio dashboard builds",
+            "Monthly analytics reporting",
+            "Traffic source and behaviour reports",
+            "Executive performance summaries",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Analytics Auditing",
+          bg: "bg-pink-500",
+          items: [
+            "Full GA4 property audit",
+            "Tracking accuracy verification",
+            "Data discrepancy investigation",
+            "Tag and event audit",
+            "Spam and bot filter setup",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Data Insights & Optimisation",
+          bg: "bg-violet-500",
+          items: [
+            "User behaviour analysis",
+            "Funnel and drop-off analysis",
+            "Audience segmentation insights",
+            "Landing page performance analysis",
+            "Data-driven CRO recommendations",
+          ],
+        },
+      ],
 
-    "hire-google-analytics-specialist": {
-      heading: "Hire Google Analytics Specialist",
-      subText:
-        "If you are running ads or investing in your website without proper analytics tracking, you are making decisions in the dark. Get a dedicated Google Analytics specialist who sets up, manages, and interprets your data so every decision is backed by real insight.",
-      service: "Google Analytics Specialist",
-      // trust:
-      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
-      // help: "What Your Virtual Assistant Can Help With",
-      // dedication:
-      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+      plans: [
+        {
+          name: "Starter Plan",
+          description:
+            "Part-time support for essential analytics setup and reporting.",
+          price: "€52.99",
+          period: "2", // note: "Save €2,000+ vs local hiring",
+          features: [
+            //             "20 hours/month",
+            "GA4 setup and configuration",
+            "Basic conversion tracking",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Scale Plan",
+          description:
+            "Full analytics team for advanced tracking and data strategy.",
+          price: "41.99",
+          period: "8",
+          note: null,
+          features: [
+            //             "Multiple VAs",
+            "All Growth features",
+            "Full analytics audit and cleanup",
+            "Advanced data insights and CRO",
+            "Custom workflows",
+            "Dedicated Google Analytics specialist",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: true,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated support for full analytics management.",
+          price: "€44.99",
+          period: "4",
+          note: null,
+          features: [
+            //             "Full-time support (160hrs)",
+            "All Starter features",
+            "Google Tag Manager management",
+            "Custom dashboards and reporting",
+            "Priority support",
+            "Dedicated Google Analytics specialist",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+      ],
+    },
 
-      services: [
-        {
-          icon: <Mail />,
-          title: "GA4 Setup & Configuration",
-          bg: "bg-blue-500",
-          items: [
-            "Google Analytics 4 installation",
-            "Property and data stream setup",
-            "Event and conversion tracking",
-            "Cross-domain tracking configuration",
-            "GA4 migration from Universal Analytics",
-          ],
-        },
-        {
-          icon: <Calendar />,
-          title: "Google Tag Manager",
-          bg: "bg-purple-500",
-          items: [
-            "GTM account setup and management",
-            "Tag creation and deployment",
-            "Trigger and variable configuration",
-            "Custom event tracking via GTM",
-            "GTM audit and cleanup",
-          ],
-        },
-        {
-          icon: <MessageSquare />,
-          title: "Conversion Tracking",
-          bg: "bg-green-500",
-          items: [
-            "Goal and conversion setup",
-            "Ecommerce conversion tracking",
-            "Form submission tracking",
-            "Phone call and click tracking",
-            "Google Ads conversion linking",
-          ],
-        },
-        {
-          icon: <ChartColumnDecreasing />,
-          title: "Reporting & Dashboards",
-          bg: "bg-orange-500",
-          items: [
-            "Custom GA4 report creation",
-            "Looker Studio dashboard builds",
-            "Monthly analytics reporting",
-            "Traffic source and behaviour reports",
-            "Executive performance summaries",
-          ],
-        },
-        {
-          icon: <ShoppingCart />,
-          title: "Analytics Auditing",
-          bg: "bg-pink-500",
-          items: [
-            "Full GA4 property audit",
-            "Tracking accuracy verification",
-            "Data discrepancy investigation",
-            "Tag and event audit",
-            "Spam and bot filter setup",
-          ],
-        },
-        {
-          icon: <User />,
-          title: "Data Insights & Optimisation",
-          bg: "bg-violet-500",
-          items: [
-            "User behaviour analysis",
-            "Funnel and drop-off analysis",
-            "Audience segmentation insights",
-            "Landing page performance analysis",
-            "Data-driven CRO recommendations",
-          ],
-        },
-      ],
+    "hire-microsoft-excel-specialist": {
+      heading: "Hire Microsoft Excel Specialist",
+      subText:
+        "Manual spreadsheet work that takes your team hours every week can be automated, simplified, and made error-free. Get a dedicated Microsoft Excel specialist who builds powerful, reliable spreadsheet solutions tailored exactly to your business needs.",
+      service: "Microsoft Excel Specialist", // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+      services: [
+        {
+          icon: <Mail />,
+          title: "Spreadsheet Development",
+          bg: "bg-blue-500",
+          items: [
+            "Custom spreadsheet design and build",
+            "Multi-sheet workbook creation",
+            "Data input form development",
+            "Template creation and standardisation",
+            "Spreadsheet restructuring and cleanup",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Advanced Formulas & Functions",
+          bg: "bg-purple-500",
+          items: [
+            "VLOOKUP, XLOOKUP, and INDEX/MATCH",
+            "Dynamic array formulas",
+            "Nested IF and logical functions",
+            "Financial and statistical formulas",
+            "Error handling and data validation",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "VBA & Macro Automation",
+          bg: "bg-green-500",
+          items: [
+            "Custom VBA macro development",
+            "Repetitive task automation",
+            "Automated report generation",
+            "User form and button creation",
+            "Excel add-in development",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Microsoft Excel Dashboards & Reporting",
+          bg: "bg-orange-500",
+          items: [
+            "Interactive Excel dashboard creation",
+            "KPI and performance dashboards",
+            "PivotTable and PivotChart builds",
+            "Dynamic chart and graph design",
+            "Management reporting templates",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Data Cleaning & Management",
+          bg: "bg-pink-500",
+          items: [
+            "Large dataset cleaning and formatting",
+            "Duplicate removal and deduplication",
+            "Data import and export management",
+            "Power Query data transformation",
+            "Data validation rules setup",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Financial Modelling",
+          bg: "bg-violet-500",
+          items: [
+            "Financial forecast models",
+            "Budget planning spreadsheets",
+            "Cash flow models",
+            "Profit and loss templates",
+            "Scenario and sensitivity analysis",
+          ],
+        },
+      ],
 
-      plans: [
-        {
-          name: "Starter Plan",
-          description: "Part-time support for essential analytics setup and reporting.",
-          price: "€52.99",
-          period: "2",
-          // note: "Save €2,000+ vs local hiring",
-          features: [
-//             "20 hours/month",
-            "GA4 setup and configuration",
-            "Basic conversion tracking",
-            "Weekly reports",
-            "Email support",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-        {
-          name: "Scale Plan",
-          description: "Full analytics team for advanced tracking and data strategy.",
-          price: "41.99",
-          period: "8",
-          note: null,
-          features: [
-//             "Multiple VAs",
-            "All Growth features",
-            "Full analytics audit and cleanup",
-            "Advanced data insights and CRO",
-            "Custom workflows",
-            "Dedicated Google Analytics specialist",
-            "SLA guarantee",
-          ],
-          cta: "Contact us",
-          highlighted: true,
-        },
-        {
-          name: "Growth Plan",
-          description: "Dedicated support for full analytics management.",
-          price: "€44.99",
-          period: "4",
-          note: null,
-          features: [
-//             "Full-time support (160hrs)",
-            "All Starter features",
-            "Google Tag Manager management",
-            "Custom dashboards and reporting",
-            "Priority support",
-            "Dedicated Google Analytics specialist",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-      ],
-    },
+      plans: [
+        {
+          name: "Starter Plan",
+          description:
+            " Part-time support for essential Microsoft Excel tasks.",
+          price: "€42.99",
+          period: "2", // note: "Save €2,000+ vs local hiring",
+          features: [
+            //             "20 hours/month",
+            "Spreadsheet development and fixes",
+            "Formula and function work",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Scale Plan",
+          description:
+            " Full Microsoft Excel team for complex modelling and enterprise solutions.",
+          price: "33.99",
+          period: "8",
+          note: null,
+          features: [
+            //             "Multiple VAs",
+            "All Growth features",
+            "Financial modelling and forecasting",
+            "Power Query and data transformation",
+            "Custom workflows",
+            "Dedicated Excel specialist",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: true,
+        },
+        {
+          name: "Growth Plan",
+          description:
+            "Dedicated support for full Microsoft Excel development and automation.",
+          price: "€35.99",
+          period: "4",
+          note: null,
+          features: [
+            //             "Full-time support (160hrs)",
+            "All Starter features",
+            "VBA macro automation",
+            "Dashboard and reporting builds",
+            "Priority support",
+            "Dedicated Excel specialist",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+      ],
+    },
 
-    "hire-microsoft-excel-specialist": {
-      heading: "Hire Microsoft Excel Specialist",
-      subText:
-        "Manual spreadsheet work that takes your team hours every week can be automated, simplified, and made error-free. Get a dedicated Microsoft Excel specialist who builds powerful, reliable spreadsheet solutions tailored exactly to your business needs.",
-      service: "Microsoft Excel Specialist",
-      // trust:
-      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
-      // help: "What Your Virtual Assistant Can Help With",
-      // dedication:
-      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+    "hire-online-travel-advisor": {
+      heading: "Hire Online Travel Advisor",
+      subText:
+        "Travel businesses that deliver personalised, fast, and reliable advisory services retain more customers and generate more bookings. Get a dedicated online travel advisor who handles your clients with expertise and care — every day.",
+      service: "Online Travel Advisor", // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+      services: [
+        {
+          icon: <Mail />,
+          title: "Trip Planning & Itinerary Creation",
+          bg: "bg-blue-500",
+          items: [
+            "Custom travel itinerary development",
+            "Multi-destination trip planning",
+            "Day-by-day travel schedule creation",
+            "Activity and excursion recommendations",
+            "Travel document checklist preparation",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Flight & Accommodation Research",
+          bg: "bg-purple-500",
+          items: [
+            "Flight option research and comparison",
+            "Hotel and resort research",
+            "Apartment and villa sourcing",
+            "Best price and availability checks",
+            "Travel package research and comparison",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Customer Travel Consultation",
+          bg: "bg-green-500",
+          items: [
+            "Online chat and email travel consultation",
+            "Destination advice and recommendations",
+            "Travel requirement guidance (visas, insurance)",
+            "Group travel planning support",
+            "Honeymoon and special trip planning",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Booking Administration",
+          bg: "bg-orange-500",
+          items: [
+            "Booking confirmation management",
+            "Travel document organisation",
+            "Reservation change and cancellation handling",
+            "Supplier and operator communication",
+            "Pre-departure customer briefings",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Travel Content & Research",
+          bg: "bg-pink-500",
+          items: [
+            "Destination research and guides",
+            "Travel blog and content support",
+            "FAQ and knowledge base creation",
+            "Travel trend monitoring",
+            "Competitor offer monitoring",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Aftersales & Customer Follow-Up",
+          bg: "bg-violet-500",
+          items: [
+            "Post-trip customer follow-up",
+            "Review and feedback collection",
+            "Complaint handling and resolution",
+            "Repeat booking outreach",
+            "Loyalty and return customer management",
+          ],
+        },
+      ],
 
-      services: [
-        {
-          icon: <Mail />,
-          title: "Spreadsheet Development",
-          bg: "bg-blue-500",
-          items: [
-            "Custom spreadsheet design and build",
-            "Multi-sheet workbook creation",
-            "Data input form development",
-            "Template creation and standardisation",
-            "Spreadsheet restructuring and cleanup",
-          ],
-        },
-        {
-          icon: <Calendar />,
-          title: "Advanced Formulas & Functions",
-          bg: "bg-purple-500",
-          items: [
-            "VLOOKUP, XLOOKUP, and INDEX/MATCH",
-            "Dynamic array formulas",
-            "Nested IF and logical functions",
-            "Financial and statistical formulas",
-            "Error handling and data validation",
-          ],
-        },
-        {
-          icon: <MessageSquare />,
-          title: "VBA & Macro Automation",
-          bg: "bg-green-500",
-          items: [
-            "Custom VBA macro development",
-            "Repetitive task automation",
-            "Automated report generation",
-            "User form and button creation",
-            "Excel add-in development",
-          ],
-        },
-        {
-          icon: <ChartColumnDecreasing />,
-          title: "Microsoft Excel Dashboards & Reporting",
-          bg: "bg-orange-500",
-          items: [
-            "Interactive Excel dashboard creation",
-            "KPI and performance dashboards",
-            "PivotTable and PivotChart builds",
-            "Dynamic chart and graph design",
-            "Management reporting templates",
-          ],
-        },
-        {
-          icon: <ShoppingCart />,
-          title: "Data Cleaning & Management",
-          bg: "bg-pink-500",
-          items: [
-            "Large dataset cleaning and formatting",
-            "Duplicate removal and deduplication",
-            "Data import and export management",
-            "Power Query data transformation",
-            "Data validation rules setup",
-          ],
-        },
-        {
-          icon: <User />,
-          title: "Financial Modelling",
-          bg: "bg-violet-500",
-          items: [
-            "Financial forecast models",
-            "Budget planning spreadsheets",
-            "Cash flow models",
-            "Profit and loss templates",
-            "Scenario and sensitivity analysis",
-          ],
-        },
-      ],
+      plans: [
+        {
+          name: "Starter Plan",
+          description: "Part-time support for essential travel advisory tasks.",
+          price: "€26.99",
+          period: "2", // note: "Save €2,000+ vs local hiring",
+          features: [
+            //             "20 hours/month",
+            "Trip planning and itinerary creation",
+            "Customer email consultation",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
 
-      plans: [
-        {
-          name: "Starter Plan",
-          description: " Part-time support for essential Microsoft Excel tasks.",
-          price: "€42.99",
-          period: "2",
-          // note: "Save €2,000+ vs local hiring",
-          features: [
-//             "20 hours/month",
-            "Spreadsheet development and fixes",
-            "Formula and function work",
-            "Weekly reports",
-            "Email support",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-        {
-          name: "Scale Plan",
-          description: " Full Microsoft Excel team for complex modelling and enterprise solutions.",
-          price: "33.99",
-          period: "8",
-          note: null,
-          features: [
-//             "Multiple VAs",
-            "All Growth features",
-            "Financial modelling and forecasting",
-            "Power Query and data transformation",
-            "Custom workflows",
-            "Dedicated Excel specialist",
-            "SLA guarantee",
-          ],
-          cta: "Contact us",
-          highlighted: true,
-        },
-        {
-          name: "Growth Plan",
-          description: "Dedicated support for full Microsoft Excel development and automation.",
-          price: "€35.99",
-          period: "4",
-          note: null,
-          features: [
-//             "Full-time support (160hrs)",
-            "All Starter features",
-            "VBA macro automation",
-            "Dashboard and reporting builds",
-            "Priority support",
-            "Dedicated Excel specialist",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-      ],
-    },
+        {
+          name: "Scale Plan",
+          description:
+            "Full travel advisory team for high-volume travel businesses.",
+          price: "20.99",
+          period: "8",
+          note: null,
+          features: [
+            //             "Multiple VAs",
+            "All Growth features",
+            "Aftersales and customer follow-up",
+            "Travel content and research support",
+            "Custom workflows",
+            "Dedicated Travel Advisor",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: true,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated support for full travel advisory operations.",
+          price: "€22.99",
+          period: "4",
+          note: null,
+          features: [
+            //             "Full-time support (160hrs)",
+            "All Starter features",
+            "Booking administration",
+            "Flight and accommodation research",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+      ],
+    },
 
-    "hire-online-travel-advisor": {
-      heading: "Hire Online Travel Advisor",
-      subText:
-        "Travel businesses that deliver personalised, fast, and reliable advisory services retain more customers and generate more bookings. Get a dedicated online travel advisor who handles your clients with expertise and care — every day.",
-      service: "Online Travel Advisor",
-      // trust:
-      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
-      // help: "What Your Virtual Assistant Can Help With",
-      // dedication:
-      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+    "hire-reservations-clerk": {
+      heading: "Hire Reservations Clerk",
+      subText:
+        "Hire a dedicated reservations clerk in the Netherlands for booking management, reservation processing, availability management, and customer booking support. Fast start.",
+      service: "Reservations Clerk", // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+      services: [
+        {
+          icon: <Mail />,
+          title: "Booking & Reservation Processing",
+          bg: "bg-blue-500",
+          items: [
+            "Inbound reservation request handling",
+            "Booking confirmation and processing",
+            "Group and corporate booking management",
+            "Multi-channel reservation coordination",
+            "Waitlist and alternative offer management",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: " Availability & Calendar Management",
+          bg: "bg-purple-500",
+          items: [
+            "Real-time availability calendar updates",
+            "Rate and room or seat management",
+            "Overbooking prevention and monitoring",
+            "Seasonal availability planning support",
+            "Blackout date and restriction management",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Reservation System Administration",
+          bg: "bg-green-500",
+          items: [
+            "PMS and booking software management",
+            "Booking.com and Expedia administration",
+            "Channel manager updates and maintenance",
+            "System data accuracy and integrity checks",
+            "New reservation channel setup support",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Customer Booking Communication",
+          bg: "bg-orange-500",
+          items: [
+            "Booking inquiry and quote responses",
+            "Confirmation and voucher email handling",
+            "Pre-arrival and pre-stay communication",
+            "Special request and preference coordination",
+            "Booking reminder communication",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: " Changes, Cancellations & Refunds",
+          bg: "bg-pink-500",
+          items: [
+            "Booking modification processing",
+            "Cancellation handling and policy communication",
+            "Refund and credit note coordination",
+            "Rebooking and rescheduling support",
+            "No-show tracking and management",
+          ],
+        },
+        {
+          icon: <User />,
+          title: " Reporting & Administration",
+          bg: "bg-violet-500",
+          items: [
+            "Daily and weekly booking reports",
+            "Occupancy and revenue summaries",
+            "Cancellation and no-show reporting",
+            "Booking source and channel reporting",
+            "Guest data and CRM record updates",
+          ],
+        },
+      ],
 
-      services: [
-        {
-          icon: <Mail />,
-          title: "Trip Planning & Itinerary Creation",
-          bg: "bg-blue-500",
-          items: [
-            "Custom travel itinerary development",
-            "Multi-destination trip planning",
-            "Day-by-day travel schedule creation",
-            "Activity and excursion recommendations",
-            "Travel document checklist preparation",
-          ],
-        },
-        {
-          icon: <Calendar />,
-          title: "Flight & Accommodation Research",
-          bg: "bg-purple-500",
-          items: [
-            "Flight option research and comparison",
-            "Hotel and resort research",
-            "Apartment and villa sourcing",
-            "Best price and availability checks",
-            "Travel package research and comparison",
-          ],
-        },
-        {
-          icon: <MessageSquare />,
-          title: "Customer Travel Consultation",
-          bg: "bg-green-500",
-          items: [
-            "Online chat and email travel consultation",
-            "Destination advice and recommendations",
-            "Travel requirement guidance (visas, insurance)",
-            "Group travel planning support",
-            "Honeymoon and special trip planning",
-          ],
-        },
-        {
-          icon: <ChartColumnDecreasing />,
-          title: "Booking Administration",
-          bg: "bg-orange-500",
-          items: [
-            "Booking confirmation management",
-            "Travel document organisation",
-            "Reservation change and cancellation handling",
-            "Supplier and operator communication",
-            "Pre-departure customer briefings",
-          ],
-        },
-        {
-          icon: <ShoppingCart />,
-          title: "Travel Content & Research",
-          bg: "bg-pink-500",
-          items: [
-            "Destination research and guides",
-            "Travel blog and content support",
-            "FAQ and knowledge base creation",
-            "Travel trend monitoring",
-            "Competitor offer monitoring",
-          ],
-        },
-        {
-          icon: <User />,
-          title: "Aftersales & Customer Follow-Up",
-          bg: "bg-violet-500",
-          items: [
-            "Post-trip customer follow-up",
-            "Review and feedback collection",
-            "Complaint handling and resolution",
-            "Repeat booking outreach",
-            "Loyalty and return customer management",
-          ],
-        },
-      ],
+      plans: [
+        {
+          name: "Starter Plan",
+          description: " Part-time support for essential reservations tasks.",
+          price: "€21.99",
+          period: "2", // note: "Save €2,000+ vs local hiring",
+          features: [
+            //             "20 hours/month",
+            "Booking and reservation processing",
+            " Availability calendar management",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Scale Plan",
+          description:
+            "Full reservations team for high-volume booking businesses.",
+          price: "17.99",
+          period: "8",
+          note: null,
+          features: [
+            //             " Multiple reservations clerks",
+            "All Growth features",
+            "Multi-channel reservation management",
+            " Full reporting and CRM updates",
+            " Custom workflows",
+            "  Dedicated reservations clerk",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: true,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated support for full reservations operations.",
+          price: "€18.99",
+          period: "4",
+          note: null,
+          features: [
+            //             "Full-time support (160hrs)",
+            "All Starter features",
+            " Reservation system administration",
+            "Changes, cancellations and refunds",
+            "Priority support",
+            "Dedicated account manager",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+      ],
+    },
 
-      plans: [
-        {
-          name: "Starter Plan",
-          description: "Part-time support for essential travel advisory tasks.",
-          price: "€26.99",
-          period: "2",
-          // note: "Save €2,000+ vs local hiring",
-          features: [
-//             "20 hours/month",
-            "Trip planning and itinerary creation",
-            "Customer email consultation",
-            "Weekly reports",
-            "Email support",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
+    "hire-customer-service-travel-agency": {
+      heading: "Customer Service Travel Agency",
+      subText:
+        "Travel customers expect fast, knowledgeable, and friendly service — especially when plans change. Get a dedicated travel customer service agent who handles your clients with confidence, professionalism, and genuine care every single day.",
+      service: "Customer Service Travel Agency", // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+      services: [
+        {
+          icon: <Mail />,
+          title: "Travel Inquiry Handling",
+          bg: "bg-blue-500",
+          items: [
+            "Inbound email and chat inquiry responses",
+            "Destination and package information requests",
+            "Pricing and availability queries",
+            "Group travel inquiry management",
+            "Lead qualification and follow-up",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Booking Support & Assistance",
+          bg: "bg-purple-500",
+          items: [
+            "Booking confirmation and document support",
+            "Reservation change request handling",
+            "Travel document and voucher assistance",
+            "Special requirement coordination",
+            "Pre-departure customer briefing support",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Complaint & Disruption Management",
+          bg: "bg-green-500",
+          items: [
+            "Customer complaint handling and resolution",
+            "Flight delay and cancellation support",
+            "Accommodation issue resolution",
+            "Escalation and claim management",
+            "Compensation request processing and follow-up",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "Aftersales Customer Care",
+          bg: "bg-orange-500",
+          items: [
+            "Post-trip feedback and review collection",
+            "Return and repeat booking follow-up",
+            "Refund and credit note handling",
+            "Customer satisfaction survey management",
+            "Loyalty and retention communication",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Multi-Channel Communication",
+          bg: "bg-pink-500",
+          items: [
+            "Email customer service management",
+            "Live chat support handling",
+            "WhatsApp travel support",
+            "Social media message and comment handling",
+            "Phone inquiry coordination support",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Travel CRM & Administration",
+          bg: "bg-violet-500",
+          items: [
+            "Customer profile and history management",
+            "CRM data entry and record updates",
+            "Booking and communication log maintenance",
+            "Customer segmentation and list management",
+            "Reporting on customer service performance",
+          ],
+        },
+      ],
 
-        {
-          name: "Scale Plan",
-          description: "Full travel advisory team for high-volume travel businesses.",
-          price: "20.99",
-          period: "8",
-          note: null,
-          features: [
-//             "Multiple VAs",
-            "All Growth features",
-            "Aftersales and customer follow-up",
-            "Travel content and research support",
-            "Custom workflows",
-            "Dedicated Travel Advisor",
-            "SLA guarantee",
-          ],
-          cta: "Contact us",
-          highlighted: true,
-        },
-        {
-          name: "Growth Plan",
-          description: "Dedicated support for full travel advisory operations.",
-          price: "€22.99",
-          period: "4",
-          note: null,
-          features: [
-//             "Full-time support (160hrs)",
-            "All Starter features",
-            "Booking administration",
-            "Flight and accommodation research",
-            "Priority support",
-            "Dedicated account manager",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-      ],
-    },
+      plans: [
+        {
+          name: "Starter Plan",
+          description:
+            "  Part-time support for essential travel customer service tasks.",
+          price: "€26.99",
+          period: "2", // note: "Save €2,000+ vs local hiring",
+          features: [
+            //             "20 hours/month",
+            "Email and chat inquiry handling",
+            " Basic booking support",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Scale Plan",
+          description:
+            "Full customer service team for high-volume travel agencies.",
+          price: "20.99",
+          period: "8",
+          note: null,
+          features: [
+            //             "Multiple customer service agents",
+            "All Growth features",
+            "Aftersales and retention management",
+            "Full CRM and reporting support",
+            " Custom workflows",
+            "  Dedicated customer service agent",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: true,
+        },
+        {
+          name: "Growth Plan",
+          description:
+            "Dedicated support for full travel customer service operations.",
+          price: "€22.99",
+          period: "4",
+          note: null,
+          features: [
+            //             "Full-time support (160hrs)",
+            "All Starter features",
+            " Complaint and disruption management",
+            "Multi-channel communication support",
+            "Priority support",
+            "Dedicated customer service agent",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+      ],
+    },
 
-    "hire-reservations-clerk": {
-      heading: "Hire Reservations Clerk",
-      subText:
-        "Hire a dedicated reservations clerk in the Netherlands for booking management, reservation processing, availability management, and customer booking support. Fast start.",
-      service: "Reservations Clerk",
-      // trust:
-      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
-      // help: "What Your Virtual Assistant Can Help With",
-      // dedication:
-      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+    "hire-travel-marketer": {
+      heading: "Travel Marketer",
+      subText:
+        "The travel industry is competitive and attention-driven. Businesses that market consistently, tell compelling stories, and reach the right audience at the right moment win more bookings. Get a dedicated travel marketer who grows your brand and drives bookings — every month.",
+      service: "Travel Marketer", // trust:
+      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Virtual Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+      services: [
+        {
+          icon: <Mail />,
+          title: "Travel Content Marketing",
+          bg: "bg-blue-500",
+          items: [
+            "Travel blog and article writing",
+            "Destination guides and itinerary content",
+            "Travel brand storytelling",
+            "SEO content for travel websites",
+            "Content calendar planning and management",
+          ],
+        },
+        {
+          icon: <Calendar />,
+          title: "Social Media Marketing",
+          bg: "bg-purple-500",
+          items: [
+            "Instagram and Facebook travel content",
+            "TikTok and YouTube short content support",
+            "Travel community engagement",
+            "Influencer outreach coordination",
+            "Social media growth strategy",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Email Marketing & Campaigns",
+          bg: "bg-green-500",
+          items: [
+            "Travel newsletter creation and management",
+            "Promotional email campaign writing",
+            "Automated email sequence development",
+            "Seasonal travel offer campaigns",
+            "List segmentation and re-engagement",
+          ],
+        },
+        {
+          icon: <ChartColumnDecreasing />,
+          title: "SEO for Travel Brands",
+          bg: "bg-orange-500",
+          items: [
+            "Travel keyword research and strategy",
+            "On-page SEO for destination and package pages",
+            "Local SEO for travel agencies",
+            "Link building for travel websites",
+            "Monthly SEO reporting and optimisation",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Paid Digital Marketing",
+          bg: "bg-pink-500",
+          items: [
+            "Google Ads campaign management for travel",
+            "Meta Ads for travel promotions",
+            "Retargeting campaign setup and management",
+            "Ad copy writing for travel offers",
+            "Campaign performance tracking and reporting",
+          ],
+        },
+        {
+          icon: <User />,
+          title: "Analytics & Performance Reporting",
+          bg: "bg-violet-500",
+          items: [
+            "Monthly marketing performance reports",
+            "Booking conversion tracking",
+            "Campaign ROI analysis",
+            "Competitor benchmarking",
+            "Data-driven strategy recommendations",
+          ],
+        },
+      ],
 
-      services: [
-        {
-          icon: <Mail />,
-          title: "Booking & Reservation Processing",
-          bg: "bg-blue-500",
-          items: [
-            "Inbound reservation request handling",
-            "Booking confirmation and processing",
-            "Group and corporate booking management",
-            "Multi-channel reservation coordination",
-            "Waitlist and alternative offer management",
-          ],
-        },
-        {
-          icon: <Calendar />,
-          title: " Availability & Calendar Management",
-          bg: "bg-purple-500",
-          items: [
-            "Real-time availability calendar updates",
-            "Rate and room or seat management",
-            "Overbooking prevention and monitoring",
-            "Seasonal availability planning support",
-            "Blackout date and restriction management",
-          ],
-        },
-        {
-          icon: <MessageSquare />,
-          title: "Reservation System Administration",
-          bg: "bg-green-500",
-          items: [
-            "PMS and booking software management",
-            "Booking.com and Expedia administration",
-            "Channel manager updates and maintenance",
-            "System data accuracy and integrity checks",
-            "New reservation channel setup support",
-          ],
-        },
-        {
-          icon: <ChartColumnDecreasing />,
-          title: "Customer Booking Communication",
-          bg: "bg-orange-500",
-          items: [
-            "Booking inquiry and quote responses",
-            "Confirmation and voucher email handling",
-            "Pre-arrival and pre-stay communication",
-            "Special request and preference coordination",
-            "Booking reminder communication",
-          ],
-        },
-        {
-          icon: <ShoppingCart />,
-          title: " Changes, Cancellations & Refunds",
-          bg: "bg-pink-500",
-          items: [
-            "Booking modification processing",
-            "Cancellation handling and policy communication",
-            "Refund and credit note coordination",
-            "Rebooking and rescheduling support",
-            "No-show tracking and management",
-          ],
-        },
-        {
-          icon: <User />,
-          title: " Reporting & Administration",
-          bg: "bg-violet-500",
-          items: [
-            "Daily and weekly booking reports",
-            "Occupancy and revenue summaries",
-            "Cancellation and no-show reporting",
-            "Booking source and channel reporting",
-            "Guest data and CRM record updates",
-          ],
-        },
-      ],
+      plans: [
+        {
+          name: "Starter Plan",
+          description:
+            "Part-time support for essential travel marketing tasks.",
+          price: "€46.99",
+          period: "2", // note: "Save €2,000+ vs local hiring",
+          features: [
+            //             "20 hours/month",
+            " Travel content and social media",
+            " Email marketing support",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Scale Plan",
+          description: " Full marketing team for travel brands and agencies.",
+          price: "36.99",
+          period: "8",
+          note: null,
+          features: [
+            //             "Multiple travel marketers",
+            "All Growth features",
+            "Multi-channel campaign execution",
+            " Full analytics and performance strategy",
+            " Custom workflows",
+            "  Dedicated Travel Marketer",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: true,
+        },
+        {
+          name: "Growth Plan",
+          description:
+            " Dedicated support for full travel marketing operations.",
+          price: "€39.99",
+          period: "4",
+          note: null,
+          features: [
+            //             "Full-time support (160hrs)",
+            "All Starter features",
+            " SEO and paid digital marketing",
+            "Campaign management and reporting",
+            "Priority support",
+            "Dedicated Travel Marketer",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+      ],
+    },
 
-      plans: [
-        {
-          name: "Starter Plan",
-          description: " Part-time support for essential reservations tasks.",
-          price: "€21.99",
-          period: "2",
-          // note: "Save €2,000+ vs local hiring",
-          features: [
-//             "20 hours/month",
-            "Booking and reservation processing",
-            " Availability calendar management",
-            "Weekly reports",
-            "Email support",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-        {
-          name: "Scale Plan",
-          description: "Full reservations team for high-volume booking businesses.",
-          price: "17.99",
-          period: "8",
-          note: null,
-          features: [
-//             " Multiple reservations clerks",
-            "All Growth features",
-            "Multi-channel reservation management",
-            " Full reporting and CRM updates",
-            " Custom workflows",
-            "  Dedicated reservations clerk",
-            "SLA guarantee",
-          ],
-          cta: "Contact us",
-          highlighted: true,
-        },
-        {
-          name: "Growth Plan",
-          description: "Dedicated support for full reservations operations.",
-          price: "€18.99",
-          period: "4",
-          note: null,
-          features: [
-//             "Full-time support (160hrs)",
-            "All Starter features",
-            " Reservation system administration",
-            "Changes, cancellations and refunds",
-            "Priority support",
-            "Dedicated account manager",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-      ],
-    },
+    "hire-hr-assistant-remote": {
+      heading: "HR Assistant",
+      subText:
+        "HR administration is essential but time-consuming — and letting it fall behind creates compliance risks and employee experience issues. Get a dedicated remote HR assistant who keeps your people processes organised, compliant, and running smoothly every day.",
+      service: "HR Assistant", // trust:
+      //   "Hire a Remote HR Assistant in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      // help: "What Your Remote HR Assistant Can Help With",
+      // dedication:
+      //   "Our dedicated remote HR assistants are trained professionals who can support your human resources administration, recruitment coordination, and employee management needs immediately.",
+      services: [
+        {
+          icon: <UserPlus />,
+          title: "Recruitment Support",
+          bg: "bg-blue-500",
+          items: [
+            "Job posting and vacancy management",
+            "CV screening and candidate shortlisting",
+            "Interview scheduling and coordination",
+            "Candidate communication and follow-up",
+            "Recruitment tracker and pipeline management",
+          ],
+        },
+        {
+          icon: <ClipboardList />,
+          title: "Onboarding & Offboarding",
+          bg: "bg-purple-500",
+          items: [
+            "New employee onboarding coordination",
+            "Contract and document preparation support",
+            "Onboarding checklist management",
+            "Employee exit process administration",
+            "Equipment and access coordination support",
+          ],
+        },
+        {
+          icon: <Folder />,
+          title: "HR Administration",
+          bg: "bg-green-500",
+          items: [
+            "Employee record creation and maintenance",
+            "Contract and document management",
+            "Holiday and leave administration",
+            "Sick leave and absence tracking",
+            "HR policy document maintenance",
+          ],
+        },
+        {
+          icon: <DollarSign />,
+          title: "Payroll Support",
+          bg: "bg-orange-500",
+          items: [
+            "Payroll data collection and verification",
+            "Timesheet and hours tracking",
+            "Payroll change processing support",
+            "Payslip distribution coordination",
+            "Payroll query handling",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Employee Communication & Engagement",
+          bg: "bg-pink-500",
+          items: [
+            "Internal HR communication drafting",
+            "Employee survey coordination",
+            "Training and development scheduling",
+            "Performance review process support",
+            "HR newsletter and update preparation",
+          ],
+        },
+        {
+          icon: <BarChart3 />,
+          title: "HR Reporting & Compliance",
+          bg: "bg-violet-500",
+          items: [
+            "Headcount and workforce reporting",
+            "Absence and turnover reporting",
+            "HR KPI dashboard management",
+            "Compliance document tracking",
+            "HR audit and record-keeping support",
+          ],
+        },
+      ],
 
-    "hire-customer-service-travel-agency": {
-      heading: "Customer Service Travel Agency",
-      subText:
-        "Travel customers expect fast, knowledgeable, and friendly service — especially when plans change. Get a dedicated travel customer service agent who handles your clients with confidence, professionalism, and genuine care every single day.",
-      service: "Customer Service Travel Agency",
-      // trust:
-      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
-      // help: "What Your Virtual Assistant Can Help With",
-      // dedication:
-      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+      plans: [
+        {
+          name: "Starter Plan",
+          description:
+            "Part-time support for essential HR administration tasks.",
+          price: "€38.99",
+          period: "2",
+          features: [
+            //             "20 hours/month",
+            "HR admin and employee records",
+            "Recruitment support",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
 
-      services: [
-        {
-          icon: <Mail />,
-          title: "Travel Inquiry Handling",
-          bg: "bg-blue-500",
-          items: [
-            "Inbound email and chat inquiry responses",
-            "Destination and package information requests",
-            "Pricing and availability queries",
-            "Group travel inquiry management",
-            "Lead qualification and follow-up",
-          ],
-        },
-        {
-          icon: <Calendar />,
-          title: "Booking Support & Assistance",
-          bg: "bg-purple-500",
-          items: [
-            "Booking confirmation and document support",
-            "Reservation change request handling",
-            "Travel document and voucher assistance",
-            "Special requirement coordination",
-            "Pre-departure customer briefing support",
-          ],
-        },
-        {
-          icon: <MessageSquare />,
-          title: "Complaint & Disruption Management",
-          bg: "bg-green-500",
-          items: [
-            "Customer complaint handling and resolution",
-            "Flight delay and cancellation support",
-            "Accommodation issue resolution",
-            "Escalation and claim management",
-            "Compensation request processing and follow-up",
-          ],
-        },
-        {
-          icon: <ChartColumnDecreasing />,
-          title: "Aftersales Customer Care",
-          bg: "bg-orange-500",
-          items: [
-            "Post-trip feedback and review collection",
-            "Return and repeat booking follow-up",
-            "Refund and credit note handling",
-            "Customer satisfaction survey management",
-            "Loyalty and retention communication",
-          ],
-        },
-        {
-          icon: <ShoppingCart />,
-          title: "Multi-Channel Communication",
-          bg: "bg-pink-500",
-          items: [
-            "Email customer service management",
-            "Live chat support handling",
-            "WhatsApp travel support",
-            "Social media message and comment handling",
-            "Phone inquiry coordination support",
-          ],
-        },
-        {
-          icon: <User />,
-          title: "Travel CRM & Administration",
-          bg: "bg-violet-500",
-          items: [
-            "Customer profile and history management",
-            "CRM data entry and record updates",
-            "Booking and communication log maintenance",
-            "Customer segmentation and list management",
-            "Reporting on customer service performance",
-          ],
-        },
-      ],
+        {
+          name: "Scale Plan",
+          description:
+            "Full HR team for growing and multi-department businesses.",
+          price: "30.99",
+          period: "8",
+          note: null,
+          features: [
+            //             "Multiple HR assistants",
+            "All Growth features",
+            "Employee engagement support",
+            "HR reporting and compliance",
+            "Custom workflows",
+            "Dedicated HR assistant",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: true,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated support for full HR operations.",
+          price: "€32.99",
+          period: "4",
+          note: null,
+          features: [
+            //             "Full-time support (160hrs)",
+            "All Starter features",
+            "Onboarding and offboarding",
+            "Payroll support and leave management",
+            "Priority support",
+            "Dedicated HR assistant",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+      ],
+    },
 
-      plans: [
-        {
-          name: "Starter Plan",
-          description:
-            "  Part-time support for essential travel customer service tasks.",
-          price: "€26.99",
-          period: "2",
-          // note: "Save €2,000+ vs local hiring",
-          features: [
-//             "20 hours/month",
-            "Email and chat inquiry handling",
-            " Basic booking support",
-            "Weekly reports",
-            "Email support",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-        {
-          name: "Scale Plan",
-          description:
-            "Full customer service team for high-volume travel agencies.",
-          price: "20.99",
-          period: "8",
-          note: null,
-          features: [
-//             "Multiple customer service agents",
-            "All Growth features",
-            "Aftersales and retention management",
-            "Full CRM and reporting support",
-            " Custom workflows",
-            "  Dedicated customer service agent",
-            "SLA guarantee",
-          ],
-          cta: "Contact us",
-          highlighted: true,
-        },
-        {
-          name: "Growth Plan",
-          description:
-            "Dedicated support for full travel customer service operations.",
-          price: "€22.99",
-          period: "4",
-          note: null,
-          features: [
-//             "Full-time support (160hrs)",
-            "All Starter features",
-            " Complaint and disruption management",
-            "Multi-channel communication support",
-            "Priority support",
-            "Dedicated customer service agent",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-      ],
-    },
+    "hire-administrative-accounting-assistant": {
+      heading: "Administrative Accounting Assistant",
+      subText:
+        "Financial administration that piles up leads to errors, missed payments, and compliance headaches. Get a dedicated administrative accounting assistant who keeps your financial records accurate, your invoices on time, and your administration always under control.",
+      service: "Administrative Accounting Assistant",
 
-    "hire-travel-marketer": {
-      heading: "Travel Marketer",
-      subText:
-        "The travel industry is competitive and attention-driven. Businesses that market consistently, tell compelling stories, and reach the right audience at the right moment win more bookings. Get a dedicated travel marketer who grows your brand and drives bookings — every month.",
-      service: "Travel Marketer",
-      // trust:
-      //   "Hire Virtual Assistants in the Netherlands Trusted by Businesses Looking to Scale Faster",
-      // help: "What Your Virtual Assistant Can Help With",
-      // dedication:
-      //   "Our dedicated virtual assistants are trained professionals who can support your business or personal workload immediately.",
+      services: [
+        {
+          icon: <FileText />,
+          title: "Financial Administration",
+          bg: "bg-blue-500",
+          items: [
+            "Daily financial record keeping",
+            "Expense and cost registration",
+            "Bank statement processing",
+            "Transaction categorisation and coding",
+            "Month-end administration support",
+          ],
+        },
+        {
+          icon: <Receipt />,
+          title: "Invoicing & Accounts Receivable",
+          bg: "bg-purple-500",
+          items: [
+            "Sales invoice creation and distribution",
+            "Payment follow-up and reminders",
+            "Accounts receivable tracking",
+            "Credit note processing",
+            "Customer payment reconciliation",
+          ],
+        },
+        {
+          icon: <ShoppingCart />,
+          title: "Accounts Payable & Purchase Administration",
+          bg: "bg-green-500",
+          items: [
+            "Supplier invoice processing and filing",
+            "Purchase order matching and verification",
+            "Accounts payable tracking and management",
+            "Expense claim processing",
+            "Supplier payment preparation support",
+          ],
+        },
+        {
+          icon: <BookOpen />,
+          title: "Bookkeeping Support",
+          bg: "bg-orange-500",
+          items: [
+            "General ledger data entry",
+            "Bank reconciliation support",
+            "Trial balance preparation assistance",
+            "Chart of accounts maintenance",
+            "Accountant liaison and document preparation",
+          ],
+        },
+        {
+          icon: <Database />,
+          title: "Accounting Software Administration",
+          bg: "bg-pink-500",
+          items: [
+            "Exact Online data entry and management",
+            "Moneybird and Twinfield administration",
+            "QuickBooks and Xero record management",
+            "Software data import and export",
+            "System record accuracy and maintenance",
+          ],
+        },
+        {
+          icon: <BarChart3 />,
+          title: "Reporting & Documentation",
+          bg: "bg-violet-500",
+          items: [
+            "Monthly expense and cost reports",
+            "Outstanding invoice reporting",
+            "Payment status summaries",
+            "Financial document filing and organisation",
+            "Audit preparation and document support",
+          ],
+        },
+      ],
 
-      services: [
-        {
-          icon: <Mail />,
-          title: "Travel Content Marketing",
-          bg: "bg-blue-500",
-          items: [
-            "Travel blog and article writing",
-            "Destination guides and itinerary content",
-            "Travel brand storytelling",
-            "SEO content for travel websites",
-            "Content calendar planning and management",
-          ],
-        },
-        {
-          icon: <Calendar />,
-          title: "Social Media Marketing",
-          bg: "bg-purple-500",
-          items: [
-            "Instagram and Facebook travel content",
-            "TikTok and YouTube short content support",
-            "Travel community engagement",
-            "Influencer outreach coordination",
-            "Social media growth strategy",
-          ],
-        },
-        {
-          icon: <MessageSquare />,
-          title: "Email Marketing & Campaigns",
-          bg: "bg-green-500",
-          items: [
-            "Travel newsletter creation and management",
-            "Promotional email campaign writing",
-            "Automated email sequence development",
-            "Seasonal travel offer campaigns",
-            "List segmentation and re-engagement",
-          ],
-        },
-        {
-          icon: <ChartColumnDecreasing />,
-          title: "SEO for Travel Brands",
-          bg: "bg-orange-500",
-          items: [
-            "Travel keyword research and strategy",
-            "On-page SEO for destination and package pages",
-            "Local SEO for travel agencies",
-            "Link building for travel websites",
-            "Monthly SEO reporting and optimisation",
-          ],
-        },
-        {
-          icon: <ShoppingCart />,
-          title: "Paid Digital Marketing",
-          bg: "bg-pink-500",
-          items: [
-            "Google Ads campaign management for travel",
-            "Meta Ads for travel promotions",
-            "Retargeting campaign setup and management",
-            "Ad copy writing for travel offers",
-            "Campaign performance tracking and reporting",
-          ],
-        },
-        {
-          icon: <User />,
-          title: "Analytics & Performance Reporting",
-          bg: "bg-violet-500",
-          items: [
-            "Monthly marketing performance reports",
-            "Booking conversion tracking",
-            "Campaign ROI analysis",
-            "Competitor benchmarking",
-            "Data-driven strategy recommendations",
-          ],
-        },
-      ],
+      plans: [
+        {
+          name: "Starter Plan",
+          description:
+            "Part-time support for essential accounting admin tasks.",
+          price: "€38.99",
+          period: "2",
+          features: [
+            //             "20 hours/month",
+            "Invoicing and accounts receivable",
+            "Financial record keeping",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
 
-      plans: [
-        {
-          name: "Starter Plan",
-          description:
-            "Part-time support for essential travel marketing tasks.",
-          price: "€46.99",
-          period: "2",
-          // note: "Save €2,000+ vs local hiring",
-          features: [
-//             "20 hours/month",
-            " Travel content and social media",
-            " Email marketing support",
-            "Weekly reports",
-            "Email support",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-        {
-          name: "Scale Plan",
-          description: " Full marketing team for travel brands and agencies.",
-          price: "36.99",
-          period: "8",
-          note: null,
-          features: [
-//             "Multiple travel marketers",
-            "All Growth features",
-            "Multi-channel campaign execution",
-            " Full analytics and performance strategy",
-            " Custom workflows",
-            "  Dedicated Travel Marketer",
-            "SLA guarantee",
-          ],
-          cta: "Contact us",
-          highlighted: true,
-        },
-        {
-          name: "Growth Plan",
-          description:
-            " Dedicated support for full travel marketing operations.",
-          price: "€39.99",
-          period: "4",
-          note: null,
-          features: [
-//             "Full-time support (160hrs)",
-            "All Starter features",
-            " SEO and paid digital marketing",
-            "Campaign management and reporting",
-            "Priority support",
-            "Dedicated Travel Marketer",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-      ],
-    },
+        {
+          name: "Scale Plan",
+          description: "Full accounting admin team for growing businesses.",
+          price: "30.99",
+          period: "8",
+          note: null,
+          features: [
+            //             "Multiple accounting assistants",
+            "All Growth features",
+            "Full financial reporting and documentation",
+            "Audit preparation support",
+            "Custom workflows",
+            "Dedicated Administrative Accounting Assistant",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: true,
+        },
 
-    "hire-hr-assistant-remote": {
-      heading: "HR Assistant",
-      subText:
-        "HR administration is essential but time-consuming — and letting it fall behind creates compliance risks and employee experience issues. Get a dedicated remote HR assistant who keeps your people processes organised, compliant, and running smoothly every day.",
-      service: "HR Assistant",
-      // trust:
-      //   "Hire a Remote HR Assistant in the Netherlands Trusted by Businesses Looking to Scale Faster",
-      // help: "What Your Remote HR Assistant Can Help With",
-      // dedication:
-      //   "Our dedicated remote HR assistants are trained professionals who can support your human resources administration, recruitment coordination, and employee management needs immediately.",
+        {
+          name: "Growth Plan",
+          description: "Dedicated support for full financial administration.",
+          price: "€32.99",
+          period: "4",
+          note: null,
+          features: [
+            //             "Full-time support (160hrs)",
+            "All Starter features",
+            "Accounts payable and bookkeeping support",
+            "Accounting software administration",
+            "Priority support",
+            "Dedicated Administrative Accounting Assistant",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+      ],
+    },
 
-      services: [
-        {
-          icon: <UserPlus />,
-          title: "Recruitment Support",
-          bg: "bg-blue-500",
-          items: [
-            "Job posting and vacancy management",
-            "CV screening and candidate shortlisting",
-            "Interview scheduling and coordination",
-            "Candidate communication and follow-up",
-            "Recruitment tracker and pipeline management",
-          ],
-        },
-        {
-          icon: <ClipboardList />,
-          title: "Onboarding & Offboarding",
-          bg: "bg-purple-500",
-          items: [
-            "New employee onboarding coordination",
-            "Contract and document preparation support",
-            "Onboarding checklist management",
-            "Employee exit process administration",
-            "Equipment and access coordination support",
-          ],
-        },
-        {
-          icon: <Folder />,
-          title: "HR Administration",
-          bg: "bg-green-500",
-          items: [
-            "Employee record creation and maintenance",
-            "Contract and document management",
-            "Holiday and leave administration",
-            "Sick leave and absence tracking",
-            "HR policy document maintenance",
-          ],
-        },
-        {
-          icon: <DollarSign />,
-          title: "Payroll Support",
-          bg: "bg-orange-500",
-          items: [
-            "Payroll data collection and verification",
-            "Timesheet and hours tracking",
-            "Payroll change processing support",
-            "Payslip distribution coordination",
-            "Payroll query handling",
-          ],
-        },
-        {
-          icon: <MessageSquare />,
-          title: "Employee Communication & Engagement",
-          bg: "bg-pink-500",
-          items: [
-            "Internal HR communication drafting",
-            "Employee survey coordination",
-            "Training and development scheduling",
-            "Performance review process support",
-            "HR newsletter and update preparation",
-          ],
-        },
-        {
-          icon: <BarChart3 />,
-          title: "HR Reporting & Compliance",
-          bg: "bg-violet-500",
-          items: [
-            "Headcount and workforce reporting",
-            "Absence and turnover reporting",
-            "HR KPI dashboard management",
-            "Compliance document tracking",
-            "HR audit and record-keeping support",
-          ],
-        },
-      ],
+    "hire-customer-relations-agent": {
+      heading: "Customer Relations Agent",
+      subText:
+        "Retaining an existing customer costs far less than acquiring a new one — yet most businesses underinvest in the relationships that drive loyalty and repeat revenue. Get a dedicated customer relations agent who nurtures your client relationships and keeps your customers coming back.",
+      service: "Customer Relations Agent",
 
-      plans: [
-        {
-          name: "Starter Plan",
-          description:
-            "Part-time support for essential HR administration tasks.",
-          price: "€38.99",
-          period: "2",
-          features: [
-//             "20 hours/month",
-            "HR admin and employee records",
-            "Recruitment support",
-            "Weekly reports",
-            "Email support",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
+      services: [
+        {
+          icon: <Users />,
+          title: "Client Relationship Management",
+          bg: "bg-blue-500",
+          items: [
+            "Ongoing client check-in and communication",
+            "Account health monitoring",
+            "Relationship building and trust development",
+            "Key client milestone tracking",
+            "Long-term client success planning",
+          ],
+        },
+        {
+          icon: <HeartHandshake />,
+          title: "Customer Retention & Loyalty",
+          bg: "bg-purple-500",
+          items: [
+            "At-risk customer identification and outreach",
+            "Churn prevention communication",
+            "Loyalty programme management and support",
+            "Re-engagement campaign coordination",
+            "Retention offer and incentive communication",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Account Support & Communication",
+          bg: "bg-green-500",
+          items: [
+            "Dedicated point of contact for key accounts",
+            "Account query and issue resolution",
+            "Contract and renewal reminder management",
+            "Upsell and cross-sell opportunity communication",
+            "Client update and progress reporting",
+          ],
+        },
+        {
+          icon: <Smile />,
+          title: "Customer Satisfaction Management",
+          bg: "bg-orange-500",
+          items: [
+            "NPS and satisfaction survey management",
+            "Feedback collection and analysis",
+            "Complaint escalation and resolution",
+            "Service improvement recommendation reporting",
+            "Customer experience monitoring",
+          ],
+        },
+        {
+          icon: <Database />,
+          title: "CRM Management & Administration",
+          bg: "bg-pink-500",
+          items: [
+            "CRM data entry and record maintenance",
+            "Customer interaction logging",
+            "Account segmentation and tagging",
+            "Pipeline and relationship stage tracking",
+            "CRM reporting and activity summaries",
+          ],
+        },
+        {
+          icon: <BarChart3 />,
+          title: "Reporting & Insights",
+          bg: "bg-violet-500",
+          items: [
+            "Customer retention rate reporting",
+            "Account health and satisfaction reports",
+            "Churn and at-risk customer analysis",
+            "Relationship activity summaries",
+            "Monthly customer relations performance reports",
+          ],
+        },
+      ],
 
-        {
-          name: "Scale Plan",
-          description:
-            "Full HR team for growing and multi-department businesses.",
-          price: "30.99",
-          period: "8",
-          note: null,
-          features: [
-//             "Multiple HR assistants",
-            "All Growth features",
-            "Employee engagement support",
-            "HR reporting and compliance",
-            "Custom workflows",
-            "Dedicated HR assistant",
-            "SLA guarantee",
-          ],
-          cta: "Contact us",
-          highlighted: true,
-        },
-        {
-          name: "Growth Plan",
-          description: "Dedicated support for full HR operations.",
-          price: "€32.99",
-          period: "4",
-          note: null,
-          features: [
-//             "Full-time support (160hrs)",
-            "All Starter features",
-            "Onboarding and offboarding",
-            "Payroll support and leave management",
-            "Priority support",
-            "Dedicated HR assistant",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-      ],
-    },
+      plans: [
+        {
+          name: "Starter Plan",
+          description:
+            "Part-time support for essential customer relations tasks.",
+          price: "€26.99",
+          period: "2",
+          features: [
+            //             "20 hours/month",
+            "Client communication and check-ins",
+            "Basic CRM management",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
 
-    "hire-administrative-accounting-assistant": {
-      heading: "Administrative Accounting Assistant",
-      subText:
-        "Financial administration that piles up leads to errors, missed payments, and compliance headaches. Get a dedicated administrative accounting assistant who keeps your financial records accurate, your invoices on time, and your administration always under control.",
-      service: "Administrative Accounting Assistant",
+        {
+          name: "Scale Plan",
+          description: "Full customer relations team for growing client bases.",
+          price: "20.99",
+          period: "8",
+          note: null,
+          features: [
+            //             "Multiple customer relations agents",
+            "All Growth features",
+            "Full account support and CRM management",
+            "Reporting and churn analysis",
+            "Custom workflows",
+            "Dedicated customer relations agent",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: true,
+        },
+        {
+          name: "Growth Plan",
+          description:
+            "Dedicated support for full customer relations operations.",
+          price: "€22.99",
+          period: "4",
+          note: null,
+          features: [
+            //             "Full-time support (160hrs)",
+            "All Starter features",
+            "Retention and loyalty management",
+            "Customer satisfaction management",
+            "Priority support",
+            "Dedicated customer relations agent",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+      ],
+    },
 
-      services: [
-        {
-          icon: <FileText />,
-          title: "Financial Administration",
-          bg: "bg-blue-500",
-          items: [
-            "Daily financial record keeping",
-            "Expense and cost registration",
-            "Bank statement processing",
-            "Transaction categorisation and coding",
-            "Month-end administration support",
-          ],
-        },
-        {
-          icon: <Receipt />,
-          title: "Invoicing & Accounts Receivable",
-          bg: "bg-purple-500",
-          items: [
-            "Sales invoice creation and distribution",
-            "Payment follow-up and reminders",
-            "Accounts receivable tracking",
-            "Credit note processing",
-            "Customer payment reconciliation",
-          ],
-        },
-        {
-          icon: <ShoppingCart />,
-          title: "Accounts Payable & Purchase Administration",
-          bg: "bg-green-500",
-          items: [
-            "Supplier invoice processing and filing",
-            "Purchase order matching and verification",
-            "Accounts payable tracking and management",
-            "Expense claim processing",
-            "Supplier payment preparation support",
-          ],
-        },
-        {
-          icon: <BookOpen />,
-          title: "Bookkeeping Support",
-          bg: "bg-orange-500",
-          items: [
-            "General ledger data entry",
-            "Bank reconciliation support",
-            "Trial balance preparation assistance",
-            "Chart of accounts maintenance",
-            "Accountant liaison and document preparation",
-          ],
-        },
-        {
-          icon: <Database />,
-          title: "Accounting Software Administration",
-          bg: "bg-pink-500",
-          items: [
-            "Exact Online data entry and management",
-            "Moneybird and Twinfield administration",
-            "QuickBooks and Xero record management",
-            "Software data import and export",
-            "System record accuracy and maintenance",
-          ],
-        },
-        {
-          icon: <BarChart3 />,
-          title: "Reporting & Documentation",
-          bg: "bg-violet-500",
-          items: [
-            "Monthly expense and cost reports",
-            "Outstanding invoice reporting",
-            "Payment status summaries",
-            "Financial document filing and organisation",
-            "Audit preparation and document support",
-          ],
-        },
-      ],
+    "hire-ml-engineer": {
+      heading: "ML Engineer",
+      subText:
+        "Building production-ready machine learning systems requires more than a data scientist — it requires engineering discipline, scalable infrastructure, and deployment expertise. Get a dedicated ML engineer who takes your models from development all the way to reliable, production-scale systems.",
+      service: "ML Engineer",
 
-      plans: [
-        {
-          name: "Starter Plan",
-          description:
-            "Part-time support for essential accounting admin tasks.",
-          price: "€38.99",
-          period: "2",
-          features: [
-//             "20 hours/month",
-            "Invoicing and accounts receivable",
-            "Financial record keeping",
-            "Weekly reports",
-            "Email support",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
+      services: [
+        {
+          icon: <Users />,
+          title: "Machine Learning Model Development",
+          bg: "bg-blue-500",
+          items: [
+            "Supervised and unsupervised model development",
+            "Classification, regression, and clustering models",
+            "Model training, evaluation, and validation",
+            "Feature engineering and selection",
+            "Ensemble and deep learning model builds",
+          ],
+        },
+        {
+          icon: <HeartHandshake />,
+          title: "MLOps & Model Deployment",
+          bg: "bg-purple-500",
+          items: [
+            "ML pipeline design and automation",
+            "Model containerisation with Docker",
+            "Kubernetes-based model serving",
+            "CI/CD pipeline setup for ML systems",
+            "Model versioning and experiment tracking",
+          ],
+        },
+        {
+          icon: <MessageSquare />,
+          title: "Deep Learning Development",
+          bg: "bg-green-500",
+          items: [
+            "Neural network architecture design",
+            "CNN, RNN, and Transformer model builds",
+            "PyTorch and TensorFlow development",
+            "Transfer learning and fine-tuning",
+            "GPU-accelerated training setup",
+          ],
+        },
+        {
+          icon: <Smile />,
+          title: "Data Pipeline Engineering for ML",
+          bg: "bg-orange-500",
+          items: [
+            "Feature store design and management",
+            "Training data pipeline development",
+            "Data preprocessing and augmentation",
+            "Real-time and batch inference pipelines",
+            "Data drift and quality monitoring",
+          ],
+        },
+        {
+          icon: <Database />,
+          title: "Model Monitoring & Optimisation",
+          bg: "bg-pink-500",
+          items: [
+            "Production model performance monitoring",
+            "Model drift detection and retraining",
+            "Inference speed and latency optimisation",
+            "A/B testing for model versions",
+            "Model explainability and bias analysis",
+          ],
+        },
+        {
+          icon: <BarChart3 />,
+          title: "Cloud ML Infrastructure",
+          bg: "bg-violet-500",
+          items: [
+            "AWS SageMaker and Google Vertex AI",
+            "Azure ML deployment and management",
+            "Scalable ML infrastructure architecture",
+            "Cost optimisation for ML workloads",
+            "ML platform setup and management",
+          ],
+        },
+      ],
 
-        {
-          name: "Scale Plan",
-          description: "Full accounting admin team for growing businesses.",
-          price: "30.99",
-          period: "8",
-          note: null,
-          features: [
-//             "Multiple accounting assistants",
-            "All Growth features",
-            "Full financial reporting and documentation",
-            "Audit preparation support",
-            "Custom workflows",
-            "Dedicated Administrative Accounting Assistant",
-            "SLA guarantee",
-          ],
-          cta: "Contact us",
-          highlighted: true,
-        },
-
-        {
-          name: "Growth Plan",
-          description: "Dedicated support for full financial administration.",
-          price: "€32.99",
-          period: "4",
-          note: null,
-          features: [
-//             "Full-time support (160hrs)",
-            "All Starter features",
-            "Accounts payable and bookkeeping support",
-            "Accounting software administration",
-            "Priority support",
-            "Dedicated Administrative Accounting Assistant",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-      ],
-    },
-
-    "hire-customer-relations-agent": {
-      heading: "Customer Relations Agent",
-      subText:
-        "Retaining an existing customer costs far less than acquiring a new one — yet most businesses underinvest in the relationships that drive loyalty and repeat revenue. Get a dedicated customer relations agent who nurtures your client relationships and keeps your customers coming back.",
-      service: "Customer Relations Agent",
-
-      services: [
-        {
-          icon: <Users />,
-          title: "Client Relationship Management",
-          bg: "bg-blue-500",
-          items: [
-            "Ongoing client check-in and communication",
-            "Account health monitoring",
-            "Relationship building and trust development",
-            "Key client milestone tracking",
-            "Long-term client success planning",
-          ],
-        },
-        {
-          icon: <HeartHandshake />,
-          title: "Customer Retention & Loyalty",
-          bg: "bg-purple-500",
-          items: [
-            "At-risk customer identification and outreach",
-            "Churn prevention communication",
-            "Loyalty programme management and support",
-            "Re-engagement campaign coordination",
-            "Retention offer and incentive communication",
-          ],
-        },
-        {
-          icon: <MessageSquare />,
-          title: "Account Support & Communication",
-          bg: "bg-green-500",
-          items: [
-            "Dedicated point of contact for key accounts",
-            "Account query and issue resolution",
-            "Contract and renewal reminder management",
-            "Upsell and cross-sell opportunity communication",
-            "Client update and progress reporting",
-          ],
-        },
-        {
-          icon: <Smile />,
-          title: "Customer Satisfaction Management",
-          bg: "bg-orange-500",
-          items: [
-            "NPS and satisfaction survey management",
-            "Feedback collection and analysis",
-            "Complaint escalation and resolution",
-            "Service improvement recommendation reporting",
-            "Customer experience monitoring",
-          ],
-        },
-        {
-          icon: <Database />,
-          title: "CRM Management & Administration",
-          bg: "bg-pink-500",
-          items: [
-            "CRM data entry and record maintenance",
-            "Customer interaction logging",
-            "Account segmentation and tagging",
-            "Pipeline and relationship stage tracking",
-            "CRM reporting and activity summaries",
-          ],
-        },
-        {
-          icon: <BarChart3 />,
-          title: "Reporting & Insights",
-          bg: "bg-violet-500",
-          items: [
-            "Customer retention rate reporting",
-            "Account health and satisfaction reports",
-            "Churn and at-risk customer analysis",
-            "Relationship activity summaries",
-            "Monthly customer relations performance reports",
-          ],
-        },
-      ],
-
-      plans: [
-        {
-          name: "Starter Plan",
-          description:
-            "Part-time support for essential customer relations tasks.",
-          price: "€26.99",
-          period: "2",
-          features: [
-//             "20 hours/month",
-            "Client communication and check-ins",
-            "Basic CRM management",
-            "Weekly reports",
-            "Email support",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-
-        {
-          name: "Scale Plan",
-          description: "Full customer relations team for growing client bases.",
-          price: "20.99",
-          period: "8",
-          note: null,
-          features: [
-//             "Multiple customer relations agents",
-            "All Growth features",
-            "Full account support and CRM management",
-            "Reporting and churn analysis",
-            "Custom workflows",
-            "Dedicated customer relations agent",
-            "SLA guarantee",
-          ],
-          cta: "Contact us",
-          highlighted: true,
-        },
-        {
-          name: "Growth Plan",
-          description:
-            "Dedicated support for full customer relations operations.",
-          price: "€22.99",
-          period: "4",
-          note: null,
-          features: [
-//             "Full-time support (160hrs)",
-            "All Starter features",
-            "Retention and loyalty management",
-            "Customer satisfaction management",
-            "Priority support",
-            "Dedicated customer relations agent",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-      ],
-    },
-
-    "hire-ml-engineer": {
-      heading: "ML Engineer",
-      subText:
-        "Building production-ready machine learning systems requires more than a data scientist — it requires engineering discipline, scalable infrastructure, and deployment expertise. Get a dedicated ML engineer who takes your models from development all the way to reliable, production-scale systems.",
-      service: "ML Engineer",
-
-      services: [
-        {
-          icon: <Users />,
-          title: "Machine Learning Model Development",
-          bg: "bg-blue-500",
-          items: [
-            "Supervised and unsupervised model development",
-            "Classification, regression, and clustering models",
-            "Model training, evaluation, and validation",
-            "Feature engineering and selection",
-            "Ensemble and deep learning model builds",
-          ],
-        },
-        {
-          icon: <HeartHandshake />,
-          title: "MLOps & Model Deployment",
-          bg: "bg-purple-500",
-          items: [
-            "ML pipeline design and automation",
-            "Model containerisation with Docker",
-            "Kubernetes-based model serving",
-            "CI/CD pipeline setup for ML systems",
-            "Model versioning and experiment tracking",
-          ],
-        },
-        {
-          icon: <MessageSquare />,
-          title: "Deep Learning Development",
-          bg: "bg-green-500",
-          items: [
-            "Neural network architecture design",
-            "CNN, RNN, and Transformer model builds",
-            "PyTorch and TensorFlow development",
-            "Transfer learning and fine-tuning",
-            "GPU-accelerated training setup",
-          ],
-        },
-        {
-          icon: <Smile />,
-          title: "Data Pipeline Engineering for ML",
-          bg: "bg-orange-500",
-          items: [
-            "Feature store design and management",
-            "Training data pipeline development",
-            "Data preprocessing and augmentation",
-            "Real-time and batch inference pipelines",
-            "Data drift and quality monitoring",
-          ],
-        },
-        {
-          icon: <Database />,
-          title: "Model Monitoring & Optimisation",
-          bg: "bg-pink-500",
-          items: [
-            "Production model performance monitoring",
-            "Model drift detection and retraining",
-            "Inference speed and latency optimisation",
-            "A/B testing for model versions",
-            "Model explainability and bias analysis",
-          ],
-        },
-        {
-          icon: <BarChart3 />,
-          title: "Cloud ML Infrastructure",
-          bg: "bg-violet-500",
-          items: [
-            "AWS SageMaker and Google Vertex AI",
-            "Azure ML deployment and management",
-            "Scalable ML infrastructure architecture",
-            "Cost optimisation for ML workloads",
-            "ML platform setup and management",
-          ],
-        },
-      ],
-
-      plans: [
-        {
-          name: "Starter Plan",
-          description: "Part-time support for essential ML development tasks.",
-          price: "€63.99",
-          period: "2",
-          features: [
-//             "20 hours/month",
-            "ML model development and evaluation",
-            "Basic MLOps pipeline support",
-            "Weekly reports",
-            "Email support",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-        {
-          name: "Scale Plan",
-          description: " Full ML engineering team for production AI systems.",
-          price: "49.99",
-          period: "8",
-          note: null,
-          features: [
-//             "Multiple ML engineers",
-            "All Growth features",
-            " Cloud ML infrastructure and MLOps",
-            "Model monitoring and optimisation",
-            "Custom workflows",
-            "Dedicated ML engineer",
-            "SLA guarantee",
-          ],
-          cta: "Contact us",
-          highlighted: true,
-        },
-        {
-          name: "Growth Plan",
-          description: "Dedicated support for full ML engineering operations.",
-          price: "€53.99",
-          period: "4",
-          note: null,
-          features: [
-//             "Full-time support (160hrs)",
-            "All Starter features",
-            "Deep learning and model deployment",
-            "Data pipeline engineering for ML",
-            "Priority support",
-            "Dedicated ML engineer",
-          ],
-          cta: "Get Started",
-          highlighted: false,
-        },
-      ],
-    },
+      plans: [
+        {
+          name: "Starter Plan",
+          description: "Part-time support for essential ML development tasks.",
+          price: "€63.99",
+          period: "2",
+          features: [
+            //             "20 hours/month",
+            "ML model development and evaluation",
+            "Basic MLOps pipeline support",
+            "Weekly reports",
+            "Email support",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+        {
+          name: "Scale Plan",
+          description: " Full ML engineering team for production AI systems.",
+          price: "49.99",
+          period: "8",
+          note: null,
+          features: [
+            //             "Multiple ML engineers",
+            "All Growth features",
+            " Cloud ML infrastructure and MLOps",
+            "Model monitoring and optimisation",
+            "Custom workflows",
+            "Dedicated ML engineer",
+            "SLA guarantee",
+          ],
+          cta: "Contact us",
+          highlighted: true,
+        },
+        {
+          name: "Growth Plan",
+          description: "Dedicated support for full ML engineering operations.",
+          price: "€53.99",
+          period: "4",
+          note: null,
+          features: [
+            //             "Full-time support (160hrs)",
+            "All Starter features",
+            "Deep learning and model deployment",
+            "Data pipeline engineering for ML",
+            "Priority support",
+            "Dedicated ML engineer",
+          ],
+          cta: "Get Started",
+          highlighted: false,
+        },
+      ],
+    },
   };
 
 export const serviceData = ({ slug }: { slug: string }) => {
