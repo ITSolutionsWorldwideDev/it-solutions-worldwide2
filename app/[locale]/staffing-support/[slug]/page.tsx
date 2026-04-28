@@ -6,7 +6,7 @@ type Props = {
   params: Promise<{ slug: string; locale: string }>;
 };
 
-function cleanSlug(slug:string):string {
+function cleanSlug(slug: string): string {
   return slug
     .replace(/^hire-/, "") // remove "hire-" from start
     .replace(/[^a-zA-Z0-9\s-]/g, "") // remove special characters
@@ -19,9 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, locale } = await params;
   const title = cleanSlug(slug);
   // console.log(locale, slug);
-  console.log(await params);
+  // console.log(await params);
   return {
-    title: `${title} | IT Solutions Worldwide`,
+    title: {
+      absolute: title,
+    },
     // console.log(title)
     alternates: {
       canonical: `https://www.itsolutionsworldwide.com/${locale}/staffing-support/${slug}`,
