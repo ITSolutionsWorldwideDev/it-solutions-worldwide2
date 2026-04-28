@@ -7,7 +7,7 @@ import MetaPixel from "@/components/MetaPixel";
 import GoogleTag from "@/components/GoogleTag";
 import GoogleTagManager from "@/components/GoogleTagManager";
 import Script from "next/script";
-import {GoogleAnalytics} from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
 const lexend = Lexend({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
