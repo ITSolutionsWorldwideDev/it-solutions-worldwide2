@@ -2,19 +2,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT),
-  secure: Number(process.env.SMTP_PORT) === 465,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-  pool: true,
-  maxConnections: 3,
-  maxMessages: 50,
-});
-
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json();
@@ -27,7 +14,24 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const mailBody = {
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT),
+      secure: Number(process.env.SMTP_PORT) === 465,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+
+      connectionTimeout: 5000, // 5s to establish TCP connection
+      greetingTimeout: 5000, // 5s for SMTP greeting
+      socketTimeout: 10000,
+      // pool: true,
+      // maxConnections: 3,
+      // maxMessages: 50,
+    });
+
+    transporter.sendMail( {
       from: `"IT Solutions Worldwide Contact" <${process.env.SMTP_USER}>`,
       to: process.env.MK_EMAIL,
       cc: process.env.CC_EMAIL,
@@ -46,9 +50,9 @@ export async function POST(req: NextRequest) {
         <br/>
         <p><strong>Message:</strong> ${service || "Not selected"}</p>
         `,
-    };
+    }).catch((err)=>console.error("Unable to send email:",err));
 
-    await transporter.sendMail(mailBody);
+    // const emailPromise = transporter.sendMail(mailBody);
 
     return NextResponse.json({
       ok: true,
@@ -57,10 +61,13 @@ export async function POST(req: NextRequest) {
     });
   } catch (err: any) {
     console.error("Email error:", err);
-    return NextResponse.json({
-      ok: false,
-      success: false,
-      error: err.message || "Something went wrong.",
-    });
+    return NextResponse.json(
+      {
+        ok: false,
+        success: false,
+        error: err.message || "Something went wrong.",
+      },
+      { status: 500 },
+    );
   }
 }

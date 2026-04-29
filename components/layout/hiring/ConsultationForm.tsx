@@ -37,6 +37,7 @@ const ConsultationForm = ({ slug }: { slug: string }) => {
 
       const data = await res.json();
       if (data.success) {
+        console.log(data)
         
         // alert("Form submitted successfully!");
 

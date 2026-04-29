@@ -12,7 +12,7 @@ const thankYouPage = async ({
   return (
     <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-white via-gray-50 to-teal-50 px-4">
       <div className="max-w-md text-center bg-white shadow-lg rounded-2xl p-8 border">
-        <div className="text-5xl mb-4">🎉</div>
+        {/* <div className="text-5xl mb-4">🎉</div> */}
 
         <h1 className="text-3xl font-bold text-slate-900 mb-2">Thank You!</h1>
 
