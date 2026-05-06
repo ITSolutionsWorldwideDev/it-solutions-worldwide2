@@ -9,11 +9,19 @@ import FAQSection2 from "@/components/layout/FAQ-section-2";
 // import ConsultationSection from "@/components/layout/consultation-section";
 import MarketingBanner from "@/components/ui/marketing-banner";
 import BannerInquirySection from "@/components/layout/banner-inquiry-section";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: {
+    absolute: "Professional IT Support Services in Netherlands",
+  },
+  description:
+    "Reliable IT support services in the Netherlands, from ERP implementation and software development to automation & managed IT solutions.",
+};
 export default async function WebsiteDesignDevelopment({
   params,
 }: {
-  params: Promise<{ locale: string; }>;
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 

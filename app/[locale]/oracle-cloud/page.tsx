@@ -9,7 +9,16 @@ import ConsultationSection from "@/components/layout/consultation-section";
 import ImageSectionBgBlue from "@/components/layout/image-section-bg-blue";
 import ImageSection2 from "@/components/layout/image-section-2";
 import BannerSection2 from "@/components/layout/banner-section-2";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Oracle Cloud Services in Netherlands | ITWW",
+  },
+  description:
+    "Accelerate your digital transformation with Oracle Cloud services in the Netherlands, implementation, migration, data & AI solutions by certified experts.",
+};
 export default async function OracleCloud({
   params,
 }: {

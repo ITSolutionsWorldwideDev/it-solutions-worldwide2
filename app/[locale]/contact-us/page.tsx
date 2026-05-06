@@ -6,11 +6,19 @@ import LocationMap from "@/components/layout/location-map";
 // import Herosection from '../../components/Herosection2';
 // import ContactSection from '../../components/Contact';
 // import LocationMap from '../../components/Location';
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: {
+    absolute: "Free IT Consultation in Netherlands | Contact Us",
+  },
+  description:
+    "Get in touch with IT Solutions Worldwide for a free consultation on IT, supply chain, digital services or staffing support in the Netherlands.",
+};
 export default async function ContactUs({
   params,
 }: {
-  params: Promise<{ locale: string; }>;
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 

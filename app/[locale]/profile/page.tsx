@@ -8,6 +8,9 @@ import GetInTouchSection from "@/components/layout/about/get-in-touch-section";
 import TeamMembersTabsSection from "@/components/layout/about/team-members-tabs-section";
 import BannerSection3 from "@/components/layout/banner-section-3";
 
+
+
+
 export default async function ProfilePage({
   params,
 }: {

@@ -17,11 +17,11 @@ const lexend = Lexend({
 export const metadata: Metadata = {
   title: {
     default:
-      "Empowering Businesses with Smart IT Solutions | IT Solutions Worldwide",
+      "Smart IT & Business Services in Netherlands | ITWW",
     template: "%s | IT Solutions Worldwide",
   },
   description:
-    "Get expert marketing automation & professional services automation software in the Netherlands. Scalable solutions tailored to your business needs.",
+    "IT Solutions Worldwide delivers supply chain, digital, staffing & Oracle Cloud services in the Netherlands. Get a free consultation today.",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },

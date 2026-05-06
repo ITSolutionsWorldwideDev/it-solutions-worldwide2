@@ -8,7 +8,15 @@ import ProcessFlow from "@/components/layout/process-flow";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import MarketingBanner from "@/components/ui/marketing-banner";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: {
+    absolute: "SEO Services Netherlands | Rank Higher on Google",
+  },
+  description:
+    "Improve your search rankings with professional SEO services in the Netherlands. On-page, technical & link building strategies tailored to your business.",
+};
 export default async function SEOServices({
   params,
 }: {

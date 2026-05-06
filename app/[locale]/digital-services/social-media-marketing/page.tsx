@@ -8,7 +8,16 @@ import FAQSection2 from "@/components/layout/FAQ-section-2";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import MarketingBanner from "@/components/ui/marketing-banner";
 import { ClientLogosSlider } from "@/components/layout/home/AnimationComponents";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Social Media Marketing Services | Netherlands",
+  },
+  description:
+    "Grow your brand with strategic social media marketing in the Netherlands. Content creation, community management & paid social campaigns that convert.",
+};
 export default async function SocialMediaMarketing({
   params,
 }: {

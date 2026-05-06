@@ -39,16 +39,19 @@ export default function NavbarHome() {
     <>
       <nav className="relative z-10 flex items-center justify-between px-4 py-5 text-white 2xl:text-xl lg:px-8 gap-5">
         <div className="flex items-center space-x-2 w-32">
-          <Link href="/">
+          <Link href="/#hometop">
             <img
               src="/assets/images/main-logo.png"
               alt="IT Solutions Worldwide Logo"
             />
           </Link>
-        </div>
+        </div>  
 
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="focus:outline-none cursor-pointer">
+          <button
+            onClick={toggleMenu}
+            className="focus:outline-none cursor-pointer"
+          >
             <svg
               className="h-6 w-6"
               fill="none"

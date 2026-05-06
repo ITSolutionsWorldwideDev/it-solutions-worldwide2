@@ -8,6 +8,16 @@ import ProcessFlow from "@/components/layout/process-flow";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
 import ConsultationSection from "@/components/layout/consultation-section";
 import BannerSection2 from "@/components/layout/banner-section-2";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Supply Chain Management Services | Netherlands",
+  },
+  description:
+    "Expert supply chain management services in the Netherlands. We optimize procurement, logistics, warehousing & distribution for your business.",
+};
 
 export default async function SCM({
   params,

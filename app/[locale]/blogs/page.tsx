@@ -3,7 +3,16 @@
 import BlogsClient from "@/components/layout/home/BlogsClient";
 import initServerI18n from "@/utils/serverTranslation";
 
+import { Metadata } from "next";
 
+
+export const metadata:Metadata={  
+  title:{
+    absolute:'IT & Supply Chain Insights Blog | Netherlands'
+  },
+  description:'Explore expert articles on IT, supply chain management, ERP, digital marketing & business automation from the specialists at IT Solutions Worldwide.'
+
+}
 export default async function BlogsPage({
   params,
 }: {

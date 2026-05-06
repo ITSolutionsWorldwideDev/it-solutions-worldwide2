@@ -8,7 +8,16 @@ import ImageSection2 from "@/components/layout/image-section-2";
 import DynamicTabs from "@/components/ui/dynamic-tabs";
 import MarketingServices from "@/components/ui/marketing-services";
 import MarketingBanner from "@/components/ui/marketing-banner";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Digital Marketing Services in Netherlands | ITWW",
+  },
+  description:
+    "Boost your online presence with expert digital marketing services in the Netherlands. SEO, PPC, social media, web design & eCommerce development.",
+};
 export default async function DigitalServices({
   params,
 }: {

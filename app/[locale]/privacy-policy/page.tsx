@@ -1,6 +1,15 @@
 // app/[locale]/privacy-policy/page.tsx
+import { Metadata } from "next";
 import Link from "next/link";
 
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Privacy Policy | ITWW Netherlands",
+  },
+  description:
+    "Read the privacy policy of IT Solutions Worldwide to understand how we collect, use and protect your personal data in line with GDPR regulations.",
+};
 export default function Privacy() {
   return (
     <div className="flex justify-center mt-5 mb-10">

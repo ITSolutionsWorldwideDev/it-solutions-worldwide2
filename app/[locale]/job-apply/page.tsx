@@ -5,14 +5,17 @@ import { Metadata } from "next";
 import JobApplyForm from "@/components/layout/job-apply-form";
 
 export const metadata: Metadata = {
-  title: "Apply Now – IT Solutions Hub",
-  description: "Submit your job application to IT Solutions Hub today.",
+  title: {
+    absolute: "Apply for IT & Supply Chain Jobs in Netherlands",
+  },
+  description:
+    "Submit your job application to IT Solutions Worldwide. We're hiring IT, supply chain, digital marketing and staffing professionals in the Netherlands.",
 };
 
 export default async function JobApplyPage({
   params,
 }: {
-  params: Promise<{ locale: string; }>;
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 
@@ -26,11 +29,11 @@ export default async function JobApplyPage({
     success: t("jobApply.success", "Application submitted successfully!"),
     requiredFieldsError: t(
       "jobApply.errorRequired",
-      "Please fill in all required fields."
+      "Please fill in all required fields.",
     ),
     fileTooLarge: t(
       "jobApply.errorFileSize",
-      "Resume file is too large (max 10MB)."
+      "Resume file is too large (max 10MB).",
     ),
   };
 

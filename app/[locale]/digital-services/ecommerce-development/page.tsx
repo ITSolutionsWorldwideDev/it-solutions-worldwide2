@@ -8,6 +8,15 @@ import ProcessFlow from "@/components/layout/process-flow";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
 import MarketingBanner from "@/components/ui/marketing-banner";
 import BannerInquirySection from "@/components/layout/banner-inquiry-section";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "eCommerce Development Services in Netherlands",
+  },
+  description:
+    "Build a high-converting online store with our eCommerce development services in the Netherlands. Custom, scalable & mobile-friendly solutions.",
+};
 
 export default async function EcommerceDevelopment({
   params,

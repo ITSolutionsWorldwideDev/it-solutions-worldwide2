@@ -8,7 +8,16 @@ import ProcessFlow from "@/components/layout/process-flow";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
 import ConsultationSection from "@/components/layout/consultation-section";
 import BannerSection2 from "@/components/layout/banner-section-2";
+import { Metadata } from "next";
 
+
+  export const metadata: Metadata = {
+    title: {
+      absolute: "ERP Implementation Services in Netherlands",
+    },
+    description:
+      "Expert ERP implementation services in the Netherlands. We deploy and configure ERP systems tailored to your business processes and industry needs.",
+  };
 export default async function ERPImplementation({
   params,
 }: {

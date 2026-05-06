@@ -8,7 +8,17 @@ import ProcessFlow from "@/components/layout/process-flow";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
 import ConsultationSection from "@/components/layout/consultation-section";
 import BannerSection2 from "@/components/layout/banner-section-2";
+import { Metadata } from "next";
 
+
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Business Automation Services in Netherlands",
+  },
+  description:
+    "Streamline operations with expert business automation services in the Netherlands. Automate workflows, reduce costs & boost efficiency.",
+};
 export default async function AutomationServices({
   params,
 }: {

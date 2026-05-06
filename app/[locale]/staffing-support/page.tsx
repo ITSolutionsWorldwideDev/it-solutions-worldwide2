@@ -8,7 +8,15 @@ import FAQSection2 from "@/components/layout/FAQ-section-2";
 import ConsultationSection from "@/components/layout/consultation-section";
 import ImageSectionBgBlue from "@/components/layout/image-section-bg-blue";
 import BannerSection2 from "@/components/layout/banner-section-2";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: {
+    absolute: "Staffing Support Services in Netherlands | ITWW",
+  },
+  description:
+    "Find the right talent with our staffing support services in the Netherlands — managed, temporary, remote & specialized staffing for IT and supply chain.",
+};
 export default async function StaffingSupport({
   params,
 }: {

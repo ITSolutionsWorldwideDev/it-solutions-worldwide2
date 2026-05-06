@@ -9,6 +9,16 @@ import FAQSection2 from "@/components/layout/FAQ-section-2";
 import ConsultationSection from "@/components/layout/consultation-section";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import ImageSectionBgBlue from "@/components/layout/image-section-bg-blue";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Custom Software Development | Scalable & Secure",
+  },
+  description:
+    "End-to-end custom software development services to build scalable, secure, and user-friendly applications tailored to your business goals in Netherlands. Start your project today.",
+};
 
 export default async function SoftwareDevelopment({
   params,

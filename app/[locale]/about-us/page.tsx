@@ -11,6 +11,15 @@ import VisionSection from "@/components/layout/vision-section";
 import FAQSection from "@/components/layout/FAQ-section";
 import AboutUsProcessFlow from "@/components/layout/aboutus-process-flow";
 import BannerSectionAboutUs from "@/components/layout/about/banner-section";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Your Trusted IT Partner in the Netherlands | ITWW",
+  },
+  description:
+    "Learn about IT Solutions Worldwide | a trusted IT partner in the Netherlands specializing in business transformation, digital services & staffing support.",
+};
 
 export default async function AboutUsPage({
   params,

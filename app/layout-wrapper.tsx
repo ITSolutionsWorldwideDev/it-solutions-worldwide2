@@ -1,6 +1,6 @@
 // app/layout-wrapper.tsx
 "use client";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Header from "@/components/layout/header";
 import HomeHeader from "@/components/layout/home-header";
@@ -17,7 +17,7 @@ export default function LayoutWrapper({ children, locale }: LayoutWrapperProps) 
 
   // const isHome = pathname === "/";
   const isHome = pathname === `/${locale}` || pathname === '/'; // handles `/en`, `/nl`, etc.
-
+ 
   return (
     <>
       {isHome ? <HomeHeader /> : <Header />}

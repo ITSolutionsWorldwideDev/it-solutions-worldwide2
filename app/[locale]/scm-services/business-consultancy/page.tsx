@@ -8,7 +8,16 @@ import ProcessFlow from "@/components/layout/process-flow";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
 import ConsultationSection from "@/components/layout/consultation-section";
 import BannerSection2 from "@/components/layout/banner-section-2";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Business Consultancy Services in Netherlands",
+  },
+  description:
+    "Drive growth with expert business consultancy in the Netherlands. We analyze your operations and deliver tailored strategies to improve performance.",
+};
 export default async function BusinessConsultancy({
   params,
 }: {

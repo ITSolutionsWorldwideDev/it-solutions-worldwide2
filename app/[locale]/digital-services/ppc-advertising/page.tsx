@@ -7,7 +7,16 @@ import ImageSection2 from "@/components/layout/image-section-2";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import MarketingBanner from "@/components/ui/marketing-banner";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "PPC Advertising & Google Ads Experts | Netherlands",
+  },
+  description:
+    "Drive targeted traffic & maximize ROI with expert PPC advertising services in the Netherlands. Google Ads & paid search campaigns tailored to your goals.",
+};
 export default async function PPCAdvertising({
   params,
 }: {

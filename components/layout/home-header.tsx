@@ -11,6 +11,10 @@ export default function Header() {
   // const isBgLoaded = true;
   // const bgUrl = "/assets/images/backgrounds/hero-section-bg.png";
 
+
+   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   const bgVideoUrl = "/assets/images/backgrounds/hero-section-bg.mp4";
   const fallbackImage = "/assets/images/backgrounds/hero-section-bg.png";
 
@@ -30,7 +34,7 @@ export default function Header() {
     //     backgroundImage: isBgLoaded ? `url(${bgUrl})` : "none",
     //   }}
     // >
-    <div className="relative w-full min-h-screen overflow-hidden">
+    <div className="relative w-full min-h-screen overflow-hidden" id="hometop">
       {isVideoSupported ? (
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-0"

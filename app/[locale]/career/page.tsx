@@ -9,11 +9,19 @@ import { jobsData } from "@/lib/jobsData";
 import Link from "next/link";
 import PdfViewer from "@/components/ui/pdf-viewer";
 import CardSection from "@/components/layout/card-section";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: {
+    absolute: "IT & Supply Chain Jobs in Netherlands | Apply Now",
+  },
+  description:
+    "Looking for IT, supply chain or digital marketing jobs in the Netherlands? Explore career opportunities at IT Solutions Worldwide and grow with us.",
+};
 export default async function Career({
   params,
 }: {
-  params: Promise<{ locale: string; }>;
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 
@@ -41,7 +49,7 @@ export default async function Career({
         text={t("career.text_3")}
         imageUrl="/assets/images/career3.png"
       />
-      <CardSection heading={t('career.heading_4')} text={t('career.text_4')} />
+      <CardSection heading={t("career.heading_4")} text={t("career.text_4")} />
 
       <div className="container mt-20 max-w-sm sm:max-w-4xl gap-3 sm:gap-0 mx-auto flex flex-col">
         {jobsData.map((job, index) => (

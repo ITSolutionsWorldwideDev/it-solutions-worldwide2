@@ -8,7 +8,16 @@ import FAQSection2 from "@/components/layout/FAQ-section-2";
 import ConsultationSection from "@/components/layout/consultation-section";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import { ClientLogosSlider } from "@/components/layout/home/AnimationComponents";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Staffing Consulting Services in Netherlands",
+  },
+  description:
+    "Optimize your workforce strategy with expert staffing consulting services in the Netherlands. We align talent acquisition with your long-term business goals.",
+};
 export default async function StaffingConsultingServices({
   params,
 }: {

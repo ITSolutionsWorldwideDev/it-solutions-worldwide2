@@ -8,7 +8,16 @@ import ProcessFlow from "@/components/layout/process-flow";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
 import ConsultationSection from "@/components/layout/consultation-section";
 import BannerSection2 from "@/components/layout/banner-section-2";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "SCM Consulting Services | Optimize & Scale Up",
+  },
+  description:
+    "Expert supply chain management consulting services to streamline operations, reduce costs, and improve efficiency. Get tailored strategies for sustainable growth.",
+};
 export default async function SCMConsultancy({
   params,
 }: {

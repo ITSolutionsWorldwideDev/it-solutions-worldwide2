@@ -8,7 +8,16 @@ import FAQSection2 from "@/components/layout/FAQ-section-2";
 import ConsultationSection from "@/components/layout/consultation-section";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import { ClientLogosSlider } from "@/components/layout/home/AnimationComponents";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Specialized Industry Staffing in Netherlands",
+  },
+  description:
+    "Get industry-specific talent for IT, supply chain & logistics with our specialized staffing services in the Netherlands. Experts matched to your needs.",
+};
 export default async function SpecializedIndustryStaffing({
   params,
 }: {

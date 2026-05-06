@@ -8,7 +8,16 @@ import FAQSection2 from "@/components/layout/FAQ-section-2";
 import ConsultationSection from "@/components/layout/consultation-section";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import { ClientLogosSlider } from "@/components/layout/home/AnimationComponents";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Remote & Virtual Staffing Services | Netherlands",
+  },
+  description:
+    "Access top talent from anywhere with remote and virtual staffing services in the Netherlands. Flexible, cost-effective workforce solutions for your business.",
+};
 export default async function RemoteVirtualStaffing({
   params,
 }: {
