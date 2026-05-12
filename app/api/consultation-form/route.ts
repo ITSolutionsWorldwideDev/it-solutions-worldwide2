@@ -1,4 +1,5 @@
-// app/api/contact/route.ts
+// app/api/consultation-form/route.ts
+
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -23,15 +24,18 @@ export async function POST(req: NextRequest) {
         pass: process.env.SMTP_PASS,
       },
 
-      connectionTimeout: 5000, // 5s to establish TCP connection
-      greetingTimeout: 5000, // 5s for SMTP greeting
-      socketTimeout: 10000,
+      connectionTimeout: 10000, // 5s to establish TCP connection
+      greetingTimeout: 10000, // 5s for SMTP greeting
+      socketTimeout: 15000,
       // pool: true,
       // maxConnections: 3,
       // maxMessages: 50,
     });
 
-    transporter.sendMail( {
+    // Verify SMTP connection
+    await transporter.verify();
+
+    await transporter.sendMail( {
       from: `"IT Solutions Worldwide Contact" <${process.env.SMTP_USER}>`,
       to: process.env.MK_EMAIL,
       cc: process.env.CC_EMAIL,
@@ -50,14 +54,16 @@ export async function POST(req: NextRequest) {
         <br/>
         <p><strong>Message:</strong> ${service || "Not selected"}</p>
         `,
-    }).catch((err)=>console.error("Unable to send email:",err));
+    });
+    
+    // .catch((err)=>console.error("Unable to send email:",err));
 
     // const emailPromise = transporter.sendMail(mailBody);
 
     return NextResponse.json({
       ok: true,
       success: true,
-      message: "Contact submitted successfully!",
+      message: "Form submitted successfully!",
     });
   } catch (err: any) {
     console.error("Email error:", err);
