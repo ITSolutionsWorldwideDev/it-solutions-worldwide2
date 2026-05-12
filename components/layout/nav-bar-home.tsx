@@ -3,6 +3,8 @@
 import Link from "next/link";
 import React, { useState, useRef } from "react";
 import { menuItems } from "@/lib/menu";
+import MenuDropdown from "./MenuDropdown";
+import MobileMenuItem from "./MobileMenuItem";
 
 export default function NavbarHome() {
   //   const [hoveredItem, setHoveredItem] = useState(null);
@@ -45,7 +47,7 @@ export default function NavbarHome() {
               alt="IT Solutions Worldwide Logo"
             />
           </Link>
-        </div>  
+        </div>
 
         <div className="md:hidden">
           <button
@@ -78,10 +80,29 @@ export default function NavbarHome() {
               onMouseEnter={() => handleMouseEnter(item.label)}
               onMouseLeave={handleMouseLeave}
             >
-              <Link href={item.link} className="hover:underline">
+              {/* <Link href={item.link} className="hover:underline">
                 {item.label}
-              </Link>
+              </Link> */}
+              {item.link ? (
+                <Link
+                  href={item.link}
+                  className="text-white hover:text-[#278083] hover:underline font-medium mb-1 px-3 py-2 rounded-md transition"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <div
+                  // type="button"
+                  className="text-white hover:underline font-medium px-3 mb-1 rounded-md transition cursor-default"
+                >
+                  {item.label}
+                </div>
+              )}
+
               {item.dropdown && hoveredItem === item.label && (
+                <MenuDropdown items={item.dropdown} />
+              )}
+              {/* {item.dropdown && hoveredItem === item.label && (
                 <ul
                   className="absolute left-0 mt-1 w-48 bg-white text-black shadow-lg rounded z-20"
                   onMouseEnter={() => handleMouseEnter(item.label)}
@@ -98,7 +119,7 @@ export default function NavbarHome() {
                     </li>
                   ))}
                 </ul>
-              )}
+              )} */}
             </li>
           ))}
         </ul>
@@ -119,7 +140,7 @@ export default function NavbarHome() {
           ></div>
           <div className="fixed top-16 left-0 w-full h-screen bg-white shadow-lg z-20 overflow-y-auto">
             <ul className="flex flex-col space-y-4 p-4 ">
-              {menuItems.map((item, idx) => (
+              {/* {menuItems.map((item, idx) => (
                 <li key={idx} className="relative">
                   <div className="flex items-center justify-between">
                     <Link
@@ -168,6 +189,9 @@ export default function NavbarHome() {
                     </ul>
                   )}
                 </li>
+              ))} */}
+              {menuItems.map((item, idx) => (
+                <MobileMenuItem key={idx} item={item} closeMenu={toggleMenu} />
               ))}
               <li>
                 <Link

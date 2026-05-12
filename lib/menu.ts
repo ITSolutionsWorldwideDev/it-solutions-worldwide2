@@ -1,4 +1,11 @@
-export const menuItems = [
+// lib/menu.ts
+export interface MenuItem {
+  label: string;
+  link?: string;
+  dropdown?: MenuItem[];
+}
+
+export const menuItems: MenuItem[] = [
   {
     label: "Business Transformation",
     link: "/scm-services",
@@ -75,37 +82,163 @@ export const menuItems = [
       },
     ],
   },
+  // {
+  //   label: "Hiring",
+  //   link: "/staff-hiring",
+  //   dropdown: [
+  //     {
+  //       label: "Hire Virtual Assistant",
+  //       link: "/staffing-support/hire-virtual-assistant",
+  //     },
+  //     {
+  //       label: "Hire Full Stack Developer",
+  //       link: "/staffing-support/hire-full-stack-developer",
+  //     },
+
+  //     {
+  //       label: "Hire a Data Engineer",
+  //       link: "/staffing-support/hire-data-engineer",
+  //     },
+
+  //     {
+  //       label: "Hire an Ecommerce Assistant",
+  //       link: "/staffing-support/hire-ecommerce-assistant",
+  //     },
+
+  //     {
+  //       label: "Hire an Electrical Engineer",
+  //       link: "/staffing-support/hire-electrical-engineer",
+  //     },
+
+  //     {
+  //       label: " Hire an AI Engineer",
+  //       link: "/staffing-support/hire-ai-engineer",
+  //     },
+  //   ],
+  // },
+
   {
     label: "Hiring",
-    link: "/staff-hiring",
     dropdown: [
       {
-        label: "Hire Virtual Assistant",
-        link: "/staffing-support/hire-virtual-assistant",
+        label: "Staffing Services",
+        dropdown: [
+          {
+            label: "Temporary Staffing",
+            link: "/staffing-support/hire-temporary-staffing",
+          },
+          {
+            label: "Managed Staffing",
+            link: "/staffing-support/hire-managed-staffing",
+          },
+
+          {
+            label: "Remote & Virtual Staffing",
+            link: "/staffing-support/hire-remote-virtual-staffing",
+          },
+
+          {
+            label: "Staffing Consulting",
+            link: "/staffing-support/hire-staffing-consulting",
+          },
+        ],
       },
       {
-        label: "Hire Full Stack Developer",
-        link: "/staffing-support/hire-full-stack-developer",
+        label: "Hire Roles",
+
+        dropdown: [
+          {
+            label: "Virtual Assistant",
+            link: "/staffing-support/hire-virtual-assistant",
+          },
+          {
+            label: "Data Engineer",
+            link: "/staffing-support/hire-data-engineer",
+          },
+
+          {
+            label: "Full-stack Developer",
+            link: "/staffing-support/hire-full-stack-developer",
+          },
+
+          {
+            label: "AI/ML Engineer",
+            link: "/staffing-support/hire-ai-engineer",
+          },
+
+          {
+            label: "Ecommerce Assistant",
+            link: "/staffing-support/hire-ecommerce-assistant",
+          },
+        ],
       },
 
       {
-        label: "Hire a Data Engineer",
-        link: "/staffing-support/hire-data-engineer",
+        label: "Business Support",
+
+        dropdown: [
+          {
+            label: "Administrative Support",
+            link: "/staffing-support/hire-administrative-support",
+          },
+          {
+            label: "Customer Support",
+            link: "/staffing-support/hire-customer-support",
+          },
+
+          {
+            label: "Data Entry",
+            link: "/staffing-support/hire-data-entry",
+          },
+        ],
       },
 
       {
-        label: "Hire an Ecommerce Assistant",
-        link: "/staffing-support/hire-ecommerce-assistant",
+        label: "IT & Development",
+        dropdown: [
+          {
+            label: "Front-end Developer",
+            link: "/staffing-support/hire-front-end-developer",
+          },
+          {
+            label: "Back-end Developer",
+            link: "/staffing-support/hire-back-end-developer",
+          },
+
+          {
+            label: "App Developer",
+            link: "/staffing-support/hire-app-developer",
+          },
+
+          {
+            label: "Software Tester",
+            link: "/staffing-support/hire-software-tester-qa",
+          },
+        ],
       },
 
       {
-        label: "Hire an Electrical Engineer",
-        link: "/staffing-support/hire-electrical-engineer",
-      },
+        label: "Marketing & Analytics",
+        dropdown: [
+          {
+            label: "Social Media Manager",
+            link: "/staffing-support/hire-social-media-manager",
+          },
+          {
+            label: "Content Creator",
+            link: "/staffing-support/hire-content-creator",
+          },
 
-      {
-        label: " Hire an AI Engineer",
-        link: "/staffing-support/hire-ai-engineer",
+          {
+            label: "Online Marketeer",
+            link: "/staffing-support/hire-online-marketer",
+          },
+
+          {
+            label: "Data Analyst / BI Specialist",
+            link: "/staffing-support/hire-data-analyst",
+          },
+        ],
       },
     ],
   },

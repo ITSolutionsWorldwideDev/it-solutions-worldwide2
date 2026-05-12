@@ -4043,5 +4043,288 @@
         "Start binnen 48 uur"
       ]
     }
+  },
+
+  "hire_data_analyst": {
+    "metadata": {
+      "meta_title": "Huur een Toegewijde Data Analist in Nederland | Data Analyse Diensten",
+      "meta_description": "Huur een toegewijde data analist in Nederland voor rapportage, dashboards en business intelligence. Flexibele plannen, snelle start.",
+      "url_slug": "nl/staffing-support/data-analist-inhuren"
+    },
+    "hero": {
+      "heading": "Huur een Toegewijde Data Analist in Nederland",
+      "text": "Data zonder analyse is slechts ruis. Krijg een toegewijde data-analist die uw ruwe bedrijfsgegevens omzet in duidelijke inzichten, actievolle rapporten en beslissingen die uw cijfers echt vooruit helpen.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },    
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur een Data Analist in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "item_1": "Toegewijde Data Analisten",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw Data Analist bij Kan Helpen",
+      "description": "Onze toegewijde data-analisten zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw business intelligence, rapportage en data-inzichten.",
+      "category_1": "Analyse & Rapportage",
+      "cat_1_items": ["Bedrijfsprestatie analyse", "Verkoop- en omzetrapportage", "Analyse van klantgedrag", "Trendidentificatie en prognoses", "Ad-hoc data-analyse verzoeken"],
+      "category_2": "Dashboard Creatie",
+      "cat_2_items": ["Interactieve dashboardontwikkeling", "KPI- en metrics dashboardontwerp", "Executive rapportage dashboards", "Real-time datamonitoring setups", "Self-service analytics dashboards"],
+      "category_3": "Business Intelligence",
+      "cat_3_items": ["Setup en beheer van BI-tools", "Power BI en Tableau rapportage", "Datamodel ontwikkeling", "Geautomatiseerde rapportage-pipelines", "Data-integratie tussen afdelingen"],
+      "category_4": "Data Opschonen",
+      "cat_4_items": ["Ruwe data opschonen en formatteren", "Datastandaardisatie en validatie", "Verwijderen van dubbelingen en fouten", "Samenvoegen en transformeren van datasets", "Beoordeling van datakwaliteit"],
+      "category_5": "SQL & Database Rapportage",
+      "cat_5_items": ["SQL query schrijven en optimalisatie", "Database rapportage en extractie", "Ontwikkeling van stored procedures", "Data-aggregatie en samenvatting", "Samenvoegen van meerdere bronnen"],
+      "category_6": "Statistische Analyse",
+      "cat_6_items": ["Beschrijvende en voorspellende analyses", "Regressie- en correlatieanalyse", "A/B-test analyse en interpretatie", "Vraag- en verkoopprognoses", "Python en R statistische modellering"],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare Data Analist",
+      "description": "Wij bieden flexibele pakketten op basis van uw data-analysebehoeften. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Parttime ondersteuning voor essentiële data-analyse en rapportage.",
+        "price": "€49,95",
+        "unit": "per uur",
+        "features": ["Data-analyse en rapportage", "Basis dashboard creatie", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor business intelligence en SQL-rapportage.",
+        "price": "€59,95",
+        "unit": "per uur",
+        "features": ["Alle Starter-functies", "BI-tool dashboards en rapportage", "SQL-query's en datavoorbereiding", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Geavanceerde analytics, statistische modellering en multi-source integratie.",
+        "price": "€69,95",
+        "unit": "per uur",
+        "features": ["Alle Growth-functies", "Statistische modellering en prognoses", "BI-integratie tussen afdelingen", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw Data Analist in te huren?",
+      "description": "Laat ons u helpen de perfecte data-analist te vinden voor uw business intelligence en rapportagebehoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+    }
+  },
+  "hire_powerbi_tableau_specialist": {
+    "metadata": {
+      "meta_title": "Huur een Toegewijde Power BI & Tableau Specialist in Nederland | BI Dashboard Diensten",
+      "meta_description": "Huur een toegewijde Power BI of Tableau specialist in Nederland voor dashboardontwikkeling, datavisualisatie en business intelligence. Snel starten.",
+      "url_slug": "nl/staffing-support/power-bi-tableau-specialist-inhuren"
+    },
+    "hero": {
+      "heading": "Huur een Toegewijde Power BI & Tableau Specialist in Nederland",
+      "text": "Uw bedrijfsgegevens vertellen een verhaal — maar alleen als ze duidelijk worden gevisualiseerd. Krijg een toegewijde Power BI of Tableau specialist die dashboards en rapporten bouwt die uw team direct helderheid geven.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },    
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur een Power BI & Tableau Specialist in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "item_1": "Toegewijde BI Specialisten",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw Power BI & Tableau Specialist bij Kan Helpen",
+      "description": "Onze toegewijde Power BI en Tableau specialisten zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw business intelligence en datavisualisatie.",
+      "category_1": "Power BI Ontwikkeling",
+      "cat_1_items": ["Ontwerp en bouw van Power BI dashboards", "DAX-formule ontwikkeling", "Power Query datatransformatie", "Rapporten publiceren en delen", "Power BI Service administratie"],
+      "category_2": "Tableau Ontwikkeling",
+      "cat_2_items": ["Tableau dashboard creatie", "Calculated field en LOD-expressies", "Tableau Server en Online publicatie", "Interactief visualisatie-ontwerp", "Beheer van Tableau databronnen"],
+      "category_3": "Data Visualisatie",
+      "cat_3_items": ["Op maat gemaakt grafiek- en diagramontwerp", "Executive en management dashboards", "KPI-tracking visualisaties", "Vergelijkende en trendvisualisaties", "Mobiel-geoptimaliseerde dashboardlay-outs"],
+      "category_4": "Datamodellering",
+      "cat_4_items": ["Datamodelontwerp voor BI-tools", "Star- en snowflake schema setup", "Power Query en ETL-transformatie", "Multi-source data-integratie", "Beheer van relaties en hiërarchieën"],
+      "category_5": "Rapportage Automatisering",
+      "cat_5_items": ["Geplande en geautomatiseerde rapportlevering", "Setup voor e-mailrapportdistributie", "Configuratie van real-time gegevensverversing", "Alerts en drempelwaarde meldingen", "Embedded reporting integratie"],
+      "category_6": "BI Strategie",
+      "cat_6_items": ["Consultancy voor BI-toolselectie", "Best practices voor data governance", "Dashboard standaardisatie", "Gebruikerstraining en documentatie", "Organisatie van BI-werkruimtes"],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare Power BI & Tableau Specialist",
+      "description": "Wij bieden flexibele pakketten op basis van uw BI- en datavisualisatie behoeften. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essentiële ondersteuning voor dashboardontwerp en datamodellering.",
+        "price": "€49,95",
+        "unit": "per uur",
+        "features": ["Dashboard ontwerp en ontwikkeling", "Basis datamodellering", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor volledige BI-builds en automatisering.",
+        "price": "€59,95",
+        "unit": "per uur",
+        "features": ["Alle Starter-functies", "Volledige Power BI of Tableau builds", "Setup rapportage-automatisering", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Enterprise BI-strategie en complexe multi-source integratie.",
+        "price": "€69,95",
+        "unit": "per uur",
+        "features": ["Alle Growth-functies", "Multi-source data-integratie", "BI governance en strategie", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw Power BI & Tableau Specialist in te huren?",
+      "description": "Laat ons u helpen de perfecte Power BI of Tableau specialist te vinden voor uw business intelligence en datavisualisatie. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+    }
+  },
+  "hire_content_creator": {
+    "metadata": {
+      "meta_title": "Huur een Toegewijde Content Creator & Copywriter in Nederland | Content Diensten",
+      "meta_description": "Huur een toegewijde content creator of copywriter in Nederland voor blogs, webcopy, social content en email marketing. Flexibele plannen, snelle start.",
+      "url_slug": "nl/staffing-support/content-creator-copywriter-inhuren"
+    },
+    "hero": {
+      "heading": "Huur een Toegewijde Content Creator & Copywriter in Nederland",
+      "text": "Bedrijven die consistente, hoogwaardige content publiceren, trekken meer verkeer aan, bouwen sterkere merken en converteren meer klanten — zonder een fortuin uit te geven aan bureaus.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },    
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur een Content Creator & Copywriter in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "item_1": "Toegewijde Content Creators",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw Content Creator & Copywriter bij Kan Helpen",
+      "description": "Onze toegewijde content creators en copywriters zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw zakelijke content en merkstem.",
+      "category_1": "Blog Schrijven",
+      "cat_1_items": ["SEO blogberichten schrijven", "Creatie van long-form artikelen", "Thought leadership content", "Industrienieuws en commentaar", "Schrijven van gastberichten"],
+      "category_2": "Website Copy",
+      "cat_2_items": ["Homepage en landingspagina copy", "Diensten- en productpagina's", "Over ons en merkverhaal pagina's", "CTA en conversie copy", "Website content audits en herschrijvingen"],
+      "category_3": "Social Media Content",
+      "cat_3_items": ["Onderschriften en copy voor berichten", "LinkedIn artikelen en berichten", "Facebook en Instagram content", "Twitter/X threads", "Creatie van contentkalenders"],
+      "category_4": "Email Marketing",
+      "cat_4_items": ["E-mail sequence schrijven", "Nieuwsbrief creatie", "Promotionele e-mail copy", "Geautomatiseerde drip campagne content", "Optimalisatie van onderwerpregel en CTA"],
+      "category_5": "SEO Content Strategie",
+      "cat_5_items": ["Zoekwoordonderzoek en mapping", "SEO-geoptimaliseerde blogcontent", "Meta titel en beschrijving schrijven", "Interne linkstrategie", "Contentbriefings en outlines"],
+      "category_6": "Merk- & Advertentiecopy",
+      "cat_6_items": ["Ontwikkeling van merkstem", "Google Ads copy", "Social media advertentiecopy", "Productomschrijvingen", "Copy voor brochures en verkoopmateriaal"],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare Content Creator & Copywriter",
+      "description": "Wij bieden flexibele pakketten op basis van uw contentvolume. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essentiële ondersteuning voor blogs en social media captions.",
+        "price": "€49,95",
+        "unit": "per uur",
+        "features": ["Schrijven van blog- of webcopy", "Planning van contentkalender", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor SEO-content en e-mailmarketing.",
+        "price": "€59,95",
+        "unit": "per uur",
+        "features": ["Alle Starter-functies", "SEO content schrijven", "E-mail marketing copy", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Volledige contentstrategie voor meerdere kanalen en merkcopywriting.",
+        "price": "€69,95",
+        "unit": "per uur",
+        "features": ["Alle Growth-functies", "Advertentie- en merkcopywriting", "Multi-channel contentstrategie", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw Content Creator & Copywriter in te huren?",
+      "description": "Laat ons u helpen de perfecte content creator of copywriter te vinden voor uw zakelijke of persoonlijke merk. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+    }
   }
 }

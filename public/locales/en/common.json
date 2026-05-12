@@ -4138,5 +4138,287 @@
         "Start in 48 hours"
       ]
     }
+  },
+  "hire_data_analyst": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Data Analyst in Netherlands | Data Analysis Services",
+      "meta_description": "Hire a dedicated data analyst in the Netherlands for data analysis, reporting, dashboards, business intelligence, and data-driven insights. Flexible plans, fast start.",
+      "url_slug": "en/staffing-support/hire-data-analyst"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Data Analyst in Netherlands",
+      "text": "Data without analysis is just noise. Get a dedicated data analyst who turns your raw business data into clear insights, actionable reports, and decisions that actually move your numbers forward.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Data Analyst in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Data Analysts",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Data Analyst Can Help With",
+      "description": "Our dedicated data analysts are trained professionals who can support your business intelligence, reporting, and data insight needs immediately.",
+      "category_1": "Analysis & Reporting",
+      "cat_1_items": ["Business performance analysis", "Sales and revenue reporting", "Customer behaviour analysis", "Trend identification and forecasting", "Ad hoc data analysis requests"],
+      "category_2": "Dashboard Creation",
+      "cat_2_items": ["Interactive dashboard development", "KPI and metrics dashboard design", "Executive reporting dashboards", "Real-time data monitoring setups", "Self-service analytics dashboards"],
+      "category_3": "Business Intelligence",
+      "cat_3_items": ["BI tool setup and management", "Power BI and Tableau reporting", "Data model development", "Automated reporting pipelines", "Cross-departmental data integration"],
+      "category_4": "Data Cleaning",
+      "cat_4_items": ["Raw data cleaning and formatting", "Data standardisation and validation", "Duplicate and error removal", "Dataset merging and transformation", "Data quality assessment"],
+      "category_5": "SQL & Database Reporting",
+      "cat_5_items": ["SQL query writing and optimisation", "Database reporting and extraction", "Stored procedure development", "Data aggregation and summarisation", "Multi-source data joining"],
+      "category_6": "Statistical Analysis",
+      "cat_6_items": ["Descriptive and predictive analytics", "Regression and correlation analysis", "A/B test analysis and interpretation", "Demand and sales forecasting", "Python and R statistical modelling"],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Data Analyst",
+      "description": "We offer flexible packages based on your data analysis needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential data analysis and reporting.",
+        "price": "€49.95",
+        "unit": "per hour",
+        "features": ["Data analysis and reporting", "Basic dashboard creation", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for business intelligence and SQL reporting.",
+        "price": "€59.95",
+        "unit": "per hour",
+        "features": ["All Starter features", "BI tool dashboards and reporting", "SQL querying and data preparation", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Advanced analytics, statistical modelling, and multi-source integration.",
+        "price": "€69.95",
+        "unit": "per hour",
+        "features": ["All Growth features", "Statistical modelling and forecasting", "Cross-department BI integration", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Data Analyst?",
+      "description": "Let us help you find the perfect data analyst for your business intelligence and reporting needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_powerbi_tableau_specialist": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Power BI & Tableau Specialist in Netherlands | BI Dashboard Services",
+      "meta_description": "Hire a dedicated Power BI or Tableau specialist in the Netherlands for dashboard development, data visualisation, reporting, and business intelligence. Fast start, flexible plans.",
+      "url_slug": "en/staffing-support/hire-power-bi-tableau-specialist"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Power BI & Tableau Specialist in Netherlands",
+      "text": "Your business data tells a story — but only if it is visualised clearly. Get a dedicated Power BI or Tableau specialist who builds dashboards and reports that give your team instant clarity and smarter decisions.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Power BI & Tableau Specialist in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated BI Specialists",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Power BI & Tableau Specialist Can Help With",
+      "description": "Our dedicated Power BI and Tableau specialists are trained professionals who can support your business intelligence, dashboard development, and data visualisation needs immediately.",
+      "category_1": "Power BI Development",
+      "cat_1_items": ["Power BI dashboard design and build", "DAX formula development", "Power Query data transformation", "Report publishing and sharing", "Power BI Service administration"],
+      "category_2": "Tableau Development",
+      "cat_2_items": ["Tableau dashboard creation", "Calculated field and LOD expressions", "Tableau Server and Online publishing", "Interactive visualisation design", "Tableau data source management"],
+      "category_3": "Data Visualisation",
+      "cat_3_items": ["Custom chart and graph design", "Executive and management dashboards", "KPI tracking visualisations", "Comparative and trend visualisations", "Mobile-optimised dashboard layouts"],
+      "category_4": "Data Modelling",
+      "cat_4_items": ["Data model design for BI tools", "Star and snowflake schema setup", "Power Query and ETL transformation", "Multi-source data integration", "Relationship and hierarchy management"],
+      "category_5": "Reporting Automation",
+      "cat_5_items": ["Scheduled and automated report delivery", "Email report distribution setup", "Real-time data refresh configuration", "Alert and threshold notifications", "Embedded reporting integration"],
+      "category_6": "BI Strategy",
+      "cat_6_items": ["BI tool selection and setup consulting", "Data governance best practices", "Dashboard standardisation", "User training and documentation", "BI workspace organisation and management"],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Power BI & Tableau Specialist",
+      "description": "We offer flexible packages based on your BI and visualisation needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essential dashboard design and data modelling support.",
+        "price": "€49.95",
+        "unit": "per hour",
+        "features": ["Dashboard design and development", "Basic data modelling", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full BI builds and automation.",
+        "price": "€59.95",
+        "unit": "per hour",
+        "features": ["All Starter features", "Power BI or Tableau full builds", "Reporting automation setup", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Enterprise BI strategy and complex multi-source integration.",
+        "price": "€69.95",
+        "unit": "per hour",
+        "features": ["All Growth features", "Multi-source data integration", "BI governance and strategy", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Power BI & Tableau Specialist?",
+      "description": "Let us help you find the perfect Power BI or Tableau specialist for your business intelligence and data visualisation needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_content_creator": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Content Creator & Copywriter in Netherlands | Managed Content Services",
+      "meta_description": "Hire a dedicated content creator or copywriter in the Netherlands for blogs, web copy, social content, email marketing, and brand storytelling. Flexible plans, fast start.",
+      "url_slug": "en/staffing-support/hire-content-creator-copywriter"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Content Creator & Copywriter in Netherlands",
+      "text": "Businesses that publish consistent, high-quality content attract more traffic, build stronger brands, and convert more customers — without spending a fortune on agencies.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Content Creator & Copywriter in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Content Creators",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Content Creator & Copywriter Can Help With",
+      "description": "Our dedicated content creators and copywriters are trained professionals who can support your business content needs and brand voice immediately.",
+      "category_1": "Blog Writing",
+      "cat_1_items": ["SEO blog post writing", "Long-form article creation", "Thought leadership content", "Industry news and commentary", "Guest post writing"],
+      "category_2": "Website Copy",
+      "cat_2_items": ["Homepage and landing page copy", "Service and product page writing", "About us and brand story pages", "CTA and conversion copy", "Website content audits and rewrites"],
+      "category_3": "Social Media Content",
+      "cat_3_items": ["Post captions and copy", "LinkedIn articles and posts", "Facebook and Instagram content", "Twitter/X threads", "Content calendar creation"],
+      "category_4": "Email Marketing",
+      "cat_4_items": ["Email sequence writing", "Newsletter creation", "Promotional email copy", "Automated drip campaign content", "Subject line and CTA optimisation"],
+      "category_5": "SEO Content Strategy",
+      "cat_5_items": ["Keyword research and mapping", "SEO-optimised blog content", "Meta title and description writing", "Internal linking strategy content", "Content briefs and outlines"],
+      "category_6": "Brand & Ad Copy",
+      "cat_6_items": ["Brand voice development", "Google Ads copy", "Social media ad copy", "Product descriptions", "Brochure and sales material copy"],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Content Creator & Copywriter",
+      "description": "We offer flexible packages based on your content volume. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essential support for blogs and social media captions.",
+        "price": "€49.95",
+        "unit": "per hour",
+        "features": ["Blog or web copy writing", "Content calendar planning", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for SEO content and email marketing.",
+        "price": "€59.95",
+        "unit": "per hour",
+        "features": ["All Starter features", "SEO content writing", "Email marketing copy", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full multi-channel content strategy and brand copywriting.",
+        "price": "€69.95",
+        "unit": "per hour",
+        "features": ["All Growth features", "Ad and brand copywriting", "Multi-channel content strategy", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Content Creator & Copywriter?",
+      "description": "Let us help you find the perfect content creator or copywriter for your business or personal brand. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
   }
 }

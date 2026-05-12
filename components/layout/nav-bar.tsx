@@ -3,6 +3,8 @@
 import Link from "next/link";
 import React, { useState, useRef } from "react";
 import { menuItems } from "@/lib/menu";
+import MenuDropdown from "./MenuDropdown";
+import MobileMenuItem from "./MobileMenuItem";
 
 export default function Navbar() {
   //   const [hoveredItem, setHoveredItem] = useState(null);
@@ -84,13 +86,10 @@ export default function Navbar() {
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d={
-                    menuOpen
-                      ? "M6 18L18 6M6 6l12 12"
-                      : "M4 6h16M4 12h16m-7 6h7"
+                    menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"
                   }
                 />
               </svg>
-
             </button>
           </div>
 
@@ -102,13 +101,31 @@ export default function Navbar() {
                 onMouseEnter={() => handleMouseEnter(item.label)}
                 onMouseLeave={handleMouseLeave}
               >
-                <Link
+                {/* <Link
                   href={item.link}
                   className="text-[#278083] hover:text-[#278083] font-medium px-3 py-2 rounded-md transition"
                 >
                   {item.label}
-                </Link>
+                </Link> */}
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    className="text-[#278083] hover:text-[#278083] font-medium px-3 py-2 rounded-md transition"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <div
+                    // type="button"
+                    className="text-[#278083] font-medium px-3  rounded-md transition cursor-default"
+                  >
+                    {item.label}
+                  </div>
+                )}
                 {item.dropdown && hoveredItem === item.label && (
+                  <MenuDropdown items={item.dropdown} />
+                )}
+                {/* {item.dropdown && hoveredItem === item.label && (
                   <ul
                     className="absolute top-12 left-0 bg-white shadow-lg rounded-md w-48 text-sm text-[#637381]"
                     onMouseEnter={() => handleMouseEnter(item.label)}
@@ -125,7 +142,7 @@ export default function Navbar() {
                       </li>
                     ))}
                   </ul>
-                )}
+                )} */}
               </li>
             ))}
           </ul>
@@ -154,7 +171,7 @@ export default function Navbar() {
 
           <div className="fixed top-16 left-0 w-3/4 h-screen bg-white shadow-lg z-20 overflow-y-auto">
             <ul className="flex flex-col space-y-4 p-4 ">
-              {menuItems.map((item, idx) => (
+              {/* {menuItems.map((item, idx) => (
                 <li key={idx} className="relative">
                   <div className="flex items-center justify-between">
                     <Link
@@ -203,6 +220,9 @@ export default function Navbar() {
                     </ul>
                   )}
                 </li>
+              ))} */}
+              {menuItems.map((item, idx) => (
+                <MobileMenuItem key={idx} item={item} closeMenu={toggleMenu} />
               ))}
               <li className="relative">
                 {/* <Link
