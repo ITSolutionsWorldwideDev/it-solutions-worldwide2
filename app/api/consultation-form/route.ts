@@ -24,18 +24,19 @@ export async function POST(req: NextRequest) {
         pass: process.env.SMTP_PASS,
       },
 
+      pool: true,
+      maxConnections: 1,
+      maxMessages: 20,
+
       connectionTimeout: 10000, // 5s to establish TCP connection
       greetingTimeout: 10000, // 5s for SMTP greeting
       socketTimeout: 15000,
-      // pool: true,
-      // maxConnections: 3,
-      // maxMessages: 50,
     });
 
     // Verify SMTP connection
-    await transporter.verify();
+    // await transporter.verify();
 
-    await transporter.sendMail( {
+    await transporter.sendMail({
       from: `"IT Solutions Worldwide Contact" <${process.env.SMTP_USER}>`,
       to: process.env.MK_EMAIL,
       cc: process.env.CC_EMAIL,
@@ -55,7 +56,7 @@ export async function POST(req: NextRequest) {
         <p><strong>Message:</strong> ${service || "Not selected"}</p>
         `,
     });
-    
+
     // .catch((err)=>console.error("Unable to send email:",err));
 
     // const emailPromise = transporter.sendMail(mailBody);
