@@ -4,6 +4,7 @@
 import {
   Mail,
   Phone,
+  MapPinHouse,
   Facebook,
   Twitter,
   Linkedin,
@@ -21,19 +22,19 @@ type Props = {
 const contactInfo = [
   {
     title: "Call Us",
-    value: "+31 123456789",
+    value: "+31 10 766 0786",
     icon: <Phone className="h-6 w-6" />,
     // "/icons/phone.svg",
   },
   {
     title: "Email Us",
-    value: "info@portugeestogo.nl",
+    value: "info@itsolutionsworldwide.com",
     icon: <Mail className="h-6 w-6" />,
     // "/icons/mail.svg",
   },
   {
     title: "Visit Us",
-    value: "Amsterdam, Netherlands",
+    value: "Mandenmakerstraat 100C, 3194 DG Hoogvliet Rotterdam, Netherlands",
     icon: <Phone className="h-6 w-6" />,
     // "/icons/location.svg",
   },
@@ -211,16 +212,16 @@ export default function ContactCardClient2({ translations }: Props) {
             {/* LEFT SIDE */}
             <div className="p-8 text-white sm:p-12 lg:p-16">
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                Get in Touch
+                {t.contactheading}
               </h2>
 
-              <p className="mt-6 max-w-xl text-base leading-7 text-white/90 sm:text-lg">
-                Have questions or need support? Our team is here to help.
+              <p className="mt-6 max-w-xl text-base leading-7 text-white/90 sm:text-lg">                
+                {t.contactdesc}
               </p>
 
               {/* Contact Info */}
               <div className="mt-12 space-y-8">
-                {contactInfo.map((item, index) => (
+                {/* {contactInfo.map((item, index) => (
                   <div key={index} className="flex items-start gap-5">
                     <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
                       {item.icon}
@@ -234,12 +235,63 @@ export default function ContactCardClient2({ translations }: Props) {
                       </h3>
                     </div>
                   </div>
-                ))}
+                ))} */}
+
+                {/* Phone */}
+                <div className="flex items-center space-x-4">
+                  <div className="bg-[#29A1B6] p-3 rounded-full hover:bg-[#236B7A] transition">
+                    <Phone className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <p className="text-sm">{t.contactephone}</p>
+                    <p className="font-medium">
+                      <Link
+                        href="https://wa.me/+31107660786"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        +31 10 766 0786
+                      </Link>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex items-center space-x-4">
+                  <div className="bg-[#29A1B6] p-3 rounded-full hover:bg-[#236B7A] transition">
+                    <Mail className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <p className="text-sm">{t.contactemail}</p>
+                    <p className="font-medium break-all">
+                      <Link
+                        href="mailto:info@itsolutionsworldwide.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        info@itsolutionsworldwide.com
+                      </Link>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Address */}
+                <div className="flex items-center space-x-4">
+                  <div className="bg-[#29A1B6] p-3 rounded-full hover:bg-[#236B7A] transition">
+                    <MapPinHouse className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <p className="text-sm">{t.contactaddress}</p>
+                    <p className="font-medium break-all">
+                      Mandenmakerstraat 100C, 3194 DG Hoogvliet Rotterdam, Netherlands
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Social Icons */}
               <div className="mt-14">
-                <p className="mb-5 text-lg font-medium">Connect with us:</p>
+                <p className="mb-5 text-lg font-medium">{t.contactconnect}</p>
 
                 <div className="flex gap-4">
                   {[

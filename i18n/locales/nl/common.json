@@ -50,7 +50,9 @@
     "clients": "Onze Vertrouwde Klanten",
     "contactheading": "Neem contact met ons op",
     "contactemail": "E-mail ons",
+    "contactdesc": "Heeft u vragen of behoefte aan ondersteuning? Ons team staat voor u klaar.",
     "contactephone": "Telefoonnummer",
+    "contactaddress": "Bezoek ons",
     "contactconnect": "Verbind met ons:",
     "contactform": "Contactformulier",
     "name": "Naam",
@@ -1939,11 +1941,12 @@
         "desc": "Parttime ondersteuning voor essentiële administratieve en operationele taken.",
         "price": "€26.95",
         "unit": "2 uur per dag",
+        
         "features": [
+          "Minimum 3 hours",
           "E-mail & agenda ondersteuning",
           "Basis administratieve taken",
-          "Wekelijkse rapportages",
-          "E-mail ondersteuning"
+          "Wekelijkse rapportages"
         ],
         "button": "Aan de slag"
       },
@@ -4260,7 +4263,7 @@
       ]
     }
   },
-  "hire_powerbi_tableau_specialist": {
+  "hire_power_bi_tableau_specialist": {
     "metadata": {
       "meta_title": "Huur een Toegewijde Power BI & Tableau Specialist in Nederland | BI Dashboard Diensten",
       "meta_description": "Huur een toegewijde Power BI of Tableau specialist in Nederland voor dashboardontwikkeling, datavisualisatie en business intelligence. Snel starten.",
@@ -5363,12 +5366,12 @@
   },
   "hire_hr_assistant_remote": {
     "metadata": {
-      "meta_title": "Huur een Toegewijde HR-assistent op Afstand in Nederland | HR Support",
-      "meta_description": "Huur een toegewijde HR-assistent op afstand in Nederland voor wervingsondersteuning, onboarding en administratie. Snelle start.",
+      "meta_title": "Huur een Toegewijde HR Assistent op Afstand in Nederland | HR Support",
+      "meta_description": "Huur een toegewijde HR Assistent op afstand in Nederland voor wervingsondersteuning, onboarding en administratie. Snelle start.",
       "url_slug": "nl/staffing-support/hr-assistent-op-afstand-inhuren"
     },
     "hero": {
-      "heading": "Huur een Toegewijde HR-assistent op Afstand in Nederland",
+      "heading": "Huur een Toegewijde HR Assistent op Afstand in Nederland",
       "text": "HR-administratie is essentieel maar tijdrovend — en achterstanden creëren compliance-risico's en problemen met de medewerkerservaring. Krijg een assistent die uw personeelsprocessen georganiseerd en compliant houdt.",
       "button_primary": "Boek een Gratis Consultatie",
       "button_secondary": "Bekijk de Tarieven",
@@ -5395,7 +5398,7 @@
       "rating": "5.0"
     },
     "features": {
-      "heading": "Huur een HR-assistent op Afstand in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "heading": "Huur een HR Assistent op Afstand in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
       "item_1": "Toegewijde HR-assistenten",
       "item_2": "Start binnen dagen, niet maanden",
       "item_3": "Bespaar tot 60% op wervingskosten",
@@ -5403,7 +5406,7 @@
       "item_5": "Flexibele maandelijkse plannen"
     },
     "services": {
-      "heading": "Waar Uw HR-assistent op Afstand bij Kan Helpen",
+      "heading": "Waar Uw HR Assistent op Afstand bij Kan Helpen",
       "description": "Onze toegewijde HR-assistenten zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw personeelsadministratie en wervingscoördinatie.",
       "category_1": "Wervingsondersteuning",
       "cat_1_items": [
@@ -5456,7 +5459,7 @@
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
-      "heading": "Betaalbare HR-assistent op Afstand",
+      "heading": "Betaalbare HR Assistent op Afstand",
       "description": "Wij bieden flexibele pakketten op basis van uw HR-ondersteuningsvolume. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
       "plan_1": {
         "title": "Starter Plan",
@@ -5503,8 +5506,8 @@
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
     },
     "cta": {
-      "heading": "Klaar om uw HR-assistent op Afstand in te huren?",
-      "description": "Laat ons u helpen de perfecte HR-assistent op afstand te vinden voor uw personeelsadministratie en -beheer. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "heading": "Klaar om uw HR Assistent op Afstand in te huren?",
+      "description": "Laat ons u helpen de perfecte HR Assistent op afstand te vinden voor uw personeelsadministratie en -beheer. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
       "footer_checkmarks": [
         "Geen verplichting",

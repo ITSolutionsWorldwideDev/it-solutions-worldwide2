@@ -50,7 +50,9 @@
     "clients": "Our Trusted Clients",
     "contactheading": "Get in Touch",
     "contactemail": "Email Us",
+    "contactdesc": "Have questions or need support? Our team is here to help.",
     "contactephone": "Phone Number",
+    "contactaddress": "Visit Us",
     "contactconnect": "Connect with us:",
     "contactform": "Contact Form",
     "name": "Name",
@@ -1914,12 +1916,12 @@
         "title": "Starter Plan",
         "desc": "Part-time support for essential admin and operational tasks.",
         "price": "€26.95",
-        "unit": "2 hours/day",
+        "unit": "per hour", 
         "features": [
+          "Minimum 3 hours",
           "Email & calendar support",
           "Basic admin tasks",
-          "Weekly reports",
-          "Email support"
+          "Weekly reports"
         ],
         "button": "Get Started"
       },
@@ -1927,8 +1929,9 @@
         "title": "Growth Plan",
         "desc": "Dedicated support for daily business operations.",
         "price": "€22.95",
-        "unit": "4 hours/day",
+        "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Research and reporting",
           "Customer and client support",
@@ -1941,8 +1944,9 @@
         "title": "Scale Plan",
         "desc": "Dedicated Virtual Assistant for results driven teams",
         "price": "€18.95",
-        "unit": "8 hours/day",
+        "unit": "per hour",
         "features": [
+          "40 hours per week",
           "Multiple virtual assistants",
           "All Growth features",
           "Social media and content support",
@@ -2048,8 +2052,9 @@
         "title": "Starter Plan",
         "desc": "Part-time support for essential development tasks.",
         "price": "€56.95",
-        "unit": "2 hours/day",
+        "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "Bug fixes and improvements",
           "Feature development support",
           "Weekly reports",
@@ -2061,8 +2066,9 @@
         "title": "Growth Plan",
         "desc": "Dedicated support for full product development.",
         "price": "€48.95",
-        "unit": "4 hours/day",
+        "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Web application development",
           "API and database development",
@@ -2075,8 +2081,9 @@
         "title": "Scale Plan",
         "desc": "Full development team for complex and large-scale products.",
         "price": "€39.95",
-        "unit": "8 hours/day",
+        "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Ecommerce and SaaS development",
           "Full maintenance and support",
@@ -2169,8 +2176,9 @@
         "title": "Starter Plan",
         "desc": "Part-time support for essential data engineering tasks.",
         "price": "€56.95",
-        "unit": "2 hours/day",
+        "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "Pipeline development and fixes",
           "Database management",
           "Weekly reports",
@@ -2182,8 +2190,9 @@
         "title": "Growth Plan",
         "desc": "Dedicated support for full data infrastructure development.",
         "price": "€48.95",
-        "unit": "4 hours/day",
+        "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Data warehouse and lake builds",
           "Cloud data infrastructure setup",
@@ -2196,8 +2205,9 @@
         "title": "Scale Plan",
         "desc": "Full data engineering team for enterprise data platforms.",
         "price": "39.95",
-        "unit": "8 hours/day",
+        "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Analytics engineering and dbt",
           "Full BI tool integration",
@@ -2312,8 +2322,9 @@
         "title": "Starter Plan",
         "desc": "Part-time support for essential ecommerce tasks.",
         "price": "€56.95",
-        "unit": "2 hours/day",
+        "unit": "per hour", 
         "features": [
+          "Minimum 3 hours",
           "Product management and listings",
           "Order processing support",
           "Weekly reports",
@@ -2325,8 +2336,9 @@
         "title": "Growth Plan",
         "desc": "Dedicated support for full ecommerce operations.",
         "price": "€48.95",
-        "unit": "4 hours/day",
+        "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Customer support management",
           "Platform and inventory management",
@@ -2339,8 +2351,9 @@
         "title": "Scale Plan",
         "desc": "Full ecommerce team for high-volume and multi-channel stores.",
         "price": "€39.95",
-        "unit": "8 hours/day",
+        "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Store optimisation and reporting",
           "Multi-platform management",
@@ -2429,8 +2442,9 @@
         "title": "Starter Plan",
         "desc": "Part-time support for essential electrical engineering tasks.",
         "price": "€49.95",
-        "unit": "2 hours/day",
+        "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "Circuit design and documentation",
           "Technical review support",
           "Weekly reports",
@@ -2442,8 +2456,9 @@
         "title": "Growth Plan",
         "desc": "Dedicated support for full electrical engineering projects.",
         "price": "€59.95",
-        "unit": "4 hours/day",
+        "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "PCB design and embedded systems",
           "Technical documentation",
@@ -2456,8 +2471,9 @@
         "title": "Scale Plan",
         "desc": "Full engineering team for large-scale and complex projects.",
         "price": "69.95",
-        "unit": "8 hours/day",
+        "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Electrical systems engineering",
           "Compliance and certification support",
@@ -2536,8 +2552,9 @@
         "title": "Starter Plan",
         "desc": "Part-time support for essential AI development tasks.",
         "price": "€49.95",
-        "unit": "2 hours/day",
+        "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "AI integration and automation",
           "LLM and API development",
           "Weekly reports",
@@ -2549,8 +2566,9 @@
         "title": "Growth Plan",
         "desc": "Dedicated support for full AI product development.",
         "price": "€59.95",
-        "unit": "4 hours/day",
+        "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Machine learning model development",
           "AI automation and NLP builds",
@@ -2563,8 +2581,9 @@
         "title": "Scale Plan",
         "desc": "Full AI team for intelligent product and enterprise AI systems.",
         "price": "69.95",
-        "unit": "8 hours/day",
+        "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Computer vision and advanced ML",
           "Full AI deployment and infrastructure",
@@ -2690,6 +2709,7 @@
         "price": "€56.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "SEO or Google Ads management",
           "Monthly performance report",
           "Weekly updates",
@@ -2703,6 +2723,7 @@
         "price": "€48.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Multi-channel marketing",
           "Lead generation campaigns",
@@ -2717,6 +2738,7 @@
         "price": "€39.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Paid and organic strategy",
           "Advanced analytics and reporting",
@@ -2842,6 +2864,7 @@
         "price": "€41.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "2 platforms managed",
           "Content calendar",
           "Weekly reports",
@@ -2855,6 +2878,7 @@
         "price": "€35.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Up to 4 platforms managed",
           "Community management",
@@ -2869,6 +2893,7 @@
         "price": "€29.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Full content production",
           "Paid social support",
@@ -2994,6 +3019,7 @@
         "price": "€41.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "Social media graphics",
           "Basic brand asset creation",
           "Weekly reports",
@@ -3007,6 +3033,7 @@
         "price": "€35.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Marketing material design",
           "Brand identity projects",
@@ -3021,6 +3048,7 @@
         "price": "€29.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Packaging and product design",
           "Motion graphics and animation",
@@ -3145,6 +3173,7 @@
         "price": "€26.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "Email and chat support",
           "Ticket management",
           "Weekly reports",
@@ -3158,6 +3187,7 @@
         "price": "€22.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Phone and WhatsApp support",
           "CRM and helpdesk management",
@@ -3172,6 +3202,7 @@
         "price": "€18.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Full customer success management",
           "Ecommerce support coverage",
@@ -3297,6 +3328,7 @@
         "price": "€26.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "Data entry and processing",
           "Spreadsheet management",
           "Weekly reports",
@@ -3310,6 +3342,7 @@
         "price": "€22.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Database and CRM management",
           "Document processing",
@@ -3324,6 +3357,7 @@
         "price": "€18.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Ecommerce catalogue management",
           "Research and data collection",
@@ -3449,6 +3483,7 @@
         "price": "€41.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "UI fixes and improvements",
           "Responsive development",
           "Weekly reports",
@@ -3462,6 +3497,7 @@
         "price": "€35.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "React or Vue application development",
           "CMS and headless frontend builds",
@@ -3476,6 +3512,7 @@
         "price": "€29.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "TypeScript and testing",
           "Performance and Core Web Vitals",
@@ -3601,6 +3638,7 @@
         "price": "€56.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "API development and fixes",
           "Database management",
           "Weekly reports",
@@ -3614,6 +3652,7 @@
         "price": "€48.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Laravel or Node.js development",
           "Cloud infrastructure setup",
@@ -3628,6 +3667,7 @@
         "price": "€39.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Microservices architecture",
           "Advanced cloud and DevOps support",
@@ -3753,6 +3793,7 @@
         "price": "€56.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "App fixes and improvements",
           "Feature development support",
           "Weekly reports",
@@ -3766,6 +3807,7 @@
         "price": "€48.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "iOS or Android native development",
           "Cross-platform app builds",
@@ -3780,6 +3822,7 @@
         "price": "€39.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Backend and API development",
           "App Store and Play Store management",
@@ -3905,6 +3948,7 @@
         "price": "€41.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "Manual testing and bug reporting",
           "Test case creation",
           "Weekly reports",
@@ -3918,6 +3962,7 @@
         "price": "€35.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Automated testing setup",
           "API and mobile app testing",
@@ -3932,6 +3977,7 @@
         "price": "€29.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Performance and load testing",
           "Full CI/CD test pipeline",
@@ -4057,6 +4103,7 @@
         "price": "€26.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "Helpdesk and end-user support",
           "Basic system administration",
           "Weekly reports",
@@ -4070,6 +4117,7 @@
         "price": "€22.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Network and cloud management",
           "Microsoft 365 administration",
@@ -4084,6 +4132,7 @@
         "price": "€18.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Cybersecurity support",
           "Full infrastructure management",
@@ -4206,6 +4255,7 @@
         "title": "Starter Plan",
         "price": "€80.95/hour",
         "features": [
+          "Minimum 3 hours",
           "ML model development and evaluation",
           "Basic MLOps pipeline support",
           "Weekly reports",
@@ -4217,6 +4267,7 @@
         "title": "Growth Plan",
         "price": "€68.95/hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Deep learning and model deployment",
           "Data pipeline engineering for ML",
@@ -4229,6 +4280,7 @@
         "title": "Scale Plan",
         "price": "56.95/hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Cloud ML infrastructure and MLOps",
           "Model monitoring and optimisation",
@@ -4354,6 +4406,7 @@
         "price": "€56.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "Data analysis and reporting",
           "Basic dashboard creation",
           "Weekly reports",
@@ -4367,6 +4420,7 @@
         "price": "€48.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "BI tool dashboards and reporting",
           "SQL querying and data preparation",
@@ -4381,6 +4435,7 @@
         "price": "€39.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Statistical modelling and forecasting",
           "Cross-department BI integration",
@@ -4403,7 +4458,7 @@
       ]
     }
   },
-  "hire_powerbi_tableau_specialist": {
+  "hire_power_bi_tableau_specialist": {
     "metadata": {
       "meta_title": "Hire a Dedicated Power BI & Tableau Specialist in Netherlands | BI Dashboard Services",
       "meta_description": "Hire a dedicated Power BI or Tableau specialist in the Netherlands for dashboard development, data visualisation, reporting, and business intelligence. Fast start, flexible plans.",
@@ -4506,6 +4561,7 @@
         "price": "€56.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "Dashboard design and development",
           "Basic data modelling",
           "Weekly reports",
@@ -4519,6 +4575,7 @@
         "price": "€48.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Power BI or Tableau full builds",
           "Reporting automation setup",
@@ -4533,6 +4590,7 @@
         "price": "€39.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Multi-source data integration",
           "BI governance and strategy",
@@ -4658,6 +4716,7 @@
         "price": "€26.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "Blog or web copy writing",
           "Content calendar planning",
           "Weekly reports",
@@ -4671,6 +4730,7 @@
         "price": "€22.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "SEO content writing",
           "Email marketing copy",
@@ -4685,6 +4745,7 @@
         "price": "€18.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Ad and brand copywriting",
           "Multi-channel content strategy",
@@ -4773,7 +4834,8 @@
         "desc": "Essential tracking setup and basic conversion monitoring.",
         "price": "€56.95",
         "unit": "per hour",
-        "features": ["GA4 setup and configuration", "Basic conversion tracking", "Weekly reports", "Email support"],
+        "features": [
+          "Minimum 3 hours","GA4 setup and configuration", "Basic conversion tracking", "Weekly reports", "Email support"],
         "button": "Get Started"
       },
       "plan_2": {
@@ -4781,7 +4843,8 @@
         "desc": "Dedicated support for GTM and custom dashboard reporting.",
         "price": "€48.95",
         "unit": "per hour",
-        "features": ["All Starter features", "Google Tag Manager management", "Custom dashboards and reporting", "Priority support", "Dedicated account manager"],
+        "features": [
+          "20 hours per week","All Starter features", "Google Tag Manager management", "Custom dashboards and reporting", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
       },
       "plan_3": {
@@ -4789,7 +4852,8 @@
         "desc": "Full analytics audit, advanced insights, and CRO strategy.",
         "price": "€39.95",
         "unit": "per hour",
-        "features": ["All Growth features", "Full analytics audit and cleanup", "Advanced data insights and CRO", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "40 hours per week","All Growth features", "Full analytics audit and cleanup", "Advanced data insights and CRO", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -4867,7 +4931,8 @@
         "desc": "Essential spreadsheet fixes and formula development.",
         "price": "€41.95",
         "unit": "per hour",
-        "features": ["Spreadsheet development and fixes", "Formula and function work", "Weekly reports", "Email support"],
+        "features": [
+          "Minimum 3 hours","Spreadsheet development and fixes", "Formula and function work", "Weekly reports", "Email support"],
         "button": "Get Started"
       },
       "plan_2": {
@@ -4875,7 +4940,8 @@
         "desc": "Dedicated support for VBA macros and dashboard builds.",
         "price": "€35.95",
         "unit": "per hour",
-        "features": ["All Starter features", "VBA macro automation", "Dashboard and reporting builds", "Priority support", "Dedicated account manager"],
+        "features": [
+          "20 hours per week","All Starter features", "VBA macro automation", "Dashboard and reporting builds", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
       },
       "plan_3": {
@@ -4883,7 +4949,8 @@
         "desc": "Enterprise modelling, Power Query, and full automation projects.",
         "price": "€29.95",
         "unit": "per hour",
-        "features": ["Multiple Microsoft Excel specialists", "All Growth features", "Financial modelling and forecasting", "Power Query and data transformation", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "40 hours per week","Multiple Microsoft Excel specialists", "All Growth features", "Financial modelling and forecasting", "Power Query and data transformation", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -4961,7 +5028,8 @@
         "desc": "Essential trip planning and email consultation support.",
         "price": "€26.95",
         "unit": "per hour",
-        "features": ["Trip planning and itinerary creation", "Customer email consultation", "Weekly reports", "Email support"],
+        "features": [
+          "Minimum 3 hours","Trip planning and itinerary creation", "Customer email consultation", "Weekly reports", "Email support"],
         "button": "Get Started"
       },
       "plan_2": {
@@ -4969,7 +5037,8 @@
         "desc": "Dedicated support for booking admin and detailed research.",
         "price": "€22.95",
         "unit": "per hour",
-        "features": ["All Starter features", "Booking administration", "Flight and accommodation research", "Priority support", "Dedicated account manager"],
+        "features": [
+          "20 hours per week","All Starter features", "Booking administration", "Flight and accommodation research", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
       },
       "plan_3": {
@@ -4977,7 +5046,8 @@
         "desc": "Full customer lifecycle management and marketing support.",
         "price": "€18.95",
         "unit": "per hour",
-        "features": ["All Growth features", "Aftersales and customer follow-up", "Travel content and research support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "40 hours per week","All Growth features", "Aftersales and customer follow-up", "Travel content and research support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -5055,7 +5125,8 @@
         "desc": "Essential booking processing and calendar management.",
         "price": "€26.95",
         "unit": "per hour",
-        "features": ["Booking and reservation processing", "Availability calendar management", "Weekly reports", "Email support"],
+        "features": [
+          "Minimum 3 hours","Booking and reservation processing", "Availability calendar management", "Weekly reports", "Email support"],
         "button": "Get Started"
       },
       "plan_2": {
@@ -5063,7 +5134,8 @@
         "desc": "Dedicated support for systems, changes, and refunds.",
         "price": "€22.95",
         "unit": "per hour",
-        "features": ["All Starter features", "Reservation system administration", "Changes, cancellations and refunds", "Priority support", "Dedicated account manager"],
+        "features": [
+          "20 hours per week","All Starter features", "Reservation system administration", "Changes, cancellations and refunds", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
       },
       "plan_3": {
@@ -5071,7 +5143,8 @@
         "desc": "Full multi-channel management and comprehensive reporting.",
         "price": "€18.95",
         "unit": "per hour",
-        "features": ["All Growth features", "Multi-channel reservation management", "Full reporting and CRM updates", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "40 hours per week","All Growth features", "Multi-channel reservation management", "Full reporting and CRM updates", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -5149,7 +5222,8 @@
         "desc": "Part-time support for essential inquiries and booking assistance.",
         "price": "€26.95",
         "unit": "per hour",
-        "features": ["Email and chat inquiry handling", "Basic booking support", "Weekly reports", "Email support"],
+        "features": [
+          "Minimum 3 hours","Email and chat inquiry handling", "Basic booking support", "Weekly reports", "Email support"],
         "button": "Get Started"
       },
       "plan_2": {
@@ -5157,7 +5231,8 @@
         "desc": "Dedicated support for full customer service and complaint management.",
         "price": "€22.95",
         "unit": "per hour",
-        "features": ["All Starter features", "Complaint and disruption management", "Multi-channel communication support", "Priority support", "Dedicated account manager"],
+        "features": [
+          "20 hours per week","All Starter features", "Complaint and disruption management", "Multi-channel communication support", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
       },
       "plan_3": {
@@ -5165,7 +5240,8 @@
         "desc": "Full customer success lifecycle and detailed CRM management.",
         "price": "€18.95",
         "unit": "per hour",
-        "features": ["All Growth features", "Aftersales and retention management", "Full CRM and reporting support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "40 hours per week","All Growth features", "Aftersales and retention management", "Full CRM and reporting support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -5243,7 +5319,8 @@
         "desc": "Part-time support for essential travel content and social media tasks.",
         "price": "€41.95",
         "unit": "per hour",
-        "features": ["Travel content and social media", "Email marketing support", "Weekly reports", "Email support"],
+        "features": [
+          "Minimum 3 hours","Travel content and social media", "Email marketing support", "Weekly reports", "Email support"],
         "button": "Get Started"
       },
       "plan_2": {
@@ -5251,7 +5328,8 @@
         "desc": "Dedicated support for full digital travel marketing operations.",
         "price": "€35.95",
         "unit": "per hour",
-        "features": ["All Starter features", "SEO and paid digital marketing", "Campaign management and reporting", "Priority support", "Dedicated account manager"],
+        "features": [
+          "20 hours per week","All Starter features", "SEO and paid digital marketing", "Campaign management and reporting", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
       },
       "plan_3": {
@@ -5259,7 +5337,8 @@
         "desc": "Full marketing team execution and advanced strategy coordination.",
         "price": "€29.95",
         "unit": "per hour",
-        "features": ["All Growth features", "Multi-channel campaign execution", "Full analytics and performance strategy", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "40 hours per week","All Growth features", "Multi-channel campaign execution", "Full analytics and performance strategy", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -5374,6 +5453,7 @@
         "price": "€41.95",
         "unit": "per hour",
         "features": [
+          "Minimum 3 hours",
           "HR admin and employee records",
           "Recruitment support",
           "Weekly reports",
@@ -5387,6 +5467,7 @@
         "price": "€35.95",
         "unit": "per hour",
         "features": [
+          "20 hours per week",
           "All Starter features",
           "Onboarding and offboarding",
           "Payroll support and leave management",
@@ -5401,6 +5482,7 @@
         "price": "€29.95",
         "unit": "per hour",
         "features": [
+          "40 hours per week",
           "All Growth features",
           "Employee engagement support",
           "HR reporting and compliance",
@@ -5489,7 +5571,8 @@
         "desc": "Part-time support for invoicing and financial record keeping.",
         "price": "€26.95",
         "unit": "per hour",
-        "features": ["Invoicing and accounts receivable", "Financial record keeping", "Weekly reports", "Email support"],
+        "features": [
+          "Minimum 3 hours","Invoicing and accounts receivable", "Financial record keeping", "Weekly reports", "Email support"],
         "button": "Get Started"
       },
       "plan_2": {
@@ -5497,7 +5580,8 @@
         "desc": "Dedicated support for bookkeeping and software administration.",
         "price": "€22.95",
         "unit": "per hour",
-        "features": ["All Starter features", "Accounts payable and bookkeeping support", "Accounting software administration", "Priority support", "Dedicated account manager"],
+        "features": [
+          "20 hours per week","All Starter features", "Accounts payable and bookkeeping support", "Accounting software administration", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
       },
       "plan_3": {
@@ -5505,7 +5589,8 @@
         "desc": "Full financial reporting and audit preparation support.",
         "price": "€18.95",
         "unit": "per hour",
-        "features": ["All Growth features", "Full financial reporting and documentation", "Audit preparation support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "40 hours per week","All Growth features", "Full financial reporting and documentation", "Audit preparation support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -5583,7 +5668,8 @@
         "desc": "Essential support for landing pages and website updates.",
         "price": "€49.95",
         "unit": "per hour",
-        "features": ["Website updates and maintenance", "Landing page design", "Weekly reports", "Email support"],
+        "features": [
+          "Minimum 3 hours","Website updates and maintenance", "Landing page design", "Weekly reports", "Email support"],
         "button": "Get Started"
       },
       "plan_2": {
@@ -5591,7 +5677,8 @@
         "desc": "Dedicated support for custom website builds and ecommerce.",
         "price": "€59.95",
         "unit": "per hour",
-        "features": ["All Starter features", "Custom website design and build", "Ecommerce development", "Priority support", "Dedicated account manager"],
+        "features": [
+          "20 hours per week","All Starter features", "Custom website design and build", "Ecommerce development", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
       },
       "plan_3": {
@@ -5599,7 +5686,8 @@
         "desc": "Full UI/UX redesign and enterprise website management.",
         "price": "€69.95",
         "unit": "per hour",
-        "features": ["All Growth features", "UI/UX and redesign projects", "Multi-site management", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "40 hours per week","All Growth features", "UI/UX and redesign projects", "Multi-site management", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."

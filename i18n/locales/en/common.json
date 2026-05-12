@@ -50,7 +50,9 @@
     "clients": "Our Trusted Clients",
     "contactheading": "Get in Touch",
     "contactemail": "Email Us",
+    "contactdesc": "Have questions or need support? Our team is here to help.",
     "contactephone": "Phone Number",
+    "contactaddress": "Visit Us",
     "contactconnect": "Connect with us:",
     "contactform": "Contact Form",
     "name": "Name",
@@ -1918,11 +1920,12 @@
         "price": "€26.95",
         "unit": "2 hours/day",
         "features": [
+          "Minimum 3 hours",
           "Email & calendar support",
           "Basic admin tasks",
-          "Weekly reports",
-          "Email support"
+          "Weekly reports"
         ],
+        
         "button": "Get Started"
       },
       "plan_2": {
@@ -4351,7 +4354,7 @@
       "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
     }
   },
-  "hire_powerbi_tableau_specialist": {
+  "hire_power_bi_tableau_specialist": {
     "metadata": {
       "meta_title": "Hire a Dedicated Power BI & Tableau Specialist in Netherlands | BI Dashboard Services",
       "meta_description": "Hire a dedicated Power BI or Tableau specialist in the Netherlands for dashboard development, data visualisation, reporting, and business intelligence. Fast start, flexible plans.",
