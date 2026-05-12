@@ -118,7 +118,7 @@ export const menuItems: MenuItem[] = [
   // },
 
   {
-    label: "Hiring",
+    label: "Outsourcing",
     dropdown: [
       // {
       //   label: "Staffing Services",
@@ -179,11 +179,11 @@ export const menuItems: MenuItem[] = [
         dropdown: [
           {
             label: "Administrative Support",
-            link: "/staffing-support/hire-administrative-support",
+            link: "/staffing-support/hire-admin-accounting-assistant",
           },
           {
             label: "Customer Support",
-            link: "/staffing-support/hire-customer-support",
+            link: "/staffing-support/hire-customer-support-agent",
           },
 
           {
@@ -192,6 +192,21 @@ export const menuItems: MenuItem[] = [
           },
         ],
       },
+
+      // {
+      //   label: "Design Services",
+
+      //   dropdown: [
+      //     {
+      //       label: "Web Designer",
+      //       link: "/staffing-support/hire-webdesigner-developer",
+      //     },
+      //     {
+      //       label: "Graphic Designer",
+      //       link: "/staffing-support/hire-graphic-designer",
+      //     },
+      //   ],
+      // },
 
       {
         label: "IT & Development",

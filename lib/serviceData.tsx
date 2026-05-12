@@ -3911,7 +3911,7 @@ const contentMap: ServicePageConfig =
       ],
     },
 
-    "hire-administrative-accounting-assistant": {
+    "hire-admin-accounting-assistant": {
       heading: "Administrative Accounting Assistant",
       subText:
         "Financial administration that piles up leads to errors, missed payments, and compliance headaches. Get a dedicated administrative accounting assistant who keeps your financial records accurate, your invoices on time, and your administration always under control.",
