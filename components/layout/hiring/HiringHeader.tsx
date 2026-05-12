@@ -1,31 +1,44 @@
-"use client";
+// components/layout/hiring/HiringHeader.tsx
+
+// "use client";
 import Link from "next/link";
 import { HiBolt } from "react-icons/hi2";
 import { notFound } from "next/navigation";
 import ConsultationForm from "./ConsultationForm";
 import WhatsAppBtn from "@/components/ui/WhatsAppBtn";
-import HiringHeroSection from "./HiringHeroSection";
-import HiringPricing from "./HiringPricing";
-import HiringCTA from "./HiringCTA";
 import { serviceData } from "@/lib/serviceData";
 import { ArrowRight, Users, Clock, Award } from "lucide-react";
+import HiringPricing2 from "./HiringPricing-2";
+
+import initServerI18n from "@/utils/serverTranslation";
+import ScrollPricingButton from "./ScrollPricingButton";
+
 type Props = {
   slug: string;
+  locale: string;
 };
 
-// 🔥 Dynamic content config
-
-export default function HiringHeader({ slug }: Props) {
+export default async function HiringHeader({ slug, locale }: Props) {
   // 🔥 fallback if slug not found
   // const data = contentMap[slug as keyof typeof contentMap];
 
-  const data = serviceData({slug: slug as string});
-  console.log(data);
+  const data = serviceData({ slug: slug as string });
+
   if (!data) {
     return notFound();
   }
-  const { heading, subText, service, services, plans } = data;
-  
+  // const { heading, subText, service, services, plans } = data;
+  const { service } = data;
+
+  const i18n = await initServerI18n(locale);
+  const t = i18n.getFixedT(locale, "common");
+
+  const translationKey = slug.replace(/-/g, "_");
+
+  const pageContent = t(translationKey, {
+    returnObjects: true,
+  }) as any;
+
   // contentMap[slug as keyof typeof contentMap] ||
   // contentMap["hire-virtual-assistant"];
 
@@ -38,16 +51,19 @@ export default function HiringHeader({ slug }: Props) {
             <div className="flex-1 space-y-6 sm:space-y-8 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-[#156F761A] border text-teal-700 text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 rounded-full shadow-sm">
                 <HiBolt />
-                Save up to 60%
+                {/* Save up to 60% */}
+                {pageContent.features?.item_3}
               </div>
 
               <h1 className="max-w-xl mx-auto lg:mx-0 text-3xl sm:text-4xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-                Hire a Dedicated {service}
-                <span className="text-[#156F76]"> in Netherlands</span>
+                {/* Hire a Dedicated {service} */}
+                {/* <span className="text-[#156F76]"> in Netherlands</span> */}
+                {pageContent.hero?.heading}
               </h1>
 
               <p className="text-slate-600 text-base sm:text-lg max-w-md sm:max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                {subText}
+                {/* {subText} */}
+                {pageContent.hero?.text}
               </p>
 
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4">
@@ -56,20 +72,24 @@ export default function HiringHeader({ slug }: Props) {
                   target="_blank"
                 >
                   <button className="w-full sm:w-auto bg-teal-800 hover:bg-teal-900 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 shadow-md">
-                    Book Free Consultation
+                    {/* Book Free Consultation */}
+                    {pageContent.hero?.button_primary}
                     <ArrowRight />
                   </button>
                 </Link>
 
-                <button
+                {/* <button
                   className="w-full sm:w-auto border-2 border-teal-800 text-teal-800 hover:bg-teal-50 font-semibold px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer"
                   onClick={() => {
                     const element = document.getElementById("pricing");
                     element?.scrollIntoView({ behavior: "smooth" });
                   }}
                 >
+                  {pageContent.hero.button_secondary}
                   Get Pricing Today
-                </button>
+                </button> */}
+
+                <ScrollPricingButton btntext={pageContent.hero?.button_secondary} />
               </div>
 
               {/* Stats */}
@@ -80,7 +100,8 @@ export default function HiringHeader({ slug }: Props) {
                     500+
                   </span>
                   <span className="text-xs sm:text-sm text-slate-500">
-                    Dedicated VAs
+                    {/* Dedicated VAs */}
+                    {pageContent.hero?.stats?.stat_1}
                   </span>
                 </div>
 
@@ -90,7 +111,8 @@ export default function HiringHeader({ slug }: Props) {
                     24hrs
                   </span>
                   <span className="text-xs sm:text-sm text-slate-500">
-                    Start Time
+                    {/* Start Time */}
+                    {pageContent.hero?.stats?.stat_2}
                   </span>
                 </div>
 
@@ -100,7 +122,8 @@ export default function HiringHeader({ slug }: Props) {
                     60%
                   </span>
                   <span className="text-xs sm:text-sm text-slate-500">
-                    Cost Savings
+                    {/* Cost Savings */}
+                    {pageContent.hero?.stats?.stat_3}
                   </span>
                 </div>
               </div>
@@ -108,28 +131,40 @@ export default function HiringHeader({ slug }: Props) {
 
             {/* Right Form */}
             <div className="w-full lg:w-auto flex-1 ">
-              <ConsultationForm slug={slug} />
+              <ConsultationForm slug={slug} consultation_form={pageContent?.consultation_form} />
             </div>
           </main>
 
           <WhatsAppBtn />
 
           <div className="bg-teal-800 text-white text-xs sm:text-sm text-center py-4 sm:py-5 px-4">
-            ✓ Trusted by 500+ Businesses Looking to Scale Faster Across
-            Netherlands &nbsp;
+            {/* ✓ Trusted by 500+ Businesses Looking to Scale Faster Across
+            Netherlands &nbsp; */}
+            ✓ {pageContent.features_ribbon?.text}
             <span className="text-yellow-400">★ 5.0</span>{" "}
             {/* <span className="text-teal-300">(709 Reviews)</span> */}
           </div>
         </div>
       </div>
-      <HiringHeroSection
+      {/* <HiringHeroSection
         slug={slug}
         service={service}
         // features={features}
         services={services}
+      /> */}
+      {/* <HiringPricing slug={slug} plans={plans} service={service} /> */}
+      {/* <HiringPricing2 plans={plans} service={service} locale={locale} /> */}
+      <HiringPricing2
+        pricing={pageContent.pricing_section}
+        service={data.service}
+        locale={locale}
       />
-      <HiringPricing slug={slug} plans={plans} service={service} />
-      <HiringCTA slug={slug} service={service} />
+      {/* slug={slug}  */}
+      {/* <HiringCTA slug={slug} service={service} /> */}
     </div>
   );
 }
+
+// import HiringHeroSection from "./HiringHeroSection";
+// import HiringPricing from "./HiringPricing";
+// import HiringCTA from "./HiringCTA";

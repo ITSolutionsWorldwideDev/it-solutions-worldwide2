@@ -32,6 +32,9 @@ import {
   Folder,
 } from "lucide-react";
 import { MdOutlineSupportAgent, MdSupportAgent } from "react-icons/md";
+
+import initServerI18n from "@/utils/serverTranslation";
+
 const contentMap: ServicePageConfig =
   // : Record<
   //   string,

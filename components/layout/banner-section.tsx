@@ -26,9 +26,10 @@ const BannerSection: React.FC<BannerSectionProps> = ({ slides }) => {
   if (slides.length === 0) return null;
 
   return (
-    <div className="relative w-full px-4 sm:px-8 md:px-16 lg:px-32 py-12">
+    // <div className="relative w-full px-4 sm:px-8 md:px-16 lg:px-32 py-12">
+    <div className="container mx-auto my-10">{/* max-w-6xl mx-auto  */}
       <div
-        className="relative bg-cover bg-center w-full h-[300px] md:h-[400px] lg:h-[600px] max-w-6xl mx-auto rounded-xl shadow-lg overflow-hidden flex items-center justify-center"
+        className="relative bg-cover bg-center w-full h-[300px] md:h-[400px] lg:h-[600px] rounded-xl shadow-lg overflow-hidden flex items-center justify-center"
         style={{
           backgroundImage: `url(${slides[currentSlide].backgroundImage})`,
         }}

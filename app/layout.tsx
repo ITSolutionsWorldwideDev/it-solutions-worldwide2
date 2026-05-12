@@ -13,11 +13,10 @@ const lexend = Lexend({
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
-  
+
 export const metadata: Metadata = {
   title: {
-    default:
-      "Smart IT & Business Services in Netherlands | ITWW",
+    default: "Smart IT & Business Services in Netherlands | ITWW",
     template: "%s | IT Solutions Worldwide",
   },
   description:
@@ -43,7 +42,7 @@ export default function RootLayout({
           content="0ryxazzsetmvipkqgt60umo33s7ti7"
         />
       </head>
-      <body>
+      <body className="mx-2 md:mx-0 lg:mx-0">
         <MetaPixel pixelId="1766535074073515" />
         <GoogleTagManager gtmId="GTM-PH8FNRK6" />
         <GoogleAnalytics gaId="GT-TQKZR4LS" />

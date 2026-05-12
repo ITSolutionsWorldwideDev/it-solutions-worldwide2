@@ -65,7 +65,7 @@
     "button_text": "Discover Now",
     "button2_text": "Our Services",
 
-    "cards_main_heading":"Make your Business future proof built to adapt, ready to lead.",
+    "cards_main_heading": "Make your Business future proof built to adapt, ready to lead.",
     "card_heading_1": "Smart Solutions, Seamless Operation",
     "card_text_1": "We simplify complex workflows with tailored IT and cloud solutions that boost efficiency, reduce costs, and scale with your growth. From infrastructure to automation, we build systems that evolve with your business.",
 
@@ -113,7 +113,6 @@
     "our_mission_widget_text5": "Implementing artificial intelligence solutions to provide actionable insights, enhance decision-making, and drive innovation.",
     "our_mission_widget_text6": "Complete digital marketing strategies, including branding, SEO, social media management, and PPC campaigns for measurable results.",
 
-
     "our_values_main_heading": "Our Core Values",
     "our_values_main_subheading": "The Foundation of Everything We Do",
     "our_values_main_text": " At IT Solutions Worldwide, our values guide every decision, every solution, and every relationship. They reflect our commitment to excellence, innovation, and integrity in a rapidly evolving digital world.",
@@ -128,7 +127,7 @@
 
     "creative_team_heading": "The Creative team behind the door",
     "creative_team_subheading": "Ask not what your teammates can do for you. Ask what you can do for your teammates.",
-    
+
     "expertise_heading_1": "Supply Chain Services",
     "expertise_text_1": "Streamlining logistics and operations for faster, smarter delivery.",
 
@@ -1821,5 +1820,2325 @@
   "notfound": {
     "homeButton": "Back Home",
     "message": "Page is Unavailable"
+  },
+
+  "hire_virtual_assistant": {
+    "metadata": {
+      "meta_title": "Hire Virtual Assistant in Netherlands | Dedicated Remote VA Services",
+      "meta_description": "Hire a dedicated virtual assistant in the Netherlands for business or personal tasks. Fully managed remote VA services to help you save time and scale faster.",
+      "url_slug": "itsolutionsworldwide.com/en/hire-virtual-assistant"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Virtual Assistant in Netherlands",
+      "text": "Stop spending valuable time on repetitive tasks. Get a professional virtual assistant and focus on what truly matters growing your business.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "stats": {
+        "stat_1": "500+ Dedicated VAs",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire virtual-assistant in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated virtual-assistant",
+      "item_2": "Start in 48 Hours",
+      "item_3": "Save up to 60%",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your virtual-assistant Can Help With",
+      "description": "Our dedicated virtual-assistant are trained professionals who can support your business or personal workload immediately.",
+      "category_1": "Administrative Support",
+      "cat_1_items": [
+        "Inbox management",
+        "Data entry",
+        "File organization",
+        "Document formatting"
+      ],
+      "category_2": "Calendar & Scheduling",
+      "cat_2_items": [
+        "Appointment booking",
+        "Meeting coordination",
+        "Reminders and follow-ups",
+        "Calendar management"
+      ],
+      "category_3": "Customer Support",
+      "cat_3_items": [
+        "Live chat support",
+        "Email support",
+        "CRM updates",
+        "Client communication"
+      ],
+      "category_4": "Marketing Support",
+      "cat_4_items": [
+        "Social media scheduling",
+        "Lead research",
+        "Competitor research",
+        "Basic reporting"
+      ],
+      "category_5": "Ecommerce Support",
+      "cat_5_items": [
+        "Product uploads",
+        "Order processing",
+        "Inventory updates",
+        "Customer replies"
+      ],
+      "category_6": "Personal Assistance",
+      "cat_6_items": [
+        "Travel booking",
+        "Personal scheduling",
+        "Online research",
+        "Lifestyle admin tasks"
+      ],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Virtual Assistant",
+      "description": "We offer flexible packages based on your workload and business needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential admin and operational tasks.",
+        "price": "€26,85",
+        "unit": "2 hours/day",
+        "features": [
+          "Email & calendar support",
+          "Basic admin tasks",
+          "Weekly reports",
+          "Email support"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for daily business operations.",
+        "price": "€22,82",
+        "unit": "4 hours/day",
+        "features": [
+          "All Starter features",
+          "Research and reporting",
+          "Customer and client support",
+          "Priority support",
+          "Dedicated virtual assistant"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Dedicated Virtual Assistant for results driven teams",
+        "price": "€18,80",
+        "unit": "8 hours/day",
+        "features": [
+          "Multiple virtual assistants",
+          "All Growth features",
+          "Social media and content support",
+          "Full project and task coordination",
+          "Custom workflows",
+          "Dedicated virtual assistant",
+          "SLA guarantee"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your virtual-assistant?",
+      "description": "Let us help you find the perfect virtual-assistant for your business or personal needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
+    }
+  },
+
+  "hire_full_stack_developer": {
+    "metadata": {
+      "meta_title": "Hire Full Stack Developer in Netherlands | Dedicated Development Services",
+      "meta_description": "Hire a full stack developer in the Netherlands for web apps, custom software, ecommerce, and startup projects. Dedicated developers ready to start fast.",
+      "url_slug": "en/hire-full-stack-developer"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Full Stack Developer in Netherlands",
+      "text": "Stop delaying your project because of slow hiring, unreliable freelancers, or lack of technical expertise.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Developer Pricing"
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features": {
+      "heading": "Hire Full Stack Developers in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Full Stack Developers",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Flexible Monthly Plans",
+      "item_5": "Fully Managed Support"
+    },
+    "services": {
+      "heading": "What Our Full Stack Developers Can Help with",
+      "description": "Our developers handle both front-end and back-end development, allowing you to build complete digital products faster.",
+      "categories": {
+        "web": [
+          "Business websites",
+          "Custom company portals",
+          "Landing pages",
+          "CMS websites"
+        ],
+        "apps": [
+          "SaaS platforms",
+          "Dashboards",
+          "Booking systems",
+          "Internal tools"
+        ],
+        "ecommerce": [
+          "Shopify customization",
+          "WooCommerce stores",
+          "Payment integrations",
+          "Product management systems"
+        ],
+        "frontend": [
+          "React.js",
+          "Vue.js",
+          "Angular",
+          "Responsive UI development"
+        ],
+        "backend": ["Node.js", "PHP", "Laravel", "Python", "API development"],
+        "support": [
+          "Bug fixing",
+          "Speed optimization",
+          "Security updates",
+          "Ongoing development support"
+        ]
+      },
+      "button_middle": "Tell Us What you Need"
+    },
+    "pricing_section": {
+      "heading": "Affordable full-stack-developer",
+      "description": "We offer flexible packages based on your workload and business needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential development tasks.",
+        "price": "€56,85",
+        "unit": "2 hours/day",
+        "features": ["Bug fixes and improvements", "Feature development support", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full product development.",
+        "price": "€48,32",
+        "unit": "4 hours/day",
+        "features": ["All Starter features", "Web application development", "API and database development", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full development team for complex and large-scale products.",
+        "price": "€39,80",
+        "unit": "8 hours/day",
+        "features": ["All Growth features", "Ecommerce and SaaS development", "Full maintenance and support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to Hire a Full Stack Developer in Netherlands?",
+      "description": "Build faster, reduce costs, and launch confidently with experienced full stack developers from IT Solutions Worldwide.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_data_engineer": {
+    "metadata": {
+      "meta_title": "Hire a Data Engineer in Netherlands | Dedicated Data Engineering Services",
+      "meta_description": "Hire an experienced data engineer in the Netherlands for pipelines, warehousing, analytics, and data infrastructure. Dedicated talent, fast onboarding, flexible plans.",
+      "url_slug": "en/hire-data-engineer"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated data-engineer in Netherlands",
+      "text": "Your business is generating data. The question is whether you're using it — or losing value because the infrastructure isn't there.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Data Engineer Pricing"
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "services": {
+      "heading": "What Our Data Engineers Can Build and Manage",
+      "categories": {
+        "pipelines": [
+          "ETL and ELT pipeline development",
+          "Real-time and batch processing",
+          "API and third-party data ingestion",
+          "Automated data workflows"
+        ],
+        "warehousing": [
+          "Cloud data warehouse setup (BigQuery, Snowflake, Redshift)",
+          "Data modelling and schema design",
+          "Historical data migration",
+          "Data lake architecture"
+        ],
+        "analytics": [
+          "BI tool integration (Looker, Power BI, Tableau, Metabase)",
+          "Dashboard and KPI reporting systems",
+          "Self-service analytics setup",
+          "Data quality monitoring"
+        ],
+        "database": [
+          "PostgreSQL, MySQL, MongoDB",
+          "Query optimisation",
+          "Database maintenance and scaling",
+          "Backup and recovery systems"
+        ],
+        "cloud": [
+          "AWS, Google Cloud, Azure data services",
+          "Infrastructure as Code (Terraform)",
+          "Cost optimisation",
+          "Security and compliance setup"
+        ]
+      },
+      "button_middle": "Tell Us Your Data Challenge"
+    },
+    "pricing_section": {
+      "heading": "Affordable data-engineer",
+      "description": "We offer flexible packages based on your workload and business needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential data engineering tasks.",
+        "price": "€56,85",
+        "unit": "2 hours/day",
+        "features": ["Pipeline development and fixes", "Database management", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full data infrastructure development.",
+        "price": "€48,32",
+        "unit": "4 hours/day",
+        "features": ["All Starter features", "Data warehouse and lake builds", "Cloud data infrastructure setup", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full data engineering team for enterprise data platforms.",
+        "price": "39,80",
+        "unit": "8 hours/day",
+        "features": ["All Growth features", "Analytics engineering and dbt", "Full BI tool integration", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to Hire a Data Engineer in Netherlands?",
+      "description": "Build reliable data infrastructure, unlock your analytics, and make faster decisions — with dedicated data engineers from IT Solutions Worldwide.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_ecommerce_assistant": {
+    "metadata": {
+      "meta_title": "Hire an Ecommerce Assistant in Netherlands | Webshop Management Services",
+      "meta_description": "Hire a dedicated ecommerce or webshop assistant in the Netherlands for product management, order processing, customer support, and store optimisation. Start fast.",
+      "url_slug": "en/hire-ecommerce-assistant"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated ecommerce-assistant in Netherlands",
+      "text": "Running a webshop takes more than just having the right products. The daily operations can overwhelm a small team fast.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Assistant Pricing"
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features": {
+      "heading": "Dedicated Ecommerce Assistants Trusted by Webshop Owners in the Netherlands",
+      "item_1": "Dedicated Ecommerce Support",
+      "item_2": "Start in 48 hours",
+      "item_3": "Save up to 60% on Staffing Costs",
+      "item_4": "Flexible Monthly Plans",
+      "item_5": "Fully Managed and Reliable"
+    },
+    "services": {
+      "heading": "What your Ecommerce Assistants Can help with",
+      "category_1": "Product Management",
+      "cat_1_items": [
+        "Adding and updating product listings",
+        "Writing product descriptions",
+        "Image uploading and formatting",
+        "Category and tag organisation",
+        "Variant and attribute management"
+      ],
+      "category_2": "Order & Inventory Management",
+      "cat_2_items": [
+        "Order processing and tracking",
+        "Inventory level monitoring",
+        "Supplier communication",
+        "Stock updates and alerts",
+        "Return and refund coordination"
+      ],
+      "category_3": "Customer Support",
+      "cat_3_items": [
+        "Email and chat support",
+        "Complaint handling",
+        "Order status updates",
+        "Review management",
+        "FAQ responses"
+      ],
+      "category_4": "Store Optimisation",
+      "cat_4_items": [
+        "On-page SEO for product pages",
+        "Speed and usability improvements",
+        "Discount and promotion setup",
+        "A/B testing support",
+        "Conversion improvement tasks"
+      ],
+      "category_5": "Platform Support",
+      "cat_5_items": [
+        "Shopify",
+        "WooCommerce",
+        "Magento",
+        "Bol.com seller management",
+        "Amazon seller support"
+      ],
+      "category_6": "Reporting & Admin",
+      "cat_6_items": [
+        "Weekly sales reporting",
+        "Inventory reports",
+        "Performance tracking",
+        "Spreadsheet and data management"
+      ],
+      "button_middle": "Tell Us What Your Store Needs"
+    },
+    "pricing_section": {
+      "heading": "Affordable ecommerce-assistant",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential ecommerce tasks.",
+        "price": "€56,85",
+        "unit": "2 hours/day",
+        "features": [
+          "Product management and listings",
+          "Order processing support",
+          "Weekly reports",
+          "Email support"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full ecommerce operations.",
+        "price": "€48,32",
+        "unit": "4 hours/day",
+        "features": [
+          "All Starter features",
+          "Customer support management",
+          "Platform and inventory management",
+          "Priority support",
+          "Dedicated account manager"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full ecommerce team for high-volume and multi-channel stores.",
+        "price": "39,80",
+        "unit": "8 hours/day",
+        "features": [
+          "All Growth features",
+          "Store optimisation and reporting",
+          "Multi-platform management",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to Hire an Ecommerce Assistant?",
+      "description": "Let us help you find the perfect ecommerce-assistant for your business or personal needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
+    }
+  },
+  "hire_electrical_engineer": {
+    "metadata": {
+      "meta_title": "Hire an Electrical Engineer in Netherlands | Remote Engineering Services",
+      "meta_description": "Hire a dedicated electrical engineer in the Netherlands for circuit design, embedded systems, PCB design, technical documentation, and engineering support. Start fast.",
+      "url_slug": "en/hire-electrical-engineer"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Electrical-engineer in Netherlands",
+      "text": "Engineering projects can't afford gaps in technical knowledge, delayed deliverables, or expensive local hiring processes.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Engineer Pricing"
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "services": {
+      "heading": "What your Electrical Engineers Can help with",
+      "categories": {
+        "circuit_design": [
+          "Schematic design and review",
+          "Power electronics design",
+          "Signal processing circuits",
+          "Analog and digital circuit design",
+          "Circuit simulation and testing"
+        ],
+        "pcb_design": [
+          "PCB layout and routing",
+          "Multi-layer board design",
+          "Design for manufacture (DFM)",
+          "Gerber file preparation",
+          "Component selection and BOM management"
+        ],
+        "embedded": [
+          "Microcontroller programming (Arduino, STM32, ESP32)",
+          "Firmware development",
+          "Real-time operating systems (RTOS)",
+          "Hardware-software integration",
+          "IoT device development"
+        ],
+        "systems": [
+          "Power system design",
+          "Electrical load calculations",
+          "Industrial automation support",
+          "Control panel design",
+          "Compliance with IEC and EN standards"
+        ]
+      }
+    },
+    "pricing_section": {
+      "heading": "Affordable Electrical-engineer",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential electrical engineering tasks.",
+        "price": "€49.95",
+        "unit": "2 hours/day",
+        "features": ["Circuit design and documentation", "Technical review support", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full electrical engineering projects.",
+        "price": "€59.95",
+        "unit": "4 hours/day",
+        "features": ["All Starter features", "PCB design and embedded systems", "Technical documentation", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full engineering team for large-scale and complex projects.",
+        "price": "69.95",
+        "unit": "8 hours/day",
+        "features": ["All Growth features", "Electrical systems engineering", "Compliance and certification support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      }
+    },
+    "cta": {
+      "heading": "Ready to Hire an Electrical Engineer in Netherlands?",
+      "description": "Let us help you find the perfect Electrical-engineer for your business or personal needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_ai_engineer": {
+    "metadata": {
+      "meta_title": "Hire an AI Engineer in Netherlands | Dedicated AI Development Services",
+      "meta_description": "Hire an experienced AI engineer in the Netherlands for machine learning, LLM integration, AI automation, and intelligent product development. Start fast.",
+      "url_slug": "en/hire-ai-engineer"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Ai-engineer in Netherlands",
+      "text": "AI is no longer a future investment — businesses that deploy it now are outpacing competitors who are still planning.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get AI Engineer Pricing"
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "services": {
+      "heading": "What your AI Engineers Can Help with",
+      "categories": {
+        "ml": [
+          "Custom ML model development",
+          "Classification, regression, and clustering models",
+          "Model training, evaluation, and fine-tuning",
+          "Predictive analytics systems",
+          "Recommendation engines"
+        ],
+        "llm": [
+          "ChatGPT, Claude, and Gemini API integration",
+          "Custom AI chatbot development",
+          "RAG (Retrieval Augmented Generation) systems",
+          "Document analysis and summarisation tools"
+        ],
+        "automation": [
+          "Business process automation with AI",
+          "Intelligent document processing",
+          "Email and workflow automation",
+          "Data extraction and transformation pipelines"
+        ]
+      }
+    },
+    "pricing_section": {
+      "heading": "Affordable Ai-engineer",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential AI development tasks.",
+        "price": "€49.95",
+        "unit": "2 hours/day",
+        "features": ["AI integration and automation", "LLM and API development", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full AI product development.",
+        "price": "€59.95",
+        "unit": "4 hours/day",
+        "features": ["All Starter features", "Machine learning model development", "AI automation and NLP builds", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full AI team for intelligent product and enterprise AI systems.",
+        "price": "69.95",
+        "unit": "8 hours/day",
+        "features": ["All Growth features", "Computer vision and advanced ML", "Full AI deployment and infrastructure", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to Hire an AI Engineer in Netherlands?",
+      "description": "Build smarter products, automate costly processes, and stay ahead — with dedicated AI engineers from IT Solutions Worldwide.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_online_marketer": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Online Marketeer in Netherlands | Digital Marketing Services",
+      "meta_description": "Hire a dedicated online marketeer in the Netherlands for SEO, Google Ads, email marketing, lead generation, and digital growth. Flexible plans, fast start, full support.",
+      "url_slug": "en/staffing-support/hire-online-marketer"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Online Marketer in Netherlands",
+      "text": "Growing your business online requires consistent strategy, execution, and optimisation — not a one-time campaign. Get a dedicated marketeer who delivers results month after month.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire an Online Marketeer in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Online Marketeers",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Online Marketeer Can Help With",
+      "description": "Our dedicated online marketeers are trained professionals who can support your business growth and digital marketing operations immediately.",
+      "category_1": "Search Engine Optimisation (SEO)",
+      "cat_1_items": [
+        "On-page and technical SEO",
+        "Keyword research and strategy",
+        "Content optimisation",
+        "Link building outreach",
+        "Monthly SEO reporting"
+      ],
+      "category_2": "Google Ads (PPC)",
+      "cat_2_items": [
+        "Campaign setup and management",
+        "Search, display, and shopping ads",
+        "Keyword bidding and optimisation",
+        "Ad copy writing and testing",
+        "Conversion tracking setup"
+      ],
+      "category_3": "Email Marketing",
+      "cat_3_items": [
+        "Email campaign strategy",
+        "Newsletter creation and scheduling",
+        "Automated email sequences",
+        "List segmentation and management",
+        "Open rate and conversion optimisation"
+      ],
+      "category_4": "Social Media Marketing",
+      "cat_4_items": [
+        "Organic social strategy",
+        "Paid social campaign support",
+        "Platform growth tactics",
+        "Content scheduling and posting",
+        "Engagement and community growth"
+      ],
+      "category_5": "Lead Generation",
+      "cat_5_items": [
+        "Lead magnet creation and strategy",
+        "Landing page optimisation",
+        "CRM setup and management",
+        "Lead nurturing campaigns",
+        "Conversion funnel optimisation"
+      ],
+      "category_6": "Analytics & Reporting",
+      "cat_6_items": [
+        "Google Analytics 4 setup and tracking",
+        "Monthly performance dashboards",
+        "Campaign ROI reporting",
+        "Data-driven strategy adjustments",
+        "Competitor benchmarking"
+      ],
+      "button_middle": "Tell Us What You Need"
+    },
+    "pricing_section": {
+      "heading": "Affordable Online Marketeer",
+      "description": "We offer flexible packages based on your marketing goals and business needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential marketing tasks.",
+        "price": "€56,85",
+        "unit": "per hour",
+        "features": [
+          "SEO or Google Ads management",
+          "Monthly performance report",
+          "Weekly updates",
+          "Email support"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full digital marketing operations.",
+        "price": "€48,32",
+        "unit": "per hour",
+        "features": [
+          "All Starter features",
+          "Multi-channel marketing",
+          "Lead generation campaigns",
+          "Priority support",
+          "Dedicated account manager"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full marketing team support and multi-channel execution.",
+        "price": "€39,80",
+        "unit": "per hour",
+        "features": [
+          "All Growth features",
+          "Paid and organic strategy",
+          "Advanced analytics and reporting",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Online Marketeer?",
+      "description": "Let us help you find the perfect online marketeer for your business growth and digital marketing goals. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
+    }
+  },
+  "hire_social_media_manager": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Social Media Manager in Netherlands | Managed Social Services",
+      "meta_description": "Hire a dedicated social media manager in the Netherlands for content creation, community management, strategy, and growth. Flexible plans, fast start, full support.",
+      "url_slug": "en/staffing-support/hire-social-media-manager"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Social Media Manager in Netherlands",
+      "text": "Your brand is being judged on social media every day — businesses that show up consistently build trust faster and convert more customers.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Social Media Manager in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Social Media Managers",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Social Media Manager Can Help With",
+      "description": "Our dedicated social media managers are trained professionals who can support your business or personal brand workload immediately.",
+      "category_1": "Content Creation",
+      "cat_1_items": [
+        "Social media post creation",
+        "Caption writing and copywriting",
+        "Graphic design coordination",
+        "Reel and short video scripting",
+        "Content calendar planning"
+      ],
+      "category_2": "Platform Management",
+      "cat_2_items": [
+        "Instagram management",
+        "LinkedIn management",
+        "Facebook page management",
+        "TikTok account management",
+        "Pinterest and Twitter/X management"
+      ],
+      "category_3": "Community Management",
+      "cat_3_items": [
+        "Comment moderation and replies",
+        "DM handling and lead responses",
+        "Audience engagement strategies",
+        "Review monitoring and response",
+        "Community growth tactics"
+      ],
+      "category_4": "Strategy & Planning",
+      "cat_4_items": [
+        "Social media strategy development",
+        "Competitor analysis",
+        "Hashtag research",
+        "Trend monitoring",
+        "Monthly performance planning"
+      ],
+      "category_5": "Analytics & Reporting",
+      "cat_5_items": [
+        "Weekly and monthly performance reports",
+        "Engagement rate tracking",
+        "Follower growth analysis",
+        "Content performance review",
+        "Data-driven optimisation recommendations"
+      ],
+      "category_6": "Paid Social Support",
+      "cat_6_items": [
+        "Meta Ads basic setup support",
+        "Boosted post management",
+        "Audience targeting assistance",
+        "Ad performance monitoring",
+        "Coordination with your ads team"
+      ],
+      "button_middle": "Tell Us What You Need"
+    },
+    "pricing_section": {
+      "heading": "Affordable Social Media Manager",
+      "description": "We offer flexible packages based on your workload and business needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential social tasks.",
+        "price": "€41,85",
+        "unit": "per hour",
+        "features": [
+          "2 platforms managed",
+          "Content calendar",
+          "Weekly reports",
+          "Email support"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for daily operations.",
+        "price": "€35,57",
+        "unit": "per hour",
+        "features": [
+          "All Starter features",
+          "Up to 4 platforms managed",
+          "Community management",
+          "Priority support",
+          "Dedicated account manager"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Multiple platforms or specialised support.",
+        "price": "€29,30",
+        "unit": "per hour",
+        "features": [
+          "All Growth features",
+          "Full content production",
+          "Paid social support",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Social Media Manager?",
+      "description": "Let us help you find the perfect social media manager for your business or personal brand. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
+    }
+  },
+  "hire_graphic_designer": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Graphic Designer in Netherlands | Creative Design Services",
+      "meta_description": "Hire a dedicated graphic designer in the Netherlands for branding, social media visuals, marketing materials, packaging, and creative design. Flexible plans, fast start.",
+      "url_slug": "en/staffing-support/hire-graphic-designer"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Graphic Designer in Netherlands",
+      "text": "Strong visuals build trust, attract attention, and make your brand impossible to ignore. Get a dedicated graphic designer who delivers professional creative work every day — without agency fees.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Graphic Designer in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Graphic Designers",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Graphic Designer Can Help With",
+      "description": "Our dedicated graphic designers are trained creative professionals who can support your business visual needs and brand identity immediately.",
+      "category_1": "Brand Identity",
+      "cat_1_items": [
+        "Logo design and refinement",
+        "Brand style guide creation",
+        "Colour palette and typography",
+        "Brand asset development",
+        "Rebranding projects"
+      ],
+      "category_2": "Social Media Visuals",
+      "cat_2_items": [
+        "Social media post templates",
+        "Instagram and Facebook visuals",
+        "Story and reel graphics",
+        "LinkedIn banners and visuals",
+        "Platform-specific design formats"
+      ],
+      "category_3": "Marketing Materials",
+      "cat_3_items": [
+        "Flyer and brochure design",
+        "Poster and banner design",
+        "Business card design",
+        "Event material design",
+        "Print-ready file preparation"
+      ],
+      "category_4": "Digital Design",
+      "cat_4_items": [
+        "Email template design",
+        "Website graphics and banners",
+        "Display ad creatives",
+        "Infographic design",
+        "Presentation design (PowerPoint/Google Slides)"
+      ],
+      "category_5": "Packaging & Product",
+      "cat_5_items": [
+        "Product packaging design",
+        "Label design",
+        "Box and bag design",
+        "Mockup creation",
+        "Print specification preparation"
+      ],
+      "category_6": "Video & Motion Graphics",
+      "cat_6_items": [
+        "Animated social media graphics",
+        "Intro and outro animations",
+        "Motion graphic videos",
+        "Explainer video visuals",
+        "GIF creation for ads and social"
+      ],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Graphic Designer",
+      "description": "We offer flexible packages based on your creative output needs and business goals. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essential design support for social media and basic assets.",
+        "price": "€41,85",
+        "unit": "per hour",
+        "features": [
+          "Social media graphics",
+          "Basic brand asset creation",
+          "Weekly reports",
+          "Email support"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated design support for marketing and branding.",
+        "price": "€35,57",
+        "unit": "per hour",
+        "features": [
+          "All Starter features",
+          "Marketing material design",
+          "Brand identity projects",
+          "Priority support",
+          "Dedicated account manager"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full creative production including motion and packaging.",
+        "price": "€29,30",
+        "unit": "per hour",
+        "features": [
+          "All Growth features",
+          "Packaging and product design",
+          "Motion graphics and animation",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Graphic Designer?",
+      "description": "Let us help you find the perfect graphic designer for your business brand and creative needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
+    }
+  },
+  "hire_customer_support_agent": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Customer Support Agent in Netherlands | Remote Support Services",
+      "meta_description": "Hire a dedicated remote customer support agent in the Netherlands for email, chat, phone support, and customer success. Flexible plans, fast start, full management. [cite: 57]",
+      "url_slug": "en/staffing-support/hire-customer-support-agent"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Customer Support Agent in Netherlands [cite: 58]",
+      "text": "Every unanswered message and delayed response costs you customers. Get a dedicated remote support agent who handles your customer communication professionally — every single day. [cite: 58]",
+      "button_primary": "Book Free Consultation [cite: 58]",
+      "button_secondary": "Get Pricing Today [cite: 58]",
+      "save_badge": "Save up to 60% [cite: 58]",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals [cite: 58]",
+        "stat_2": "24hrs Start Time [cite: 58]",
+        "stat_3": "60% Cost Savings [cite: 58]"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Customer Support Agent in the Netherlands Trusted by Businesses Looking to Scale Faster [cite: 59]",
+      "item_1": "Dedicated Support Agents [cite: 59]",
+      "item_2": "Start in Days, Not Months [cite: 59]",
+      "item_3": "Save up to 60% on Hiring Costs [cite: 59]",
+      "item_4": "Fully Managed Support [cite: 59]",
+      "item_5": "Flexible Monthly Plans [cite: 59]"
+    },
+    "services": {
+      "heading": "What Your Customer Support Agent Can Help With [cite: 60]",
+      "description": "Our dedicated customer support agents are trained professionals who can support your business or personal brand workload immediately.",
+      "category_1": "Email Support",
+      "cat_1_items": [
+        "Customer email handling [cite: 60]",
+        "Order and delivery queries [cite: 60]",
+        "Complaint management [cite: 60]",
+        "Refund and return processing [cite: 60]",
+        "Ticket management via helpdesk tools [cite: 60]"
+      ],
+      "category_2": "Live Chat",
+      "cat_2_items": [
+        "Real-time website chat support [cite: 60]",
+        "Pre-sale and product enquiries [cite: 60]",
+        "Lead qualification via chat [cite: 60]",
+        "Chat tool management (Intercom, Tidio, LiveChat) [cite: 60]"
+      ],
+      "category_3": "Phone & WhatsApp",
+      "cat_3_items": [
+        "Inbound call handling [cite: 60]",
+        "WhatsApp Business management [cite: 60]",
+        "Callback scheduling [cite: 60]",
+        "Customer issue escalation [cite: 60]",
+        "Call notes and CRM logging [cite: 60]"
+      ],
+      "category_4": "Customer Success",
+      "cat_4_items": [
+        "Onboarding support for new customers [cite: 60]",
+        "Follow-up communication [cite: 60]",
+        "Retention and churn reduction [cite: 60]",
+        "Customer satisfaction tracking [cite: 60]",
+        "Upsell and cross-sell assistance [cite: 60]"
+      ],
+      "category_5": "Helpdesk & CRM",
+      "cat_5_items": [
+        "Zendesk, Freshdesk, HubSpot management [cite: 60]",
+        "Ticket categorisation and prioritisation [cite: 60]",
+        "SLA monitoring and reporting [cite: 60]",
+        "Knowledge base maintenance [cite: 60]",
+        "FAQ and canned response creation [cite: 60]"
+      ],
+      "category_6": "Ecommerce Support",
+      "cat_6_items": [
+        "Bol.com and Shopify order support [cite: 60]",
+        "Shipping and tracking updates [cite: 60]",
+        "Product return coordination [cite: 60]",
+        "Negative review management [cite: 60]",
+        "Customer loyalty support [cite: 60]"
+      ],
+      "button_middle": "Tell Us What You Need [cite: 61]"
+    },
+    "pricing_section": {
+      "heading": "Affordable Customer Support Agent [cite: 62]",
+      "description": "We offer flexible packages based on your workload and business needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan [cite: 62]",
+        "desc": "Part-time support for essential support tasks.",
+        "price": "€26,85",
+        "unit": "per hour [cite: 62]",
+        "features": [
+          "Email and chat support [cite: 62]",
+          "Ticket management [cite: 62]",
+          "Weekly reports [cite: 62]",
+          "Email support [cite: 62]"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan [cite: 62]",
+        "desc": "Dedicated support for daily operations.",
+        "price": "€22,82",
+        "unit": "per hour [cite: 62]",
+        "features": [
+          "All Starter features [cite: 62]",
+          "Phone and WhatsApp support [cite: 62]",
+          "CRM and helpdesk management [cite: 62]",
+          "Priority support [cite: 62]",
+          "Dedicated account manager [cite: 62]"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan [cite: 62]",
+        "desc": "Full customer success management and multi-channel coverage.",
+        "price": "€18,80",
+        "unit": "per hour [cite: 62]",
+        "features": [
+          "All Growth features [cite: 62]",
+          "Full customer success management [cite: 62]",
+          "Ecommerce support coverage [cite: 62]",
+          "Custom workflows [cite: 62]",
+          "Dedicated account manager [cite: 62]",
+          "SLA guarantee [cite: 62]"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund. [cite: 63]"
+    },
+    "cta": {
+      "heading": "Ready to hire your Customer Support Agent? [cite: 64]",
+      "description": "Let us help you find the perfect remote customer support agent for your business and customer success goals. Book a free consultation today and get started within 48 hours. [cite: 64]",
+      "button": "Book Free Consultation [cite: 64]",
+      "footer_checkmarks": [
+        "No commitment [cite: 64]",
+        "Free consultation [cite: 64]",
+        "Start in 48 hours [cite: 64]"
+      ]
+    }
+  },
+  "hire_data_entry_specialist": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Data Entry Specialist in Netherlands | Remote Data Services [cite: 65]",
+      "meta_description": "Hire a dedicated data entry specialist in the Netherlands for data processing, database management, spreadsheet work, and administrative data tasks. Fast start, flexible plans. [cite: 66]",
+      "url_slug": "en/staffing-support/hire-data-entry-specialist"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Data Entry Specialist in Netherlands [cite: 67]",
+      "text": "Manual data work takes hours your team doesn't have. Get a dedicated data entry specialist who handles your data accurately and efficiently — so your team can focus on what actually grows your business. [cite: 67]",
+      "button_primary": "Book Free Consultation [cite: 67]",
+      "button_secondary": "Get Pricing Today [cite: 67]",
+      "save_badge": "Save up to 60% [cite: 67]",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals [cite: 67]",
+        "stat_2": "24hrs Start Time [cite: 67]",
+        "stat_3": "60% Cost Savings [cite: 67]"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Data Entry Specialist in the Netherlands Trusted by Businesses Looking to Scale Faster [cite: 68]",
+      "item_1": "Dedicated Data Entry Specialists [cite: 68]",
+      "item_2": "Start in Days, Not Months [cite: 68]",
+      "item_3": "Save up to 60% on Hiring Costs [cite: 68]",
+      "item_4": "Fully Managed Support [cite: 68]",
+      "item_5": "Flexible Monthly Plans [cite: 68]"
+    },
+    "services": {
+      "heading": "What Your Data Entry Specialist Can Help With [cite: 69]",
+      "description": "Our dedicated data entry specialists are trained professionals who can support your business data operations and administrative processing needs immediately. [cite: 69]",
+      "category_1": "Data Processing",
+      "cat_1_items": [
+        "High-volume data entry [cite: 69]",
+        "Form and document data input [cite: 69]",
+        "Online database population [cite: 69]",
+        "Product data entry for webshops [cite: 69]",
+        "Invoice and order data processing [cite: 69]"
+      ],
+      "category_2": "Spreadsheet Management",
+      "cat_2_items": [
+        "Excel and Google Sheets data entry [cite: 69]",
+        "Data cleaning and formatting [cite: 69]",
+        "Formula setup and maintenance [cite: 69]",
+        "Spreadsheet organisation [cite: 69]",
+        "Data validation and error checking [cite: 69]"
+      ],
+      "category_3": "Database Management",
+      "cat_3_items": [
+        "CRM data entry and updates (HubSpot, Salesforce) [cite: 69]",
+        "Contact list building and management [cite: 69]",
+        "Database deduplication and cleanup [cite: 69]",
+        "Record creation and maintenance [cite: 69]",
+        "Data migration support [cite: 69]"
+      ],
+      "category_4": "Document Processing",
+      "cat_4_items": [
+        "PDF to Excel or Word conversion [cite: 69]",
+        "Scanned document digitisation [cite: 69]",
+        "Data extraction from documents [cite: 69]",
+        "File organisation and naming [cite: 69]",
+        "Digital archive management [cite: 69]"
+      ],
+      "category_5": "Ecommerce Support",
+      "cat_5_items": [
+        "Product listing data entry [cite: 70]",
+        "SKU and inventory updates [cite: 70]",
+        "Price and description updates [cite: 70]",
+        "Bol.com and Shopify catalogue management [cite: 70]",
+        "Bulk product import preparation [cite: 70]"
+      ],
+      "category_6": "Research & Collection",
+      "cat_6_items": [
+        "Online research and data gathering [cite: 70]",
+        "Competitor data collection [cite: 70]",
+        "Market research data compilation [cite: 70]",
+        "Lead list building [cite: 70]",
+        "Contact information verification [cite: 70]"
+      ],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Data Entry Specialist [cite: 71]",
+      "description": "We offer flexible packages based on your workload and business needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan [cite: 71]",
+        "desc": "Part-time support for essential data tasks.",
+        "price": "€26,85",
+        "unit": "per hour [cite: 71]",
+        "features": [
+          "Data entry and processing [cite: 71]",
+          "Spreadsheet management [cite: 71]",
+          "Weekly reports [cite: 71]",
+          "Email support [cite: 71]"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan [cite: 71]",
+        "desc": "Dedicated support for daily operations.",
+        "price": "€22,82",
+        "unit": "per hour [cite: 71]",
+        "features": [
+          "All Starter features [cite: 71]",
+          "Database and CRM management [cite: 71]",
+          "Document processing [cite: 71]",
+          "Priority support [cite: 71]",
+          "Dedicated account manager [cite: 71]"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan [cite: 71]",
+        "desc": "Full data management and high-volume processing.",
+        "price": "€18,80",
+        "unit": "per hour [cite: 71]",
+        "features": [
+          "All Growth features [cite: 71]",
+          "Ecommerce catalogue management [cite: 71]",
+          "Research and data collection [cite: 71]",
+          "Custom workflows [cite: 71]",
+          "Dedicated account manager [cite: 71]",
+          "SLA guarantee [cite: 71]"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund. [cite: 72]"
+    },
+    "cta": {
+      "heading": "Ready to hire your Data Entry Specialist? [cite: 73]",
+      "description": "Let us help you find the perfect data entry specialist for your business operations and data management needs. Book a free consultation today and get started within 48 hours. [cite: 73]",
+      "button": "Book Free Consultation [cite: 73]",
+      "footer_checkmarks": [
+        "No commitment [cite: 73]",
+        "Free consultation [cite: 73]",
+        "Start in 48 hours [cite: 73]"
+      ]
+    }
+  },
+  "hire_front_end_developer": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Front-End Developer in Netherlands | Front-End Development Services",
+      "meta_description": "Hire a dedicated front-end developer in the Netherlands for React, Vue, Angular, UI development, and responsive web interfaces. Flexible plans, fast start, full support. [cite: 83, 84]",
+      "url_slug": "en/staffing-support/hire-front-end-developer"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Front-End Developer in Netherlands",
+      "text": "Your users judge your product in seconds. Get a dedicated front-end developer who builds fast, responsive, and visually polished interfaces that keep users engaged and coming back. [cite: 85]",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Front-End Developer in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Front-End Developers",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans [cite: 86]"
+    },
+    "services": {
+      "heading": "What Your Front-End Developer Can Help With",
+      "description": "Our dedicated front-end developers are trained professionals who can support your business UI development and web interface needs immediately. [cite: 86]",
+      "category_1": "React Development",
+      "cat_1_items": [
+        "React.js application development",
+        "Component library creation",
+        "State management (Redux, Zustand)",
+        "React hooks and context API",
+        "Performance optimisation"
+      ],
+      "category_2": "Vue & Angular",
+      "cat_2_items": [
+        "Vue.js application development",
+        "Angular component development",
+        "Single-page application (SPA) builds",
+        "Framework migration support",
+        "Progressive web app development"
+      ],
+      "category_3": "UI & Responsive Design",
+      "cat_3_items": [
+        "Pixel-perfect design implementation",
+        "Mobile-first responsive development",
+        "CSS and Tailwind styling",
+        "Cross-browser compatibility",
+        "Accessibility (WCAG) compliance"
+      ],
+      "category_4": "JavaScript & TypeScript",
+      "cat_4_items": [
+        "Vanilla JavaScript development",
+        "TypeScript integration",
+        "ES6+ modern JavaScript",
+        "Browser API utilisation",
+        "Frontend performance tuning"
+      ],
+      "category_5": "CMS & Headless Frontend",
+      "cat_5_items": [
+        "WordPress headless frontend",
+        "Contentful and Sanity integration",
+        "Next.js and Nuxt.js development",
+        "JAMstack architecture",
+        "API-driven frontend builds"
+      ],
+      "category_6": "Testing & Optimisation",
+      "cat_6_items": [
+        "Unit and integration testing",
+        "Core Web Vitals optimisation",
+        "Lighthouse performance improvement",
+        "Code reviews and refactoring",
+        "CI/CD frontend pipeline support"
+      ],
+      "button_middle": "Tell Us What You Need → [cite: 88]"
+    },
+    "pricing_section": {
+      "heading": "Affordable Front-End Developer",
+      "description": "We offer flexible packages based on your development needs. All plans include full management and support. [cite: 89]",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for UI fixes and smaller updates.",
+        "price": "€41,85",
+        "unit": "per hour",
+        "features": [
+          "UI fixes and improvements",
+          "Responsive development",
+          "Weekly reports",
+          "Email support"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full application development.",
+        "price": "€35,57",
+        "unit": "per hour",
+        "features": [
+          "All Starter features",
+          "React or Vue application development",
+          "CMS and headless frontend builds",
+          "Priority support",
+          "Dedicated account manager"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Enterprise-level development and performance architecture.",
+        "price": "€29,30",
+        "unit": "per hour",
+        "features": [
+          "All Growth features",
+          "TypeScript and testing",
+          "Performance and Core Web Vitals",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund. [cite: 90]"
+    },
+    "cta": {
+      "heading": "Ready to hire your Front-End Developer?",
+      "description": "Let us help you find the perfect front-end developer for your product interfaces and web development needs. Book a free consultation today and get started within 48 hours. [cite: 91]",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
+    }
+  },
+  "hire_back_end_developer": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Back-End Developer in Netherlands | Back-End Development Services [cite: 92]",
+      "meta_description": "Hire a dedicated back-end developer in the Netherlands for Node.js, PHP, Laravel, Python, API development, and server-side engineering. Flexible plans, fast start. [cite: 93]",
+      "url_slug": "en/staffing-support/hire-back-end-developer [cite: 93]"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Back-End Developer in Netherlands [cite: 94]",
+      "text": "The logic, data, and infrastructure behind your product need to be fast, secure, and scalable. Get a dedicated back-end developer who builds and maintains the systems that power your business — reliably and efficiently. [cite: 94]",
+      "button_primary": "Book Free Consultation [cite: 94]",
+      "button_secondary": "Get Pricing Today [cite: 94]",
+      "save_badge": "Save up to 60% [cite: 94]",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals [cite: 94]",
+        "stat_2": "24hrs Start Time [cite: 94]",
+        "stat_3": "60% Cost Savings [cite: 94]"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Back-End Developer in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Back-End Developers",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Back-End Developer Can Help With",
+      "description": "Our dedicated back-end developers are trained professionals who build and maintain the core logic and databases of your digital products. [cite: 94, 96]",
+      "category_1": "Node.js Development",
+      "cat_1_items": [
+        "REST API development",
+        "Express.js and Fastify applications",
+        "Real-time applications with WebSockets",
+        "Microservices architecture",
+        "Background job and queue management"
+      ],
+      "category_2": "PHP & Laravel",
+      "cat_2_items": [
+        "Laravel application development",
+        "Custom PHP backend development",
+        "MVC architecture implementation",
+        "Laravel API development",
+        "Legacy PHP modernisation"
+      ],
+      "category_3": "Python Backend",
+      "cat_3_items": [
+        "Django and Flask API development",
+        "Python scripting and automation",
+        "Data processing backends",
+        "FastAPI development",
+        "Python microservices"
+      ],
+      "category_4": "Database Engineering",
+      "cat_4_items": [
+        "MySQL and PostgreSQL design",
+        "MongoDB and NoSQL databases",
+        "Database schema design",
+        "Query optimisation and indexing",
+        "Data migration and management"
+      ],
+      "category_5": "API Development",
+      "cat_5_items": [
+        "RESTful API design and development",
+        "GraphQL API development",
+        "Third-party API integration",
+        "Webhook development",
+        "API documentation"
+      ],
+      "category_6": "Cloud & Infrastructure",
+      "cat_6_items": [
+        "AWS and Google Cloud backend setup",
+        "Docker and containerisation",
+        "CI/CD pipeline configuration",
+        "Server security and hardening",
+        "Scalable infrastructure architecture"
+      ],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Back-End Developer",
+      "description": "We offer flexible packages based on your development needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for API development and server maintenance.",
+        "price": "€56,85",
+        "unit": "per hour",
+        "features": [
+          "API development and fixes",
+          "Database management",
+          "Weekly reports",
+          "Email support"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for Laravel or Node.js backend projects.",
+        "price": "€48,32",
+        "unit": "per hour",
+        "features": [
+          "All Starter features",
+          "Laravel or Node.js development",
+          "Cloud infrastructure setup",
+          "Priority support",
+          "Dedicated account manager"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full backend architecture and microservices for large-scale systems.",
+        "price": "€39,80",
+        "unit": "per hour",
+        "features": [
+          "All Growth features",
+          "Microservices architecture",
+          "Advanced cloud and DevOps support",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund. [cite: 99]"
+    },
+    "cta": {
+      "heading": "Ready to hire your Back-End Developer?",
+      "description": "Let us help you find the perfect back-end developer for your server-side engineering and infrastructure needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
+    }
+  },
+  "hire_app_developer": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated App Developer in Netherlands | iOS & Android Development Services",
+      "meta_description": "Hire a dedicated app developer in the Netherlands for iOS, Android, and cross-platform mobile app development. Custom apps, fast onboarding, flexible plans.",
+      "url_slug": "en/staffing-support/hire-app-developer"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated App Developer in Netherlands",
+      "text": "Your mobile app idea deserves more than a slow agency process or an unreliable freelancer. Get a dedicated iOS and Android app developer who builds, tests, and launches your app — on time and on budget.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire an App Developer in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated App Developers",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your App Developer Can Help With [cite: 105, 106]",
+      "description": "Our dedicated app developers are trained professionals who can support your iOS, Android, and cross-platform mobile development needs immediately.",
+      "category_1": "iOS Development",
+      "cat_1_items": [
+        "Native iOS app development (Swift)",
+        "iPhone and iPad application builds",
+        "App Store submission and optimisation",
+        "iOS UI/UX implementation",
+        "iOS performance and memory optimisation"
+      ],
+      "category_2": "Android Development",
+      "cat_2_items": [
+        "Native Android development (Kotlin/Java)",
+        "Google Play Store submission",
+        "Android UI with Material Design",
+        "Device compatibility testing",
+        "Android performance optimisation"
+      ],
+      "category_3": "Cross-Platform Apps",
+      "cat_3_items": [
+        "React Native app development",
+        "Flutter application development",
+        "Single codebase for iOS and Android",
+        "Cross-platform UI consistency",
+        "Native module integration"
+      ],
+      "category_4": "Mobile UI/UX Design",
+      "cat_4_items": [
+        "Mobile UI design and wireframing",
+        "Interactive prototype creation",
+        "User flow and navigation design",
+        "Design system implementation",
+        "Figma to code handoff"
+      ],
+      "category_5": "Backend & API Integration",
+      "cat_5_items": [
+        "Mobile backend development",
+        "REST and GraphQL API integration",
+        "Firebase and Supabase setup",
+        "Push notification systems",
+        "Authentication and user management"
+      ],
+      "category_6": "App Maintenance",
+      "cat_6_items": [
+        "Bug fixing and crash resolution",
+        "OS update compatibility",
+        "Feature additions and improvements",
+        "App performance monitoring",
+        "App Store review and rating management"
+      ],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable App Developer",
+      "description": "We offer flexible packages based on your application needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for app maintenance and small feature updates.",
+        "price": "€56,85",
+        "unit": "per hour",
+        "features": [
+          "App fixes and improvements",
+          "Feature development support",
+          "Weekly reports",
+          "Email support"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full iOS or Android app builds.",
+        "price": "€48,32",
+        "unit": "per hour",
+        "features": [
+          "All Starter features",
+          "iOS or Android native development",
+          "Cross-platform app builds",
+          "Priority support",
+          "Dedicated account manager"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full app development including backend and store management.",
+        "price": "€39,80",
+        "unit": "per hour",
+        "features": [
+          "All Growth features",
+          "Backend and API development",
+          "App Store and Play Store management",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your App Developer?",
+      "description": "Let us help you find the perfect iOS and Android app developer for your mobile product and business goals. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
+    }
+  },
+  "hire_software_tester_qa": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Software Tester & QA Engineer in Netherlands | QA Testing Services",
+      "meta_description": "Hire a dedicated software tester or QA engineer in the Netherlands for manual testing, automated testing, bug reporting, and quality assurance. Flexible plans, fast start.",
+      "url_slug": "en/staffing-support/hire-software-tester-qa"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Software Tester & QA Engineer in Netherlands",
+      "text": "Bugs that reach your users damage trust, increase churn, and cost more to fix. Get a dedicated software tester who catches issues before they reach production — so your product launches clean and stays reliable.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Software Tester & QA Engineer in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated QA Engineers",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Software Tester & QA Engineer Can Help With",
+      "description": "Our dedicated software testers and QA engineers are trained professionals who can support your product quality assurance and testing operations immediately.",
+      "category_1": "Manual Testing",
+      "cat_1_items": [
+        "Functional and regression testing",
+        "Exploratory testing",
+        "User acceptance testing (UAT)",
+        "Cross-browser and cross-device testing",
+        "Test case creation and execution"
+      ],
+      "category_2": "Automated Testing",
+      "cat_2_items": [
+        "Test automation framework setup",
+        "Selenium and Playwright automation",
+        "Cypress end-to-end testing",
+        "API automated testing",
+        "CI/CD pipeline test integration"
+      ],
+      "category_3": "Mobile Testing",
+      "cat_3_items": [
+        "iOS and Android manual testing",
+        "Mobile automated testing",
+        "Device and OS compatibility testing",
+        "Gesture and interaction testing",
+        "App Store pre-launch testing"
+      ],
+      "category_4": "API & Backend Testing",
+      "cat_4_items": [
+        "REST API testing with Postman",
+        "Load and stress testing",
+        "Integration testing",
+        "Data validation testing",
+        "Security and authentication testing"
+      ],
+      "category_5": "Performance Testing",
+      "cat_5_items": [
+        "Load testing with JMeter or k6",
+        "Stress and scalability testing",
+        "Performance bottleneck identification",
+        "Response time benchmarking",
+        "Performance regression monitoring [cite: 115]"
+      ],
+      "category_6": "Processes & Documentation",
+      "cat_6_items": [
+        "Detailed bug reporting and documentation",
+        "Jira and TestRail management",
+        "QA process setup and improvement",
+        "Test coverage analysis",
+        "Sprint-based testing support [cite: 115]"
+      ],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Software Tester & QA Engineer",
+      "description": "We offer flexible packages based on your testing requirements. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Manual testing and bug reporting for essential releases.",
+        "price": "€41,85",
+        "unit": "per hour",
+        "features": [
+          "Manual testing and bug reporting",
+          "Test case creation",
+          "Weekly reports",
+          "Email support [cite: 116]"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated QA support including automated and API testing.",
+        "price": "€35,57",
+        "unit": "per hour",
+        "features": [
+          "All Starter features",
+          "Automated testing setup",
+          "API and mobile app testing",
+          "Priority support",
+          "Dedicated account manager [cite: 116]"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full QA pipeline management and performance testing.",
+        "price": "€29,30",
+        "unit": "per hour",
+        "features": [
+          "All Growth features",
+          "Performance and load testing",
+          "Full CI/CD test pipeline",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee [cite: 116]"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund. [cite: 117]"
+    },
+    "cta": {
+      "heading": "Ready to hire your Software Tester & QA Engineer?",
+      "description": "Let us help you find the perfect QA engineer for your product quality and software testing needs. Book a free consultation today and get started within 48 hours. [cite: 118]",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours [cite: 118]"
+      ]
+    }
+  },
+  "hire_it_support_specialist": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Remote IT Support Specialist in Netherlands | IT Support Services [cite: 118, 119]",
+      "meta_description": "Hire a dedicated remote IT support specialist in the Netherlands for helpdesk support, system administration, network troubleshooting, and technical assistance. Fast start. [cite: 120]",
+      "url_slug": "en/staffing-support/hire-it-support-specialist"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Remote IT Support Specialist in Netherlands",
+      "text": "Technical issues that go unresolved slow your team down, create security risks, and cost your business more every hour. Get a dedicated remote IT support specialist who keeps your systems running smoothly — every day. [cite: 121]",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings [cite: 121]"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Remote IT Support Specialist in the Netherlands Trusted by Businesses Looking to Scale Faster [cite: 122]",
+      "item_1": "Dedicated IT Support Specialists",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans [cite: 122]"
+    },
+    "services": {
+      "heading": "What Your Remote IT Support Specialist Can Help With",
+      "description": "Our dedicated remote IT support specialists are trained professionals who can support your business technical operations and IT infrastructure needs immediately.",
+      "category_1": "Helpdesk Support",
+      "cat_1_items": [
+        "First and second line IT support",
+        "Software installation and configuration",
+        "Password and access management",
+        "Remote desktop troubleshooting",
+        "Ticket management and resolution [cite: 123]"
+      ],
+      "category_2": "System Administration",
+      "cat_2_items": [
+        "Windows and Linux server management",
+        "User account and permission management",
+        "System updates and patch management",
+        "Active Directory administration",
+        "Group policy management [cite: 123]"
+      ],
+      "category_3": "Network Support",
+      "cat_3_items": [
+        "Network troubleshooting and monitoring",
+        "VPN setup and management",
+        "Router and firewall configuration",
+        "Network performance optimisation",
+        "Remote connectivity support [cite: 123]"
+      ],
+      "category_4": "Cloud & SaaS",
+      "cat_4_items": [
+        "Microsoft 365 administration",
+        "Google Workspace management",
+        "Cloud storage and backup setup",
+        "SaaS tool onboarding and support",
+        "Cloud security configuration [cite: 123]"
+      ],
+      "category_5": "Cybersecurity",
+      "cat_5_items": [
+        "Antivirus and endpoint protection",
+        "Security audit and risk assessment",
+        "Phishing awareness and response",
+        "Data backup and disaster recovery",
+        "Access control and security policies [cite: 124]"
+      ],
+      "category_6": "Documentation",
+      "cat_6_items": [
+        "IT infrastructure documentation",
+        "Standard operating procedure creation",
+        "Asset inventory management",
+        "Onboarding and offboarding IT support",
+        "IT knowledge base maintenance [cite: 124]"
+      ],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Remote IT Support Specialist",
+      "description": "We offer flexible packages based on your IT support needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time helpdesk support for essential technical issues.",
+        "price": "€26,85",
+        "unit": "per hour",
+        "features": [
+          "Helpdesk and end-user support",
+          "Basic system administration",
+          "Weekly reports",
+          "Email support [cite: 125]"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for network, cloud, and server management.",
+        "price": "€22,82",
+        "unit": "per hour",
+        "features": [
+          "All Starter features",
+          "Network and cloud management",
+          "Microsoft 365 administration",
+          "Priority support",
+          "Dedicated account manager [cite: 125]"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full infrastructure management and cybersecurity support.",
+        "price": "€18,80",
+        "unit": "per hour",
+        "features": [
+          "All Growth features",
+          "Cybersecurity support",
+          "Full infrastructure management",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee [cite: 125]"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund. [cite: 126]"
+    },
+    "cta": {
+      "heading": "Ready to hire your Remote IT Support Specialist?",
+      "description": "Let us help you find the perfect remote IT support specialist for your business technology and infrastructure needs. Book a free consultation today and get started within 48 hours. [cite: 127]",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours [cite: 127]"
+      ]
+    }
+  },
+  "hire_ml_engineer": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated ML Engineer in Netherlands | Machine Learning Engineering Services",
+      "meta_description": "Hire a dedicated ML engineer in the Netherlands for machine learning model development, MLOps, model deployment, data pipelines, and AI system engineering. Fast start.",
+      "url_slug": "en/staffing-support/hire-ml-engineer"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated ML Engineer in Netherlands",
+      "text": "Building production-ready machine learning systems requires more than a data scientist — it requires engineering discipline, scalable infrastructure, and deployment expertise. Get a dedicated ML engineer who takes your models from development all the way to reliable, production-scale systems.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features": {
+      "heading": "Hire an ML Engineer in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated ML Engineers",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your ML Engineer Can Help With",
+      "description": "Our dedicated ML engineers are trained professionals who can support your machine learning system development, model deployment, and MLOps infrastructure needs immediately.",
+      "category_1": "Machine Learning Model Development",
+      "cat_1_items": [
+        "Supervised and unsupervised model development",
+        "Classification, regression, and clustering models",
+        "Model training, evaluation, and validation",
+        "Feature engineering and selection",
+        "Ensemble and deep learning model builds"
+      ],
+      "category_2": "MLOps & Model Deployment",
+      "cat_2_items": [
+        "ML pipeline design and automation",
+        "Model containerisation with Docker",
+        "Kubernetes-based model serving",
+        "CI/CD pipeline setup for ML systems",
+        "Model versioning and experiment tracking"
+      ],
+      "category_3": "Deep Learning Development",
+      "cat_3_items": [
+        "Neural network architecture design",
+        "CNN, RNN, and Transformer model builds",
+        "PyTorch and TensorFlow development",
+        "Transfer learning and fine-tuning",
+        "GPU-accelerated training setup"
+      ],
+      "category_4": "Data Pipeline Engineering for ML",
+      "cat_4_items": [
+        "Feature store design and management",
+        "Training data pipeline development",
+        "Data preprocessing and augmentation",
+        "Real-time and batch inference pipelines",
+        "Data drift and quality monitoring"
+      ],
+      "category_5": "Model Monitoring & Optimisation",
+      "cat_5_items": [
+        "Production model performance monitoring",
+        "Model drift detection and retraining",
+        "Inference speed and latency optimisation",
+        "A/B testing for model versions",
+        "Model explainability and bias analysis"
+      ],
+      "category_6": "Cloud ML Infrastructure",
+      "cat_6_items": [
+        "AWS SageMaker and Google Vertex AI",
+        "Azure ML deployment and management",
+        "Scalable ML infrastructure architecture",
+        "Cost optimisation for ML workloads",
+        "ML platform setup and management"
+      ],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable ML Engineer",
+      "plan_1": {
+        "title": "Starter Plan",
+        "price": "€80,85/hour",
+        "features": [
+          "ML model development and evaluation",
+          "Basic MLOps pipeline support",
+          "Weekly reports",
+          "Email support"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "price": "€68,72/hour",
+        "features": [
+          "All Starter features",
+          "Deep learning and model deployment",
+          "Data pipeline engineering for ML",
+          "Priority support",
+          "Dedicated account manager"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "price": "56,60/hour",
+        "features": [
+          "All Growth features",
+          "Cloud ML infrastructure and MLOps",
+          "Model monitoring and optimisation",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your ML Engineer?",
+      "description": "Let us help you find the perfect ML engineer for your machine learning system development and production AI infrastructure needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
+    }
   }
 }

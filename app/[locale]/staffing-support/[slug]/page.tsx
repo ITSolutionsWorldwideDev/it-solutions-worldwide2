@@ -1,3 +1,5 @@
+// app/[locale]/staffing-support/[slug]/page.tsx
+
 import HiringHeader from "@/components/layout/hiring/HiringHeader";
 import { Metadata } from "next";
 import React from "react";
@@ -31,15 +33,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
-  const { slug } = await params;
 
-  console.log(slug);
+export default async function Page({ params }: Props) {
+  const { slug, locale } = await params;
+
   return (
-    <div>
-      <HiringHeader slug={slug} />
-    </div>
+    <HiringHeader
+      slug={slug}
+      locale={locale}
+    />
   );
-};
+}
 
-export default page;
+// const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
+
+// const page = async ({ params }: Props) => {
+//   const { slug, locale } = await params;
+
+//   // console.log(slug);
+//   return (
+//     <div>
+//       <HiringHeader slug={slug} locale={locale} />
+//     </div>
+//   );
+// };
+
+// export default page;

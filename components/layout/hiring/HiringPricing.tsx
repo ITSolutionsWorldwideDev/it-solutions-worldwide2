@@ -1,63 +1,11 @@
+// components/layout/hiring/HiringPricing.tsx
+
 import { Check } from "lucide-react";
 import Link from "next/link";
 
 type Props = {
   slug: string;
 };
-// const plans = [
-//   {
-//     name: "Starter Plan",
-//     description: "Part-time support for light admin tasks.",
-//     price: "€800",
-//     period: "/month",
-//     note: "Save €2,000+ vs local hiring",
-//     features: [
-//       "20 hours/month",
-//       "Email & calendar support",
-//       "Basic admin tasks",
-//       "Weekly reports",
-//       "Email support",
-//     ],
-//     cta: "Get Started",
-//     highlighted: false,
-//   },
-//   {
-//     name: "Growth Plan",
-//     description: "Dedicated assistant for daily operations.",
-//     price: "€1,600",
-//     period: "/month",
-//     note: null,
-//     features: [
-//       "Full-time support (160hrs)",
-//       "All Starter features",
-//       "Customer support",
-//       "Social media management",
-//       "Priority support",
-//       "Dedicated account manager",
-//     ],
-//     cta: "Get Started",
-//     highlighted: true,
-//   },
-//   {
-//     name: "Scale Plan",
-//     description: "Multiple assistants or specialized support.",
-//     price: "Custom",
-//     period: null,
-//     note: null,
-//     features: [
-//       "Multiple VAs",
-//       "All Growth features",
-//       "Specialized skills",
-//       "Custom workflows",
-//       "Dedicated account manager",
-//       "SLA guarantee",
-//     ],
-//     cta: "Contact us",
-//     highlighted: false,
-//   },
-// ];
-
-// const title = "Virtual Assistant Plans";
 
 export default function HiringPricing({ plans, service }: any) {
   return (

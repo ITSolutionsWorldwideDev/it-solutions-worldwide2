@@ -1,6 +1,7 @@
 // components/layout/contact-page-section.tsx
 import initServerI18n from "@/utils/serverTranslation";
 import ContactCardClient from "./contact-page-section.client";
+import ContactCardClient2 from "./contact-page-section-2.client";
 
 type Props = {
   locale: string;
@@ -30,6 +31,11 @@ export default async function ContactCard({ locale }: Props) {
     contactconnect: t("home.contactconnect"),
   };
 
-  return <ContactCardClient translations={translations} />;
+  return (
+    <>
+      {/* <ContactCardClient translations={translations} /> */}
+      <ContactCardClient2 translations={translations} />
+    </>
+  );
+  // return <ContactCardClient translations={translations} />;
 }
-
