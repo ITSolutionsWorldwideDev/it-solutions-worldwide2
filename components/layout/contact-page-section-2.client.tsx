@@ -300,11 +300,11 @@ export default function ContactCardClient2({ translations }: Props) {
                       Icon: Facebook,
                       label: "Facebook",
                     },
-                    {
-                      href: "https://twitter.com/ITSolutionsBV",
-                      Icon: Twitter,
-                      label: "Twitter",
-                    },
+                    // {
+                    //   href: "https://twitter.com/ITSolutionsBV",
+                    //   Icon: Twitter,
+                    //   label: "Twitter",
+                    // },
                     {
                       href: "https://nl.linkedin.com/company/it-solutions-worldwide-bv",
                       Icon: Linkedin,
@@ -354,14 +354,15 @@ export default function ContactCardClient2({ translations }: Props) {
                 </h2>
 
                 <p className="mt-4 text-lg text-gray-600">
-                  Fill out the form to hire your virtual assistant
+                  {/* Fill out the form to hire your virtual assistant */}
+                  {t.contactformdesc}
                 </p>
 
                 <form onSubmit={handleSubmit} className="mt-10 space-y-6">
                   {/* Row 1 */}
                   <div className="grid gap-6 md:grid-cols-2">
                     <InputField
-                      label="Full Name"
+                      label={t.contactformfullname}
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
@@ -371,7 +372,7 @@ export default function ContactCardClient2({ translations }: Props) {
                     />
 
                     <InputField
-                      label="Company Name"
+                      label={t.contactformcompanyname}
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
@@ -384,7 +385,7 @@ export default function ContactCardClient2({ translations }: Props) {
                   {/* Row 2 */}
                   <div className="grid gap-6 md:grid-cols-2">
                     <InputField
-                      label="Phone Number"
+                      label={t.contactformphoneno}
                       type="tel"
                       name="phone"
                       value={formData.phone}
@@ -395,7 +396,7 @@ export default function ContactCardClient2({ translations }: Props) {
                     />
 
                     <InputField
-                      label="Email Address"
+                      label={t.contactformemail}
                       type="email"
                       name="email"
                       value={formData.email}
@@ -409,8 +410,8 @@ export default function ContactCardClient2({ translations }: Props) {
                   {/* Select */}
                   <div>
                     <label className="mb-2 block text-sm font-medium text-gray-700">
-                      Service Required <span className="text-red-500">*</span>
-                    </label>
+                      {t.contactformservice} <span className="text-red-500">*</span>
+                    </label>{/* Service Required */}
 
                     <select
                       name="service"
@@ -435,7 +436,8 @@ export default function ContactCardClient2({ translations }: Props) {
                   {/* Message */}
                   <div>
                     <label className="mb-2 block text-sm font-medium text-gray-700">
-                      Message / Requirement Details{" "}
+                      {t.contactformmsg}
+                      {/* Message / Requirement Details{" "} */}
                       <span className="text-red-500">*</span>
                     </label>
 

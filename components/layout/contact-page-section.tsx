@@ -32,6 +32,15 @@ export default async function ContactCard({ locale }: Props) {
 
     contactdesc: t("home.contactdesc"),
     contactaddress: t("home.contactaddress"),
+
+    contactformdesc: t("home.contactformdesc"),
+    contactformfullname: t("home.contactformfullname"),
+    contactformcompanyname: t("home.contactformcompanyname"),
+    contactformphoneno: t("home.contactformphoneno"),
+    contactformemail: t("home.contactformemail"),
+    contactformservice: t("home.contactformservice"),
+    contactformmsg: t("home.contactformmsg"),
+
   };
 
   return (

@@ -55,6 +55,15 @@
     "contactaddress": "Bezoek ons",
     "contactconnect": "Verbind met ons:",
     "contactform": "Contactformulier",
+    "contactformdesc": "Vul het formulier in om uw virtuele assistent in te huren",
+
+    "contactformfullname": "Volledige naam",
+    "contactformcompanyname": "Bedrijfsnaam",
+    "contactformphoneno": "Telefoonnummer",
+    "contactformemail": "E-mailadres",
+    "contactformservice": "Gewenste dienst",
+    "contactformmsg": "Bericht / Details van de vereisten",
+
     "name": "Naam",
     "email": "E-mail",
     "subject": "Onderwerp",
