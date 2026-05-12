@@ -1931,7 +1931,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële administratieve en operationele taken.",
-        "price": "€26,85",
+        "price": "€26,95",
         "unit": "2 uur per dag",
         "features": [
           "E-mail & agenda ondersteuning",
@@ -1944,7 +1944,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse bedrijfsactiviteiten.",
-        "price": "€22,82",
+        "price": "€22,95",
         "unit": "4 uur per dag",
         "features": [
           "Alle Starter-functies",
@@ -1958,7 +1958,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Toegewijde Virtuele Assistent voor resultaatgerichte teams",
-        "price": "€18,80",
+        "price": "€18,95",
         "unit": "8 uur per dag",
         "features": [
           "Meerdere virtuele assistenten",
@@ -2061,7 +2061,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële ontwikkelingstaken.",
-        "price": "€56,85",
+        "price": "€56,95",
         "unit": "2 uur per dag",
         "features": [
           "Bugfixes en verbeteringen",
@@ -2074,7 +2074,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige productontwikkeling.",
-        "price": "€48,32",
+        "price": "€48,95",
         "unit": "4 uur per dag",
         "features": [
           "Alle Starter-functies",
@@ -2088,7 +2088,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig ontwikkelingsteam voor complexe en grootschalige producten.",
-        "price": "€39,80",
+        "price": "€39,95",
         "unit": "8 uur per dag",
         "features": [
           "Alle Growth-functies",
@@ -2178,7 +2178,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële data engineering taken.",
-        "price": "€56,85",
+        "price": "€56,95",
         "unit": "2 uur per dag",
         "features": ["Pipeline ontwikkeling en fixes", "Databasebeheer", "Wekelijkse rapportages", "E-mail ondersteuning"],
         "button": "Aan de slag"
@@ -2186,7 +2186,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige data-infrastructuur ontwikkeling.",
-        "price": "€48,32",
+        "price": "€48,95",
         "unit": "4 uur per dag",
         "features": ["Alle Starter-functies", "Bouw van data warehouses en lakes", "Cloud data-infrastructuur setup", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
         "button": "Aan de slag"
@@ -2194,7 +2194,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig data engineering team voor enterprise dataplatformen.",
-        "price": "€39,80",
+        "price": "€39,95",
         "unit": "8 uur per dag",
         "features": ["Alle Growth-functies", "Analytics engineering en dbt", "Volledige BI-tool integratie", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
         "button": "Neem contact op"
@@ -2255,7 +2255,7 @@
         "Voorraadniveaubewaking",
         "Communicatie met leveranciers",
         "Voorraadupdates en alerts",
-        "Coördinatie van retourzendingen en terugbetalingen [cite: 25]"
+        "Coördinatie van retourzendingen en terugbetalingen"
       ],
       "category_3": "Klantenservice",
       "cat_3_items": [
@@ -2295,11 +2295,11 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële e-commerce taken.",
-        "price": "€56,85",
+        "price": "€56,95",
         "unit": "2 uur per dag",
         "features": [
           "Productbeheer en vermeldingen",
-          "Ondersteuning bij orderverwerking [cite: 26]",
+          "Ondersteuning bij orderverwerking",
           "Wekelijkse rapportages",
           "E-mail ondersteuning"
         ],
@@ -2308,7 +2308,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige e-commerce activiteiten.",
-        "price": "€48,32",
+        "price": "€48,95",
         "unit": "4 uur per dag",
         "features": [
           "Alle Starter-functies",
@@ -2322,7 +2322,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig e-commerce team voor hoog volume en multi-channel winkels.",
-        "price": "€39,80",
+        "price": "€39,95",
         "unit": "8 uur per dag",
         "features": [
           "Alle Growth-functies",
@@ -2609,7 +2609,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële sociale taken.",
-        "price": "€41,85",
+        "price": "€41,95",
         "unit": "per uur",
         "features": [
           "2 platformen beheerd",
@@ -2622,7 +2622,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€35,57",
+        "price": "€35,95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -2636,7 +2636,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Meerdere platformen of gespecialiseerde ondersteuning.",
-        "price": "€29,30",
+        "price": "€29,95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -2762,7 +2762,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ontwerpsteun voor sociale media en basisassets.",
-        "price": "€41,85",
+        "price": "€41,95",
         "unit": "per uur",
         "features": [
           "Social media graphics",
@@ -2775,7 +2775,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ontwerpondersteuning voor marketing en branding.",
-        "price": "€35.57",
+        "price": "€35.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -2789,7 +2789,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige creatieve productie inclusief motion en verpakking.",
-        "price": "€29.30",
+        "price": "€29.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -2915,7 +2915,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële marketingtaken.",
-        "price": "€56,85",
+        "price": "€56,95",
         "unit": "per uur",
         "features": [
           "SEO of Google Ads beheer",
@@ -2928,7 +2928,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige digitale marketingactiviteiten.",
-        "price": "€48,32",
+        "price": "€48,95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -2942,7 +2942,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige ondersteuning door marketingteam en multi-channel uitvoering.",
-        "price": "€39,80",
+        "price": "€39,95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -3067,7 +3067,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële supporttaken.",
-        "price": "€26,85",
+        "price": "€26,95",
         "unit": "per uur",
         "features": [
           "E-mail en chat support",
@@ -3080,7 +3080,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€22,82",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -3094,7 +3094,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig klantbeheer en multi-channel ondersteuning.",
-        "price": "€18,80",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -3220,7 +3220,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële datataken.",
-        "price": "€26,85",
+        "price": "€26,95",
         "unit": "per uur",
         "features": [
           "Gegevensinvoer en verwerking",
@@ -3233,7 +3233,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€22,82",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -3247,7 +3247,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig databeheer en hoog-volume verwerking.",
-        "price": "€18,80",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -3275,12 +3275,12 @@
   "hire_front_end_developer": {
     "metadata": {
       "meta_title": "Toegewijde Front-End Developer Inhuren in Nederland | Front-End Ontwikkeling",
-      "meta_description": "Huur een toegewijde front-end developer in Nederland voor React, Vue, Angular, UI-ontwikkeling en responsieve interfaces. Flexibele plannen, snelle start. [cite: 83, 84]",
+      "meta_description": "Huur een toegewijde front-end developer in Nederland voor React, Vue, Angular, UI-ontwikkeling en responsieve interfaces. Flexibele plannen, snelle start.",
       "url_slug": "nl/staffing-support/front-end-developer-inhuren"
     },
     "hero": {
       "heading": "Huur een Toegewijde Front-End Developer in Nederland",
-      "text": "Uw gebruikers beoordelen uw product binnen enkele seconden. Krijg een ontwikkelaar die snelle, responsieve en visueel gepolijste interfaces bouwt die gebruikers betrokken houden. [cite: 85]",
+      "text": "Uw gebruikers beoordelen uw product binnen enkele seconden. Krijg een ontwikkelaar die snelle, responsieve en visueel gepolijste interfaces bouwt die gebruikers betrokken houden.",
       "button_primary": "Boek een Gratis Consultatie",
       "button_secondary": "Bekijk de Tarieven",
       "save_badge": "Bespaar tot 60%",
@@ -3312,11 +3312,11 @@
       "item_2": "Start binnen dagen, niet maanden",
       "item_3": "Bespaar tot 60% op wervingskosten",
       "item_4": "Volledig beheerde ondersteuning",
-      "item_5": "Flexibele maandelijkse plannen [cite: 86]"
+      "item_5": "Flexibele maandelijkse plannen"
     },
     "services": {
       "heading": "Waar Uw Front-End Developer bij Kan Helpen",
-      "description": "Onze toegewijde ontwikkelaars zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw UI-ontwikkeling en interfacebehoeften. [cite: 86]",
+      "description": "Onze toegewijde ontwikkelaars zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw UI-ontwikkeling en interfacebehoeften.",
       "category_1": "React Ontwikkeling",
       "cat_1_items": [
         "React.js applicatieontwikkeling",
@@ -3365,15 +3365,15 @@
         "Code reviews en refactoring",
         "CI/CD frontend pipeline ondersteuning"
       ],
-      "button_middle": "Vertel Ons Wat U Nodig Heeft → [cite: 88]"
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
       "heading": "Betaalbare Front-End Developer",
-      "description": "Wij bieden flexibele pakketten op basis van uw ontwikkelbehoeften. Alle plannen zijn inclusief volledig beheer en ondersteuning. [cite: 89]",
+      "description": "Wij bieden flexibele pakketten op basis van uw ontwikkelbehoeften. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor UI-fixes en kleine updates.",
-        "price": "€41,85",
+        "price": "€41,95",
         "unit": "per uur",
         "features": [
           "UI fixes en verbeteringen",
@@ -3386,7 +3386,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige applicatieontwikkeling.",
-        "price": "€35,57",
+        "price": "€35,95",
         "unit": "per hour",
         "features": [
           "Alle Starter-functies",
@@ -3400,7 +3400,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Ontwikkeling op enterprise-niveau en prestatie-architectuur.",
-        "price": "€29,30",
+        "price": "€29,95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -3412,11 +3412,11 @@
         ],
         "button": "Neem contact op"
       },
-      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling. [cite: 90]"
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
     },
     "cta": {
       "heading": "Klaar om uw Front-End Developer in te huren?",
-      "description": "Laat ons u helpen de perfecte front-end developer te vinden voor uw productinterfaces en webontwikkelingsbehoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag. [cite: 91]",
+      "description": "Laat ons u helpen de perfecte front-end developer te vinden voor uw productinterfaces en webontwikkelingsbehoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
       "footer_checkmarks": [
         "Geen verplichting",
@@ -3428,20 +3428,20 @@
 
   "hire_back_end_developer": {
     "metadata": {
-      "meta_title": "Toegewijde Back-End Developer Inhuren in Nederland | Back-End Ontwikkeling [cite: 92]",
-      "meta_description": "Huur een toegewijde back-end developer in Nederland voor Node.js, PHP, Laravel, Python en API-ontwikkeling. Flexibele plannen, snelle start. [cite: 93]",
-      "url_slug": "nl/staffing-support/back-end-developer-inhuren [cite: 93]"
+      "meta_title": "Toegewijde Back-End Developer Inhuren in Nederland | Back-End Ontwikkeling",
+      "meta_description": "Huur een toegewijde back-end developer in Nederland voor Node.js, PHP, Laravel, Python en API-ontwikkeling. Flexibele plannen, snelle start.",
+      "url_slug": "nl/staffing-support/back-end-developer-inhuren"
     },
     "hero": {
-      "heading": "Huur een Toegewijde Back-End Developer in Nederland [cite: 94]",
-      "text": "De logica, data en infrastructuur achter uw product moeten snel, veilig en schaalbaar zijn. Krijg een ontwikkelaar die de systemen bouwt en onderhoudt die uw bedrijf aandrijven — betrouwbaar en efficiënt. [cite: 94]",
-      "button_primary": "Boek een Gratis Consultatie [cite: 94]",
-      "button_secondary": "Bekijk de Tarieven [cite: 94]",
-      "save_badge": "Bespaar tot 60% [cite: 94]",
+      "heading": "Huur een Toegewijde Back-End Developer in Nederland",
+      "text": "De logica, data en infrastructuur achter uw product moeten snel, veilig en schaalbaar zijn. Krijg een ontwikkelaar die de systemen bouwt en onderhoudt die uw bedrijf aandrijven — betrouwbaar en efficiënt.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
       "stats": {
-        "stat_1": "500+ Toegewijde Professionals [cite: 94]",
-        "stat_2": "24u Starttijd [cite: 94]",
-        "stat_3": "60% Kostenbesparing [cite: 94]"
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
       }
     },
     
@@ -3470,7 +3470,7 @@
     },
     "services": {
       "heading": "Waar Uw Back-End Developer bij Kan Helpen",
-      "description": "Onze toegewijde back-end developers zijn getrainde professionals die de kernlogica en databases van uw digitale producten bouwen en onderhouden. [cite: 94, 96]",
+      "description": "Onze toegewijde back-end developers zijn getrainde professionals die de kernlogica en databases van uw digitale producten bouwen en onderhouden.",
       "category_1": "Node.js Ontwikkeling",
       "cat_1_items": [
         "REST API ontwikkeling",
@@ -3527,7 +3527,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor API-ontwikkeling en serveronderhoud.",
-        "price": "€56,85",
+        "price": "€56,95",
         "unit": "per uur",
         "features": [
           "API-ontwikkeling en fixes",
@@ -3540,7 +3540,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor Laravel of Node.js backend projecten.",
-        "price": "48,32",
+        "price": "48,95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -3554,7 +3554,7 @@
       "plan_3": {
         "title": "Scale Plan ",
         "desc": "Volledige backend-architectuur en microservices voor grootschalige systemen. ",
-        "price": "€39,80",
+        "price": "€39,95",
         "unit": "per uur ",
         "features": [
           "Alle Growth-functies ",
@@ -3622,7 +3622,7 @@
       "item_5": "Flexibele maandelijkse plannen"
     },
     "services": {
-      "heading": "Waar Uw App Developer bij Kan Helpen [cite: 105, 106]",
+      "heading": "Waar Uw App Developer bij Kan Helpen",
       "description": "Onze toegewijde app-ontwikkelaars zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw iOS, Android en cross-platform mobiele ontwikkelingsbehoeften.",
       "category_1": "iOS Ontwikkeling",
       "cat_1_items": [
@@ -3680,7 +3680,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor app-onderhoud en kleine updates.",
-        "price": "€56,85",
+        "price": "€56,95",
         "unit": "per uur",
         "features": [
           "App-fixes en verbeteringen",
@@ -3693,7 +3693,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige iOS- of Android-apps.",
-        "price": "€48,32",
+        "price": "€48,95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -3707,7 +3707,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige app-ontwikkeling inclusief backend en storebeheer.",
-        "price": "€39,80",
+        "price": "€39,95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -3815,7 +3815,7 @@
         "Stress- en schaalbaarheidstesten",
         "Identificatie van prestatie-bottlenecks",
         "Benchmarking van responstijden",
-        "Performance regressiemonitoring [cite: 115]"
+        "Performance regressiemonitoring"
       ],
       "category_6": "Processen & Documentatie",
       "cat_6_items": [
@@ -3823,7 +3823,7 @@
         "Jira en TestRail beheer",
         "Opzetten en verbeteren van QA-processen",
         "Testdekkingsanalyse",
-        "Sprint-gebaseerde testondersteuning [cite: 115]"
+        "Sprint-gebaseerde testondersteuning"
       ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
@@ -3833,34 +3833,34 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Handmatig testen en bugrapportage voor essentiële releases.",
-        "price": "€41,85",
+        "price": "€41,95",
         "unit": "per uur",
         "features": [
           "Handmatig testen en bugrapportage",
           "Creatie van testcases",
           "Wekelijkse rapportages",
-          "E-mail ondersteuning [cite: 116]"
+          "E-mail ondersteuning"
         ],
         "button": "Aan de slag"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde QA-ondersteuning inclusief automatisering en API-testen.",
-        "price": "€35,57",
+        "price": "€35,95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
           "Setup van geautomatiseerd testen",
           "API- en mobiele app-testen",
           "Prioritaire ondersteuning",
-          "Toegewijde accountmanager [cite: 116]"
+          "Toegewijde accountmanager"
         ],
         "button": "Aan de slag"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig beheer van QA-pipelines en performancetesten.",
-        "price": "€29,30",
+        "price": "€29,95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -3868,39 +3868,39 @@
           "Volledige CI/CD testpipeline",
           "Aangepaste workflows",
           "Toegewijde accountmanager",
-          "SLA-garantie [cite: 116]"
+          "SLA-garantie"
         ],
         "button": "Neem contact op"
       },
-      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling. [cite: 117]"
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
     },
     "cta": {
       "heading": "Klaar om uw Software Tester & QA Engineer in te huren?",
-      "description": "Laat ons u helpen de perfecte QA-engineer te vinden voor uw productkwaliteit en softwaretestbehoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag. [cite: 118]",
+      "description": "Laat ons u helpen de perfecte QA-engineer te vinden voor uw productkwaliteit en softwaretestbehoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
       "footer_checkmarks": [
         "Geen verplichting",
         "Gratis consultatie",
-        "Start binnen 48 uur [cite: 118]"
+        "Start binnen 48 uur"
       ]
     }
   },
   "hire_it_support_specialist": {
     "metadata": {
-      "meta_title": "Huur een Toegewijde IT-support Specialist op Afstand in Nederland [cite: 118, 119]",
-      "meta_description": "Huur een toegewijde IT-support specialist op afstand in Nederland voor helpdesk, systeembeheer en technische assistentie. Snelle start. [cite: 120]",
+      "meta_title": "Huur een Toegewijde IT-support Specialist op Afstand in Nederland",
+      "meta_description": "Huur een toegewijde IT-support specialist op afstand in Nederland voor helpdesk, systeembeheer en technische assistentie. Snelle start.",
       "url_slug": "nl/staffing-support/it-support-specialist-inhuren"
     },
     "hero": {
       "heading": "Huur een Toegewijde IT-support Specialist op Afstand in Nederland",
-      "text": "Technische problemen die onopgelost blijven, vertragen uw team, creëren beveiligingsrisico's en kosten uw bedrijf elk uur meer. Krijg een toegewijde IT-support specialist die uw systemen soepel laat draaien — elke dag. [cite: 121]",
+      "text": "Technische problemen die onopgelost blijven, vertragen uw team, creëren beveiligingsrisico's en kosten uw bedrijf elk uur meer. Krijg een toegewijde IT-support specialist die uw systemen soepel laat draaien — elke dag.",
       "button_primary": "Boek een Gratis Consultatie",
       "button_secondary": "Bekijk de Tarieven",
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
         "stat_2": "24u Starttijd",
-        "stat_3": "60% Kostenbesparing [cite: 121]"
+        "stat_3": "60% Kostenbesparing"
       }
     },
     
@@ -3920,12 +3920,12 @@
       "rating": "5.0"
     },
     "features": {
-      "heading": "Huur een IT-support Specialist in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen [cite: 122]",
+      "heading": "Huur een IT-support Specialist in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
       "item_1": "Toegewijde IT-support Specialisten",
       "item_2": "Start binnen dagen, niet maanden",
       "item_3": "Bespaar tot 60% op wervingskosten",
       "item_4": "Volledig beheerde ondersteuning",
-      "item_5": "Flexibele maandelijkse plannen [cite: 122]"
+      "item_5": "Flexibele maandelijkse plannen"
     },
     "services": {
       "heading": "Waar Uw IT-support Specialist bij Kan Helpen",
@@ -3936,7 +3936,7 @@
         "Software-installatie en configuratie",
         "Wachtwoord- en toegangsbeheer",
         "Hulp bij remote desktop",
-        "Ticketbeheer en probleemoplossing [cite: 123]"
+        "Ticketbeheer en probleemoplossing"
       ],
       "category_2": "Systeembeheer",
       "cat_2_items": [
@@ -3944,7 +3944,7 @@
         "Gebruikersaccount- en rechtenbeheer",
         "Systeemupdates en patchbeheer",
         "Active Directory administratie",
-        "Beheer van groepsbeleid [cite: 123]"
+        "Beheer van groepsbeleid"
       ],
       "category_3": "Netwerkondersteuning",
       "cat_3_items": [
@@ -3952,7 +3952,7 @@
         "VPN-setup en beheer",
         "Router- en firewallconfiguratie",
         "Netwerkprestatie optimalisatie",
-        "Ondersteuning bij verbinding op afstand [cite: 123]"
+        "Ondersteuning bij verbinding op afstand"
       ],
       "category_4": "Cloud & SaaS",
       "cat_4_items": [
@@ -3960,7 +3960,7 @@
         "Google Workspace beheer",
         "Cloudopslag en back-up setup",
         "Onboarding van SaaS-tools",
-        "Cloudbeveiliging configuratie [cite: 123]"
+        "Cloudbeveiliging configuratie"
       ],
       "category_5": "Cybersecurity",
       "cat_5_items": [
@@ -3968,7 +3968,7 @@
         "Beveiligingsaudit en risicobeoordeling",
         "Phishingbewustzijn en respons",
         "Databack-up en herstel na rampen",
-        "Toegangscontrole en beveiligingsbeleid [cite: 124]"
+        "Toegangscontrole en beveiligingsbeleid"
       ],
       "category_6": "Documentatie",
       "cat_6_items": [
@@ -3976,7 +3976,7 @@
         "Opstellen van standaardprocedures",
         "Asset- en inventarisbeheer",
         "On- en offboarding IT-ondersteuning",
-        "Onderhoud van IT-kennisbank [cite: 124]"
+        "Onderhoud van IT-kennisbank"
       ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
@@ -3986,34 +3986,34 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime helpdesk support voor essentiële technische problemen.",
-        "price": "€26,85",
+        "price": "€26,95",
         "unit": "per uur",
         "features": [
           "Helpdesk en eindgebruikerssupport",
           "Basis systeembeheer",
           "Wekelijkse rapportages",
-          "E-mail ondersteuning [cite: 125]"
+          "E-mail ondersteuning"
         ],
         "button": "Aan de slag"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor netwerk-, cloud- en serverbeheer.",
-        "price": "€22,82",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
           "Netwerk- en cloudbeheer",
           "Microsoft 365 administratie",
           "Prioritaire ondersteuning",
-          "Toegewijde accountmanager [cite: 125]"
+          "Toegewijde accountmanager"
         ],
         "button": "Aan de slag"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig infrastructuurbeheer en cybersecurity ondersteuning.",
-        "price": "€18,80",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -4021,20 +4021,20 @@
           "Volledig infrastructuurbeheer",
           "Aangepaste workflows",
           "Toegewijde accountmanager",
-          "SLA-garantie [cite: 125]"
+          "SLA-garantie"
         ],
         "button": "Neem contact op"
       },
-      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling. [cite: 126]"
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
     },
     "cta": {
       "heading": "Klaar om uw IT-support Specialist in te huren?",
-      "description": "Laat ons u helpen de perfecte IT-support specialist op afstand te vinden voor uw technologie en infrastructuur. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag. [cite: 127]",
+      "description": "Laat ons u helpen de perfecte IT-support specialist op afstand te vinden voor uw technologie en infrastructuur. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
       "footer_checkmarks": [
         "Geen verplichting",
         "Gratis consultatie",
-        "Start binnen 48 uur [cite: 127]"
+        "Start binnen 48 uur"
       ]
     }
   }

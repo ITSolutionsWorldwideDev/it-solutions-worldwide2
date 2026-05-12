@@ -73,7 +73,12 @@ export const menuItems = [
         label: "Staffing Consulting Services",
         link: "/staffing-support/staffing-consulting-services",
       },
-
+    ],
+  },
+  {
+    label: "Hiring",
+    link: "/staff-hiring",
+    dropdown: [
       {
         label: "Hire Virtual Assistant",
         link: "/staffing-support/hire-virtual-assistant",
