@@ -1013,7 +1013,8 @@ const contentMap: ServicePageConfig =
       ],
     },
 
-    "hire-content-creator-copywriter": {
+    "hire-content-creator": {
+      // -copywriter
       heading: "Hire Content Creator Copywriter",
       subText:
         "Businesses that publish consistent, high-quality content attract more traffic, build stronger brands, and convert more customers — without spending a fortune on agencies.",
@@ -2385,7 +2386,7 @@ const contentMap: ServicePageConfig =
       ],
     },
 
-    "hire-software-tester": {
+    "hire-software-tester-qa": {
       heading: "Hire Software Tester ",
       subText:
         "Bugs that reach your users damage trust, increase churn, and cost more to fix. Get a dedicated software tester who catches issues before they reach production — so your product launches clean and stays reliable.",

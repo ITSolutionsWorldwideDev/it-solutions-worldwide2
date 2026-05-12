@@ -89,7 +89,9 @@ export default async function HiringHeader({ slug, locale }: Props) {
                   Get Pricing Today
                 </button> */}
 
-                <ScrollPricingButton btntext={pageContent.hero?.button_secondary} />
+                <ScrollPricingButton
+                  btntext={pageContent.hero?.button_secondary}
+                />
               </div>
 
               {/* Stats */}
@@ -131,7 +133,10 @@ export default async function HiringHeader({ slug, locale }: Props) {
 
             {/* Right Form */}
             <div className="w-full lg:w-auto flex-1 ">
-              <ConsultationForm slug={slug} consultation_form={pageContent?.consultation_form} />
+              <ConsultationForm
+                slug={slug}
+                consultation_form={pageContent?.consultation_form}
+              />
             </div>
           </main>
 

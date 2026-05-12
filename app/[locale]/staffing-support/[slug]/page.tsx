@@ -33,29 +33,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-
 export default async function Page({ params }: Props) {
   const { slug, locale } = await params;
 
-  return (
-    <HiringHeader
-      slug={slug}
-      locale={locale}
-    />
-  );
+  return <HiringHeader slug={slug} locale={locale} />;
 }
-
-// const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
-
-// const page = async ({ params }: Props) => {
-//   const { slug, locale } = await params;
-
-//   // console.log(slug);
-//   return (
-//     <div>
-//       <HiringHeader slug={slug} locale={locale} />
-//     </div>
-//   );
-// };
-
-// export default page;

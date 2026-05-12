@@ -2186,7 +2186,12 @@
         "desc": "Parttime ondersteuning voor essentiële data engineering taken.",
         "price": "€56,95",
         "unit": "2 uur per dag",
-        "features": ["Pipeline ontwikkeling en fixes", "Databasebeheer", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "features": [
+          "Pipeline ontwikkeling en fixes",
+          "Databasebeheer",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
@@ -2194,7 +2199,13 @@
         "desc": "Toegewijde ondersteuning voor volledige data-infrastructuur ontwikkeling.",
         "price": "€48,95",
         "unit": "4 uur per dag",
-        "features": ["Alle Starter-functies", "Bouw van data warehouses en lakes", "Cloud data-infrastructuur setup", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "features": [
+          "Alle Starter-functies",
+          "Bouw van data warehouses en lakes",
+          "Cloud data-infrastructuur setup",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
@@ -2202,16 +2213,27 @@
         "desc": "Volledig data engineering team voor enterprise dataplatformen.",
         "price": "€39,95",
         "unit": "8 uur per dag",
-        "features": ["Alle Growth-functies", "Analytics engineering en dbt", "Volledige BI-tool integratie", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "features": [
+          "Alle Growth-functies",
+          "Analytics engineering en dbt",
+          "Volledige BI-tool integratie",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
-      },  	  	 
+      },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
     },
     "cta": {
       "heading": "Klaar om een Data Engineer in Nederland in te huren?",
       "description": "Bouw een betrouwbare data-infrastructuur, ontsluit uw analyses en neem sneller beslissingen — met toegewijde data engineers van IT Solutions Worldwide.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   },
   "hire_ecommerce_assistant": {
@@ -2416,7 +2438,12 @@
         "desc": "Parttime ondersteuning voor essentiële elektrotechnische taken.",
         "price": "€49,95",
         "unit": "2 uur per dag",
-        "features": ["Circuitontwerp en documentatie", "Ondersteuning bij technische beoordeling", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "features": [
+          "Circuitontwerp en documentatie",
+          "Ondersteuning bij technische beoordeling",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
@@ -2424,7 +2451,13 @@
         "desc": "Toegewijde ondersteuning voor volledige elektrotechnische projecten.",
         "price": "€59,95",
         "unit": "4 uur per dag",
-        "features": ["Alle Starter-functies", "PCB-ontwerp en embedded systems", "Technische documentatie", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "features": [
+          "Alle Starter-functies",
+          "PCB-ontwerp en embedded systems",
+          "Technische documentatie",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
@@ -2432,7 +2465,14 @@
         "desc": "Volledig engineeringteam voor grootschalige en complexe projecten.",
         "price": "€69,95",
         "unit": "8 uur per dag",
-        "features": ["Alle Growth-functies", "Elektrotechnische systeemtechniek", "Ondersteuning bij compliance en certificering", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "features": [
+          "Alle Growth-functies",
+          "Elektrotechnische systeemtechniek",
+          "Ondersteuning bij compliance en certificering",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       }
     },
@@ -2440,7 +2480,11 @@
       "heading": "Klaar om een Elektrotechnisch Ingenieur in Nederland in te huren?",
       "description": "Laat ons u helpen de perfecte elektrotechnisch-ingenieur te vinden voor uw zakelijke of persoonlijke behoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   },
   "hire_ai_engineer": {
@@ -2532,7 +2576,7 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-    
+
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -2685,7 +2729,7 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-    
+
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -2838,7 +2882,7 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-    
+
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -2991,7 +3035,7 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-    
+
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3143,7 +3187,7 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-    
+
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3296,7 +3340,7 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-    
+
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3450,7 +3494,7 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-    
+
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3603,7 +3647,7 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-    
+
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3756,7 +3800,7 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-    
+
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3909,7 +3953,7 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-    
+
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -4062,7 +4106,7 @@
         "stat_2": "24u Starttijd",
         "stat_3": "60% Kostenbesparing"
       }
-    },    
+    },
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -4090,17 +4134,53 @@
       "heading": "Waar Uw Data Analist bij Kan Helpen",
       "description": "Onze toegewijde data-analisten zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw business intelligence, rapportage en data-inzichten.",
       "category_1": "Analyse & Rapportage",
-      "cat_1_items": ["Bedrijfsprestatie analyse", "Verkoop- en omzetrapportage", "Analyse van klantgedrag", "Trendidentificatie en prognoses", "Ad-hoc data-analyse verzoeken"],
+      "cat_1_items": [
+        "Bedrijfsprestatie analyse",
+        "Verkoop- en omzetrapportage",
+        "Analyse van klantgedrag",
+        "Trendidentificatie en prognoses",
+        "Ad-hoc data-analyse verzoeken"
+      ],
       "category_2": "Dashboard Creatie",
-      "cat_2_items": ["Interactieve dashboardontwikkeling", "KPI- en metrics dashboardontwerp", "Executive rapportage dashboards", "Real-time datamonitoring setups", "Self-service analytics dashboards"],
+      "cat_2_items": [
+        "Interactieve dashboardontwikkeling",
+        "KPI- en metrics dashboardontwerp",
+        "Executive rapportage dashboards",
+        "Real-time datamonitoring setups",
+        "Self-service analytics dashboards"
+      ],
       "category_3": "Business Intelligence",
-      "cat_3_items": ["Setup en beheer van BI-tools", "Power BI en Tableau rapportage", "Datamodel ontwikkeling", "Geautomatiseerde rapportage-pipelines", "Data-integratie tussen afdelingen"],
+      "cat_3_items": [
+        "Setup en beheer van BI-tools",
+        "Power BI en Tableau rapportage",
+        "Datamodel ontwikkeling",
+        "Geautomatiseerde rapportage-pipelines",
+        "Data-integratie tussen afdelingen"
+      ],
       "category_4": "Data Opschonen",
-      "cat_4_items": ["Ruwe data opschonen en formatteren", "Datastandaardisatie en validatie", "Verwijderen van dubbelingen en fouten", "Samenvoegen en transformeren van datasets", "Beoordeling van datakwaliteit"],
+      "cat_4_items": [
+        "Ruwe data opschonen en formatteren",
+        "Datastandaardisatie en validatie",
+        "Verwijderen van dubbelingen en fouten",
+        "Samenvoegen en transformeren van datasets",
+        "Beoordeling van datakwaliteit"
+      ],
       "category_5": "SQL & Database Rapportage",
-      "cat_5_items": ["SQL query schrijven en optimalisatie", "Database rapportage en extractie", "Ontwikkeling van stored procedures", "Data-aggregatie en samenvatting", "Samenvoegen van meerdere bronnen"],
+      "cat_5_items": [
+        "SQL query schrijven en optimalisatie",
+        "Database rapportage en extractie",
+        "Ontwikkeling van stored procedures",
+        "Data-aggregatie en samenvatting",
+        "Samenvoegen van meerdere bronnen"
+      ],
       "category_6": "Statistische Analyse",
-      "cat_6_items": ["Beschrijvende en voorspellende analyses", "Regressie- en correlatieanalyse", "A/B-test analyse en interpretatie", "Vraag- en verkoopprognoses", "Python en R statistische modellering"],
+      "cat_6_items": [
+        "Beschrijvende en voorspellende analyses",
+        "Regressie- en correlatieanalyse",
+        "A/B-test analyse en interpretatie",
+        "Vraag- en verkoopprognoses",
+        "Python en R statistische modellering"
+      ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
@@ -4109,25 +4189,43 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële data-analyse en rapportage.",
-        "price": "€49,95",
+        "price": "€56,95",
         "unit": "per uur",
-        "features": ["Data-analyse en rapportage", "Basis dashboard creatie", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "features": [
+          "Data-analyse en rapportage",
+          "Basis dashboard creatie",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor business intelligence en SQL-rapportage.",
-        "price": "€59,95",
+        "price": "€48,95",
         "unit": "per uur",
-        "features": ["Alle Starter-functies", "BI-tool dashboards en rapportage", "SQL-query's en datavoorbereiding", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "features": [
+          "Alle Starter-functies",
+          "BI-tool dashboards en rapportage",
+          "SQL-query's en datavoorbereiding",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Geavanceerde analytics, statistische modellering en multi-source integratie.",
-        "price": "€69,95",
+        "price": "€39,95",
         "unit": "per uur",
-        "features": ["Alle Growth-functies", "Statistische modellering en prognoses", "BI-integratie tussen afdelingen", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "features": [
+          "Alle Growth-functies",
+          "Statistische modellering en prognoses",
+          "BI-integratie tussen afdelingen",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
@@ -4136,7 +4234,11 @@
       "heading": "Klaar om uw Data Analist in te huren?",
       "description": "Laat ons u helpen de perfecte data-analist te vinden voor uw business intelligence en rapportagebehoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   },
   "hire_powerbi_tableau_specialist": {
@@ -4156,7 +4258,7 @@
         "stat_2": "24u Starttijd",
         "stat_3": "60% Kostenbesparing"
       }
-    },    
+    },
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -4184,17 +4286,53 @@
       "heading": "Waar Uw Power BI & Tableau Specialist bij Kan Helpen",
       "description": "Onze toegewijde Power BI en Tableau specialisten zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw business intelligence en datavisualisatie.",
       "category_1": "Power BI Ontwikkeling",
-      "cat_1_items": ["Ontwerp en bouw van Power BI dashboards", "DAX-formule ontwikkeling", "Power Query datatransformatie", "Rapporten publiceren en delen", "Power BI Service administratie"],
+      "cat_1_items": [
+        "Ontwerp en bouw van Power BI dashboards",
+        "DAX-formule ontwikkeling",
+        "Power Query datatransformatie",
+        "Rapporten publiceren en delen",
+        "Power BI Service administratie"
+      ],
       "category_2": "Tableau Ontwikkeling",
-      "cat_2_items": ["Tableau dashboard creatie", "Calculated field en LOD-expressies", "Tableau Server en Online publicatie", "Interactief visualisatie-ontwerp", "Beheer van Tableau databronnen"],
+      "cat_2_items": [
+        "Tableau dashboard creatie",
+        "Calculated field en LOD-expressies",
+        "Tableau Server en Online publicatie",
+        "Interactief visualisatie-ontwerp",
+        "Beheer van Tableau databronnen"
+      ],
       "category_3": "Data Visualisatie",
-      "cat_3_items": ["Op maat gemaakt grafiek- en diagramontwerp", "Executive en management dashboards", "KPI-tracking visualisaties", "Vergelijkende en trendvisualisaties", "Mobiel-geoptimaliseerde dashboardlay-outs"],
+      "cat_3_items": [
+        "Op maat gemaakt grafiek- en diagramontwerp",
+        "Executive en management dashboards",
+        "KPI-tracking visualisaties",
+        "Vergelijkende en trendvisualisaties",
+        "Mobiel-geoptimaliseerde dashboardlay-outs"
+      ],
       "category_4": "Datamodellering",
-      "cat_4_items": ["Datamodelontwerp voor BI-tools", "Star- en snowflake schema setup", "Power Query en ETL-transformatie", "Multi-source data-integratie", "Beheer van relaties en hiërarchieën"],
+      "cat_4_items": [
+        "Datamodelontwerp voor BI-tools",
+        "Star- en snowflake schema setup",
+        "Power Query en ETL-transformatie",
+        "Multi-source data-integratie",
+        "Beheer van relaties en hiërarchieën"
+      ],
       "category_5": "Rapportage Automatisering",
-      "cat_5_items": ["Geplande en geautomatiseerde rapportlevering", "Setup voor e-mailrapportdistributie", "Configuratie van real-time gegevensverversing", "Alerts en drempelwaarde meldingen", "Embedded reporting integratie"],
+      "cat_5_items": [
+        "Geplande en geautomatiseerde rapportlevering",
+        "Setup voor e-mailrapportdistributie",
+        "Configuratie van real-time gegevensverversing",
+        "Alerts en drempelwaarde meldingen",
+        "Embedded reporting integratie"
+      ],
       "category_6": "BI Strategie",
-      "cat_6_items": ["Consultancy voor BI-toolselectie", "Best practices voor data governance", "Dashboard standaardisatie", "Gebruikerstraining en documentatie", "Organisatie van BI-werkruimtes"],
+      "cat_6_items": [
+        "Consultancy voor BI-toolselectie",
+        "Best practices voor data governance",
+        "Dashboard standaardisatie",
+        "Gebruikerstraining en documentatie",
+        "Organisatie van BI-werkruimtes"
+      ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
@@ -4203,25 +4341,43 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ondersteuning voor dashboardontwerp en datamodellering.",
-        "price": "€49,95",
+        "price": "€56,95",
         "unit": "per uur",
-        "features": ["Dashboard ontwerp en ontwikkeling", "Basis datamodellering", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "features": [
+          "Dashboard ontwerp en ontwikkeling",
+          "Basis datamodellering",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige BI-builds en automatisering.",
-        "price": "€59,95",
+        "price": "€48,95",
         "unit": "per uur",
-        "features": ["Alle Starter-functies", "Volledige Power BI of Tableau builds", "Setup rapportage-automatisering", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "features": [
+          "Alle Starter-functies",
+          "Volledige Power BI of Tableau builds",
+          "Setup rapportage-automatisering",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise BI-strategie en complexe multi-source integratie.",
-        "price": "€69,95",
+        "price": "€39,95",
         "unit": "per uur",
-        "features": ["Alle Growth-functies", "Multi-source data-integratie", "BI governance en strategie", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "features": [
+          "Alle Growth-functies",
+          "Multi-source data-integratie",
+          "BI governance en strategie",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
@@ -4230,7 +4386,11 @@
       "heading": "Klaar om uw Power BI & Tableau Specialist in te huren?",
       "description": "Laat ons u helpen de perfecte Power BI of Tableau specialist te vinden voor uw business intelligence en datavisualisatie. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   },
   "hire_content_creator": {
@@ -4250,7 +4410,7 @@
         "stat_2": "24u Starttijd",
         "stat_3": "60% Kostenbesparing"
       }
-    },    
+    },
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -4278,17 +4438,53 @@
       "heading": "Waar Uw Content Creator & Copywriter bij Kan Helpen",
       "description": "Onze toegewijde content creators en copywriters zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw zakelijke content en merkstem.",
       "category_1": "Blog Schrijven",
-      "cat_1_items": ["SEO blogberichten schrijven", "Creatie van long-form artikelen", "Thought leadership content", "Industrienieuws en commentaar", "Schrijven van gastberichten"],
+      "cat_1_items": [
+        "SEO blogberichten schrijven",
+        "Creatie van long-form artikelen",
+        "Thought leadership content",
+        "Industrienieuws en commentaar",
+        "Schrijven van gastberichten"
+      ],
       "category_2": "Website Copy",
-      "cat_2_items": ["Homepage en landingspagina copy", "Diensten- en productpagina's", "Over ons en merkverhaal pagina's", "CTA en conversie copy", "Website content audits en herschrijvingen"],
+      "cat_2_items": [
+        "Homepage en landingspagina copy",
+        "Diensten- en productpagina's",
+        "Over ons en merkverhaal pagina's",
+        "CTA en conversie copy",
+        "Website content audits en herschrijvingen"
+      ],
       "category_3": "Social Media Content",
-      "cat_3_items": ["Onderschriften en copy voor berichten", "LinkedIn artikelen en berichten", "Facebook en Instagram content", "Twitter/X threads", "Creatie van contentkalenders"],
+      "cat_3_items": [
+        "Onderschriften en copy voor berichten",
+        "LinkedIn artikelen en berichten",
+        "Facebook en Instagram content",
+        "Twitter/X threads",
+        "Creatie van contentkalenders"
+      ],
       "category_4": "Email Marketing",
-      "cat_4_items": ["E-mail sequence schrijven", "Nieuwsbrief creatie", "Promotionele e-mail copy", "Geautomatiseerde drip campagne content", "Optimalisatie van onderwerpregel en CTA"],
+      "cat_4_items": [
+        "E-mail sequence schrijven",
+        "Nieuwsbrief creatie",
+        "Promotionele e-mail copy",
+        "Geautomatiseerde drip campagne content",
+        "Optimalisatie van onderwerpregel en CTA"
+      ],
       "category_5": "SEO Content Strategie",
-      "cat_5_items": ["Zoekwoordonderzoek en mapping", "SEO-geoptimaliseerde blogcontent", "Meta titel en beschrijving schrijven", "Interne linkstrategie", "Contentbriefings en outlines"],
+      "cat_5_items": [
+        "Zoekwoordonderzoek en mapping",
+        "SEO-geoptimaliseerde blogcontent",
+        "Meta titel en beschrijving schrijven",
+        "Interne linkstrategie",
+        "Contentbriefings en outlines"
+      ],
       "category_6": "Merk- & Advertentiecopy",
-      "cat_6_items": ["Ontwikkeling van merkstem", "Google Ads copy", "Social media advertentiecopy", "Productomschrijvingen", "Copy voor brochures en verkoopmateriaal"],
+      "cat_6_items": [
+        "Ontwikkeling van merkstem",
+        "Google Ads copy",
+        "Social media advertentiecopy",
+        "Productomschrijvingen",
+        "Copy voor brochures en verkoopmateriaal"
+      ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
@@ -4297,25 +4493,43 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ondersteuning voor blogs en social media captions.",
-        "price": "€49,95",
+        "price": "€26,95",
         "unit": "per uur",
-        "features": ["Schrijven van blog- of webcopy", "Planning van contentkalender", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "features": [
+          "Schrijven van blog- of webcopy",
+          "Planning van contentkalender",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor SEO-content en e-mailmarketing.",
-        "price": "€59,95",
+        "price": "€22,95",
         "unit": "per uur",
-        "features": ["Alle Starter-functies", "SEO content schrijven", "E-mail marketing copy", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "features": [
+          "Alle Starter-functies",
+          "SEO content schrijven",
+          "E-mail marketing copy",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige contentstrategie voor meerdere kanalen en merkcopywriting.",
-        "price": "€69,95",
+        "price": "€18,95",
         "unit": "per uur",
-        "features": ["Alle Growth-functies", "Advertentie- en merkcopywriting", "Multi-channel contentstrategie", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "features": [
+          "Alle Growth-functies",
+          "Advertentie- en merkcopywriting",
+          "Multi-channel contentstrategie",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
@@ -4323,6 +4537,1053 @@
     "cta": {
       "heading": "Klaar om uw Content Creator & Copywriter in te huren?",
       "description": "Laat ons u helpen de perfecte content creator of copywriter te vinden voor uw zakelijke of persoonlijke merk. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
+    }
+  },
+  "hire_google_analytics_specialist": {
+    "metadata": {
+      "meta_title": "Huur een Toegewijde Google Analytics Specialist in Nederland | Analytics Diensten",
+      "meta_description": "Huur een toegewijde Google Analytics specialist in Nederland voor GA4-setup, tracking, rapportage en conversie-optimalisatie. Snel starten.",
+      "url_slug": "nl/staffing-support/google-analytics-specialist-inhuren"
+    },
+    "hero": {
+      "heading": "Huur een Toegewijde Google Analytics Specialist in Nederland",
+      "text": "Als u advertenties draait of investeert in uw website zonder de juiste analytics-tracking, neemt u beslissingen in het donker. Krijg een specialist die uw data interpreteert zodat elke beslissing gebaseerd is op echt inzicht.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur een Google Analytics Specialist in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "item_1": "Toegewijde Analytics Specialisten",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw Google Analytics Specialist bij Kan Helpen",
+      "description": "Onze toegewijde Google Analytics specialisten zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw tracking-setup en rapportage.",
+      "category_1": "GA4 Setup & Migratie",
+      "cat_1_items": [
+        "Google Analytics 4 installatie",
+        "Property en datastream setup",
+        "Event- en conversietracking",
+        "Cross-domain tracking configuratie",
+        "GA4-migratie vanaf Universal Analytics"
+      ],
+      "category_2": "Google Tag Manager (GTM)",
+      "cat_2_items": [
+        "GTM account setup en beheer",
+        "Tag-creatie en implementatie",
+        "Trigger en variabele configuratie",
+        "Custom event tracking via GTM",
+        "GTM-audit en opschoning"
+      ],
+      "category_3": "Conversie Tracking",
+      "cat_3_items": [
+        "Setup van doelen en conversies",
+        "E-commerce conversietracking",
+        "Formulierinzending tracking",
+        "Klik- en bel-tracking",
+        "Google Ads conversiekoppeling"
+      ],
+      "category_4": "Rapportage & Dashboards",
+      "cat_4_items": [
+        "Custom GA4-rapportage",
+        "Looker Studio dashboard bouw",
+        "Maandelijkse analytics-rapportage",
+        "Verkeersbron- en gedragsrapporten",
+        "Executive prestatiesamenvattingen"
+      ],
+      "category_5": "Audit & Datakwaliteit",
+      "cat_5_items": [
+        "Volledige GA4-property audit",
+        "Verificatie van trackingnauwkeurigheid",
+        "Onderzoek naar data-afwijkingen",
+        "Tag- en eventaudit",
+        "Setup spam- en botfilters"
+      ],
+      "category_6": "Inzichten & Optimalisatie",
+      "cat_6_items": [
+        "Analyse van gebruikersgedrag",
+        "Trechter- en uitstroomanalyse",
+        "Inzichten in doelgroepsegmentatie",
+        "Landingspagina prestatieanalyse",
+        "Data-gedreven CRO-aanbevelingen"
+      ],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare Google Analytics Specialist",
+      "description": "Wij bieden flexibele pakketten op basis van uw analytics-behoeften. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essentiële tracking-setup en basis conversie-bewaking.",
+        "price": "€56,95",
+        "unit": "per uur",
+        "features": [
+          "GA4 setup en configuratie",
+          "Basis conversietracking",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor GTM en custom dashboard rapportage.",
+        "price": "€48,95",
+        "unit": "per uur",
+        "features": [
+          "Alle Starter-functies",
+          "Google Tag Manager beheer",
+          "Custom dashboards en rapportage",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Volledige analytics audit, geavanceerde inzichten en CRO-strategie.",
+        "price": "€39,95",
+        "unit": "per uur",
+        "features": [
+          "Alle Growth-functies",
+          "Volledige analytics audit",
+          "Geavanceerde inzichten en CRO",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw Google Analytics Specialist in te huren?",
+      "description": "Laat ons u helpen de perfecte Google Analytics specialist te vinden voor uw tracking-, rapportage- en inzichtbehoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
+    }
+  },
+  "hire_microsoft_excel_specialist": {
+    "metadata": {
+      "meta_title": "Huur een Toegewijde Microsoft Excel Specialist in Nederland | Excel & Spreadsheet Diensten",
+      "meta_description": "Huur een toegewijde Microsoft Excel specialist in Nederland voor spreadsheetontwikkeling, automatisering en data-analyse. Flexibele plannen, snelle start.",
+      "url_slug": "nl/staffing-support/microsoft-excel-specialist-inhuren"
+    },
+    "hero": {
+      "heading": "Huur een Toegewijde Microsoft Excel Specialist in Nederland",
+      "text": "Handmatig spreadsheetwerk dat uw team wekelijks uren kost, kan worden geautomatiseerd, vereenvoudigd en foutloos worden gemaakt. Krijg een toegewijde Microsoft Excel-specialist die krachtige, betrouwbare spreadsheetoplossingen bouwt die precies zijn afgestemd op uw behoeften.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur een Microsoft Excel Specialist in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "item_1": "Toegewijde Microsoft Excel Specialisten",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw Microsoft Excel Specialist bij Kan Helpen",
+      "description": "Onze toegewijde Microsoft Excel-specialisten zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw spreadsheetontwikkeling en automatisering.",
+      "category_1": "Spreadsheet Ontwikkeling",
+      "cat_1_items": [
+        "Ontwerp en bouw van spreadsheets op maat",
+        "Creatie van werkmappen met meerdere bladen",
+        "Ontwikkeling van gegevensinvoerformulieren",
+        "Sjablooncreatie en standaardisatie",
+        "Herstructurering en opschoning van spreadsheets"
+      ],
+      "category_2": "Formules & Functies",
+      "cat_2_items": [
+        "VLOOKUP, XLOOKUP en INDEX/MATCH",
+        "Dynamische matrixformules",
+        "Geneste IF- en logische functies",
+        "Financiële en statistische formules",
+        "Foutafhandeling en datavalidatie"
+      ],
+      "category_3": "VBA & Automatisering",
+      "cat_3_items": [
+        "Maatwerk VBA macro-ontwikkeling",
+        "Automatisering van repetitieve taken",
+        "Geautomatiseerde rapportgeneratie",
+        "Creatie van gebruikersformulieren en knoppen",
+        "Ontwikkeling van Excel add-ins"
+      ],
+      "category_4": "Dashboards & Rapportage",
+      "cat_4_items": [
+        "Interactieve Excel dashboard creatie",
+        "KPI- en prestatiedashboards",
+        "PivotTable en PivotChart builds",
+        "Dynamisch grafiek- en diagramontwerp",
+        "Management rapportagesjablonen"
+      ],
+      "category_5": "Gegevensbeheer",
+      "cat_5_items": [
+        "Opschonen en formatteren van grote datasets",
+        "Verwijderen van dubbelingen",
+        "Beheer van data-import en export",
+        "Power Query datatransformatie",
+        "Instellen van datavalidatieregels"
+      ],
+      "category_6": "Financiële Modellering",
+      "cat_6_items": [
+        "Financiële prognosemodellen",
+        "Budgetplanning spreadsheets",
+        "Cashflow-modellen",
+        "Winst- en verliessjablonen",
+        "Scenario- en gevoeligheidsanalyse"
+      ],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare Microsoft Excel Specialist",
+      "description": "Wij bieden flexibele pakketten op basis van uw spreadsheet-behoeften. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essentiële spreadsheet fixes en formule-ontwikkeling.",
+        "price": "€41,95",
+        "unit": "per uur",
+        "features": [
+          "Spreadsheetontwikkeling en fixes",
+          "Werk aan formules en functies",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor VBA-macro's en dashboards.",
+        "price": "€35,95",
+        "unit": "per uur",
+        "features": [
+          "Alle Starter-functies",
+          "VBA-macro automatisering",
+          "Bouw van dashboards en rapportages",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Enterprise modellering, Power Query en volledige automatisering.",
+        "price": "€29,95",
+        "unit": "per uur",
+        "features": [
+          "Meerdere Excel-specialisten",
+          "Alle Growth-functies",
+          "Financiële modellering en prognoses",
+          "Power Query datatransformatie",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw Microsoft Excel Specialist in te huren?",
+      "text": "Laat ons u helpen de perfecte Microsoft Excel-specialist te vinden voor uw spreadsheetontwikkeling, automatisering en databeheer. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
+    }
+  },
+  "hire_online_travel_advisor": {
+    "metadata": {
+      "meta_title": "Huur een Toegewijde Online Reisadviseur in Nederland | Adviesdiensten op Afstand",
+      "meta_description": "Huur een toegewijde online reisadviseur in Nederland voor reisplanning, boekingsondersteuning en route-creatie. Flexibele plannen, snelle start.",
+      "url_slug": "nl/staffing-support/online-reisadviseur-inhuren"
+    },
+    "hero": {
+      "heading": "Huur een Toegewijde Online Reisadviseur in Nederland",
+      "text": "Reisorganisaties die gepersonaliseerde, snelle en betrouwbare adviesdiensten leveren, behouden meer klanten en genereren meer boekingen. Krijg een specialist die uw klanten met deskundigheid en zorg behandelt.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ reisorganisaties die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur een Online Reisadviseur in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "item_1": "Toegewijde Reisadviseurs",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw Online Reisadviseur bij Kan Helpen",
+      "description": "Onze toegewijde online reisadviseurs zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw reisadvies, planning en klantenservice.",
+      "category_1": "Routecreatie",
+      "cat_1_items": [
+        "Ontwikkeling van reisroutes op maat",
+        "Planning van reizen naar meerdere bestemmingen",
+        "Dag-tot-dag reisschema creatie",
+        "Aanbevelingen voor activiteiten en excursies",
+        "Voorbereiding van checklist reisdocumenten"
+      ],
+      "category_2": "Onderzoek & Sourcing",
+      "cat_2_items": [
+        "Zoeken en vergelijken van vluchtopties",
+        "Onderzoek naar hotels en resorts",
+        "Sourcing van appartementen en villa's",
+        "Checks op beste prijs en beschikbaarheid",
+        "Onderzoek naar en vergelijking van reispakketten"
+      ],
+      "category_3": "Klantconsultatie",
+      "cat_3_items": [
+        "Online chat en e-mail reisadvies",
+        "Bestemmingsadvies en aanbevelingen",
+        "Begeleiding bij reisvereisten (visa, verzekeringen)",
+        "Ondersteuning bij groepsreisplanning",
+        "Planning van huwelijksreizen en speciale reizen"
+      ],
+      "category_4": "Boekingsadministratie",
+      "cat_4_items": [
+        "Beheer van boekingsbevestigingen",
+        "Organisatie van reisdocumenten",
+        "Afhandeling van wijzigingen en annuleringen",
+        "Communicatie met leveranciers en operators",
+        "Klantbriefings voorafgaand aan vertrek"
+      ],
+      "category_5": "Content & Trends",
+      "cat_5_items": [
+        "Onderzoek naar bestemmingen en gidsen",
+        "Ondersteuning bij reisblogs en content",
+        "Creatie van FAQ en kennisbank",
+        "Monitoring van reistrends",
+        "Monitoring van aanbiedingen van concurrenten"
+      ],
+      "category_6": "Aftersales & Loyaliteit",
+      "cat_6_items": [
+        "Klantopvolging na de reis",
+        "Verzamelen van beoordelingen en feedback",
+        "Klachtbeheer en oplossingen",
+        "Benadering voor herhaalboekingen",
+        "Loyaliteits- en retentiebeheer"
+      ],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare Online Reisadviseur",
+      "description": "Wij bieden flexibele pakketten op basis van uw adviesvolume. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essentiële reisplanning en e-mailadvies ondersteuning.",
+        "price": "€26,95",
+        "unit": "per uur",
+        "features": [
+          "Reisplanning en routecreatie",
+          "E-mail reisadvies voor klanten",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor boekingsbeheer en gedetailleerd onderzoek.",
+        "price": "€22,95",
+        "unit": "per uur",
+        "features": [
+          "Alle Starter-functies",
+          "Boekingsadministratie",
+          "Onderzoek naar vluchten en accommodaties",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Volledig beheer van de klantcyclus en marketingondersteuning.",
+        "price": "€18,95",
+        "unit": "per uur",
+        "features": [
+          "Alle Growth-functies",
+          "Klantopvolging en aftersales",
+          "Ondersteuning bij reiscontent en onderzoek",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw Online Reisadviseur in te huren?",
+      "description": "Laat ons u helpen de perfecte online reisadviseur te vinden voor uw reisorganisatie en klantadviesbehoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
+    }
+  },
+  "hire_reservations_clerk": {
+    "metadata": {
+      "meta_title": "Huur een Toegewijde Medewerker Reserveringen in Nederland | Reserveringsdiensten op Afstand",
+      "meta_description": "Huur een toegewijde medewerker reserveringen in Nederland voor boekingsbeheer, verwerking en klantondersteuning. Snel starten.",
+      "url_slug": "nl/staffing-support/medewerker-reserveringen-inhuren"
+    },
+    "hero": {
+      "heading": "Huur een Toegewijde Medewerker Reserveringen in Nederland",
+      "text": "Elke vertraagde boekingsbevestiging en gemiste reserveringsaanvraag kost uw bedrijf omzet en reputatie. Krijg een toegewijde medewerker reserveringen die boekingen nauwkeurig verwerkt en uw beschikbaarheid altijd up-to-date houdt.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur een Medewerker Reserveringen in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "item_1": "Toegewijde Reserveringsmedewerkers",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw Medewerker Reserveringen bij Kan Helpen",
+      "description": "Onze toegewijde reserveringsmedewerkers zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw boekingsbeheer en klantcommunicatie.",
+      "category_1": "Reserveringsverwerking",
+      "cat_1_items": [
+        "Afhandeling van inkomende reserveringsaanvragen",
+        "Boekingsbevestiging en verwerking",
+        "Beheer van groeps- en zakelijke boekingen",
+        "Coördinatie van reserveringen via meerdere kanalen",
+        "Beheer van wachtlijsten en alternatieve aanbiedingen"
+      ],
+      "category_2": "Beschikbaarheidsbeheer",
+      "cat_2_items": [
+        "Real-time updates van de beschikbaarheidskalender",
+        "Beheer van tarieven en kamer- of stoelcapaciteit",
+        "Voorkomen en monitoren van overboekingen",
+        "Ondersteuning bij seizoensgebonden beschikbaarheidsplanning",
+        "Beheer van blokkeringsdata en restricties"
+      ],
+      "category_3": "Systeembeheer",
+      "cat_3_items": [
+        "Beheer van PMS- en boekingssoftware",
+        "Administratie van Booking.com en Expedia",
+        "Onderhoud van channel managers",
+        "Controles op datanauwkeurigheid en integriteit",
+        "Ondersteuning bij het opzetten van nieuwe reserveringskanalen"
+      ],
+      "category_4": "Gastcommunicatie",
+      "cat_4_items": [
+        "Beantwoorden van boekingsvragen en offertes",
+        "Afhandeling van bevestigings- en vouchere-mails",
+        "Communicatie voorafgaand aan aankomst",
+        "Coördinatie van speciale verzoeken en voorkeuren",
+        "Verzenden van boekingsherinneringen"
+      ],
+      "category_5": "Wijzigingen & Terugbetalingen",
+      "cat_5_items": [
+        "Verwerking van boekingswijzigingen",
+        "Afhandeling van annuleringen en beleidscommunicatie",
+        "Coördinatie van terugbetalingen en creditnota's",
+        "Ondersteuning bij herboekingen",
+        "Tracking en beheer van no-shows"
+      ],
+      "category_6": "Rapportage & CRM",
+      "cat_6_items": [
+        "Dagelijkse en wekelijkse boekingsrapportages",
+        "Samenvattingen van bezetting en omzet",
+        "Rapportage van annuleringen en no-shows",
+        "Rapportage van boekingsbronnen en kanalen",
+        "Updates van gastgegevens en CRM-records"
+      ],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare Medewerker Reserveringen",
+      "description": "Wij bieden flexibele pakketten op basis van uw reserveringsvolume. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essentiële boekingsverwerking en kalenderbeheer.",
+        "price": "€26,95",
+        "unit": "per uur",
+        "features": [
+          "Boekings- en reserveringsverwerking",
+          "Beheer van beschikbaarheidskalender",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor systemen, wijzigingen en terugbetalingen.",
+        "price": "€22,95",
+        "unit": "per uur",
+        "features": [
+          "Alle Starter-functies",
+          "Administratie van reserveringssystemen",
+          "Wijzigingen, annuleringen en terugbetalingen",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Volledig multi-channel beheer en uitgebreide rapportage.",
+        "price": "€18,95",
+        "unit": "per uur",
+        "features": [
+          "Alle Growth-functies",
+          "Multi-channel reserveringsbeheer",
+          "Volledige rapportage en CRM-updates",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw Medewerker Reserveringen in te huren?",
+      "description": "Laat ons u helpen de perfecte medewerker reserveringen te vinden voor uw boekingsbeheer en klantcommunicatie. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
+    }
+  },
+  "hire_customer_service_travel": {
+    "metadata": {
+      "meta_title": "Huur Toegewijde Klantenservice voor Reisbureaus in Nederland | Reissupport",
+      "meta_description": "Huur een toegewijde klantenservice medewerker voor uw reisbureau in Nederland voor aanvragen, boekingondersteuning en klachtenafhandeling. Snel starten.",
+      "url_slug": "nl/staffing-support/klantenservice-reisbureau-inhuren"
+    },
+    "hero": {
+      "heading": "Huur Toegewijde Klantenservice Reisbureau in Nederland",
+      "text": "Reisklanten verwachten snelle, deskundige en vriendelijke service — vooral als plannen wijzigen. Krijg een toegewijde reis-klantenservicemedewerker die uw klanten met vertrouwen en professionaliteit behandelt.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur Klantenservice voor Reisbureaus in Nederland, Vertrouwd door Reisorganisaties die Sneller Willen Schalen",
+      "item_1": "Toegewijde Reis-klantenservicemedewerkers",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw Klantenservice Reisbureau bij Kan Helpen",
+      "description": "Onze toegewijde reis-klantenservicemedewerkers zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw klantcommunicatie en boekingssupport.",
+      "category_1": "Aanvraagafhandeling",
+      "cat_1_items": ["Afhandeling van e-mail en chat aanvragen", "Vragen over bestemmingen en pakketten", "Informatie over prijzen en beschikbaarheid", "Beheer van groepsreisaanvragen", "Leadkwalificatie en opvolging"],
+      "category_2": "Boekingsondersteuning",
+      "cat_2_items": ["Boekingsbevestiging en documentondersteuning", "Afhandeling van wijzigingsverzoeken", "Assistentie bij reisdocumenten en vouchers", "Coördinatie van speciale vereisten", "Briefing van klanten voor vertrek"],
+      "category_3": "Klachtenbeheer",
+      "cat_3_items": ["Klachtenafhandeling en oplossingen", "Ondersteuning bij vluchtvertraging en annulering", "Oplossing van accommodatieproblemen", "Escalatie- en claimbeheer", "Verwerking van compensatieverzoeken"],
+      "category_4": "Aftersales Zorg",
+      "cat_4_items": ["Verzamelen van feedback na de reis", "Opvolging voor herhaalboekingen", "Afhandeling van terugbetalingen", "Klanttevredenheidsonderzoeken", "Loyaliteits- en retentiecommunicatie"],
+      "category_5": "Multi-channel Support",
+      "cat_5_items": ["Beheer van e-mail klantenservice", "Afhandeling van live chat support", "WhatsApp reissupport", "Social media berichten en reacties", "Ondersteuning bij telefonische vragen"],
+      "category_6": "CRM & Administratie",
+      "cat_6_items": ["Klantprofiel- en geschiedenisbeheer", "CRM data-entry en updates", "Onderhoud van communicatielogboeken", "Klantsegmentatie", "Rapportage over klantenserviceprestaties"],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare Klantenservice Reisbureau",
+      "description": "Wij bieden flexibele pakketten op basis van de behoeften van uw reisbureau. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Parttime ondersteuning voor essentiële aanvragen en boekingsassistentie.",
+        "price": "€26,95",
+        "unit": "per uur",
+        "features": ["Afhandeling van e-mail en chat aanvragen", "Basis boekingsondersteuning", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor volledige klantenservice en klachtenbeheer.",
+        "price": "€22,95",
+        "unit": "per uur",
+        "features": ["Alle Starter-functies", "Klachten- en verstoringsbeheer", "Multi-channel communicatieondersteuning", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Volledige customer success lifecycle en gedetailleerd CRM-beheer.",
+        "price": "€18,95",
+        "unit": "per uur",
+        "features": ["Alle Growth-functies", "Aftersales- en retentiebeheer", "Volledige CRM- en rapportage-ondersteuning", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw Klantenservice Reisbureau in te huren?",
+      "description": "Laat ons u helpen de perfecte reis-klantenservicemedewerker te vinden voor uw reisbureau en klantenzorg. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+    }
+  },
+  "hire_travel_marketer": {
+    "metadata": {
+      "meta_title": "Huur een Toegewijde Reis Marketeer in Nederland | Travel Marketing Diensten",
+      "meta_description": "Huur een toegewijde reis marketeer in Nederland voor reiscontent, social media, SEO en e-mailcampagnes. Snel starten.",
+      "url_slug": "nl/staffing-support/reis-marketeer-inhuren"
+    },
+    "hero": {
+      "heading": "Huur een Toegewijde Reis Marketeer in Nederland",
+      "text": "De reisbranche is competitief en wordt gedreven door aandacht. Bedrijven die consistent marketing voeren, meeslepende verhalen vertellen en de juiste doelgroep bereiken op het juiste moment, winnen meer boekingen. Krijg een toegewijde reismarketeer die uw merk laat groeien.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur een Reis Marketeer in Nederland, Vertrouwd door Reisorganisaties die Sneller Willen Schalen",
+      "item_1": "Toegewijde Reis Marketeers",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw Reis Marketeer bij Kan Helpen",
+      "description": "Onze toegewijde reismarketeers zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij de marketing, contentcreatie en digitale campagnes van uw reismerk.",
+      "category_1": "Content Marketing",
+      "cat_1_items": ["Schrijven van reisblogs en artikelen", "Bestemmingsgidsen en route-content", "Merkverhalen voor de reisbranche", "SEO-content voor reiswebsites", "Planning en beheer van contentkalenders"],
+      "category_2": "Social Media",
+      "cat_2_items": ["Reiscontent voor Instagram en Facebook", "TikTok en YouTube short-content ondersteuning", "Betrokkenheid bij reiscommunities", "Coördinatie van influencer outreach", "Strategie voor groei op social media"],
+      "category_3": "E-mail Marketing",
+      "cat_3_items": ["Creatie en beheer van reisnieuwsbrieven", "Schrijven van promotionele e-mailcampagnes", "Ontwikkeling van geautomatiseerde e-mailreeksen", "Seizoensgebonden reisaanbiedingen", "Lijstsegmentatie en re-engagement"],
+      "category_4": "SEO voor Reizen",
+      "cat_4_items": ["Zoekwoordonderzoek en strategie voor reizen", "On-page SEO voor bestemmingspagina's", "Lokale SEO voor reisbureaus", "Linkbuilding voor reiswebsites", "Maandelijkse SEO-rapportage en optimalisatie"],
+      "category_5": "Betaalde Marketing",
+      "cat_5_items": ["Google Ads campagnebeheer voor reizen", "Meta Ads voor reispromoties", "Setup en beheer van retargetingcampagnes", "Schrijven van advertentieteksten voor aanbiedingen", "Tracking en rapportage van campagne-prestaties"],
+      "category_6": "Analytics & Rapportage",
+      "cat_6_items": ["Maandelijkse marketing-prestatierapporten", "Conversietracking van boekingen", "ROI-analyse van campagnes", "Concurrentie-benchmarking", "Data-gedreven strategie-aanbevelingen"],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare Reis Marketeer",
+      "description": "Wij bieden flexibele pakketten op basis van uw marketingdoelstellingen. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Parttime ondersteuning voor essentiële reiscontent en sociale media taken.",
+        "price": "€41,95",
+        "unit": "per uur",
+        "features": ["Reiscontent en social media", "Ondersteuning bij e-mailmarketing", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor volledige digitale reismarketing activiteiten.",
+        "price": "€35,95",
+        "unit": "per uur",
+        "features": ["Alle Starter-functies", "SEO en betaalde digitale marketing", "Campagnebeheer en rapportage", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Volledige ondersteuning door marketingteam en geavanceerde strategie-coördinatie.",
+        "price": "€29,95",
+        "unit": "per uur",
+        "features": ["Alle Growth-functies", "Multi-channel campagne-uitvoering", "Volledige analytics en prestatiestrategie", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw Reis Marketeer in te huren?",
+      "description": "Laat ons u helpen de perfecte reismarketeer te vinden voor de groei van uw reismerk en uw digitale marketingbehoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+    }
+  },
+  "hire_hr_assistant_remote": {
+    "metadata": {
+      "meta_title": "Huur een Toegewijde HR-assistent op Afstand in Nederland | HR Support",
+      "meta_description": "Huur een toegewijde HR-assistent op afstand in Nederland voor wervingsondersteuning, onboarding en administratie. Snelle start.",
+      "url_slug": "nl/staffing-support/hr-assistent-op-afstand-inhuren"
+    },
+    "hero": {
+      "heading": "Huur een Toegewijde HR-assistent op Afstand in Nederland",
+      "text": "HR-administratie is essentieel maar tijdrovend — en achterstanden creëren compliance-risico's en problemen met de medewerkerservaring. Krijg een assistent die uw personeelsprocessen georganiseerd en compliant houdt.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur een HR-assistent op Afstand in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "item_1": "Toegewijde HR-assistenten",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw HR-assistent op Afstand bij Kan Helpen",
+      "description": "Onze toegewijde HR-assistenten zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw personeelsadministratie en wervingscoördinatie.",
+      "category_1": "Wervingsondersteuning",
+      "cat_1_items": [
+        "Beheer van vacatures en plaatsingen",
+        "CV-screening en shortlisting van kandidaten",
+        "Inplannen en coördineren van interviews",
+        "Communicatie met kandidaten en opvolging",
+        "Beheer van recruitment tracker en pipeline"
+      ],
+      "category_2": "Onboarding & Offboarding",
+      "cat_2_items": [
+        "Coördinatie van onboarding nieuwe medewerkers",
+        "Ondersteuning bij contract- en documentvoorbereiding",
+        "Beheer van onboarding checklists",
+        "Administratie van het uitdiensttredingsproces",
+        "Ondersteuning bij coördinatie van apparatuur en toegang"
+      ],
+      "category_3": "HR Administratie",
+      "cat_3_items": [
+        "Aanmaken en onderhouden van personeelsdossiers",
+        "Contract- en documentbeheer",
+        "Administratie van vakantie en verlof",
+        "Tracking van ziekteverzuim en afwezigheid",
+        "Onderhoud van HR-beleidsdocumenten"
+      ],
+      "category_4": "Salarisadministratie Support",
+      "cat_4_items": [
+        "Verzamelen en verifiëren van payrollgegevens",
+        "Tracking van urenstaten en gewerkte uren",
+        "Ondersteuning bij verwerking van payrollwijzigingen",
+        "Coördinatie van loonstrookdistributie",
+        "Afhandeling van vragen over salaris"
+      ],
+      "category_5": "Medewerkersbetrokkenheid",
+      "cat_5_items": [
+        "Opstellen van interne HR-communicatie",
+        "Coördinatie van medewerkersonderzoeken",
+        "Planning van training en ontwikkeling",
+        "Ondersteuning bij het beoordelingsproces",
+        "Voorbereiding van HR-nieuwsbrieven en updates"
+      ],
+      "category_6": "HR Rapportage",
+      "cat_6_items": [
+        "Rapportage over personeelsbestand",
+        "Rapportage over verzuim en verloop",
+        "Beheer van HR KPI-dashboards",
+        "Tracking van compliance-documenten",
+        "Ondersteuning bij HR-audits en dossiervorming"
+      ],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare HR-assistent op Afstand",
+      "description": "Wij bieden flexibele pakketten op basis van uw HR-ondersteuningsvolume. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Parttime ondersteuning voor essentiële HR-admin en werving.",
+        "price": "€41,95",
+        "unit": "per uur",
+        "features": [
+          "HR-admin en personeelsdossiers",
+          "Wervingsondersteuning",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor volledig levenscyclusbeheer.",
+        "price": "€35,95",
+        "unit": "per uur",
+        "features": [
+          "Alle Starter-functies",
+          "On- en offboarding",
+          "Salarissupport en verlofbeheer",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Uitgebreide HR-support inclusief betrokkenheid en rapportage.",
+        "price": "€29,95",
+        "unit": "per uur",
+        "features": [
+          "Alle Growth-functies",
+          "Ondersteuning bij medewerkersbetrokkenheid",
+          "HR-rapportage en compliance",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw HR-assistent op Afstand in te huren?",
+      "description": "Laat ons u helpen de perfecte HR-assistent op afstand te vinden voor uw personeelsadministratie en -beheer. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
+    }
+  },
+  "hire_admin_accounting_assistant": {
+    "metadata": {
+      "meta_title": "Toegewijde Administratief Boekhoudkundig Assistent Inhuren in Nederland",
+      "meta_description": "Huur een toegewijde administratief boekhoudkundig assistent in Nederland voor financiële administratie, facturatie en boekhoudondersteuning. Snel starten.",
+      "url_slug": "nl/staffing-support/administratief-boekhoudkundig-assistent-inhuren"
+    },
+    "hero": {
+      "heading": "Huur een Toegewijde Administratief Boekhoudkundig Assistent in Nederland",
+      "text": "Financiële administratie die zich opstapelt leidt tot fouten, gemiste betalingen en kopzorgen over compliance. Krijg een assistent die uw financiële dossiers nauwkeurig, facturen op tijd en administratie altijd onder controle houdt.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur een Administratief Boekhoudkundig Assistent in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "item_1": "Toegewijde Boekhoudkundig Assistenten",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw Administratief Boekhoudkundig Assistent bij Kan Helpen",
+      "description": "Onze toegewijde assistenten zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw financiële administratie en boekhouding.",
+      "category_1": "Financiële Administratie",
+      "cat_1_items": ["Dagelijkse financiële dossiervorming", "Registratie van uitgaven en kosten", "Verwerking van bankafschriften", "Transactie-categorisering en codering", "Ondersteuning bij maandafronding"],
+      "category_2": "Facturatie & Debiteuren",
+      "cat_2_items": ["Aanmaken en verzenden van verkoopfacturen", "Betalingsopvolging en herinneringen", "Beheer van openstaande posten", "Verwerking van creditnota's", "Reconciliatie van klantbetalingen"],
+      "category_3": "Crediteurenbeheer",
+      "cat_3_items": ["Verwerking en archivering van inkoopfacturen", "Matching en verificatie van inkooporders", "Crediteurenbeheer en monitoring", "Verwerking van declaraties", "Voorbereiding van leveranciersbetalingen"],
+      "category_4": "Boekhoudkundige Ondersteuning",
+      "cat_4_items": ["Invoer van grootboekgegevens", "Ondersteuning bij bankreconciliatie", "Assistentie bij kolommenbalans", "Onderhoud van rekeningschema", "Contact met accountant en documentvoorbereiding"],
+      "category_5": "Software Administratie",
+      "cat_5_items": ["Exact Online data-entry en beheer", "Administratie van Moneybird en Twinfield", "Recordbeheer in QuickBooks en Xero", "Data-import en export uit software", "Systeemintegriteit en nauwkeurigheid"],
+      "category_6": "Financiële Rapportage",
+      "cat_6_items": ["Maandelijkse uitgaven- en kostenrapporten", "Rapportage van openstaande facturen", "Samenvattingen van betalingsstatus", "Archivering van financiële documenten", "Auditvoorbereiding en documentondersteuning"],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare Administratief Boekhoudkundig Assistent",
+      "description": "Wij bieden flexibele pakketten op basis van uw administratieve volume. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Parttime ondersteuning voor facturatie en financiële administratie.",
+        "price": "€26,95",
+        "unit": "per uur",
+        "features": ["Facturatie en debiteurenbeheer", "Financiële dossierregistratie", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor boekhouding en softwarebeheer.",
+        "price": "€22,95",
+        "unit": "per uur",
+        "features": ["Alle Starter-functies", "Crediteuren- en boekhoudondersteuning", "Beheer van boekhoudsoftware", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Volledige financiële rapportage en ondersteuning bij audits.",
+        "price": "€18,95",
+        "unit": "per uur",
+        "features": ["Alle Growth-functies", "Volledige financiële rapportage", "Ondersteuning bij auditvoorbereiding", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw Administratief Boekhoudkundig Assistent in te huren?",
+      "description": "Laat ons u helpen de perfecte assistent te vinden voor uw financiële administratie en boekhouding. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
       "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
     }

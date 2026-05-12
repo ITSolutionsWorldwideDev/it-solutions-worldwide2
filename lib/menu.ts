@@ -188,7 +188,7 @@ export const menuItems: MenuItem[] = [
 
           {
             label: "Data Entry",
-            link: "/staffing-support/hire-data-entry",
+            link: "/staffing-support/hire-data-entry-specialist",
           },
         ],
       },
@@ -211,7 +211,7 @@ export const menuItems: MenuItem[] = [
           },
 
           {
-            label: "Software Tester",
+            label: "Software Tester QA",
             link: "/staffing-support/hire-software-tester-qa",
           },
         ],

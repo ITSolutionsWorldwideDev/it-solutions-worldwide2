@@ -1819,7 +1819,6 @@
     "homeButton": "Back Home",
     "message": "Page is Unavailable"
   },
-  
 
   "hire_virtual_assistant": {
     "metadata": {
@@ -2045,7 +2044,12 @@
         "desc": "Part-time support for essential development tasks.",
         "price": "€56,95",
         "unit": "2 hours/day",
-        "features": ["Bug fixes and improvements", "Feature development support", "Weekly reports", "Email support"],
+        "features": [
+          "Bug fixes and improvements",
+          "Feature development support",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
@@ -2053,7 +2057,13 @@
         "desc": "Dedicated support for full product development.",
         "price": "€48,95",
         "unit": "4 hours/day",
-        "features": ["All Starter features", "Web application development", "API and database development", "Priority support", "Dedicated account manager"],
+        "features": [
+          "All Starter features",
+          "Web application development",
+          "API and database development",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
@@ -2061,7 +2071,14 @@
         "desc": "Full development team for complex and large-scale products.",
         "price": "€39,95",
         "unit": "8 hours/day",
-        "features": ["All Growth features", "Ecommerce and SaaS development", "Full maintenance and support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "All Growth features",
+          "Ecommerce and SaaS development",
+          "Full maintenance and support",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -2070,7 +2087,11 @@
       "heading": "Ready to Hire a Full Stack Developer in Netherlands?",
       "description": "Build faster, reduce costs, and launch confidently with experienced full stack developers from IT Solutions Worldwide.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_data_engineer": {
@@ -2140,7 +2161,12 @@
         "desc": "Part-time support for essential data engineering tasks.",
         "price": "€56,95",
         "unit": "2 hours/day",
-        "features": ["Pipeline development and fixes", "Database management", "Weekly reports", "Email support"],
+        "features": [
+          "Pipeline development and fixes",
+          "Database management",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
@@ -2148,7 +2174,13 @@
         "desc": "Dedicated support for full data infrastructure development.",
         "price": "€48,95",
         "unit": "4 hours/day",
-        "features": ["All Starter features", "Data warehouse and lake builds", "Cloud data infrastructure setup", "Priority support", "Dedicated account manager"],
+        "features": [
+          "All Starter features",
+          "Data warehouse and lake builds",
+          "Cloud data infrastructure setup",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
@@ -2156,7 +2188,14 @@
         "desc": "Full data engineering team for enterprise data platforms.",
         "price": "39,95",
         "unit": "8 hours/day",
-        "features": ["All Growth features", "Analytics engineering and dbt", "Full BI tool integration", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "All Growth features",
+          "Analytics engineering and dbt",
+          "Full BI tool integration",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -2165,7 +2204,11 @@
       "heading": "Ready to Hire a Data Engineer in Netherlands?",
       "description": "Build reliable data infrastructure, unlock your analytics, and make faster decisions — with dedicated data engineers from IT Solutions Worldwide.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_ecommerce_assistant": {
@@ -2370,7 +2413,12 @@
         "desc": "Part-time support for essential electrical engineering tasks.",
         "price": "€49.95",
         "unit": "2 hours/day",
-        "features": ["Circuit design and documentation", "Technical review support", "Weekly reports", "Email support"],
+        "features": [
+          "Circuit design and documentation",
+          "Technical review support",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
@@ -2378,7 +2426,13 @@
         "desc": "Dedicated support for full electrical engineering projects.",
         "price": "€59.95",
         "unit": "4 hours/day",
-        "features": ["All Starter features", "PCB design and embedded systems", "Technical documentation", "Priority support", "Dedicated account manager"],
+        "features": [
+          "All Starter features",
+          "PCB design and embedded systems",
+          "Technical documentation",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
@@ -2386,7 +2440,14 @@
         "desc": "Full engineering team for large-scale and complex projects.",
         "price": "69.95",
         "unit": "8 hours/day",
-        "features": ["All Growth features", "Electrical systems engineering", "Compliance and certification support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "All Growth features",
+          "Electrical systems engineering",
+          "Compliance and certification support",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       }
     },
@@ -2394,7 +2455,11 @@
       "heading": "Ready to Hire an Electrical Engineer in Netherlands?",
       "description": "Let us help you find the perfect Electrical-engineer for your business or personal needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_ai_engineer": {
@@ -2451,7 +2516,12 @@
         "desc": "Part-time support for essential AI development tasks.",
         "price": "€49.95",
         "unit": "2 hours/day",
-        "features": ["AI integration and automation", "LLM and API development", "Weekly reports", "Email support"],
+        "features": [
+          "AI integration and automation",
+          "LLM and API development",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
@@ -2459,7 +2529,13 @@
         "desc": "Dedicated support for full AI product development.",
         "price": "€59.95",
         "unit": "4 hours/day",
-        "features": ["All Starter features", "Machine learning model development", "AI automation and NLP builds", "Priority support", "Dedicated account manager"],
+        "features": [
+          "All Starter features",
+          "Machine learning model development",
+          "AI automation and NLP builds",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
@@ -2467,7 +2543,14 @@
         "desc": "Full AI team for intelligent product and enterprise AI systems.",
         "price": "69.95",
         "unit": "8 hours/day",
-        "features": ["All Growth features", "Computer vision and advanced ML", "Full AI deployment and infrastructure", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "All Growth features",
+          "Computer vision and advanced ML",
+          "Full AI deployment and infrastructure",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -2476,7 +2559,11 @@
       "heading": "Ready to Hire an AI Engineer in Netherlands?",
       "description": "Build smarter products, automate costly processes, and stay ahead — with dedicated AI engineers from IT Solutions Worldwide.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_online_marketer": {
@@ -4184,17 +4271,53 @@
       "heading": "What Your Data Analyst Can Help With",
       "description": "Our dedicated data analysts are trained professionals who can support your business intelligence, reporting, and data insight needs immediately.",
       "category_1": "Analysis & Reporting",
-      "cat_1_items": ["Business performance analysis", "Sales and revenue reporting", "Customer behaviour analysis", "Trend identification and forecasting", "Ad hoc data analysis requests"],
+      "cat_1_items": [
+        "Business performance analysis",
+        "Sales and revenue reporting",
+        "Customer behaviour analysis",
+        "Trend identification and forecasting",
+        "Ad hoc data analysis requests"
+      ],
       "category_2": "Dashboard Creation",
-      "cat_2_items": ["Interactive dashboard development", "KPI and metrics dashboard design", "Executive reporting dashboards", "Real-time data monitoring setups", "Self-service analytics dashboards"],
+      "cat_2_items": [
+        "Interactive dashboard development",
+        "KPI and metrics dashboard design",
+        "Executive reporting dashboards",
+        "Real-time data monitoring setups",
+        "Self-service analytics dashboards"
+      ],
       "category_3": "Business Intelligence",
-      "cat_3_items": ["BI tool setup and management", "Power BI and Tableau reporting", "Data model development", "Automated reporting pipelines", "Cross-departmental data integration"],
+      "cat_3_items": [
+        "BI tool setup and management",
+        "Power BI and Tableau reporting",
+        "Data model development",
+        "Automated reporting pipelines",
+        "Cross-departmental data integration"
+      ],
       "category_4": "Data Cleaning",
-      "cat_4_items": ["Raw data cleaning and formatting", "Data standardisation and validation", "Duplicate and error removal", "Dataset merging and transformation", "Data quality assessment"],
+      "cat_4_items": [
+        "Raw data cleaning and formatting",
+        "Data standardisation and validation",
+        "Duplicate and error removal",
+        "Dataset merging and transformation",
+        "Data quality assessment"
+      ],
       "category_5": "SQL & Database Reporting",
-      "cat_5_items": ["SQL query writing and optimisation", "Database reporting and extraction", "Stored procedure development", "Data aggregation and summarisation", "Multi-source data joining"],
+      "cat_5_items": [
+        "SQL query writing and optimisation",
+        "Database reporting and extraction",
+        "Stored procedure development",
+        "Data aggregation and summarisation",
+        "Multi-source data joining"
+      ],
       "category_6": "Statistical Analysis",
-      "cat_6_items": ["Descriptive and predictive analytics", "Regression and correlation analysis", "A/B test analysis and interpretation", "Demand and sales forecasting", "Python and R statistical modelling"],
+      "cat_6_items": [
+        "Descriptive and predictive analytics",
+        "Regression and correlation analysis",
+        "A/B test analysis and interpretation",
+        "Demand and sales forecasting",
+        "Python and R statistical modelling"
+      ],
       "button_middle": "Tell Us What You Need →"
     },
     "pricing_section": {
@@ -4203,25 +4326,43 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential data analysis and reporting.",
-        "price": "€49.95",
+        "price": "€56,95",
         "unit": "per hour",
-        "features": ["Data analysis and reporting", "Basic dashboard creation", "Weekly reports", "Email support"],
+        "features": [
+          "Data analysis and reporting",
+          "Basic dashboard creation",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for business intelligence and SQL reporting.",
-        "price": "€59.95",
+        "price": "€48,95",
         "unit": "per hour",
-        "features": ["All Starter features", "BI tool dashboards and reporting", "SQL querying and data preparation", "Priority support", "Dedicated account manager"],
+        "features": [
+          "All Starter features",
+          "BI tool dashboards and reporting",
+          "SQL querying and data preparation",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Advanced analytics, statistical modelling, and multi-source integration.",
-        "price": "€69.95",
+        "price": "€39,95",
         "unit": "per hour",
-        "features": ["All Growth features", "Statistical modelling and forecasting", "Cross-department BI integration", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "All Growth features",
+          "Statistical modelling and forecasting",
+          "Cross-department BI integration",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -4230,7 +4371,11 @@
       "heading": "Ready to hire your Data Analyst?",
       "description": "Let us help you find the perfect data analyst for your business intelligence and reporting needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_powerbi_tableau_specialist": {
@@ -4278,17 +4423,53 @@
       "heading": "What Your Power BI & Tableau Specialist Can Help With",
       "description": "Our dedicated Power BI and Tableau specialists are trained professionals who can support your business intelligence, dashboard development, and data visualisation needs immediately.",
       "category_1": "Power BI Development",
-      "cat_1_items": ["Power BI dashboard design and build", "DAX formula development", "Power Query data transformation", "Report publishing and sharing", "Power BI Service administration"],
+      "cat_1_items": [
+        "Power BI dashboard design and build",
+        "DAX formula development",
+        "Power Query data transformation",
+        "Report publishing and sharing",
+        "Power BI Service administration"
+      ],
       "category_2": "Tableau Development",
-      "cat_2_items": ["Tableau dashboard creation", "Calculated field and LOD expressions", "Tableau Server and Online publishing", "Interactive visualisation design", "Tableau data source management"],
+      "cat_2_items": [
+        "Tableau dashboard creation",
+        "Calculated field and LOD expressions",
+        "Tableau Server and Online publishing",
+        "Interactive visualisation design",
+        "Tableau data source management"
+      ],
       "category_3": "Data Visualisation",
-      "cat_3_items": ["Custom chart and graph design", "Executive and management dashboards", "KPI tracking visualisations", "Comparative and trend visualisations", "Mobile-optimised dashboard layouts"],
+      "cat_3_items": [
+        "Custom chart and graph design",
+        "Executive and management dashboards",
+        "KPI tracking visualisations",
+        "Comparative and trend visualisations",
+        "Mobile-optimised dashboard layouts"
+      ],
       "category_4": "Data Modelling",
-      "cat_4_items": ["Data model design for BI tools", "Star and snowflake schema setup", "Power Query and ETL transformation", "Multi-source data integration", "Relationship and hierarchy management"],
+      "cat_4_items": [
+        "Data model design for BI tools",
+        "Star and snowflake schema setup",
+        "Power Query and ETL transformation",
+        "Multi-source data integration",
+        "Relationship and hierarchy management"
+      ],
       "category_5": "Reporting Automation",
-      "cat_5_items": ["Scheduled and automated report delivery", "Email report distribution setup", "Real-time data refresh configuration", "Alert and threshold notifications", "Embedded reporting integration"],
+      "cat_5_items": [
+        "Scheduled and automated report delivery",
+        "Email report distribution setup",
+        "Real-time data refresh configuration",
+        "Alert and threshold notifications",
+        "Embedded reporting integration"
+      ],
       "category_6": "BI Strategy",
-      "cat_6_items": ["BI tool selection and setup consulting", "Data governance best practices", "Dashboard standardisation", "User training and documentation", "BI workspace organisation and management"],
+      "cat_6_items": [
+        "BI tool selection and setup consulting",
+        "Data governance best practices",
+        "Dashboard standardisation",
+        "User training and documentation",
+        "BI workspace organisation and management"
+      ],
       "button_middle": "Tell Us What You Need →"
     },
     "pricing_section": {
@@ -4297,25 +4478,43 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential dashboard design and data modelling support.",
-        "price": "€49.95",
+        "price": "€56,95",
         "unit": "per hour",
-        "features": ["Dashboard design and development", "Basic data modelling", "Weekly reports", "Email support"],
+        "features": [
+          "Dashboard design and development",
+          "Basic data modelling",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full BI builds and automation.",
-        "price": "€59.95",
+        "price": "€48,95",
         "unit": "per hour",
-        "features": ["All Starter features", "Power BI or Tableau full builds", "Reporting automation setup", "Priority support", "Dedicated account manager"],
+        "features": [
+          "All Starter features",
+          "Power BI or Tableau full builds",
+          "Reporting automation setup",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise BI strategy and complex multi-source integration.",
-        "price": "€69.95",
+        "price": "€39,95",
         "unit": "per hour",
-        "features": ["All Growth features", "Multi-source data integration", "BI governance and strategy", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "All Growth features",
+          "Multi-source data integration",
+          "BI governance and strategy",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -4324,7 +4523,11 @@
       "heading": "Ready to hire your Power BI & Tableau Specialist?",
       "description": "Let us help you find the perfect Power BI or Tableau specialist for your business intelligence and data visualisation needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_content_creator": {
@@ -4372,17 +4575,53 @@
       "heading": "What Your Content Creator & Copywriter Can Help With",
       "description": "Our dedicated content creators and copywriters are trained professionals who can support your business content needs and brand voice immediately.",
       "category_1": "Blog Writing",
-      "cat_1_items": ["SEO blog post writing", "Long-form article creation", "Thought leadership content", "Industry news and commentary", "Guest post writing"],
+      "cat_1_items": [
+        "SEO blog post writing",
+        "Long-form article creation",
+        "Thought leadership content",
+        "Industry news and commentary",
+        "Guest post writing"
+      ],
       "category_2": "Website Copy",
-      "cat_2_items": ["Homepage and landing page copy", "Service and product page writing", "About us and brand story pages", "CTA and conversion copy", "Website content audits and rewrites"],
+      "cat_2_items": [
+        "Homepage and landing page copy",
+        "Service and product page writing",
+        "About us and brand story pages",
+        "CTA and conversion copy",
+        "Website content audits and rewrites"
+      ],
       "category_3": "Social Media Content",
-      "cat_3_items": ["Post captions and copy", "LinkedIn articles and posts", "Facebook and Instagram content", "Twitter/X threads", "Content calendar creation"],
+      "cat_3_items": [
+        "Post captions and copy",
+        "LinkedIn articles and posts",
+        "Facebook and Instagram content",
+        "Twitter/X threads",
+        "Content calendar creation"
+      ],
       "category_4": "Email Marketing",
-      "cat_4_items": ["Email sequence writing", "Newsletter creation", "Promotional email copy", "Automated drip campaign content", "Subject line and CTA optimisation"],
+      "cat_4_items": [
+        "Email sequence writing",
+        "Newsletter creation",
+        "Promotional email copy",
+        "Automated drip campaign content",
+        "Subject line and CTA optimisation"
+      ],
       "category_5": "SEO Content Strategy",
-      "cat_5_items": ["Keyword research and mapping", "SEO-optimised blog content", "Meta title and description writing", "Internal linking strategy content", "Content briefs and outlines"],
+      "cat_5_items": [
+        "Keyword research and mapping",
+        "SEO-optimised blog content",
+        "Meta title and description writing",
+        "Internal linking strategy content",
+        "Content briefs and outlines"
+      ],
       "category_6": "Brand & Ad Copy",
-      "cat_6_items": ["Brand voice development", "Google Ads copy", "Social media ad copy", "Product descriptions", "Brochure and sales material copy"],
+      "cat_6_items": [
+        "Brand voice development",
+        "Google Ads copy",
+        "Social media ad copy",
+        "Product descriptions",
+        "Brochure and sales material copy"
+      ],
       "button_middle": "Tell Us What You Need →"
     },
     "pricing_section": {
@@ -4391,25 +4630,43 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential support for blogs and social media captions.",
-        "price": "€49.95",
+        "price": "€26,95",
         "unit": "per hour",
-        "features": ["Blog or web copy writing", "Content calendar planning", "Weekly reports", "Email support"],
+        "features": [
+          "Blog or web copy writing",
+          "Content calendar planning",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for SEO content and email marketing.",
-        "price": "€59.95",
+        "price": "€22,95",
         "unit": "per hour",
-        "features": ["All Starter features", "SEO content writing", "Email marketing copy", "Priority support", "Dedicated account manager"],
+        "features": [
+          "All Starter features",
+          "SEO content writing",
+          "Email marketing copy",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full multi-channel content strategy and brand copywriting.",
-        "price": "€69.95",
+        "price": "€18,95",
         "unit": "per hour",
-        "features": ["All Growth features", "Ad and brand copywriting", "Multi-channel content strategy", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "features": [
+          "All Growth features",
+          "Ad and brand copywriting",
+          "Multi-channel content strategy",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -4417,6 +4674,820 @@
     "cta": {
       "heading": "Ready to hire your Content Creator & Copywriter?",
       "description": "Let us help you find the perfect content creator or copywriter for your business or personal brand. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
+    }
+  },
+  "hire_google_analytics_specialist": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Google Analytics Specialist in Netherlands | Analytics Services",
+      "meta_description": "Hire a dedicated Google Analytics specialist in the Netherlands for GA4 setup, tracking, reporting, conversion optimisation, and data insights. Flexible plans, fast start.",
+      "url_slug": "en/staffing-support/hire-google-analytics-specialist"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Google Analytics Specialist in Netherlands",
+      "text": "If you are running ads or investing in your website without proper analytics tracking, you are making decisions in the dark. Get a dedicated Google Analytics specialist who sets up, manages, and interprets your data so every decision is backed by real insight.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Google Analytics Specialist in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Analytics Specialists",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Google Analytics Specialist Can Help With",
+      "description": "Our dedicated Google Analytics specialists are trained professionals who can support your tracking setup, reporting, and data-driven optimisation needs immediately.",
+      "category_1": "GA4 Setup & Migration",
+      "cat_1_items": ["Google Analytics 4 installation", "Property and data stream setup", "Event and conversion tracking", "Cross-domain tracking configuration", "GA4 migration from Universal Analytics"],
+      "category_2": "Google Tag Manager (GTM)",
+      "cat_2_items": ["GTM account setup and management", "Tag creation and deployment", "Trigger and variable configuration", "Custom event tracking via GTM", "GTM audit and cleanup"],
+      "category_3": "Conversion Tracking",
+      "cat_3_items": ["Goal and conversion setup", "Ecommerce conversion tracking", "Form submission tracking", "Phone call and click tracking", "Google Ads conversion linking"],
+      "category_4": "Reporting & Dashboards",
+      "cat_4_items": ["Custom GA4 report creation", "Looker Studio dashboard builds", "Monthly analytics reporting", "Traffic source and behaviour reports", "Executive performance summaries"],
+      "category_5": "Auditing & Data Quality",
+      "cat_5_items": ["Full GA4 property audit", "Tracking accuracy verification", "Data discrepancy investigation", "Tag and event audit", "Spam and bot filter setup"],
+      "category_6": "Insights & Optimisation",
+      "cat_6_items": ["User behaviour analysis", "Funnel and drop-off analysis", "Audience segmentation insights", "Landing page performance analysis", "Data-driven CRO recommendations"],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Google Analytics Specialist",
+      "description": "We offer flexible packages based on your analytics needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essential tracking setup and basic conversion monitoring.",
+        "price": "€56,95",
+        "unit": "per hour",
+        "features": ["GA4 setup and configuration", "Basic conversion tracking", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for GTM and custom dashboard reporting.",
+        "price": "€48,95",
+        "unit": "per hour",
+        "features": ["All Starter features", "Google Tag Manager management", "Custom dashboards and reporting", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full analytics audit, advanced insights, and CRO strategy.",
+        "price": "€39,95",
+        "unit": "per hour",
+        "features": ["All Growth features", "Full analytics audit and cleanup", "Advanced data insights and CRO", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Google Analytics Specialist?",
+      "description": "Let us help you find the perfect Google Analytics specialist for your tracking, reporting, and data insight needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_microsoft_excel_specialist": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Microsoft Excel Specialist in Netherlands | Microsoft Excel & Spreadsheet Services",
+      "meta_description": "Hire a dedicated Microsoft Excel specialist in the Netherlands for spreadsheet development, automation, dashboards, data analysis, and VBA solutions. Flexible plans, fast start.",
+      "url_slug": "en/staffing-support/hire-microsoft-excel-specialist"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Microsoft Excel Specialist in Netherlands",
+      "text": "Manual spreadsheet work that takes your team hours every week can be automated, simplified, and made error-free. Get a dedicated Microsoft Excel specialist who builds powerful, reliable spreadsheet solutions tailored exactly to your business needs.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Microsoft Excel Specialist in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Microsoft Excel Specialists",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Microsoft Excel Specialist Can Help With",
+      "description": "Our dedicated Microsoft Excel specialists are trained professionals who can support your spreadsheet development, automation, and data management needs immediately.",
+      "category_1": "Spreadsheet Development",
+      "cat_1_items": ["Custom spreadsheet design and build", "Multi-sheet workbook creation", "Data input form development", "Template creation and standardisation", "Spreadsheet restructuring and cleanup"],
+      "category_2": "Formulas & Functions",
+      "cat_2_items": ["VLOOKUP, XLOOKUP, and INDEX/MATCH", "Dynamic array formulas", "Nested IF and logical functions", "Financial and statistical formulas", "Error handling and data validation"],
+      "category_3": "VBA & Automation",
+      "cat_3_items": ["Custom VBA macro development", "Repetitive task automation", "Automated report generation", "User form and button creation", "Excel add-in development"],
+      "category_4": "Dashboards & Reporting",
+      "cat_4_items": ["Interactive Excel dashboard creation", "KPI and performance dashboards", "PivotTable and PivotChart builds", "Dynamic chart and graph design", "Management reporting templates"],
+      "category_5": "Data Management",
+      "cat_5_items": ["Large dataset cleaning and formatting", "Duplicate removal and deduplication", "Data import and export management", "Power Query data transformation", "Data validation rules setup"],
+      "category_6": "Financial Modelling",
+      "cat_6_items": ["Financial forecast models", "Budget planning spreadsheets", "Cash flow models", "Profit and loss templates", "Scenario and sensitivity analysis"],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Microsoft Excel Specialist",
+      "description": "We offer flexible packages based on your spreadsheet needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essential spreadsheet fixes and formula development.",
+        "price": "€41,95",
+        "unit": "per hour",
+        "features": ["Spreadsheet development and fixes", "Formula and function work", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for VBA macros and dashboard builds.",
+        "price": "€35,95",
+        "unit": "per hour",
+        "features": ["All Starter features", "VBA macro automation", "Dashboard and reporting builds", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Enterprise modelling, Power Query, and full automation projects.",
+        "price": "€29,95",
+        "unit": "per hour",
+        "features": ["Multiple Microsoft Excel specialists", "All Growth features", "Financial modelling and forecasting", "Power Query and data transformation", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Microsoft Excel Specialist?",
+      "description": "Let us help you find the perfect Microsoft Excel specialist for your spreadsheet development, automation, and data management needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_online_travel_advisor": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Online Travel Advisor in Netherlands | Remote Travel Advisory Services",
+      "meta_description": "Hire a dedicated online travel advisor in the Netherlands for trip planning, booking support, itinerary creation, and customer travel assistance. Flexible plans, fast start.",
+      "url_slug": "en/staffing-support/hire-online-travel-advisor"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Online Travel Advisor in Netherlands",
+      "text": "Travel businesses that deliver personalised, fast, and reliable advisory services retain more customers and generate more bookings. Get a dedicated online travel advisor who handles your clients with expertise and care — every day.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Travel Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire an Online Travel Advisor in the Netherlands Trusted by Travel Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Travel Advisors",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Online Travel Advisor Can Help With",
+      "description": "Our dedicated online travel advisors are trained professionals who can support your travel business advisory, planning, and customer service needs immediately.",
+      "category_1": "Itinerary Creation",
+      "cat_1_items": ["Custom travel itinerary development", "Multi-destination trip planning", "Day-by-day travel schedule creation", "Activity and excursion recommendations", "Travel document checklist preparation"],
+      "category_2": "Research & Sourcing",
+      "cat_2_items": ["Flight option research and comparison", "Hotel and resort research", "Apartment and villa sourcing", "Best price and availability checks", "Travel package research and comparison"],
+      "category_3": "Customer Consultation",
+      "cat_3_items": ["Online chat and email travel consultation", "Destination advice and recommendations", "Travel requirement guidance (visas, insurance)", "Group travel planning support", "Honeymoon and special trip planning"],
+      "category_4": "Booking Administration",
+      "cat_4_items": ["Booking confirmation management", "Travel document organisation", "Reservation change and cancellation handling", "Supplier and operator communication", "Pre-departure customer briefings"],
+      "category_5": "Content & Trends",
+      "cat_5_items": ["Destination research and guides", "Travel blog and content support", "FAQ and knowledge base creation", "Travel trend monitoring", "Competitor offer monitoring"],
+      "category_6": "Aftersales & Loyalty",
+      "cat_6_items": ["Post-trip customer follow-up", "Review and feedback collection", "Complaint handling and resolution", "Repeat booking outreach", "Loyalty and return customer management"],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Online Travel Advisor",
+      "description": "We offer flexible packages based on your travel advisory volume. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essential trip planning and email consultation support.",
+        "price": "€26,95",
+        "unit": "per hour",
+        "features": ["Trip planning and itinerary creation", "Customer email consultation", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for booking admin and detailed research.",
+        "price": "€22,95",
+        "unit": "per hour",
+        "features": ["All Starter features", "Booking administration", "Flight and accommodation research", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full customer lifecycle management and marketing support.",
+        "price": "€18,95",
+        "unit": "per hour",
+        "features": ["All Growth features", "Aftersales and customer follow-up", "Travel content and research support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Online Travel Advisor?",
+      "description": "Let us help you find the perfect online travel advisor for your travel business and customer advisory needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_reservations_clerk": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Reservations Clerk in Netherlands | Remote Reservations Services",
+      "meta_description": "Hire a dedicated reservations clerk in the Netherlands for booking management, reservation processing, availability management, and customer booking support. Fast start.",
+      "url_slug": "en/staffing-support/hire-reservations-clerk"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Reservations Clerk in Netherlands",
+      "text": "Every delayed booking confirmation and missed reservation request costs your business revenue and reputation. Get a dedicated reservations clerk who processes bookings accurately, responds promptly, and keeps your availability always up to date.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Reservations Clerk in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Reservations Clerks",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Reservations Clerk Can Help With",
+      "description": "Our dedicated reservations clerks are trained professionals who can support your booking management, reservation administration, and customer communication needs immediately.",
+      "category_1": "Reservation Processing",
+      "cat_1_items": ["Inbound reservation request handling", "Booking confirmation and processing", "Group and corporate booking management", "Multi-channel reservation coordination", "Waitlist and alternative offer management"],
+      "category_2": "Availability Management",
+      "cat_2_items": ["Real-time availability calendar updates", "Rate and room or seat management", "Overbooking prevention and monitoring", "Seasonal availability planning support", "Blackout date and restriction management"],
+      "category_3": "System Administration",
+      "cat_3_items": ["PMS and booking software management", "Booking.com and Expedia administration", "Channel manager updates and maintenance", "System data accuracy and integrity checks", "New reservation channel setup support"],
+      "category_4": "Guest Communication",
+      "cat_4_items": ["Booking inquiry and quote responses", "Confirmation and voucher email handling", "Pre-arrival and pre-stay communication", "Special request and preference coordination", "Booking reminder communication"],
+      "category_5": "Changes & Refunds",
+      "cat_5_items": ["Booking modification processing", "Cancellation handling and policy communication", "Refund and credit note coordination", "Rebooking and rescheduling support", "No-show tracking and management"],
+      "category_6": "Reporting & CRM",
+      "cat_6_items": ["Daily and weekly booking reports", "Occupancy and revenue summaries", "Cancellation and no-show reporting", "Booking source and channel reporting", "Guest data and CRM record updates"],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Reservations Clerk",
+      "description": "We offer flexible packages based on your reservation volume. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essential booking processing and calendar management.",
+        "price": "€26,95",
+        "unit": "per hour",
+        "features": ["Booking and reservation processing", "Availability calendar management", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for systems, changes, and refunds.",
+        "price": "€22,95",
+        "unit": "per hour",
+        "features": ["All Starter features", "Reservation system administration", "Changes, cancellations and refunds", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full multi-channel management and comprehensive reporting.",
+        "price": "€18,95",
+        "unit": "per hour",
+        "features": ["All Growth features", "Multi-channel reservation management", "Full reporting and CRM updates", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Reservations Clerk?",
+      "description": "Let us help you find the perfect reservations clerk for your booking management and customer communication needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_customer_service_travel": {
+    "metadata": {
+      "meta_title": "Hire Dedicated Customer Service for Travel Agency in Netherlands | Travel Support Services",
+      "meta_description": "Hire a dedicated customer service agent for your travel agency in the Netherlands for inquiry handling, booking support, complaint management, and aftersales care. Fast start.",
+      "url_slug": "en/staffing-support/hire-customer-service-travel-agency"
+    },
+    "hero": {
+      "heading": "Hire Dedicated Customer Service Travel Agency in Netherlands",
+      "text": "Travel customers expect fast, knowledgeable, and friendly service — especially when plans change. Get a dedicated travel customer service agent who handles your clients with confidence, professionalism, and genuine care every single day.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire Customer Service for Travel Agency in the Netherlands Trusted by Travel Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Travel Customer Service Agents",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Customer Service Travel Agency Can Help With",
+      "description": "Our dedicated travel customer service agents are trained professionals who can support your travel agency client communication, booking support, and complaint management needs immediately.",
+      "category_1": "Inquiry Handling",
+      "cat_1_items": ["Inbound email and chat inquiry responses", "Destination and package information requests", "Pricing and availability queries", "Group travel inquiry management", "Lead qualification and follow-up"],
+      "category_2": "Booking Support",
+      "cat_2_items": ["Booking confirmation and document support", "Reservation change request handling", "Travel document and voucher assistance", "Special requirement coordination", "Pre-departure customer briefing support"],
+      "category_3": "Complaint Management",
+      "cat_3_items": ["Customer complaint handling and resolution", "Flight delay and cancellation support", "Accommodation issue resolution", "Escalation and claim management", "Compensation request processing and follow-up"],
+      "category_4": "Aftersales Care",
+      "cat_4_items": ["Post-trip feedback and review collection", "Return and repeat booking follow-up", "Refund and credit note handling", "Customer satisfaction survey management", "Loyalty and retention communication"],
+      "category_5": "Multi-Channel Support",
+      "cat_5_items": ["Email customer service management", "Live chat support handling", "WhatsApp travel support", "Social media message and comment handling", "Phone inquiry coordination support"],
+      "category_6": "CRM & Administration",
+      "cat_6_items": ["Customer profile and history management", "CRM data entry and record updates", "Booking and communication log maintenance", "Customer segmentation and list management", "Reporting on customer service performance"],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Customer Service Travel Agency",
+      "description": "We offer flexible packages based on your travel agency's needs. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential inquiries and booking assistance.",
+        "price": "€26,95",
+        "unit": "per hour",
+        "features": ["Email and chat inquiry handling", "Basic booking support", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full customer service and complaint management.",
+        "price": "€22,95",
+        "unit": "per hour",
+        "features": ["All Starter features", "Complaint and disruption management", "Multi-channel communication support", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full customer success lifecycle and detailed CRM management.",
+        "price": "€18,95",
+        "unit": "per hour",
+        "features": ["All Growth features", "Aftersales and retention management", "Full CRM and reporting support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Customer Service Travel Agency?",
+      "description": "Let us help you find the perfect travel customer service agent for your travel agency and client care needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_travel_marketer": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Travel Marketer in Netherlands | Travel Marketing Services",
+      "meta_description": "Hire a dedicated travel marketer in the Netherlands for travel content, social media, SEO, email campaigns, and digital marketing for travel brands. Fast start.",
+      "url_slug": "en/staffing-support/hire-travel-marketer"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Travel Marketer in Netherlands",
+      "text": "The travel industry is competitive and attention-driven. Businesses that market consistently, tell compelling stories, and reach the right audience at the right moment win more bookings. Get a dedicated travel marketer who grows your brand and drives bookings — every month.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Travel Marketer in the Netherlands Trusted by Travel Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Travel Marketers",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Travel Marketer Can Help With",
+      "description": "Our dedicated travel marketers are trained professionals who can support your travel brand marketing, content creation, and digital campaign needs immediately.",
+      "category_1": "Content Marketing",
+      "cat_1_items": ["Travel blog and article writing", "Destination guides and itinerary content", "Travel brand storytelling", "SEO content for travel websites", "Content calendar planning and management"],
+      "category_2": "Social Media",
+      "cat_2_items": ["Instagram and Facebook travel content", "TikTok and YouTube short content support", "Travel community engagement", "Influencer outreach coordination", "Social media growth strategy"],
+      "category_3": "Email Marketing",
+      "cat_3_items": ["Travel newsletter creation and management", "Promotional email campaign writing", "Automated email sequence development", "Seasonal travel offer campaigns", "List segmentation and re-engagement"],
+      "category_4": "SEO for Travel",
+      "cat_4_items": ["Travel keyword research and strategy", "On-page SEO for destination and package pages", "Local SEO for travel agencies", "Link building for travel websites", "Monthly SEO reporting and optimisation"],
+      "category_5": "Paid Marketing",
+      "cat_5_items": ["Google Ads campaign management for travel", "Meta Ads for travel promotions", "Retargeting campaign setup and management", "Ad copy writing for travel offers", "Campaign performance tracking and reporting"],
+      "category_6": "Analytics & Reporting",
+      "cat_6_items": ["Monthly marketing performance reports", "Booking conversion tracking", "Campaign ROI analysis", "Competitor benchmarking", "Data-driven strategy recommendations"],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Travel Marketer",
+      "description": "We offer flexible packages based on your marketing objectives. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential travel content and social media tasks.",
+        "price": "€41,95",
+        "unit": "per hour",
+        "features": ["Travel content and social media", "Email marketing support", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full digital travel marketing operations.",
+        "price": "€35,95",
+        "unit": "per hour",
+        "features": ["All Starter features", "SEO and paid digital marketing", "Campaign management and reporting", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full marketing team execution and advanced strategy coordination.",
+        "price": "€29,95",
+        "unit": "per hour",
+        "features": ["All Growth features", "Multi-channel campaign execution", "Full analytics and performance strategy", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Travel Marketer?",
+      "description": "Let us help you find the perfect travel marketer for your travel brand growth and digital marketing needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_hr_assistant_remote": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Remote HR Assistant in Netherlands | HR Support Services",
+      "meta_description": "Hire a dedicated remote HR assistant in the Netherlands for recruitment support, onboarding, HR administration, employee records, and HR process management. Fast start.",
+      "url_slug": "en/staffing-support/hire-hr-assistant-remote"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Remote HR Assistant in Netherlands",
+      "text": "HR administration is essential but time-consuming — and letting it fall behind creates compliance risks and employee experience issues. Get a dedicated remote HR assistant who keeps your people processes organised, compliant, and running smoothly every day.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Remote HR Assistant in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated HR Assistants",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Remote HR Assistant Can Help With",
+      "description": "Our dedicated remote HR assistants are trained professionals who can support your human resources administration, recruitment coordination, and employee management needs immediately.",
+      "category_1": "Recruitment Support",
+      "cat_1_items": [
+        "Job posting and vacancy management",
+        "CV screening and candidate shortlisting",
+        "Interview scheduling and coordination",
+        "Candidate communication and follow-up",
+        "Recruitment tracker and pipeline management"
+      ],
+      "category_2": "Onboarding & Offboarding",
+      "cat_2_items": [
+        "New employee onboarding coordination",
+        "Contract and document preparation support",
+        "Onboarding checklist management",
+        "Employee exit process administration",
+        "Equipment and access coordination support"
+      ],
+      "category_3": "HR Administration",
+      "cat_3_items": [
+        "Employee record creation and maintenance",
+        "Contract and document management",
+        "Holiday and leave administration",
+        "Sick leave and absence tracking",
+        "HR policy document maintenance"
+      ],
+      "category_4": "Payroll Support",
+      "cat_4_items": [
+        "Payroll data collection and verification",
+        "Timesheet and hours tracking",
+        "Payroll change processing support",
+        "Payslip distribution coordination",
+        "Payroll query handling"
+      ],
+      "category_5": "Employee Engagement",
+      "cat_5_items": [
+        "Internal HR communication drafting",
+        "Employee survey coordination",
+        "Training and development scheduling",
+        "Performance review process support",
+        "HR newsletter and update preparation"
+      ],
+      "category_6": "HR Reporting",
+      "cat_6_items": [
+        "Headcount and workforce reporting",
+        "Absence and turnover reporting",
+        "HR KPI dashboard management",
+        "Compliance document tracking",
+        "HR audit and record-keeping support"
+      ],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Remote HR Assistant",
+      "description": "We offer flexible packages based on your HR support volume. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for essential HR admin and recruitment.",
+        "price": "€41,95",
+        "unit": "per hour",
+        "features": [
+          "HR admin and employee records",
+          "Recruitment support",
+          "Weekly reports",
+          "Email support"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for full onboarding and lifecycle management.",
+        "price": "€35,95",
+        "unit": "per hour",
+        "features": [
+          "All Starter features",
+          "Onboarding and offboarding",
+          "Payroll support and leave management",
+          "Priority support",
+          "Dedicated account manager"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Comprehensive HR support including engagement and reporting.",
+        "price": "€29,95",
+        "unit": "per hour",
+        "features": [
+          "All Growth features",
+          "Employee engagement support",
+          "HR reporting and compliance",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Remote HR Assistant?",
+      "description": "Let us help you find the perfect remote HR assistant for your human resources administration and people management needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
+    }
+  },
+  "hire_admin_accounting_assistant": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Administrative Accounting Assistant in Netherlands | Finance Admin Services",
+      "meta_description": "Hire a dedicated administrative accounting assistant in the Netherlands for financial administration, invoicing, bookkeeping support, and accounting data management. Fast start.",
+      "url_slug": "en/staffing-support/hire-administrative-accounting-assistant"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Administrative Accounting Assistant in Netherlands",
+      "text": "Financial administration that piles up leads to errors, missed payments, and compliance headaches. Get a dedicated administrative accounting assistant who keeps your financial records accurate, your invoices on time, and your administration always under control.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire an Administrative Accounting Assistant in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Accounting Assistants",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Administrative Accounting Assistant Can Help With",
+      "description": "Our dedicated administrative accounting assistants are trained professionals who can support your financial administration and bookkeeping needs immediately.",
+      "category_1": "Financial Administration",
+      "cat_1_items": ["Daily financial record keeping", "Expense and cost registration", "Bank statement processing", "Transaction categorisation and coding", "Month-end administration support"],
+      "category_2": "Invoicing & Accounts Receivable",
+      "cat_2_items": ["Sales invoice creation and distribution", "Payment follow-up and reminders", "Accounts receivable tracking", "Credit note processing", "Customer payment reconciliation"],
+      "category_3": "Accounts Payable",
+      "cat_3_items": ["Supplier invoice processing and filing", "Purchase order matching and verification", "Accounts payable tracking and management", "Expense claim processing", "Supplier payment preparation support"],
+      "category_4": "Bookkeeping Support",
+      "cat_4_items": ["General ledger data entry", "Bank reconciliation support", "Trial balance preparation assistance", "Chart of accounts maintenance", "Accountant liaison and document preparation"],
+      "category_5": "Software Administration",
+      "cat_5_items": ["Exact Online data entry and management", "Moneybird and Twinfield administration", "QuickBooks and Xero record management", "Software data import and export", "System record accuracy and maintenance"],
+      "category_6": "Financial Reporting",
+      "cat_6_items": ["Monthly expense and cost reports", "Outstanding invoice reporting", "Payment status summaries", "Financial document filing and organisation", "Audit preparation and document support"],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Administrative Accounting Assistant",
+      "description": "We offer flexible packages based on your financial administration volume. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Part-time support for invoicing and financial record keeping.",
+        "price": "€26,95",
+        "unit": "per hour",
+        "features": ["Invoicing and accounts receivable", "Financial record keeping", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for bookkeeping and software administration.",
+        "price": "€22,95",
+        "unit": "per hour",
+        "features": ["All Starter features", "Accounts payable and bookkeeping support", "Accounting software administration", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full financial reporting and audit preparation support.",
+        "price": "€18,95",
+        "unit": "per hour",
+        "features": ["All Growth features", "Full financial reporting and documentation", "Audit preparation support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Administrative Accounting Assistant?",
+      "description": "Let us help you find the perfect administrative accounting assistant for your financial administration and bookkeeping support needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
       "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
     }

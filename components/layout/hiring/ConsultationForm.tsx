@@ -23,8 +23,6 @@ const ConsultationForm = ({
 
   const formLabels = consultation_form;
 
-  console.log('formLabels == ==',formLabels)
-
   const [form, setForm] = useState({
     fullName: "",
     companyEmail: "",
