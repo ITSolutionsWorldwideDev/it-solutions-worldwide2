@@ -1913,7 +1913,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential admin and operational tasks.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "2 hours/day",
         "features": [
           "Email & calendar support",
@@ -1926,7 +1926,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for daily business operations.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "4 hours/day",
         "features": [
           "All Starter features",
@@ -1940,7 +1940,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Dedicated Virtual Assistant for results driven teams",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "8 hours/day",
         "features": [
           "Multiple virtual assistants",
@@ -1989,6 +1989,11 @@
       "service": "Service",
       "form_btn": "Book a Free Consultation",
       "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
     },
     "features": {
       "heading": "Hire Full Stack Developers in the Netherlands Trusted by Businesses Looking to Scale Faster",
@@ -2042,7 +2047,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential development tasks.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "2 hours/day",
         "features": [
           "Bug fixes and improvements",
@@ -2055,7 +2060,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full product development.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "4 hours/day",
         "features": [
           "All Starter features",
@@ -2069,7 +2074,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full development team for complex and large-scale products.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "8 hours/day",
         "features": [
           "All Growth features",
@@ -2117,6 +2122,10 @@
       "form_btn": "Book a Free Consultation",
       "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
     },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
     "services": {
       "heading": "What Our Data Engineers Can Build and Manage",
       "categories": {
@@ -2159,7 +2168,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential data engineering tasks.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "2 hours/day",
         "features": [
           "Pipeline development and fixes",
@@ -2172,7 +2181,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full data infrastructure development.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "4 hours/day",
         "features": [
           "All Starter features",
@@ -2186,7 +2195,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full data engineering team for enterprise data platforms.",
-        "price": "39,95",
+        "price": "39.95",
         "unit": "8 hours/day",
         "features": [
           "All Growth features",
@@ -2233,6 +2242,10 @@
       "service": "Service",
       "form_btn": "Book a Free Consultation",
       "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
     },
     "features": {
       "heading": "Dedicated Ecommerce Assistants Trusted by Webshop Owners in the Netherlands",
@@ -2298,7 +2311,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential ecommerce tasks.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "2 hours/day",
         "features": [
           "Product management and listings",
@@ -2311,7 +2324,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full ecommerce operations.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "4 hours/day",
         "features": [
           "All Starter features",
@@ -2325,7 +2338,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full ecommerce team for high-volume and multi-channel stores.",
-        "price": "39,95",
+        "price": "€39.95",
         "unit": "8 hours/day",
         "features": [
           "All Growth features",
@@ -2372,6 +2385,10 @@
       "service": "Service",
       "form_btn": "Book a Free Consultation",
       "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
     },
     "services": {
       "heading": "What your Electrical Engineers Can help with",
@@ -2484,6 +2501,10 @@
       "service": "Service",
       "form_btn": "Book a Free Consultation",
       "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
     },
     "services": {
       "heading": "What your AI Engineers Can Help with",
@@ -2666,7 +2687,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential marketing tasks.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per hour",
         "features": [
           "SEO or Google Ads management",
@@ -2679,7 +2700,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full digital marketing operations.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -2693,7 +2714,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full marketing team support and multi-channel execution.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -2818,7 +2839,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential social tasks.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per hour",
         "features": [
           "2 platforms managed",
@@ -2831,7 +2852,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for daily operations.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -2845,7 +2866,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Multiple platforms or specialised support.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -2970,7 +2991,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential design support for social media and basic assets.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per hour",
         "features": [
           "Social media graphics",
@@ -2983,7 +3004,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated design support for marketing and branding.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -2997,7 +3018,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full creative production including motion and packaging.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -3121,7 +3142,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential support tasks.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per hour",
         "features": [
           "Email and chat support",
@@ -3134,7 +3155,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for daily operations.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -3148,7 +3169,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full customer success management and multi-channel coverage.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -3273,7 +3294,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential data tasks.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per hour",
         "features": [
           "Data entry and processing",
@@ -3286,7 +3307,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for daily operations.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -3300,7 +3321,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full data management and high-volume processing.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -3425,7 +3446,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for UI fixes and smaller updates.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per hour",
         "features": [
           "UI fixes and improvements",
@@ -3438,7 +3459,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full application development.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -3452,7 +3473,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise-level development and performance architecture.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -3577,7 +3598,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for API development and server maintenance.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per hour",
         "features": [
           "API development and fixes",
@@ -3590,7 +3611,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for Laravel or Node.js backend projects.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -3604,7 +3625,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full backend architecture and microservices for large-scale systems.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -3729,7 +3750,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for app maintenance and small feature updates.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per hour",
         "features": [
           "App fixes and improvements",
@@ -3742,7 +3763,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full iOS or Android app builds.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -3756,7 +3777,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full app development including backend and store management.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -3881,7 +3902,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Manual testing and bug reporting for essential releases.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per hour",
         "features": [
           "Manual testing and bug reporting",
@@ -3894,7 +3915,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated QA support including automated and API testing.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -3908,7 +3929,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full QA pipeline management and performance testing.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -4033,7 +4054,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time helpdesk support for essential technical issues.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per hour",
         "features": [
           "Helpdesk and end-user support",
@@ -4046,7 +4067,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for network, cloud, and server management.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -4060,7 +4081,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full infrastructure management and cybersecurity support.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -4113,6 +4134,10 @@
       "service": "Service",
       "form_btn": "Book a Free Consultation",
       "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
     },
     "features": {
       "heading": "Hire an ML Engineer in the Netherlands Trusted by Businesses Looking to Scale Faster",
@@ -4179,7 +4204,7 @@
       "heading": "Affordable ML Engineer",
       "plan_1": {
         "title": "Starter Plan",
-        "price": "€80,95/hour",
+        "price": "€80.95/hour",
         "features": [
           "ML model development and evaluation",
           "Basic MLOps pipeline support",
@@ -4190,7 +4215,7 @@
       },
       "plan_2": {
         "title": "Growth Plan",
-        "price": "€68,95/hour",
+        "price": "€68.95/hour",
         "features": [
           "All Starter features",
           "Deep learning and model deployment",
@@ -4202,7 +4227,7 @@
       },
       "plan_3": {
         "title": "Scale Plan",
-        "price": "56,95/hour",
+        "price": "56.95/hour",
         "features": [
           "All Growth features",
           "Cloud ML infrastructure and MLOps",
@@ -4326,7 +4351,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential data analysis and reporting.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per hour",
         "features": [
           "Data analysis and reporting",
@@ -4339,7 +4364,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for business intelligence and SQL reporting.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -4353,7 +4378,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Advanced analytics, statistical modelling, and multi-source integration.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -4478,7 +4503,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential dashboard design and data modelling support.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per hour",
         "features": [
           "Dashboard design and development",
@@ -4491,7 +4516,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full BI builds and automation.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -4505,7 +4530,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise BI strategy and complex multi-source integration.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -4630,7 +4655,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential support for blogs and social media captions.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per hour",
         "features": [
           "Blog or web copy writing",
@@ -4643,7 +4668,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for SEO content and email marketing.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -4657,7 +4682,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full multi-channel content strategy and brand copywriting.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -4746,7 +4771,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential tracking setup and basic conversion monitoring.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per hour",
         "features": ["GA4 setup and configuration", "Basic conversion tracking", "Weekly reports", "Email support"],
         "button": "Get Started"
@@ -4754,7 +4779,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for GTM and custom dashboard reporting.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "per hour",
         "features": ["All Starter features", "Google Tag Manager management", "Custom dashboards and reporting", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
@@ -4762,7 +4787,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full analytics audit, advanced insights, and CRO strategy.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per hour",
         "features": ["All Growth features", "Full analytics audit and cleanup", "Advanced data insights and CRO", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
@@ -4840,7 +4865,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential spreadsheet fixes and formula development.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per hour",
         "features": ["Spreadsheet development and fixes", "Formula and function work", "Weekly reports", "Email support"],
         "button": "Get Started"
@@ -4848,7 +4873,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for VBA macros and dashboard builds.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per hour",
         "features": ["All Starter features", "VBA macro automation", "Dashboard and reporting builds", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
@@ -4856,7 +4881,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise modelling, Power Query, and full automation projects.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per hour",
         "features": ["Multiple Microsoft Excel specialists", "All Growth features", "Financial modelling and forecasting", "Power Query and data transformation", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
@@ -4934,7 +4959,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential trip planning and email consultation support.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per hour",
         "features": ["Trip planning and itinerary creation", "Customer email consultation", "Weekly reports", "Email support"],
         "button": "Get Started"
@@ -4942,7 +4967,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for booking admin and detailed research.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per hour",
         "features": ["All Starter features", "Booking administration", "Flight and accommodation research", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
@@ -4950,7 +4975,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full customer lifecycle management and marketing support.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per hour",
         "features": ["All Growth features", "Aftersales and customer follow-up", "Travel content and research support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
@@ -5028,7 +5053,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential booking processing and calendar management.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per hour",
         "features": ["Booking and reservation processing", "Availability calendar management", "Weekly reports", "Email support"],
         "button": "Get Started"
@@ -5036,7 +5061,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for systems, changes, and refunds.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per hour",
         "features": ["All Starter features", "Reservation system administration", "Changes, cancellations and refunds", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
@@ -5044,7 +5069,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full multi-channel management and comprehensive reporting.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per hour",
         "features": ["All Growth features", "Multi-channel reservation management", "Full reporting and CRM updates", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
@@ -5122,7 +5147,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential inquiries and booking assistance.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per hour",
         "features": ["Email and chat inquiry handling", "Basic booking support", "Weekly reports", "Email support"],
         "button": "Get Started"
@@ -5130,7 +5155,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full customer service and complaint management.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per hour",
         "features": ["All Starter features", "Complaint and disruption management", "Multi-channel communication support", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
@@ -5138,7 +5163,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full customer success lifecycle and detailed CRM management.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per hour",
         "features": ["All Growth features", "Aftersales and retention management", "Full CRM and reporting support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
@@ -5216,7 +5241,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential travel content and social media tasks.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per hour",
         "features": ["Travel content and social media", "Email marketing support", "Weekly reports", "Email support"],
         "button": "Get Started"
@@ -5224,7 +5249,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full digital travel marketing operations.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per hour",
         "features": ["All Starter features", "SEO and paid digital marketing", "Campaign management and reporting", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
@@ -5232,7 +5257,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full marketing team execution and advanced strategy coordination.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per hour",
         "features": ["All Growth features", "Multi-channel campaign execution", "Full analytics and performance strategy", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"
@@ -5346,7 +5371,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential HR admin and recruitment.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per hour",
         "features": [
           "HR admin and employee records",
@@ -5359,7 +5384,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full onboarding and lifecycle management.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per hour",
         "features": [
           "All Starter features",
@@ -5373,7 +5398,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Comprehensive HR support including engagement and reporting.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per hour",
         "features": [
           "All Growth features",
@@ -5462,7 +5487,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for invoicing and financial record keeping.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per hour",
         "features": ["Invoicing and accounts receivable", "Financial record keeping", "Weekly reports", "Email support"],
         "button": "Get Started"
@@ -5470,7 +5495,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for bookkeeping and software administration.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per hour",
         "features": ["All Starter features", "Accounts payable and bookkeeping support", "Accounting software administration", "Priority support", "Dedicated account manager"],
         "button": "Get Started"
@@ -5478,7 +5503,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full financial reporting and audit preparation support.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per hour",
         "features": ["All Growth features", "Full financial reporting and documentation", "Audit preparation support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
         "button": "Contact us"

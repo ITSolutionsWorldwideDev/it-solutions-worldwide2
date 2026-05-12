@@ -1937,7 +1937,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële administratieve en operationele taken.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "2 uur per dag",
         "features": [
           "E-mail & agenda ondersteuning",
@@ -1950,7 +1950,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse bedrijfsactiviteiten.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "4 uur per dag",
         "features": [
           "Alle Starter-functies",
@@ -1964,7 +1964,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Toegewijde Virtuele Assistent voor resultaatgerichte teams",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "8 uur per dag",
         "features": [
           "Meerdere virtuele assistenten",
@@ -2014,7 +2014,10 @@
       "form_btn": "Boek een Gratis Consultatie",
       "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
     },
-
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
     "features": {
       "heading": "Huur Full Stack Developers in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
       "item_1": "Toegewijde Full Stack Developers",
@@ -2067,7 +2070,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële ontwikkelingstaken.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "2 uur per dag",
         "features": [
           "Bugfixes en verbeteringen",
@@ -2080,7 +2083,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige productontwikkeling.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "4 uur per dag",
         "features": [
           "Alle Starter-functies",
@@ -2094,7 +2097,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig ontwikkelingsteam voor complexe en grootschalige producten.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "8 uur per dag",
         "features": [
           "Alle Growth-functies",
@@ -2142,6 +2145,10 @@
       "form_btn": "Boek een Gratis Consultatie",
       "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
     },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
     "services": {
       "heading": "Wat Onze Data Engineers Kunnen Bouwen en Beheren",
       "categories": {
@@ -2184,7 +2191,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële data engineering taken.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "2 uur per dag",
         "features": [
           "Pipeline ontwikkeling en fixes",
@@ -2197,7 +2204,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige data-infrastructuur ontwikkeling.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "4 uur per dag",
         "features": [
           "Alle Starter-functies",
@@ -2211,7 +2218,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig data engineering team voor enterprise dataplatformen.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "8 uur per dag",
         "features": [
           "Alle Growth-functies",
@@ -2258,6 +2265,10 @@
       "service": "Dienst",
       "form_btn": "Boek een Gratis Consultatie",
       "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
     },
     "features": {
       "heading": "Toegewijde E-commerce Assistenten Vertrouwd door Webshopeigenaren in Nederland",
@@ -2323,7 +2334,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële e-commerce taken.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "2 uur per dag",
         "features": [
           "Productbeheer en vermeldingen",
@@ -2336,7 +2347,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige e-commerce activiteiten.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "4 uur per dag",
         "features": [
           "Alle Starter-functies",
@@ -2350,7 +2361,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig e-commerce team voor hoog volume en multi-channel winkels.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "8 uur per dag",
         "features": [
           "Alle Growth-functies",
@@ -2398,6 +2409,10 @@
       "form_btn": "Boek een Gratis Consultatie",
       "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
     },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
     "services": {
       "heading": "Waar Uw Elektrotechnisch Ingenieurs bij Kunnen Helpen",
       "categories": {
@@ -2436,7 +2451,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële elektrotechnische taken.",
-        "price": "€49,95",
+        "price": "€49.95",
         "unit": "2 uur per dag",
         "features": [
           "Circuitontwerp en documentatie",
@@ -2449,7 +2464,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige elektrotechnische projecten.",
-        "price": "€59,95",
+        "price": "€59.95",
         "unit": "4 uur per dag",
         "features": [
           "Alle Starter-functies",
@@ -2463,7 +2478,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig engineeringteam voor grootschalige en complexe projecten.",
-        "price": "€69,95",
+        "price": "€69.95",
         "unit": "8 uur per dag",
         "features": [
           "Alle Growth-functies",
@@ -2509,6 +2524,10 @@
       "service": "Dienst",
       "form_btn": "Boek een Gratis Consultatie",
       "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
     },
     "services": {
       "heading": "Waar Uw AI Engineers bij Kunnen Helpen",
@@ -2659,7 +2678,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële sociale taken.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per uur",
         "features": [
           "2 platformen beheerd",
@@ -2672,7 +2691,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -2686,7 +2705,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Meerdere platformen of gespecialiseerde ondersteuning.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -2812,7 +2831,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ontwerpsteun voor sociale media en basisassets.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per uur",
         "features": [
           "Social media graphics",
@@ -2965,7 +2984,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële marketingtaken.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per uur",
         "features": [
           "SEO of Google Ads beheer",
@@ -2978,7 +2997,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige digitale marketingactiviteiten.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -2992,7 +3011,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige ondersteuning door marketingteam en multi-channel uitvoering.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -3117,7 +3136,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële supporttaken.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per uur",
         "features": [
           "E-mail en chat support",
@@ -3130,7 +3149,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -3144,7 +3163,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig klantbeheer en multi-channel ondersteuning.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -3270,7 +3289,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële datataken.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per uur",
         "features": [
           "Gegevensinvoer en verwerking",
@@ -3283,7 +3302,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -3297,7 +3316,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig databeheer en hoog-volume verwerking.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -3423,7 +3442,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor UI-fixes en kleine updates.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per uur",
         "features": [
           "UI fixes en verbeteringen",
@@ -3436,7 +3455,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige applicatieontwikkeling.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per hour",
         "features": [
           "Alle Starter-functies",
@@ -3450,7 +3469,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Ontwikkeling op enterprise-niveau en prestatie-architectuur.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -3577,7 +3596,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor API-ontwikkeling en serveronderhoud.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per uur",
         "features": [
           "API-ontwikkeling en fixes",
@@ -3590,7 +3609,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor Laravel of Node.js backend projecten.",
-        "price": "48,95",
+        "price": "48.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -3604,7 +3623,7 @@
       "plan_3": {
         "title": "Scale Plan ",
         "desc": "Volledige backend-architectuur en microservices voor grootschalige systemen. ",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per uur ",
         "features": [
           "Alle Growth-functies ",
@@ -3730,7 +3749,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor app-onderhoud en kleine updates.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per uur",
         "features": [
           "App-fixes en verbeteringen",
@@ -3743,7 +3762,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige iOS- of Android-apps.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -3757,7 +3776,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige app-ontwikkeling inclusief backend en storebeheer.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -3883,7 +3902,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Handmatig testen en bugrapportage voor essentiële releases.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per uur",
         "features": [
           "Handmatig testen en bugrapportage",
@@ -3896,7 +3915,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde QA-ondersteuning inclusief automatisering en API-testen.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -3910,7 +3929,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig beheer van QA-pipelines en performancetesten.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -4036,7 +4055,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime helpdesk support voor essentiële technische problemen.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per uur",
         "features": [
           "Helpdesk en eindgebruikerssupport",
@@ -4049,7 +4068,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor netwerk-, cloud- en serverbeheer.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -4063,7 +4082,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig infrastructuurbeheer en cybersecurity ondersteuning.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -4189,7 +4208,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële data-analyse en rapportage.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per uur",
         "features": [
           "Data-analyse en rapportage",
@@ -4202,7 +4221,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor business intelligence en SQL-rapportage.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -4216,7 +4235,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Geavanceerde analytics, statistische modellering en multi-source integratie.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -4341,7 +4360,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ondersteuning voor dashboardontwerp en datamodellering.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per uur",
         "features": [
           "Dashboard ontwerp en ontwikkeling",
@@ -4354,7 +4373,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige BI-builds en automatisering.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -4368,7 +4387,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise BI-strategie en complexe multi-source integratie.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -4493,7 +4512,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ondersteuning voor blogs en social media captions.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per uur",
         "features": [
           "Schrijven van blog- of webcopy",
@@ -4506,7 +4525,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor SEO-content en e-mailmarketing.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -4520,7 +4539,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige contentstrategie voor meerdere kanalen en merkcopywriting.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -4645,7 +4664,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële tracking-setup en basis conversie-bewaking.",
-        "price": "€56,95",
+        "price": "€56.95",
         "unit": "per uur",
         "features": [
           "GA4 setup en configuratie",
@@ -4658,7 +4677,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor GTM en custom dashboard rapportage.",
-        "price": "€48,95",
+        "price": "€48.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -4672,7 +4691,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige analytics audit, geavanceerde inzichten en CRO-strategie.",
-        "price": "€39,95",
+        "price": "€39.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -4797,7 +4816,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële spreadsheet fixes en formule-ontwikkeling.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per uur",
         "features": [
           "Spreadsheetontwikkeling en fixes",
@@ -4810,7 +4829,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor VBA-macro's en dashboards.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -4824,7 +4843,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise modellering, Power Query en volledige automatisering.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per uur",
         "features": [
           "Meerdere Excel-specialisten",
@@ -4950,7 +4969,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële reisplanning en e-mailadvies ondersteuning.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per uur",
         "features": [
           "Reisplanning en routecreatie",
@@ -4963,7 +4982,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor boekingsbeheer en gedetailleerd onderzoek.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -4977,7 +4996,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig beheer van de klantcyclus en marketingondersteuning.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -5102,7 +5121,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële boekingsverwerking en kalenderbeheer.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per uur",
         "features": [
           "Boekings- en reserveringsverwerking",
@@ -5115,7 +5134,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor systemen, wijzigingen en terugbetalingen.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -5129,7 +5148,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig multi-channel beheer en uitgebreide rapportage.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -5218,7 +5237,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële aanvragen en boekingsassistentie.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per uur",
         "features": ["Afhandeling van e-mail en chat aanvragen", "Basis boekingsondersteuning", "Wekelijkse rapportages", "E-mail ondersteuning"],
         "button": "Aan de slag"
@@ -5226,7 +5245,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige klantenservice en klachtenbeheer.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per uur",
         "features": ["Alle Starter-functies", "Klachten- en verstoringsbeheer", "Multi-channel communicatieondersteuning", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
         "button": "Aan de slag"
@@ -5234,7 +5253,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige customer success lifecycle en gedetailleerd CRM-beheer.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per uur",
         "features": ["Alle Growth-functies", "Aftersales- en retentiebeheer", "Volledige CRM- en rapportage-ondersteuning", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
         "button": "Neem contact op"
@@ -5312,7 +5331,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële reiscontent en sociale media taken.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per uur",
         "features": ["Reiscontent en social media", "Ondersteuning bij e-mailmarketing", "Wekelijkse rapportages", "E-mail ondersteuning"],
         "button": "Aan de slag"
@@ -5320,7 +5339,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige digitale reismarketing activiteiten.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per uur",
         "features": ["Alle Starter-functies", "SEO en betaalde digitale marketing", "Campagnebeheer en rapportage", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
         "button": "Aan de slag"
@@ -5328,7 +5347,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige ondersteuning door marketingteam en geavanceerde strategie-coördinatie.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per uur",
         "features": ["Alle Growth-functies", "Multi-channel campagne-uitvoering", "Volledige analytics en prestatiestrategie", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
         "button": "Neem contact op"
@@ -5442,7 +5461,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële HR-admin en werving.",
-        "price": "€41,95",
+        "price": "€41.95",
         "unit": "per uur",
         "features": [
           "HR-admin en personeelsdossiers",
@@ -5455,7 +5474,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledig levenscyclusbeheer.",
-        "price": "€35,95",
+        "price": "€35.95",
         "unit": "per uur",
         "features": [
           "Alle Starter-functies",
@@ -5469,7 +5488,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Uitgebreide HR-support inclusief betrokkenheid en rapportage.",
-        "price": "€29,95",
+        "price": "€29.95",
         "unit": "per uur",
         "features": [
           "Alle Growth-functies",
@@ -5558,7 +5577,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor facturatie en financiële administratie.",
-        "price": "€26,95",
+        "price": "€26.95",
         "unit": "per uur",
         "features": ["Facturatie en debiteurenbeheer", "Financiële dossierregistratie", "Wekelijkse rapportages", "E-mail ondersteuning"],
         "button": "Aan de slag"
@@ -5566,7 +5585,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor boekhouding en softwarebeheer.",
-        "price": "€22,95",
+        "price": "€22.95",
         "unit": "per uur",
         "features": ["Alle Starter-functies", "Crediteuren- en boekhoudondersteuning", "Beheer van boekhoudsoftware", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
         "button": "Aan de slag"
@@ -5574,7 +5593,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige financiële rapportage en ondersteuning bij audits.",
-        "price": "€18,95",
+        "price": "€18.95",
         "unit": "per uur",
         "features": ["Alle Growth-functies", "Volledige financiële rapportage", "Ondersteuning bij auditvoorbereiding", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
         "button": "Neem contact op"

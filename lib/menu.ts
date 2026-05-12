@@ -120,29 +120,29 @@ export const menuItems: MenuItem[] = [
   {
     label: "Hiring",
     dropdown: [
-      {
-        label: "Staffing Services",
-        dropdown: [
-          {
-            label: "Temporary Staffing",
-            link: "/staffing-support/hire-temporary-staffing",
-          },
-          {
-            label: "Managed Staffing",
-            link: "/staffing-support/hire-managed-staffing",
-          },
+      // {
+      //   label: "Staffing Services",
+      //   dropdown: [
+      //     {
+      //       label: "Temporary Staffing",
+      //       link: "/staffing-support/hire-temporary-staffing",
+      //     },
+      //     {
+      //       label: "Managed Staffing",
+      //       link: "/staffing-support/hire-managed-staffing",
+      //     },
 
-          {
-            label: "Remote & Virtual Staffing",
-            link: "/staffing-support/hire-remote-virtual-staffing",
-          },
+      //     {
+      //       label: "Remote & Virtual Staffing",
+      //       link: "/staffing-support/hire-remote-virtual-staffing",
+      //     },
 
-          {
-            label: "Staffing Consulting",
-            link: "/staffing-support/hire-staffing-consulting",
-          },
-        ],
-      },
+      //     {
+      //       label: "Staffing Consulting",
+      //       link: "/staffing-support/hire-staffing-consulting",
+      //     },
+      //   ],
+      // },
       {
         label: "Hire Roles",
 
