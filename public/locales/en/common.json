@@ -2042,7 +2042,7 @@
       "button_middle": "Tell Us What you Need"
     },
     "pricing_section": {
-      "heading": "Affordable full-stack-developer",
+      "heading": "Affordable Full Stack Developer",
       "description": "We offer flexible packages based on your workload and business needs. All plans include full management and support.",
       "plan_1": {
         "title": "Starter Plan",
@@ -2106,7 +2106,7 @@
       "url_slug": "en/hire-data-engineer"
     },
     "hero": {
-      "heading": "Hire a Dedicated data-engineer in Netherlands",
+      "heading": "Hire a Dedicated Data Engineer in Netherlands",
       "text": "Your business is generating data. The question is whether you're using it — or losing value because the infrastructure isn't there.",
       "button_primary": "Book Free Consultation",
       "button_secondary": "Get Data Engineer Pricing"
@@ -2163,7 +2163,7 @@
       "button_middle": "Tell Us Your Data Challenge"
     },
     "pricing_section": {
-      "heading": "Affordable data-engineer",
+      "heading": "Affordable Data Engineer",
       "description": "We offer flexible packages based on your workload and business needs. All plans include full management and support.",
       "plan_1": {
         "title": "Starter Plan",
@@ -2227,7 +2227,7 @@
       "url_slug": "en/hire-ecommerce-assistant"
     },
     "hero": {
-      "heading": "Hire a Dedicated ecommerce-assistant in Netherlands",
+      "heading": "Hire a Dedicated Ecommerce Assistant in Netherlands",
       "text": "Running a webshop takes more than just having the right products. The daily operations can overwhelm a small team fast.",
       "button_primary": "Book Free Consultation",
       "button_secondary": "Get Assistant Pricing"
@@ -2307,7 +2307,7 @@
       "button_middle": "Tell Us What Your Store Needs"
     },
     "pricing_section": {
-      "heading": "Affordable ecommerce-assistant",
+      "heading": "Affordable Ecommerce Assistant",
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential ecommerce tasks.",
@@ -2354,7 +2354,7 @@
     },
     "cta": {
       "heading": "Ready to Hire an Ecommerce Assistant?",
-      "description": "Let us help you find the perfect ecommerce-assistant for your business or personal needs. Book a free consultation today and get started within 48 hours.",
+      "description": "Let us help you find the perfect Ecommerce Assistant for your business or personal needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
       "footer_checkmarks": [
         "No commitment",
@@ -2482,11 +2482,11 @@
   "hire_ai_engineer": {
     "metadata": {
       "meta_title": "Hire an AI Engineer in Netherlands | Dedicated AI Development Services",
-      "meta_description": "Hire an experienced AI engineer in the Netherlands for machine learning, LLM integration, AI automation, and intelligent product development. Start fast.",
+      "meta_description": "Hire an experienced AI Engineer in the Netherlands for machine learning, LLM integration, AI automation, and intelligent product development. Start fast.",
       "url_slug": "en/hire-ai-engineer"
     },
     "hero": {
-      "heading": "Hire a Dedicated Ai-engineer in Netherlands",
+      "heading": "Hire a Dedicated AI Engineer in Netherlands",
       "text": "AI is no longer a future investment — businesses that deploy it now are outpacing competitors who are still planning.",
       "button_primary": "Book Free Consultation",
       "button_secondary": "Get AI Engineer Pricing"
@@ -2507,7 +2507,7 @@
       "rating": "5.0"
     },
     "services": {
-      "heading": "What your AI Engineers Can Help with",
+      "heading": "What your AI Engineer Can Help with",
       "categories": {
         "ml": [
           "Custom ML model development",
@@ -2531,7 +2531,7 @@
       }
     },
     "pricing_section": {
-      "heading": "Affordable Ai-engineer",
+      "heading": "Affordable AI Engineer",
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential AI development tasks.",
@@ -3962,7 +3962,7 @@
     },
     "hero": {
       "heading": "Hire a Dedicated Remote IT Support Specialist in Netherlands",
-      "text": "Technical issues that go unresolved slow your team down, create security risks, and cost your business more every hour. Get a dedicated remote IT support specialist who keeps your systems running smoothly — every day.",
+      "text": "Technical issues that go unresolved slow your team down, create security risks, and cost your business more every hour. Get a dedicated remote IT support specialist who keeps your systems running smoothly every day.",
       "button_primary": "Book Free Consultation",
       "button_secondary": "Get Pricing Today",
       "save_badge": "Save up to 60%",
@@ -4903,7 +4903,7 @@
     },
     "hero": {
       "heading": "Hire a Dedicated Online Travel Advisor in Netherlands",
-      "text": "Travel businesses that deliver personalised, fast, and reliable advisory services retain more customers and generate more bookings. Get a dedicated online travel advisor who handles your clients with expertise and care — every day.",
+      "text": "Travel businesses that deliver personalised, fast, and reliable advisory services retain more customers and generate more bookings. Get a dedicated online travel advisor who handles your clients with expertise and care every day.",
       "button_primary": "Book Free Consultation",
       "button_secondary": "Get Pricing Today",
       "save_badge": "Save up to 60%",
@@ -5513,6 +5513,100 @@
     "cta": {
       "heading": "Ready to hire your Administrative Accounting Assistant?",
       "description": "Let us help you find the perfect administrative accounting assistant for your financial administration and bookkeeping support needs. Book a free consultation today and get started within 48 hours.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+    }
+  },
+  "hire_webdesigner_developer": {
+    "metadata": {
+      "meta_title": "Hire a Dedicated Web Designer & Developer in Netherlands | Web Design Services",
+      "meta_description": "Hire a dedicated web designer and developer in the Netherlands for custom websites, landing pages, UI/UX design, and web development. Flexible plans, fast start.",
+      "url_slug": "en/staffing-support/hire-webdesigner-developer"
+    },
+    "hero": {
+      "heading": "Hire a Dedicated Web Designer & Developer in Netherlands",
+      "text": "Your website is your most important sales tool. Get a dedicated web designer and developer who builds fast, beautiful, conversion-focused websites without agency delays or costs.",
+      "button_primary": "Book Free Consultation",
+      "button_secondary": "Get Pricing Today",
+      "save_badge": "Save up to 60%",
+      "stats": {
+        "stat_1": "500+ Dedicated Professionals",
+        "stat_2": "24hrs Start Time",
+        "stat_3": "60% Cost Savings"
+      }
+    },
+    "consultation_form": {
+      "title": "Get Started",
+      "desc": "Fill out the form to hire",
+      "name": "Full name",
+      "company_email": "Company email",
+      "phone_no": "Phone number",
+      "no_of_hours": "How many hours per week do you need?",
+      "service": "Service",
+      "form_btn": "Book a Free Consultation",
+      "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
+    },
+    "features_ribbon": {
+      "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Hire a Web Designer & Developer in the Netherlands Trusted by Businesses Looking to Scale Faster",
+      "item_1": "Dedicated Web Designers & Developers",
+      "item_2": "Start in Days, Not Months",
+      "item_3": "Save up to 60% on Hiring Costs",
+      "item_4": "Fully Managed Support",
+      "item_5": "Flexible Monthly Plans"
+    },
+    "services": {
+      "heading": "What Your Web Designer & Developer Can Help With",
+      "description": "Our dedicated web professionals are trained to handle your design and development needs to create a powerful online presence.",
+      "category_1": "Web Design",
+      "cat_1_items": ["Custom website design", "Landing page design", "UI/UX design and wireframing", "Mobile-responsive design", "Brand-consistent visual design"],
+      "category_2": "Web Development",
+      "cat_2_items": ["WordPress development", "Custom HTML/CSS/JS development", "CMS setup and customisation", "Website speed optimisation", "Cross-browser compatibility"],
+      "category_3": "Ecommerce Solutions",
+      "cat_3_items": ["Shopify store design", "WooCommerce development", "Product page design", "Checkout flow optimisation", "Payment gateway integration"],
+      "category_4": "Landing Pages",
+      "cat_4_items": ["High-converting landing pages", "A/B test-ready page builds", "Lead capture page design", "Sales page development", "CTA and form optimisation"],
+      "category_5": "Maintenance & Support",
+      "cat_5_items": ["Regular updates and backups", "Plugin and theme management", "Security monitoring", "Bug fixing and troubleshooting", "Performance optimisation"],
+      "category_6": "Redesign & UX Audit",
+      "cat_6_items": ["Full website redesign", "User experience audits", "Conversion rate optimisation design", "Accessibility improvements", "Prototype and mockup creation"],
+      "button_middle": "Tell Us What You Need →"
+    },
+    "pricing_section": {
+      "heading": "Affordable Web Designer & Developer",
+      "description": "We offer flexible packages based on your project complexity. All plans include full management and support.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essential support for landing pages and website updates.",
+        "price": "€49.95",
+        "unit": "per hour",
+        "features": ["Website updates and maintenance", "Landing page design", "Weekly reports", "Email support"],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Dedicated support for custom website builds and ecommerce.",
+        "price": "€59.95",
+        "unit": "per hour",
+        "features": ["All Starter features", "Custom website design and build", "Ecommerce development", "Priority support", "Dedicated account manager"],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Full UI/UX redesign and enterprise website management.",
+        "price": "€69.95",
+        "unit": "per hour",
+        "features": ["All Growth features", "UI/UX and redesign projects", "Multi-site management", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to hire your Web Designer & Developer?",
+      "description": "Let us help you find the perfect web designer and developer for your business website and digital presence. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
       "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
     }

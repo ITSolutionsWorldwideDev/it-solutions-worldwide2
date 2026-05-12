@@ -2060,7 +2060,7 @@
       "button_middle": "Vertel Ons Wat U Nodig Heeft"
     },
     "pricing_section": {
-      "heading": "Betaalbare full-stack-developer",
+      "heading": "Betaalbare Full Stack Developer",
       "description": "Wij bieden flexibele pakketten op basis van uw werklast en zakelijke behoeften. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
       "plan_1": {
         "title": "Starter Plan",
@@ -2124,7 +2124,7 @@
       "url_slug": "nl/data-engineer-inhuren"
     },
     "hero": {
-      "heading": "Huur een Toegewijde data-engineer in Nederland",
+      "heading": "Huur een Toegewijde Data Engineer in Nederland",
       "text": "Uw bedrijf genereert data. De vraag is of u deze gebruikt — of waarde verliest omdat de infrastructuur ontbreekt.",
       "button_primary": "Boek een Gratis Consultatie",
       "button_secondary": "Bekijk Data Engineer Tarieven"
@@ -2181,7 +2181,7 @@
       "button_middle": "Vertel Ons Uw Data-uitdaging"
     },
     "pricing_section": {
-      "heading": "Betaalbare data-engineer",
+      "heading": "Betaalbare Data Engineer",
       "description": "Wij bieden flexibele pakketten op basis van uw werklast en zakelijke behoeften. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
       "plan_1": {
         "title": "Starter Plan",
@@ -2245,7 +2245,7 @@
       "url_slug": "nl/ecommerce-assistent-inhuren"
     },
     "hero": {
-      "heading": "Huur een Toegewijde e-commerce-assistent in Nederland",
+      "heading": "Huur een Toegewijde Ecommerce Assistent in Nederland",
       "text": "Het runnen van een webshop is meer dan alleen de juiste producten hebben. De dagelijkse werkzaamheden kunnen een klein team snel overweldigen.",
       "button_primary": "Boek een Gratis Consultatie",
       "button_secondary": "Bekijk Assistent Tarieven"
@@ -2325,7 +2325,7 @@
       "button_middle": "Vertel Ons Wat Uw Winkel Nodig Heeft"
     },
     "pricing_section": {
-      "heading": "Betaalbare e-commerce-assistent",
+      "heading": "Betaalbare Ecommerce Assistent",
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële e-commerce taken.",
@@ -2372,7 +2372,7 @@
     },
     "cta": {
       "heading": "Klaar om een E-commerce Assistent in te huren?",
-      "description": "Laat ons u helpen de perfecte e-commerce-assistent te vinden voor uw zakelijke of persoonlijke behoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "description": "Laat ons u helpen de perfecte Ecommerce Assistent te vinden voor uw zakelijke of persoonlijke behoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
       "footer_checkmarks": [
         "Geen verplichting",
@@ -2500,11 +2500,11 @@
   "hire_ai_engineer": {
     "metadata": {
       "meta_title": "AI Engineer Inhuren in Nederland | Toegewijde AI Ontwikkeldiensten",
-      "meta_description": "Huur een ervaren AI-engineer in Nederland voor machine learning, LLM-integratie, AI-automatisering en intelligente productontwikkeling. Start snel.",
+      "meta_description": "Huur een ervaren AI Engineer in Nederland voor machine learning, LLM-integratie, AI-automatisering en intelligente productontwikkeling. Start snel.",
       "url_slug": "nl/ai-engineer-inhuren"
     },
     "hero": {
-      "heading": "Huur een Toegewijde AI-engineer in Nederland",
+      "heading": "Huur een Toegewijde AI Engineer in Nederland",
       "text": "AI is niet langer een toekomstige investering — bedrijven die het nu inzetten, laten concurrenten die nog aan het plannen zijn achter zich.",
       "button_primary": "Boek een Gratis Consultatie",
       "button_secondary": "Bekijk AI Engineer Tarieven"
@@ -2525,7 +2525,7 @@
       "rating": "5.0"
     },
     "services": {
-      "heading": "Waar Uw AI Engineers bij Kunnen Helpen",
+      "heading": "Waar Uw AI Engineer bij Kunnen Helpen",
       "categories": {
         "ml": [
           "Op maat gemaakte ML-modelontwikkeling",
@@ -3185,13 +3185,13 @@
   },
   "hire_data_entry_specialist": {
     "metadata": {
-      "meta_title": "Huur een Toegewijde Data-entry Specialist in Nederland | Gegevensdiensten op Afstand",
+      "meta_title": "Huur een Toegewijde Data Entry Specialist in Nederland | Gegevensdiensten op Afstand",
       "meta_description": "Huur een toegewijde data-entry specialist in Nederland voor gegevensverwerking, databasebeheer, spreadsheetwerk en administratieve datataken. Snel starten.",
       "url_slug": "nl/staffing-support/data-entry-specialist-inhuren"
     },
     "hero": {
-      "heading": "Huur een Toegewijde Data-entry Specialist in Nederland",
-      "text": "Handmatig datawerk kost uren die uw team niet heeft. Krijg een toegewijde data-entry specialist die uw gegevens nauwkeurig en efficiënt verwerkt — zodat uw team zich kan richten op wat uw bedrijf echt doet groeien.",
+      "heading": "Huur een Toegewijde Data Entry Specialist in Nederland",
+      "text": "Handmatig datawerk kost uren die uw team niet heeft. Krijg een toegewijde data entry specialist die uw gegevens nauwkeurig en efficiënt verwerkt — zodat uw team zich kan richten op wat uw bedrijf echt doet groeien.",
       "button_primary": "Boek een Gratis Consultatie",
       "button_secondary": "Bekijk de Tarieven",
       "save_badge": "Bespaar tot 60%",
@@ -3279,7 +3279,7 @@
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
-      "heading": "Betaalbare Data-entry Specialist",
+      "heading": "Betaalbare Data Entry Specialist",
       "description": "Wij bieden flexibele pakketten op basis van uw werklast en zakelijke behoeften. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
       "plan_1": {
         "title": "Starter Plan",
@@ -3951,13 +3951,13 @@
   },
   "hire_it_support_specialist": {
     "metadata": {
-      "meta_title": "Huur een Toegewijde IT-support Specialist op Afstand in Nederland",
-      "meta_description": "Huur een toegewijde IT-support specialist op afstand in Nederland voor helpdesk, systeembeheer en technische assistentie. Snelle start.",
+      "meta_title": "Huur een Toegewijde IT Support Specialist op Afstand in Nederland",
+      "meta_description": "Huur een toegewijde IT Support Specialist op afstand in Nederland voor helpdesk, systeembeheer en technische assistentie. Snelle start.",
       "url_slug": "nl/staffing-support/it-support-specialist-inhuren"
     },
     "hero": {
-      "heading": "Huur een Toegewijde IT-support Specialist op Afstand in Nederland",
-      "text": "Technische problemen die onopgelost blijven, vertragen uw team, creëren beveiligingsrisico's en kosten uw bedrijf elk uur meer. Krijg een toegewijde IT-support specialist die uw systemen soepel laat draaien — elke dag.",
+      "heading": "Huur een Toegewijde IT Support Specialist op Afstand in Nederland",
+      "text": "Technische problemen die onopgelost blijven, vertragen uw team, creëren beveiligingsrisico's en kosten uw bedrijf elk uur meer. Krijg een toegewijde IT Support specialist die uw systemen soepel laat draaien elke dag.",
       "button_primary": "Boek een Gratis Consultatie",
       "button_secondary": "Bekijk de Tarieven",
       "save_badge": "Bespaar tot 60%",
@@ -3984,7 +3984,7 @@
       "rating": "5.0"
     },
     "features": {
-      "heading": "Huur een IT-support Specialist in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "heading": "Huur een IT Support Specialist in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
       "item_1": "Toegewijde IT-support Specialisten",
       "item_2": "Start binnen dagen, niet maanden",
       "item_3": "Bespaar tot 60% op wervingskosten",
@@ -3992,7 +3992,7 @@
       "item_5": "Flexibele maandelijkse plannen"
     },
     "services": {
-      "heading": "Waar Uw IT-support Specialist bij Kan Helpen",
+      "heading": "Waar Uw IT Support Specialist bij Kan Helpen",
       "description": "Onze toegewijde IT-support specialisten op afstand zijn getrainde professionals die uw technische operaties en IT-infrastructuur onmiddellijk kunnen ondersteunen.",
       "category_1": "Helpdesk Support",
       "cat_1_items": [
@@ -4045,7 +4045,7 @@
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
-      "heading": "Betaalbare IT-support Specialist op Afstand",
+      "heading": "Betaalbare IT Support Specialist op Afstand",
       "description": "Wij bieden flexibele pakketten op basis van uw IT-ondersteuningsbehoeften. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
       "plan_1": {
         "title": "Starter Plan",
@@ -4092,7 +4092,7 @@
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
     },
     "cta": {
-      "heading": "Klaar om uw IT-support Specialist in te huren?",
+      "heading": "Klaar om uw IT Support Specialist in te huren?",
       "description": "Laat ons u helpen de perfecte IT-support specialist op afstand te vinden voor uw technologie en infrastructuur. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
       "footer_checkmarks": [
@@ -5598,6 +5598,100 @@
     "cta": {
       "heading": "Klaar om uw Administratief Boekhoudkundig Assistent in te huren?",
       "description": "Laat ons u helpen de perfecte assistent te vinden voor uw financiële administratie en boekhouding. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
+      "button": "Boek een Gratis Consultatie",
+      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+    }
+  },
+  "hire_webdesigner_developer": {
+    "metadata": {
+      "meta_title": "Huur een Toegewijde Webdesigner & Developer in Nederland | Webdesign Diensten",
+      "meta_description": "Huur een toegewijde webdesigner en developer in Nederland voor websites op maat, landingspagina's, UI/UX design en webontwikkeling. Flexibele plannen, snelle start.",
+      "url_slug": "nl/staffing-support/webdesigner-developer-inhuren"
+    },
+    "hero": {
+      "heading": "Huur een Toegewijde Webdesigner & Developer in Nederland",
+      "text": "Uw website is uw belangrijkste verkooptool. Krijg een toegewijde webdesigner en developer die snelle, mooie, op conversie gerichte websites bouwt zonder bureauvertragingen of kosten.",
+      "button_primary": "Boek een Gratis Consultatie",
+      "button_secondary": "Bekijk de Tarieven",
+      "save_badge": "Bespaar tot 60%",
+      "stats": {
+        "stat_1": "500+ Toegewijde Professionals",
+        "stat_2": "24u Starttijd",
+        "stat_3": "60% Kostenbesparing"
+      }
+    },
+    "consultation_form": {
+      "title": "Aan de slag",
+      "desc": "Vul het formulier in om personeel in te huren",
+      "name": "Volledige naam",
+      "company_email": "Bedrijfs e-mailadres",
+      "phone_no": "Telefoonnummer",
+      "no_of_hours": "Hoeveel uur per week heeft u nodig?",
+      "service": "Dienst",
+      "form_btn": "Boek een Gratis Consultatie",
+      "privacy_text": "Door het formulier in te dienen, stemt u ermee in dat wij contact met u opnemen over onze diensten volgens ons Privacybeleid & Voorwaarden."
+    },
+    "features_ribbon": {
+      "text": "Vertrouwd door 500+ bedrijven die sneller willen schalen in heel Nederland",
+      "rating": "5.0"
+    },
+    "features": {
+      "heading": "Huur een Webdesigner & Developer in Nederland, Vertrouwd door Bedrijven die Sneller Willen Schalen",
+      "item_1": "Toegewijde Webdesigners & Developers",
+      "item_2": "Start binnen dagen, niet maanden",
+      "item_3": "Bespaar tot 60% op wervingskosten",
+      "item_4": "Volledig beheerde ondersteuning",
+      "item_5": "Flexibele maandelijkse plannen"
+    },
+    "services": {
+      "heading": "Waar Uw Webdesigner & Developer bij Kan Helpen",
+      "description": "Onze toegewijde webprofessionals zijn getraind om uw ontwerp- en ontwikkelingsbehoeften aan te pakken voor een krachtige online aanwezigheid.",
+      "category_1": "Webdesign",
+      "cat_1_items": ["Website ontwerp op maat", "Landingspagina ontwerp", "UI/UX design en wireframing", "Mobiel-responsief ontwerp", "Merkconsistent visueel ontwerp"],
+      "category_2": "Webontwikkeling",
+      "cat_2_items": ["WordPress ontwikkeling", "Maatwerk HTML/CSS/JS ontwikkeling", "CMS setup en aanpassing", "Website snelheidsoptimalisatie", "Cross-browser compatibiliteit"],
+      "category_3": "E-commerce Oplossingen",
+      "cat_3_items": ["Shopify winkel ontwerp", "WooCommerce ontwikkeling", "Productpagina ontwerp", "Checkout flow optimalisatie", "Betalingsgateway integratie"],
+      "category_4": "Landingspagina's",
+      "cat_4_items": ["Hoog-converterende landingspagina's", "A/B test-klare pagina-opbouw", "Lead capture pagina ontwerp", "Verkooppagina ontwikkeling", "CTA en formulier optimalisatie"],
+      "category_5": "Onderhoud & Support",
+      "cat_5_items": ["Regelmatige updates en back-ups", "Plugin en thema beheer", "Beveiligingsmonitoring", "Bugfixing en probleemoplossing", "Prestatie-optimalisatie"],
+      "category_6": "Redesign & UX Audit",
+      "cat_6_items": ["Volledig website herontwerp", "User experience audits", "Conversie-optimalisatie ontwerp", "Toegankelijkheidsverbeteringen", "Creatie van prototypes en mockups"],
+      "button_middle": "Vertel Ons Wat U Nodig Heeft →"
+    },
+    "pricing_section": {
+      "heading": "Betaalbare Webdesigner & Developer",
+      "description": "Wij bieden flexibele pakketten op basis van uw projectcomplexiteit. Alle plannen zijn inclusief volledig beheer en ondersteuning.",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Essentiële ondersteuning voor landingspagina's en website updates.",
+        "price": "€49,95",
+        "unit": "per uur",
+        "features": ["Website updates en onderhoud", "Landingspagina ontwerp", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "button": "Aan de slag"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor maatwerk websites en e-commerce.",
+        "price": "€59,95",
+        "unit": "per uur",
+        "features": ["Alle Starter-functies", "Maatwerk website ontwerp en bouw", "E-commerce ontwikkeling", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "button": "Aan de slag"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Volledig UI/UX redesign en enterprise websitebeheer.",
+        "price": "€69,95",
+        "unit": "per uur",
+        "features": ["Alle Growth-functies", "UI/UX en herontwerpprojecten", "Beheer van meerdere sites", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "button": "Neem contact op"
+      },
+      "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
+    },
+    "cta": {
+      "heading": "Klaar om uw Webdesigner & Developer in te huren?",
+      "description": "Laat ons u helpen de perfecte webdesigner en developer te vinden voor uw bedrijfswebsite en digitale aanwezigheid. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
       "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
     }

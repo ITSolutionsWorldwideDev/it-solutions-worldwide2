@@ -170,6 +170,12 @@ export const menuItems: MenuItem[] = [
             label: "Ecommerce Assistant",
             link: "/staffing-support/hire-ecommerce-assistant",
           },
+
+          {
+            label: "Electrical Engineer",
+            link: "/staffing-support/hire-electrical-engineer",
+          },
+
         ],
       },
 
@@ -180,6 +186,11 @@ export const menuItems: MenuItem[] = [
           {
             label: "Administrative Support",
             link: "/staffing-support/hire-admin-accounting-assistant",
+          },
+          
+          {
+            label: "HR Assistant Remote",
+            link: "/staffing-support/hire-hr-assistant-remote",
           },
           {
             label: "Customer Support",
@@ -193,20 +204,20 @@ export const menuItems: MenuItem[] = [
         ],
       },
 
-      // {
-      //   label: "Design Services",
+      {
+        label: "Design Services",
 
-      //   dropdown: [
-      //     {
-      //       label: "Web Designer",
-      //       link: "/staffing-support/hire-webdesigner-developer",
-      //     },
-      //     {
-      //       label: "Graphic Designer",
-      //       link: "/staffing-support/hire-graphic-designer",
-      //     },
-      //   ],
-      // },
+        dropdown: [
+          {
+            label: "Web Designer",
+            link: "/staffing-support/hire-webdesigner-developer",
+          },
+          {
+            label: "Graphic Designer",
+            link: "/staffing-support/hire-graphic-designer",
+          },
+        ],
+      },
 
       {
         label: "IT & Development",
@@ -223,6 +234,11 @@ export const menuItems: MenuItem[] = [
           {
             label: "App Developer",
             link: "/staffing-support/hire-app-developer",
+          },
+
+          {
+            label: "It Support Specialist",
+            link: "/staffing-support/hire-it-support-specialist",
           },
 
           {
@@ -250,7 +266,17 @@ export const menuItems: MenuItem[] = [
           },
 
           {
-            label: "Data Analyst / BI Specialist",
+            label: "Google Analytics Specialist",
+            link: "/staffing-support/hire-google-analytics-specialist",
+          },
+
+          {
+            label: "Power BI Specialist",
+            link: "/staffing-support/hire-power-bi-tableau-specialist",
+          },
+
+          {
+            label: "Data Analyst",//  / BI Specialist
             link: "/staffing-support/hire-data-analyst",
           },
         ],
