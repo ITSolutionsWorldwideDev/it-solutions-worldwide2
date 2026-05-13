@@ -23,7 +23,7 @@ export default async function HiringHeader({ slug, locale }: Props) {
   // const data = contentMap[slug as keyof typeof contentMap];
 
   const data = serviceData({ slug: slug as string });
-// console.log(data)
+console.log(data)
   if (!data) {
     return notFound();
   }
@@ -31,15 +31,16 @@ export default async function HiringHeader({ slug, locale }: Props) {
   const { service } = data;
 
   const i18n = await initServerI18n(locale);
+  console.log(i18n.language)
   const t = i18n.getFixedT(locale, "common");
-// console.log(t)
+console.log(t)
   const translationKey = slug.replace(/-/g, "_");
 console.log(translationKey)
   const pageContent = t(translationKey, {
     returnObjects: true,
   }) as any;
 
-  // console.log(pageContent.hero?.stats?.stat_2)
+  console.log(pageContent)  
   // contentMap[slug as keyof typeof contentMap] ||
   // contentMap["hire-virtual-assistant"];
 
