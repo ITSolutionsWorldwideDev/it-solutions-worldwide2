@@ -1862,7 +1862,7 @@
       "button_secondary": "Bekijk de Tarieven",
       "stats": {
         "stat_1": "500+ Toegewijde VA's",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -1942,7 +1942,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële administratieve en operationele taken.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -1955,7 +1955,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse bedrijfsactiviteiten.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -1970,7 +1970,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Toegewijde Virtuele Assistent voor resultaatgerichte teams",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2078,7 +2078,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële ontwikkelingstaken.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -2092,7 +2092,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige productontwikkeling.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2107,7 +2107,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig ontwikkelingsteam voor complexe en grootschalige producten.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2202,7 +2202,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële data engineering taken.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur", 
         "features": [
           "Minimaal 3 uur",
@@ -2216,7 +2216,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige data-infrastructuur ontwikkeling.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2231,7 +2231,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig data engineering team voor enterprise dataplatformen.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2348,7 +2348,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële e-commerce taken.",
-        "price": "€56.95",
+        "price": "€56,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -2362,7 +2362,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige e-commerce activiteiten.",
-        "price": "€48.95",
+        "price": "€48,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2377,7 +2377,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig e-commerce team voor hoog volume en multi-channel winkels.",
-        "price": "€39.95",
+        "price": "€39,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2468,7 +2468,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële elektrotechnische taken.",
-        "price": "€49.95",
+        "price": "€49,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -2482,7 +2482,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige elektrotechnische projecten.",
-        "price": "€59.95",
+        "price": "€59,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2497,7 +2497,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig engineeringteam voor grootschalige en complexe projecten.",
-        "price": "€69.95",
+        "price": "€69,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2573,27 +2573,60 @@
         ]
       }
     },
-    "pricing": {
-      "plan_1": [
+    "pricing_section": {
+      "heading": "Affordable AI Engineer",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Parttime ondersteuning voor essentiële AI-ontwikkelingstaken.",
+        "price": "€25,95",
+        "unit": "per hour",
+        "features": [
         "AI-integratie en automatisering",
         "LLM- en API-ontwikkeling",
         "Wekelijkse rapportages",
         "E-mail ondersteuning"
       ],
-      "plan_2": [
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor volledige AI-productontwikkeling.",
+        "price": "€22,95",
+        "unit": "per hour",
+        "features": [
         "Alle Starter-functies",
         "Machine learning modelontwikkeling",
         "AI-automatisering en NLP-bouw",
         "Prioritaire ondersteuning",
         "Toegewijde accountmanager"
       ],
-      "plan_3": [
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Volledig AI-team voor intelligente producten en AI-systemen voor bedrijven.",
+        "price": "€19,95",
+        "unit": "per hour",
+        "features": [
         "Alle Growth-functies",
         "Computervisie en geavanceerde ML",
         "Volledige AI-implementatie en infrastructuur",
         "Aangepaste workflows",
         "Toegewijde accountmanager",
         "SLA-garantie"
+      ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to Hire an AI Engineer in Netherlands?",
+      "description": "Build smarter products, automate costly processes, and stay ahead — with dedicated AI engineers from IT Solutions Worldwide.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
       ]
     }
   },
@@ -2611,7 +2644,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -2698,7 +2731,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële sociale taken.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -2712,7 +2745,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2727,7 +2760,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Meerdere platformen of gespecialiseerde ondersteuning.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2767,7 +2800,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -2854,7 +2887,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ontwerpsteun voor sociale media en basisassets.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -2868,7 +2901,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ontwerpondersteuning voor marketing en branding.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2883,7 +2916,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige creatieve productie inclusief motion en verpakking.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2923,7 +2956,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3010,7 +3043,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële marketingtaken.",
-        "price": "€56.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3024,7 +3057,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige digitale marketingactiviteiten.",
-        "price": "€48.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3039,7 +3072,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige ondersteuning door marketingteam en multi-channel uitvoering.",
-        "price": "€39.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -3079,7 +3112,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3165,7 +3198,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële supporttaken.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3179,7 +3212,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3194,7 +3227,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig klantbeheer en multi-channel ondersteuning.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -3234,7 +3267,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3321,7 +3354,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële datataken.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3335,7 +3368,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3350,7 +3383,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig databeheer en hoog-volume verwerking.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -3390,7 +3423,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3477,7 +3510,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor UI-fixes en kleine updates.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3491,8 +3524,8 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige applicatieontwikkeling.",
-        "price": "€35.95",
-        "unit": "per hour",
+        "price": "€18,95",
+        "unit": "per uur",
         "features": [
           "20 uur per week",
           "Alle Starter-functies",
@@ -3506,7 +3539,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Ontwikkeling op enterprise-niveau en prestatie-architectuur.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -3547,7 +3580,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3634,7 +3667,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor API-ontwikkeling en serveronderhoud.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3648,7 +3681,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor Laravel of Node.js backend projecten.",
-        "price": "48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3663,7 +3696,7 @@
       "plan_3": {
         "title": "Scale Plan ",
         "desc": "Volledige backend-architectuur en microservices voor grootschalige systemen. ",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur ",
         "features": [
           "40 uur per week",
@@ -3703,7 +3736,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3790,7 +3823,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor app-onderhoud en kleine updates.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3804,7 +3837,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige iOS- of Android-apps.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3819,7 +3852,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige app-ontwikkeling inclusief backend en storebeheer.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -3859,7 +3892,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3946,7 +3979,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Handmatig testen en bugrapportage voor essentiële releases.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3960,7 +3993,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde QA-ondersteuning inclusief automatisering en API-testen.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3975,7 +4008,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig beheer van QA-pipelines en performancetesten.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4015,7 +4048,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4102,7 +4135,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime helpdesk support voor essentiële technische problemen.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4116,7 +4149,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor netwerk-, cloud- en serverbeheer.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4131,7 +4164,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig infrastructuurbeheer en cybersecurity ondersteuning.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4172,7 +4205,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4258,7 +4291,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële data-analyse en rapportage.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4272,7 +4305,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor business intelligence en SQL-rapportage.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4287,7 +4320,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Geavanceerde analytics, statistische modellering en multi-source integratie.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4327,7 +4360,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4413,7 +4446,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ondersteuning voor dashboardontwerp en datamodellering.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4427,7 +4460,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige BI-builds en automatisering.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4442,7 +4475,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise BI-strategie en complexe multi-source integratie.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4482,7 +4515,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4568,7 +4601,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ondersteuning voor blogs en social media captions.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4582,7 +4615,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor SEO-content en e-mailmarketing.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4597,7 +4630,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige contentstrategie voor meerdere kanalen en merkcopywriting.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4637,7 +4670,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4723,7 +4756,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële tracking-setup en basis conversie-bewaking.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4737,7 +4770,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor GTM en custom dashboard rapportage.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4752,7 +4785,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige analytics audit, geavanceerde inzichten en CRO-strategie.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4792,7 +4825,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4878,7 +4911,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële spreadsheet fixes en formule-ontwikkeling.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4892,7 +4925,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor VBA-macro's en dashboards.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4907,7 +4940,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise modellering, Power Query en volledige automatisering.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4948,7 +4981,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5034,7 +5067,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële reisplanning en e-mailadvies ondersteuning.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -5048,7 +5081,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor boekingsbeheer en gedetailleerd onderzoek.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -5063,7 +5096,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig beheer van de klantcyclus en marketingondersteuning.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -5103,7 +5136,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5189,7 +5222,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële boekingsverwerking en kalenderbeheer.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -5203,7 +5236,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor systemen, wijzigingen en terugbetalingen.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -5218,7 +5251,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig multi-channel beheer en uitgebreide rapportage.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -5258,7 +5291,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5308,7 +5341,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële aanvragen en boekingsassistentie.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur","Afhandeling van e-mail en chat aanvragen", "Basis boekingsondersteuning", "Wekelijkse rapportages", "E-mail ondersteuning"],
@@ -5317,7 +5350,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige klantenservice en klachtenbeheer.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week","Alle Starter-functies", "Klachten- en verstoringsbeheer", "Multi-channel communicatieondersteuning", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
@@ -5326,7 +5359,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige customer success lifecycle en gedetailleerd CRM-beheer.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week","Alle Growth-functies", "Aftersales- en retentiebeheer", "Volledige CRM- en rapportage-ondersteuning", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
@@ -5355,7 +5388,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5405,7 +5438,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële reiscontent en sociale media taken.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur","Reiscontent en social media", "Ondersteuning bij e-mailmarketing", "Wekelijkse rapportages", "E-mail ondersteuning"],
@@ -5414,7 +5447,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige digitale reismarketing activiteiten.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week","Alle Starter-functies", "SEO en betaalde digitale marketing", "Campagnebeheer en rapportage", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
@@ -5423,7 +5456,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige ondersteuning door marketingteam en geavanceerde strategie-coördinatie.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week","Alle Growth-functies", "Multi-channel campagne-uitvoering", "Volledige analytics en prestatiestrategie", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
@@ -5452,7 +5485,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5538,7 +5571,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële HR-admin en werving.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -5552,7 +5585,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledig levenscyclusbeheer.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -5567,7 +5600,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Uitgebreide HR-support inclusief betrokkenheid en rapportage.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -5607,7 +5640,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5657,7 +5690,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor facturatie en financiële administratie.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur","Facturatie en debiteurenbeheer", "Financiële dossierregistratie", "Wekelijkse rapportages", "E-mail ondersteuning"],
@@ -5666,7 +5699,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor boekhouding en softwarebeheer.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week","Alle Starter-functies", "Crediteuren- en boekhoudondersteuning", "Beheer van boekhoudsoftware", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
@@ -5675,7 +5708,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige financiële rapportage en ondersteuning bij audits.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week","Alle Growth-functies", "Volledige financiële rapportage", "Ondersteuning bij auditvoorbereiding", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
@@ -5704,7 +5737,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5754,7 +5787,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ondersteuning voor landingspagina's en website updates.",
-        "price": "€49,95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur","Website updates en onderhoud", "Landingspagina ontwerp", "Wekelijkse rapportages", "E-mail ondersteuning"],
@@ -5763,7 +5796,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor maatwerk websites en e-commerce.",
-        "price": "€59,95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week","Alle Starter-functies", "Maatwerk website ontwerp en bouw", "E-commerce ontwikkeling", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
@@ -5772,7 +5805,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig UI/UX redesign en enterprise websitebeheer.",
-        "price": "€69,95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week","Alle Growth-functies", "UI/UX en herontwerpprojecten", "Beheer van meerdere sites", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
