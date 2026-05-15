@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-white py-12 sm:pt-16  text-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" container mx-auto ">{/* max-w-7xl px-4 sm:px-6 lg:px-8*/}
         {/* Top section: 4 columns on md+ screens */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-12">
           {/* Column 1: Logo + Company Info + Social Icons */}

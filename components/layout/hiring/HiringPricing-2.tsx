@@ -36,7 +36,7 @@ export default function HiringPricing2({ pricing, service }: any) {
       </div>
       {/* locale === {locale} */}
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 container mx-auto">
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
