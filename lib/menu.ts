@@ -119,6 +119,7 @@ export const menuItems: MenuItem[] = [
 
   {
     label: "Outsourcing",
+    link: "/outsourcing",
     dropdown: [
       // {
       //   label: "Staffing Services",
@@ -145,6 +146,7 @@ export const menuItems: MenuItem[] = [
       // },
       {
         label: "Hire Roles",
+        link: "/outsourcing/hire-roles",
 
         dropdown: [
           {
@@ -175,19 +177,19 @@ export const menuItems: MenuItem[] = [
             label: "Electrical Engineer",
             link: "/staffing-support/hire-electrical-engineer",
           },
-
         ],
       },
 
       {
         label: "Business Support",
+        link: "/outsourcing/business-support",
 
         dropdown: [
           {
             label: "Administrative Support",
             link: "/staffing-support/hire-admin-accounting-assistant",
           },
-          
+
           {
             label: "HR Assistant Remote",
             link: "/staffing-support/hire-hr-assistant-remote",
@@ -206,6 +208,7 @@ export const menuItems: MenuItem[] = [
 
       {
         label: "Design Services",
+        link: "/outsourcing/design-services",
 
         dropdown: [
           {
@@ -221,6 +224,7 @@ export const menuItems: MenuItem[] = [
 
       {
         label: "IT & Development",
+        link: "/outsourcing/it-development",
         dropdown: [
           {
             label: "Front-end Developer",
@@ -250,6 +254,7 @@ export const menuItems: MenuItem[] = [
 
       {
         label: "Marketing & Analytics",
+        link: "/outsourcing/marketing-analytics",
         dropdown: [
           {
             label: "Social Media Manager",
@@ -276,7 +281,7 @@ export const menuItems: MenuItem[] = [
           },
 
           {
-            label: "Data Analyst",//  / BI Specialist
+            label: "Data Analyst", //  / BI Specialist
             link: "/staffing-support/hire-data-analyst",
           },
         ],
