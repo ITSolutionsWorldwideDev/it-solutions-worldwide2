@@ -10,6 +10,7 @@ interface FullContentSectionProps {
   imageUrl?: string;
   heading: string;
   text: React.ReactNode;
+  instruction?:string
   ctabuttonText?: string;
   buttonText?: string;
   bgButton?: string;
@@ -21,12 +22,13 @@ interface FullContentSectionProps {
   textColor?: string;
   logoUrl?: string;
   borderWidth?: string;
-  borderColor?: string;
+  borderColor?: string; 
   bgColor?: string;
 }
 
 const FullContentSection = ({
   imageUrl,
+  instruction,
   heading,
   text,
   ctabuttonText,
@@ -61,6 +63,11 @@ const FullContentSection = ({
       <span className="text-lg lg:text-lg" style={{ color: textColor }}>
         {text}
       </span>
+      {instruction && (
+        <span className="text-lg lg:text-lg" style={{ color: textColor }}>
+        {instruction}
+      </span>
+      )}
 
       {buttonText && (
         <div className="mt-10">
@@ -82,7 +89,7 @@ const FullContentSection = ({
                 background: `linear-gradient(to right, ${leftColor}, ${rightColor})`
              }}
             >
-              {buttonText}
+              {buttonText}jhgjh
             </Link>
           )}
         </div>

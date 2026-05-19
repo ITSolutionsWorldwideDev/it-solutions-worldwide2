@@ -35,6 +35,8 @@ const Section2: FC<Section2Props> = ({
   cards,
   columns = 3,
 }) => {
+  
+console.log(cards)
   const gridColsClass =
     {
       1: "lg:grid-cols-1",

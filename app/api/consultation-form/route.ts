@@ -16,11 +16,11 @@ export async function POST(req: NextRequest) {
     }
 
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
+      host: process.env.SMTP_HOST_2,
       port: Number(process.env.SMTP_PORT),
-      secure: Number(process.env.SMTP_PORT) === 465,
+      secure: Number(process.env.SMTP_PORT) === 465,  
       auth: {
-        user: process.env.SMTP_USER,
+        user: process.env.SMTP_USER_2,
         pass: process.env.SMTP_PASS,
       },
 
@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
     // await transporter.verify();
 
     await transporter.sendMail({
-      from: `"IT Solutions Worldwide Contact" <${process.env.SMTP_USER}>`,
+      from: `"IT Solutions Worldwide Contact" <${process.env.SMTP_USER_2}>`,
       to: process.env.MK_EMAIL,
       cc: process.env.CC_EMAIL,
       subject: `New Contact Message: ${service || "Unknown User"}`,

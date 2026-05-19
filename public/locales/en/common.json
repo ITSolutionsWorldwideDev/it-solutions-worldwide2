@@ -2018,13 +2018,13 @@
     "why_choose": {
       "title": "Why Companies Choose IT Solutions Worldwide for Remote Hiring",
       "intro": "Growing businesses across the Netherlands and beyond trust us to find the right talent quickly, reliably, and affordably. Whether you need a technical specialist or a versatile business support professional, we have the network and the process to deliver.",
-      "benefits": [
+      "benefits": [ 
         "Save Up to 60% Compared to Local Hiring",
         "Pre-Vetted, Ready-to-Work Professionals",
         "Fast Onboarding — Start Within Days, Not Months",
         "Flexible Engagements — Scale Up or Down",
         "One Dedicated Contact — From Start to Finish"
-      ],
+      ],  
       "cta_call": "Book Your Free Call Today"
     },
     "roles_section": {
@@ -2347,7 +2347,7 @@
       "description": "IT Solutions Worldwide gives you fast access to pre-vetted, remote IT professionals who are ready to contribute from day one.",
       "instruction": "Browse the roles above or reach out today and tell us what you are building."
     }
-  },
+  },  
 
   "hire_virtual_assistant": {
     "metadata": {
