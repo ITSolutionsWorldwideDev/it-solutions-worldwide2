@@ -1829,6 +1829,525 @@
     "homeButton": "Back Home",
     "message": "Page is Unavailable"
   },
+  "outsourcing": {
+    "hero": {
+      "title": "Outsourcing Services Remote Staff for Every Role, One Trusted Partner",
+      "description": "Finding the right people for your business should not be complicated, expensive, or time consuming. IT Solutions Worldwide makes remote outsourcing straightforward giving you access to pre-vetted professionals across a full range of disciplines.",
+      "sub_description": "Whether you are a Dutch company looking to reduce overhead, or an international business hiring in the Netherlands we have the expertise to get the right person into your team, fast.",
+      "cta_button": "→ Browse Our Outsourcing Categories Below ←"
+    },
+    "intro_section": {
+      "title": "One Partner. Every Role. Fully Remote.",
+      "text": "We know that every business is different — and so are its staffing needs. That is why IT Solutions Worldwide covers five core outsourcing categories, each with a carefully curated pool of pre-vetted professionals ready to hit the ground running.",
+      "instruction": "Explore our outsourcing categories below, click through to learn more about the specific roles available, and reach out whenever you are ready to get started.",
+      "cta_call": "Book Your Free Call Today"
+    },
+    "categories": {
+      "hire_roles": {
+        "title": "Hire Roles",
+        "tags": ["Virtual Assistant", "Data Engineer", "Full Stack Developer", "AI/ML Engineer", "Ecommerce Assistant", "Electrical Engineer"],
+        "description": "Looking for specialist talent across a broad range of technical and business functions? Our Hire Roles category covers the professionals that modern, growing businesses need most.",
+        "summary": "Whether you need one specialist or a cross-functional remote team, this is where you will find the talent to match your ambition."
+      },
+      "business_support": {
+        "title": "Business Support",
+        "tags": ["Administrative Support", "HR Administrative (Remote)", "Customer Support", "Data Entry"],
+        "description": "Every growing business needs a strong operational foundation. Our Business Support category connects you with reliable, experienced professionals who handle the day-to-day tasks that keep your business running.",
+        "summary": "Free up your core team to focus on growth — and let our pre-vetted Business Support professionals handle the rest."
+      },
+      "design_services": {
+        "title": "Design Services",
+        "tags": ["Web Designer", "Graphics Designer"],
+        "description": "Great design is what separates businesses that get noticed from those that get overlooked. Access skilled remote Web and Graphics Designers who understand brand, conversion, and consistency.",
+        "summary": "Professional creative talent, dedicated to your brand — without the cost of a local agency or in-house hire."
+      },
+      "it_development": {
+        "title": "IT & Development",
+        "tags": ["Front-End Developer", "Back-End Developer", "App Developer", "IT Support Specialist", "Software Tester / QA"],
+        "description": "Technology is at the heart of every modern business. Our IT & Development category covers the full stack of technical roles: from building digital products to maintaining systems and ensuring quality.",
+        "summary": "Pre-vetted technical professionals, onboarded fast, and dedicated to your projects from day one."
+      },
+      "marketing_analytics": {
+        "title": "Marketing & Analytics",
+        "tags": ["Social Media Manager", "Content Creator", "Online Marketer", "Google Analytics Specialist", "Power BI Specialist", "Data Analyst"],
+        "description": "Growth is driven by smart marketing and sharper data. We connect you with professionals who know how to build audiences, generate leads, and turn data into decisions.",
+        "summary": "The marketing and analytics talent your business needs to grow with confidence — at a fraction of the local cost."
+      }
+    },
+    "why_us": {
+      "title": "Why Choose IT Solutions Worldwide for Remote Outsourcing?",
+      "intro": "We are not a freelance marketplace, a job board, or a traditional recruitment agency. We are an outsourcing partner.",
+      "features": [
+        {
+          "label": "Pre-Vetted Across Every Category",
+          "content": "Every professional in our network has been thoroughly screened for skills, communication, reliability, and work ethic."
+        },
+        {
+          "label": "Save Up to 60% Compared to Local Hiring",
+          "content": "Our model delivers significant cost savings compared to local hiring in the Netherlands — without any reduction in quality."
+        },
+        {
+          "label": "Fast to Start — Across All Roles",
+          "content": "Most clients receive a shortlist of qualified candidates within 3-5 business days."
+        },
+        {
+          "label": "One Partner for All Your Outsourcing Needs",
+          "content": "Instead of managing multiple agencies, IT Solutions Worldwide gives you one trusted partner for every category and team."
+        }
+      ]
+    },
+    "faq": {
+      "questions": [
+        {
+          "q": "Can I hire professionals from multiple categories at the same time?",
+          "a": "Absolutely. Many of our clients build cross-functional remote teams — combining developers, QA testers, marketers, and admin support simultaneously."
+        },
+        {
+          "q": "How do I know which category is right for my business?",
+          "a": "If you are not sure, just reach out. We identify exactly which roles and categories will have the biggest impact on your goals."
+        },
+        {
+          "q": "What does the outsourcing process look like from start to finish?",
+          "a": "It starts with a conversation. We screen candidates, present a shortlist within 3-5 days, support interviews, and manage onboarding."
+        },
+        {
+          "q": "Is there a minimum commitment or contract length?",
+          "a": "We offer flexible models including part-time, full-time, and project-based. Commitment terms vary by role."
+        },
+        {
+          "q": "How is IT Solutions Worldwide different from a freelance platform?",
+          "a": "On a freelance platform, you are on your own. With us, you get a partner who pre-vets talent, manages the match, and ensures long-term performance."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Ready to Build Your Remote Team?",
+      "description": "No matter what your business needs — technical, creative, operations, or data — we have the talent to help you hire smarter and faster.",
+      "instruction": "Browse the categories above, explore roles, or reach out today. We will take it from there."
+    }
+  },
+
+  "outsource-business-support": {
+    "hero": {
+      "title": "Operational and Business Support Services in Netherlands",
+      "description": "Whether you're scaling operations, improving efficiency, or looking for dependable business support services in the Netherlands, IT Solutions Worldwide helps businesses streamline daily operations with professional remote support solutions tailored to their needs.",
+      "sub_description": "From administrative assistance to customer support and back-office operations, we provide flexible business support services that help organizations stay productive, organized, and focused on growth. No complicated processes. No operational bottlenecks. Just reliable support designed around your business.",
+      "cta_button": "→ Let's Build Your Team Today ←"
+    },
+    "features": {
+      "title": "Why Companies Choose IT Solutions Worldwide",
+      "description": "Business support services are about improving efficiency, reducing operational pressure, and helping businesses focus on what matters most. Companies across the Netherlands and beyond trust IT Solutions Worldwide because we make business operations smoother, faster, and more manageable.",
+      "list": [
+        "Save Up to 60% Compared to Traditional In-House Operations",
+        "Reliable Remote Business Support Solutions",
+        "Fast Service Setup and Onboarding",
+        "Flexible Support Models for Growing Businesses",
+        "Dedicated Assistance Every Step of the Way"
+      ],
+      "cta_call": "Book Your Free Call Today"
+    },
+    "services": {
+      "title": "Explore Our Business Support services",
+      "intro": "We provide professional remote business support solutions across a range of operational functions. Explore our services below to learn how we can support your business.",
+      "items": {
+        "admin": {
+          "title": "Administrative Support",
+          "text": "Keep your business organized and running efficiently with professional administrative support services. Our remote support team assists with scheduling, correspondence, document management, reporting, data organization, and daily operational coordination.",
+          "ideal_for": "Small to mid-sized businesses, startups, and entrepreneurs looking to improve operational efficiency and reduce administrative workload."
+        },
+        "hr": {
+          "title": "HR Administrative (Remote)",
+          "text": "Simplify your HR operations with reliable HR administrative support services. We assist businesses with onboarding documentation, employee record management, interview coordination, HR system organization, and internal process support.",
+          "ideal_for": "Companies seeking structured HR support without the overhead of building a large internal HR department."
+        },
+        "customer_support": {
+          "title": "Customer Support",
+          "text": "Deliver a better customer experience with responsive remote customer support solutions. Our support specialists assist businesses with customer inquiries, issue resolution, live chat support, email management, and multi-channel communication services.",
+          "ideal_for": "E-commerce businesses, SaaS companies, and service providers looking to maintain professional and responsive customer communication."
+        },
+        "data_entry": {
+          "title": "Data Entry",
+          "text": "Improve accuracy and productivity with dependable data entry support services. Our remote professionals assist with database management, spreadsheet organization, form processing, record updates, and high-volume data handling tasks.",
+          "ideal_for": "Businesses managing large amounts of information, repetitive processes, or operational backlogs"
+        }
+      }
+    },
+    "philosophy": {
+      "title": "Why Businesses Keep Coming Back to Us",
+      "text": "IT Solutions Worldwide supports businesses of all sizes — from growing startups to established enterprises, with efficient and cost-effective business support services. We focus on delivering dependable operational assistance, transparent communication, and flexible support solutions tailored to each client’s needs.",
+      "summary": "We work with both Dutch and international businesses, maintain transparent pricing with no hidden costs, and provide every client with a dedicated point of contact from start to finish. Simple, professional, and built around your business success."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "q": "What types of business support services do you provide?",
+          "a": "We provide a range of remote business support services including Administrative Support, HR Administrative Support, Customer Support, Data Entry Services, and more. If you require a specific operational service, feel free to contact us."
+        },
+        {
+          "q": "How quickly can services be started?",
+          "a": "Our onboarding process is designed to be efficient and straightforward. In most cases, support services can be arranged within a few business days depending on your requirements."
+        },
+        {
+          "q": "What are the costs of your business support services?",
+          "a": "Costs vary depending on the service type, scope of work, and level of support required. We provide transparent pricing with flexible solutions tailored to your business needs."
+        },
+        {
+          "q": "Are your services suitable for small businesses?",
+          "a": "Absolutely. Small and medium-sized businesses benefit greatly from outsourced business support because it allows them to access professional operational assistance without the overhead costs of expanding internal teams."
+        },
+        {
+          "q": "How do you ensure service quality and reliability?",
+          "a": "We maintain strict quality standards through structured processes, experienced professionals, regular communication, and ongoing performance monitoring to ensure reliable and consistent support."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Ready to Improve Your Business Operations?",
+      "text": "Stop getting slowed down by operational tasks and focus on growing your business. IT Solutions Worldwide provides flexible, reliable, and cost-effective business support services designed to help your organization operate more efficiently."
+    }
+  },
+
+  "outsource-hire-roles": {
+    "hero": {
+      "title": "Hire Remote Tech & Business Talent in the Netherlands — All Roles, One Partner",
+      "description": "Whether you need a sharp Virtual Assistant to keep things running, a Data Engineer to make sense of your numbers, or an AI/ML Engineer to future-proof your business — IT Solutions Worldwide gives you access to pre-vetted, ready-to-work remote professionals across both tech and non-tech roles.",
+      "sub_description": "One outsourcing partner. A full range of talent. No recruitment headaches.",
+      "cta_button": "→ Find Your Perfect Remote Hire — Browse Roles Below ←"
+    },
+    "why_choose": {
+      "title": "Why Companies Choose IT Solutions Worldwide for Remote Hiring",
+      "intro": "Growing businesses across the Netherlands and beyond trust us to find the right talent quickly, reliably, and affordably. Whether you need a technical specialist or a versatile business support professional, we have the network and the process to deliver.",
+      "benefits": [
+        "Save Up to 60% Compared to Local Hiring",
+        "Pre-Vetted, Ready-to-Work Professionals",
+        "Fast Onboarding — Start Within Days, Not Months",
+        "Flexible Engagements — Scale Up or Down",
+        "One Dedicated Contact — From Start to Finish"
+      ],
+      "cta_call": "Book Your Free Call Today"
+    },
+    "roles_section": {
+      "title": "Explore Our Hire Roles",
+      "intro": "From technical experts to versatile business support professionals, we place skilled remote talent across a wide range of roles. Click any role below to learn more and get started.",
+      "roles": {
+        "virtual_assistant": {
+          "title": "Virtual Assistant",
+          "description": "Our remote VAs handle scheduling, inbox management, research, data entry, travel coordination, and day-to-day admin tasks — freeing you up to focus on the bigger picture.",
+          "ideal_for": "Entrepreneurs, executives, and small business owners who need reliable, versatile support without the cost of a full-time in-house hire."
+        },
+        "data_engineer": {
+          "title": "Data Engineer",
+          "description": "Our remote Data Engineers design, build, and maintain the data pipelines, warehouses, and infrastructure your business needs to make smarter, faster decisions.",
+          "ideal_for": "Scale-ups, tech companies, and data-driven businesses looking to build or strengthen their data infrastructure without the cost of a senior local hire."
+        },
+        "full_stack_developer": {
+          "title": "Full Stack Developer",
+          "description": "Our remote Full Stack Developers are experienced across both front-end and back-end technologies — from React and Vue to Node.js, Python, and beyond.",
+          "ideal_for": "Startups, SaaS companies, and digital businesses that need skilled development talent without the lengthy hiring process or premium local salaries."
+        },
+        "ai_ml_engineer": {
+          "title": "AI / ML Engineer",
+          "description": "Our specialists help businesses design, develop, and deploy machine learning models, AI-powered features, and intelligent automation systems.",
+          "ideal_for": "Forward-thinking companies looking to integrate AI into their products or processes without building an expensive in-house AI team from scratch."
+        },
+        "ecommerce_assistant": {
+          "title": "Ecommerce Assistant",
+          "description": "Our specialists handle product listings, inventory updates, order processing, customer queries, returns management, and marketplace management.",
+          "ideal_for": "Online retailers and ecommerce brands that need reliable day-to-day operational support to grow without the overhead of expanding their local team."
+        },
+        "electrical_engineer": {
+          "title": "Electrical Engineer",
+          "description": "Our remote Electrical Engineers support design, documentation, CAD work, technical specifications, compliance reporting, and project coordination.",
+          "ideal_for": "Engineering firms, manufacturers, and construction companies that need qualified electrical engineering support for ongoing projects or specialized tasks."
+        }
+      }
+    },
+    "reputation": {
+      "title": "Why Businesses Keep Coming Back to Us",
+      "text": "From fast-growing startups to established enterprises, businesses across the Netherlands and beyond choose IT Solutions Worldwide because we make outsourcing genuinely easy. Most clients have a shortlist within 3-5 business days. Our pre-vetting process means the people we place stay — building stable, long-term working relationships rather than constant turnover."
+    },
+    "faq": {
+      "questions": [
+        {
+          "q": "Can I hire both tech and non-tech roles through IT Solutions Worldwide?",
+          "a": "Absolutely. We specialize in placing professionals across a full spectrum of roles — from AI/ML Engineers and Full Stack Developers to Virtual Assistants and Ecommerce Assistants."
+        },
+        {
+          "q": "How quickly can I get a candidate shortlist?",
+          "a": "In most cases, we present a shortlist of pre-vetted candidates within 3-5 business days."
+        },
+        {
+          "q": "Do your professionals work exclusively with one client?",
+          "a": "Yes — when you hire through IT Solutions Worldwide, your remote professional is dedicated to your business."
+        },
+        {
+          "q": "What if the role I need is not listed here?",
+          "a": "Our network is broad and constantly growing. If you have a specific role in mind, reach out and let us know."
+        },
+        {
+          "q": "Is outsourcing suitable for small businesses?",
+          "a": "Absolutely. Many of our best-fit clients are small and medium-sized businesses looking for professional-level talent without the cost of local full-time hires."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Ready to Build Your Remote Team?",
+      "description": "Stop spending time searching for the right talent and start building the team your business deserves. IT Solutions Worldwide makes remote hiring simple, fast, and genuinely affordable.",
+      "instruction": "Browse the roles above or reach out today and tell us what you need. We will handle the rest."
+    }
+  },
+
+  "outsource-design-services": {
+    "hero": {
+      "title": "Hire Remote Design Talent in the Netherlands — Websites & Visuals That Mean Business",
+      "description": "First impressions happen in seconds. Whether it is your website, your brand identity, or your marketing materials — great design is what turns visitors into customers.",
+      "sub_description": "No design agency markups. No slow back-and-forth. Just skilled creative talent, dedicated to your business.",
+      "cta_button": "→ Find Your Remote Design Professional Today ←"
+    },
+    "why_outsource": {
+      "title": "Why Outsource Your Design Needs to IT Solutions Worldwide?",
+      "intro": "In the Netherlands, hiring a skilled in-house designer comes with a significant price tag. We give you access to experienced creative professionals at a fraction of the cost.",
+      "benefits": [
+        "Save Up to 60% Compared to Local Design Hires",
+        "Pre-Vetted Creative Professionals",
+        "Dedicated to Your Brand — Not Juggling Dozens of Clients",
+        "Fast Start — Up and Running Within Days",
+        "Flexible Engagements — From One-Off Projects to Ongoing Support"
+      ],
+      "cta_call": "Book Your Free Call Today"
+    },
+    "services_section": {
+      "title": "Our Design Services",
+      "intro": "We place skilled remote designers across two core disciplines. Click a role below to learn more.",
+      "roles": {
+        "web_designer": {
+          "title": "Web Designer",
+          "description": "Our remote Web Designers create visually stunning, user-friendly websites built to convert. From landing pages to full UX redesigns, they handle the full picture.",
+          "ideal_for": "Businesses wanting a professional website without the cost of a local senior designer or full-service agency."
+        },
+        "graphics_designer": {
+          "title": "Graphics Designer",
+          "description": "From social media visuals to brand identities and brochures—our designers deliver polished work that ensures brand consistency and gets noticed.",
+          "ideal_for": "Startups building a brand from scratch or marketing teams needing reliable, on-demand creative support."
+        }
+      }
+    },
+    "comparison_section": {
+      "title": "Remote Designer vs. Local Hire vs. Design Agency — What is the Difference?",
+      "intro": "When businesses need design support, they typically look at three options. Here is an honest breakdown:",
+      "options": [
+        {
+          "label": "Local In-House Designer",
+          "content": "High cost with employer taxes, benefits, and office overheads. Often not cost-effective for mid-sized businesses that don't need overwhelming volume."
+        },
+        {
+          "label": "Design Agency",
+          "content": "High hourly rates and long turnaround times. Ideal for big-budget launches, but expensive and impersonal for day-to-day needs."
+        },
+        {
+          "label": "Remote Designer via IT Solutions Worldwide",
+          "content": "Pre-vetted talent at a fraction of the cost. Dedicated to your business, fast to onboard, and flexible to scale."
+        }
+      ]
+    },
+    "faq": {
+      "questions": [
+        {
+          "q": "What design tools and software do your designers work with?",
+          "a": "Tools include Figma, Adobe Creative Suite (Photoshop, Illustrator, InDesign), Canva Pro, Sketch, and more."
+        },
+        {
+          "q": "Can I hire a designer for just a specific project?",
+          "a": "Yes. We offer project-based, part-time, and full-time arrangements."
+        },
+        {
+          "q": "How do I know the designer's work will match my brand?",
+          "a": "You can review portfolios before committing. We also match based on your brand guidelines and style preferences."
+        },
+        {
+          "q": "Will my designer work exclusively with me?",
+          "a": "Yes. Unlike freelance platforms, our designers are dedicated to your business during agreed working hours."
+        },
+        {
+          "q": "What if I need both a Web Designer and a Graphics Designer?",
+          "a": "No problem. We can place multiple professionals and coordinate the process so they remain aligned on your brand."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Ready to Elevate Your Brand With Remote Design Talent?",
+      "description": "Stop settling for generic visuals. IT Solutions Worldwide connects you with dedicated designers who make your brand look exactly the way it should.",
+      "instruction": "Browse the roles above or get in touch today and tell us what you are working on."
+    }
+  },
+
+  "outsource-marketing-analytics": {
+    "hero": {
+      "title": "Hire Remote Marketing & Analytics Professionals in the Netherlands — Grow Smarter, Measure Better",
+      "description": "Great marketing drives growth. Sharp analytics directs it. Whether you need a Social Media Manager, Content Creator, Online Marketer, or data specialists like Power BI and Google Analytics experts — IT Solutions Worldwide connects you with pre-vetted professionals ready to make an impact.",
+      "sub_description": "No agency retainers. No inflated overheads. Just the right talent, dedicated to your growth.",
+      "cta_button": "→ Find Your Remote Marketing or Analytics Professional Today ←"
+    },
+    "why_outsource": {
+      "title": "Why Outsource Your Marketing & Analytics Needs to IT Solutions Worldwide?",
+      "intro": "Marketing and analytics talent is expensive to hire locally. We give you access to skilled professionals at a fraction of the local cost, without sacrificing results or quality.",
+      "benefits": [
+        "Save Up to 60% Compared to Local Marketing Hires",
+        "Pre-Vetted Professionals with Proven Marketing & Data Skills",
+        "Dedicated to Your Brand and Your Goals",
+        "Fast Onboarding — Campaigns and Insights Running Within Days",
+        "Flexible Engagements — Scale Your Marketing Team as You Grow"
+      ],
+      "cta_call": "Book Your Free Call Today"
+    },
+    "services_section": {
+      "title": "Our Marketing & Analytics Services",
+      "intro": "We place skilled remote professionals across six core marketing and analytics disciplines. Click any role below to learn more.",
+      "roles": {
+        "social_media": {
+          "title": "Social Media Manager",
+          "description": "Our remote Social Media Managers build communities and create a consistent brand presence across all major channels to keep your business top of mind.",
+          "ideal_for": "Businesses of all sizes wanting a professional social presence without the cost of a full-time in-house hire."
+        },
+        "content_creator": {
+          "title": "Content Creator",
+          "description": "Our creators craft compelling stories, educational resources, and persuasive copy that attract the right audience and build trust.",
+          "ideal_for": "Businesses looking to support their marketing funnels with high-quality content without local agency fees."
+        },
+        "online_marketer": {
+          "title": "Online Marketer",
+          "description": "The strategic engine behind digital growth. They plan and optimize campaigns across SEO, paid search, email, and conversion optimization.",
+          "ideal_for": "Businesses needing a strategic all-rounder to drive growth across multiple online channels."
+        },
+        "ga_specialist": {
+          "title": "Google Analytics Specialist",
+          "description": "Turning raw tracking data into clear, actionable insights. Experienced in GA4, Tag Manager, and the broader Google Marketing Platform.",
+          "ideal_for": "Businesses wanting to make data-backed decisions, from fresh GA4 setups to optimizing existing ones."
+        },
+        "power_bi": {
+          "title": "Power BI Specialist",
+          "description": "Transforms complex data into clear, interactive dashboards that give leadership the visibility needed to make faster decisions.",
+          "ideal_for": "Businesses looking to centralize reporting and reduce time spent on manual data wrangling."
+        },
+        "data_analyst": {
+          "title": "Data Analyst",
+          "description": "Bridges the gap between raw data and smart decisions by identifying patterns and translating datasets into recommendations.",
+          "ideal_for": "Businesses sitting on unused data that want an evidence-based approach to decision-making."
+        }
+      }
+    },
+    "faq": {
+      "questions": [
+        {
+          "q": "Can I hire both a marketing professional and a data specialist at the same time?",
+          "a": "Absolutely. Many clients build combined teams simultaneously to ensure everyone is aligned on your goals from day one."
+        },
+        {
+          "q": "What platforms and tools do your marketing professionals work with?",
+          "a": "Tools include GA4, Google Ads, Meta Ads Manager, HubSpot, Mailchimp, Semrush, Power BI, Tableau, and more."
+        },
+        {
+          "q": "How do you ensure the quality of remote marketing staff?",
+          "a": "Every professional undergoes rigorous vetting, including skills assessments, portfolio reviews, and communication evaluations."
+        },
+        {
+          "q": "How quickly can a marketing or analytics professional get started?",
+          "a": "We typically present a shortlist of pre-vetted candidates within 3-5 business days."
+        },
+        {
+          "q": "Is remote marketing outsourcing suitable for small businesses?",
+          "a": "Absolutely. It helps you compete with bigger players by accessing senior-level expertise without the local budget requirements."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Ready to Build a Marketing and Analytics Team That Drives Real Results?",
+      "description": "IT Solutions Worldwide gives you fast, affordable access to pre-vetted remote professionals ready to impact your business.",
+      "instruction": "Browse the roles above or reach out today and tell us what you are trying to achieve."
+    }
+  },
+
+  "outsource-it-development": {
+    "hero": {
+      "title": "Hire Remote IT & Development Professionals in the Netherlands — Build Smarter, Ship Faster",
+      "description": "Your technology is the backbone of your business. Whether you need a Front-End Developer, Back-End Developer, App Developer, IT Support, or QA Specialist — IT Solutions Worldwide connects you with pre-vetted professionals ready to work.",
+      "sub_description": "No lengthy recruitment cycles. No inflated agency fees. Just the right technical talent, onboarded fast.",
+      "cta_button": "→ Find Your Remote IT Professional Today ←"
+    },
+    "why_outsource": {
+      "title": "Why Outsource Your IT & Development Needs to IT Solutions Worldwide?",
+      "intro": "The demand for skilled IT talent is at an all-time high. Businesses are turning to remote outsourcing to access expertise without the premium price tag of local hiring.",
+      "benefits": [
+        "Save Up to 60% on Technical Hiring Costs",
+        "Pre-Vetted Technical Talent You Can Trust",
+        "Dedicated to Your Projects — Not Spread Across Multiple Clients",
+        "Fast Onboarding — Team Reinforcement Within Days",
+        "Flexible Engagements — Part-Time, Full-Time, or Project-Based"
+      ],
+      "cta_call": "Book Your Free Call Today"
+    },
+    "services_section": {
+      "title": "Our IT & Development Services",
+      "intro": "We place skilled remote professionals across five core IT and development disciplines. Click any role below to learn more.",
+      "roles": {
+        "front_end": {
+          "title": "Front-End Developer",
+          "description": "Experienced in modern frameworks like React, Vue.js, and Angular. They ensure your product is beautiful, fast, intuitive, and built to convert.",
+          "ideal_for": "Startups and SaaS companies needing reliable front-end capacity without the cost of a senior local hire."
+        },
+        "back_end": {
+          "title": "Back-End Developer",
+          "description": "They design and build the server-side logic, databases, APIs, and infrastructure that keep your applications running reliably at scale.",
+          "ideal_for": "Businesses with complex logic, data-heavy platforms, or existing systems needing ongoing maintenance."
+        },
+        "app_dev": {
+          "title": "App Developer",
+          "description": "Build high-performance mobile and cross-platform applications for iOS and Android, from initial concept to App Store launch.",
+          "ideal_for": "Businesses launching a new mobile product or adding a mobile layer to an existing platform."
+        },
+        "it_support": {
+          "title": "IT Support Specialist",
+          "description": "Resolving technical issues quickly and proactively managing your IT environment so technology enables your business rather than slowing it down.",
+          "ideal_for": "Small to mid-sized businesses needing reliable support without the cost of a full in-house IT department."
+        },
+        "qa_tester": {
+          "title": "Software Tester / QA Specialist",
+          "description": "Ensuring your product works exactly as intended. From manual testing to automated frameworks, they build quality into every stage of development.",
+          "ideal_for": "Teams needing dedicated QA coverage for product releases, sprint testing, or building a process from scratch."
+        }
+      }
+    },
+    "faq": {
+      "questions": [
+        {
+          "q": "What technologies and stacks do your developers work with?",
+          "a": "Our developers are experienced in React, Vue, Node.js, Python, PHP, Java, .NET, React Native, Flutter, and more."
+        },
+        {
+          "q": "How do you ensure code quality and technical reliability?",
+          "a": "Professionals go through technical assessments and follow your standards, participating in your code review processes."
+        },
+        {
+          "q": "Can I hire multiple IT professionals at the same time?",
+          "a": "Absolutely. Many clients build entire remote development teams combining Front-End, Back-End, and QA specialists."
+        },
+        {
+          "q": "How quickly can a developer start on my project?",
+          "a": "In most cases, we present a shortlist of pre-vetted candidates within 3-5 business days."
+        },
+        {
+          "q": "What if I only need someone for a short-term project?",
+          "a": "No problem. We offer project-based and part-time engagements in addition to full-time arrangements."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Ready to Strengthen Your Technical Team?",
+      "description": "IT Solutions Worldwide gives you fast access to pre-vetted, remote IT professionals who are ready to contribute from day one.",
+      "instruction": "Browse the roles above or reach out today and tell us what you are building."
+    }
+  },
 
   "hire_virtual_assistant": {
     "metadata": {
@@ -1923,8 +2442,8 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential admin and operational tasks.",
-        "price": "€26.95",
-        "unit": "per hour", 
+        "price": "13,95",
+        "unit": "per hour",
         "features": [
           "Minimum 3 hours",
           "Email & calendar support",
@@ -1936,7 +2455,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for daily business operations.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -1951,7 +2470,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Dedicated Virtual Assistant for results driven teams",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -2002,7 +2521,7 @@
       "form_btn": "Book a Free Consultation",
       "privacy_text": "By submitting, you consent to being contacted about our products per our Privacy Policy & Terms."
     },
-    
+
     "features_ribbon": {
       "text": "Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands",
       "rating": "5.0"
@@ -2059,7 +2578,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential development tasks.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -2073,7 +2592,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full product development.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -2088,7 +2607,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full development team for complex and large-scale products.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -2183,7 +2702,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential data engineering tasks.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -2197,7 +2716,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full data infrastructure development.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -2212,7 +2731,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full data engineering team for enterprise data platforms.",
-        "price": "39.95",
+        "price": "€19,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -2329,8 +2848,8 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential ecommerce tasks.",
-        "price": "€56.95",
-        "unit": "per hour", 
+        "price": "€56,95",
+        "unit": "per hour",
         "features": [
           "Minimum 3 hours",
           "Product management and listings",
@@ -2343,7 +2862,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full ecommerce operations.",
-        "price": "€48.95",
+        "price": "€48,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -2358,7 +2877,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full ecommerce team for high-volume and multi-channel stores.",
-        "price": "€39.95",
+        "price": "€39,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -2449,7 +2968,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential electrical engineering tasks.",
-        "price": "€49.95",
+        "price": "€49,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -2463,7 +2982,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full electrical engineering projects.",
-        "price": "€59.95",
+        "price": "€59,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -2478,7 +2997,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full engineering team for large-scale and complex projects.",
-        "price": "69.95",
+        "price": "€69,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -2559,7 +3078,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential AI development tasks.",
-        "price": "€49.95",
+        "price": "€25,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -2573,7 +3092,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full AI product development.",
-        "price": "€59.95",
+        "price": "€22,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -2588,7 +3107,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full AI team for intelligent product and enterprise AI systems.",
-        "price": "69.95",
+        "price": "€19,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -2714,7 +3233,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential marketing tasks.",
-        "price": "€56.95",
+        "price": "€21,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -2728,7 +3247,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full digital marketing operations.",
-        "price": "€48.95",
+        "price": "€18,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -2743,7 +3262,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full marketing team support and multi-channel execution.",
-        "price": "€39.95",
+        "price": "€15,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -2869,7 +3388,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential social tasks.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -2883,7 +3402,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for daily operations.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -2898,7 +3417,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Multiple platforms or specialised support.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -3024,7 +3543,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential design support for social media and basic assets.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -3038,7 +3557,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated design support for marketing and branding.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -3053,7 +3572,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full creative production including motion and packaging.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -3178,7 +3697,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential support tasks.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -3192,7 +3711,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for daily operations.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -3207,7 +3726,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full customer success management and multi-channel coverage.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -3333,7 +3852,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential data tasks.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -3347,7 +3866,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for daily operations.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -3362,7 +3881,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full data management and high-volume processing.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -3488,7 +4007,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for UI fixes and smaller updates.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -3502,7 +4021,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full application development.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -3517,7 +4036,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise-level development and performance architecture.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -3643,7 +4162,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for API development and server maintenance.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -3657,7 +4176,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for Laravel or Node.js backend projects.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -3672,7 +4191,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full backend architecture and microservices for large-scale systems.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -3798,7 +4317,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for app maintenance and small feature updates.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -3812,7 +4331,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full iOS or Android app builds.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -3827,7 +4346,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full app development including backend and store management.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -3953,7 +4472,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Manual testing and bug reporting for essential releases.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -3967,7 +4486,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated QA support including automated and API testing.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -3982,7 +4501,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full QA pipeline management and performance testing.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -4108,7 +4627,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time helpdesk support for essential technical issues.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -4122,7 +4641,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for network, cloud, and server management.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -4137,7 +4656,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full infrastructure management and cybersecurity support.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -4261,7 +4780,8 @@
       "heading": "Affordable ML Engineer",
       "plan_1": {
         "title": "Starter Plan",
-        "price": "€80.95/hour",
+        "price": "€80,95",
+        "unit": "per hour",
         "features": [
           "Minimum 3 hours",
           "ML model development and evaluation",
@@ -4273,7 +4793,8 @@
       },
       "plan_2": {
         "title": "Growth Plan",
-        "price": "€68.95/hour",
+        "price": "€68,95",
+        "unit": "per hour",
         "features": [
           "20 hours per week",
           "All Starter features",
@@ -4286,7 +4807,8 @@
       },
       "plan_3": {
         "title": "Scale Plan",
-        "price": "56.95/hour",
+        "price": "€56,95",
+        "unit": "per hour",
         "features": [
           "40 hours per week",
           "All Growth features",
@@ -4411,7 +4933,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential data analysis and reporting.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -4425,7 +4947,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for business intelligence and SQL reporting.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -4440,7 +4962,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Advanced analytics, statistical modelling, and multi-source integration.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -4566,7 +5088,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential dashboard design and data modelling support.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -4580,7 +5102,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full BI builds and automation.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -4595,7 +5117,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise BI strategy and complex multi-source integration.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -4721,7 +5243,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential support for blogs and social media captions.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -4735,7 +5257,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for SEO content and email marketing.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -4750,7 +5272,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full multi-channel content strategy and brand copywriting.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -4821,17 +5343,53 @@
       "heading": "What Your Google Analytics Specialist Can Help With",
       "description": "Our dedicated Google Analytics specialists are trained professionals who can support your tracking setup, reporting, and data-driven optimisation needs immediately.",
       "category_1": "GA4 Setup & Migration",
-      "cat_1_items": ["Google Analytics 4 installation", "Property and data stream setup", "Event and conversion tracking", "Cross-domain tracking configuration", "GA4 migration from Universal Analytics"],
+      "cat_1_items": [
+        "Google Analytics 4 installation",
+        "Property and data stream setup",
+        "Event and conversion tracking",
+        "Cross-domain tracking configuration",
+        "GA4 migration from Universal Analytics"
+      ],
       "category_2": "Google Tag Manager (GTM)",
-      "cat_2_items": ["GTM account setup and management", "Tag creation and deployment", "Trigger and variable configuration", "Custom event tracking via GTM", "GTM audit and cleanup"],
+      "cat_2_items": [
+        "GTM account setup and management",
+        "Tag creation and deployment",
+        "Trigger and variable configuration",
+        "Custom event tracking via GTM",
+        "GTM audit and cleanup"
+      ],
       "category_3": "Conversion Tracking",
-      "cat_3_items": ["Goal and conversion setup", "Ecommerce conversion tracking", "Form submission tracking", "Phone call and click tracking", "Google Ads conversion linking"],
+      "cat_3_items": [
+        "Goal and conversion setup",
+        "Ecommerce conversion tracking",
+        "Form submission tracking",
+        "Phone call and click tracking",
+        "Google Ads conversion linking"
+      ],
       "category_4": "Reporting & Dashboards",
-      "cat_4_items": ["Custom GA4 report creation", "Looker Studio dashboard builds", "Monthly analytics reporting", "Traffic source and behaviour reports", "Executive performance summaries"],
+      "cat_4_items": [
+        "Custom GA4 report creation",
+        "Looker Studio dashboard builds",
+        "Monthly analytics reporting",
+        "Traffic source and behaviour reports",
+        "Executive performance summaries"
+      ],
       "category_5": "Auditing & Data Quality",
-      "cat_5_items": ["Full GA4 property audit", "Tracking accuracy verification", "Data discrepancy investigation", "Tag and event audit", "Spam and bot filter setup"],
+      "cat_5_items": [
+        "Full GA4 property audit",
+        "Tracking accuracy verification",
+        "Data discrepancy investigation",
+        "Tag and event audit",
+        "Spam and bot filter setup"
+      ],
       "category_6": "Insights & Optimisation",
-      "cat_6_items": ["User behaviour analysis", "Funnel and drop-off analysis", "Audience segmentation insights", "Landing page performance analysis", "Data-driven CRO recommendations"],
+      "cat_6_items": [
+        "User behaviour analysis",
+        "Funnel and drop-off analysis",
+        "Audience segmentation insights",
+        "Landing page performance analysis",
+        "Data-driven CRO recommendations"
+      ],
       "button_middle": "Tell Us What You Need →"
     },
     "pricing_section": {
@@ -4840,28 +5398,46 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential tracking setup and basic conversion monitoring.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per hour",
         "features": [
-          "Minimum 3 hours","GA4 setup and configuration", "Basic conversion tracking", "Weekly reports", "Email support"],
+          "Minimum 3 hours",
+          "GA4 setup and configuration",
+          "Basic conversion tracking",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for GTM and custom dashboard reporting.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per hour",
         "features": [
-          "20 hours per week","All Starter features", "Google Tag Manager management", "Custom dashboards and reporting", "Priority support", "Dedicated account manager"],
+          "20 hours per week",
+          "All Starter features",
+          "Google Tag Manager management",
+          "Custom dashboards and reporting",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full analytics audit, advanced insights, and CRO strategy.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per hour",
         "features": [
-          "40 hours per week","All Growth features", "Full analytics audit and cleanup", "Advanced data insights and CRO", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+          "40 hours per week",
+          "All Growth features",
+          "Full analytics audit and cleanup",
+          "Advanced data insights and CRO",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -4870,7 +5446,11 @@
       "heading": "Ready to hire your Google Analytics Specialist?",
       "description": "Let us help you find the perfect Google Analytics specialist for your tracking, reporting, and data insight needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_microsoft_excel_specialist": {
@@ -4918,17 +5498,53 @@
       "heading": "What Your Microsoft Excel Specialist Can Help With",
       "description": "Our dedicated Microsoft Excel specialists are trained professionals who can support your spreadsheet development, automation, and data management needs immediately.",
       "category_1": "Spreadsheet Development",
-      "cat_1_items": ["Custom spreadsheet design and build", "Multi-sheet workbook creation", "Data input form development", "Template creation and standardisation", "Spreadsheet restructuring and cleanup"],
+      "cat_1_items": [
+        "Custom spreadsheet design and build",
+        "Multi-sheet workbook creation",
+        "Data input form development",
+        "Template creation and standardisation",
+        "Spreadsheet restructuring and cleanup"
+      ],
       "category_2": "Formulas & Functions",
-      "cat_2_items": ["VLOOKUP, XLOOKUP, and INDEX/MATCH", "Dynamic array formulas", "Nested IF and logical functions", "Financial and statistical formulas", "Error handling and data validation"],
+      "cat_2_items": [
+        "VLOOKUP, XLOOKUP, and INDEX/MATCH",
+        "Dynamic array formulas",
+        "Nested IF and logical functions",
+        "Financial and statistical formulas",
+        "Error handling and data validation"
+      ],
       "category_3": "VBA & Automation",
-      "cat_3_items": ["Custom VBA macro development", "Repetitive task automation", "Automated report generation", "User form and button creation", "Excel add-in development"],
+      "cat_3_items": [
+        "Custom VBA macro development",
+        "Repetitive task automation",
+        "Automated report generation",
+        "User form and button creation",
+        "Excel add-in development"
+      ],
       "category_4": "Dashboards & Reporting",
-      "cat_4_items": ["Interactive Excel dashboard creation", "KPI and performance dashboards", "PivotTable and PivotChart builds", "Dynamic chart and graph design", "Management reporting templates"],
+      "cat_4_items": [
+        "Interactive Excel dashboard creation",
+        "KPI and performance dashboards",
+        "PivotTable and PivotChart builds",
+        "Dynamic chart and graph design",
+        "Management reporting templates"
+      ],
       "category_5": "Data Management",
-      "cat_5_items": ["Large dataset cleaning and formatting", "Duplicate removal and deduplication", "Data import and export management", "Power Query data transformation", "Data validation rules setup"],
+      "cat_5_items": [
+        "Large dataset cleaning and formatting",
+        "Duplicate removal and deduplication",
+        "Data import and export management",
+        "Power Query data transformation",
+        "Data validation rules setup"
+      ],
       "category_6": "Financial Modelling",
-      "cat_6_items": ["Financial forecast models", "Budget planning spreadsheets", "Cash flow models", "Profit and loss templates", "Scenario and sensitivity analysis"],
+      "cat_6_items": [
+        "Financial forecast models",
+        "Budget planning spreadsheets",
+        "Cash flow models",
+        "Profit and loss templates",
+        "Scenario and sensitivity analysis"
+      ],
       "button_middle": "Tell Us What You Need →"
     },
     "pricing_section": {
@@ -4937,28 +5553,47 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential spreadsheet fixes and formula development.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per hour",
         "features": [
-          "Minimum 3 hours","Spreadsheet development and fixes", "Formula and function work", "Weekly reports", "Email support"],
+          "Minimum 3 hours",
+          "Spreadsheet development and fixes",
+          "Formula and function work",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for VBA macros and dashboard builds.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per hour",
         "features": [
-          "20 hours per week","All Starter features", "VBA macro automation", "Dashboard and reporting builds", "Priority support", "Dedicated account manager"],
+          "20 hours per week",
+          "All Starter features",
+          "VBA macro automation",
+          "Dashboard and reporting builds",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise modelling, Power Query, and full automation projects.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per hour",
         "features": [
-          "40 hours per week","Multiple Microsoft Excel specialists", "All Growth features", "Financial modelling and forecasting", "Power Query and data transformation", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+          "40 hours per week",
+          "Multiple Microsoft Excel specialists",
+          "All Growth features",
+          "Financial modelling and forecasting",
+          "Power Query and data transformation",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -4967,7 +5602,11 @@
       "heading": "Ready to hire your Microsoft Excel Specialist?",
       "description": "Let us help you find the perfect Microsoft Excel specialist for your spreadsheet development, automation, and data management needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_online_travel_advisor": {
@@ -5015,17 +5654,53 @@
       "heading": "What Your Online Travel Advisor Can Help With",
       "description": "Our dedicated online travel advisors are trained professionals who can support your travel business advisory, planning, and customer service needs immediately.",
       "category_1": "Itinerary Creation",
-      "cat_1_items": ["Custom travel itinerary development", "Multi-destination trip planning", "Day-by-day travel schedule creation", "Activity and excursion recommendations", "Travel document checklist preparation"],
+      "cat_1_items": [
+        "Custom travel itinerary development",
+        "Multi-destination trip planning",
+        "Day-by-day travel schedule creation",
+        "Activity and excursion recommendations",
+        "Travel document checklist preparation"
+      ],
       "category_2": "Research & Sourcing",
-      "cat_2_items": ["Flight option research and comparison", "Hotel and resort research", "Apartment and villa sourcing", "Best price and availability checks", "Travel package research and comparison"],
+      "cat_2_items": [
+        "Flight option research and comparison",
+        "Hotel and resort research",
+        "Apartment and villa sourcing",
+        "Best price and availability checks",
+        "Travel package research and comparison"
+      ],
       "category_3": "Customer Consultation",
-      "cat_3_items": ["Online chat and email travel consultation", "Destination advice and recommendations", "Travel requirement guidance (visas, insurance)", "Group travel planning support", "Honeymoon and special trip planning"],
+      "cat_3_items": [
+        "Online chat and email travel consultation",
+        "Destination advice and recommendations",
+        "Travel requirement guidance (visas, insurance)",
+        "Group travel planning support",
+        "Honeymoon and special trip planning"
+      ],
       "category_4": "Booking Administration",
-      "cat_4_items": ["Booking confirmation management", "Travel document organisation", "Reservation change and cancellation handling", "Supplier and operator communication", "Pre-departure customer briefings"],
+      "cat_4_items": [
+        "Booking confirmation management",
+        "Travel document organisation",
+        "Reservation change and cancellation handling",
+        "Supplier and operator communication",
+        "Pre-departure customer briefings"
+      ],
       "category_5": "Content & Trends",
-      "cat_5_items": ["Destination research and guides", "Travel blog and content support", "FAQ and knowledge base creation", "Travel trend monitoring", "Competitor offer monitoring"],
+      "cat_5_items": [
+        "Destination research and guides",
+        "Travel blog and content support",
+        "FAQ and knowledge base creation",
+        "Travel trend monitoring",
+        "Competitor offer monitoring"
+      ],
       "category_6": "Aftersales & Loyalty",
-      "cat_6_items": ["Post-trip customer follow-up", "Review and feedback collection", "Complaint handling and resolution", "Repeat booking outreach", "Loyalty and return customer management"],
+      "cat_6_items": [
+        "Post-trip customer follow-up",
+        "Review and feedback collection",
+        "Complaint handling and resolution",
+        "Repeat booking outreach",
+        "Loyalty and return customer management"
+      ],
       "button_middle": "Tell Us What You Need →"
     },
     "pricing_section": {
@@ -5034,28 +5709,46 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential trip planning and email consultation support.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per hour",
         "features": [
-          "Minimum 3 hours","Trip planning and itinerary creation", "Customer email consultation", "Weekly reports", "Email support"],
+          "Minimum 3 hours",
+          "Trip planning and itinerary creation",
+          "Customer email consultation",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for booking admin and detailed research.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per hour",
         "features": [
-          "20 hours per week","All Starter features", "Booking administration", "Flight and accommodation research", "Priority support", "Dedicated account manager"],
+          "20 hours per week",
+          "All Starter features",
+          "Booking administration",
+          "Flight and accommodation research",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full customer lifecycle management and marketing support.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per hour",
         "features": [
-          "40 hours per week","All Growth features", "Aftersales and customer follow-up", "Travel content and research support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+          "40 hours per week",
+          "All Growth features",
+          "Aftersales and customer follow-up",
+          "Travel content and research support",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -5064,7 +5757,11 @@
       "heading": "Ready to hire your Online Travel Advisor?",
       "description": "Let us help you find the perfect online travel advisor for your travel business and customer advisory needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_reservations_clerk": {
@@ -5112,17 +5809,53 @@
       "heading": "What Your Reservations Clerk Can Help With",
       "description": "Our dedicated reservations clerks are trained professionals who can support your booking management, reservation administration, and customer communication needs immediately.",
       "category_1": "Reservation Processing",
-      "cat_1_items": ["Inbound reservation request handling", "Booking confirmation and processing", "Group and corporate booking management", "Multi-channel reservation coordination", "Waitlist and alternative offer management"],
+      "cat_1_items": [
+        "Inbound reservation request handling",
+        "Booking confirmation and processing",
+        "Group and corporate booking management",
+        "Multi-channel reservation coordination",
+        "Waitlist and alternative offer management"
+      ],
       "category_2": "Availability Management",
-      "cat_2_items": ["Real-time availability calendar updates", "Rate and room or seat management", "Overbooking prevention and monitoring", "Seasonal availability planning support", "Blackout date and restriction management"],
+      "cat_2_items": [
+        "Real-time availability calendar updates",
+        "Rate and room or seat management",
+        "Overbooking prevention and monitoring",
+        "Seasonal availability planning support",
+        "Blackout date and restriction management"
+      ],
       "category_3": "System Administration",
-      "cat_3_items": ["PMS and booking software management", "Booking.com and Expedia administration", "Channel manager updates and maintenance", "System data accuracy and integrity checks", "New reservation channel setup support"],
+      "cat_3_items": [
+        "PMS and booking software management",
+        "Booking.com and Expedia administration",
+        "Channel manager updates and maintenance",
+        "System data accuracy and integrity checks",
+        "New reservation channel setup support"
+      ],
       "category_4": "Guest Communication",
-      "cat_4_items": ["Booking inquiry and quote responses", "Confirmation and voucher email handling", "Pre-arrival and pre-stay communication", "Special request and preference coordination", "Booking reminder communication"],
+      "cat_4_items": [
+        "Booking inquiry and quote responses",
+        "Confirmation and voucher email handling",
+        "Pre-arrival and pre-stay communication",
+        "Special request and preference coordination",
+        "Booking reminder communication"
+      ],
       "category_5": "Changes & Refunds",
-      "cat_5_items": ["Booking modification processing", "Cancellation handling and policy communication", "Refund and credit note coordination", "Rebooking and rescheduling support", "No-show tracking and management"],
+      "cat_5_items": [
+        "Booking modification processing",
+        "Cancellation handling and policy communication",
+        "Refund and credit note coordination",
+        "Rebooking and rescheduling support",
+        "No-show tracking and management"
+      ],
       "category_6": "Reporting & CRM",
-      "cat_6_items": ["Daily and weekly booking reports", "Occupancy and revenue summaries", "Cancellation and no-show reporting", "Booking source and channel reporting", "Guest data and CRM record updates"],
+      "cat_6_items": [
+        "Daily and weekly booking reports",
+        "Occupancy and revenue summaries",
+        "Cancellation and no-show reporting",
+        "Booking source and channel reporting",
+        "Guest data and CRM record updates"
+      ],
       "button_middle": "Tell Us What You Need →"
     },
     "pricing_section": {
@@ -5131,28 +5864,46 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential booking processing and calendar management.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per hour",
         "features": [
-          "Minimum 3 hours","Booking and reservation processing", "Availability calendar management", "Weekly reports", "Email support"],
+          "Minimum 3 hours",
+          "Booking and reservation processing",
+          "Availability calendar management",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for systems, changes, and refunds.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per hour",
         "features": [
-          "20 hours per week","All Starter features", "Reservation system administration", "Changes, cancellations and refunds", "Priority support", "Dedicated account manager"],
+          "20 hours per week",
+          "All Starter features",
+          "Reservation system administration",
+          "Changes, cancellations and refunds",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full multi-channel management and comprehensive reporting.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per hour",
         "features": [
-          "40 hours per week","All Growth features", "Multi-channel reservation management", "Full reporting and CRM updates", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+          "40 hours per week",
+          "All Growth features",
+          "Multi-channel reservation management",
+          "Full reporting and CRM updates",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -5161,7 +5912,11 @@
       "heading": "Ready to hire your Reservations Clerk?",
       "description": "Let us help you find the perfect reservations clerk for your booking management and customer communication needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_customer_service_travel": {
@@ -5209,17 +5964,53 @@
       "heading": "What Your Customer Service Travel Agency Can Help With",
       "description": "Our dedicated travel customer service agents are trained professionals who can support your travel agency client communication, booking support, and complaint management needs immediately.",
       "category_1": "Inquiry Handling",
-      "cat_1_items": ["Inbound email and chat inquiry responses", "Destination and package information requests", "Pricing and availability queries", "Group travel inquiry management", "Lead qualification and follow-up"],
+      "cat_1_items": [
+        "Inbound email and chat inquiry responses",
+        "Destination and package information requests",
+        "Pricing and availability queries",
+        "Group travel inquiry management",
+        "Lead qualification and follow-up"
+      ],
       "category_2": "Booking Support",
-      "cat_2_items": ["Booking confirmation and document support", "Reservation change request handling", "Travel document and voucher assistance", "Special requirement coordination", "Pre-departure customer briefing support"],
+      "cat_2_items": [
+        "Booking confirmation and document support",
+        "Reservation change request handling",
+        "Travel document and voucher assistance",
+        "Special requirement coordination",
+        "Pre-departure customer briefing support"
+      ],
       "category_3": "Complaint Management",
-      "cat_3_items": ["Customer complaint handling and resolution", "Flight delay and cancellation support", "Accommodation issue resolution", "Escalation and claim management", "Compensation request processing and follow-up"],
+      "cat_3_items": [
+        "Customer complaint handling and resolution",
+        "Flight delay and cancellation support",
+        "Accommodation issue resolution",
+        "Escalation and claim management",
+        "Compensation request processing and follow-up"
+      ],
       "category_4": "Aftersales Care",
-      "cat_4_items": ["Post-trip feedback and review collection", "Return and repeat booking follow-up", "Refund and credit note handling", "Customer satisfaction survey management", "Loyalty and retention communication"],
+      "cat_4_items": [
+        "Post-trip feedback and review collection",
+        "Return and repeat booking follow-up",
+        "Refund and credit note handling",
+        "Customer satisfaction survey management",
+        "Loyalty and retention communication"
+      ],
       "category_5": "Multi-Channel Support",
-      "cat_5_items": ["Email customer service management", "Live chat support handling", "WhatsApp travel support", "Social media message and comment handling", "Phone inquiry coordination support"],
+      "cat_5_items": [
+        "Email customer service management",
+        "Live chat support handling",
+        "WhatsApp travel support",
+        "Social media message and comment handling",
+        "Phone inquiry coordination support"
+      ],
       "category_6": "CRM & Administration",
-      "cat_6_items": ["Customer profile and history management", "CRM data entry and record updates", "Booking and communication log maintenance", "Customer segmentation and list management", "Reporting on customer service performance"],
+      "cat_6_items": [
+        "Customer profile and history management",
+        "CRM data entry and record updates",
+        "Booking and communication log maintenance",
+        "Customer segmentation and list management",
+        "Reporting on customer service performance"
+      ],
       "button_middle": "Tell Us What You Need →"
     },
     "pricing_section": {
@@ -5228,28 +6019,46 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential inquiries and booking assistance.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per hour",
         "features": [
-          "Minimum 3 hours","Email and chat inquiry handling", "Basic booking support", "Weekly reports", "Email support"],
+          "Minimum 3 hours",
+          "Email and chat inquiry handling",
+          "Basic booking support",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full customer service and complaint management.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per hour",
         "features": [
-          "20 hours per week","All Starter features", "Complaint and disruption management", "Multi-channel communication support", "Priority support", "Dedicated account manager"],
+          "20 hours per week",
+          "All Starter features",
+          "Complaint and disruption management",
+          "Multi-channel communication support",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full customer success lifecycle and detailed CRM management.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per hour",
         "features": [
-          "40 hours per week","All Growth features", "Aftersales and retention management", "Full CRM and reporting support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+          "40 hours per week",
+          "All Growth features",
+          "Aftersales and retention management",
+          "Full CRM and reporting support",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -5258,7 +6067,11 @@
       "heading": "Ready to hire your Customer Service Travel Agency?",
       "description": "Let us help you find the perfect travel customer service agent for your travel agency and client care needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_travel_marketer": {
@@ -5306,17 +6119,53 @@
       "heading": "What Your Travel Marketer Can Help With",
       "description": "Our dedicated travel marketers are trained professionals who can support your travel brand marketing, content creation, and digital campaign needs immediately.",
       "category_1": "Content Marketing",
-      "cat_1_items": ["Travel blog and article writing", "Destination guides and itinerary content", "Travel brand storytelling", "SEO content for travel websites", "Content calendar planning and management"],
+      "cat_1_items": [
+        "Travel blog and article writing",
+        "Destination guides and itinerary content",
+        "Travel brand storytelling",
+        "SEO content for travel websites",
+        "Content calendar planning and management"
+      ],
       "category_2": "Social Media",
-      "cat_2_items": ["Instagram and Facebook travel content", "TikTok and YouTube short content support", "Travel community engagement", "Influencer outreach coordination", "Social media growth strategy"],
+      "cat_2_items": [
+        "Instagram and Facebook travel content",
+        "TikTok and YouTube short content support",
+        "Travel community engagement",
+        "Influencer outreach coordination",
+        "Social media growth strategy"
+      ],
       "category_3": "Email Marketing",
-      "cat_3_items": ["Travel newsletter creation and management", "Promotional email campaign writing", "Automated email sequence development", "Seasonal travel offer campaigns", "List segmentation and re-engagement"],
+      "cat_3_items": [
+        "Travel newsletter creation and management",
+        "Promotional email campaign writing",
+        "Automated email sequence development",
+        "Seasonal travel offer campaigns",
+        "List segmentation and re-engagement"
+      ],
       "category_4": "SEO for Travel",
-      "cat_4_items": ["Travel keyword research and strategy", "On-page SEO for destination and package pages", "Local SEO for travel agencies", "Link building for travel websites", "Monthly SEO reporting and optimisation"],
+      "cat_4_items": [
+        "Travel keyword research and strategy",
+        "On-page SEO for destination and package pages",
+        "Local SEO for travel agencies",
+        "Link building for travel websites",
+        "Monthly SEO reporting and optimisation"
+      ],
       "category_5": "Paid Marketing",
-      "cat_5_items": ["Google Ads campaign management for travel", "Meta Ads for travel promotions", "Retargeting campaign setup and management", "Ad copy writing for travel offers", "Campaign performance tracking and reporting"],
+      "cat_5_items": [
+        "Google Ads campaign management for travel",
+        "Meta Ads for travel promotions",
+        "Retargeting campaign setup and management",
+        "Ad copy writing for travel offers",
+        "Campaign performance tracking and reporting"
+      ],
       "category_6": "Analytics & Reporting",
-      "cat_6_items": ["Monthly marketing performance reports", "Booking conversion tracking", "Campaign ROI analysis", "Competitor benchmarking", "Data-driven strategy recommendations"],
+      "cat_6_items": [
+        "Monthly marketing performance reports",
+        "Booking conversion tracking",
+        "Campaign ROI analysis",
+        "Competitor benchmarking",
+        "Data-driven strategy recommendations"
+      ],
       "button_middle": "Tell Us What You Need →"
     },
     "pricing_section": {
@@ -5325,28 +6174,46 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential travel content and social media tasks.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per hour",
         "features": [
-          "Minimum 3 hours","Travel content and social media", "Email marketing support", "Weekly reports", "Email support"],
+          "Minimum 3 hours",
+          "Travel content and social media",
+          "Email marketing support",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full digital travel marketing operations.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per hour",
         "features": [
-          "20 hours per week","All Starter features", "SEO and paid digital marketing", "Campaign management and reporting", "Priority support", "Dedicated account manager"],
+          "20 hours per week",
+          "All Starter features",
+          "SEO and paid digital marketing",
+          "Campaign management and reporting",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full marketing team execution and advanced strategy coordination.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per hour",
         "features": [
-          "40 hours per week","All Growth features", "Multi-channel campaign execution", "Full analytics and performance strategy", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+          "40 hours per week",
+          "All Growth features",
+          "Multi-channel campaign execution",
+          "Full analytics and performance strategy",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -5355,7 +6222,11 @@
       "heading": "Ready to hire your Travel Marketer?",
       "description": "Let us help you find the perfect travel marketer for your travel brand growth and digital marketing needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_hr_assistant_remote": {
@@ -5458,7 +6329,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for essential HR admin and recruitment.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per hour",
         "features": [
           "Minimum 3 hours",
@@ -5472,7 +6343,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for full onboarding and lifecycle management.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per hour",
         "features": [
           "20 hours per week",
@@ -5487,7 +6358,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Comprehensive HR support including engagement and reporting.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per hour",
         "features": [
           "40 hours per week",
@@ -5558,17 +6429,53 @@
       "heading": "What Your Administrative Accounting Assistant Can Help With",
       "description": "Our dedicated administrative accounting assistants are trained professionals who can support your financial administration and bookkeeping needs immediately.",
       "category_1": "Financial Administration",
-      "cat_1_items": ["Daily financial record keeping", "Expense and cost registration", "Bank statement processing", "Transaction categorisation and coding", "Month-end administration support"],
+      "cat_1_items": [
+        "Daily financial record keeping",
+        "Expense and cost registration",
+        "Bank statement processing",
+        "Transaction categorisation and coding",
+        "Month-end administration support"
+      ],
       "category_2": "Invoicing & Accounts Receivable",
-      "cat_2_items": ["Sales invoice creation and distribution", "Payment follow-up and reminders", "Accounts receivable tracking", "Credit note processing", "Customer payment reconciliation"],
+      "cat_2_items": [
+        "Sales invoice creation and distribution",
+        "Payment follow-up and reminders",
+        "Accounts receivable tracking",
+        "Credit note processing",
+        "Customer payment reconciliation"
+      ],
       "category_3": "Accounts Payable",
-      "cat_3_items": ["Supplier invoice processing and filing", "Purchase order matching and verification", "Accounts payable tracking and management", "Expense claim processing", "Supplier payment preparation support"],
+      "cat_3_items": [
+        "Supplier invoice processing and filing",
+        "Purchase order matching and verification",
+        "Accounts payable tracking and management",
+        "Expense claim processing",
+        "Supplier payment preparation support"
+      ],
       "category_4": "Bookkeeping Support",
-      "cat_4_items": ["General ledger data entry", "Bank reconciliation support", "Trial balance preparation assistance", "Chart of accounts maintenance", "Accountant liaison and document preparation"],
+      "cat_4_items": [
+        "General ledger data entry",
+        "Bank reconciliation support",
+        "Trial balance preparation assistance",
+        "Chart of accounts maintenance",
+        "Accountant liaison and document preparation"
+      ],
       "category_5": "Software Administration",
-      "cat_5_items": ["Exact Online data entry and management", "Moneybird and Twinfield administration", "QuickBooks and Xero record management", "Software data import and export", "System record accuracy and maintenance"],
+      "cat_5_items": [
+        "Exact Online data entry and management",
+        "Moneybird and Twinfield administration",
+        "QuickBooks and Xero record management",
+        "Software data import and export",
+        "System record accuracy and maintenance"
+      ],
       "category_6": "Financial Reporting",
-      "cat_6_items": ["Monthly expense and cost reports", "Outstanding invoice reporting", "Payment status summaries", "Financial document filing and organisation", "Audit preparation and document support"],
+      "cat_6_items": [
+        "Monthly expense and cost reports",
+        "Outstanding invoice reporting",
+        "Payment status summaries",
+        "Financial document filing and organisation",
+        "Audit preparation and document support"
+      ],
       "button_middle": "Tell Us What You Need →"
     },
     "pricing_section": {
@@ -5577,28 +6484,46 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Part-time support for invoicing and financial record keeping.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per hour",
         "features": [
-          "Minimum 3 hours","Invoicing and accounts receivable", "Financial record keeping", "Weekly reports", "Email support"],
+          "Minimum 3 hours",
+          "Invoicing and accounts receivable",
+          "Financial record keeping",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for bookkeeping and software administration.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per hour",
         "features": [
-          "20 hours per week","All Starter features", "Accounts payable and bookkeeping support", "Accounting software administration", "Priority support", "Dedicated account manager"],
+          "20 hours per week",
+          "All Starter features",
+          "Accounts payable and bookkeeping support",
+          "Accounting software administration",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full financial reporting and audit preparation support.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per hour",
         "features": [
-          "40 hours per week","All Growth features", "Full financial reporting and documentation", "Audit preparation support", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+          "40 hours per week",
+          "All Growth features",
+          "Full financial reporting and documentation",
+          "Audit preparation support",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -5607,7 +6532,11 @@
       "heading": "Ready to hire your Administrative Accounting Assistant?",
       "description": "Let us help you find the perfect administrative accounting assistant for your financial administration and bookkeeping support needs. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   },
   "hire_webdesigner_developer": {
@@ -5655,17 +6584,53 @@
       "heading": "What Your Web Designer & Developer Can Help With",
       "description": "Our dedicated web professionals are trained to handle your design and development needs to create a powerful online presence.",
       "category_1": "Web Design",
-      "cat_1_items": ["Custom website design", "Landing page design", "UI/UX design and wireframing", "Mobile-responsive design", "Brand-consistent visual design"],
+      "cat_1_items": [
+        "Custom website design",
+        "Landing page design",
+        "UI/UX design and wireframing",
+        "Mobile-responsive design",
+        "Brand-consistent visual design"
+      ],
       "category_2": "Web Development",
-      "cat_2_items": ["WordPress development", "Custom HTML/CSS/JS development", "CMS setup and customisation", "Website speed optimisation", "Cross-browser compatibility"],
+      "cat_2_items": [
+        "WordPress development",
+        "Custom HTML/CSS/JS development",
+        "CMS setup and customisation",
+        "Website speed optimisation",
+        "Cross-browser compatibility"
+      ],
       "category_3": "Ecommerce Solutions",
-      "cat_3_items": ["Shopify store design", "WooCommerce development", "Product page design", "Checkout flow optimisation", "Payment gateway integration"],
+      "cat_3_items": [
+        "Shopify store design",
+        "WooCommerce development",
+        "Product page design",
+        "Checkout flow optimisation",
+        "Payment gateway integration"
+      ],
       "category_4": "Landing Pages",
-      "cat_4_items": ["High-converting landing pages", "A/B test-ready page builds", "Lead capture page design", "Sales page development", "CTA and form optimisation"],
+      "cat_4_items": [
+        "High-converting landing pages",
+        "A/B test-ready page builds",
+        "Lead capture page design",
+        "Sales page development",
+        "CTA and form optimisation"
+      ],
       "category_5": "Maintenance & Support",
-      "cat_5_items": ["Regular updates and backups", "Plugin and theme management", "Security monitoring", "Bug fixing and troubleshooting", "Performance optimisation"],
+      "cat_5_items": [
+        "Regular updates and backups",
+        "Plugin and theme management",
+        "Security monitoring",
+        "Bug fixing and troubleshooting",
+        "Performance optimisation"
+      ],
       "category_6": "Redesign & UX Audit",
-      "cat_6_items": ["Full website redesign", "User experience audits", "Conversion rate optimisation design", "Accessibility improvements", "Prototype and mockup creation"],
+      "cat_6_items": [
+        "Full website redesign",
+        "User experience audits",
+        "Conversion rate optimisation design",
+        "Accessibility improvements",
+        "Prototype and mockup creation"
+      ],
       "button_middle": "Tell Us What You Need →"
     },
     "pricing_section": {
@@ -5674,28 +6639,46 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essential support for landing pages and website updates.",
-        "price": "€49.95",
+        "price": "€25,95",
         "unit": "per hour",
         "features": [
-          "Minimum 3 hours","Website updates and maintenance", "Landing page design", "Weekly reports", "Email support"],
+          "Minimum 3 hours",
+          "Website updates and maintenance",
+          "Landing page design",
+          "Weekly reports",
+          "Email support"
+        ],
         "button": "Get Started"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Dedicated support for custom website builds and ecommerce.",
-        "price": "€59.95",
+        "price": "€22,95",
         "unit": "per hour",
         "features": [
-          "20 hours per week","All Starter features", "Custom website design and build", "Ecommerce development", "Priority support", "Dedicated account manager"],
+          "20 hours per week",
+          "All Starter features",
+          "Custom website design and build",
+          "Ecommerce development",
+          "Priority support",
+          "Dedicated account manager"
+        ],
         "button": "Get Started"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Full UI/UX redesign and enterprise website management.",
-        "price": "€69.95",
+        "price": "€19,95",
         "unit": "per hour",
         "features": [
-          "40 hours per week","All Growth features", "UI/UX and redesign projects", "Multi-site management", "Custom workflows", "Dedicated account manager", "SLA guarantee"],
+          "40 hours per week",
+          "All Growth features",
+          "UI/UX and redesign projects",
+          "Multi-site management",
+          "Custom workflows",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
         "button": "Contact us"
       },
       "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
@@ -5704,7 +6687,11 @@
       "heading": "Ready to hire your Web Designer & Developer?",
       "description": "Let us help you find the perfect web designer and developer for your business website and digital presence. Book a free consultation today and get started within 48 hours.",
       "button": "Book Free Consultation",
-      "footer_checkmarks": ["No commitment", "Free consultation", "Start in 48 hours"]
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
+      ]
     }
   }
 }

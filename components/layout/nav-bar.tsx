@@ -40,7 +40,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center">
+        <div className="mx-auto pt-4 flex justify-between items-center">{/* container px-4 sm:px-6 lg:px-12  */}
           <div className="flex items-center space-x-2 w-32">
             <Link href="/">
               <img

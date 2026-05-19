@@ -49,7 +49,7 @@
     "servicecardsbutton": "Versterk vandaag nog uw online aanwezigheid",
     "clients": "Onze Vertrouwde Klanten",
     "contactheading": "Neem contact met ons op",
-    "contactemail": "E-mail ons",    
+    "contactemail": "E-mail ons",
     "contactdesc": "Heeft u vragen of behoefte aan ondersteuning? Ons team staat voor u klaar.",
     "contactephone": "Telefoonnummer",
     "contactaddress": "Bezoek ons",
@@ -1849,6 +1849,551 @@
     "message": "Pagina niet beschikbaar"
   },
 
+  "outsourcing": {
+    "hero": {
+      "title": "Outsourcing Diensten Remote Personeel voor Elke Functie, Een Betrouwbare Partner",
+      "description": "De juiste mensen vinden voor jouw bedrijf hoeft niet ingewikkeld, duur of tijdrovend te zijn. IT Solutions Worldwide maakt remote outsourcing eenvoudig met toegang tot gescreende professionals.",
+      "sub_description": "Of je nu een Nederlands bedrijf bent dat kosten wil verlagen, of een internationaal bedrijf dat personeel in Nederland zoekt wij hebben de expertise.",
+      "cta_button": "→ Bekijk Onze Outsourcingcategorieën Hieronder ←"
+    },
+    "intro_section": {
+      "title": "Een Partner. Elke Functie. Volledig Remote.",
+      "text": "Elk bedrijf is anders — en dat geldt ook voor de personeelsbehoeften. Daarom dekt IT Solutions Worldwide vijf kerngebieden, elk met gescreende professionals die klaar zijn om bij te dragen.",
+      "instruction": "Verken onze categorieën hieronder, klik door voor meer informatie over de functies, en neem contact op zodra je klaar bent.",
+      "cta_call": "Boek Vandaag Nog Jouw Gratis Gesprek"
+    },
+    "categories": {
+      "hire_roles": {
+        "title": "Hire Roles",
+        "tags": [
+          "Virtual Assistant",
+          "Data Engineer",
+          "Full Stack Developer",
+          "AI/ML Engineer",
+          "Ecommerce Assistant",
+          "Elektrotechnisch Ingenieur"
+        ],
+        "description": "Op zoek naar specialistisch talent voor technische en zakelijke functies? Onze Hire Roles categorie omvat de professionals die groeiende bedrijven het meest nodig hebben.",
+        "summary": "Of je nu een specialist of een cross-functioneel remote team nodig hebt, hier vind je het talent dat aansluit bij jouw ambities."
+      },
+      "business_support": {
+        "title": "Business Support",
+        "tags": [
+          "Administratieve Ondersteuning",
+          "HR Administratie (Remote)",
+          "Klantenservice",
+          "Gegevensinvoer"
+        ],
+        "description": "Elk groeiend bedrijf heeft een sterke operationele basis nodig. Onze Business Support categorie verbindt je met professionals die de dagelijkse taken beheren.",
+        "summary": "Maak tijd vrij voor je kernteam en laat onze gescreende professionals de rest regelen."
+      },
+      "design_services": {
+        "title": "Design Services",
+        "tags": ["Web Designer", "Grafisch Ontwerper"],
+        "description": "Goed design onderscheidt bedrijven die opvallen. Krijg toegang tot remote designers die merk, conversie en consistentie begrijpen.",
+        "summary": "Professioneel creatief talent toegewijd aan jouw merk, zonder de kosten van een lokaal bureau."
+      },
+      "it_development": {
+        "title": "IT & Development",
+        "tags": [
+          "Front-End Developer",
+          "Back-End Developer",
+          "App Developer",
+          "IT Support Specialist",
+          "Software Tester / QA"
+        ],
+        "description": "Technologie staat centraal in elk modern bedrijf. Onze IT & Development categorie omvat het volledige spectrum aan technische functies.",
+        "summary": "Gescreende technische professionals, snel ingewerkt en toegewijd aan jouw projecten vanaf dag één."
+      },
+      "marketing_analytics": {
+        "title": "Marketing & Analytics",
+        "tags": [
+          "Social Media Manager",
+          "Content Creator",
+          "Online Marketer",
+          "Google Analytics Specialist",
+          "Power BI Specialist",
+          "Data Analist"
+        ],
+        "description": "Groei wordt aangedreven door slimme marketing en scherpere data. Wij verbinden je met professionals die doelgroepen opbouwen en data omzetten in beslissingen.",
+        "summary": "Het marketing- en analysetalent dat jouw bedrijf nodig heeft voor een fractie van de lokale kosten."
+      }
+    },
+    "why_us": {
+      "title": "Waarom Kiezen voor IT Solutions Worldwide voor Remote Outsourcing?",
+      "intro": "We zijn geen freelance platform of vacaturebank. We zijn een outsourcingpartner die je op elk moment ondersteunt.",
+      "features": [
+        {
+          "label": "Gescreend in Elke Categorie",
+          "content": "Elke professional in ons netwerk is grondig gescreend op vaardigheden, communicatie en werkethiek."
+        },
+        {
+          "label": "Bespaar Tot 60% ten Opzichte van Lokale Werving",
+          "content": "Ons model levert aanzienlijke kostenbesparingen op in Nederland zonder in te leveren op kwaliteit."
+        },
+        {
+          "label": "Snel van Start — Voor Alle Functies",
+          "content": "De meeste klanten ontvangen binnen 3-5 werkdagen een shortlist van gekwalificeerde kandidaten."
+        },
+        {
+          "label": "Een Partner voor Al Jouw Outsourcingbehoeften",
+          "content": "In plaats van meerdere bureaus te beheren, biedt IT Solutions Worldwide één vertrouwde partner voor elke behoefte."
+        }
+      ]
+    },
+    "faq": {
+      "questions": [
+        {
+          "q": "Kan ik professionals uit meerdere categorieën tegelijkertijd inhuren?",
+          "a": "Absoluut. Veel van onze klanten bouwen cross-functionele teams door specialisten uit verschillende categorieën te combineren."
+        },
+        {
+          "q": "Hoe weet ik welke categorie het beste bij mijn bedrijf past?",
+          "a": "Als je niet zeker weet waar je moet beginnen, neem contact op. Wij helpen je precies te bepalen welke rollen de grootste impact hebben."
+        },
+        {
+          "q": "Hoe ziet het outsourcingproces eruit van begin tot eind?",
+          "a": "Het begint met een gesprek. Wij screenen kandidaten, presenteren een shortlist, ondersteunen interviews en beheren de onboarding."
+        },
+        {
+          "q": "Is er een minimale verplichting of contractduur?",
+          "a": "We bieden flexibele modellen: deeltijd, voltijd en projectbasis. Termijnen variëren per functie."
+        },
+        {
+          "q": "Hoe verschilt IT Solutions Worldwide van een freelance platform?",
+          "a": "Op een platform ben je op jezelf aangewezen. Bij ons krijg je een partner die screent, matcht en kwaliteit op lange termijn garandeert."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Klaar om Jouw Remote Team op te Bouwen?",
+      "description": "Wat jouw bedrijf ook nodig heeft — technisch, creatief, operatie of data — wij hebben het talent om je sneller te helpen werven.",
+      "instruction": "Verken de categorieën, bekijk de functies of neem vandaag nog contact met ons op."
+    }
+  },
+
+  "outsource-business-support": {
+    "hero": {
+      "title": "Betrouwbare Operationele Ondersteuning voor Groeiende Bedrijven",
+      "description": "Of je nu je bedrijfsactiviteiten wilt opschalen, efficiënter wilt werken, of op zoek bent naar betrouwbare business support diensten in Nederland — IT Solutions Worldwide helpt bedrijven hun dagelijkse processen te stroomlijnen met professionele remote ondersteuning op maat.",
+      "sub_description": "Van administratieve ondersteuning tot klantenservice en backoffice ondersteuning: wij bieden flexibele business support oplossingen waarmee organisaties productief, georganiseerd en groeigericht blijven werken. Geen ingewikkelde processen. Geen operationele vertragingen. Gewoon betrouwbare ondersteuning afgestemd op jouw bedrijf.",
+      "cta_button": "→ Laten We Vandaag Jouw Team Opbouwen ←"
+    },
+    "features": {
+      "title": "Waarom Bedrijven Kiezen voor IT Solutions Worldwide",
+      "description": "Business support diensten draaien om efficiënter werken, operationele druk verminderen en bedrijven helpen zich te focussen op wat echt belangrijk is. Bedrijven in Nederland en daarbuiten vertrouwen op IT Solutions Worldwide omdat wij bedrijfsprocessen eenvoudiger, sneller en overzichtelijker maken.",
+      "list": [
+        "Bespaar Tot 60% Vergeleken met Traditionele Interne Operaties",
+        "Betrouwbare Remote Business Support Oplossingen",
+        "Snelle Opstart en Implementatie",
+        "Flexibele Ondersteuningsmodellen voor Groeiende Bedrijven",
+        "Persoonlijke Ondersteuning van Begin tot Eind"
+      ],
+      "cta_call": "Boek Vandaag Nog Jouw Gratis Gesprek"
+    },
+    "services": {
+      "title": "Ontdek Onze Business Support Diensten",
+      "intro": "Wij bieden professionele remote business support oplossingen voor verschillende operationele functies. Bekijk hieronder onze diensten en ontdek hoe wij jouw bedrijf kunnen ondersteunen.",
+      "items": {
+        "admin": {
+          "title": "Administratieve Ondersteuning",
+          "text": "Houd je bedrijf georganiseerd en efficiënt met professionele administratieve ondersteuning. Ons remote support team helpt bij agendabeheer, correspondentie, documentbeheer, rapportages, gegevensorganisatie en dagelijkse operationele coördinatie.",
+          "ideal_for": "Kleine tot middelgrote bedrijven, startups en ondernemers die hun operationele efficiëntie willen verbeteren en administratieve werkdruk willen verminderen."
+        },
+        "hr": {
+          "title": "HR Administratie (Remote)",
+          "text": "Vereenvoudig je HR-processen met betrouwbare HR administratieve ondersteuning. Wij ondersteunen bedrijven bij onboardingdocumentatie, personeelsdossiers, interviewcoördinatie, HR-systeembeheer en interne procesondersteuning.",
+          "ideal_for": "Bedrijven die behoefte hebben aan gestructureerde HR-ondersteuning zonder de kosten van een grote interne HR-afdeling."
+        },
+        "customer_support": {
+          "title": "Klantenservice",
+          "text": "Bied een betere klantervaring met professionele remote klantenservice ondersteuning. Onze supportspecialisten helpen bij klantvragen, probleemoplossing, live chat ondersteuning, e-mailbeheer en communicatie via meerdere kanalen.",
+          "ideal_for": "E-commercebedrijven, SaaS-bedrijven en dienstverleners die professionele en responsieve klantcommunicatie willen behouden."
+        },
+        "data_entry": {
+          "title": "Gegevensinvoer",
+          "text": "Verbeter nauwkeurigheid en productiviteit met betrouwbare data entry ondersteuning. Onze remote professionals ondersteunen bij databasebeheer, spreadsheetorganisatie, formulierverwerking, gegevensupdates en grootschalige gegevensverwerking.",
+          "ideal_for": "Bedrijven die werken met grote hoeveelheden informatie, repetitieve processen of operationele achterstanden."
+        }
+      }
+    },
+    "philosophy": {
+      "title": "Waarom Bedrijven Met Ons Blijven Samenwerken",
+      "text": "IT Solutions Worldwide ondersteunt bedrijven van elke omvang — van snelgroeiende startups tot gevestigde ondernemingen — met efficiënte en kosteneffectieve business support diensten. Wij richten ons op betrouwbare operationele ondersteuning, transparante communicatie en flexibele oplossingen afgestemd op de behoeften van iedere klant.",
+      "summary": "Wij werken met zowel Nederlandse als internationale bedrijven, hanteren transparante prijzen zonder verborgen kosten en bieden iedere klant één vast aanspreekpunt van begin tot eind. Eenvoudig, professioneel en volledig gericht op jouw zakelijk succes."
+    },
+    "faq": {
+      "title": "Veelgestelde Vragen",
+      "questions": [
+        {
+          "q": "Welke business support diensten bieden jullie aan?",
+          "a": "Wij bieden diverse remote business support diensten aan, waaronder Administratieve Ondersteuning, HR Administratieve Ondersteuning, Klantenservice Ondersteuning, Data Entry Diensten en meer. Neem gerust contact op als je een specifieke ondersteuningsbehoefte hebt."
+        },
+        {
+          "q": "Hoe snel kunnen de diensten gestart worden?",
+          "a": "Ons onboardingproces is ontworpen om snel en efficiënt te verlopen. In de meeste gevallen kunnen de ondersteuningsdiensten binnen enkele werkdagen worden opgestart, afhankelijk van jouw wensen."
+        },
+        {
+          "q": "Wat zijn de kosten van jullie business support diensten?",
+          "a": "De kosten verschillen per dienst, omvang van de werkzaamheden en het gewenste ondersteuningsniveau. Wij bieden transparante prijzen en flexibele oplossingen afgestemd op jouw bedrijfsbehoeften."
+        },
+        {
+          "q": "Zijn jullie diensten geschikt voor kleine bedrijven?",
+          "a": "Absoluut. Kleine en middelgrote bedrijven profiteren sterk van outsourced business support omdat zij professionele ondersteuning krijgen zonder de overheadkosten van uitbreiding van interne teams."
+        },
+        {
+          "q": "Hoe garanderen jullie kwaliteit en betrouwbaarheid?",
+          "a": "Wij waarborgen kwaliteit door middel van gestructureerde processen, ervaren professionals, regelmatige communicatie en continue kwaliteitscontrole om consistente ondersteuning te garanderen."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Klaar om Jouw Bedrijfsprocessen te Verbeteren?",
+      "text": "Stop met tijd verliezen aan operationele taken en focus op de groei van jouw bedrijf. IT Solutions Worldwide biedt flexibele, betrouwbare en kosteneffectieve business support diensten waarmee jouw organisatie efficiënter kan werken."
+    }
+  },
+
+  "outsource-hire-roles": {
+    "hero": {
+      "title": "Huur Remote Tech- en Zakelijk Talent in Nederland — Alle Functies, Een Partner",
+      "description": "Of je nu een scherpe Virtual Assistant nodig hebt om alles soepel te laten verlopen, een Data Engineer om je cijfers te begrijpen, of een AI/ML Engineer om je bedrijf klaar te stomen voor de toekomst — IT Solutions Worldwide biedt je toegang tot gescreende, werkklare remote professionals.",
+      "sub_description": "Een outsourcingpartner. Een volledig aanbod aan talent. Geen gedoe met werving.",
+      "cta_button": "→ Vind Jouw Ideale Remote Medewerker — Bekijk de Functies ←"
+    },
+    "why_choose": {
+      "title": "Waarom Bedrijven Kiezen voor IT Solutions Worldwide",
+      "intro": "Groeiende bedrijven in heel Nederland en daarbuiten vertrouwen op ons om snel, betrouwbaar en betaalbaar het juiste talent te vinden. Of je nu een technisch specialist of een veelzijdige zakelijke ondersteuningsprofessional nodig hebt.",
+      "benefits": [
+        "Bespaar Tot 60% ten Opzichte van Lokale Werving",
+        "Gescreende, Werkklare Professionals",
+        "Snelle Onboarding — Gestart Binnen Dagen, Niet Maanden",
+        "Flexibele Samenwerking — Schaal Op of Af",
+        "Een Vast Aanspreekpunt — Van Begin tot Eind"
+      ],
+      "cta_call": "Boek Vandaag Nog Jouw Gratis Gesprek"
+    },
+    "roles_section": {
+      "title": "Ontdek Onze Functies",
+      "intro": "Van technische experts tot veelzijdige zakelijke ondersteuningsprofessionals — wij plaatsen bekwame remote talenten voor een breed scala aan functies.",
+      "roles": {
+        "virtual_assistant": {
+          "title": "Virtual Assistant",
+          "description": "Onze remote VA's regelen agendabeheer, inboxbeheer, onderzoek, gegevensinvoer, reiscoordinatie en dagelijkse administratieve taken.",
+          "ideal_for": "Ondernemers, leidinggevenden en eigenaren van kleine bedrijven die betrouwbare, veelzijdige ondersteuning nodig hebben."
+        },
+        "data_engineer": {
+          "title": "Data Engineer",
+          "description": "Onze remote Data Engineers ontwerpen, bouwen en onderhouden de datapipelines, datawarehouses en infrastructuur die jouw bedrijf nodig heeft.",
+          "ideal_for": "Scale-ups, techbedrijven en datagedreven organisaties die hun data-infrastructuur willen opbouwen of versterken."
+        },
+        "full_stack_developer": {
+          "title": "Full Stack Developer",
+          "description": "Onze remote Full Stack Developers zijn ervaren in zowel front-end als back-end technologieen — van React en Vue tot Node.js, Python en meer.",
+          "ideal_for": "Startups, SaaS-bedrijven en digitale ondernemingen die bekwaam ontwikkeltalent nodig hebben zonder langdurige wervingsprocedures."
+        },
+        "ai_ml_engineer": {
+          "title": "AI / ML Engineer",
+          "description": "Onze specialisten helpen bedrijven bij het ontwerpen, ontwikkelen en inzetten van machine learning-modellen en intelligente automatiseringssystemen.",
+          "ideal_for": "Vooruitstrevende bedrijven die AI willen integreren in hun producten of processen zonder een kostbaar intern AI-team op te bouwen."
+        },
+        "ecommerce_assistant": {
+          "title": "Ecommerce Assistant",
+          "description": "Onze specialisten beheren productlijsten, voorraadupdates, orderverwerking, klantvragen, retourzendingen en marketplace-beheer.",
+          "ideal_for": "Online retailers en ecommerce-merken die betrouwbare dagelijkse operationele ondersteuning nodig hebben om te groeien."
+        },
+        "electrical_engineer": {
+          "title": "Elektrotechnisch Ingenieur",
+          "description": "Onze remote Elektrotechnisch Ingenieurs ondersteunen bij ontwerp, documentatie, CAD-werk, technische specificaties en projectcoordinatie.",
+          "ideal_for": "Ingenieursbureaus, fabrikanten en bouwbedrijven die gekwalificeerde elektrotechnische ondersteuning nodig hebben."
+        }
+      }
+    },
+    "reputation": {
+      "title": "Waarom Bedrijven Steeds Bij Ons Terugkomen",
+      "text": "Bedrijven in heel Nederland en daarbuiten kiezen voor IT Solutions Worldwide omdat wij outsourcing echt eenvoudig maken. De meeste klanten hebben binnen 3-5 werkdagen een shortlist. Ons screeningsproces zorgt voor stabiele, langdurige samenwerkingen."
+    },
+    "faq": {
+      "questions": [
+        {
+          "q": "Kan ik zowel technische als niet-technische functies inhuren?",
+          "a": "Absoluut. Wij zijn gespecialiseerd in het plaatsen van professionals voor een volledig spectrum aan functies — van AI en Dev tot VA en Ecommerce."
+        },
+        {
+          "q": "Hoe snel krijg ik een shortlist van kandidaten?",
+          "a": "In de meeste gevallen presenteren we binnen 3-5 werkdagen een shortlist van gescreende kandidaten."
+        },
+        {
+          "q": "Werken jullie professionals exclusief voor een klant?",
+          "a": "Ja. Wanneer je via IT Solutions Worldwide iemand inhuurt, is je remote professional exclusief toegewijd aan jouw bedrijf."
+        },
+        {
+          "q": "Wat als de functie die ik zoek niet op de lijst staat?",
+          "a": "Ons netwerk is breed. Als je een specifieke functie zoekt die je hier niet ziet, neem contact op. Meestal kunnen we helpen."
+        },
+        {
+          "q": "Is outsourcing geschikt voor kleine bedrijven?",
+          "a": "Absoluut. Veel van onze klanten zijn MKB-bedrijven die professioneel talent zoeken zonder de kosten van lokale vaste dienstverbanden."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Klaar om Jouw Remote Team Op te Bouwen?",
+      "description": "Stop met zoeken naar het juiste talent en begin met het bouwen van het team dat jouw bedrijf verdient. IT Solutions Worldwide maakt remote werving eenvoudig en betaalbaar.",
+      "instruction": "Bekijk de functies hierboven of neem vandaag nog contact met ons op. Wij regelen de rest."
+    }
+  },
+
+  "outsource-design-services": {
+    "hero": {
+      "title": "Huur Remote Designtalent in Nederland — Websites en Visuals die Resultaat Opleveren",
+      "description": "Een eerste indruk duurt slechts seconden. Of het nu gaat om je website, je merkidentiteit of je marketingmaterialen — goed design is wat bezoekers omzet in klanten.",
+      "sub_description": "Geen bureauopslagen. Geen trage heen-en-weer communicatie. Gewoon bekwaam creatief talent, toegewijd aan jouw bedrijf.",
+      "cta_button": "→ Vind Jouw Remote Designprofessional Vandaag ←"
+    },
+    "why_outsource": {
+      "title": "Waarom Jouw Designbehoeften Uitbesteden aan IT Solutions Worldwide?",
+      "intro": "In Nederland brengt het aannemen van een interne designer een aanzienlijk prijskaartje met zich mee. Wij geven je toegang tot ervaren professionals voor een fractie van de kosten.",
+      "benefits": [
+        "Bespaar Tot 60% ten Opzichte van Lokale Designwerving",
+        "Gescreende Creatieve Professionals",
+        "Toegewijd aan Jouw Merk — Niet Verdeeld Over Tientallen Klanten",
+        "Snelle Start — Operationeel Binnen Enkele Dagen",
+        "Flexibele Samenwerking — Van Eenmalige Projecten tot Doorlopende Ondersteuning"
+      ],
+      "cta_call": "Boek Vandaag Nog Jouw Gratis Gesprek"
+    },
+    "services_section": {
+      "title": "Onze Designdiensten",
+      "intro": "Wij plaatsen bekwame remote designers in twee kerngebieden. Klik op een functie voor meer informatie.",
+      "roles": {
+        "web_designer": {
+          "title": "Web Designer",
+          "description": "Onze remote Web Designers maken visueel verbluffende, gebruiksvriendelijke websites gericht op conversie. Van landingspagina's tot volledige redesigns.",
+          "ideal_for": "Bedrijven die een professionele website willen zonder de kosten van een lokale senior designer of fullservice bureau."
+        },
+        "graphics_designer": {
+          "title": "Grafisch Ontwerper",
+          "description": "Van social media visuals tot merkidentiteiten en brochures — onze ontwerpers leveren gepolijst werk dat merkconsistentie garandeert.",
+          "ideal_for": "Startups die hun merk vanaf nul opbouwen of marketingteams die on-demand creatieve ondersteuning nodig hebben."
+        }
+      }
+    },
+    "comparison_section": {
+      "title": "Remote Designer vs. Lokale Medewerker vs. Designbureau — Wat is het Verschil?",
+      "intro": "Wanneer bedrijven designondersteuning nodig hebben, kijken ze doorgaans naar drie opties. Hier is een vergelijking:",
+      "options": [
+        {
+          "label": "Lokale Interne Designer",
+          "content": "Hoge kosten door belastingen en overhead. Vaak niet kosteneffectief voor MKB-bedrijven zonder constante enorme volumes."
+        },
+        {
+          "label": "Designbureau",
+          "content": "Hoge projecttarieven en lange doorlooptijden. Ideaal voor grote lanceringen, maar duur en onpersoonlijk voor dagelijkse behoeften."
+        },
+        {
+          "label": "Remote Designer via IT Solutions Worldwide",
+          "content": "Gescreend talent voor een fractie van de lokale kosten. Toegewijd aan uw bedrijf, snel in te werken en flexibel op te schalen."
+        }
+      ]
+    },
+    "faq": {
+      "questions": [
+        {
+          "q": "Met welke designtools en software werken jullie designers?",
+          "a": "Onze designers werken met Figma, Adobe Creative Suite (Photoshop, Illustrator, InDesign), Canva Pro en Sketch."
+        },
+        {
+          "q": "Kan ik een designer inhuren voor slechts een specifiek project?",
+          "a": "Ja. We bieden flexibele modellen aan: projectgericht, deeltijd en voltijd."
+        },
+        {
+          "q": "Hoe weet ik dat het werk van de designer bij mijn merk past?",
+          "a": "U kunt vooraf portfolio's bekijken. We matchen op basis van uw merkrichtlijnen en stijlvoorkeuren."
+        },
+        {
+          "q": "Werkt mijn designer uitsluitend voor mij?",
+          "a": "Ja. In tegenstelling tot freelance platforms is onze professional tijdens de afgesproken uren uitsluitend aan uw bedrijf toegewijd."
+        },
+        {
+          "q": "Wat als ik zowel een Web Designer als een Grafisch Ontwerper nodig heb?",
+          "a": "Geen probleem. We kunnen meerdere professionals plaatsen en zorgen dat ze op uw merk zijn afgestemd."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Klaar om Jouw Merk te Versterken met Remote Designtalent?",
+      "description": "Stop met genoegen nemen met generieke visuals. IT Solutions Worldwide verbindt u met designers die uw merk er professioneel laten uitzien.",
+      "instruction": "Bekijk de functies hierboven of neem contact op en vertel ons waar u mee bezig bent."
+    }
+  },
+
+  "outsource-marketing-analytics": {
+    "hero": {
+      "title": "Huur Remote Marketing- en Analyseprofessionals in Nederland — Slimmer Groeien, Beter Meten",
+      "description": "Goede marketing drijft groei. Scherpe analyses sturen het. Of je nu een Social Media Manager, Content Creator, Online Marketer, of Power BI en Google Analytics experts nodig hebt — IT Solutions Worldwide verbindt je met gescreende professionals.",
+      "sub_description": "Geen bureau-retainers. Geen hoge overheadkosten. Gewoon het juiste talent, toegewijd aan jouw groei.",
+      "cta_button": "→ Vind Jouw Remote Marketing- of Analyseprofessional Vandaag ←"
+    },
+    "why_outsource": {
+      "title": "Waarom Jouw Marketing- en Analysebehoeften Uitbesteden?",
+      "intro": "Marketing- en analysetalent is lokaal duur. Wij geven je toegang tot bekwame professionals voor een fractie van de lokale kosten, zonder in te leveren op kwaliteit.",
+      "benefits": [
+        "Bespaar Tot 60% ten Opzichte van Lokale Marketingwerving",
+        "Gescreende Professionals met Bewezen Marketing- en Datakennis",
+        "Toegewijd aan Jouw Merk en Jouw Doelen",
+        "Snelle Onboarding — Campagnes en Inzichten Binnen Enkele Dagen",
+        "Flexibele Samenwerking — Schaal Je Marketingteam mee met je Groei"
+      ],
+      "cta_call": "Boek Vandaag Nog Jouw Gratis Gesprek"
+    },
+    "services_section": {
+      "title": "Onze Marketing- en Analysediensten",
+      "intro": "Wij plaatsen bekwame remote professionals in zes kerngebieden. Klik op een functie voor meer informatie.",
+      "roles": {
+        "social_media": {
+          "title": "Social Media Manager",
+          "description": "Onze remote Social Media Managers bouwen communities en creëren een consistente merkpresentie op alle grote kanalen.",
+          "ideal_for": "Bedrijven van elke omvang die een professionele aanwezigheid willen zonder de kosten van een interne medewerker."
+        },
+        "content_creator": {
+          "title": "Content Creator",
+          "description": "Onze creators schrijven meeslepende verhalen en overtuigende teksten die de juiste doelgroep aantrekken en vertrouwen opbouwen.",
+          "ideal_for": "Bedrijven die hoogwaardige content willen zonder de kosten van een lokaal tekstbureau."
+        },
+        "online_marketer": {
+          "title": "Online Marketer",
+          "description": "De strategische motor achter digitale groei. Ze plannen en optimaliseren campagnes voor SEO, ads, e-mail en conversie.",
+          "ideal_for": "Bedrijven die een strategische allrounder nodig hebben om groei te stimuleren via meerdere kanalen."
+        },
+        "ga_specialist": {
+          "title": "Google Analytics Specialist",
+          "description": "Zet ruwe trackingdata om in duidelijke inzichten. Ervaren in GA4, Tag Manager en het Google Marketing Platform.",
+          "ideal_for": "Bedrijven die datagedreven beslissingen willen nemen, van GA4-implementatie tot optimalisatie."
+        },
+        "power_bi": {
+          "title": "Power BI Specialist",
+          "description": "Transformeert complexe data naar interactieve dashboards die leiderschap inzicht geven voor snellere besluitvorming.",
+          "ideal_for": "Bedrijven die hun rapportage willen centraliseren en minder tijd willen besteden aan handmatig datawerk."
+        },
+        "data_analyst": {
+          "title": "Data Analist",
+          "description": "Overbrugt de kloof tussen data en beslissingen door patronen te identificeren en datasets te vertalen naar aanbevelingen.",
+          "ideal_for": "Bedrijven die data nog niet volledig benutten of een meer analytische aanpak willen."
+        }
+      }
+    },
+    "faq": {
+      "questions": [
+        {
+          "q": "Kan ik een marketingprofessional en een dataspecialist tegelijkertijd inhuren?",
+          "a": "Absoluut. Veel klanten bouwen gecombineerde teams om ervoor te zorgen dat iedereen vanaf dag één op uw doelen is afgestemd."
+        },
+        {
+          "q": "Met welke platforms en tools werken jullie professionals?",
+          "a": "Onder andere GA4, Google Ads, Meta Ads Manager, HubSpot, Mailchimp, Power BI, Semrush en Excel."
+        },
+        {
+          "q": "Hoe garanderen jullie de kwaliteit van remote medewerkers?",
+          "a": "Elke professional doorloopt een grondige screening, inclusief vaardigheidstests en portfoliobeoordelingen."
+        },
+        {
+          "q": "Hoe snel kan een professional beginnen?",
+          "a": "In de meeste gevallen presenteren we binnen 3-5 werkdagen een shortlist van gescreende kandidaten."
+        },
+        {
+          "q": "Is remote marketing geschikt voor kleine bedrijven?",
+          "a": "Zeker. Het biedt toegang tot senior expertise voor een fractie van de lokale kosten, zodat u kunt concurreren met grotere spelers."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Klaar om een Marketing- en Analyseteam te Bouwen?",
+      "description": "IT Solutions Worldwide biedt snel en betaalbaar toegang tot gescreende remote professionals die vanaf dag één impact maken.",
+      "instruction": "Bekijk de functies hierboven of neem contact op en vertel ons wat u wilt bereiken."
+    }
+  },
+
+  "outsource-it-development": {
+    "hero": {
+      "title": "Huur Remote IT- en Ontwikkelingsprofessionals in Nederland — Slimmer Bouwen, Sneller Leveren",
+      "description": "Je technologie is de ruggengraat van je bedrijf. Of je nu een Front-End, Back-End, of App Developer, IT Support of QA Specialist nodig hebt — wij verbinden je met gescreende professionals.",
+      "sub_description": "Geen lange wervingsprocedures. Geen hoge bureaukosten. Gewoon het juiste technische talent, snel aan boord.",
+      "cta_button": "→ Vind Jouw Remote IT-Professional Vandaag ←"
+    },
+    "why_outsource": {
+      "title": "Waarom Jouw IT-behoeften Uitbesteden aan IT Solutions Worldwide?",
+      "intro": "De vraag naar IT-talent is groter dan ooit. Bedrijven kiezen voor remote outsourcing voor expertise zonder het premiumkostenplaatje van lokale werving.",
+      "benefits": [
+        "Bespaar Tot 60% op Technische Wervingskosten",
+        "Gescreend Technisch Talent dat Je Kunt Vertrouwen",
+        "Toegewijd aan Jouw Projecten — Niet Verdeeld Over Tientallen Klanten",
+        "Snelle Onboarding — Technische Versterking Binnen Enkele Dagen",
+        "Flexibele Samenwerking — Deeltijd, Voltijd of Projectgericht"
+      ],
+      "cta_call": "Boek Vandaag Nog Jouw Gratis Gesprek"
+    },
+    "services_section": {
+      "title": "Onze IT- en Ontwikkelingsdiensten",
+      "intro": "Wij plaatsen bekwame remote professionals in vijf kerngebieden. Klik op een functie voor meer informatie.",
+      "roles": {
+        "front_end": {
+          "title": "Front-End Developer",
+          "description": "Ervaren in frameworks zoals React, Vue.js en Angular. Zij zorgen dat uw product snel, intuïtief en gericht op conversie is.",
+          "ideal_for": "Startups en SaaS-bedrijven die betrouwbare front-end capaciteit nodig hebben."
+        },
+        "back_end": {
+          "title": "Back-End Developer",
+          "description": "Zij bouwen de server-side logica, databases en API's die je applicaties aandrijven en systemen betrouwbaar laten draaien.",
+          "ideal_for": "Bedrijven met complexe logica of bestaande systemen die technisch onderhoud nodig hebben."
+        },
+        "app_dev": {
+          "title": "App Developer",
+          "description": "Bouwt hoogwaardige mobiele applicaties voor iOS en Android, van concept tot App Store-lancering.",
+          "ideal_for": "Bedrijven die een nieuw mobiel product lanceren of een app willen verbeteren."
+        },
+        "it_support": {
+          "title": "IT Support Specialist",
+          "description": "Lost technische problemen snel op en beheert je IT-omgeving proactief, zodat technologie je bedrijf vooruithelpt.",
+          "ideal_for": "MKB-bedrijven die betrouwbare IT-ondersteuning nodig hebben zonder de kosten van een interne afdeling."
+        },
+        "qa_tester": {
+          "title": "Software Tester / QA Specialist",
+          "description": "Zorgt dat je product precies werkt zoals bedoeld. Van handmatig testen tot geautomatiseerde frameworks.",
+          "ideal_for": "Ontwikkelteams die QA-dekking nodig hebben voor releases of doorlopende tests."
+        }
+      }
+    },
+    "faq": {
+      "questions": [
+        {
+          "q": "Met welke technologieën en stacks werken jullie developers?",
+          "a": "Onze developers zijn ervaren in React, Vue, Node.js, Python, PHP, Java, .NET, Flutter, MongoDB en meer."
+        },
+        {
+          "q": "Hoe garanderen jullie codekwaliteit en betrouwbaarheid?",
+          "a": "Elke professional doorloopt vaardigheidstests en volgt jouw standaarden en code review-processen."
+        },
+        {
+          "q": "Kan ik meerdere IT-professionals tegelijkertijd inhuren?",
+          "a": "Absoluut. Veel klanten bouwen volledige teams op met Front-End, Back-End en QA specialisten."
+        },
+        {
+          "q": "Hoe snel kan een developer aan mijn project beginnen?",
+          "a": "In de meeste gevallen presenteren we binnen 3-5 werkdagen een shortlist van kandidaten."
+        },
+        {
+          "q": "Wat als ik iemand alleen voor een kortlopend project nodig heb?",
+          "a": "Geen probleem. We bieden projectgerichte en deeltijdse samenwerkingen naast voltijdse regelingen."
+        }
+      ]
+    },
+    "footer_cta": {
+      "title": "Klaar om Jouw Technisch Team te Versterken?",
+      "description": "IT Solutions Worldwide biedt snel toegang tot gescreende remote IT-professionals die vanaf dag één kunnen bijdragen.",
+      "instruction": "Bekijk de functies hierboven of neem contact op en vertel ons wat je aan het bouwen bent."
+    }
+  },
+
   "hire_virtual_assistant": {
     "metadata": {
       "meta_title": "Virtuele Assistent Inhuren in Nederland | Toegewijde VA-diensten op Afstand",
@@ -1862,7 +2407,7 @@
       "button_secondary": "Bekijk de Tarieven",
       "stats": {
         "stat_1": "500+ Toegewijde VA's",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -1942,7 +2487,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële administratieve en operationele taken.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -1955,7 +2500,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse bedrijfsactiviteiten.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -1970,7 +2515,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Toegewijde Virtuele Assistent voor resultaatgerichte teams",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2078,7 +2623,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële ontwikkelingstaken.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -2092,7 +2637,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige productontwikkeling.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2107,7 +2652,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig ontwikkelingsteam voor complexe en grootschalige producten.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2202,8 +2747,8 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële data engineering taken.",
-        "price": "€56.95",
-        "unit": "per uur", 
+        "price": "€25,95",
+        "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
           "Pipeline ontwikkeling en fixes",
@@ -2216,7 +2761,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige data-infrastructuur ontwikkeling.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2231,7 +2776,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig data engineering team voor enterprise dataplatformen.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2348,7 +2893,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële e-commerce taken.",
-        "price": "€56.95",
+        "price": "€56,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -2362,7 +2907,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige e-commerce activiteiten.",
-        "price": "€48.95",
+        "price": "€48,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2377,7 +2922,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig e-commerce team voor hoog volume en multi-channel winkels.",
-        "price": "€39.95",
+        "price": "€39,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2468,7 +3013,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële elektrotechnische taken.",
-        "price": "€49.95",
+        "price": "€49,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -2482,7 +3027,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige elektrotechnische projecten.",
-        "price": "€59.95",
+        "price": "€59,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2497,7 +3042,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig engineeringteam voor grootschalige en complexe projecten.",
-        "price": "€69.95",
+        "price": "€69,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2573,27 +3118,60 @@
         ]
       }
     },
-    "pricing": {
-      "plan_1": [
-        "AI-integratie en automatisering",
-        "LLM- en API-ontwikkeling",
-        "Wekelijkse rapportages",
-        "E-mail ondersteuning"
-      ],
-      "plan_2": [
-        "Alle Starter-functies",
-        "Machine learning modelontwikkeling",
-        "AI-automatisering en NLP-bouw",
-        "Prioritaire ondersteuning",
-        "Toegewijde accountmanager"
-      ],
-      "plan_3": [
-        "Alle Growth-functies",
-        "Computervisie en geavanceerde ML",
-        "Volledige AI-implementatie en infrastructuur",
-        "Aangepaste workflows",
-        "Toegewijde accountmanager",
-        "SLA-garantie"
+    "pricing_section": {
+      "heading": "Affordable AI Engineer",
+      "plan_1": {
+        "title": "Starter Plan",
+        "desc": "Parttime ondersteuning voor essentiële AI-ontwikkelingstaken.",
+        "price": "€25,95",
+        "unit": "per hour",
+        "features": [
+          "AI-integratie en automatisering",
+          "LLM- en API-ontwikkeling",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
+        "button": "Get Started"
+      },
+      "plan_2": {
+        "title": "Growth Plan",
+        "desc": "Toegewijde ondersteuning voor volledige AI-productontwikkeling.",
+        "price": "€22,95",
+        "unit": "per hour",
+        "features": [
+          "Alle Starter-functies",
+          "Machine learning modelontwikkeling",
+          "AI-automatisering en NLP-bouw",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
+        "button": "Get Started"
+      },
+      "plan_3": {
+        "title": "Scale Plan",
+        "desc": "Volledig AI-team voor intelligente producten en AI-systemen voor bedrijven.",
+        "price": "€19,95",
+        "unit": "per hour",
+        "features": [
+          "Alle Growth-functies",
+          "Computervisie en geavanceerde ML",
+          "Volledige AI-implementatie en infrastructuur",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
+        "button": "Contact us"
+      },
+      "guarantee": "💰 Money-Back Guarantee: Not satisfied in the first 14 days? Get a full refund."
+    },
+    "cta": {
+      "heading": "Ready to Hire an AI Engineer in Netherlands?",
+      "description": "Build smarter products, automate costly processes, and stay ahead — with dedicated AI engineers from IT Solutions Worldwide.",
+      "button": "Book Free Consultation",
+      "footer_checkmarks": [
+        "No commitment",
+        "Free consultation",
+        "Start in 48 hours"
       ]
     }
   },
@@ -2611,7 +3189,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -2698,7 +3276,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële sociale taken.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -2712,7 +3290,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2727,7 +3305,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Meerdere platformen of gespecialiseerde ondersteuning.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2767,7 +3345,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -2854,7 +3432,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ontwerpsteun voor sociale media en basisassets.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -2868,7 +3446,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ontwerpondersteuning voor marketing en branding.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -2883,7 +3461,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige creatieve productie inclusief motion en verpakking.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -2923,7 +3501,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3010,7 +3588,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële marketingtaken.",
-        "price": "€56.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3024,7 +3602,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige digitale marketingactiviteiten.",
-        "price": "€48.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3039,7 +3617,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige ondersteuning door marketingteam en multi-channel uitvoering.",
-        "price": "€39.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -3079,7 +3657,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3165,7 +3743,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële supporttaken.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3179,7 +3757,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3194,7 +3772,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig klantbeheer en multi-channel ondersteuning.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -3234,7 +3812,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3321,7 +3899,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële datataken.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3335,7 +3913,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor dagelijkse werkzaamheden.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3350,7 +3928,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig databeheer en hoog-volume verwerking.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -3390,7 +3968,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3477,7 +4055,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor UI-fixes en kleine updates.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3491,8 +4069,8 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige applicatieontwikkeling.",
-        "price": "€35.95",
-        "unit": "per hour",
+        "price": "€18,95",
+        "unit": "per uur",
         "features": [
           "20 uur per week",
           "Alle Starter-functies",
@@ -3506,7 +4084,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Ontwikkeling op enterprise-niveau en prestatie-architectuur.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -3547,7 +4125,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3634,7 +4212,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor API-ontwikkeling en serveronderhoud.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3648,7 +4226,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor Laravel of Node.js backend projecten.",
-        "price": "48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3663,7 +4241,7 @@
       "plan_3": {
         "title": "Scale Plan ",
         "desc": "Volledige backend-architectuur en microservices voor grootschalige systemen. ",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur ",
         "features": [
           "40 uur per week",
@@ -3703,7 +4281,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3790,7 +4368,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor app-onderhoud en kleine updates.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3804,7 +4382,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige iOS- of Android-apps.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3819,7 +4397,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige app-ontwikkeling inclusief backend en storebeheer.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -3859,7 +4437,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -3946,7 +4524,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Handmatig testen en bugrapportage voor essentiële releases.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -3960,7 +4538,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde QA-ondersteuning inclusief automatisering en API-testen.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -3975,7 +4553,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig beheer van QA-pipelines en performancetesten.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4015,7 +4593,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4102,7 +4680,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime helpdesk support voor essentiële technische problemen.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4116,7 +4694,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor netwerk-, cloud- en serverbeheer.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4131,7 +4709,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig infrastructuurbeheer en cybersecurity ondersteuning.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4172,7 +4750,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4258,7 +4836,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële data-analyse en rapportage.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4272,7 +4850,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor business intelligence en SQL-rapportage.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4287,7 +4865,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Geavanceerde analytics, statistische modellering en multi-source integratie.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4327,7 +4905,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4413,7 +4991,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ondersteuning voor dashboardontwerp en datamodellering.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4427,7 +5005,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige BI-builds en automatisering.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4442,7 +5020,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise BI-strategie en complexe multi-source integratie.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4482,7 +5060,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4568,7 +5146,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ondersteuning voor blogs en social media captions.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4582,7 +5160,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor SEO-content en e-mailmarketing.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4597,7 +5175,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige contentstrategie voor meerdere kanalen en merkcopywriting.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4637,7 +5215,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4723,7 +5301,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële tracking-setup en basis conversie-bewaking.",
-        "price": "€56.95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4737,7 +5315,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor GTM en custom dashboard rapportage.",
-        "price": "€48.95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4752,7 +5330,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige analytics audit, geavanceerde inzichten en CRO-strategie.",
-        "price": "€39.95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4792,7 +5370,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -4878,7 +5456,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële spreadsheet fixes en formule-ontwikkeling.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -4892,7 +5470,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor VBA-macro's en dashboards.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -4907,7 +5485,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Enterprise modellering, Power Query en volledige automatisering.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -4948,7 +5526,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5034,7 +5612,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële reisplanning en e-mailadvies ondersteuning.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -5048,7 +5626,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor boekingsbeheer en gedetailleerd onderzoek.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -5063,7 +5641,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig beheer van de klantcyclus en marketingondersteuning.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -5103,7 +5681,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5189,7 +5767,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële boekingsverwerking en kalenderbeheer.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -5203,7 +5781,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor systemen, wijzigingen en terugbetalingen.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -5218,7 +5796,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig multi-channel beheer en uitgebreide rapportage.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -5258,7 +5836,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5289,17 +5867,53 @@
       "heading": "Waar Uw Klantenservice Reisbureau bij Kan Helpen",
       "description": "Onze toegewijde reis-klantenservicemedewerkers zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw klantcommunicatie en boekingssupport.",
       "category_1": "Aanvraagafhandeling",
-      "cat_1_items": ["Afhandeling van e-mail en chat aanvragen", "Vragen over bestemmingen en pakketten", "Informatie over prijzen en beschikbaarheid", "Beheer van groepsreisaanvragen", "Leadkwalificatie en opvolging"],
+      "cat_1_items": [
+        "Afhandeling van e-mail en chat aanvragen",
+        "Vragen over bestemmingen en pakketten",
+        "Informatie over prijzen en beschikbaarheid",
+        "Beheer van groepsreisaanvragen",
+        "Leadkwalificatie en opvolging"
+      ],
       "category_2": "Boekingsondersteuning",
-      "cat_2_items": ["Boekingsbevestiging en documentondersteuning", "Afhandeling van wijzigingsverzoeken", "Assistentie bij reisdocumenten en vouchers", "Coördinatie van speciale vereisten", "Briefing van klanten voor vertrek"],
+      "cat_2_items": [
+        "Boekingsbevestiging en documentondersteuning",
+        "Afhandeling van wijzigingsverzoeken",
+        "Assistentie bij reisdocumenten en vouchers",
+        "Coördinatie van speciale vereisten",
+        "Briefing van klanten voor vertrek"
+      ],
       "category_3": "Klachtenbeheer",
-      "cat_3_items": ["Klachtenafhandeling en oplossingen", "Ondersteuning bij vluchtvertraging en annulering", "Oplossing van accommodatieproblemen", "Escalatie- en claimbeheer", "Verwerking van compensatieverzoeken"],
+      "cat_3_items": [
+        "Klachtenafhandeling en oplossingen",
+        "Ondersteuning bij vluchtvertraging en annulering",
+        "Oplossing van accommodatieproblemen",
+        "Escalatie- en claimbeheer",
+        "Verwerking van compensatieverzoeken"
+      ],
       "category_4": "Aftersales Zorg",
-      "cat_4_items": ["Verzamelen van feedback na de reis", "Opvolging voor herhaalboekingen", "Afhandeling van terugbetalingen", "Klanttevredenheidsonderzoeken", "Loyaliteits- en retentiecommunicatie"],
+      "cat_4_items": [
+        "Verzamelen van feedback na de reis",
+        "Opvolging voor herhaalboekingen",
+        "Afhandeling van terugbetalingen",
+        "Klanttevredenheidsonderzoeken",
+        "Loyaliteits- en retentiecommunicatie"
+      ],
       "category_5": "Multi-channel Support",
-      "cat_5_items": ["Beheer van e-mail klantenservice", "Afhandeling van live chat support", "WhatsApp reissupport", "Social media berichten en reacties", "Ondersteuning bij telefonische vragen"],
+      "cat_5_items": [
+        "Beheer van e-mail klantenservice",
+        "Afhandeling van live chat support",
+        "WhatsApp reissupport",
+        "Social media berichten en reacties",
+        "Ondersteuning bij telefonische vragen"
+      ],
       "category_6": "CRM & Administratie",
-      "cat_6_items": ["Klantprofiel- en geschiedenisbeheer", "CRM data-entry en updates", "Onderhoud van communicatielogboeken", "Klantsegmentatie", "Rapportage over klantenserviceprestaties"],
+      "cat_6_items": [
+        "Klantprofiel- en geschiedenisbeheer",
+        "CRM data-entry en updates",
+        "Onderhoud van communicatielogboeken",
+        "Klantsegmentatie",
+        "Rapportage over klantenserviceprestaties"
+      ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
@@ -5308,28 +5922,46 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële aanvragen en boekingsassistentie.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
-          "Minimaal 3 uur","Afhandeling van e-mail en chat aanvragen", "Basis boekingsondersteuning", "Wekelijkse rapportages", "E-mail ondersteuning"],
+          "Minimaal 3 uur",
+          "Afhandeling van e-mail en chat aanvragen",
+          "Basis boekingsondersteuning",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige klantenservice en klachtenbeheer.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
-          "20 uur per week","Alle Starter-functies", "Klachten- en verstoringsbeheer", "Multi-channel communicatieondersteuning", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+          "20 uur per week",
+          "Alle Starter-functies",
+          "Klachten- en verstoringsbeheer",
+          "Multi-channel communicatieondersteuning",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige customer success lifecycle en gedetailleerd CRM-beheer.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
-          "40 uur per week","Alle Growth-functies", "Aftersales- en retentiebeheer", "Volledige CRM- en rapportage-ondersteuning", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+          "40 uur per week",
+          "Alle Growth-functies",
+          "Aftersales- en retentiebeheer",
+          "Volledige CRM- en rapportage-ondersteuning",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
@@ -5338,7 +5970,11 @@
       "heading": "Klaar om uw Klantenservice Reisbureau in te huren?",
       "description": "Laat ons u helpen de perfecte reis-klantenservicemedewerker te vinden voor uw reisbureau en klantenzorg. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   },
   "hire_travel_marketer": {
@@ -5355,7 +5991,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5386,17 +6022,53 @@
       "heading": "Waar Uw Reis Marketeer bij Kan Helpen",
       "description": "Onze toegewijde reismarketeers zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij de marketing, contentcreatie en digitale campagnes van uw reismerk.",
       "category_1": "Content Marketing",
-      "cat_1_items": ["Schrijven van reisblogs en artikelen", "Bestemmingsgidsen en route-content", "Merkverhalen voor de reisbranche", "SEO-content voor reiswebsites", "Planning en beheer van contentkalenders"],
+      "cat_1_items": [
+        "Schrijven van reisblogs en artikelen",
+        "Bestemmingsgidsen en route-content",
+        "Merkverhalen voor de reisbranche",
+        "SEO-content voor reiswebsites",
+        "Planning en beheer van contentkalenders"
+      ],
       "category_2": "Social Media",
-      "cat_2_items": ["Reiscontent voor Instagram en Facebook", "TikTok en YouTube short-content ondersteuning", "Betrokkenheid bij reiscommunities", "Coördinatie van influencer outreach", "Strategie voor groei op social media"],
+      "cat_2_items": [
+        "Reiscontent voor Instagram en Facebook",
+        "TikTok en YouTube short-content ondersteuning",
+        "Betrokkenheid bij reiscommunities",
+        "Coördinatie van influencer outreach",
+        "Strategie voor groei op social media"
+      ],
       "category_3": "E-mail Marketing",
-      "cat_3_items": ["Creatie en beheer van reisnieuwsbrieven", "Schrijven van promotionele e-mailcampagnes", "Ontwikkeling van geautomatiseerde e-mailreeksen", "Seizoensgebonden reisaanbiedingen", "Lijstsegmentatie en re-engagement"],
+      "cat_3_items": [
+        "Creatie en beheer van reisnieuwsbrieven",
+        "Schrijven van promotionele e-mailcampagnes",
+        "Ontwikkeling van geautomatiseerde e-mailreeksen",
+        "Seizoensgebonden reisaanbiedingen",
+        "Lijstsegmentatie en re-engagement"
+      ],
       "category_4": "SEO voor Reizen",
-      "cat_4_items": ["Zoekwoordonderzoek en strategie voor reizen", "On-page SEO voor bestemmingspagina's", "Lokale SEO voor reisbureaus", "Linkbuilding voor reiswebsites", "Maandelijkse SEO-rapportage en optimalisatie"],
+      "cat_4_items": [
+        "Zoekwoordonderzoek en strategie voor reizen",
+        "On-page SEO voor bestemmingspagina's",
+        "Lokale SEO voor reisbureaus",
+        "Linkbuilding voor reiswebsites",
+        "Maandelijkse SEO-rapportage en optimalisatie"
+      ],
       "category_5": "Betaalde Marketing",
-      "cat_5_items": ["Google Ads campagnebeheer voor reizen", "Meta Ads voor reispromoties", "Setup en beheer van retargetingcampagnes", "Schrijven van advertentieteksten voor aanbiedingen", "Tracking en rapportage van campagne-prestaties"],
+      "cat_5_items": [
+        "Google Ads campagnebeheer voor reizen",
+        "Meta Ads voor reispromoties",
+        "Setup en beheer van retargetingcampagnes",
+        "Schrijven van advertentieteksten voor aanbiedingen",
+        "Tracking en rapportage van campagne-prestaties"
+      ],
       "category_6": "Analytics & Rapportage",
-      "cat_6_items": ["Maandelijkse marketing-prestatierapporten", "Conversietracking van boekingen", "ROI-analyse van campagnes", "Concurrentie-benchmarking", "Data-gedreven strategie-aanbevelingen"],
+      "cat_6_items": [
+        "Maandelijkse marketing-prestatierapporten",
+        "Conversietracking van boekingen",
+        "ROI-analyse van campagnes",
+        "Concurrentie-benchmarking",
+        "Data-gedreven strategie-aanbevelingen"
+      ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
@@ -5405,28 +6077,46 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële reiscontent en sociale media taken.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
-          "Minimaal 3 uur","Reiscontent en social media", "Ondersteuning bij e-mailmarketing", "Wekelijkse rapportages", "E-mail ondersteuning"],
+          "Minimaal 3 uur",
+          "Reiscontent en social media",
+          "Ondersteuning bij e-mailmarketing",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledige digitale reismarketing activiteiten.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
-          "20 uur per week","Alle Starter-functies", "SEO en betaalde digitale marketing", "Campagnebeheer en rapportage", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+          "20 uur per week",
+          "Alle Starter-functies",
+          "SEO en betaalde digitale marketing",
+          "Campagnebeheer en rapportage",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige ondersteuning door marketingteam en geavanceerde strategie-coördinatie.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
-          "40 uur per week","Alle Growth-functies", "Multi-channel campagne-uitvoering", "Volledige analytics en prestatiestrategie", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+          "40 uur per week",
+          "Alle Growth-functies",
+          "Multi-channel campagne-uitvoering",
+          "Volledige analytics en prestatiestrategie",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
@@ -5435,7 +6125,11 @@
       "heading": "Klaar om uw Reis Marketeer in te huren?",
       "description": "Laat ons u helpen de perfecte reismarketeer te vinden voor de groei van uw reismerk en uw digitale marketingbehoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   },
   "hire_hr_assistant_remote": {
@@ -5452,7 +6146,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5538,7 +6232,7 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor essentiële HR-admin en werving.",
-        "price": "€41.95",
+        "price": "€21,95",
         "unit": "per uur",
         "features": [
           "Minimaal 3 uur",
@@ -5552,7 +6246,7 @@
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor volledig levenscyclusbeheer.",
-        "price": "€35.95",
+        "price": "€18,95",
         "unit": "per uur",
         "features": [
           "20 uur per week",
@@ -5567,7 +6261,7 @@
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Uitgebreide HR-support inclusief betrokkenheid en rapportage.",
-        "price": "€29.95",
+        "price": "€15,95",
         "unit": "per uur",
         "features": [
           "40 uur per week",
@@ -5607,7 +6301,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5638,17 +6332,53 @@
       "heading": "Waar Uw Administratief Boekhoudkundig Assistent bij Kan Helpen",
       "description": "Onze toegewijde assistenten zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw financiële administratie en boekhouding.",
       "category_1": "Financiële Administratie",
-      "cat_1_items": ["Dagelijkse financiële dossiervorming", "Registratie van uitgaven en kosten", "Verwerking van bankafschriften", "Transactie-categorisering en codering", "Ondersteuning bij maandafronding"],
+      "cat_1_items": [
+        "Dagelijkse financiële dossiervorming",
+        "Registratie van uitgaven en kosten",
+        "Verwerking van bankafschriften",
+        "Transactie-categorisering en codering",
+        "Ondersteuning bij maandafronding"
+      ],
       "category_2": "Facturatie & Debiteuren",
-      "cat_2_items": ["Aanmaken en verzenden van verkoopfacturen", "Betalingsopvolging en herinneringen", "Beheer van openstaande posten", "Verwerking van creditnota's", "Reconciliatie van klantbetalingen"],
+      "cat_2_items": [
+        "Aanmaken en verzenden van verkoopfacturen",
+        "Betalingsopvolging en herinneringen",
+        "Beheer van openstaande posten",
+        "Verwerking van creditnota's",
+        "Reconciliatie van klantbetalingen"
+      ],
       "category_3": "Crediteurenbeheer",
-      "cat_3_items": ["Verwerking en archivering van inkoopfacturen", "Matching en verificatie van inkooporders", "Crediteurenbeheer en monitoring", "Verwerking van declaraties", "Voorbereiding van leveranciersbetalingen"],
+      "cat_3_items": [
+        "Verwerking en archivering van inkoopfacturen",
+        "Matching en verificatie van inkooporders",
+        "Crediteurenbeheer en monitoring",
+        "Verwerking van declaraties",
+        "Voorbereiding van leveranciersbetalingen"
+      ],
       "category_4": "Boekhoudkundige Ondersteuning",
-      "cat_4_items": ["Invoer van grootboekgegevens", "Ondersteuning bij bankreconciliatie", "Assistentie bij kolommenbalans", "Onderhoud van rekeningschema", "Contact met accountant en documentvoorbereiding"],
+      "cat_4_items": [
+        "Invoer van grootboekgegevens",
+        "Ondersteuning bij bankreconciliatie",
+        "Assistentie bij kolommenbalans",
+        "Onderhoud van rekeningschema",
+        "Contact met accountant en documentvoorbereiding"
+      ],
       "category_5": "Software Administratie",
-      "cat_5_items": ["Exact Online data-entry en beheer", "Administratie van Moneybird en Twinfield", "Recordbeheer in QuickBooks en Xero", "Data-import en export uit software", "Systeemintegriteit en nauwkeurigheid"],
+      "cat_5_items": [
+        "Exact Online data-entry en beheer",
+        "Administratie van Moneybird en Twinfield",
+        "Recordbeheer in QuickBooks en Xero",
+        "Data-import en export uit software",
+        "Systeemintegriteit en nauwkeurigheid"
+      ],
       "category_6": "Financiële Rapportage",
-      "cat_6_items": ["Maandelijkse uitgaven- en kostenrapporten", "Rapportage van openstaande facturen", "Samenvattingen van betalingsstatus", "Archivering van financiële documenten", "Auditvoorbereiding en documentondersteuning"],
+      "cat_6_items": [
+        "Maandelijkse uitgaven- en kostenrapporten",
+        "Rapportage van openstaande facturen",
+        "Samenvattingen van betalingsstatus",
+        "Archivering van financiële documenten",
+        "Auditvoorbereiding en documentondersteuning"
+      ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
@@ -5657,28 +6387,46 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Parttime ondersteuning voor facturatie en financiële administratie.",
-        "price": "€26.95",
+        "price": "€13,95",
         "unit": "per uur",
         "features": [
-          "Minimaal 3 uur","Facturatie en debiteurenbeheer", "Financiële dossierregistratie", "Wekelijkse rapportages", "E-mail ondersteuning"],
+          "Minimaal 3 uur",
+          "Facturatie en debiteurenbeheer",
+          "Financiële dossierregistratie",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor boekhouding en softwarebeheer.",
-        "price": "€22.95",
+        "price": "€11,95",
         "unit": "per uur",
         "features": [
-          "20 uur per week","Alle Starter-functies", "Crediteuren- en boekhoudondersteuning", "Beheer van boekhoudsoftware", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+          "20 uur per week",
+          "Alle Starter-functies",
+          "Crediteuren- en boekhoudondersteuning",
+          "Beheer van boekhoudsoftware",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledige financiële rapportage en ondersteuning bij audits.",
-        "price": "€18.95",
+        "price": "€9,95",
         "unit": "per uur",
         "features": [
-          "40 uur per week","Alle Growth-functies", "Volledige financiële rapportage", "Ondersteuning bij auditvoorbereiding", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+          "40 uur per week",
+          "Alle Growth-functies",
+          "Volledige financiële rapportage",
+          "Ondersteuning bij auditvoorbereiding",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
@@ -5687,7 +6435,11 @@
       "heading": "Klaar om uw Administratief Boekhoudkundig Assistent in te huren?",
       "description": "Laat ons u helpen de perfecte assistent te vinden voor uw financiële administratie en boekhouding. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   },
   "hire_webdesigner_developer": {
@@ -5704,7 +6456,7 @@
       "save_badge": "Bespaar tot 60%",
       "stats": {
         "stat_1": "500+ Toegewijde Professionals",
-        "stat_2": "24u Starttijd",
+        "stat_2": "24u Reactietijd",
         "stat_3": "60% Kostenbesparing"
       }
     },
@@ -5735,17 +6487,53 @@
       "heading": "Waar Uw Webdesigner & Developer bij Kan Helpen",
       "description": "Onze toegewijde webprofessionals zijn getraind om uw ontwerp- en ontwikkelingsbehoeften aan te pakken voor een krachtige online aanwezigheid.",
       "category_1": "Webdesign",
-      "cat_1_items": ["Website ontwerp op maat", "Landingspagina ontwerp", "UI/UX design en wireframing", "Mobiel-responsief ontwerp", "Merkconsistent visueel ontwerp"],
+      "cat_1_items": [
+        "Website ontwerp op maat",
+        "Landingspagina ontwerp",
+        "UI/UX design en wireframing",
+        "Mobiel-responsief ontwerp",
+        "Merkconsistent visueel ontwerp"
+      ],
       "category_2": "Webontwikkeling",
-      "cat_2_items": ["WordPress ontwikkeling", "Maatwerk HTML/CSS/JS ontwikkeling", "CMS setup en aanpassing", "Website snelheidsoptimalisatie", "Cross-browser compatibiliteit"],
+      "cat_2_items": [
+        "WordPress ontwikkeling",
+        "Maatwerk HTML/CSS/JS ontwikkeling",
+        "CMS setup en aanpassing",
+        "Website snelheidsoptimalisatie",
+        "Cross-browser compatibiliteit"
+      ],
       "category_3": "E-commerce Oplossingen",
-      "cat_3_items": ["Shopify winkel ontwerp", "WooCommerce ontwikkeling", "Productpagina ontwerp", "Checkout flow optimalisatie", "Betalingsgateway integratie"],
+      "cat_3_items": [
+        "Shopify winkel ontwerp",
+        "WooCommerce ontwikkeling",
+        "Productpagina ontwerp",
+        "Checkout flow optimalisatie",
+        "Betalingsgateway integratie"
+      ],
       "category_4": "Landingspagina's",
-      "cat_4_items": ["Hoog-converterende landingspagina's", "A/B test-klare pagina-opbouw", "Lead capture pagina ontwerp", "Verkooppagina ontwikkeling", "CTA en formulier optimalisatie"],
+      "cat_4_items": [
+        "Hoog-converterende landingspagina's",
+        "A/B test-klare pagina-opbouw",
+        "Lead capture pagina ontwerp",
+        "Verkooppagina ontwikkeling",
+        "CTA en formulier optimalisatie"
+      ],
       "category_5": "Onderhoud & Support",
-      "cat_5_items": ["Regelmatige updates en back-ups", "Plugin en thema beheer", "Beveiligingsmonitoring", "Bugfixing en probleemoplossing", "Prestatie-optimalisatie"],
+      "cat_5_items": [
+        "Regelmatige updates en back-ups",
+        "Plugin en thema beheer",
+        "Beveiligingsmonitoring",
+        "Bugfixing en probleemoplossing",
+        "Prestatie-optimalisatie"
+      ],
       "category_6": "Redesign & UX Audit",
-      "cat_6_items": ["Volledig website herontwerp", "User experience audits", "Conversie-optimalisatie ontwerp", "Toegankelijkheidsverbeteringen", "Creatie van prototypes en mockups"],
+      "cat_6_items": [
+        "Volledig website herontwerp",
+        "User experience audits",
+        "Conversie-optimalisatie ontwerp",
+        "Toegankelijkheidsverbeteringen",
+        "Creatie van prototypes en mockups"
+      ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
@@ -5754,28 +6542,46 @@
       "plan_1": {
         "title": "Starter Plan",
         "desc": "Essentiële ondersteuning voor landingspagina's en website updates.",
-        "price": "€49,95",
+        "price": "€25,95",
         "unit": "per uur",
         "features": [
-          "Minimaal 3 uur","Website updates en onderhoud", "Landingspagina ontwerp", "Wekelijkse rapportages", "E-mail ondersteuning"],
+          "Minimaal 3 uur",
+          "Website updates en onderhoud",
+          "Landingspagina ontwerp",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
         "title": "Growth Plan",
         "desc": "Toegewijde ondersteuning voor maatwerk websites en e-commerce.",
-        "price": "€59,95",
+        "price": "€22,95",
         "unit": "per uur",
         "features": [
-          "20 uur per week","Alle Starter-functies", "Maatwerk website ontwerp en bouw", "E-commerce ontwikkeling", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+          "20 uur per week",
+          "Alle Starter-functies",
+          "Maatwerk website ontwerp en bouw",
+          "E-commerce ontwikkeling",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
         "title": "Scale Plan",
         "desc": "Volledig UI/UX redesign en enterprise websitebeheer.",
-        "price": "€69,95",
+        "price": "€19,95",
         "unit": "per uur",
         "features": [
-          "40 uur per week","Alle Growth-functies", "UI/UX en herontwerpprojecten", "Beheer van meerdere sites", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+          "40 uur per week",
+          "Alle Growth-functies",
+          "UI/UX en herontwerpprojecten",
+          "Beheer van meerdere sites",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
@@ -5784,7 +6590,11 @@
       "heading": "Klaar om uw Webdesigner & Developer in te huren?",
       "description": "Laat ons u helpen de perfecte webdesigner en developer te vinden voor uw bedrijfswebsite en digitale aanwezigheid. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   }
 }

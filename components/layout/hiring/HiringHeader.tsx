@@ -47,7 +47,7 @@ export default async function HiringHeader({ slug, locale }: Props) {
     <div>
       <div className="bg-linear-to-br from-[#FFFFFF] via-[#F9FAFB] to-[#156F76]">
         <div className="container mx-auto font-sans">
-          <main className="px-4 sm:px-6 py-12 sm:py-16 flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+          <main className=" py-12 sm:py-16 flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
             {/* Left Content */}
             <div className="flex-1 space-y-6 sm:space-y-8 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-[#156F761A] border text-teal-700 text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 rounded-full shadow-sm">

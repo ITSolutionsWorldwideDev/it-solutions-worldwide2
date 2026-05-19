@@ -47,7 +47,8 @@ const ConsultationSection: React.FC<ConsultationSectionProps> = ({
   }, [slides.length]);
 
   return (
-    <section className="relative w-full px-4 sm:px-8 md:px-16 lg:px-32 py-12">
+    <section className="relative container mx-auto py-12">
+    {/* w-full px-4 sm:px-8 md:px-16 lg:px-32  */}
       <div
         className="relative bg-cover bg-center w-full h-[300px] sm:h-[400px] max-w-6xl mx-auto rounded-xl shadow-lg overflow-hidden flex items-center justify-center"
         style={{

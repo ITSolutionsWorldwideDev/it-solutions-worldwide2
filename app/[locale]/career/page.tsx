@@ -5,11 +5,12 @@ import ImageSection from "@/components/layout/image-section";
 import ImageSection2 from "@/components/layout/image-section-2";
 import BannerSection from "@/components/layout/banner-section";
 
-import { jobsData } from "@/lib/jobsData";
-import Link from "next/link";
-import PdfViewer from "@/components/ui/pdf-viewer";
+// import { jobsData } from "@/lib/jobsData";
+// import Link from "next/link";
+// import PdfViewer from "@/components/ui/pdf-viewer";
 import CardSection from "@/components/layout/card-section";
 import { Metadata } from "next";
+import CareerJobsSection from "@/components/layout/career-jobs";
 
 export const metadata: Metadata = {
   title: {
@@ -50,8 +51,9 @@ export default async function Career({
         imageUrl="/assets/images/career3.png"
       />
       <CardSection heading={t("career.heading_4")} text={t("career.text_4")} />
+      <CareerJobsSection />
 
-      <div className="container mt-20 max-w-sm sm:max-w-4xl gap-3 sm:gap-0 mx-auto flex flex-col">
+      {/* <div className="container mt-20 max-w-sm sm:max-w-4xl gap-3 sm:gap-0 mx-auto flex flex-col">
         {jobsData.map((job, index) => (
           <div
             key={index}
@@ -76,7 +78,7 @@ export default async function Career({
           </div>
         ))}
         <hr className="mt-4" />
-      </div>
+      </div> */}
     </div>
   );
 }
