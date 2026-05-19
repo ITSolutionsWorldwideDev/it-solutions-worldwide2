@@ -1,6 +1,8 @@
 // app/[locale]/staffing-support/[slug]/page.tsx
 
 import HiringHeader from "@/components/layout/hiring/HiringHeader";
+import Header from "@/components/layout/ourservices/Header";
+import Services from "@/components/layout/ourservices/Services";
 import { Metadata } from "next";
 import React from "react";
 
@@ -36,5 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const { slug, locale } = await params;
 
-  return <HiringHeader slug={slug} locale={locale} />;
+  return  <HiringHeader slug={slug} locale={locale} />;
+  
+  // <Services />
 }

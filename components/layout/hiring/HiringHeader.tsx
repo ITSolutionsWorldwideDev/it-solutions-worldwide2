@@ -31,7 +31,7 @@ export default async function HiringHeader({ slug, locale }: Props) {
   const { service } = data;
 
   const i18n = await initServerI18n(locale);
- 
+
   const t = i18n.getFixedT(locale, "common");
 
   const translationKey = slug.replace(/-/g, "_");
@@ -40,7 +40,6 @@ export default async function HiringHeader({ slug, locale }: Props) {
     returnObjects: true,
   }) as any;
 
-  
   // contentMap[slug as keyof typeof contentMap] ||
   // contentMap["hire-virtual-assistant"];
 
