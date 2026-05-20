@@ -36,7 +36,7 @@ const Section2: FC<Section2Props> = ({
   columns = 3,
 }) => {
   
-console.log(cards)
+// console.log(cards)
   const gridColsClass =
     {
       1: "lg:grid-cols-1",
@@ -48,7 +48,7 @@ console.log(cards)
     }[columns] || "lg:grid-cols-1";
 
   return (
-    <div className="container mx-auto md:mx-4 lg:mx-auto my-12">
+    <div className="max-w-7xl mx-auto md:mx-4 lg:mx-auto my-12">
       <div className="w-full py-2 ml-4 sm:ml-0 text-center">
         <h2 className="text-2xl font-bold mb-4">{heading}</h2>
         <p className="text-gray-700">{text}</p>

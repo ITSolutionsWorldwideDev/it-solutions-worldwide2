@@ -1934,10 +1934,10 @@
       "sub_description": "From administrative assistance to customer support and back-office operations, we provide flexible business support services that help organizations stay productive, organized, and focused on growth. No complicated processes. No operational bottlenecks. Just reliable support designed around your business.",
       "cta_button": "→ Let's Build Your Team Today ←"
     },
-    "features": {
+    "why_choose": {
       "title": "Why Companies Choose IT Solutions Worldwide",
-      "description": "Business support services are about improving efficiency, reducing operational pressure, and helping businesses focus on what matters most. Companies across the Netherlands and beyond trust IT Solutions Worldwide because we make business operations smoother, faster, and more manageable.",
-      "list": [
+      "intro": "Business support services are about improving efficiency, reducing operational pressure, and helping businesses focus on what matters most. Companies across the Netherlands and beyond trust IT Solutions Worldwide because we make business operations smoother, faster, and more manageable.",
+      "benefits": [
         "Save Up to 60% Compared to Traditional In-House Operations",
         "Reliable Remote Business Support Solutions",
         "Fast Service Setup and Onboarding",
@@ -1946,33 +1946,33 @@
       ],
       "cta_call": "Book Your Free Call Today"
     },
-    "services": {
+     "services_section": {
       "title": "Explore Our Business Support services",
       "intro": "We provide professional remote business support solutions across a range of operational functions. Explore our services below to learn how we can support your business.",
-      "items": {
+      "roles": {
         "admin": {
           "title": "Administrative Support",
-          "text": "Keep your business organized and running efficiently with professional administrative support services. Our remote support team assists with scheduling, correspondence, document management, reporting, data organization, and daily operational coordination.",
+          "description": "Keep your business organized and running efficiently with professional administrative support services. Our remote support team assists with scheduling, correspondence, document management, reporting, data organization, and daily operational coordination.",
           "ideal_for": "Small to mid-sized businesses, startups, and entrepreneurs looking to improve operational efficiency and reduce administrative workload."
         },
         "hr": {
           "title": "HR Administrative (Remote)",
-          "text": "Simplify your HR operations with reliable HR administrative support services. We assist businesses with onboarding documentation, employee record management, interview coordination, HR system organization, and internal process support.",
+          "description": "Simplify your HR operations with reliable HR administrative support services. We assist businesses with onboarding documentation, employee record management, interview coordination, HR system organization, and internal process support.",
           "ideal_for": "Companies seeking structured HR support without the overhead of building a large internal HR department."
         },
         "customer_support": {
           "title": "Customer Support",
-          "text": "Deliver a better customer experience with responsive remote customer support solutions. Our support specialists assist businesses with customer inquiries, issue resolution, live chat support, email management, and multi-channel communication services.",
+          "description": "Deliver a better customer experience with responsive remote customer support solutions. Our support specialists assist businesses with customer inquiries, issue resolution, live chat support, email management, and multi-channel communication services.",
           "ideal_for": "E-commerce businesses, SaaS companies, and service providers looking to maintain professional and responsive customer communication."
         },
         "data_entry": {
           "title": "Data Entry",
-          "text": "Improve accuracy and productivity with dependable data entry support services. Our remote professionals assist with database management, spreadsheet organization, form processing, record updates, and high-volume data handling tasks.",
+          "description": "Improve accuracy and productivity with dependable data entry support services. Our remote professionals assist with database management, spreadsheet organization, form processing, record updates, and high-volume data handling tasks.",
           "ideal_for": "Businesses managing large amounts of information, repetitive processes, or operational backlogs"
         }
       }
     },
-    "philosophy": {
+    "reputation": {
       "title": "Why Businesses Keep Coming Back to Us",
       "text": "IT Solutions Worldwide supports businesses of all sizes — from growing startups to established enterprises, with efficient and cost-effective business support services. We focus on delivering dependable operational assistance, transparent communication, and flexible support solutions tailored to each client’s needs.",
       "summary": "We work with both Dutch and international businesses, maintain transparent pricing with no hidden costs, and provide every client with a dedicated point of contact from start to finish. Simple, professional, and built around your business success."
@@ -2004,7 +2004,7 @@
     },
     "footer_cta": {
       "title": "Ready to Improve Your Business Operations?",
-      "text": "Stop getting slowed down by operational tasks and focus on growing your business. IT Solutions Worldwide provides flexible, reliable, and cost-effective business support services designed to help your organization operate more efficiently."
+      "description": "Stop getting slowed down by operational tasks and focus on growing your business. IT Solutions Worldwide provides flexible, reliable, and cost-effective business support services designed to help your organization operate more efficiently."
     }
   },
 
@@ -2027,7 +2027,7 @@
       ],  
       "cta_call": "Book Your Free Call Today"
     },
-    "roles_section": {
+     "services_section": {
       "title": "Explore Our Hire Roles",
       "intro": "From technical experts to versatile business support professionals, we place skilled remote talent across a wide range of roles. Click any role below to learn more and get started.",
       "roles": {
@@ -2105,7 +2105,7 @@
       "sub_description": "No design agency markups. No slow back-and-forth. Just skilled creative talent, dedicated to your business.",
       "cta_button": "→ Find Your Remote Design Professional Today ←"
     },
-    "why_outsource": {
+    "why_choose": {
       "title": "Why Outsource Your Design Needs to IT Solutions Worldwide?",
       "intro": "In the Netherlands, hiring a skilled in-house designer comes with a significant price tag. We give you access to experienced creative professionals at a fraction of the cost.",
       "benefits": [
@@ -2133,9 +2133,9 @@
         }
       }
     },
-    "comparison_section": {
+    "reputation": {
       "title": "Remote Designer vs. Local Hire vs. Design Agency — What is the Difference?",
-      "intro": "When businesses need design support, they typically look at three options. Here is an honest breakdown:",
+      "text": "When businesses need design support, they typically look at three options. Here is an honest breakdown:",
       "options": [
         {
           "label": "Local In-House Designer",
@@ -2189,7 +2189,7 @@
       "sub_description": "No agency retainers. No inflated overheads. Just the right talent, dedicated to your growth.",
       "cta_button": "→ Find Your Remote Marketing or Analytics Professional Today ←"
     },
-    "why_outsource": {
+    "why_choose": {
       "title": "Why Outsource Your Marketing & Analytics Needs to IT Solutions Worldwide?",
       "intro": "Marketing and analytics talent is expensive to hire locally. We give you access to skilled professionals at a fraction of the local cost, without sacrificing results or quality.",
       "benefits": [
@@ -2275,7 +2275,7 @@
       "sub_description": "No lengthy recruitment cycles. No inflated agency fees. Just the right technical talent, onboarded fast.",
       "cta_button": "→ Find Your Remote IT Professional Today ←"
     },
-    "why_outsource": {
+    "why_choose": {
       "title": "Why Outsource Your IT & Development Needs to IT Solutions Worldwide?",
       "intro": "The demand for skilled IT talent is at an all-time high. Businesses are turning to remote outsourcing to access expertise without the premium price tag of local hiring.",
       "benefits": [

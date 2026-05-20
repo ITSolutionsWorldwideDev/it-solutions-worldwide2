@@ -94,8 +94,8 @@ function FAQItem({
 }
 
 // ── Main FAQ section ─────────────────────────────────────────────────────────
-export default function Faqs({data}:any) {
-    console.log(data)
+export default function Faqs({faqData}:any) {
+    // console.log(faqData)
   const [openIndex, setOpenIndex] = useState<number | null>(0); // first item open by default
 
   const toggle = (index: number) => {
@@ -117,11 +117,11 @@ export default function Faqs({data}:any) {
 
         {/* Accordion list */}
         <div className="flex flex-col gap-3">
-          {faqData.map((item, index) => (
+          {faqData.map((item:any, index:number) => (
             <FAQItem
               key={index}
-              question={item.question}
-              answer={item.answer}
+              question={item.q}
+              answer={item.a}
               isOpen={openIndex === index}
               onToggle={() => toggle(index)}
             />

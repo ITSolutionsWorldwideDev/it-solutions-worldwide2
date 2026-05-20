@@ -5,7 +5,7 @@ import nodemailer from "nodemailer";
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json();
-    const { name, email, subject, message } = data;
+    const { name, email, phone, subject, message } = data;
 
     if (!email) {
       return NextResponse.json(
@@ -40,6 +40,7 @@ export async function POST(req: NextRequest) {
         </ul>
         <br/>
         <p><strong>Subject:</strong> ${subject || "Not selected"}</p>
+        <p><strong>Phone:</strong> ${phone || "Not selected"}</p>
         <br/>
         <p><strong>Message:</strong> ${message || "Not selected"}</p>
         `,
