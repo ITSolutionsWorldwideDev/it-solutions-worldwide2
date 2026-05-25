@@ -2,12 +2,21 @@
 
 "use client";
 
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Send } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Send,
+} from "lucide-react";
 
 export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-const form = e.currentTarget
+    const form = e.currentTarget;
     const formData = {
       name: (form.name as unknown as HTMLInputElement).value,
       email: (form.email as HTMLInputElement).value,
@@ -16,7 +25,7 @@ const form = e.currentTarget
       service: (form.service as HTMLInputElement).value,
       message: (form.message as HTMLTextAreaElement).value,
     };
-    console.log(formData)
+    console.log(formData);
 
     try {
       const response = await fetch("/api/contact", {
@@ -50,8 +59,7 @@ const form = e.currentTarget
         {/* Heading */}
         <div className="text-center mb-14">
           <h1 className="text-5xl md:text-6xl font-bold text-white">
-            Let&apos;s{" "}
-            <span className="text-[#22A3AD]">Connect</span>
+            Let&apos;s <span className="text-[#22A3AD]">Connect</span>
           </h1>
 
           <p className="text-gray-300 mt-4 text-sm md:text-base">
@@ -64,9 +72,7 @@ const form = e.currentTarget
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Left Side */}
           <div>
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Get in Touch
-            </h2>
+            <h2 className="text-4xl font-bold text-white mb-4">Get in Touch</h2>
 
             <p className="text-gray-300 leading-7 mb-8 max-w-xl">
               Have a project in mind? We&apos;d love to hear from you. Send us a
@@ -84,7 +90,7 @@ const form = e.currentTarget
                 <div>
                   <p className="text-gray-400 text-sm">Email Us</p>
                   <h4 className="text-white font-semibold">
-                    contact@company.com
+                    info@itsolutionsworldwide.com
                   </h4>
                 </div>
               </div>
@@ -97,9 +103,7 @@ const form = e.currentTarget
 
                 <div>
                   <p className="text-gray-400 text-sm">Call Us</p>
-                  <h4 className="text-white font-semibold">
-                    +1 (555) 123-4567
-                  </h4>
+                  <h4 className="text-white font-semibold">+31 10 766 0786</h4>
                 </div>
               </div>
             </div>
@@ -113,7 +117,8 @@ const form = e.currentTarget
               <div>
                 <p className="text-gray-400 text-sm">Visit Us</p>
                 <h4 className="text-white font-semibold">
-                  123 Business Ave, Tech City
+                  Mandenmakerstraat 100C, 3194 DG Hoogvliet Rotterdam,
+                  Netherlands
                 </h4>
               </div>
             </div>
@@ -195,7 +200,7 @@ const form = e.currentTarget
                   <input
                     type="text"
                     name="phone"
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="+31 xx xxx-xxxx"
                     className="w-full h-12 rounded-xl bg-[#00171b] border border-white/5 px-4 text-white outline-none focus:border-cyan-400"
                   />
                 </div>
