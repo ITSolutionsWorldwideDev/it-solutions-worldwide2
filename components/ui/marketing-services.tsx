@@ -18,7 +18,7 @@ export default function MarketingServices({
   services,
 }: MarketingServicesProps) {
   return (
-    <section className="max-w-[1152px] mx-auto p-6 bg-gradient-to-b from-[#bb89ea] to-white rounded-lg text-center">
+    <section className="max-w-6xl mx-auto p-6 bg-linear-to-b from-[#bb89ea] to-white rounded-lg text-center">
       <h2 className="text-2xl font-bold text-white mb-6">{title}</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

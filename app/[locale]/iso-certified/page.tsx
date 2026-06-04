@@ -38,8 +38,8 @@ export default async function ISOCertified({
         mainHeading="ISO Certified IT Solutions You Can Trust"
         description="IT Solutions Worldwide is an ISO-certified company, committed to international standards of quality, security, and continuous improvement—so our clients receive reliable, compliant, and future-ready IT services."
         buttons={[
-          { label: "Work With an ISO Certified Partner", href: "/contact" },
-          { label: "Contact Us", href: "/contact", variant: "outline" },
+          { label: "Work With an ISO Certified Partner", href: "/contact-us" },
+          { label: "Contact Us", href: "/contact-us", variant: "outline" },
         ]}
       />
 
