@@ -3,7 +3,7 @@ import Image from "next/image";
 import { getBlogBySlug } from "@/lib/blogs";
 import { notFound } from "next/navigation";
 
-export const revalidate = 60;
+export const revalidate = 300;
 
 export default async function BlogPostPage({
   params,

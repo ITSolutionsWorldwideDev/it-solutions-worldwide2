@@ -1,5 +1,7 @@
 // app/[locale]/it-support/page.tsx
 
+export const revalidate = 3600;
+
 import initServerI18n from "@/utils/serverTranslation";
 import ImageSection from "@/components/layout/image-section";
 import InfoSection from "@/components/layout/info-section";

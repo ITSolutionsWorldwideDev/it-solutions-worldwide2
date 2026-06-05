@@ -12,6 +12,8 @@ import CardSection from "@/components/layout/card-section";
 import { Metadata } from "next";
 import CareerJobsSection from "@/components/layout/career-jobs";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: {
     absolute: "IT & Supply Chain Jobs in Netherlands | Apply Now",

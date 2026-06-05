@@ -1,17 +1,21 @@
 // app/layout.tsx
 import "./globals.css";
 import { Lexend } from "next/font/google";
-import PageUpButton from "@/components/ui/PageUpButton";
+import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import MetaPixel from "@/components/MetaPixel";
-import GoogleTag from "@/components/GoogleTag";
 import GoogleTagManager from "@/components/GoogleTagManager";
+import GoogleTag from "@/components/GoogleTag";
 import Script from "next/script";
-import { GoogleAnalytics } from "@next/third-parties/google";
+
+const PageUpButton = dynamic(() => import("@/components/ui/PageUpButton"));
+
 const lexend = Lexend({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
   display: "swap",
+  preload: true,
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {
@@ -41,20 +45,17 @@ export default function RootLayout({
           name="facebook-domain-verification"
           content="0ryxazzsetmvipkqgt60umo33s7ti7"
         />
-          <link rel="preload" as="image" href="/assets/images/services/supply-chain-management.png" />
       </head>
       <body className="mx-2 md:mx-0 lg:mx-0">
         <MetaPixel pixelId="1766535074073515" />
         <GoogleTagManager gtmId="GTM-PH8FNRK6" />
-        <GoogleAnalytics gaId="GT-TQKZR4LS" />
-        {/* <GoogleTag tagId="GT-TQKZR4LS" /> */}
-
-        {/* <GoogleTagManager gtmId="GTM-NX66K4BC" /> */}
+        <GoogleTag tagId="GT-TQKZR4LS" />
         {children}
 
-        <Script id="clarity-script" strategy="afterInteractive">
+        <Script id="clarity-script" strategy="lazyOnload">
           {`
-          (function(c,l,a,r,i,t,y){         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);     })(window, document, "clarity", "script", "wgjwbc5ugr")`}
+          (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wgjwbc5ugr");
+          `}
         </Script>
         <PageUpButton />
       </body>

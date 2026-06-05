@@ -1,4 +1,7 @@
 // app/[locale]/profile/page.tsx
+
+export const revalidate = 3600;
+
 import initServerI18n from "@/utils/serverTranslation";
 import FAQSection from "@/components/layout/FAQ-section";
 import ProjectSection from "@/components/layout/about/project-section";

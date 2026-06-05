@@ -10,6 +10,8 @@ import MarketingServices from "@/components/ui/marketing-services";
 import MarketingBanner from "@/components/ui/marketing-banner";
 import { Metadata } from "next";
 
+export const revalidate = 3600;
+
 
 export const metadata: Metadata = {
   title: {

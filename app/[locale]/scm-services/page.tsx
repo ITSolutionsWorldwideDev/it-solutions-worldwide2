@@ -10,6 +10,7 @@ import ConsultationSection from "@/components/layout/consultation-section";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import { Metadata } from "next";
 
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: {

@@ -1,9 +1,24 @@
 // app/[locale]/page.tsx
+import dynamic from "next/dynamic";
 
-import AnimationArea from "@/components/layout/home/AnimationArea";
-import BlogCarousel from "@/components/layout/home/BlogCarousel";
-import Certifications from "@/components/layout/home/Certification";
-import ContactSection from "@/components/layout/home/ContactSection";
+const AnimationArea = dynamic(
+  () => import("@/components/layout/home/AnimationArea"),
+  { loading: () => <div className="min-h-[50vh]" aria-hidden /> },
+);
+
+const BlogCarousel = dynamic(
+  () => import("@/components/layout/home/BlogCarousel"),
+);
+
+const Certifications = dynamic(
+  () => import("@/components/layout/home/Certification"),
+);
+
+const ContactSection = dynamic(
+  () => import("@/components/layout/home/ContactSection"),
+);
+
+export const revalidate = 3600;
 
 export default async function HomePage({
   params,
@@ -11,42 +26,13 @@ export default async function HomePage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+
   return (
-    <>
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        
-        <AnimationArea />
-        <BlogCarousel locale={locale} />
-        <Certifications />
-        
-        <ContactSection />
-      </main>
-    </>
+    <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <AnimationArea />
+      <BlogCarousel locale={locale} />
+      <Certifications />
+      <ContactSection />
+    </main>
   );
 }
-
-// interface LocalePageProps {
-//   params: { locale: string };
-// }
-// { params }: LocalePageProps
-
-/* export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-
-  return (
-    <>
-      <BlogCarousel locale={locale} />
-    </>
-  );
-} */
-/* 
-
-import type { Metadata } from 'next';
-export const generateMetadata = async ({ params }: { params: { locale: string } }): Promise<Metadata> => {
-  const { locale } = params;
-
-  return {
-    title: `Home | ${locale.toUpperCase()} | IT Solutions`,
-    description: 'Localized home page description',
-  };
-}; */

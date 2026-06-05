@@ -5,6 +5,7 @@ import initServerI18n from "@/utils/serverTranslation";
 
 import { Metadata } from "next";
 
+export const revalidate = 3600;
 
 export const metadata:Metadata={  
   title:{

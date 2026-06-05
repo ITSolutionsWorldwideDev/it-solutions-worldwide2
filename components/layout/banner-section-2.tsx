@@ -1,6 +1,7 @@
 // components/layout/banner-section-2.tsx
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
@@ -12,7 +13,7 @@ type Slide = {
   button2?: string;
   button3?: string;
   button4?: string;
-  buttonTextColor?:string;
+  buttonTextColor?: string;
 };
 
 type BannerSectionProps = {
@@ -37,12 +38,16 @@ const BannerSection2: React.FC<BannerSectionProps> = ({ slides }) => {
 
   return (
     <div className="relative w-full px-4 sm:px-8 md:px-7 lg:px-32 py-2">
-      <div
-        className="relative bg-cover bg-center w-full h-[300px] md:h-[400px] lg:h-[600px] max-w-6xl mx-auto rounded-xl shadow-lg overflow-hidden flex items-center"
-        style={{
-          backgroundImage: `url(${slides[currentSlide].backgroundImage})`,
-        }}
-      >
+      <div className="relative w-full h-[300px] md:h-[400px] lg:h-[600px] max-w-6xl mx-auto rounded-xl shadow-lg overflow-hidden flex items-center">
+        <Image
+          src={slides[currentSlide].backgroundImage}
+          alt=""
+          fill
+          priority={currentSlide === 0}
+          sizes="(max-width: 768px) 100vw, 1152px"
+          className="object-cover"
+          aria-hidden
+        />
         <div className="relative z-10 text-left text-white px-6 md:px-12">
           <h1 className="uppercase text-xl md:text-3xl lg:text-4xl font-bold mb-1 sm:mb-4 w-[90%] md:w-[90%] lg:w-1/2">
             {slides[currentSlide].heading}
@@ -50,47 +55,55 @@ const BannerSection2: React.FC<BannerSectionProps> = ({ slides }) => {
           <p className="text-sm sm:text-base w-[90%] md:w-[90%] lg:w-1/2">
             {slides[currentSlide].text}
           </p>
-          {slides[currentSlide].button ? <div className="flex justify-start gap-4 mt-2">
-            <Link
-              href="/contact-us" target="_blank" //change for pop-up later
-              className={`bg-white ${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
-            >
-              {slides[currentSlide].button}
-              
-            </Link>
-              
-          </div>: ''}
-          {slides[currentSlide].button2? <div className="flex justify-start gap-4 mt-2">
-            <Link
-              href="#"
-              className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
-            >
-              {slides[currentSlide].button2}
-              
-            </Link>
-              
-          </div> : ''}
-          {slides[currentSlide].button3? <div className="flex justify-start gap-4 mt-2">
-            <Link
-              href="#"
-              className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
-            >
-              {slides[currentSlide].button3}
-              
-            </Link>
-              
-          </div> : ''}
-          {slides[currentSlide].button4? <div className="flex justify-start gap-4 mt-2">
-            <Link
-              href="#"
-              className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
-            >
-              {slides[currentSlide].button4}
-              
-            </Link>
-              
-          </div> : ''}
-        
+          {slides[currentSlide].button ? (
+            <div className="flex justify-start gap-4 mt-2">
+              <Link
+                href="/contact-us"
+                target="_blank"
+                className={`bg-white ${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
+              >
+                {slides[currentSlide].button}
+              </Link>
+            </div>
+          ) : (
+            ""
+          )}
+          {slides[currentSlide].button2 ? (
+            <div className="flex justify-start gap-4 mt-2">
+              <Link
+                href="#"
+                className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
+              >
+                {slides[currentSlide].button2}
+              </Link>
+            </div>
+          ) : (
+            ""
+          )}
+          {slides[currentSlide].button3 ? (
+            <div className="flex justify-start gap-4 mt-2">
+              <Link
+                href="#"
+                className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
+              >
+                {slides[currentSlide].button3}
+              </Link>
+            </div>
+          ) : (
+            ""
+          )}
+          {slides[currentSlide].button4 ? (
+            <div className="flex justify-start gap-4 mt-2">
+              <Link
+                href="#"
+                className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
+              >
+                {slides[currentSlide].button4}
+              </Link>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

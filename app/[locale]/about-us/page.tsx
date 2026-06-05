@@ -13,6 +13,8 @@ import AboutUsProcessFlow from "@/components/layout/aboutus-process-flow";
 import BannerSectionAboutUs from "@/components/layout/about/banner-section";
 import { Metadata } from "next";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: {
     absolute: "Your Trusted IT Partner in the Netherlands | ITWW",
