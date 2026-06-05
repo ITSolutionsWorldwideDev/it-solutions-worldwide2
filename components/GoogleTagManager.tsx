@@ -31,7 +31,7 @@ export default function GoogleTagManager({ gtmId }: { gtmId: string }) {
       {/* Google Tag Manager Script */}
       <Script
         id="gtm-base"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
             (function(w,d,s,l,i){
