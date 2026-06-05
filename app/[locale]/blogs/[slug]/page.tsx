@@ -1,6 +1,9 @@
 // app/[locale]/blogs/[slug]/page.tsx
+import Image from "next/image";
 import { getBlogBySlug } from "@/lib/blogs";
 import { notFound } from "next/navigation";
+
+export const revalidate = 60;
 
 export default async function BlogPostPage({
   params,
@@ -27,11 +30,16 @@ export default async function BlogPostPage({
       </p>
 
       {blog.content.featuredImage && (
-        <img
-          src={blog.content.featuredImage}
-          alt={blog.content.title}
-          className="w-full h-auto rounded-lg mb-10"
-        />
+        <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg mb-10">
+          <Image
+            src={blog.content.featuredImage}
+            alt={blog.content.title}
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
+          />
+        </div>
       )}
 
       <div
