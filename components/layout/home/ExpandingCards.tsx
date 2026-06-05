@@ -31,7 +31,7 @@ export default function ExpandingCards(){
         <div
           key={index}
           className={`relative cursor-pointer rounded-lg bg-cover bg-center transition-all duration-500 ease-linear w-full md:w-auto ${
-            activeIndex === index ? 'flex-grow' : 'flex-shrink'
+            activeIndex === index ? 'grow' : 'shrink'
           }`}
           style={{
             flex: activeIndex === index ? 5 : 0.4,

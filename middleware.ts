@@ -2,10 +2,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import acceptLanguage from "accept-language";
 import i18nConfig from "./i18n/i18nConfig";
-import {
-  getLegacyRedirect,
-  isGonePath,
-} from "./lib/legacyRedirects";
+import { getLegacyRedirect, isGonePath } from "./lib/legacyRedirects";
 
 const locales = i18nConfig.locales;
 const defaultLocale = i18nConfig.defaultLocale;
@@ -13,7 +10,9 @@ const defaultLocale = i18nConfig.defaultLocale;
 function isStaticAssetPath(pathname: string): boolean {
   if (pathname.startsWith("/assets/")) return true;
   if (pathname.startsWith("/_next")) return true;
-  if (/\.(svg|png|jpe?g|webp|gif|ico|css|js|woff2?|txt|xml|json)$/i.test(pathname)) {
+  if (
+    /\.(svg|png|jpe?g|webp|gif|ico|css|js|woff2?|txt|xml|json)$/i.test(pathname)
+  ) {
     return true;
   }
   return false;
@@ -46,10 +45,7 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL("/", request.url), 301);
   }
 
-  if (
-    pathname.startsWith("/api") ||
-    isStaticAssetPath(pathname)
-  ) {
+  if (pathname.startsWith("/api") || isStaticAssetPath(pathname)) {
     return;
   }
 
@@ -64,7 +60,13 @@ export function middleware(request: NextRequest) {
     );
     const locale = cookieLocale || browserLocale || defaultLocale;
     const redirectUrl = new URL(`/${locale}${pathname}`, request.url);
-    return NextResponse.redirect(redirectUrl);
+    const res = NextResponse.redirect(redirectUrl, 302);
+    // Cache this redirect at the CDN/edge for a short period to improve TTFB on repeated root visits
+    res.headers.set(
+      "Cache-Control",
+      "public, s-maxage=3600, stale-while-revalidate=59",
+    );
+    return res;
   }
 
   return NextResponse.next();

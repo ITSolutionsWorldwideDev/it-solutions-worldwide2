@@ -36,7 +36,7 @@ export default function MarketingServices({
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-
+          
             <h3 className="text-lg font-semibold text-gray-900 mt-3 mb-2">
               {service.title}
             </h3>

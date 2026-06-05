@@ -41,6 +41,7 @@ export default function RootLayout({
           name="facebook-domain-verification"
           content="0ryxazzsetmvipkqgt60umo33s7ti7"
         />
+          <link rel="preload" as="image" href="/assets/images/services/supply-chain-management.png" />
       </head>
       <body className="mx-2 md:mx-0 lg:mx-0">
         <MetaPixel pixelId="1766535074073515" />
