@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <img
               className="w-auto"
-              src="/assets/footer-logo.png"
+              src="/assets/footer-logo.webp"
               alt="IT Solutions Worldwide"
             />
             <p className="mt-4 text-sm text-gray-500 leading-relaxed">

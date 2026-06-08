@@ -19,19 +19,20 @@ export const metadata: Metadata = {
   description:
     "Optimize your workforce strategy with expert staffing consulting services in the Netherlands. We align talent acquisition with your long-term business goals.",
 };
-export default async function TemporaryStaffing({
-  params,
-}: {
-  params: Promise<{ locale: string; }>;
-}) {
-  const { locale } = await params;
+export default async function TemporaryStaffing(
+  props: {
+    params: Promise<{ locale: string; }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/tempstaffing1.png",
+      backgroundImage: "/assets/images/tempstaffing1.webp",
       heading: t("tempstaffing.heading_1"),
       text: t("tempstaffing.text_1"),
       button: t("tempstaffing.button_1"),
@@ -107,7 +108,7 @@ export default async function TemporaryStaffing({
 
   const slidesData2 = [
     {
-      backgroundImage: "/assets/images/staffingsupport4.png",
+      backgroundImage: "/assets/images/staffingsupport4.webp",
       heading: "Hire Skilled Temporary Staff On-Demand - Contact Us Today!",
       buttonText: "Get Started Now",
       buttonLink: "/contact-us",
@@ -122,7 +123,7 @@ export default async function TemporaryStaffing({
       <ImageSection2
         heading={t("tempstaffing.heading_2")}
         text={imagetext}
-        imageUrl="/assets/images/tempstaffing2.png"
+        imageUrl="/assets/images/tempstaffing2.webp"
         borderWidth="2px"
         borderColor="#ebf2f3"
       />
@@ -130,7 +131,7 @@ export default async function TemporaryStaffing({
       <ImageSection
         heading={t("tempstaffing.heading_4")}
         text={imagetext2}
-        imageUrl="/assets/images/tempstaffing3.png"
+        imageUrl="/assets/images/tempstaffing3.webp"
         leftColor="#ebf2f3"
         rightColor="#ebf2f3"
         textColor="#000"
@@ -138,7 +139,7 @@ export default async function TemporaryStaffing({
       <ImageSection2
         heading={t("tempstaffing.heading_5")}
         text={imagetext3}
-        imageUrl="/assets/images/tempstaffing4.png"
+        imageUrl="/assets/images/tempstaffing4.webp"
         borderWidth="2px"
         borderColor="#ebf2f3"
       />

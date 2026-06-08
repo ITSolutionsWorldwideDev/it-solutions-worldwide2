@@ -3,13 +3,26 @@
 // import initServerI18n from "@/utils/serverTranslation";
 import BannerSection from "@/components/layout/banner-section";
 import Link from "next/link";
-
+import { Metadata } from "next";
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  return {
+    title: {
+      absolute: "Supply Chain Health Check Information | ITWW",
+    },
+    description:
+      "Learn about our comprehensive Supply Chain Health Check service. Evaluate efficiency, cost, resilience, and discover improvement opportunities.",
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/supply-health-check-info`,
+    },
+  };
+}
 // export default async function SupplyHealth({
 //   params,
 // }: {
-//   params: { locale: string };
+//   params: Promise<{ locale: string }>;
 // }) {
-  // const { locale } = await params;
+  // const { locale } = params;
 
   // const i18nInstance = await initServerI18n(locale);
   // const t = await i18nInstance.getFixedT(locale, "common");
@@ -18,7 +31,7 @@ export default async function SupplyHealth() {
 
   const slides = [
     {
-      backgroundImage: "/assets/images/Supply_check_background_Image.png",
+      backgroundImage: "/assets/images/Supply_check_background_Image.webp",
       heading: "Supply Chain Health Check",
     },
   ];

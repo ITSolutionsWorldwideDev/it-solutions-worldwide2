@@ -13,8 +13,9 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
+  const { locale } = params;
   return {
     title: {
       absolute: "outsourcing",
@@ -25,27 +26,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function Page({ params }: Props) {
-  const { locale } = await params;
+export default async function Page(props: Props) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const cards2 = [
     {
-      image: "/assets/images/outsource-icon-1.png",
+      image: "/assets/images/outsource-icon-1.webp",
       title: t("ecommerce.card_heading_1"),
     },
     {
-      image: "/assets/images/outsource-icon-2.png",
+      image: "/assets/images/outsource-icon-2.webp",
       title: t("ecommerce.card_heading_2"),
     },
     {
-      image: "/assets/images/outsource-icon-3.png",
+      image: "/assets/images/outsource-icon-3.webp",
       title: t("ecommerce.card_heading_3"),
     },
     {
-      image: "/assets/images/outsource-icon-3.png",
+      image: "/assets/images/outsource-icon-3.webp",
       title: t("ecommerce.card_heading_4"),
     },
   ];
@@ -92,7 +94,7 @@ export default async function Page({ params }: Props) {
         buttonText={t("outsourcing.hero.cta_button")}
         bgButton="#ebf2f3"
         buttonLink="#ebf2f3"
-        imageUrl="/assets/images/staffingconsulting2.png"
+        imageUrl="/assets/images/staffingconsulting2.webp"
         bgColor="#D8E9EB"
       />
       {/* {outsourcing.intro_section.title && ( */}
@@ -113,7 +115,7 @@ export default async function Page({ params }: Props) {
         buttonText={t("outsourcing.why_us.cta_button")}
         bgButton="#ebf2f3"
         buttonLink="#ebf2f3"
-        imageUrl="/assets/images/staffingconsulting2.png"
+        imageUrl="/assets/images/staffingconsulting2.webp"
         bgColor="#D8E9EB"
       />
 

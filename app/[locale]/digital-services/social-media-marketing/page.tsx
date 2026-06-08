@@ -18,19 +18,20 @@ export const metadata: Metadata = {
   description:
     "Grow your brand with strategic social media marketing in the Netherlands. Content creation, community management & paid social campaigns that convert.",
 };
-export default async function SocialMediaMarketing({
-  params,
-}: {
-  params: Promise<{ locale: string; }>;
-}) {
-  const { locale } = await params;
+export default async function SocialMediaMarketing(
+  props: {
+    params: Promise<{ locale: string; }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/socialmedia1.png",
+      backgroundImage: "/assets/images/socialmedia1.webp",
       heading: t("socialmedia.heading_1"),
       text: t("socialmedia.text_1"),
       button: t("socialmedia.button_1"),
@@ -101,24 +102,24 @@ export default async function SocialMediaMarketing({
   );
 
   /* const logos = [
-    { src: "/assets/images/bol.png" },
-    { src: "/assets/images/hitech.png" },
-    { src: "/assets/images/jumbosports.png" },
-    { src: "/assets/images/albelli.png" },
-    { src: "/assets/images/kent.png" },
-    { src: "/assets/images/ddgroup.png" },
-    { src: "/assets/images/bol.png" },
-    { src: "/assets/images/hitech.png" },
-    { src: "/assets/images/jumbosports.png" },
-    { src: "/assets/images/albelli.png" },
-    { src: "/assets/images/kent.png" },
-    { src: "/assets/images/ddgroup.png" },
-    { src: "/assets/images/bol.png" },
-    { src: "/assets/images/hitech.png" },
-    { src: "/assets/images/jumbosports.png" },
-    { src: "/assets/images/albelli.png" },
-    { src: "/assets/images/kent.png" },
-    { src: "/assets/images/ddgroup.png" },
+    { src: "/assets/images/bol.webp" },
+    { src: "/assets/images/hitech.webp" },
+    { src: "/assets/images/jumbosports.webp" },
+    { src: "/assets/images/albelli.webp" },
+    { src: "/assets/images/kent.webp" },
+    { src: "/assets/images/ddgroup.webp" },
+    { src: "/assets/images/bol.webp" },
+    { src: "/assets/images/hitech.webp" },
+    { src: "/assets/images/jumbosports.webp" },
+    { src: "/assets/images/albelli.webp" },
+    { src: "/assets/images/kent.webp" },
+    { src: "/assets/images/ddgroup.webp" },
+    { src: "/assets/images/bol.webp" },
+    { src: "/assets/images/hitech.webp" },
+    { src: "/assets/images/jumbosports.webp" },
+    { src: "/assets/images/albelli.webp" },
+    { src: "/assets/images/kent.webp" },
+    { src: "/assets/images/ddgroup.webp" },
   ]; */
 
   return (
@@ -127,7 +128,7 @@ export default async function SocialMediaMarketing({
       <ImageSection2
         heading={t("socialmedia.heading_2")}
         text={imagetext}
-        imageUrl="/assets/images/socialmedia2.png"
+        imageUrl="/assets/images/socialmedia2.webp"
         borderWidth="2px"
         borderColor="#f2e8fb"
       />
@@ -139,7 +140,7 @@ export default async function SocialMediaMarketing({
       <ImageSection
         heading={t("socialmedia.heading_4")}
         text={imagetext2}
-        imageUrl="/assets/images/socialmedia3.png"
+        imageUrl="/assets/images/socialmedia3.webp"
         leftColor="#f2e8fb"
         rightColor="#f2e8fb"
         textColor="#000"
@@ -148,7 +149,7 @@ export default async function SocialMediaMarketing({
       <ClientLogosSlider />
       <FAQSection2 questions={questions} gradientColors={gradientColors} />
       <MarketingBanner
-        imageSrc="/assets/images/socialmedia4.png"
+        imageSrc="/assets/images/socialmedia4.webp"
         title="Boost Your Brand Visibility and Growth on Social Media"
         description="Schedule a Consultation!"
         buttonText="Contact Us Today"

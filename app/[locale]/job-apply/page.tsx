@@ -4,20 +4,27 @@ import initServerI18n from "@/utils/serverTranslation";
 import { Metadata } from "next";
 import JobApplyForm from "@/components/layout/job-apply-form";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Apply for IT & Supply Chain Jobs in Netherlands",
-  },
-  description:
-    "Submit your job application to IT Solutions Worldwide. We're hiring IT, supply chain, digital marketing and staffing professionals in the Netherlands.",
-};
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  return {
+    title: {
+      absolute: "Apply for IT & Supply Chain Jobs in Netherlands",
+    },
+    description:
+      "Submit your job application to IT Solutions Worldwide. We're hiring IT, supply chain, digital marketing and staffing professionals in the Netherlands.",
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/job-apply`,
+    },
+  };
+}
 
-export default async function JobApplyPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export default async function JobApplyPage(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
@@ -39,6 +46,7 @@ export default async function JobApplyPage({
 
   return (
     <main className="bg-gray-50 py-8">
+      <h1 className="sr-only">{t("jobApply.heading", "Apply Now")}</h1>
       <JobApplyForm translations={translations} locale={locale} />
     </main>
   );

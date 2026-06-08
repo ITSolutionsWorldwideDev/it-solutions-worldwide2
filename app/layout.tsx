@@ -14,6 +14,10 @@ const lexend = Lexend({
   display: "swap",
 });
 
+export const metadataBase = new URL(
+  "https://www.itsolutionsworldwide.com",
+);
+
 export const metadata: Metadata = {
   title: {
     default: "Smart IT & Business Services in Netherlands | ITWW",
@@ -23,8 +27,8 @@ export const metadata: Metadata = {
     "IT Solutions Worldwide delivers supply chain, digital, staffing & Oracle Cloud services in the Netherlands. Get a free consultation today.",
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.webp", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.webp", sizes: "32x32", type: "image/png" },
     ],
   },
 };

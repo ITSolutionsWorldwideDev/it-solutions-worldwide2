@@ -34,7 +34,7 @@ export default function CertificationBanner({
       <div className="max-w-5xl mx-auto px-6 text-center text-white">
         <div className="flex items-center justify-center gap-2 mb-6">
           <Image
-            src="/assets/icons/standard2.png"
+            src="/assets/icons/standard2.webp"
             alt="Certification"
             width={20}
             height={20}
@@ -42,7 +42,7 @@ export default function CertificationBanner({
           <span className="text-sm font-medium">{title}</span>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">{mainHeading}</h2>
+        <h1 className="text-3xl md:text-5xl font-bold mb-6">{mainHeading}</h1>
 
         <p className="text-base md:text-lg max-w-2xl mx-auto text-teal-100 leading-relaxed">
           {description}

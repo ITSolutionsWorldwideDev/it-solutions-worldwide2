@@ -7,16 +7,31 @@ import TechStackSection from "@/components/layout/about/tech-stack-section";
 import GetInTouchSection from "@/components/layout/about/get-in-touch-section";
 import TeamMembersTabsSection from "@/components/layout/about/team-members-tabs-section";
 import BannerSection3 from "@/components/layout/banner-section-3";
+import { Metadata } from "next";
+
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  return {
+    title: {
+      absolute: "Company Profile | IT Solutions Worldwide Netherlands",
+    },
+    description:
+      "Discover the profile of IT Solutions Worldwide—our vision, mission, expertise, and commitment to delivering exceptional IT and business solutions.",
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/profile`,
+    },
+  };
+}
 
 
 
-
-export default async function ProfilePage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export default async function ProfilePage(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
@@ -42,8 +57,8 @@ export default async function ProfilePage({
 
   const slides = [
     {
-      backgroundImage: "/assets/images/profile/banner_bg.png",
-      backgroundMainImage: "/assets/images/profile/banner_rightside_bg.png",
+      backgroundImage: "/assets/images/profile/banner_bg.webp",
+      backgroundMainImage: "/assets/images/profile/banner_rightside_bg.webp",
       heading:  t("profile.banner_heading"),
       text: t("profile.banner_text"),
       button: t("profile.button_text"),
@@ -52,7 +67,7 @@ export default async function ProfilePage({
     },
   ];
 
-  
+
 
   const faqData = {
     title: t("aboutus.faq_title"),
@@ -128,7 +143,7 @@ export default async function ProfilePage({
 
   return (
     <>
-      <div className="container mx-auto max-w-7xl">
+      <main className="container mx-auto max-w-7xl">
         <BannerSection3 slides={slides} />
         <ProfileInfoSection
           heading={t("profile.cards_main_heading")}
@@ -140,7 +155,7 @@ export default async function ProfilePage({
         <TechStackSection />
         <FAQSection {...faqData} />
         <GetInTouchSection />
-      </div>
+      </main>
     </>
   );
 }

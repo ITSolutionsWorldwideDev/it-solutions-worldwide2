@@ -4,7 +4,7 @@ declare module 'app/[locale]/layout' {
 
   const Layout: (props: {
     children: ReactNode;
-    params: { locale: string };
+    params: Promise<{ locale: string }>;
   }) => ReactNode;
 
   export default Layout;

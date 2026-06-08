@@ -9,14 +9,14 @@ import SegmentTabs from "./home/SegmentTabComponent";
 
 export default function Header() {
   // const isBgLoaded = true;
-  // const bgUrl = "/assets/images/backgrounds/hero-section-bg.png";
+  // const bgUrl = "/assets/images/backgrounds/hero-section-bg.webp";
 
 
    useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
   const bgVideoUrl = "/assets/images/backgrounds/hero-section-bg.mp4";
-  const fallbackImage = "/assets/images/backgrounds/hero-section-bg.png";
+  const fallbackImage = "/assets/images/backgrounds/hero-section-bg.webp";
 
   const [isVideoSupported, setIsVideoSupported] = useState(true);
 

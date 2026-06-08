@@ -43,7 +43,7 @@ export default function NavbarHome() {
         <div className="flex items-center space-x-2 w-32">
           <Link href="/#hometop">
             <img
-              src="/assets/images/main-logo.png"
+              src="/assets/images/main-logo.webp"
               alt="IT Solutions Worldwide Logo"
             />
           </Link>

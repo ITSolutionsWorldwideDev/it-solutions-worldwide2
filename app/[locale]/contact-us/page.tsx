@@ -8,25 +8,32 @@ import LocationMap from "@/components/layout/location-map";
 // import LocationMap from '../../components/Location';
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Free IT Consultation in Netherlands | Contact Us",
-  },
-  description:
-    "Get in touch with IT Solutions Worldwide for a free consultation on IT, supply chain, digital services or staffing support in the Netherlands.",
-};
-export default async function ContactUs({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  return {
+    title: {
+      absolute: "Free IT Consultation in Netherlands | Contact Us",
+    },
+    description:
+      "Get in touch with IT Solutions Worldwide for a free consultation on IT, supply chain, digital services or staffing support in the Netherlands.",
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/contact-us`,
+    },
+  };
+}
+export default async function ContactUs(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
   const slides = [
     {
-      backgroundImage: "/assets/images/contactus1.png",
+      backgroundImage: "/assets/images/contactus1.webp",
       heading: t("contactus.heading_1"),
       text: t("contactus.text_1"),
     },

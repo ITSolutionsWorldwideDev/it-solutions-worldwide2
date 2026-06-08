@@ -8,14 +8,19 @@ import { ThemeProvider } from '@/components/theme-provider';
 import CookieConsent from '@/components/CookieConsent';
 import '../globals.css';
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: ReactNode;
-  params: Promise<{ locale: string }>;
-}): Promise<ReactNode> {
-  const { locale } = await params;
+export default async function LocaleLayout(
+  props: {
+    children: ReactNode;
+    params: Promise<{ locale: string }>;
+  }
+): Promise<ReactNode> {
+  const params = await props.params;
+
+  const {
+    children
+  } = props;
+
+  const { locale } = params;
 
   if (!i18nConfig.locales.includes(locale)) {
     notFound();

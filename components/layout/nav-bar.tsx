@@ -44,7 +44,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-2 w-32">
             <Link href="/">
               <img
-                src="/assets/images/logo.png"
+                src="/assets/images/logo.webp"
                 alt="IT Solutions Worldwide Logo"
               />
             </Link>

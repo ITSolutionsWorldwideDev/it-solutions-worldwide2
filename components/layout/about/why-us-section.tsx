@@ -17,7 +17,7 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
               width={15}
               height={8}
               sizes="100vw"
-              alt=""
+              alt="decorative accent"
               src="/assets/images/aboutus/group-9254.svg"
             />
             <div>{t("aboutus.why_us_heading")}</div>
@@ -26,7 +26,7 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
               width={15}
               height={8}
               sizes="100vw"
-              alt=""
+              alt="decorative accent"
               src="/assets/images/aboutus/group-9253.svg"
             />
           </div>
@@ -48,7 +48,7 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
                   width={82}
                   height={82}
                   sizes="100vw"
-                  alt=""
+                  alt="security service icon"
                   src="/assets/images/aboutus/streamline-freehand-security-it-service.svg"
                 />
 
@@ -66,7 +66,7 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
                   width={82}
                   height={82}
                   sizes="100vw"
-                  alt=""
+                  alt="analytics chart icon"
                   src="/assets/images/aboutus/lucide-chart-line.svg"
                 />
 
@@ -84,7 +84,7 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
                   width={82}
                   height={82}
                   sizes="100vw"
-                  alt=""
+                  alt="people collaboration icon"
                   src="/assets/images/aboutus/formkit-people.svg"
                 />
 
@@ -120,8 +120,8 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
               width={551}
               height={552}
               sizes="100vw"
-              alt=""
-              src="/assets/images/aboutus/rectangle-122.png"
+              alt="decorative background panel"
+              src="/assets/images/aboutus/rectangle-122.webp"
             />
             <div className="hidden  absolute top-[594px] md:top-[294px] border-white border-8 rounded-[28.97px] w-[280px] h-[199.5px] overflow-hidden md:flex items-center justify-center">
               <Image
@@ -129,8 +129,8 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
                 width={280}
                 height={199.5}
                 sizes="100vw"
-                alt=""
-                src="/assets/images/aboutus/rectangle-123.png"
+                alt="decorative background accent"
+                src="/assets/images/aboutus/rectangle-123.webp"
               />
             </div>
           </div>

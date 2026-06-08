@@ -66,7 +66,7 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({ slides }) => {
                       width={24}
                       height={24}
                       sizes="100vw"
-                      alt=""
+                      alt="right arrow icon"
                       src="/assets/images/aboutus/outlined-32-arrow-right.svg"
                     />
                   </Link>
@@ -87,7 +87,7 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({ slides }) => {
                       width={24}
                       height={24}
                       sizes="100vw"
-                      alt=""
+                      alt="right arrow icon"
                       src="/assets/images/aboutus/outlined-32-arrow-right.svg"
                     />
                   </Link>
@@ -126,7 +126,7 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({ slides }) => {
                 <Image
                   className=""
                   fill
-                  alt=""
+                  alt={`${slides[currentSlide].heading} illustration`}
                   src={slides[currentSlide].backgroundMainImage}
                 />
               ) : (

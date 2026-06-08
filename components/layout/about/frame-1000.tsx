@@ -11,7 +11,8 @@ const Frame1000004442: NextPage = () => {
             width={21}
             height={21}
             sizes="100vw"
-            alt="" src="/assets/images/aboutus/small-eyebrow-tag-label-icon-ai.svg"
+            alt="AI label icon"
+            src="/assets/images/aboutus/small-eyebrow-tag-label-icon-ai.svg"
           />
           <div className="relative leading-[160%] font-medium">FAQ</div>
         </div>
@@ -30,7 +31,8 @@ const Frame1000004442: NextPage = () => {
               width={25.2}
               height={25.2}
               sizes="100vw"
-              alt="" src="/assets/images/aboutus/regular-headset.svg"
+              alt="headset icon"
+              src="/assets/images/aboutus/regular-headset.svg"
             />
             <b className="relative leading-[50.37px] capitalize">Help Center</b>
           </div>
@@ -51,7 +53,8 @@ const Frame1000004442: NextPage = () => {
             width={25.2}
             height={25.2}
             sizes="100vw"
-            alt="" src="/assets/images/aboutus/regular-plus.svg"
+            alt="expand icon"
+            src="/assets/images/aboutus/regular-plus.svg"
           />
         </div>
         <div className="w-[728.3px] rounded-num-12_59 bg-cadetblue-200 flex flex-col items-center justify-center pt-num-0 px-num-0 pb-num-25_2 box-border gap-[21px] text-white">
@@ -62,7 +65,8 @@ const Frame1000004442: NextPage = () => {
               width={25.2}
               height={25.2}
               sizes="100vw"
-              alt="" src="/assets/images/aboutus/duotone-x.svg"
+              alt="close icon"
+              src="/assets/images/aboutus/duotone-x.svg"
             />
           </div>
           <div className="w-[629.7px] relative leading-num-27_29 text-darkslategray inline-block opacity-[0.8]">
@@ -80,7 +84,8 @@ const Frame1000004442: NextPage = () => {
             width={25.2}
             height={25.2}
             sizes="100vw"
-            alt="" src="/assets/images/aboutus/regular-plus.svg"
+            alt="expand icon"
+            src="/assets/images/aboutus/regular-plus.svg"
           />
         </div>
         <div className="w-[723.1px] h-px relative border-whitesmoke border-solid border-t-[1px] box-border" />
@@ -93,7 +98,8 @@ const Frame1000004442: NextPage = () => {
             width={25.2}
             height={25.2}
             sizes="100vw"
-            alt="" src="/assets/images/aboutus/regular-plus.svg"
+            alt="expand icon"
+            src="/assets/images/aboutus/regular-plus.svg"
           />
         </div>
         <div className="w-[723.1px] h-px relative border-whitesmoke border-solid border-t-[1px] box-border" />
@@ -106,7 +112,8 @@ const Frame1000004442: NextPage = () => {
             width={25.2}
             height={25.2}
             sizes="100vw"
-            alt="" src="/assets/images/aboutus/regular-plus.svg"
+            alt="expand icon"
+            src="/assets/images/aboutus/regular-plus.svg"
           />
         </div>
         <div className="w-[723.1px] h-px relative border-whitesmoke border-solid border-t-[1px] box-border" />
@@ -119,7 +126,8 @@ const Frame1000004442: NextPage = () => {
             width={25.2}
             height={25.2}
             sizes="100vw"
-            alt="" src="/assets/images/aboutus/regular-plus.svg"
+            alt="expand icon"
+            src="/assets/images/aboutus/regular-plus.svg"
           />
         </div>
       </div>

@@ -12,17 +12,17 @@ export default async function CreativeTeamSection({ locale }: { locale: string }
     {
       name: "Sheetal Devi",
       role: "(co-founder)",
-      bg_image: "/assets/images/profile/member_bg_red.png",
-      image: "/assets/images/profile/sheetal_devi 1.png",
+      bg_image: "/assets/images/profile/member_bg_red.webp",
+      image: "/assets/images/profile/sheetal_devi 1.webp",
       bio: "Sheetal Devi founded the company in 2018 with a clear goal: help businesses work smarter through practical technology and supply-chain solutions.",
       bio2: "What began as a small consultancy has now grown into a two-branch operation in the Netherlands and South Asia, delivering AI-driven systems, digital automation, and operational improvements to clients worldwide. With deep experience in logistics, warehousing, and supply-chain optimization, Sheetal leads the company with a focus on efficiency, innovation, and creating solutions that genuinely move businesses forward.",
     },
     {
       name: "Zeb Raja",
       role: "(co-founder)",
-      bg_image: "/assets/images/profile/member_bg_blue.png",
-      image: "/assets/images/profile/avatar.png",
-      // image: "/assets/images/profile/team_member_6.png",
+      bg_image: "/assets/images/profile/member_bg_blue.webp",
+      image: "/assets/images/profile/avatar.webp",
+      // image: "/assets/images/profile/team_member_6.webp",
       bio: "Zeb Raja is the co-founder and Head of Marketing at IT Solutions Worldwide, responsible for shaping the company's brand, digital presence, and growth strategy. With a background spanning transport, IT, and digital marketing, he combines operational understanding with sharp commercial insight to drive high-impact marketing initiatives.",
       bio2: "Zeb leads the company’s global marketing direction—building strong client relationships, developing data-driven campaigns, and positioning the company as a forward-thinking provider of AI, tech, and outsourcing solutions. His experience across international markets helps the brand connect with diverse audiences and scale effectively.",
     },
@@ -30,8 +30,8 @@ export default async function CreativeTeamSection({ locale }: { locale: string }
       name: "Turab",
       role: "HR Manager",
       department: "HR",
-      bg_image: "/assets/images/profile/member_bg_yellow.png",
-      image: "/assets/images/profile/turab.png",
+      bg_image: "/assets/images/profile/member_bg_yellow.webp",
+      image: "/assets/images/profile/turab.webp",
       bio: "Turab Ahmad manages HR operations for IT Solutions Hub Pakistan and supports HR processes for IT Solutions Worldwide in the Netherlands. He specializes in recruitment, HR policy development, performance management, employee documentation, and legal compliance.",
       bio2: "He also led ISO 9001:2015 & ISO 27001:2022 documentation for the company. Turab is committed to building a strong, professional, and globally aligned workforce.",
     },
@@ -39,9 +39,9 @@ export default async function CreativeTeamSection({ locale }: { locale: string }
       name: "Amer",
       role: "Senior Full Stack Developer",
       department: "IT",
-      bg_image: "/assets/images/profile/member_bg_purple.png",
-      image: "/assets/images/profile/amer.png",
-      // image: "/assets/images/profile/amer_img.png",
+      bg_image: "/assets/images/profile/member_bg_purple.webp",
+      image: "/assets/images/profile/amer.webp",
+      // image: "/assets/images/profile/amer_img.webp",
       bio: "Amer is a Senior Full Stack Developer with more than 12 years of experience delivering complex, cloud-based web applications. Specializing in the MEAN stack (MongoDB, Express.js, Angular, Node.js), he builds scalable, high-performance systems using microservices, API-driven architecture, and modern CI/CD pipelines.",
       bio2: "With hands-on expertise in AWS and Azure, Amer designs and deploys reliable solutions that support growth and heavy workloads. He brings solid leadership to development teams, mentors junior engineers, and works efficiently within agile environments to ensure smooth delivery of enterprise-grade projects. Amer is known for his Agile engineering approach, strong problem-solving skills, and consistent track record of achieving outstanding client satisfaction.",
     },
@@ -74,7 +74,7 @@ export default async function CreativeTeamSection({ locale }: { locale: string }
             width={301.4}
             height={349.8}
 
-            alt="" src="/assets/images/aboutus/creative_team-1.png"
+            alt="" src="/assets/images/aboutus/creative_team-1.webp"
           />
           <div className="absolute top-[0px] left-[0px] [backdrop-filter:blur(24px)] rounded-[10.89px] bg-gainsboro-200 w-[301.4px] h-[349.8px] opacity-0" />
           <div className="absolute top-[215.22px] left-[122px] w-[57px] h-[41px] opacity-0">
@@ -97,14 +97,14 @@ export default async function CreativeTeamSection({ locale }: { locale: string }
                       width={7.2}
                       height={7.2}
                       sizes="100vw"
-                      alt="" src="/assets/images/aboutus/creative_team-1.png"
+                      alt="" src="/assets/images/aboutus/creative_team-1.webp"
                     />
                     <Image
                       className="absolute h-[76.39%] w-[40.28%] top-[22.63%] right-[30.31%] bottom-[0.98%] left-[29.41%] max-w-full overflow-hidden max-h-full"
                       width={2.9}
                       height={5.5}
                       sizes="100vw"
-                      alt="" src="/assets/images/aboutus/rectangle-128.png"
+                      alt="" src="/assets/images/aboutus/rectangle-128.webp"
                     />
                   </div>
                 </div>
@@ -114,7 +114,7 @@ export default async function CreativeTeamSection({ locale }: { locale: string }
                     width={7.2}
                     height={7.2}
                     sizes="100vw"
-                    alt="" src="/assets/images/aboutus/rectangle-128.png"
+                    alt="" src="/assets/images/aboutus/rectangle-128.webp"
                   />
                 </div>
                 <div className="absolute top-[0px] left-[18.53px] w-[7.2px] h-[7.2px]">
@@ -123,7 +123,7 @@ export default async function CreativeTeamSection({ locale }: { locale: string }
                     width={7.2}
                     height={7.2}
                     sizes="100vw"
-                    alt="" src="/assets/images/aboutus/rectangle-128.png"
+                    alt="" src="/assets/images/aboutus/rectangle-128.webp"
                   />
                 </div>
                 <div className="absolute top-[0px] left-[27.8px] w-[7.2px] h-[7.2px]">
@@ -132,7 +132,7 @@ export default async function CreativeTeamSection({ locale }: { locale: string }
                     width={7.2}
                     height={7.2}
                     sizes="100vw"
-                    alt="" src="/assets/images/aboutus/rectangle-128.png"
+                    alt="" src="/assets/images/aboutus/rectangle-128.webp"
                   />
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default async function CreativeTeamSection({ locale }: { locale: string }
             width={301.4}
             height={349.8}
             sizes="100vw"
-            alt="" src="/assets/images/aboutus/creative_team-2.png"
+            alt="" src="/assets/images/aboutus/creative_team-2.webp"
           />
           <div className="absolute top-[0px] left-[0px] [backdrop-filter:blur(24px)] rounded-[10.89px] bg-gainsboro-200 w-[301.4px] h-[349.8px] opacity-0" />
           <div className="absolute top-[200.83px] left-[102px] w-[97px] h-[69.8px] opacity-0">
@@ -218,7 +218,7 @@ export default async function CreativeTeamSection({ locale }: { locale: string }
             width={301.4}
             height={349.8}
             sizes="100vw"
-            alt="" src="/assets/images/aboutus/creative_team-3.png"
+            alt="" src="/assets/images/aboutus/creative_team-3.webp"
           />
           <div className="absolute top-[0px] left-[0px] [backdrop-filter:blur(24px)] rounded-[10.89px] bg-gainsboro-200 w-[301.4px] h-[349.8px] opacity-0" />
           <div className="absolute top-[208.74px] left-[113px] w-[75px] h-[54px] opacity-0">
@@ -282,7 +282,7 @@ export default async function CreativeTeamSection({ locale }: { locale: string }
             width={301.4}
             height={349.8}
             sizes="100vw"
-            alt="" src="/assets/images/aboutus/creative_team-4.png"
+            alt="" src="/assets/images/aboutus/creative_team-4.webp"
           />
           <div className="absolute top-[0px] left-[0px] [backdrop-filter:blur(24px)] rounded-[10.89px] bg-gainsboro-200 w-[301.4px] h-[349.8px] opacity-0" />
           <div className="absolute top-[209.24px] left-[114px] w-[73px] h-[52.5px] opacity-0">

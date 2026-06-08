@@ -19,19 +19,20 @@ export const metadata: Metadata = {
   description:
     "Streamline operations with expert business automation services in the Netherlands. Automate workflows, reduce costs & boost efficiency.",
 };
-export default async function AutomationServices({
-  params,
-}: {
-  params: Promise<{ locale: string; }>;
-}) {
-  const { locale } = await params;
+export default async function AutomationServices(
+  props: {
+    params: Promise<{ locale: string; }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/automationservices1.png",
+      backgroundImage: "/assets/images/automationservices1.webp",
       heading: t("automationservices.heading_1"),
       text: t("automationservices.text_1"),
       button: t("automationservices.button_1"),
@@ -91,7 +92,7 @@ export default async function AutomationServices({
 
   const slidesData2 = [
     {
-      backgroundImage: "/assets/images/automationservices5.png",
+      backgroundImage: "/assets/images/automationservices5.webp",
       heading: "Automate and Optimize Your Operations – Reach Out Today!",
       buttonText: "Schedule Your Consultation Now",
       buttonLink: "/contact-us",
@@ -105,14 +106,14 @@ export default async function AutomationServices({
       <ImageSection2
         heading={t("automationservices.heading_2")}
         text={imagetext}
-        imageUrl="/assets/images/automationservices2.png"
+        imageUrl="/assets/images/automationservices2.webp"
         borderWidth="2px"
         borderColor="#c7dcec"
       />
       <ImageSection
         heading={t("automationservices.heading_3")}
         text={imagetext2}
-        imageUrl="/assets/images/automationservices3.png"
+        imageUrl="/assets/images/automationservices3.webp"
         leftColor="#0D69AD"
         rightColor="#0D69AD"
         textColor="#fff"
@@ -120,7 +121,7 @@ export default async function AutomationServices({
       <ImageSection2
         heading={t("automationservices.heading_4")}
         text={imagetext3}
-        imageUrl="/assets/images/automationservices4.png"
+        imageUrl="/assets/images/automationservices4.webp"
         borderWidth="2px"
         borderColor="#c7dcec"
       />

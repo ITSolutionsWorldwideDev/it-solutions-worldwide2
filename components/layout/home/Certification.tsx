@@ -14,19 +14,19 @@ import Link from "next/link";
 const certifications = [
   {
     name: "ISO 9001",
-    img: "/assets/icons/tech/ISO 9001.png",
+    img: "/assets/icons/tech/ISO 9001.webp",
   },
   {
     name: "ISO 270001",
-    img: "/assets/icons/tech/ISO 270001.png",
+    img: "/assets/icons/tech/ISO 270001.webp",
   },
   {
     name: "Compliant",
-    img: "/assets/icons/tech/compliant.png",
+    img: "/assets/icons/tech/compliant.webp",
   },
   {
     name: "Google Ads",
-    img: "/assets/icons/tech/google_ads.png",
+    img: "/assets/icons/tech/google_ads.webp",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function Certifications() {
                       src={item.img}
                       width={100}
                       height={100}
-                      alt=""
+                      alt={item.name}
                       className="rounded-full object-cover"
                     />
                     </Link>

@@ -18,19 +18,20 @@ export const metadata: Metadata = {
   description:
     "Reliable IT support services in the Netherlands, from ERP implementation and software development to automation & managed IT solutions.",
 };
-export default async function WebsiteDesignDevelopment({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export default async function WebsiteDesignDevelopment(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/website1.png",
+      backgroundImage: "/assets/images/website1.webp",
       heading: t("webdev.heading_1"),
       text: t("webdev.text_1"),
       button: t("webdev.button_1"),
@@ -128,7 +129,7 @@ export default async function WebsiteDesignDevelopment({
       <ImageSection2
         heading={t("webdev.heading_2")}
         text={imagetext}
-        imageUrl="/assets/images/webdev2.png"
+        imageUrl="/assets/images/webdev2.webp"
         borderWidth="2px"
         borderColor="#f2e8fb"
       />
@@ -136,7 +137,7 @@ export default async function WebsiteDesignDevelopment({
       <ImageSection
         heading={t("webdev.heading_4")}
         text={imagetext2}
-        imageUrl="/assets/images/webdev3.png"
+        imageUrl="/assets/images/webdev3.webp"
         leftColor="#f2e8fb"
         rightColor="#f2e8fb"
         textColor="#000"
@@ -144,7 +145,7 @@ export default async function WebsiteDesignDevelopment({
       <ImageSection2
         heading={t("webdev.heading_5")}
         text={imagetext3}
-        imageUrl="/assets/images/webdev4.png"
+        imageUrl="/assets/images/webdev4.webp"
         borderWidth="2px"
         borderColor="#f2e8fb"
       />
@@ -165,7 +166,7 @@ export default async function WebsiteDesignDevelopment({
 
       <FAQSection2 questions={questions} gradientColors={gradientColors} />
       <MarketingBanner
-        imageSrc="/assets/images/webdev5.png"
+        imageSrc="/assets/images/webdev5.webp"
         title="Transform Your Online Presence With Responsive, Fast, and SEO-Optimized Websites"
         description="Contact Us Today!"
         buttonText="Contact Us Today"

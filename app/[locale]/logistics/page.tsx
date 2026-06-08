@@ -19,19 +19,20 @@ export const metadata: Metadata = {
   description:
     "Optimize your logistics operations with expert solutions in the Netherlands, smart warehouse management, supply chain integration & more.",
 };
-export default async function Logistics({
-  params,
-}: {
-  params: Promise<{ locale: string; }>;
-}) {
-  const { locale } = await params;
+export default async function Logistics(
+  props: {
+    params: Promise<{ locale: string; }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/logistics1.png",
+      backgroundImage: "/assets/images/logistics1.webp",
       heading: t("logistics.heading_1"),
       text: t("logistics.text_1"),
       button: t("logistics.button_1"),
@@ -62,19 +63,19 @@ export default async function Logistics({
 
   const cards2 = [
     {
-      image: "/assets/images/logisticsicon1.png",
+      image: "/assets/images/logisticsicon1.webp",
       title: t("logistics.card2_heading_1"),
     },
     {
-      image: "/assets/images/logisticsicon2.png",
+      image: "/assets/images/logisticsicon2.webp",
       title: t("logistics.card2_heading_2"),
     },
     {
-      image: "/assets/images/logisticsicon3.png",
+      image: "/assets/images/logisticsicon3.webp",
       title: t("logistics.card2_heading_3"),
     },
     {
-      image: "/assets/images/logisticsicon4.png",
+      image: "/assets/images/logisticsicon4.webp",
       title: t("logistics.card2_heading_3"),
     },
   ];
@@ -115,7 +116,7 @@ export default async function Logistics({
 
   const slidesData2 = [
     {
-      backgroundImage: "/assets/images/logistics4.png",
+      backgroundImage: "/assets/images/logistics4.webp",
       heading:
         "Enhance Your Supply Chain with Scalable Logistics & Warehousing Solutions - Reach Out Today!",
       buttonText: "Schedule Your Consultation Now",
@@ -130,7 +131,7 @@ export default async function Logistics({
       <ImageSection
         heading={t("logistics.heading_2")}
         text={imagetext}
-        imageUrl="/assets/images/logistics2.png"
+        imageUrl="/assets/images/logistics2.webp"
       />
 
       <InfoSection
@@ -142,7 +143,7 @@ export default async function Logistics({
       <ImageSection2
         heading={t("logistics.heading_4")}
         text={imagetext2}
-        imageUrl="/assets/images/logistics3.png"
+        imageUrl="/assets/images/logistics3.webp"
         leftColor="#FEAE3D"
         rightColor="#FEAE3D"
         textColor="#ffff"

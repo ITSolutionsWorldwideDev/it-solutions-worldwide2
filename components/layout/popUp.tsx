@@ -24,7 +24,7 @@ const PopUp: React.FC<PopUpProps> = ({ showPopup, onClose }) => {
         {/* Logo Header */}
         <div className="flex justify-center mb-4">
           <Image
-            src="/assets/images/itww-logo-white.png"
+            src="/assets/images/itww-logo-white.webp"
             alt="IT Solutions Worldwide Logo"
             width={180}
             height={60}

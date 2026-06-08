@@ -13,42 +13,48 @@ import AboutUsProcessFlow from "@/components/layout/aboutus-process-flow";
 import BannerSectionAboutUs from "@/components/layout/about/banner-section";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Your Trusted IT Partner in the Netherlands | ITWW",
-  },
-  description:
-    "Learn about IT Solutions Worldwide | a trusted IT partner in the Netherlands specializing in business transformation, digital services & staffing support.",
-};
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  return {
+    title: {
+      absolute: "Your Trusted IT Partner in the Netherlands | ITWW",
+    },
+    description:
+      "Learn about IT Solutions Worldwide | a trusted IT partner in the Netherlands specializing in business transformation, digital services & staffing support.",
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/about-us`,
+    },
+  };
+}
 
-export default async function AboutUsPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export default async function AboutUsPage(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const expertise = [
     {
-      icon: "/assets/images/aboutus4.png",
+      icon: "/assets/images/aboutus4.webp",
       title: t("aboutus.expertise_heading_1"),
       description: t("aboutus.expertise_text_1"),
     },
     {
-      icon: "/assets/images/aboutus5.png",
+      icon: "/assets/images/aboutus5.webp",
       title: t("aboutus.expertise_heading_2"),
       description: t("aboutus.expertise_text_2"),
     },
     {
-      icon: "/assets/images/aboutus6.png",
+      icon: "/assets/images/aboutus6.webp",
       title: t("aboutus.expertise_heading_3"),
       description: t("aboutus.expertise_text_3"),
     },
     {
-      icon: "/assets/images/aboutus7.png",
+      icon: "/assets/images/aboutus7.webp",
       title: t("aboutus.expertise_heading_4"),
       description: t("aboutus.expertise_text_4"),
     },
@@ -89,7 +95,7 @@ export default async function AboutUsPage({
 
   const slides = [
     {
-      backgroundImage: "/assets/images/aboutus/about-us-banner.png",
+      backgroundImage: "/assets/images/aboutus/about-us-banner.webp",
       backgroundMainImage: "",
       heading: t("aboutus.banner_heading"),
       text: t("aboutus.banner_text"),
@@ -103,7 +109,7 @@ export default async function AboutUsPage({
     heading: t("aboutus.our_vision_heading"),
     text: t("aboutus.our_vision_text"),
     imageUrl:
-      "/assets/images/aboutus/d-0035-a-757-d-44406901-c-3-a-6-f-1-c-10-c-1-f-1-copy-1.png",
+      "/assets/images/aboutus/d-0035-a-757-d-44406901-c-3-a-6-f-1-c-10-c-1-f-1-copy-1.webp",
     leftColor: "#278083",
     rightColor: "#000",
   };
@@ -119,7 +125,7 @@ export default async function AboutUsPage({
 
   return (
     <>
-      <div className="container mx-auto max-w-7xl">
+      <main className="container mx-auto max-w-7xl">
         <BannerSectionAboutUs slides={slides} />
         <Group9319 />
         <WhyUsSection locale={locale} />
@@ -131,15 +137,15 @@ export default async function AboutUsPage({
         <MaskGroup />
         <FAQSection {...faqData} />
         <GetInTouchSection />
-      </div>
+      </main>
     </>
   );
 }
 /* Our vision is to emerge as one of the leading IT companies known and
-          recognized for our IT solution services, innovation, and integrity. We
-          look forward to building a strong committed bond with our clients to
-          optimise their business operations and be recognized for their work
-          and services. We believe in automating your business with the help of
-          cutting-edge technology services, and we aim to build a platform where
-          businesses can integrate advanced technology and grow to their full
-          potential. */
+         recognized for our IT solution services, innovation, and integrity. We
+         look forward to building a strong committed bond with our clients to
+         optimise their business operations and be recognized for their work
+         and services. We believe in automating your business with the help of
+         cutting-edge technology services, and we aim to build a platform where
+         businesses can integrate advanced technology and grow to their full
+         potential. */

@@ -4,13 +4,24 @@ import AnimationArea from "@/components/layout/home/AnimationArea";
 import BlogCarousel from "@/components/layout/home/BlogCarousel";
 import Certifications from "@/components/layout/home/Certification";
 import ContactSection from "@/components/layout/home/ContactSection";
+import type { Metadata } from 'next';
 
-export default async function HomePage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export const generateMetadata = async (props: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
+  const params = await props.params;
+  return {
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${params.locale}`,
+    },
+  };
+};
+
+export default async function HomePage(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
   return (
     <>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -26,12 +37,12 @@ export default async function HomePage({
 }
 
 // interface LocalePageProps {
-//   params: { locale: string };
+//   params: Promise<{ locale: string }>;
 // }
 // { params }: LocalePageProps
 
 /* export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+  const { locale } = params;
 
   return (
     <>
@@ -42,7 +53,7 @@ export default async function HomePage({
 /* 
 
 import type { Metadata } from 'next';
-export const generateMetadata = async ({ params }: { params: { locale: string } }): Promise<Metadata> => {
+export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const { locale } = params;
 
   return {

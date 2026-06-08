@@ -22,7 +22,7 @@ const testimonials = [
     text: "Over the last 2 years, I worked with IT Solutions Worldwide BV on implementing Oracle Cloud in The Netherlands (Albelli) and France (MonAlbum Photo). <br><br>In addition to a great and innovative mind, they are possibly the most hardworking, professional and conscientious team I have ever worked with. If you are looking for sustainable solutions in Supply Chain Management, look no further than IT Solutions Worldwide BV. Their knowledge of issues is unquestionably and the ability to meet the interests of several stakeholders is impeccable.",
     name: "Albelli",
     // role: "Co-founder",
-    img: "/assets/images/logos/albelli.png",
+    img: "/assets/images/logos/albelli.webp",
   },
 ];
 
@@ -34,8 +34,8 @@ const MaskGroup: NextPage = () => {
     <div className="relative w-full font-lexend text-white overflow-hidden rounded-[23px]">
       {/* Background Image */}
       <Image
-        src="/assets/images/aboutus/bg-copy-1.png"
-        alt=""
+        src="/assets/images/aboutus/bg-copy-1.webp"
+        alt="testimonial section background"
         fill
         className="object-cover"
       />
@@ -90,7 +90,7 @@ const MaskGroup: NextPage = () => {
                     src={item.img}
                     width={64}
                     height={64}
-                    alt=""
+                    alt={item.name}
                     className="rounded-full object-cover"
                   />
                   <div>
@@ -131,13 +131,13 @@ export default MaskGroup;
     text: "A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed lorem cursus.",
     name: "David Oshodi",
     role: "Manager",
-    img: "/assets/images/aboutus/david-thumb.png",
+    img: "/assets/images/aboutus/david-thumb.webp",
   },
   {
     text: "Magna egestas aliquet ut integer non. Sed diam enim nibh sit. Aliquam laoreet aenean metus nibh eu scelerisque.",
     name: "Charolette Hanlin",
     role: "CEO",
-    img: "/assets/images/aboutus/Hellena-thumb.png",
+    img: "/assets/images/aboutus/Hellena-thumb.webp",
   }, */
 
 /* import type { NextPage } from "next";
@@ -150,7 +150,7 @@ const MaskGroup: NextPage = () => {
       <Image
         className="object-cover mix-blend-luminosity"
         fill
-        alt="" src="/assets/images/aboutus/bg-copy-1.png"
+        alt="" src="/assets/images/aboutus/bg-copy-1.webp"
       />
 
       <b className="text-[36px] leading-[110%] inline-block text-white text-center w-[728px]">
@@ -172,7 +172,7 @@ const MaskGroup: NextPage = () => {
                   width={64}
                   height={64}
                   sizes="100vw"
-                  alt="" src="/assets/images/aboutus/Hellena-thumb.png"
+                  alt="" src="/assets/images/aboutus/Hellena-thumb.webp"
                 />
                 <div className="flex-1 flex flex-col items-start">
                   <b className="self-stretch relative leading-[160%]">
@@ -199,7 +199,7 @@ const MaskGroup: NextPage = () => {
                   width={64}
                   height={64}
                   sizes="100vw"
-                  alt="" src="/assets/images/aboutus/Hellena-thumb.png"
+                  alt="" src="/assets/images/aboutus/Hellena-thumb.webp"
                 />
                 <div className="flex-1 flex flex-col items-start">
                   <b className="self-stretch relative leading-[160%]">
@@ -225,7 +225,7 @@ const MaskGroup: NextPage = () => {
                   width={64}
                   height={64}
                   sizes="100vw"
-                  alt="" src="/assets/images/aboutus/david-thumb.png"
+                  alt="" src="/assets/images/aboutus/david-thumb.webp"
                 />
                 <div className="flex-1 flex flex-col items-start">
                   <b className="self-stretch relative leading-[160%]">
@@ -252,7 +252,7 @@ const MaskGroup: NextPage = () => {
                   width={64}
                   height={64}
                   sizes="100vw"
-                  alt="" src="/assets/images/aboutus/Hellena-thumb.png"
+                  alt="" src="/assets/images/aboutus/Hellena-thumb.webp"
                 />
                 <div className="flex-1 flex flex-col items-start">
                   <b className="self-stretch relative leading-[160%]">
@@ -278,7 +278,7 @@ const MaskGroup: NextPage = () => {
                   width={64}
                   height={64}
                   sizes="100vw"
-                  alt="" src="/assets/images/aboutus/david-thumb.png"
+                  alt="" src="/assets/images/aboutus/david-thumb.webp"
                 />
                 <div className="flex-1 flex flex-col items-start">
                   <b className="self-stretch relative leading-[160%]">
@@ -304,7 +304,7 @@ const MaskGroup: NextPage = () => {
                   width={64}
                   height={64}
                   sizes="100vw"
-                  alt="" src="/assets/images/aboutus/david-thumb.png"
+                  alt="" src="/assets/images/aboutus/david-thumb.webp"
                 />
                 <div className="flex-1 flex flex-col items-start">
                   <b className="self-stretch relative leading-[160%]">
@@ -329,7 +329,7 @@ const MaskGroup: NextPage = () => {
                   width={64}
                   height={64}
                   sizes="100vw"
-                  alt="" src="/assets/images/aboutus/Hellena-thumb.png"
+                  alt="" src="/assets/images/aboutus/Hellena-thumb.webp"
                 />
                 <div className="flex-1 flex flex-col items-start">
                   <b className="self-stretch relative leading-[160%]">

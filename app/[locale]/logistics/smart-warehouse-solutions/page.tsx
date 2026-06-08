@@ -18,19 +18,20 @@ export const metadata: Metadata = {
   description:
     "Modernize your warehouse with smart automation and technology solutions in the Netherlands. Improve accuracy, speed & inventory management.",
 };
-export default async function SmartWarehouseSolutions({
-  params,
-}: {
-  params: Promise<{ locale: string; }>;
-}) {
-  const { locale } = await params;
+export default async function SmartWarehouseSolutions(
+  props: {
+    params: Promise<{ locale: string; }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/smartwarehouse1.png",
+      backgroundImage: "/assets/images/smartwarehouse1.webp",
       heading: t("smartwarehouse.heading_1"),
       text: t("smartwarehouse.text_1"),
       button: t("smartwarehouse.button_1"),
@@ -107,7 +108,7 @@ export default async function SmartWarehouseSolutions({
 
   const slidesData2 = [
     {
-      backgroundImage: "/assets/images/logandsupply5.png",
+      backgroundImage: "/assets/images/logandsupply5.webp",
       heading:
         "Enhance Efficiency with Smart Warehouse Solutions - Get Started Today!",
       buttonText: "Schedule Your Consultation Now",
@@ -121,7 +122,7 @@ export default async function SmartWarehouseSolutions({
       <ImageSection2
         heading={t("smartwarehouse.heading_2")}
         text={imagetext}
-        imageUrl="/assets/images/smartwarehouse2.png"
+        imageUrl="/assets/images/smartwarehouse2.webp"
         borderWidth="2px"
         borderColor="#ffd7a0"
       />
@@ -133,14 +134,14 @@ export default async function SmartWarehouseSolutions({
       <ImageSection
         heading={t("smartwarehouse.heading_4")}
         text={imagetext2}
-        imageUrl="/assets/images/smartwarehouse3.png"
+        imageUrl="/assets/images/smartwarehouse3.webp"
         borderWidth="2px"
         borderColor="#ffd7a0"
       />
       <ImageSection2
         heading={t("smartwarehouse.heading_5")}
         text={imagetext3}
-        imageUrl="/assets/images/smartwarehouse4.png"
+        imageUrl="/assets/images/smartwarehouse4.webp"
         borderWidth="2px"
         borderColor="#ffd7a0"
       />

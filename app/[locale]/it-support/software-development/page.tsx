@@ -20,19 +20,20 @@ export const metadata: Metadata = {
     "End-to-end custom software development services to build scalable, secure, and user-friendly applications tailored to your business goals in Netherlands. Start your project today.",
 };
 
-export default async function SoftwareDevelopment({
-  params,
-}: {
-  params: Promise<{ locale: string; }>;
-}) {
-  const { locale } = await params;
+export default async function SoftwareDevelopment(
+  props: {
+    params: Promise<{ locale: string; }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/softwaredev1.png",
+      backgroundImage: "/assets/images/softwaredev1.webp",
       heading: t("softwaredev.heading_1"),
       text: t("softwaredev.text_1"),
       button: t("softwaredev.button_1"),
@@ -109,7 +110,7 @@ export default async function SoftwareDevelopment({
 
   const slidesData2 = [
     {
-      backgroundImage: "/assets/images/itsupport8.png",
+      backgroundImage: "/assets/images/itsupport8.webp",
       heading: "Transform Your Ideas into Powerful Software – Contact Us Now!",
       buttonText: "Schedule Your Consultation Now",
       buttonLink: "/contact-us",
@@ -123,7 +124,7 @@ export default async function SoftwareDevelopment({
       <ImageSection
         heading={t("softwaredev.heading_2")}
         text={imagetext2}
-        imageUrl="/assets/images/softwaredev2.png"
+        imageUrl="/assets/images/softwaredev2.webp"
       />
       <InfoSection heading={t("softwaredev.heading_3")} cards={cards} />
 
@@ -143,7 +144,7 @@ export default async function SoftwareDevelopment({
       <ImageSectionBgBlue
         title={t("softwaredev.heading_5")}
         points={points}
-        image="/assets/images/softwaredev3.png"
+        image="/assets/images/softwaredev3.webp"
         leftColor="#0D69AD"
         rightColor="#ffff"
         iconColor="#ffff"

@@ -31,8 +31,8 @@ export default function LanguageSwitcher() {
 
   const flag =
     currentLocale === "en"
-      ? "/assets/images/flags/nl.png"
-      : "/assets/images/flags/uk.png";
+      ? "/assets/images/flags/nl.webp"
+      : "/assets/images/flags/uk.webp";
   const label = currentLocale === "en" ? "Dutch" : "English";
 
   return (

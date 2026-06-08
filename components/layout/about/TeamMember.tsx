@@ -32,7 +32,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
         className="relative cursor-pointer group w-[301px] h-[350px]  pt-5 overflow-hidden"
       >
         <Image
-          src={image || "/assets/images/profile/avatar.jpg"}
+          src={image || "/assets/images/profile/avatar.webp"}
           alt={name}
           fill
           // width={301}
@@ -58,7 +58,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
                   height={541}
                   sizes="100vw"
                   alt=""
-                  src={image || "/assets/images/profile/avatar.jpg"}
+                  src={image || "/assets/images/profile/avatar.webp"}
                 />
               </div>
 

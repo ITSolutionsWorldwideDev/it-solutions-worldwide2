@@ -13,7 +13,7 @@ export function Logo() {
     <Link href="/" className="flex flex-shrink-0 items-center gap-2">
       <Image
         src={
-          theme === "light" ? "/assets/images/main-logo.png" : "/assets/images/main-logo.png"
+          theme === "light" ? "/assets/images/main-logo.webp" : "/assets/images/main-logo.webp"
         }
         alt="ITSW Logo"
         width={260}
@@ -24,7 +24,7 @@ export function Logo() {
       {/* Hidden image preload for smoother theme switching */}
       <Image
         src={
-          theme === "light" ? "/assets/images/main-logo.png" : "/assets/images/main-logo.png"
+          theme === "light" ? "/assets/images/main-logo.webp" : "/assets/images/main-logo.webp"
         }
         alt="ITSW Logo Preload"
         width={260}

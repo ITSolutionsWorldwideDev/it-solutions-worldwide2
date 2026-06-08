@@ -27,7 +27,7 @@ export default function HiringPricing2({ pricing, service }: any) {
     <section className="relative overflow-hidden bg-[#f5f7f7] py-20"  id="pricing">
       <div className="absolute inset-0">
         <Image
-          src="/assets/images/pricing-bg.jpg"
+          src="/assets/images/pricing-bg.webp"
           alt="Background"
           fill
           priority
@@ -202,7 +202,7 @@ export default function HiringPricing2() {
       
       <div className="absolute inset-0">
         <Image
-          src="/assets/images/pricing-bg.jpg"
+          src="/assets/images/pricing-bg.webp"
           alt="Background"
           fill
           priority
