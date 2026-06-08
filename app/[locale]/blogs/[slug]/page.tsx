@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-=======
 // app/[locale]/blogs/[slug]/page.tsx
-import Image from "next/image";
->>>>>>> fc5db2fa298a4c5b69d5b298ad14fc6564dd443a
 import { getBlogBySlug } from "@/lib/blogs";
 import { notFound } from "next/navigation";
-import Image from "next/image"; // LCP FIXED: Next.js Image component import kiya
+import Image from "next/image";
 
 export const revalidate = 300;
 
@@ -14,9 +10,7 @@ export default async function BlogPostPage({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
-  // ✅ await params (Next.js requirement)
   const { locale, slug } = await params;
-
   const blog = await getBlogBySlug(slug);
 
   if (!blog) {
@@ -33,26 +27,16 @@ export default async function BlogPostPage({
         {new Date(blog.date).toLocaleDateString(locale)}
       </p>
 
-      {/* LCP FIXED: Standard img tag replaced with Next.js Image component + priority attribute */}
+      {/* Condition aur blocks ko cleanly close kar diya hai */}
       {blog.content.featuredImage && (
-<<<<<<< HEAD
-        <div className="relative w-full h-[450px] mb-10">
-=======
         <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg mb-10">
->>>>>>> fc5db2fa298a4c5b69d5b298ad14fc6564dd443a
           <Image
             src={blog.content.featuredImage}
             alt={blog.content.title}
             fill
-<<<<<<< HEAD
-            priority
-            sizes="(max-width: 1024px) 100vw, 1024px"
-            className="rounded-lg object-cover"
-=======
-            className="object-cover"
             priority
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
->>>>>>> fc5db2fa298a4c5b69d5b298ad14fc6564dd443a
+            className="rounded-lg object-cover"
           />
         </div>
       )}

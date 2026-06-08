@@ -11,7 +11,6 @@ const HERO_POSTER = "/assets/images/backgrounds/hero-section-bg.png";
 const HERO_VIDEO = "/assets/images/backgrounds/hero-section-bg.mp4";
 
 export default function Header() {
-<<<<<<< HEAD
   // const isBgLoaded = true;
   // const bgUrl = "/assets/images/backgrounds/hero-section-bg.webp";
 
@@ -23,9 +22,7 @@ export default function Header() {
   const fallbackImage = "/assets/images/backgrounds/hero-section-bg.webp";
 
   const [isVideoSupported, setIsVideoSupported] = useState(true);
-=======
   const [showVideo, setShowVideo] = useState(false);
->>>>>>> fc5db2fa298a4c5b69d5b298ad14fc6564dd443a
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });

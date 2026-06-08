@@ -28,6 +28,7 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
 }
 export const revalidate = 3600;
 
+/* JUST COMMENTED OUT TO FIX BUILD: Nothing is changed or deleted.
 export const metadata: Metadata = {
   title: {
     absolute: "Your Trusted IT Partner in the Netherlands | ITWW",
@@ -35,6 +36,7 @@ export const metadata: Metadata = {
   description:
     "Learn about IT Solutions Worldwide | a trusted IT partner in the Netherlands specializing in business transformation, digital services & staffing support.",
 };
+*/
 
 export default async function AboutUsPage(
   props: {
@@ -151,10 +153,10 @@ export default async function AboutUsPage(
   );
 }
 /* Our vision is to emerge as one of the leading IT companies known and
-         recognized for our IT solution services, innovation, and integrity. We
-         look forward to building a strong committed bond with our clients to
-         optimise their business operations and be recognized for their work
-         and services. We believe in automating your business with the help of
-         cutting-edge technology services, and we aim to build a platform where
-         businesses can integrate advanced technology and grow to their full
-         potential. */
+       recognized for our IT solution services, innovation, and integrity. We
+       look forward to building a strong committed bond with our clients to
+       optimise their business operations and be recognized for their work
+       and services. We believe in automating your business with the help of
+       cutting-edge technology services, and we aim to build a platform where
+       businesses can integrate advanced technology and grow to their full
+       potential. */
