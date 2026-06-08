@@ -11,6 +11,8 @@ import ImageSection2 from "@/components/layout/image-section-2";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import { Metadata } from "next";
 
+export const revalidate = 3600;
+
 
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const params = await props.params;

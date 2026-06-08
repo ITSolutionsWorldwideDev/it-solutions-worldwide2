@@ -1,6 +1,13 @@
+<<<<<<< HEAD
+=======
+// app/[locale]/blogs/[slug]/page.tsx
+import Image from "next/image";
+>>>>>>> fc5db2fa298a4c5b69d5b298ad14fc6564dd443a
 import { getBlogBySlug } from "@/lib/blogs";
 import { notFound } from "next/navigation";
 import Image from "next/image"; // LCP FIXED: Next.js Image component import kiya
+
+export const revalidate = 300;
 
 export default async function BlogPostPage({
   params,
@@ -28,14 +35,24 @@ export default async function BlogPostPage({
 
       {/* LCP FIXED: Standard img tag replaced with Next.js Image component + priority attribute */}
       {blog.content.featuredImage && (
+<<<<<<< HEAD
         <div className="relative w-full h-[450px] mb-10">
+=======
+        <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg mb-10">
+>>>>>>> fc5db2fa298a4c5b69d5b298ad14fc6564dd443a
           <Image
             src={blog.content.featuredImage}
             alt={blog.content.title}
             fill
+<<<<<<< HEAD
             priority
             sizes="(max-width: 1024px) 100vw, 1024px"
             className="rounded-lg object-cover"
+=======
+            className="object-cover"
+            priority
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
+>>>>>>> fc5db2fa298a4c5b69d5b298ad14fc6564dd443a
           />
         </div>
       )}

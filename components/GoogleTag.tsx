@@ -31,13 +31,13 @@ export default function GoogleTag({ tagId }: { tagId: string }) {
       {/* Load gtag.js */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${tagId}`}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
 
       {/* Initialize gtag */}
       <Script
         id="google-tag-init"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];

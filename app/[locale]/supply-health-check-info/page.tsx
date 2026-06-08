@@ -1,5 +1,7 @@
 // app/[locale]/supply-health-check-info/page.tsx
 
+export const revalidate = 3600;
+
 // import initServerI18n from "@/utils/serverTranslation";
 import BannerSection from "@/components/layout/banner-section";
 import Link from "next/link";

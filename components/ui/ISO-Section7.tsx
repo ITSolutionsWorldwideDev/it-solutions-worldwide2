@@ -29,14 +29,14 @@ const ISO_Section7 = () => {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            href="/contact"
+            href="/contact-us"
             className="px-8 py-3 rounded-xl bg-white text-teal-700 font-semibold shadow-md hover:shadow-lg transition"
           >
             Get in Touch
           </Link>
 
           <Link
-            href="/consultation"
+            href="/contact-us"
             className="px-8 py-3 rounded-xl border-2 border-white text-white font-semibold hover:bg-white hover:text-teal-700 transition"
           >
             Request a Consultation

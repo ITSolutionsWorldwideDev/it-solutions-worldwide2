@@ -1,9 +1,12 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /.well-known/
+Disallow: /*?_rsc=
+Disallow: /job/
 
 # Host
-Host: https://itsolutionsworldwide.com
+Host: https://www.itsolutionsworldwide.com
 
 # Sitemaps
-Sitemap: https://itsolutionsworldwide.com/sitemap.xml
+Sitemap: https://www.itsolutionsworldwide.com/sitemap.xml

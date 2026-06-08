@@ -32,6 +32,21 @@ export default async function Career(
 ) {
   const params = await props.params;
   const { locale } = params;
+export const revalidate = 3600;
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "IT & Supply Chain Jobs in Netherlands | Apply Now",
+  },
+  description:
+    "Looking for IT, supply chain or digital marketing jobs in the Netherlands? Explore career opportunities at IT Solutions Worldwide and grow with us.",
+};
+export default async function Career({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
