@@ -10,7 +10,7 @@ interface FullContentSectionProps {
   imageUrl?: string;
   heading: string;
   text: React.ReactNode;
-  instruction?:string
+  instruction?: string;
   ctabuttonText?: string;
   buttonText?: string;
   bgButton?: string;
@@ -22,7 +22,7 @@ interface FullContentSectionProps {
   textColor?: string;
   logoUrl?: string;
   borderWidth?: string;
-  borderColor?: string; 
+  borderColor?: string;
   bgColor?: string;
 }
 
@@ -53,7 +53,10 @@ const FullContentSection = ({
   const isInternalLink = buttonLink?.startsWith("/");
 
   const contentComponent = (
-    <div className="w-full lg:w-2/3 px-2 md:px-3 lg:px-0" style={{ backgroundColor: bgColor }}>
+    <div
+      className="w-full lg:w-2/3 px-2 md:px-3 lg:px-0"
+      style={{ backgroundColor: bgColor }}
+    >
       <h2
         className="text-3xl lg:text-3xl font-semibold mb-4"
         style={{ color: textColor }}
@@ -65,15 +68,15 @@ const FullContentSection = ({
       </span>
       {instruction && (
         <span className="text-lg lg:text-lg" style={{ color: textColor }}>
-        {instruction}
-      </span>
+          {instruction}
+        </span>
       )}
 
       {buttonText && (
         <div className="mt-10">
           {isInternalLink ? (
             <Link
-              href={buttonLink}
+              href="#roles"
               className="text-white px-4 py-2 rounded font-semibold"
               style={{ backgroundColor: bgButton }}
             >
@@ -81,15 +84,15 @@ const FullContentSection = ({
             </Link>
           ) : (
             <Link
-              href={buttonLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#roles"
+              // target="_blank"
+              // rel="noopener noreferrer"
               className="text-white p-4 rounded font-semibold"
-              style={{ 
-                background: `linear-gradient(to right, ${leftColor}, ${rightColor})`
-             }}
+              style={{
+                background: `linear-gradient(to right, ${leftColor}, ${rightColor})`,
+              }}
             >
-              {buttonText}jhgjh
+              {buttonText}
             </Link>
           )}
         </div>
@@ -127,7 +130,6 @@ const FullContentSection = ({
       <div
         className={`flex flex-col  gap-4 items-center text-center space-y-6 lg:space-y-0 lg:space-x-12`}
       >
-
         {contentComponent}
       </div>
     </section>
@@ -135,4 +137,3 @@ const FullContentSection = ({
 };
 
 export default FullContentSection;
-
