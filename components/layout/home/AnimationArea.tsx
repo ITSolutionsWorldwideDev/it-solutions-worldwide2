@@ -13,7 +13,7 @@ import {
 export default function AnimationArea() {
   return (
     <>
-      <div className="xl:max-h-fit container xl:max-w-[1200px] mx-auto text-center py-20">
+      <div className="xl:max-h-fit container xl:max-w-[1200px] mx-auto text-center py-19">
         <motion.h2
           className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 text-center"
           initial={{ opacity: 0, x: -100 }} // Starts off-screen to the left
