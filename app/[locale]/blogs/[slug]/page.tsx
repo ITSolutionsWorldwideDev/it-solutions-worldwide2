@@ -1,6 +1,6 @@
 import { getBlogBySlug } from "@/lib/blogs";
 import { notFound } from "next/navigation";
-import Image from "next/image"; // LCP FIXED: Next.js Image component import kiya
+import Image from "next/image";
 
 export default async function BlogPostPage({
   params,
@@ -26,16 +26,18 @@ export default async function BlogPostPage({
         {new Date(blog.date).toLocaleDateString(locale)}
       </p>
 
-      {/* LCP FIXED: Standard img tag replaced with Next.js Image component + priority attribute */}
+      {/* PERFORMANCE FIX: Upgraded Image container properties for ultra-fast LCP discovery */}
       {blog.content.featuredImage && (
-        <div className="relative w-full h-[450px] mb-10">
+        <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] mb-10 overflow-hidden rounded-lg">
           <Image
             src={blog.content.featuredImage}
             alt={blog.content.title}
             fill
-            priority
-            sizes="(max-width: 1024px) 100vw, 1024px"
-            className="rounded-lg object-cover"
+            priority={true}
+            fetchPriority="high"
+            loading="eager"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 1024px"
+            className="object-cover"
           />
         </div>
       )}

@@ -1,4 +1,3 @@
-// app/[locale]/about-us/page.tsx
 import initServerI18n from "@/utils/serverTranslation";
 import OurMission from "@/components/layout/about/our-mission";
 import WhyUsSection from "@/components/layout/about/why-us-section";
@@ -93,6 +92,7 @@ export default async function AboutUsPage(
     privacyPolicyLink: "/privacy-policy",
   };
 
+  // PERFORMANCE FIX: Appended explicit priority true property flag down to the sub-component layout block
   const slides = [
     {
       backgroundImage: "/assets/images/aboutus/about-us-banner.webp",
@@ -102,6 +102,7 @@ export default async function AboutUsPage(
       button: t("aboutus.contactheading"),
       button2: "",
       textcolor: "#0000",
+      priority: true, // 👈 Signals the banner component to use eager asset preloading
     },
   ];
 
@@ -141,11 +142,3 @@ export default async function AboutUsPage(
     </>
   );
 }
-/* Our vision is to emerge as one of the leading IT companies known and
-         recognized for our IT solution services, innovation, and integrity. We
-         look forward to building a strong committed bond with our clients to
-         optimise their business operations and be recognized for their work
-         and services. We believe in automating your business with the help of
-         cutting-edge technology services, and we aim to build a platform where
-         businesses can integrate advanced technology and grow to their full
-         potential. */

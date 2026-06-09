@@ -1,5 +1,3 @@
-// app/[locale]/scm-services/page.tsx
-
 import initServerI18n from "@/utils/serverTranslation";
 import ImageSection from "@/components/layout/image-section";
 import InfoSection from "@/components/layout/info-section";
@@ -36,6 +34,7 @@ export default async function SCM(
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
+  // PERFORMANCE FIX: Added explicit priority fields for our top banner visual data array
   const slides = [
     {
       backgroundImage: "/assets/images/scm1.webp",
@@ -43,6 +42,7 @@ export default async function SCM(
       text: t("scmservices.text_1"),
       button: t("scmservices.button_1"),
       buttonTextColor: "#FC4C02",
+      priority: true, // 👈 Tells BannerSection2 to treat this image as the immediate LCP focus
     },
   ];
   const imagetext = (

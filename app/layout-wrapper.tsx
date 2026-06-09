@@ -1,6 +1,5 @@
-// app/layout-wrapper.tsx
 "use client";
-import { ReactNode, useEffect } from "react";
+import { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import Header from "@/components/layout/header";
 import HomeHeader from "@/components/layout/home-header";
@@ -15,13 +14,18 @@ interface LayoutWrapperProps {
 export default function LayoutWrapper({ children, locale }: LayoutWrapperProps) {
   const pathname = usePathname();
 
-  // const isHome = pathname === "/";
-  const isHome = pathname === `/${locale}` || pathname === '/'; // handles `/en`, `/nl`, etc.
- 
+  // Clean path calculation to avoid layout shift recalculations
+  const isHome = pathname === `/${locale}` || pathname === '/' || pathname === '';
+
   return (
     <>
+      {/* Structural layout remains intact for fast HTML tree generation */}
       {isHome ? <HomeHeader /> : <Header />}
-      {children}
+      
+      <main className="w-full flex-grow">
+        {children}
+      </main>
+      
       <Footer />
       <LanguageSwitcher />
     </>
