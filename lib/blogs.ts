@@ -21,13 +21,14 @@ export async function getBlogBySlug(slug: string) {
 
   const blog = result.rows[0];
 
-  return {
+return {
     slug: blog.slug,
     date: blog.created_at,
     content: {
       title: blog.title,
-      description: blog.content, // HTML
-      featuredImage: blog.imageurl,
+      description: blog.content,
+      // Yahan path add karein agar DB mein sirf filename hai
+      featuredImage: `/assets/images/blogs/${blog.imageurl}`, 
     },
   };
 }
