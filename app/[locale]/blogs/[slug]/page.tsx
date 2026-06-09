@@ -1,15 +1,17 @@
+// app/[locale]/blogs/[slug]/page.tsx
+
 import { getBlogBySlug } from "@/lib/blogs";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+
+export const revalidate = 300;
 
 export default async function BlogPostPage({
   params,
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
-  // ✅ await params (Next.js requirement)
   const { locale, slug } = await params;
-
   const blog = await getBlogBySlug(slug);
 
   if (!blog) {
@@ -26,18 +28,16 @@ export default async function BlogPostPage({
         {new Date(blog.date).toLocaleDateString(locale)}
       </p>
 
-      {/* PERFORMANCE FIX: Upgraded Image container properties for ultra-fast LCP discovery */}
       {blog.content.featuredImage && (
         <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] mb-10 overflow-hidden rounded-lg">
           <Image
             src={blog.content.featuredImage}
             alt={blog.content.title}
             fill
-            priority={true}
+            priority
             fetchPriority="high"
-            loading="eager"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 1024px"
-            className="object-cover"
+            className="object-cover rounded-lg"
           />
         </div>
       )}
