@@ -126,7 +126,7 @@ export default async function Page(props: Props) {
       />
       {/* )} */}
 
-      <Roles roles={outsourcingRolesData} />
+      <Roles roles={outsourcingRolesData} isCategory={true} />
 
       <FullContentSection
         heading={t("outsourcing.why_us.title")}
