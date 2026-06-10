@@ -16,7 +16,6 @@ const AnimationArea = dynamic(
   () => import("@/components/layout/home/AnimationArea"),
   { loading: () => <div className="min-h-[50vh]" aria-hidden /> },
 );
-
 const BlogCarousel = dynamic(
   () => import("@/components/layout/home/BlogCarousel"),
 );

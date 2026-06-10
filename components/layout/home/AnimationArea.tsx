@@ -1,15 +1,26 @@
 "use client";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import ExpandingCards from "./ExpandingCards";
 import {
   LogosSlider,
   AnimatedList,
   FunFacts,
-  PinnedProgressSection,
-  AnimatedGlobe,
 } from "./AnimationComponents";
 
+// Heavy components — lazy load
+const PinnedProgressSection = dynamic(
+  () => import("./AnimationComponents").then((mod) => mod.PinnedProgressSection),
+  { ssr: false, loading: () => <div className="min-h-screen" /> }
+);
+
+const AnimatedGlobe = dynamic(
+  () => import("./AnimationComponents").then((mod) => mod.AnimatedGlobe),
+  { ssr: false, loading: () => <div className="min-h-[40rem] bg-[#175864]" /> }
+);
+
 export default function AnimationArea() {
+
   return (
     <>
       {/* FIXED: Duplicate div removed and padding fixed to py-20 */}

@@ -5,7 +5,6 @@ import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import MetaPixel from "@/components/MetaPixel";
 import GoogleTagManager from "@/components/GoogleTagManager";
-import GoogleTag from "@/components/GoogleTag";
 import Script from "next/script";
 
 const PageUpButton = dynamic(() => import("@/components/ui/PageUpButton"));
@@ -60,7 +59,6 @@ export default function RootLayout({
         <MetaPixel pixelId="1766535074073515" />
         {/* ✅ GTM moved to lazyOnload — render blocking nahi karega */}
         <GoogleTagManager gtmId="GTM-PH8FNRK6" />
-        <GoogleTag tagId="GT-TQKZR4LS" />
         {children}
 
         <Script id="clarity-script" strategy="lazyOnload">
