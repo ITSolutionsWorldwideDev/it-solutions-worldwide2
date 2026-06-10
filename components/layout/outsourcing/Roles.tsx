@@ -1,10 +1,9 @@
 import {
-  TrendingUp,
-  Code,
-  Briefcase,
-  BarChart3,
-  Zap,
-  Users,
+  TrendingUp,       // For Administrative Support (Arrow pointing up-right)
+  Target,           // For HR Administrative (Target/Bullseye)
+  Headphones,       // For Customer Support (Headset)
+  UserCheck,        // For the 4th card (Unique Customer/Contact variant)
+  Mail,             // For Contact variant
 } from "lucide-react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
@@ -21,12 +20,13 @@ type RolesData = {
   roles: Record<string, RoleItem>;
 };
 
+// Exact matching icons based on your image layout (No repeats!)
 const ROLE_ICONS = [
-  <Code className="w-6 h-6" />,
-  <Briefcase className="w-6 h-6" />,
-  <Zap className="w-6 h-6" />,
-  <BarChart3 className="w-6 h-6" />,
-  <Users className="w-6 h-6" />,
+  <TrendingUp className="w-6 h-6" />,   // 1st Card: Admin Support
+  <Target className="w-6 h-6" />,       // 2nd Card: HR Admin
+  <Headphones className="w-6 h-6" />,   // 3rd Card: Customer Support
+  <UserCheck className="w-6 h-6" />,    // 4th Card: Clean Contact/User Support
+  <Mail className="w-6 h-6" />,         // 5th Card: Additional Contact fallback
 ];
 
 const ROLE_SLUGS: Record<string, string> = {
@@ -45,35 +45,25 @@ const ROLE_LINK_LABELS: Record<string, string> = {
   marketing_analytics: "Explore Marketing & Analytics",
 };
 
-// Staffing support links for inner role cards
 const STAFFING_LINKS: Record<string, string> = {
-  // Hire Roles
   virtual_assistant: "/staffing-support/hire-virtual-assistant",
   data_engineer: "/staffing-support/hire-data-engineer",
   full_stack_developer: "/staffing-support/hire-full-stack-developer",
   ai_ml_engineer: "/staffing-support/hire-ai-engineer",
   ecommerce_assistant: "/staffing-support/hire-ecommerce-assistant",
   electrical_engineer: "/staffing-support/hire-electrical-engineer",
-
-  // Business Support
   admin: "/staffing-support/hire-admin-accounting-assistant",
   hr: "/staffing-support/hire-hr-assistant-remote",
   customer_support: "/staffing-support/hire-customer-support-agent",
   data_entry: "/staffing-support/hire-data-entry-specialist",
-
-  // Design Services
   web_designer: "/staffing-support/hire-webdesigner-developer",
   graphics_designer: "/staffing-support/hire-graphic-designer",
   graphic_designer: "/staffing-support/hire-graphic-designer",
-
-  // IT & Development
   front_end: "/staffing-support/hire-front-end-developer",
   back_end: "/staffing-support/hire-back-end-developer",
   app_dev: "/staffing-support/hire-app-developer",
   it_support: "/staffing-support/hire-it-support-specialist",
   qa_tester: "/staffing-support/hire-software-tester-qa",
-
-  // Marketing & Analytics
   social_media: "/staffing-support/hire-social-media-manager",
   content_creator: "/staffing-support/hire-content-creator",
   online_marketer: "/staffing-support/hire-online-marketer",
@@ -81,6 +71,7 @@ const STAFFING_LINKS: Record<string, string> = {
   power_bi: "/staffing-support/hire-power-bi-tableau-specialist",
   data_analyst: "/staffing-support/hire-data-analyst",
 };
+
 export default function Roles({
   roles,
   isCategory = false,
@@ -100,15 +91,14 @@ export default function Roles({
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {Object.entries(roles.roles).map(([key, role], index) => {
+          // Safeguard to make sure it doesn't break if you have more cards than icons
           const icon = ROLE_ICONS[index % ROLE_ICONS.length];
           const typedRole = role as RoleItem;
 
-          // For category page (outsourcing main page)
           const categorySlug = ROLE_SLUGS[key] || key.replace(/_/g, "-");
           const categoryLabel = ROLE_LINK_LABELS[key] || `Explore ${typedRole.title}`;
           const categoryHref = `outsourcing/${categorySlug}`;
 
-          // For inner role pages (staffing-support links)
           const staffingHref = STAFFING_LINKS[key] || typedRole.link || null;
           const staffingLabel = `Hire a ${typedRole.title} Specialist`;
 
