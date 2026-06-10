@@ -24,6 +24,7 @@ const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
+    if (slides.length <= 1) return; // ✅ single slide par interval nahi
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 10000);
@@ -32,104 +33,101 @@ const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
 
   if (slides.length === 0) return null;
 
-  const buttonTextColor = slides[currentSlide].buttonTextColor
-    ? slides[currentSlide].buttonTextColor
-    : "text-black";
+  const slide = slides[currentSlide];
+  const isFirst = currentSlide === 0;
 
   return (
     <div className="relative w-full py-2 mt-2">
-      <div
-        className="relative bg-cover bg-center w-full h-[900px] md:h-[400px] lg:h-[600px] mx-auto rounded-xl shadow-lg overflow-hidden flex items-center"
-        style={{
-          backgroundImage: `url(${slides[currentSlide].backgroundImage})`,
-        }}
-      >
-        <div className="relative w-full h-full  z-10 text-left text-white px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 w-full h-full ">
-            <div className="relative  self-center">
+      <div className="relative w-full h-[900px] md:h-[400px] lg:h-[600px] mx-auto rounded-xl shadow-lg overflow-hidden flex items-center">
+
+        {/* ✅ CSS background hata ke next/image lagaya — LCP fix */}
+        <Image
+          src={slide.backgroundImage}
+          alt=""
+          fill
+          priority={isFirst}
+          fetchPriority={isFirst ? "high" : "auto"}
+          loading={isFirst ? "eager" : "lazy"}
+          quality={85}
+          sizes="100vw"
+          className="object-cover object-center z-0"
+          aria-hidden
+        />
+
+        <div className="relative w-full h-full z-10 text-left text-white px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 w-full h-full">
+            <div className="relative self-center">
               <h1 className="bg-linear-to-r from-[#1A2980] to-[#26D0CE] bg-clip-text text-transparent font-lexend text-[54.636px] md:text-[84.636px] font-bold leading-[81.009px] uppercase">
-                {slides[currentSlide].heading}
+                {slide.heading}
               </h1>
-              {/* uppercase text-xl md:text-3xl lg:text-4xl font-bold mb-1 sm:mb-4 w-[90%] md:w-[90%] lg:w-1/2  */}
-              <p className=" text-black font-lexend text-[34.636px] md:text-[61.395px] font-normal leading-[58.764px]">
-                {slides[currentSlide].text}
+              <p className="text-black font-lexend text-[34.636px] md:text-[61.395px] font-normal leading-[58.764px]">
+                {slide.text}
               </p>
-              {/* text-sm sm:text-base w-[90%] md:w-[90%] lg:w-1/2 */}
-              {slides[currentSlide].button ? (
-                <div className=" gap-4 mt-2 inline-flex align-middle sm:w-full" >
+
+              {slide.button && (
+                <div className="gap-4 mt-2 inline-flex align-middle sm:w-full">
                   <Link
                     href="/contact-us"
-                    target="_blank" //change for pop-up later
-                    className={`transition px-4 py-2 rounded-[10px] bg-[#418F92]  text-base  shrink-0 inline-flex align-middle leading-[50.37px] text-[16.79px]`}
+                    target="_blank"
+                    className="transition px-4 py-2 rounded-[10px] bg-[#418F92] text-base shrink-0 inline-flex align-middle leading-[50.37px] text-[16.79px]"
                   >
-                    {slides[currentSlide].button}
+                    {slide.button}
                     <Image
                       className="w-6 h-6 ml-2 self-center"
                       width={24}
                       height={24}
-                      sizes="100vw"
-                      alt="right arrow icon"
-                      src="/assets/images/aboutus/outlined-32-arrow-right.svg"
-                    />
-                  </Link>
-                  {/* bg-white ${buttonTextColor} rounded font-semibold  */}
-                </div>
-              ) : (
-                ""
-              )}
-              {slides[currentSlide].button2 ? (
-                <div className=" justify-start gap-4 mt-2 inline-flex align-middle md:ml-10 sm:w-full">
-                  <Link
-                    href="#"
-                    className={`bg-white transition px-4 py-2 rounded-[10px] border border-[#418F92] text-[#418F92]  shrink-0 text-base leading-[50.37px] text-[16.79px] inline-flex align-middle hover:text-[#236B7A]`}
-                  >
-                    {slides[currentSlide].button2}
-                    <Image
-                      className="w-6 h-6 ml-2 self-center"
-                      width={24}
-                      height={24}
-                      sizes="100vw"
                       alt="right arrow icon"
                       src="/assets/images/aboutus/outlined-32-arrow-right.svg"
                     />
                   </Link>
                 </div>
-              ) : (
-                ""
               )}
 
-              {slides[currentSlide].button3 ? (
-                <div className="flex justify-start gap-4 mt-2">
+              {slide.button2 && (
+                <div className="justify-start gap-4 mt-2 inline-flex align-middle md:ml-10 sm:w-full">
                   <Link
                     href="#"
-                    className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
+                    className="bg-white transition px-4 py-2 rounded-[10px] border border-[#418F92] text-[#418F92] shrink-0 text-base leading-[50.37px] text-[16.79px] inline-flex align-middle hover:text-[#236B7A]"
                   >
-                    {slides[currentSlide].button3}
+                    {slide.button2}
+                    <Image
+                      className="w-6 h-6 ml-2 self-center"
+                      width={24}
+                      height={24}
+                      alt="right arrow icon"
+                      src="/assets/images/aboutus/outlined-32-arrow-right.svg"
+                    />
                   </Link>
                 </div>
-              ) : (
-                ""
               )}
-              {slides[currentSlide].button4 ? (
+
+              {slide.button3 && (
                 <div className="flex justify-start gap-4 mt-2">
-                  <Link
-                    href="#"
-                    className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
-                  >
-                    {slides[currentSlide].button4}
+                  <Link href="#" className="bg-white px-4 py-2 rounded font-semibold transition">
+                    {slide.button3}
                   </Link>
                 </div>
-              ) : (
-                ""
+              )}
+
+              {slide.button4 && (
+                <div className="flex justify-start gap-4 mt-2">
+                  <Link href="#" className="bg-white px-4 py-2 rounded font-semibold transition">
+                    {slide.button4}
+                  </Link>
+                </div>
               )}
             </div>
+
             <div className="relative">
-              <Image
-                className=""
-                fill
-                alt={`${slides[currentSlide].heading} illustration`}
-                src={slides[currentSlide].backgroundMainImage}
-              />
+              {slide.backgroundMainImage && (
+                <Image
+                  fill
+                  quality={80}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  alt={`${slide.heading} illustration`}
+                  src={slide.backgroundMainImage}
+                />
+              )}
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { getBlogBySlug } from "@/lib/blogs";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-export const revalidate = 300;
+export const revalidate = 3600; // ✅ 300 → 3600 (1 hour, better caching)
 
 export default async function BlogPostPage({
   params,

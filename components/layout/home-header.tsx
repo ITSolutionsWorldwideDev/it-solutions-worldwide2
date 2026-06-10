@@ -7,28 +7,17 @@ import Link from "next/link";
 import NavbarHome from "./nav-bar-home";
 import SegmentTabs from "./home/SegmentTabComponent";
 
-const HERO_POSTER = "/assets/images/backgrounds/hero-section-bg.png";
+const HERO_POSTER = "/assets/images/backgrounds/hero-section-bg.webp";
 const HERO_VIDEO = "/assets/images/backgrounds/hero-section-bg.mp4";
 
 export default function Header() {
-  // const isBgLoaded = true;
-  // const bgUrl = "/assets/images/backgrounds/hero-section-bg.webp";
-
-
-   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-  }, []);
-  const bgVideoUrl = "/assets/images/backgrounds/hero-section-bg.mp4";
-  const fallbackImage = "/assets/images/backgrounds/hero-section-bg.webp";
-
-  const [isVideoSupported, setIsVideoSupported] = useState(true);
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
 
     const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
+      "(prefers-reduced-motion: reduce)"
     ).matches;
 
     if (prefersReducedMotion) return;
@@ -53,6 +42,7 @@ export default function Header() {
         fill
         priority
         fetchPriority="high"
+        quality={85}
         sizes="100vw"
         className="object-cover z-0"
         aria-hidden
@@ -74,28 +64,20 @@ export default function Header() {
 
       <div className="container mx-auto">
         <div className="absolute inset-0 bg-black opacity-60" aria-hidden />
-
         <NavbarHome />
-
-        <div className="relative z-1 flex flex-col items-center justify-center text-center text-white px-4 pt-20">
+        <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 pt-20">
           <h1 className="text-[45px] sm:text-6xl/tight lg:text-7xl/tight 2xl:text-8xl/tight font-bold mb-8 w-full sm:w-10/12 lg:w-8/12 xl:w-9/12">
             Empowering Businesses with Smart IT Solutions
           </h1>
-
           <div className="flex flex-col lg:flex-row items-center lg:space-x-4 mb-12">
             <p className="flex items-center space-x-2 text-sm uppercase text-[16px] sm:text-lg/tight lg:text-lg/tight 2xl:text-3xl/tight">
               <span>Innovate</span>
-              <span className="inline-block" aria-hidden>
-                |
-              </span>
+              <span className="inline-block" aria-hidden>|</span>
               <span>Automate</span>
-              <span className="inline-block" aria-hidden>
-                |
-              </span>
+              <span className="inline-block" aria-hidden>|</span>
               <span>Succeed</span>
             </p>
           </div>
-
           <Link href="/contact-us" target="_blank">
             <button
               type="button"
@@ -104,7 +86,6 @@ export default function Header() {
               Get FREE Consultation
             </button>
           </Link>
-
           <SegmentTabs />
         </div>
       </div>

@@ -18,9 +18,7 @@ const lexend = Lexend({
   adjustFontFallback: true,
 });
 
-export const metadataBase = new URL(
-  "https://www.itsolutionsworldwide.com",
-);
+export const metadataBase = new URL("https://www.itsolutionsworldwide.com");
 
 export const metadata: Metadata = {
   title: {
@@ -49,9 +47,18 @@ export default function RootLayout({
           name="facebook-domain-verification"
           content="0ryxazzsetmvipkqgt60umo33s7ti7"
         />
+        {/* ✅ Hero image preload — LCP fix for homepage */}
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/images/backgrounds/hero-section-bg.webp"
+          fetchPriority="high"
+          type="image/webp"
+        />
       </head>
       <body className="mx-2 md:mx-0 lg:mx-0">
         <MetaPixel pixelId="1766535074073515" />
+        {/* ✅ GTM moved to lazyOnload — render blocking nahi karega */}
         <GoogleTagManager gtmId="GTM-PH8FNRK6" />
         <GoogleTag tagId="GT-TQKZR4LS" />
         {children}
