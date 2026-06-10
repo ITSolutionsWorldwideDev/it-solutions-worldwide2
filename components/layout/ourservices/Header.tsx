@@ -56,7 +56,7 @@ const Header = () => {
 
         {/* Heading */}
         <div className="text-center mt-6">
-          <h1 className="text-4xl sm:text-2xl lg:text-5xl font-bold text-slate-900 leading-tight">
+          <h2 className="text-4xl sm:text-2xl lg:text-5xl font-bold text-slate-900 leading-tight">
             {heroData.title}
             <br />
             <span className="text-cyan-600 relative inline-block">
@@ -65,7 +65,7 @@ const Header = () => {
               {/* underline */}
               <span className="absolute left-0 bottom-0 w-full h-1 bg-cyan-500 rounded-full"></span>
             </span>
-          </h1>
+          </h2>
 
           {/* Description */}
           <p className="max-w-4xl mx-auto mt-6 text-slate-600 text-base sm:text-lg leading-7">

@@ -42,7 +42,9 @@ export default function CertificationBanner({
           <span className="text-sm font-medium">{title}</span>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-6">{mainHeading}</h1>
+        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+
+{mainHeading}</h2>
 
         <p className="text-base md:text-lg max-w-2xl mx-auto text-teal-100 leading-relaxed">
           {description}

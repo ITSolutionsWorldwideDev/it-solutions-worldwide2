@@ -51,10 +51,10 @@ export default function HeroSection() {
     <section className="w-full bg-[#f5f7f8]">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-4 py-14">
-        <h1 className="text-3xl md:text-5xl font-bold text-center text-[#111827] leading-tight max-w-5xl mx-auto">
+        <h2 className="text-3xl md:text-5xl font-bold text-center text-[#111827] leading-tight max-w-5xl mx-auto">
           Hire a Data Engineer in the Netherlands Trusted by Data-Driven
           Businesses Looking to Scale Faster
-        </h1>
+        </h2>
 
         {/* Features */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mt-14">
