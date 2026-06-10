@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /.well-known/
+Disallow: /*?_rsc=
+Disallow: /job/
 
 # Sitemaps
 Sitemap: https://itsolutionsworldwide.com/sitemap.xml

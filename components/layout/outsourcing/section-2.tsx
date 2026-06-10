@@ -35,8 +35,7 @@ const Section2: FC<Section2Props> = ({
   cards,
   columns = 3,
 }) => {
-  
-// console.log(cards)
+  // console.log(cards)
   const gridColsClass =
     {
       1: "lg:grid-cols-1",
@@ -84,7 +83,7 @@ const Section2: FC<Section2Props> = ({
 
       <div className="mt-10 text-center">
         <Link
-          href={buttonLink}
+          href={`tel:${+31107660786}`}
           target="_blank"
           rel="noopener noreferrer"
           className="text-white p-4 rounded font-semibold"

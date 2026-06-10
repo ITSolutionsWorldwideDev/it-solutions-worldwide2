@@ -12,8 +12,8 @@ import {
 export default function AnimationArea() {
   return (
     <>
+      {/* FIXED: Duplicate div removed and padding fixed to py-20 */}
       <div className="xl:max-h-fit container xl:max-w-[1200px] mx-auto text-center py-20">
-        {/* LCP FIXED: Speed increased by reducing duration and removing delay */}
         <motion.h2
           className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 text-center"
           initial={{ opacity: 0 }}
@@ -30,6 +30,7 @@ export default function AnimationArea() {
 
         <ExpandingCards />
       </div>
+
       <div className="max-h-[400px] flex flex-col justify-center items-center bg-cover bg-center w-full pt-20">
         <div className="container mx-auto ">
           <motion.h2
@@ -58,6 +59,7 @@ export default function AnimationArea() {
       <div className=" container xl:max-w-[1200px] mx-auto text-center py-20">
         <AnimatedList />
       </div>
+
       <div
         className="flex flex-col justify-center items-center bg-cover bg-center w-full"
         style={{

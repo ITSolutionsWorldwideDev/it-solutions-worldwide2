@@ -8,6 +8,10 @@ import FullContentSection from "@/components/layout/outsourcing/hero-section";
 import Section3 from "@/components/layout/outsourcing/section-3";
 import TrustSection from "@/components/layout/outsourcing/section-trust";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
+import Contact from "@/components/layout/outsourcing/Contact";
+import Faqs from "@/components/layout/outsourcing/Faqs";
+import Roles from "@/components/layout/outsourcing/Roles";
+import { RolesData } from "./[slug]/page";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -79,10 +83,23 @@ export default async function Page(props: Props) {
     returnObjects: true,
   }) as FAQItem[];
 
-  const questions = faqData.map((item: FAQItem) => ({
-    question: item.q,
-    answer: item.a,
-  }));
+  // console.log(faqData);
+
+  // const questions = faqData.map((item: FAQItem) => ({
+  //   question: item.q,
+  //   answer: item.a,
+  // }));
+
+  const outsourcingCategories =
+    (t("outsourcing.categories", {
+      returnObjects: true,
+    }) as RolesData["roles"]) || {};
+
+  const outsourcingRolesData: RolesData = {
+    title: t("outsourcing.intro_section.title"),
+    intro: t("outsourcing.intro_section.text"),
+    roles: outsourcingCategories,
+  };
 
   const gradientColors = ["#ffffff", "#f3f4f6", "#f7f2fd"];
 
@@ -101,7 +118,7 @@ export default async function Page(props: Props) {
       <Section2
         heading={t("outsourcing.intro_section.title")}
         text={t("outsourcing.intro_section.text")}
-        buttonText={t("outsourcing.hero.cta_button")}
+        buttonText={t("outsourcing.intro_section.cta_call")}
         bgButton="#ebf2f3"
         buttonLink="#ebf2f3"
         cards={cards2}
@@ -109,24 +126,30 @@ export default async function Page(props: Props) {
       />
       {/* )} */}
 
+      <Roles roles={outsourcingRolesData} />
+
       <FullContentSection
         heading={t("outsourcing.why_us.title")}
         text={imagetext}
-        buttonText={t("outsourcing.why_us.cta_button")}
+        buttonText={t("outsourcing.why_us.cta_btn")}
         bgButton="#ebf2f3"
         buttonLink="#ebf2f3"
         imageUrl="/assets/images/staffingconsulting2.webp"
         bgColor="#D8E9EB"
       />
 
-      {/* <TrustSection /> */}
-      <FAQSection2 questions={questions} gradientColors={gradientColors} />
+      <TrustSection />
+      {/* <FAQSection2 questions={questions} gradientColors={gradientColors} /> */}
+
+      <Faqs faqData={faqData} />
 
       <FullContentSection
         heading={t("outsourcing.footer_cta.title")}
         text={footerSectionText}
         bgColor="#fff"
       />
+
+      <Contact />
 
       {/* <Section3
         heading={t("outsourcing.intro_section.title")}

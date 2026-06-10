@@ -1,9 +1,5 @@
 // app/[locale]/page.tsx
-
-import AnimationArea from "@/components/layout/home/AnimationArea";
-import BlogCarousel from "@/components/layout/home/BlogCarousel";
-import Certifications from "@/components/layout/home/Certification";
-import ContactSection from "@/components/layout/home/ContactSection";
+import dynamic from "next/dynamic";
 import type { Metadata } from 'next';
 
 export const generateMetadata = async (props: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
@@ -15,24 +11,41 @@ export const generateMetadata = async (props: { params: Promise<{ locale: string
   };
 };
 
-export default async function HomePage(
-  props: {
-    params: Promise<{ locale: string }>;
-  }
-) {
-  const params = await props.params;
-  const { locale } = params;
+// ERROR FIXED: Dynamic imports aur revalidate ko function ke bahar top-level par kar diya hai
+const AnimationArea = dynamic(
+  () => import("@/components/layout/home/AnimationArea"),
+  { loading: () => <div className="min-h-[50vh]" aria-hidden /> },
+);
+
+const BlogCarousel = dynamic(
+  () => import("@/components/layout/home/BlogCarousel"),
+);
+
+const Certifications = dynamic(
+  () => import("@/components/layout/home/Certification"),
+);
+
+const ContactSection = dynamic(
+  () => import("@/components/layout/home/ContactSection"),
+);
+
+export const revalidate = 3600;
+
+// ERROR FIXED: Pehla adhoora duplicate HomePage function hata diya hai
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+
   return (
-    <>
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        
-        <AnimationArea />
-        <BlogCarousel locale={locale} />
-        <Certifications />
-        
-        <ContactSection />
-      </main>
-    </>
+    <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <AnimationArea />
+      <BlogCarousel locale={locale} />
+      <Certifications />
+      <ContactSection />
+    </main>
   );
 }
 
@@ -50,9 +63,7 @@ export default async function HomePage(
     </>
   );
 } */
-/* 
-
-import type { Metadata } from 'next';
+/* import type { Metadata } from 'next';
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const { locale } = params;
 

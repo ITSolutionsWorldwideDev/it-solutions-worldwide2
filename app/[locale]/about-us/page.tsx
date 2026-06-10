@@ -25,6 +25,17 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
   };
 }
+export const revalidate = 3600;
+
+/* JUST COMMENTED OUT TO FIX BUILD: Nothing is changed or deleted.
+export const metadata: Metadata = {
+  title: {
+    absolute: "Your Trusted IT Partner in the Netherlands | ITWW",
+  },
+  description:
+    "Learn about IT Solutions Worldwide | a trusted IT partner in the Netherlands specializing in business transformation, digital services & staffing support.",
+};
+*/
 
 export default async function AboutUsPage(
   props: {

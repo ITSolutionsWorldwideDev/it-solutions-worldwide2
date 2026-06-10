@@ -22,10 +22,14 @@ const pages = [
   "/it-support",
   "/it-support/automation-services",
   "/it-support/erp-implementation",
+  // "/it-support/erp-solutions",
   "/it-support/software-development",
   "/job-apply",
   "/logistics",
+  // "/logistics/lean-&-six-sigma-implementation",
+  // "/logistics/logistics-&-supply-chain-specialists",
   "/logistics/smart-warehouse-solutions",
+  // "/logistics/warehouse-design-&-layouts",
   "/oracle-cloud",
   "/outsourcing",
   "/privacy-policy",
@@ -57,6 +61,16 @@ module.exports = {
   siteUrl,
   generateRobotsTxt: true,
   generateIndexSitemap: true,
+
+  robotsTxtOptions: {
+    policies: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/.well-known/", "/*?_rsc=", "/job/"],
+      },
+    ],
+  },
 
   // Disable automatic detection (App Router not supported)
   transform: async () => null,

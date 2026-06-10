@@ -1,6 +1,7 @@
+import { unstable_cache } from "next/cache";
 import pool from "@/lib/db";
 
-export async function getBlogBySlug(slug: string) {
+async function fetchBlogBySlug(slug: string) {
   const query = `
     SELECT
       slug,
@@ -31,4 +32,14 @@ return {
       featuredImage: `/assets/images/blogs/${blog.imageurl}`, 
     },
   };
+}
+
+export async function getBlogBySlug(slug: string) {
+  const cached = unstable_cache(
+    () => fetchBlogBySlug(slug),
+    [`blog-${slug}`],
+    { revalidate: 300, tags: [`blog-${slug}`] },
+  );
+
+  return cached();
 }

@@ -50,18 +50,15 @@ export default async function ISOCertified({
 
   return (
     <>
-      <header>
-        <h1 className="sr-only">ISO Certified IT Solutions - Certified Excellence</h1>
-        <CertificationBanner
-          title="Certified Excellence"
-          mainHeading="ISO Certified IT Solutions You Can Trust"
-          description="IT Solutions Worldwide is an ISO-certified company, committed to international standards of quality, security, and continuous improvement—so our clients receive reliable, compliant, and future-ready IT services."
-          buttons={[
-            { label: "Work With an ISO Certified Partner", href: "/contact" },
-            { label: "Contact Us", href: "/contact", variant: "outline" },
-          ]}
-        />
-      </header>
+      <CertificationBanner
+        title="Certified Excellence"
+        mainHeading="ISO Certified IT Solutions You Can Trust"
+        description="IT Solutions Worldwide is an ISO-certified company, committed to international standards of quality, security, and continuous improvement—so our clients receive reliable, compliant, and future-ready IT services."
+        buttons={[
+          { label: "Work With an ISO Certified Partner", href: "/contact" },
+          { label: "Contact Us", href: "/contact", variant: "outline" },
+        ]}
+      />
 
       <section className="w-full bg-whitesmoke-100 py-16">
         <div className="max-w-7xl mx-auto px-6">
