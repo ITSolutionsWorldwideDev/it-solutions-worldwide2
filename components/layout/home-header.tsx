@@ -1,4 +1,3 @@
-// components/layout/home-header.tsx
 "use client";
 
 import { useState, useEffect } from "react";
@@ -62,9 +61,16 @@ export default function Header() {
         />
       )}
 
-      <div className="container mx-auto">
-        <div className="absolute inset-0 bg-black opacity-60" aria-hidden />
-        <NavbarHome />
+      {/* FIX 1: Moved black overlay out of the inner container container and gave it z-0 */}
+      <div className="absolute inset-0 bg-black opacity-60 z-0" aria-hidden />
+
+      <div className="container mx-auto relative z-10">
+        
+        {/* FIX 2: Wrapped NavbarHome in an explicit z-50 layer container so headings can't block mouse hover */}
+        <div className="relative z-50">
+          <NavbarHome />
+        </div>
+
         <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 pt-20">
           <h1 className="text-[45px] sm:text-6xl/tight lg:text-7xl/tight 2xl:text-8xl/tight font-bold mb-8 w-full sm:w-10/12 lg:w-8/12 xl:w-9/12">
             Empowering Businesses with Smart IT Solutions

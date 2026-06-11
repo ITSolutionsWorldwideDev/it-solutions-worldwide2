@@ -1,4 +1,3 @@
-// components/layout/nav-bar.tsx
 "use client";
 import Link from "next/link";
 import React, { useState, useRef } from "react";
@@ -7,8 +6,6 @@ import MenuDropdown from "./MenuDropdown";
 import MobileMenuItem from "./MobileMenuItem";
 
 export default function Navbar() {
-  //   const [hoveredItem, setHoveredItem] = useState(null);
-  //   const [hideTimeout, setHideTimeout] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -39,8 +36,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-white">
-        <div className="mx-auto pt-4 flex justify-between items-center">{/* container px-4 sm:px-6 lg:px-12  */}
+      {/* FIX 1: Added relative and z-50 to the main <nav> container so nothing overlaps it */}
+<nav className="bg-white relative z-[9999] shadow-sm">     
+     <div className="mx-auto pt-4 flex justify-between items-center px-4 md:px-12">
           <div className="flex items-center space-x-2 w-32">
             <Link href="/">
               <img
@@ -51,26 +49,6 @@ export default function Navbar() {
           </div>
 
           <div className="md:hidden">
-            {/* <button onClick={toggleMenu} className="focus:outline-none cursor-pointer">
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d={
-                    menuOpen
-                      ? "M6 18L18 6M6 6l12 12"
-                      : "M4 6h16M4 12h16M4 18h16"
-                  }
-                />
-              </svg>
-            </button> */}
-
             <button
               className="lg:hidden text-[#278083] focus:outline-none cursor-pointer"
               onClick={toggleMenu}
@@ -93,68 +71,40 @@ export default function Navbar() {
             </button>
           </div>
 
-          <ul className="hidden md:flex space-x-6 z-40">
+          <ul className="hidden md:flex space-x-6">
             {menuItems.map((item, idx) => (
               <li
                 key={idx}
-                className="relative"
+                /* FIX 2: Added 'pb-4 -mb-4' padding/margin hack to act as an invisible hover bridge */
+                className="relative pb-4 -mb-4"
                 onMouseEnter={() => handleMouseEnter(item.label)}
                 onMouseLeave={handleMouseLeave}
               >
-                {/* <Link
-                  href={item.link}
-                  className="text-[#278083] hover:text-[#278083] font-medium px-3 py-2 rounded-md transition"
-                >
-                  {item.label}
-                </Link> */}
                 {item.link ? (
                   <Link
                     href={item.link}
-                    className="text-[#278083] hover:text-[#278083] font-medium px-3 py-2 rounded-md transition"
+                    className="text-[#278083] hover:text-[#278083] font-medium px-3 py-2 rounded-md transition inline-block"
                   >
                     {item.label}
                   </Link>
                 ) : (
                   <div
-                    // type="button"
-                    className="text-[#278083] font-medium px-3  rounded-md transition cursor-default"
+                    className="text-[#278083] font-medium px-3 py-2 rounded-md transition cursor-default inline-block"
                   >
                     {item.label}
                   </div>
                 )}
                 {item.dropdown && hoveredItem === item.label && (
+                  /* The MenuDropdown wrapper component renders right below now */
                   <MenuDropdown items={item.dropdown} />
                 )}
-                {/* {item.dropdown && hoveredItem === item.label && (
-                  <ul
-                    className="absolute top-12 left-0 bg-white shadow-lg rounded-md w-48 text-sm text-[#637381]"
-                    onMouseEnter={() => handleMouseEnter(item.label)}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    {item.dropdown.map((subItem, sIdx) => (
-                      <li key={sIdx}>
-                        <Link
-                          href={subItem.link}
-                          className="block px-4 py-2 hover:bg-gray-100"
-                        >
-                          {subItem.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )} */}
               </li>
             ))}
           </ul>
 
           <div className="hidden md:block">
-            {/* <Link href="/supply-health-check-info">
-              <button className="bg-[#278083] text-white md:my-2  px-4 py-2 rounded-md hover:bg-[#278083] transition mr-2 cursor-pointer">
-                Free SCM Check
-              </button>
-            </Link> */}
             <Link href="/contact-us">
-              <button className="bg-[#278083] text-white md:my-2  px-4 py-2 rounded-md hover:bg-[#278083] transition cursor-pointer">
+              <button className="bg-[#278083] text-white md:my-2 px-4 py-2 rounded-md hover:bg-[#278083] transition cursor-pointer">
                 Contact Us
               </button>
             </Link>
@@ -165,74 +115,15 @@ export default function Navbar() {
       {menuOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black/50 z-10"
+            className="fixed inset-0 bg-black/50 z-40"
             onClick={toggleMenu}
           ></div>
 
-          <div className="fixed top-16 left-0 w-3/4 h-screen bg-white shadow-lg z-20 overflow-y-auto">
+          <div className="fixed top-16 left-0 w-3/4 h-screen bg-white shadow-lg z-50 overflow-y-auto">
             <ul className="flex flex-col space-y-4 p-4 ">
-              {/* {menuItems.map((item, idx) => (
-                <li key={idx} className="relative">
-                  <div className="flex items-center justify-between">
-                    <Link
-                      href={item.link}
-                      onClick={toggleMenu}
-                      className="text-[#278083] font-medium  py-1 text-lg"
-                    >
-                      {item.label}
-                    </Link>
-                    {item.dropdown && (
-                      <button
-                        onClick={() => toggleDropdown(item.label)}
-                        className="focus:outline-none cursor-pointer"
-                      >
-                        <svg
-                          className={`h-5 w-5 transform ${
-                            openDropdown === item.label ? "rotate-180" : ""
-                          }`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </button>
-                    )}
-                  </div>
-                  {item.dropdown && openDropdown === item.label && (
-                    <ul className="mt-2 pl-4 space-y-2 text-sm text-[#637381]">
-                      {item.dropdown.map((subItem, sIdx) => (
-                        <li key={sIdx}>
-                          <Link
-                            href={subItem.link}
-                            onClick={toggleMenu}
-                            className="hover:underline"
-                          >
-                            {subItem.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ))} */}
               {menuItems.map((item, idx) => (
                 <MobileMenuItem key={idx} item={item} closeMenu={toggleMenu} />
               ))}
-              <li className="relative">
-                {/* <Link
-                  href="/supply-health-check-info"
-                  onClick={toggleMenu}
-                  className="bg-[#278083] flex text-white px-4 py-2 rounded-md transition hover:bg-[#278083] w-full"
-                >
-                  Free SCM Check
-                </Link> */}
-              </li>
               <li className="relative">
                 <Link
                   href="/contact-us"

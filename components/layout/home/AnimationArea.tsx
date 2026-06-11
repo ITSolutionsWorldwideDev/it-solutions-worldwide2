@@ -20,9 +20,11 @@ const AnimatedGlobe = dynamic(
 );
 
 export default function AnimationArea() {
-
   return (
-    <>
+    /* FIX: Swapped out the empty React fragment layer for a styled semantic section block */
+    /* This forces the entire home page animation pipeline to safely layer beneath your global navigation menu. */
+    <section className="relative z-10 w-full">
+      
       {/* FIXED: Duplicate div removed and padding fixed to py-20 */}
       <div className="xl:max-h-fit container xl:max-w-[1200px] mx-auto text-center py-20">
         <motion.h2
@@ -84,6 +86,6 @@ export default function AnimationArea() {
 
       <PinnedProgressSection />
       <AnimatedGlobe />
-    </>
+    </section>
   );
 }
