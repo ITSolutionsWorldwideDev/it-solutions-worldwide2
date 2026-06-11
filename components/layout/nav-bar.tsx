@@ -38,7 +38,7 @@ export default function Navbar() {
     <>
       {/* FIX 1: Added relative and z-50 to the main <nav> container so nothing overlaps it */}
 <nav className="bg-white relative z-[9999] shadow-sm">     
-     <div className="mx-auto pt-4 flex justify-between items-center px-4 md:px-12">
+     <div className="mx-auto pt-6 flex justify-between items-center px-4 md:px-12">
           <div className="flex items-center space-x-2 w-32">
             <Link href="/">
               <img
@@ -71,7 +71,7 @@ export default function Navbar() {
             </button>
           </div>
 
-          <ul className="hidden md:flex space-x-6">
+          <ul className="hidden md:flex space-x-4">
             {menuItems.map((item, idx) => (
               <li
                 key={idx}
@@ -83,13 +83,12 @@ export default function Navbar() {
                 {item.link ? (
                   <Link
                     href={item.link}
-                    className="text-[#278083] hover:text-[#278083] font-medium px-3 py-2 rounded-md transition inline-block"
-                  >
+                    className="text-[#278083] hover:text-[#278083] font-medium text-sm px-2 py-2 rounded-md transition inline-block"                  >
                     {item.label}
                   </Link>
                 ) : (
                   <div
-                    className="text-[#278083] font-medium px-3 py-2 rounded-md transition cursor-default inline-block"
+                    className="text-[#278083] font-medium text-sm px-2 py-2 rounded-md transition cursor-default inline-block"
                   >
                     {item.label}
                   </div>
