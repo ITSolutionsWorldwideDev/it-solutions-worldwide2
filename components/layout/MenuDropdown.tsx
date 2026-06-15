@@ -47,8 +47,8 @@ export default function MenuDropdown({ items }: Props) {
 
           {/* Nested Dropdown */}
           {item.dropdown && activeItem === item.label && (
-            /* FIX: Added a small negative margin/padding hack 'pl-2 -ml-2' to make sub-menu hover bridges flawless */
-            <div className="absolute left-full top-0 pl-2 -ml-2 h-full z-50">
+            /* FIX: 'h-full' ko 'min-h-full w-[calc(100%+8px)]' kiya taaki mouse move hone par collision box break na ho */
+            <div className="absolute left-full top-0 pl-2 -ml-2 min-h-full w-[calc(100%+8px)] z-50">
               <MenuDropdown items={item.dropdown} />
             </div>
           )}

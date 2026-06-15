@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useRef } from "react";
+import { useParams } from "next/navigation";
 import { menuItems } from "@/lib/menu";
 import MenuDropdown from "./MenuDropdown";
 import MobileMenuItem from "./MobileMenuItem";
@@ -11,6 +12,9 @@ export default function Navbar() {
 
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const hideTimeout = useRef<NodeJS.Timeout | null>(null);
+
+  const params = useParams();
+  const locale = params?.locale || "en";
 
   const handleMouseEnter = (item: string) => {
     if (hideTimeout.current) {
@@ -37,10 +41,11 @@ export default function Navbar() {
   return (
     <>
       {/* FIX 1: Added relative and z-50 to the main <nav> container so nothing overlaps it */}
-<nav className="bg-white relative z-[9999] shadow-sm">     
-     <div className="mx-auto pt-6 flex justify-between items-center px-4 md:px-12">
+      <nav className="bg-white relative z-[9999] shadow-sm">
+        <div className="mx-auto pt-6 flex justify-between items-center px-4 md:px-12">
           <div className="flex items-center space-x-2 w-32">
-            <Link href="/">
+            {/* LOCALE FIX: logo bhi locale ke saath */}
+            <Link href={`/${locale}/`}>
               <img
                 src="/assets/images/logo.webp"
                 alt="IT Solutions Worldwide Logo"
@@ -81,9 +86,11 @@ export default function Navbar() {
                 onMouseLeave={handleMouseLeave}
               >
                 {item.link ? (
+                  /* LOCALE FIX: har nav link pe locale prefix */
                   <Link
-                    href={item.link}
-                    className="text-[#278083] hover:text-[#278083] font-medium text-sm px-2 py-2 rounded-md transition inline-block"                  >
+                    href={`/${locale}${item.link}`}
+                    className="text-[#278083] hover:text-[#278083] font-medium text-sm px-2 py-2 rounded-md transition inline-block"
+                  >
                     {item.label}
                   </Link>
                 ) : (
@@ -102,7 +109,8 @@ export default function Navbar() {
           </ul>
 
           <div className="hidden md:block">
-            <Link href="/contact-us">
+            {/* LOCALE FIX: contact us bhi locale ke saath */}
+            <Link href={`/${locale}/contact-us`}>
               <button className="bg-[#278083] text-white md:my-2 px-4 py-2 rounded-md hover:bg-[#278083] transition cursor-pointer">
                 Contact Us
               </button>
@@ -124,8 +132,9 @@ export default function Navbar() {
                 <MobileMenuItem key={idx} item={item} closeMenu={toggleMenu} />
               ))}
               <li className="relative">
+                {/* LOCALE FIX: mobile contact us bhi locale ke saath */}
                 <Link
-                  href="/contact-us"
+                  href={`/${locale}/contact-us`}
                   onClick={toggleMenu}
                   className="bg-[#278083] flex text-white px-4 py-2 rounded-md transition hover:bg-[#278083] w-full"
                 >

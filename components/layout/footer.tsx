@@ -1,10 +1,15 @@
+"use client";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
 // components/layout/footer.tsx
 export default function Footer() {
+  const params = useParams();
+  const locale = params?.locale || "en"; // Agar locale nahi milta toh default 'en' par fallback karega
+
   return (
     <footer className="bg-white py-12 sm:pt-16  text-center">
-      <div className=" container mx-auto ">{/* max-w-7xl px-4 sm:px-6 lg:px-8*/}
+      <div className=" container mx-auto ">
         {/* Top section: 4 columns on md+ screens */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-12">
           {/* Column 1: Logo + Company Info + Social Icons */}
@@ -28,13 +33,13 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-3 text-gray-500">
               <li>
-                <Link href="/blogs" className="text-base hover:text-[#236B7A]">
+                <Link href={`/${locale}/blogs`} className="text-base hover:text-[#236B7A]">
                   Blogs
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/about-us"
+                  href={`/${locale}/about-us`}
                   className="text-base hover:text-[#236B7A]"
                 >
                   About Us
@@ -42,22 +47,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/profile"
+                  href={`/${locale}/profile`}
                   className="text-base hover:text-[#236B7A]"
                 >
                   Profile
                 </Link>
               </li>
-              {/* 
-              <li>
-                <Link
-                  href="/scm-services"
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  SCM Services
-                </Link>
-              </li> 
-              */}
               <li>
                 <Link
                   target="_blank"
@@ -69,7 +64,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact-us"
+                  href={`/${locale}/contact-us`}
                   target="_blank"
                   className="text-base hover:text-[#236B7A]"
                 >
@@ -87,7 +82,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-gray-500">
               <li>
                 <Link
-                  href="/scm-services"
+                  href={`/${locale}/scm-services`}
                   className="text-base hover:text-[#236B7A]"
                 >
                   SCM Services
@@ -95,7 +90,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/it-support"
+                  href={`/${locale}/it-support`}
                   className="text-base hover:text-[#236B7A]"
                 >
                   IT Support
@@ -103,7 +98,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/oracle-cloud"
+                  href={`/${locale}/oracle-cloud`}
                   className="text-base hover:text-[#236B7A]"
                 >
                   Oracle Cloud
@@ -111,7 +106,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/digital-services"
+                  href={`/${locale}/digital-services`}
                   className="text-base hover:text-[#236B7A]"
                 >
                   Digital Services
@@ -119,7 +114,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/staffing-support"
+                  href={`/${locale}/staffing-support`}
                   className="text-base hover:text-[#236B7A]"
                 >
                   Staffing Support
@@ -127,7 +122,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/supply-health-check-info"
+                  href={`/${locale}/supply-health-check-info`}
                   className="text-base hover:text-[#236B7A]"
                 >
                   Supply Health Check
@@ -144,7 +139,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-gray-500">
               <li>
                 <Link
-                  href="/contact-us"
+                  href={`/${locale}/contact-us`}
                   className="text-base hover:text-[#236B7A]"
                 >
                   Help Center
@@ -152,28 +147,20 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/about-us/#faq"
+                  href={`/${locale}/about-us/#faq`}
                   className="text-base hover:text-[#236B7A]"
                 >
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/career" className="text-base hover:text-[#236B7A]">
+                <Link href={`/${locale}/career`} className="text-base hover:text-[#236B7A]">
                   Career
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  href="/terms-and-conditions"
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  Terms & Conditions
-                </Link>
-              </li> */}
               <li>
                 <Link
-                  href="/privacy-policy"
+                  href={`/${locale}/privacy-policy`}
                   className="text-base hover:text-[#236B7A]"
                 >
                   Privacy Policy

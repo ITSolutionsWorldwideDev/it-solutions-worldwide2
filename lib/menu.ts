@@ -6,6 +6,11 @@ export interface MenuItem {
 }
 
 export const menuItems: MenuItem[] = [
+   {
+    label: "About Us",
+    link: "/about-us",
+  },
+  
   {
     label: "Business Transformation",
     link: "/scm-services",
@@ -184,7 +189,7 @@ export const menuItems: MenuItem[] = [
           },
           {
             label: "Content Creator",
-            link: "/staffic-support/hire-content-creator",
+            link: "/staffing-support/hire-content-creator",
           },
           {
             label: "Online Marketeer",
@@ -196,7 +201,7 @@ export const menuItems: MenuItem[] = [
           },
           {
             label: "Power BI Specialist",
-            link: "/staffing-support/hire-power-bi-tableau-specialist",
+            link: "/en/staffing-support/hire-power-bi-tableau-specialist",
           },
           {
             label: "Data Analyst",
@@ -206,8 +211,5 @@ export const menuItems: MenuItem[] = [
       },
     ],
   },
-  {
-    label: "About Us",
-    link: "/en/about-us",
-  },
+ 
 ];

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import NavbarHome from "./nav-bar-home";
 import SegmentTabs from "./home/SegmentTabComponent";
 
@@ -11,6 +12,9 @@ const HERO_VIDEO = "/assets/images/backgrounds/hero-section-bg.mp4";
 
 export default function Header() {
   const [showVideo, setShowVideo] = useState(false);
+
+  const params = useParams();
+  const locale = params?.locale || "en"; // Dutch me automatic 'nl' uthayega aur english me 'en'
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -84,7 +88,9 @@ export default function Header() {
               <span>Succeed</span>
             </p>
           </div>
-          <Link href="/contact-us" target="_blank">
+          
+          {/* FIXED: Removed target="_blank" to fix Chrome Back Button history freeze and kept dynamic locale */}
+          <Link href={`/${locale}/contact-us`}>
             <button
               type="button"
               className="bg-[#0FB6AE] hover:bg-white text-white hover:text-black px-6 py-3 rounded-lg font-medium transition-colors cursor-pointer"
@@ -92,6 +98,7 @@ export default function Header() {
               Get FREE Consultation
             </button>
           </Link>
+          
           <SegmentTabs />
         </div>
       </div>
