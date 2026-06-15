@@ -72,7 +72,7 @@ export async function GET(req: NextRequest) {
       currentPage: Math.floor(offset / pageSize) + 1,
       totalPages: Math.ceil(parseInt(countResult.rows[0].count, 10) / pageSize),
     };
-
+    console.log(data);
     return NextResponse.json(data);
   } catch (err) {
     console.error(err);

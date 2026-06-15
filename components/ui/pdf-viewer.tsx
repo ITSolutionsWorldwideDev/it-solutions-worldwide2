@@ -7,6 +7,7 @@ type PdfViewerProps = {
 };
 
 const PdfViewer: React.FC<PdfViewerProps> = ({ pdfUrl }) => {
+  console.log("PDF URL:", pdfUrl);
   const openPdf = () => {
     if (typeof window !== "undefined") {
       window.open(pdfUrl, "_blank");

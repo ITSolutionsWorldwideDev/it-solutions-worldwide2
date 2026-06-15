@@ -10,8 +10,12 @@ const defaultLocale = i18nConfig.defaultLocale;
 function isStaticAssetPath(pathname: string): boolean {
   if (pathname.startsWith("/assets/")) return true;
   if (pathname.startsWith("/_next")) return true;
+  if (pathname.startsWith("/uploads/")) return true; // ✅ yeh add karo
+
   if (
-    /\.(svg|png|jpe?g|webp|gif|ico|css|js|woff2?|txt|xml|json)$/i.test(pathname)
+    /\.(svg|png|jpe?g|webp|gif|ico|css|js|woff2?|txt|xml|json|pdf)$/i.test(
+      pathname,
+    )
   ) {
     return true;
   }

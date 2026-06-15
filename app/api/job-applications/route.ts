@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
     if (!name || !email || !phone || !resumeFile) {
       return NextResponse.json(
         { error: "Missing required fields." },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -95,8 +95,8 @@ export async function POST(req: NextRequest) {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
-    //   logger: true,
-    //   debug: true,
+      //   logger: true,
+      //   debug: true,
       pool: true, // enable connection pooling
       maxConnections: 3, // up to 3 concurrent SMTP connections
       maxMessages: 10, // reuse each connection for up to 10 emails
@@ -126,7 +126,7 @@ export async function POST(req: NextRequest) {
     // Email to HR
     const hrMail = {
       from: `"IT Solutions Worldwide Careers" <${process.env.SMTP_USER}>`,
-      to: process.env.HR_EMAIL,
+      to: [process.env.HR_EMAIL!, process.env.HR_EMAIL_2!],
       cc: process.env.CC_EMAIL,
       subject: `Job application for ${job_category} - ${name}`,
       html: `
@@ -169,7 +169,7 @@ export async function POST(req: NextRequest) {
     console.error(err);
     return NextResponse.json(
       { error: err.message || "Something went wrong." },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
