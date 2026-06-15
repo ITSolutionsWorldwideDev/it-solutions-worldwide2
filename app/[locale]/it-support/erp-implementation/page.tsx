@@ -18,19 +18,20 @@ import { Metadata } from "next";
     description:
       "Expert ERP implementation services in the Netherlands. We deploy and configure ERP systems tailored to your business processes and industry needs.",
   };
-export default async function ERPImplementation({
-  params,
-}: {
-  params: Promise<{ locale: string; }>;
-}) {
-  const { locale } = await params;
+export default async function ERPImplementation(
+  props: {
+    params: Promise<{ locale: string; }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/erpimplementation.png",
+      backgroundImage: "/assets/images/erpimplementation.webp",
       heading: t("erpimplementation.heading_1"),
       text: t("erpimplementation.text_1"),
       button: t("erpimplementation.button_1"),
@@ -108,7 +109,7 @@ export default async function ERPImplementation({
 
   const slidesData2 = [
     {
-      backgroundImage: "/assets/images/erpsolutions6.png",
+      backgroundImage: "/assets/images/erpsolutions6.webp",
       heading:
         "Transform Your Operations with a Scalable ERP System – Let's Connect!",
       buttonText: "Schedule Your Consultation Now",
@@ -123,7 +124,7 @@ export default async function ERPImplementation({
       <ImageSection2
         heading={t("erpimplementation.heading_2")}
         text={imagetext}
-        imageUrl="/assets/images/erpimplementation2.png"
+        imageUrl="/assets/images/erpimplementation2.webp"
         borderWidth="2px"
         borderColor="#c7dcec"
       />
@@ -131,7 +132,7 @@ export default async function ERPImplementation({
       <ImageSection
         heading={t("erpimplementation.heading_3")}
         text={imagetext2}
-        imageUrl="/assets/images/erpimplementation3.png"
+        imageUrl="/assets/images/erpimplementation3.webp"
         leftColor="#0D69AD"
         rightColor="#0D69AD"
         textColor="#fff"
@@ -145,7 +146,7 @@ export default async function ERPImplementation({
       <ImageSection
         heading={t("erpimplementation.heading_4")}
         text={imagetext3}
-        imageUrl="/assets/images/erpimplementation4.png"
+        imageUrl="/assets/images/erpimplementation4.webp"
         leftColor="#e7f0f7"
         rightColor="#e7f0f7"
         textColor="#000"

@@ -1,4 +1,3 @@
-// components/layout/about/banner-section.tsx
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,6 +13,7 @@ type Slide = {
   button3?: string;
   button4?: string;
   buttonTextColor?: string;
+  priority?: boolean; // 👈 Peacefully accept incoming performance optimization flags
 };
 
 type BannerSectionProps = {
@@ -24,6 +24,7 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
+    if (slides.length <= 1) return;
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 10000);
@@ -38,100 +39,105 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({ slides }) => {
 
   return (
     <div className="relative w-full py-2 mt-2">
-      <div
-        className="relative bg-cover bg-center w-full h-[600px] md:h-[400px] lg:h-[600px] mx-auto rounded-xl shadow-lg overflow-hidden flex items-center"
-        style={{
-          backgroundImage: `url(${slides[currentSlide].backgroundImage})`,
-        }}
-      >
-        <div className="relative w-full h-full  z-10 text-left text-white px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 w-full h-full ">
-            <div className="  self-center">
+      <div className="relative w-full h-[600px] md:h-[400px] lg:h-[600px] mx-auto rounded-xl shadow-lg overflow-hidden flex items-center">
+        
+        {/* PERFORMANCE FIX: Render the background asset through next/image with preloading priorities */}
+        <Image
+          src={slides[currentSlide].backgroundImage}
+          alt={slides[currentSlide].heading || "About Us Banner background"}
+          fill
+          quality={85}
+          priority={currentSlide === 0}
+          fetchPriority={currentSlide === 0 ? "high" : "low"}
+          loading={currentSlide === 0 ? "eager" : "lazy"}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+          className="object-cover object-center pointer-events-none select-none z-0"
+        />
+
+        {/* Backdrop tint to guarantee text clarity contrast layout ratios */}
+        <div className="absolute inset-0 bg-black/20 z-0" />
+
+        <div className="relative w-full h-full z-10 text-left text-white px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 w-full h-full">
+            <div className="self-center">
               <h1 className="uppercase text-xl md:text-3xl lg:text-4xl font-bold mb-1 sm:mb-4 w-[90%] md:w-[90%] lg:w-1/2">
                 {slides[currentSlide].heading}
               </h1>
               <p className="text-sm sm:text-base w-[90%] md:w-[90%] lg:w-1/2">
                 {slides[currentSlide].text}
               </p>
+              
               {slides[currentSlide].button ? (
-                <div className=" gap-4 mt-2 inline-flex align-middle">
+                <div className="gap-4 mt-2 inline-flex align-middle">
                   <Link
                     href="/contact-us"
-                    target="_blank" //change for pop-up later
-                    className={`transition px-4 py-2 rounded-[10px] bg-[#418F92]  text-base  shrink-0 inline-flex align-middle leading-[50.37px] text-[16.79px]`}
+                    target="_blank"
+                    className="transition px-4 py-2 rounded-[10px] bg-[#418F92] text-base shrink-0 inline-flex align-middle leading-[50.37px] text-[16.79px] hover:bg-[#347477]"
                   >
                     {slides[currentSlide].button}
                     <Image
                       className="w-6 h-6 ml-2 self-center"
                       width={24}
                       height={24}
-                      sizes="100vw"
-                      alt=""
+                      alt="right arrow icon"
                       src="/assets/images/aboutus/outlined-32-arrow-right.svg"
                     />
                   </Link>
-                  {/* bg-white ${buttonTextColor} rounded font-semibold  */}
                 </div>
-              ) : (
-                ""
-              )}
+              ) : null}
+
               {slides[currentSlide].button2 ? (
-                <div className=" justify-start gap-4 mt-2 inline-flex align-middle ml-10">
+                <div className="justify-start gap-4 mt-2 inline-flex align-middle ml-10">
                   <Link
                     href="#"
-                    className={`bg-white transition px-4 py-2 rounded-[10px] border border-[#418F92] text-[#418F92]  shrink-0 text-base leading-[50.37px] text-[16.79px] inline-flex align-middle hover:text-[#236B7A]`}
+                    className="bg-white transition px-4 py-2 rounded-[10px] border border-[#418F92] text-[#418F92] shrink-0 text-base leading-[50.37px] text-[16.79px] inline-flex align-middle hover:text-[#236B7A] hover:bg-neutral-50"
                   >
                     {slides[currentSlide].button2}
                     <Image
                       className="w-6 h-6 ml-2 self-center"
                       width={24}
                       height={24}
-                      sizes="100vw"
-                      alt=""
+                      alt="right arrow icon"
                       src="/assets/images/aboutus/outlined-32-arrow-right.svg"
                     />
                   </Link>
                 </div>
-              ) : (
-                ""
-              )}
+              ) : null}
 
               {slides[currentSlide].button3 ? (
                 <div className="flex justify-start gap-4 mt-2">
                   <Link
                     href="#"
-                    className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
+                    className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition hover:bg-neutral-50`}
                   >
                     {slides[currentSlide].button3}
                   </Link>
                 </div>
-              ) : (
-                ""
-              )}
+              ) : null}
+
               {slides[currentSlide].button4 ? (
                 <div className="flex justify-start gap-4 mt-2">
                   <Link
                     href="#"
-                    className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition`}
+                    className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition hover:bg-neutral-50`}
                   >
                     {slides[currentSlide].button4}
                   </Link>
                 </div>
-              ) : (
-                ""
-              )}
+              ) : null}
             </div>
+
             <div className="relative">
               {slides[currentSlide].backgroundMainImage ? (
                 <Image
-                  className=""
+                  className="object-contain"
                   fill
-                  alt=""
+                  quality={80}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  alt={`${slides[currentSlide].heading} illustration`}
                   src={slides[currentSlide].backgroundMainImage}
                 />
-              ) : (
-                ""
-              )}
+              ) : null}
             </div>
           </div>
         </div>

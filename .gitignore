@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# Lighthouse / local reports
+/.unlighthouse/
+
 # production
 /build
 

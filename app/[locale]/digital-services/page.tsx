@@ -13,26 +13,33 @@ import { Metadata } from "next";
 export const revalidate = 3600;
 
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Digital Marketing Services in Netherlands | ITWW",
-  },
-  description:
-    "Boost your online presence with expert digital marketing services in the Netherlands. SEO, PPC, social media, web design & eCommerce development.",
-};
-export default async function DigitalServices({
-  params,
-}: {
-  params: Promise<{ locale: string; }>;
-}) {
-  const { locale } = await params;
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  return {
+    title: {
+      absolute: "Digital Marketing Services in Netherlands | ITWW",
+    },
+    description:
+      "Boost your online presence with expert digital marketing services in the Netherlands. SEO, PPC, social media, web design & eCommerce development.",
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/digital-services`,
+    },
+  };
+}
+export default async function DigitalServices(
+  props: {
+    params: Promise<{ locale: string; }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/digital1.png",
+      backgroundImage: "/assets/images/digital1.webp",
       heading: t("digitalservices.heading_1"),
       text: t("digitalservices.text_1"),
       button: t("digitalservices.button_1"),
@@ -106,7 +113,7 @@ export default async function DigitalServices({
       <ImageSection
         heading={t("digitalservices.heading_2")}
         text={imagetext}
-        imageUrl="/assets/images/digital2.png"
+        imageUrl="/assets/images/digital2.webp"
       />
       <DynamicTabs
         headingh2={t("digitalservices.heading_4")}
@@ -121,7 +128,7 @@ export default async function DigitalServices({
         services={[
           {
             title: "Local Digital Marketing Services",
-            image: "/assets/images/digital3.png",
+            image: "/assets/images/digital3.webp",
             points: [
               "Increase visibility within your community.",
               "Stay updated to the regional trends and demands.",
@@ -130,7 +137,7 @@ export default async function DigitalServices({
           },
           {
             title: "B2B Digital Marketing Services",
-            image: "/assets/images/digital4.png",
+            image: "/assets/images/digital4.webp",
             points: [
               "Build long-term partnerships with targeted strategies.",
               "Targeted lead generation.",
@@ -143,11 +150,11 @@ export default async function DigitalServices({
       <ImageSection2
         heading={t("digitalservices.heading_5")}
         text={imagetext2}
-        imageUrl="/assets/images/digital5.png"
+        imageUrl="/assets/images/digital5.webp"
       />
       <FAQSection2 questions={questions} gradientColors={gradientColors} />
       <MarketingBanner
-        imageSrc="/assets/images/digital6.png"
+        imageSrc="/assets/images/digital6.webp"
         title="Grow Your Business with Data-Driven Digital Marketing - Schedule a Consultation!"
         description="Let's create a custom strategy for your business."
         buttonText="Contact Us Today"

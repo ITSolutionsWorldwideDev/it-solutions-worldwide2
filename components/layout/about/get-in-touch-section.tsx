@@ -11,7 +11,7 @@ const GetInTouchSection: NextPage = () => {
           fill
           sizes="100vw"
           alt=""
-          src="/assets/images/aboutus/rectangle-128.png"
+          src="/assets/images/aboutus/rectangle-128.webp"
         />
       </div> */}
       {/* overflow-hidden */}
@@ -19,7 +19,7 @@ const GetInTouchSection: NextPage = () => {
       <div
         className=" bg-cover bg-center w-full px-10 mx-auto bg-no-repeat rounded-xl shadow-lg  flex items-center justify-center"
         style={{
-          backgroundImage: `url("/assets/images/aboutus/get-in-touch-footer.png")`,
+          backgroundImage: `url("/assets/images/aboutus/get-in-touch-footer.webp")`,
         }}
         role="img"
       >
@@ -94,7 +94,7 @@ const GetInTouchSection: NextPage = () => {
                   width={36}
                   height={36}
                   sizes="100vw"
-                  alt=""
+                  alt="email icon"
                   src="/assets/images/aboutus/material-symbols-light-mail-outline-rounded.svg"
                 />
               </div>
@@ -114,7 +114,7 @@ const GetInTouchSection: NextPage = () => {
                   width={36}
                   height={36}
                   sizes="100vw"
-                  alt=""
+                  alt="phone icon"
                   src="/assets/images/aboutus/material-symbols-light-call-outline-sharp.svg"
                 />
               </div>
@@ -146,7 +146,7 @@ const GetInTouchSection: NextPage = () => {
                   width={24}
                   height={24}
                   sizes="100vw"
-                  alt=""
+                  alt="right arrow icon"
                   src="/assets/images/aboutus/outlined-32-arrow-right.svg"
                 />
               </Link>
@@ -159,8 +159,8 @@ const GetInTouchSection: NextPage = () => {
               width={550}
               height={565}
               sizes="100vw"
-              alt=""
-              src="/assets/images/aboutus/lady-caller.png"
+              alt="lady calling customer support"
+              src="/assets/images/aboutus/lady-caller.webp"
             />
           </div>
         </div>

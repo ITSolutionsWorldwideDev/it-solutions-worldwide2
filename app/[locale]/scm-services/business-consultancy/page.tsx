@@ -18,19 +18,20 @@ export const metadata: Metadata = {
   description:
     "Drive growth with expert business consultancy in the Netherlands. We analyze your operations and deliver tailored strategies to improve performance.",
 };
-export default async function BusinessConsultancy({
-  params,
-}: {
-  params: Promise<{ locale: string; }>;
-}) {
-  const { locale } = await params;
+export default async function BusinessConsultancy(
+  props: {
+    params: Promise<{ locale: string; }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/businessconsultancy.png",
+      backgroundImage: "/assets/images/businessconsultancy.webp",
       heading: t("businessconsultancy.heading_1"),
       text: t("businessconsultancy.text_1"),
       button: t("businessconsultancy.button_1"),
@@ -48,22 +49,22 @@ export default async function BusinessConsultancy({
 
   const cards2 = [
     {
-      image: "/assets/images/businessconsultencyicon1.png",
+      image: "/assets/images/businessconsultencyicon1.webp",
       title: t("businessconsultancy.card_heading_1"),
       description: t("businessconsultancy.card_text_1"),
     },
     {
-      image: "/assets/images/businessconsultencyicon2.png",
+      image: "/assets/images/businessconsultencyicon2.webp",
       title: t("businessconsultancy.card_heading_2"),
       description: t("businessconsultancy.card_text_2"),
     },
     {
-      image: "/assets/images/businessconsultencyicon3.png",
+      image: "/assets/images/businessconsultencyicon3.webp",
       title: t("businessconsultancy.card_heading_3"),
       description: t("businessconsultancy.card_text_3"),
     },
     {
-      image: "/assets/images/businessconsultencyicon4.png",
+      image: "/assets/images/businessconsultencyicon4.webp",
       title: t("businessconsultancy.card_heading_4"),
       description: t("businessconsultancy.card_text_4"),
     },
@@ -115,7 +116,7 @@ export default async function BusinessConsultancy({
 
   const slidesData2 = [
     {
-      backgroundImage: "/assets/images/businessconsultancy5.png",
+      backgroundImage: "/assets/images/businessconsultancy5.webp",
       heading:
         "Let's Work Together to Drive Success – Contact Our Consultancy Team Now!",
       buttonText: "Schedule Your Consultation Now",
@@ -130,7 +131,7 @@ export default async function BusinessConsultancy({
       <ImageSection2
         heading={t("businessconsultancy.heading_2")}
         text={imagetext}
-        imageUrl="/assets/images/businessconsultancy2.png"
+        imageUrl="/assets/images/businessconsultancy2.webp"
         borderWidth="2px"
         borderColor="#fed4c2"
       />
@@ -143,7 +144,7 @@ export default async function BusinessConsultancy({
       <ImageSection
         heading={t("businessconsultancy.heading_4")}
         text={imagetext2}
-        imageUrl="/assets/images/businessconsultancy3.png"
+        imageUrl="/assets/images/businessconsultancy3.webp"
         borderWidth="2px"
         borderColor="#fed4c2"
       />
@@ -151,7 +152,7 @@ export default async function BusinessConsultancy({
       <ImageSection2
         heading={t("businessconsultancy.heading_5")}
         text={imagetext3}
-        imageUrl="/assets/images/businessconsultancy4.png"
+        imageUrl="/assets/images/businessconsultancy4.webp"
         leftColor="#FC4C02"
         rightColor="#ffff"
       />

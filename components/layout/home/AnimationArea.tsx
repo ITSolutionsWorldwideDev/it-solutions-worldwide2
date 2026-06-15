@@ -1,29 +1,40 @@
-// components/layout/home/AnimationArea.tsx
 "use client";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import ExpandingCards from "./ExpandingCards";
 import {
   LogosSlider,
   AnimatedList,
   FunFacts,
-  PinnedProgressSection,
-  AnimatedGlobe,
 } from "./AnimationComponents";
+
+// Heavy components — lazy load
+const PinnedProgressSection = dynamic(
+  () => import("./AnimationComponents").then((mod) => mod.PinnedProgressSection),
+  { ssr: false, loading: () => <div className="min-h-screen" /> }
+);
+
+const AnimatedGlobe = dynamic(
+  () => import("./AnimationComponents").then((mod) => mod.AnimatedGlobe),
+  { ssr: false, loading: () => <div className="min-h-[40rem] bg-[#175864]" /> }
+);
 
 export default function AnimationArea() {
   return (
-    <>
-      <div className="xl:max-h-fit container xl:max-w-[1200px] mx-auto text-center py-19">
+    /* FIX: Swapped out the empty React fragment layer for a styled semantic section block */
+    /* This forces the entire home page animation pipeline to safely layer beneath your global navigation menu. */
+    <section className="relative z-10 w-full">
+      
+      {/* FIXED: Duplicate div removed and padding fixed to py-20 */}
+      <div className="xl:max-h-fit container xl:max-w-[1200px] mx-auto text-center py-20">
         <motion.h2
           className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 text-center"
-          initial={{ opacity: 0, x: -100 }} // Starts off-screen to the left
-          whileInView={{ opacity: 1, x: 0 }} // Slides in to its normal position
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{
-            duration: 0.8,
+            duration: 0.3,
             ease: "easeOut",
-            delay: 0.7, // Delayed animation
           }}
-          viewport={{ once: true }} // Ensures animation runs only once
         >
           <span className="bg-[#175864] text-white px-4 py-1 rounded-md inline-block">
             OUR SERVICES
@@ -32,18 +43,19 @@ export default function AnimationArea() {
 
         <ExpandingCards />
       </div>
+
       <div className="max-h-[400px] flex flex-col justify-center items-center bg-cover bg-center w-full pt-20">
         <div className="container mx-auto ">
           <motion.h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 text-center"
-            initial={{ opacity: 0, x: -100 }} // Starts off-screen to the left
-            whileInView={{ opacity: 1, x: 0 }} // Slides in to its normal position
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{
               duration: 0.8,
               ease: "easeOut",
-              delay: 0.7, // Delayed animation
+              delay: 0.5,
             }}
-            viewport={{ once: true }} // Ensures animation runs only once
+            viewport={{ once: true }}
           >
             <span className="bg-[#175864] text-white px-4 py-1 rounded-md inline-block">
               Our Clients
@@ -60,10 +72,11 @@ export default function AnimationArea() {
       <div className=" container xl:max-w-[1200px] mx-auto text-center py-20">
         <AnimatedList />
       </div>
+
       <div
         className="flex flex-col justify-center items-center bg-cover bg-center w-full"
         style={{
-          backgroundImage: `url(/assets/images/backgrounds/clients-section-radial-bg.png)`,
+          backgroundImage: `url(/assets/images/backgrounds/clients-section-radial-bg.webp)`,
         }}
       >
         <div className="container px-4 sm:px-6 lg:px-8 place-items-center">
@@ -73,6 +86,6 @@ export default function AnimationArea() {
 
       <PinnedProgressSection />
       <AnimatedGlobe />
-    </>
+    </section>
   );
 }

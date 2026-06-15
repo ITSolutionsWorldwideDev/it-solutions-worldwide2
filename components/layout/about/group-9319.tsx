@@ -7,7 +7,7 @@ const Group9319: NextPage = () => {
       {/* Background Image */}
       <div className="relative w-full h-[680px] md:h-[200px]">
         <Image
-          src="/assets/images/aboutus/rectangle-140.png"
+          src="/assets/images/aboutus/rectangle-140.webp"
           alt=""
           className="rounded-[21px] object-cover"
           fill
@@ -65,7 +65,7 @@ const Group9319: NextPage = () => {
     <div className="w-full relative text-left text-[45px] text-white font-lexend">
       <div className="relative w-full h-[174px]">
         <Image
-          src="/assets/images/aboutus/rectangle-140.png"
+          src="/assets/images/aboutus/rectangle-140.webp"
           alt=""
           className="rounded-[21px] object-cover"
           fill

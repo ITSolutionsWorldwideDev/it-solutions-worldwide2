@@ -5,6 +5,7 @@ import React, { useState, useRef } from "react";
 import { menuItems } from "@/lib/menu";
 import MenuDropdown from "./MenuDropdown";
 import MobileMenuItem from "./MobileMenuItem";
+import Image from "next/image";
 
 export default function NavbarHome() {
   //   const [hoveredItem, setHoveredItem] = useState(null);
@@ -42,10 +43,13 @@ export default function NavbarHome() {
       <nav className="relative z-10 flex items-center justify-between  pt-4 text-white 2xl:text-xl gap-5">{/* px-4 lg:px-8 py-5 */}
         <div className="flex items-center space-x-2 w-32">
           <Link href="/#hometop">
-            <img
-              src="/assets/images/main-logo.png"
-              alt="IT Solutions Worldwide Logo"
-            />
+         <img
+  src="/assets/images/main-logo.webp"
+  alt="IT Solutions Worldwide Logo"
+  width={128}
+  height={40}
+  fetchPriority="high"
+/>
           </Link>
         </div>
 

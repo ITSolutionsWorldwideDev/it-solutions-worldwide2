@@ -15,7 +15,7 @@ export default async function OurValuesSection({ locale }: { locale: string }) {
             width={15}
             height={8}
             sizes="100vw"
-            alt=""
+            alt="decorative accent"
             src="/assets/images/aboutus/group-9254.svg"
           />
           <div>{t("aboutus.our_values_main_heading")}</div>
@@ -24,7 +24,7 @@ export default async function OurValuesSection({ locale }: { locale: string }) {
             width={15}
             height={8}
             sizes="100vw"
-            alt=""
+            alt="decorative accent"
             src="/assets/images/aboutus/group-9253.svg"
           />
         </div>

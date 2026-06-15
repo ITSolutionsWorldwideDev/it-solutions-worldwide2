@@ -17,19 +17,20 @@ export const metadata: Metadata = {
   description:
     "Identify gaps and opportunities in your supply chain with our performance check service in the Netherlands. Data-driven insights for smarter operations.",
 };
-export default async function SupplyChainPerformanceCheck({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export default async function SupplyChainPerformanceCheck(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/supplychainperformanceherosection.png",
+      backgroundImage: "/assets/images/supplychainperformanceherosection.webp",
       heading: t("supplychainperformancecheck.heading_1"),
       text: t("supplychainperformancecheck.text_1"),
       button: t("supplychainperformancecheck.button_1"),
@@ -47,22 +48,22 @@ export default async function SupplyChainPerformanceCheck({
 
   const cards2 = [
     {
-      image: "/assets/images/supplychainperformanceicon1.png",
+      image: "/assets/images/supplychainperformanceicon1.webp",
       title: t("supplychainperformancecheck.card_heading_1"),
       description: t("supplychainperformancecheck.card_text_1"),
     },
     {
-      image: "/assets/images/supplychainperformanceicon2.png",
+      image: "/assets/images/supplychainperformanceicon2.webp",
       title: t("supplychainperformancecheck.card_heading_2"),
       description: t("supplychainperformancecheck.card_text_2"),
     },
     {
-      image: "/assets/images/supplychainperformanceicon3.png",
+      image: "/assets/images/supplychainperformanceicon3.webp",
       title: t("supplychainperformancecheck.card_heading_3"),
       description: t("supplychainperformancecheck.card_text_3"),
     },
     {
-      image: "/assets/images/supplychainperformanceicon4.png",
+      image: "/assets/images/supplychainperformanceicon4.webp",
       title: t("supplychainperformancecheck.card_heading_4"),
       description: t("supplychainperformancecheck.card_text_4"),
     },
@@ -105,7 +106,7 @@ export default async function SupplyChainPerformanceCheck({
 
   const slidesData2 = [
     {
-      backgroundImage: "/assets/images/supplychainperformancecheck5.png",
+      backgroundImage: "/assets/images/supplychainperformancecheck5.webp",
       heading:
         "Is Your Supply Chain Performing at Its Best? Get Your SCM Performance Check Now!",
       buttonText: "Schedule Your Consultation Now",
@@ -120,7 +121,7 @@ export default async function SupplyChainPerformanceCheck({
       <ImageSection2
         heading={t("supplychainperformancecheck.heading_2")}
         text={imagetext}
-        imageUrl="/assets/images/supplychainperformancecheck2.png"
+        imageUrl="/assets/images/supplychainperformancecheck2.webp"
         borderWidth="2px"
         borderColor="#fed4c2"
       />
@@ -134,7 +135,7 @@ export default async function SupplyChainPerformanceCheck({
       <ImageSection
         heading={t("supplychainperformancecheck.heading_4")}
         text={t("supplychainperformancecheck.text_4")}
-        imageUrl="/assets/images/supplychainperformancecheck3.png"
+        imageUrl="/assets/images/supplychainperformancecheck3.webp"
         borderWidth="2px"
         borderColor="#fed4c2"
       />
@@ -142,7 +143,7 @@ export default async function SupplyChainPerformanceCheck({
       <ImageSection2
         heading={t("supplychainperformancecheck.heading_5")}
         text={imagetext2}
-        imageUrl="/assets/images/supplychainperformancecheck4.png"
+        imageUrl="/assets/images/supplychainperformancecheck4.webp"
         leftColor="#FC4C02"
         rightColor="#ffff"
       />

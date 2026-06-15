@@ -1,11 +1,21 @@
 // app/[locale]/page.tsx
 import dynamic from "next/dynamic";
+import type { Metadata } from 'next';
 
+export const generateMetadata = async (props: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
+  const params = await props.params;
+  return {
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${params.locale}`,
+    },
+  };
+};
+
+// ERROR FIXED: Dynamic imports aur revalidate ko function ke bahar top-level par kar diya hai
 const AnimationArea = dynamic(
   () => import("@/components/layout/home/AnimationArea"),
   { loading: () => <div className="min-h-[50vh]" aria-hidden /> },
 );
-
 const BlogCarousel = dynamic(
   () => import("@/components/layout/home/BlogCarousel"),
 );
@@ -20,6 +30,7 @@ const ContactSection = dynamic(
 
 export const revalidate = 3600;
 
+// ERROR FIXED: Pehla adhoora duplicate HomePage function hata diya hai
 export default async function HomePage({
   params,
 }: {
@@ -35,4 +46,29 @@ export default async function HomePage({
       <ContactSection />
     </main>
   );
+  
 }
+
+// interface LocalePageProps {
+//   params: Promise<{ locale: string }>;
+// }
+// { params }: LocalePageProps
+
+/* export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = params;
+
+  return (
+    <>
+      <BlogCarousel locale={locale} />
+    </>
+  );
+} */
+/* import type { Metadata } from 'next';
+export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
+  const { locale } = params;
+
+  return {
+    title: `Home | ${locale.toUpperCase()} | IT Solutions`,
+    description: 'Localized home page description',
+  };
+}; */

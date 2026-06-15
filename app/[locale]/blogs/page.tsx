@@ -7,26 +7,37 @@ import { Metadata } from "next";
 
 export const revalidate = 3600;
 
-export const metadata:Metadata={  
-  title:{
-    absolute:'IT & Supply Chain Insights Blog | Netherlands'
-  },
-  description:'Explore expert articles on IT, supply chain management, ERP, digital marketing & business automation from the specialists at IT Solutions Worldwide.'
-
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  return {
+    title: {
+      absolute: 'IT & Supply Chain Insights Blog | Netherlands',
+    },
+    description:
+      'Explore expert articles on IT, supply chain management, ERP, digital marketing & business automation from the specialists at IT Solutions Worldwide.',
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/blogs`,
+    },
+  };
 }
-export default async function BlogsPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export default async function BlogsPage(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
-  return <BlogsClient locale={locale} title={t("latest_blogs", "Latest Blogs")} />;
+  return (
+    <>
+      <h1 className="sr-only">{t("latest_blogs", "Latest Blogs")}</h1>
+      <BlogsClient locale={locale} title={t("latest_blogs", "Latest Blogs")} />
+    </>
+  );
 }
-/* 
-import initServerI18n from "@/utils/serverTranslation";
+/* import initServerI18n from "@/utils/serverTranslation";
 import { loadBlogs } from "@/lib/loadBlogs";
 import BlogCard from "@/components/layout/home/BlogCard";
 
@@ -42,7 +53,7 @@ export default async function Blogs({
 }: {
   params: Promise<{ locale: string; }>;
 }) {
-  const { locale } = await params;
+  const { locale } = params;
   // const { locale } = params;
   const blogs = await loadBlogs();
   const i18nInstance = await initServerI18n(locale);
@@ -65,9 +76,7 @@ export default async function Blogs({
   );
 } */
 
-/* 
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+/* export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const i18n = await initServerI18n(params.locale);
   const t = await i18n.getFixedT(params.locale, "common");
 
@@ -80,7 +89,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://yourdomain.com/${params.locale}/blogs`,
       images: [
         {
-          url: "https://yourdomain.com/og-image.jpg",
+          url: "https://yourdomain.com/og-image.webp",
           width: 800,
           height: 600,
           alt: "Blog Preview",

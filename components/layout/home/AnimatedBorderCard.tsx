@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function AnimatedBorderCard() {
   const data = {
     image: {
-      src: "/assets/icons/free-scm-check.png",
+      src: "/assets/icons/free-scm-check.webp",
       alt: "Placeholder",
     },
     content: {

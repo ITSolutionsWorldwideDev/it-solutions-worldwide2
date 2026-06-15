@@ -4,12 +4,13 @@ import initServerI18n from "@/utils/serverTranslation";
 import MarketingInquiryBanner from "@/components/ui/marketing-inquiry-banner";
 import WebsiteInquiryForm from "@/components/layout/inquiry/website-inquiry-form";
 
-export default async function EcommerceDevelopment({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export default async function EcommerceDevelopment(
+  props: {
+    params: Promise<{ locale: string }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");

@@ -5,7 +5,6 @@ import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import MetaPixel from "@/components/MetaPixel";
 import GoogleTagManager from "@/components/GoogleTagManager";
-import GoogleTag from "@/components/GoogleTag";
 import Script from "next/script";
 
 const PageUpButton = dynamic(() => import("@/components/ui/PageUpButton"));
@@ -18,6 +17,8 @@ const lexend = Lexend({
   adjustFontFallback: true,
 });
 
+export const metadataBase = new URL("https://www.itsolutionsworldwide.com");
+
 export const metadata: Metadata = {
   title: {
     default: "Smart IT & Business Services in Netherlands | ITWW",
@@ -27,8 +28,8 @@ export const metadata: Metadata = {
     "IT Solutions Worldwide delivers supply chain, digital, staffing & Oracle Cloud services in the Netherlands. Get a free consultation today.",
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.webp", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.webp", sizes: "32x32", type: "image/png" },
     ],
   },
 };
@@ -45,11 +46,19 @@ export default function RootLayout({
           name="facebook-domain-verification"
           content="0ryxazzsetmvipkqgt60umo33s7ti7"
         />
+        {/* ✅ Hero image preload — LCP fix for homepage */}
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/images/backgrounds/hero-section-bg.webp"
+          fetchPriority="high"
+          type="image/webp"
+        />
       </head>
       <body className="mx-2 md:mx-0 lg:mx-0">
         <MetaPixel pixelId="1766535074073515" />
+        {/* ✅ GTM moved to lazyOnload — render blocking nahi karega */}
         <GoogleTagManager gtmId="GTM-PH8FNRK6" />
-        <GoogleTag tagId="GT-TQKZR4LS" />
         {children}
 
         <Script id="clarity-script" strategy="lazyOnload">

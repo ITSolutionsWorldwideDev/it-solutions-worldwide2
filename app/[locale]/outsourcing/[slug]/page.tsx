@@ -60,19 +60,19 @@ export default async function Page({ params }: Props) {
 
   const cards2 = [
     {
-      image: "/assets/images/outsource-icon-1.png",
+      image: "/assets/images/outsource-icon-1.webp",
       title: t(`${translationPageKey}.why_choose.benefits.1`),
     },
     {
-      image: "/assets/images/outsource-icon-2.png",
+      image: "/assets/images/outsource-icon-2.webp",
       title: t(`${translationPageKey}.why_choose.benefits.2`),
     },
     {
-      image: "/assets/images/outsource-icon-3.png",
+      image: "/assets/images/outsource-icon-3.webp",
       title: t(`${translationPageKey}.why_choose.benefits.2`),
     },
     {
-      image: "/assets/images/outsource-icon-3.png",
+      image: "/assets/images/outsource-icon-3.webp",
       title: t(`${translationPageKey}.why_choose.benefits.3`),
     },
   ];
@@ -103,7 +103,7 @@ export default async function Page({ params }: Props) {
         buttonText={t(`${translationPageKey}.hero.cta_button`)}
         bgButton="#ebf2f3"
         buttonLink="#ebf2f3"
-        imageUrl="/assets/images/staffingconsulting2.png"
+        imageUrl="/assets/images/staffingconsulting2.webp"
         bgColor="#D8E9EB"
       />
       {section2Exist && (
@@ -126,7 +126,7 @@ export default async function Page({ params }: Props) {
         // buttonText={t("outsourcing.hero.cta_button")}
         // bgButton="#ebf2f3"
         // buttonLink="#ebf2f3"
-        imageUrl="/assets/images/staffingconsulting2.png"
+        imageUrl="/assets/images/staffingconsulting2.webp"
         bgColor="#D8E9EB"
       />
 
@@ -141,7 +141,7 @@ export default async function Page({ params }: Props) {
         // buttonText={t("outsourcing.hero.cta_button")}
         // bgButton="#ebf2f3"
         // buttonLink="#ebf2f3"
-        imageUrl="/assets/images/staffingconsulting2.png"
+        imageUrl="/assets/images/staffingconsulting2.webp"
         bgColor="#D8E9EB"
       />
 
@@ -218,19 +218,19 @@ export default Frame15 ;
 
 //   const cards2 = [
 //     {
-//       image: "/assets/images/outsource-icon-1.png",
+//       image: "/assets/images/outsource-icon-1.webp",
 //       title: t("ecommerce.card_heading_1"),
 //     },
 //     {
-//       image: "/assets/images/outsource-icon-2.png",
+//       image: "/assets/images/outsource-icon-2.webp",
 //       title: t("ecommerce.card_heading_2"),
 //     },
 //     {
-//       image: "/assets/images/outsource-icon-3.png",
+//       image: "/assets/images/outsource-icon-3.webp",
 //       title: t("ecommerce.card_heading_3"),
 //     },
 //     {
-//       image: "/assets/images/outsource-icon-3.png",
+//       image: "/assets/images/outsource-icon-3.webp",
 //       title: t("ecommerce.card_heading_4"),
 //     },
 //   ];
@@ -257,7 +257,7 @@ export default Frame15 ;
 //         buttonText={t(`${translationPageKey}.hero.cta_button`)}
 //         bgButton="#ebf2f3"
 //         buttonLink="#ebf2f3"
-//         imageUrl="/assets/images/staffingconsulting2.png"
+//         imageUrl="/assets/images/staffingconsulting2.webp"
 //         bgColor="#D8E9EB"
 //       />
 //       {section2Exist &&
@@ -277,7 +277,7 @@ export default Frame15 ;
 //         buttonText={t("outsourcing.hero.cta_button")}
 //         bgButton="#ebf2f3"
 //         buttonLink="#ebf2f3"
-//         imageUrl="/assets/images/staffingconsulting2.png"
+//         imageUrl="/assets/images/staffingconsulting2.webp"
 //         bgColor="#D8E9EB"
 //       />
 //       <TrustSection />

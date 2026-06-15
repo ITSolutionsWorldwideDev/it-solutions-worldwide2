@@ -107,9 +107,9 @@ export default function Faqs({faqData}:any) {
       <div className="w-full max-w-2xl">
         {/* Heading */}
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">
+          <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight">
             Frequently Asked Questions
-          </h1>
+          </h2>
           <p className="mt-2 text-gray-400 text-sm">
             Got questions? We&apos;ve got answers.
           </p>

@@ -14,6 +14,26 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
+  async redirects() {
+    return [
+      { source: "/", destination: "/en", permanent: true },
+      { source: "/contact-us", destination: "/en/contact-us", permanent: true },
+      { source: "/privacy-policy", destination: "/en/privacy-policy", permanent: true },
+      { source: "/blogs", destination: "/en/blogs", permanent: true },
+      { source: "/career", destination: "/en/career", permanent: true },
+      { source: "/about-us", destination: "/en/about-us", permanent: true },
+      { source: "/oracle-cloud", destination: "/en/oracle-cloud", permanent: true },
+      { source: "/scm-services", destination: "/en/scm-services", permanent: true },
+      { source: "/supply-health-check-info", destination: "/en/supply-health-check-info", permanent: true },
+      { source: "/supply-health-check", destination: "/en/supply-health-check", permanent: true },
+      { source: "/staffing-support", destination: "/en/staffing-support", permanent: true },
+      { source: "/digital-services", destination: "/en/digital-services", permanent: true },
+      { source: "/iso-certified", destination: "/en/iso-certified", permanent: true },
+      { source: "/profile", destination: "/en/profile", permanent: true },
+      { source: "/it-support", destination: "/en/it-support", permanent: true },
+      { source: "/terms-and-conditions", destination: "/en/terms-and-conditions", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

@@ -196,7 +196,7 @@ export function LogosSlider() {
                     src={item.src}
                     width={200}
                     height={200}
-                    alt=""
+                    alt={item.alt}
                     className="object-contain"
                   />
                 </div>

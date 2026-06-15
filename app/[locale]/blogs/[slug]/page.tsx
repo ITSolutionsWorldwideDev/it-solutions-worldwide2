@@ -1,18 +1,16 @@
 // app/[locale]/blogs/[slug]/page.tsx
-import Image from "next/image";
 import { getBlogBySlug } from "@/lib/blogs";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 
-export const revalidate = 300;
+export const revalidate = 3600; // ✅ 300 → 3600 (1 hour, better caching)
 
 export default async function BlogPostPage({
   params,
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
-  // ✅ await params (Next.js requirement)
   const { locale, slug } = await params;
-
   const blog = await getBlogBySlug(slug);
 
   if (!blog) {
@@ -35,9 +33,10 @@ export default async function BlogPostPage({
             src={blog.content.featuredImage}
             alt={blog.content.title}
             fill
-            className="object-cover"
             priority
+            fetchPriority="high"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
+            className="rounded-lg object-cover"
           />
         </div>
       )}

@@ -59,7 +59,7 @@ const ISO_Section6 = () => {
                   </span>
 
                   <Image
-                    src="/assets/icons/plus.png"
+                    src="/assets/icons/plus.webp"
                     alt="Toggle"
                     width={20}
                     height={20}

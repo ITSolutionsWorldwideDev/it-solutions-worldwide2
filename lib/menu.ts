@@ -27,10 +27,6 @@ export const menuItems: MenuItem[] = [
       },
     ],
   },
-  // {
-  //   label: "Oracle Cloud",
-  //   link: "/oracle-cloud",
-  // },
   {
     label: "Digital Services",
     link: "/digital-services",
@@ -82,72 +78,13 @@ export const menuItems: MenuItem[] = [
       },
     ],
   },
-  // {
-  //   label: "Hiring",
-  //   link: "/staff-hiring",
-  //   dropdown: [
-  //     {
-  //       label: "Hire Virtual Assistant",
-  //       link: "/staffing-support/hire-virtual-assistant",
-  //     },
-  //     {
-  //       label: "Hire Full Stack Developer",
-  //       link: "/staffing-support/hire-full-stack-developer",
-  //     },
-
-  //     {
-  //       label: "Hire a Data Engineer",
-  //       link: "/staffing-support/hire-data-engineer",
-  //     },
-
-  //     {
-  //       label: "Hire an Ecommerce Assistant",
-  //       link: "/staffing-support/hire-ecommerce-assistant",
-  //     },
-
-  //     {
-  //       label: "Hire an Electrical Engineer",
-  //       link: "/staffing-support/hire-electrical-engineer",
-  //     },
-
-  //     {
-  //       label: " Hire an AI Engineer",
-  //       link: "/staffing-support/hire-ai-engineer",
-  //     },
-  //   ],
-  // },
-
   {
     label: "Outsourcing",
     link: "/outsourcing",
     dropdown: [
-      // {
-      //   label: "Staffing Services",
-      //   dropdown: [
-      //     {
-      //       label: "Temporary Staffing",
-      //       link: "/staffing-support/hire-temporary-staffing",
-      //     },
-      //     {
-      //       label: "Managed Staffing",
-      //       link: "/staffing-support/hire-managed-staffing",
-      //     },
-
-      //     {
-      //       label: "Remote & Virtual Staffing",
-      //       link: "/staffing-support/hire-remote-virtual-staffing",
-      //     },
-
-      //     {
-      //       label: "Staffing Consulting",
-      //       link: "/staffing-support/hire-staffing-consulting",
-      //     },
-      //   ],
-      // },
       {
         label: "Hire Roles",
         link: "/outsourcing/hire-roles",
-
         dropdown: [
           {
             label: "Virtual Assistant",
@@ -157,39 +94,32 @@ export const menuItems: MenuItem[] = [
             label: "Data Engineer",
             link: "/staffing-support/hire-data-engineer",
           },
-
           {
             label: "Full-stack Developer",
             link: "/staffing-support/hire-full-stack-developer",
           },
-
           {
             label: "AI/ML Engineer",
             link: "/staffing-support/hire-ai-engineer",
           },
-
           {
             label: "Ecommerce Assistant",
             link: "/staffing-support/hire-ecommerce-assistant",
           },
-
           {
             label: "Electrical Engineer",
             link: "/staffing-support/hire-electrical-engineer",
           },
         ],
       },
-
       {
         label: "Business Support",
         link: "/outsourcing/business-support",
-
         dropdown: [
           {
             label: "Administrative Support",
             link: "/staffing-support/hire-admin-accounting-assistant",
           },
-
           {
             label: "HR Assistant Remote",
             link: "/staffing-support/hire-hr-assistant-remote",
@@ -198,18 +128,15 @@ export const menuItems: MenuItem[] = [
             label: "Customer Support",
             link: "/staffing-support/hire-customer-support-agent",
           },
-
           {
             label: "Data Entry",
             link: "/staffing-support/hire-data-entry-specialist",
           },
         ],
       },
-
       {
         label: "Design Services",
         link: "/outsourcing/design-services",
-
         dropdown: [
           {
             label: "Web Designer",
@@ -221,7 +148,6 @@ export const menuItems: MenuItem[] = [
           },
         ],
       },
-
       {
         label: "IT & Development",
         link: "/outsourcing/it-development",
@@ -234,24 +160,20 @@ export const menuItems: MenuItem[] = [
             label: "Back-end Developer",
             link: "/staffing-support/hire-back-end-developer",
           },
-
           {
             label: "App Developer",
             link: "/staffing-support/hire-app-developer",
           },
-
           {
             label: "It Support Specialist",
             link: "/staffing-support/hire-it-support-specialist",
           },
-
           {
             label: "Software Tester QA",
             link: "/staffing-support/hire-software-tester-qa",
           },
         ],
       },
-
       {
         label: "Marketing & Analytics",
         link: "/outsourcing/marketing-analytics",
@@ -262,30 +184,30 @@ export const menuItems: MenuItem[] = [
           },
           {
             label: "Content Creator",
-            link: "/staffing-support/hire-content-creator",
+            link: "/staffic-support/hire-content-creator",
           },
-
           {
             label: "Online Marketeer",
             link: "/staffing-support/hire-online-marketer",
           },
-
           {
             label: "Google Analytics Specialist",
             link: "/staffing-support/hire-google-analytics-specialist",
           },
-
           {
             label: "Power BI Specialist",
             link: "/staffing-support/hire-power-bi-tableau-specialist",
           },
-
           {
-            label: "Data Analyst", //  / BI Specialist
+            label: "Data Analyst",
             link: "/staffing-support/hire-data-analyst",
           },
         ],
       },
     ],
+  },
+  {
+    label: "About Us",
+    link: "/en/about-us",
   },
 ];

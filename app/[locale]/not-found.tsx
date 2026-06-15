@@ -27,7 +27,7 @@ export default async function NotFound() {
 import Link from "next/link";
 
 type Props = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export default async function NotFound({ params }: Props) {

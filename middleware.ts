@@ -64,8 +64,8 @@ export function middleware(request: NextRequest) {
     );
     const locale = cookieLocale || browserLocale || defaultLocale;
     const redirectUrl = new URL(`/${locale}${pathname}`, request.url);
-    const res = NextResponse.redirect(redirectUrl, 302);
-    // Cache this redirect at the CDN/edge for a short period to improve TTFB on repeated root visits
+const res = NextResponse.redirect(redirectUrl, 301);
+    // 301 permanent redirect for SEO - passes link authority to canonical URL
     res.headers.set(
       "Cache-Control",
       "public, s-maxage=3600, stale-while-revalidate=59",

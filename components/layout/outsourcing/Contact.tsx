@@ -58,9 +58,9 @@ export default function Contact() {
       <div className="relative z-10 max-w-7xl w-full">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h1 className="text-5xl md:text-6xl font-bold text-white">
+          <h2 className="text-5xl md:text-6xl font-bold text-white">
             Let&apos;s <span className="text-[#22A3AD]">Connect</span>
-          </h1>
+          </h2>
 
           <p className="text-gray-300 mt-4 text-sm md:text-base">
             Ready to transform your business? Get in touch with our experts

@@ -11,7 +11,7 @@ export default function Loader({ message = 'Loading...' }: LoaderProps) {
     <div className="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
       {/* Logo */}
       <img
-        src="/assets/images/main-logo.png"
+        src="/assets/images/main-logo.webp"
         alt="IT Solutions Worldwide Logo"
         className="h-16 w-16 mb-6 animate-bounce"
       />

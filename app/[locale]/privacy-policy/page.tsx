@@ -2,14 +2,19 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
-
-export const metadata: Metadata = {
-  title: {
-    absolute: "Privacy Policy | ITWW Netherlands",
-  },
-  description:
-    "Read the privacy policy of IT Solutions Worldwide to understand how we collect, use and protect your personal data in line with GDPR regulations.",
-};
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  return {
+    title: {
+      absolute: "Privacy Policy | ITWW Netherlands",
+    },
+    description:
+      "Read the privacy policy of IT Solutions Worldwide to understand how we collect, use and protect your personal data in line with GDPR regulations.",
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/privacy-policy`,
+    },
+  };
+}
 export default function Privacy() {
   return (
     <div className="flex justify-center mt-5 mb-10">

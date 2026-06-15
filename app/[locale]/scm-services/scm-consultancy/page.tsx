@@ -18,19 +18,20 @@ export const metadata: Metadata = {
   description:
     "Expert supply chain management consulting services to streamline operations, reduce costs, and improve efficiency. Get tailored strategies for sustainable growth.",
 };
-export default async function SCMConsultancy({
-  params,
-}: {
-  params: Promise<{ locale: string; }>;
-}) {
-  const { locale } = await params;
+export default async function SCMConsultancy(
+  props: {
+    params: Promise<{ locale: string; }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/scmconsultancy1.png",
+      backgroundImage: "/assets/images/scmconsultancy1.webp",
       heading: t("scmconsultancy.heading_1"),
       text: t("scmconsultancy.text_1"),
       button: t("scmconsultancy.button_1"),
@@ -74,7 +75,7 @@ export default async function SCMConsultancy({
 
   const slidesData2 = [
     {
-      backgroundImage: "/assets/images/scm4.png",
+      backgroundImage: "/assets/images/scm4.webp",
       heading:
         "Unlock Your Supply Chain Potential – Contact Us for a Free Consultation Today!",
       buttonText: "Schedule Your Consultation Now",
@@ -89,7 +90,7 @@ export default async function SCMConsultancy({
       <ImageSection2
         heading={t("scmconsultancy.heading_2")}
         text={imagetext2}
-        imageUrl="/assets/images/scmconsultancy2.png"
+        imageUrl="/assets/images/scmconsultancy2.webp"
         borderWidth="2px"
         borderColor="#fed4c2"
       />

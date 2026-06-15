@@ -10,26 +10,33 @@ import ImageSectionBgBlue from "@/components/layout/image-section-bg-blue";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Staffing Support Services in Netherlands | ITWW",
-  },
-  description:
-    "Find the right talent with our staffing support services in the Netherlands — managed, temporary, remote & specialized staffing for IT and supply chain.",
-};
-export default async function StaffingSupport({
-  params,
-}: {
-  params: Promise<{ locale: string; }>;
-}) {
-  const { locale } = await params;
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  return {
+    title: {
+      absolute: "Staffing Support Services in Netherlands | ITWW",
+    },
+    description:
+      "Find the right talent with our staffing support services in the Netherlands — managed, temporary, remote & specialized staffing for IT and supply chain.",
+    alternates: {
+      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/staffing-support`,
+    },
+  };
+}
+export default async function StaffingSupport(
+  props: {
+    params: Promise<{ locale: string; }>;
+  }
+) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
   const slides = [
     {
-      backgroundImage: "/assets/images/staffingsupport1.png",
+      backgroundImage: "/assets/images/staffingsupport1.webp",
       heading: t("staffingsupport.heading_1"),
       text: t("staffingsupport.text_1"),
       button: t("staffingsupport.button_1"),
@@ -48,22 +55,22 @@ export default async function StaffingSupport({
 
   const cards2 = [
     {
-      image: "/assets/images/staffingsupporticon1.png",
+      image: "/assets/images/staffingsupporticon1.webp",
       title: t("staffingsupport.card_heading_1"),
       description: t("staffingsupport.card_text_1"),
     },
     {
-      image: "/assets/images/staffingsupporticon2.png",
+      image: "/assets/images/staffingsupporticon2.webp",
       title: t("staffingsupport.card_heading_2"),
       description: t("staffingsupport.card_text_2"),
     },
     {
-      image: "/assets/images/staffingsupporticon3.png",
+      image: "/assets/images/staffingsupporticon3.webp",
       title: t("staffingsupport.card_heading_3"),
       description: t("staffingsupport.card_text_3"),
     },
     {
-      image: "/assets/images/staffingsupporticon4.png",
+      image: "/assets/images/staffingsupporticon4.webp",
       title: t("staffingsupport.card_heading_4"),
       description: t("staffingsupport.card_text_4"),
     },
@@ -96,7 +103,7 @@ export default async function StaffingSupport({
 
   const slidesData2 = [
     {
-      backgroundImage: "/assets/images/staffingsupport4.png",
+      backgroundImage: "/assets/images/staffingsupport4.webp",
       heading:
         "Build a Stronger Team with Our Staffing Services – Reach Out Today!",
       buttonText: "Get Started Now",
@@ -119,7 +126,7 @@ export default async function StaffingSupport({
       <ImageSection
         heading={t("staffingsupport.heading_2")}
         text={imagetext}
-        imageUrl="/assets/images/staffingsupport2.png"
+        imageUrl="/assets/images/staffingsupport2.webp"
       />
       <InfoSection
         heading={t("scmservices.heading_3")}
@@ -131,7 +138,7 @@ export default async function StaffingSupport({
       <ImageSectionBgBlue
         title={t("staffingsupport.heading_4")}
         points={points}
-        image="/assets/images/staffingsupport3.png"
+        image="/assets/images/staffingsupport3.webp"
         leftColor="#00AAB4"
         rightColor="#00AAB4"
         iconColor="#fff"

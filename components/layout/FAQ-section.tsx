@@ -63,12 +63,12 @@ const FAQSection = ({
             <div className="relative leading-[160%] font-medium">FAQ</div>
           </div>
           <div className="mb-8">
-            <h1
+            <h2
               id="faq-heading"
               className="text-3xl font-bold mb-2 flex flex-col items-start gap-[33.6px] text-[50.37px] text-gray relative tracking-[-0.02em] leading-[62.97px]"
             >
               {title}
-            </h1>
+            </h2>
             <p className="text-gray-600">{description}</p>
           </div>
           <div className="flex gap-4">

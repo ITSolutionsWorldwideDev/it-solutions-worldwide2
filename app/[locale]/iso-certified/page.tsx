@@ -3,13 +3,30 @@
 import initServerI18n from "@/utils/serverTranslation";
 import CertificationBanner from "@/components/ui/certification-banner";
 import BenefitCard from "@/components/ui/BenefitCard";
-
+import { Metadata } from "next";
 import Image from "next/image";
 import ISO_Section3 from "@/components/ui/ISO-Section3";
 import ISO_Section4 from "@/components/ui/ISO-Section4";
 import ISO_Section5 from "@/components/ui/ISO-Section5";
 import ISO_Section6 from "@/components/ui/ISO-Section6";
 import ISO_Section7 from "@/components/ui/ISO-Section7";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  // 1. Pehle params ko await karke locale ko unwrap karein
+  const { locale } = await params;
+
+  return {
+    title: {
+      absolute: "ISO Certified IT Solutions | Quality & Compliance | ITWW",
+    },
+    description:
+      "IT Solutions Worldwide is ISO 9001 & ISO 27001 certified. Get reliable, compliant IT services backed by international quality standards.",
+    alternates: {
+      // 2. Ab yahan params.locale nahi, balki sirf locale use karein
+      canonical: `https://www.itsolutionsworldwide.com/${locale}/iso-certified`,
+    },
+  };
+}
 
 export default async function ISOCertified({
   params,
@@ -38,8 +55,8 @@ export default async function ISOCertified({
         mainHeading="ISO Certified IT Solutions You Can Trust"
         description="IT Solutions Worldwide is an ISO-certified company, committed to international standards of quality, security, and continuous improvement—so our clients receive reliable, compliant, and future-ready IT services."
         buttons={[
-          { label: "Work With an ISO Certified Partner", href: "/contact-us" },
-          { label: "Contact Us", href: "/contact-us", variant: "outline" },
+          { label: "Work With an ISO Certified Partner", href: "/contact" },
+          { label: "Contact Us", href: "/contact", variant: "outline" },
         ]}
       />
 
@@ -53,7 +70,7 @@ export default async function ISOCertified({
             <div className="bg-white rounded-2xl border border-gray-200 shadow-md p-8 flex gap-6">
               <div className="shrink-0">
                 <Image
-                  src="/assets/icons/certificate2.png"
+                  src="/assets/icons/certificate2.webp"
                   alt="ISO 9001 Certificate Icon"
                   width={64}
                   height={64}
