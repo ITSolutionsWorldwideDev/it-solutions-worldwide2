@@ -1,4 +1,3 @@
-// app/layout.tsx
 import "./globals.css";
 import { Lexend } from "next/font/google";
 import dynamic from "next/dynamic";
@@ -6,6 +5,7 @@ import type { Metadata } from "next";
 import MetaPixel from "@/components/MetaPixel";
 import GoogleTagManager from "@/components/GoogleTagManager";
 import Script from "next/script";
+import { headers } from "next/headers";
 
 const PageUpButton = dynamic(() => import("@/components/ui/PageUpButton"));
 
@@ -26,11 +26,11 @@ export const metadata: Metadata = {
   },
   description:
     "IT Solutions Worldwide delivers supply chain, digital, staffing & Oracle Cloud services in the Netherlands. Get a free consultation today.",
- verification: {
-  other: {
-    "facebook-domain-verification": "0ryxazzsetmvipkqgt60umo33s7ti7",
+  verification: {
+    other: {
+      "facebook-domain-verification": "0ryxazzsetmvipkqgt60umo33s7ti7",
+    },
   },
-},
   icons: {
     icon: [
       { url: "/favicon-16x16.webp", sizes: "16x16", type: "image/png" },
@@ -39,11 +39,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const headersList = await headers();
+  const pathname = headersList.get("x-pathname") ?? "";
+
   return (
     <html lang="en" className={lexend.className} suppressHydrationWarning>
       <head>
@@ -53,6 +56,11 @@ export default function RootLayout({
           href="/assets/images/backgrounds/hero-section-bg.webp"
           fetchPriority="high"
           type="image/webp"
+        />
+        {/* ✅ Dynamic canonical — guaranteed head mein */}
+        <link
+          rel="canonical"
+          href={`https://www.itsolutionsworldwide.com${pathname}`}
         />
       </head>
       <body className="mx-2 md:mx-0 lg:mx-0">

@@ -73,8 +73,10 @@ const res = NextResponse.redirect(redirectUrl, 301);
     return res;
   }
 
-  return NextResponse.next();
-}
+// Sabse end mein — return NextResponse.next(); ki jagah yeh lagao:
+const response = NextResponse.next();
+response.headers.set("x-pathname", request.nextUrl.pathname);
+return response;}
 
 export const config = {
   matcher: ["/((?!api|_next|favicon.ico).*)"],
