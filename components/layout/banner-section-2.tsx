@@ -47,7 +47,7 @@ const BannerSection2: React.FC<BannerSectionProps> = ({ slides }) => {
       <div className="relative w-full h-[300px] md:h-[400px] lg:h-[600px] max-w-6xl mx-auto rounded-xl shadow-lg overflow-hidden flex items-center">
         <Image
           src={slide.backgroundImage}
-          alt=""
+          alt={`${slide.heading} banner`}
           fill
           priority={isFirstSlide}               // ✅ sirf slide 0 par priority
           fetchPriority={isFirstSlide ? "high" : "auto"} // ✅ same

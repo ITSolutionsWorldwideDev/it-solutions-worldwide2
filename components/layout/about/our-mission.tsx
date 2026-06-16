@@ -32,7 +32,7 @@ export default async function OurMission({ locale }: { locale: string }) {
                     width={58}
                     height={58}
                     sizes="100vw"
-                    alt=""
+                    alt="Growth icon"
                     src="/assets/images/aboutus/fluent-arrow-growth-20-filled.svg"
                   />
                   <div className="">
@@ -49,7 +49,7 @@ export default async function OurMission({ locale }: { locale: string }) {
                     width={58}
                     height={58}
                     sizes="100vw"
-                    alt=""
+                    alt="Code icon"
                     src="/assets/images/aboutus/fluent-code-24-filled.svg"
                   />
                   <div className="">
@@ -66,7 +66,7 @@ export default async function OurMission({ locale }: { locale: string }) {
                     width={58}
                     height={58}
                     sizes="100vw"
-                    alt=""
+                    alt="Performance icon"
                     src="/assets/images/aboutus/material-symbols-avg-pace.svg"
                   />
                   <div className="">
@@ -83,7 +83,7 @@ export default async function OurMission({ locale }: { locale: string }) {
                     width={58}
                     height={58}
                     sizes="100vw"
-                    alt=""
+                    alt="Growth icon"
                     src="/assets/images/aboutus/fluent-arrow-growth-20-filled.svg"
                   />
                   <div className="">
@@ -100,7 +100,7 @@ export default async function OurMission({ locale }: { locale: string }) {
                     width={58}
                     height={58}
                     sizes="100vw"
-                    alt=""
+                    alt="Code icon"
                     src="/assets/images/aboutus/fluent-code-24-filled.svg"
                   />
                   <div className="">
@@ -128,7 +128,7 @@ export default async function OurMission({ locale }: { locale: string }) {
                     width={58}
                     height={58}
                     sizes="100vw"
-                    alt=""
+                    alt="Performance icon"
                     src="/assets/images/aboutus/material-symbols-avg-pace.svg"
                   />
                   <div className="">

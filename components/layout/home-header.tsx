@@ -41,7 +41,7 @@ export default function Header() {
     <div className="relative w-full min-h-screen overflow-hidden" id="hometop">
       <Image
         src={HERO_POSTER}
-        alt=""
+        alt="IT Solutions Worldwide hero background"
         fill
         priority
         fetchPriority="high"

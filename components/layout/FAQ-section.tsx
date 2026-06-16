@@ -57,7 +57,7 @@ const FAQSection = ({
               width={21}
               height={21}
               sizes="100vw"
-              alt=""
+              alt="FAQ icon"
               src="/assets/images/aboutus/small-eyebrow-tag-label-icon-ai.svg"
             />
             <div className="relative leading-[160%] font-medium">FAQ</div>

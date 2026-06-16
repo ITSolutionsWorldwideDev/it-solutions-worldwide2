@@ -8,7 +8,7 @@ const Group9319: NextPage = () => {
       <div className="relative w-full h-[680px] md:h-[200px]">
         <Image
           src="/assets/images/aboutus/rectangle-140.webp"
-          alt=""
+          alt="About us statistics background"
           className="rounded-[21px] object-cover"
           fill
           sizes="100vw"
@@ -66,7 +66,7 @@ const Group9319: NextPage = () => {
       <div className="relative w-full h-[174px]">
         <Image
           src="/assets/images/aboutus/rectangle-140.webp"
-          alt=""
+          alt="About us statistics background"
           className="rounded-[21px] object-cover"
           fill
           sizes="100vw"

@@ -43,7 +43,7 @@ const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
         {/* ✅ CSS background hata ke next/image lagaya — LCP fix */}
         <Image
           src={slide.backgroundImage}
-          alt=""
+          alt={`${slide.heading} banner`}
           fill
           priority={isFirst}
           fetchPriority={isFirst ? "high" : "auto"}

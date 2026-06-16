@@ -57,15 +57,14 @@ export default async function RootLayout({
           fetchPriority="high"
           type="image/webp"
         />
-        {/* ✅ Dynamic canonical — guaranteed head mein */}
         <link
           rel="canonical"
           href={`https://www.itsolutionsworldwide.com${pathname}`}
         />
-      </head>
-      <body className="mx-2 md:mx-0 lg:mx-0">
         <MetaPixel pixelId="1766535074073515" />
         <GoogleTagManager gtmId="GTM-PH8FNRK6" />
+      </head>
+      <body className="mx-2 md:mx-0 lg:mx-0">
         {children}
         <Script id="clarity-script" strategy="lazyOnload">
           {`
