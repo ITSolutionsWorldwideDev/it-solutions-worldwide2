@@ -18,9 +18,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Get in touch with IT Solutions Worldwide for a free consultation on IT, supply chain, digital services or staffing support in the Netherlands.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/contact-us`,
-    },
   };
 }
 export default async function ContactUs(

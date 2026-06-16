@@ -20,9 +20,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Learn about IT Solutions Worldwide | a trusted IT partner in the Netherlands specializing in business transformation, digital services & staffing support.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/about-us`,
-    },
   };
 }
 export const revalidate = 3600;

@@ -10,9 +10,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Read the privacy policy of IT Solutions Worldwide to understand how we collect, use and protect your personal data in line with GDPR regulations.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/privacy-policy`,
-    },
   };
 }
 export default function Privacy() {

@@ -15,9 +15,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       'Explore expert articles on IT, supply chain management, ERP, digital marketing & business automation from the specialists at IT Solutions Worldwide.',
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/blogs`,
-    },
   };
 }
 export default async function BlogsPage(
@@ -95,9 +92,6 @@ export default async function Blogs({
           alt: "Blog Preview",
         },
       ],
-    },
-    alternates: {
-      canonical: `https://yourdomain.com/${params.locale}/blogs`,
     },
   };
 }

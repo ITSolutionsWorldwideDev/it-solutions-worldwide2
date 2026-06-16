@@ -41,9 +41,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: {
       absolute: title,
     },
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${locale}/outsourcing/${slug}`,
-    },
   };
 }
 
@@ -199,9 +196,7 @@ export default Frame15 ;
 //     title: {
 //       absolute: title,
 //     },
-//     alternates: {
-//       canonical: `https://www.itsolutionsworldwide.com/${locale}/outsourcing/${slug}`,
-//     },
+//
 //   };
 // }
 

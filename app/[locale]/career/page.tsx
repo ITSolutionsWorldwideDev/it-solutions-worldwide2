@@ -18,9 +18,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Looking for IT, supply chain or digital marketing jobs in the Netherlands? Explore career opportunities at IT Solutions Worldwide and grow with us.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/career`,
-    },
   };
 }
 

@@ -24,9 +24,6 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     title: {
       absolute: "outsourcing",
     },
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${locale}/outsourcing`,
-    },
   };
 }
 

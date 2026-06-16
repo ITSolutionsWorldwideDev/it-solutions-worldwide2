@@ -21,10 +21,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     description:
       "IT Solutions Worldwide is ISO 9001 & ISO 27001 certified. Get reliable, compliant IT services backed by international quality standards.",
-    alternates: {
-      // 2. Ab yahan params.locale nahi, balki sirf locale use karein
-      canonical: `https://www.itsolutionsworldwide.com/${locale}/iso-certified`,
-    },
   };
 }
 

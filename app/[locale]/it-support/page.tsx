@@ -20,9 +20,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Professional IT support, ERP implementation, automation & infrastructure services in the Netherlands. Expert solutions for your business needs.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/it-support`,
-    },
   };
 }
 

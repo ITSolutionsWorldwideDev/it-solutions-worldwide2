@@ -21,9 +21,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Boost your online presence with expert digital marketing services in the Netherlands. SEO, PPC, social media, web design & eCommerce development.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/digital-services`,
-    },
   };
 }
 export default async function DigitalServices(

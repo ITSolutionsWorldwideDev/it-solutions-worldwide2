@@ -18,9 +18,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Find the right talent with our staffing support services in the Netherlands — managed, temporary, remote & specialized staffing for IT and supply chain.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/staffing-support`,
-    },
   };
 }
 export default async function StaffingSupport(

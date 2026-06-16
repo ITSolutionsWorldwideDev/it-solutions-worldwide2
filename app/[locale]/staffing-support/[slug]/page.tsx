@@ -29,9 +29,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       absolute: title,
     },
     // console.log(title)
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${locale}/staffing-support/${slug}`,
-    },
   };
 }
 

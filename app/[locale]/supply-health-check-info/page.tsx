@@ -14,9 +14,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Learn about our comprehensive Supply Chain Health Check service. Evaluate efficiency, cost, resilience, and discover improvement opportunities.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/supply-health-check-info`,
-    },
   };
 }
 // export default async function SupplyHealth({

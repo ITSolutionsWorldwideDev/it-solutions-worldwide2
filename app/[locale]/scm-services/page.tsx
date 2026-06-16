@@ -18,9 +18,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Expert supply chain management services in the Netherlands. We optimize procurement, logistics, warehousing & distribution for your business.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/scm-services`,
-    },
   };
 }
 

@@ -12,9 +12,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Assess the health of your supply chain with our expert health check service in the Netherlands. Uncover inefficiencies and get actionable recommendations.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/supply-health-check`,
-    },
   };
 }
 

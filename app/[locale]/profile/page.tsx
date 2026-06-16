@@ -20,9 +20,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Discover the profile of IT Solutions Worldwide—our vision, mission, expertise, and commitment to delivering exceptional IT and business solutions.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/profile`,
-    },
   };
 }
 

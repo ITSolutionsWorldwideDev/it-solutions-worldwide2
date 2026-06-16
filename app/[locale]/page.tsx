@@ -5,9 +5,6 @@ import type { Metadata } from 'next';
 export const generateMetadata = async (props: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const params = await props.params;
   return {
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}`,
-    },
   };
 };
 

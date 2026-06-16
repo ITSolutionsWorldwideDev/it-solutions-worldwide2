@@ -22,9 +22,6 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     },
     description:
       "Accelerate your digital transformation with Oracle Cloud services in the Netherlands, implementation, migration, data & AI solutions by certified experts.",
-    alternates: {
-      canonical: `https://www.itsolutionsworldwide.com/${params.locale}/oracle-cloud`,
-    },
   };
 }
 export default async function OracleCloud(
