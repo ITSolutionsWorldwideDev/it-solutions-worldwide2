@@ -1,5 +1,6 @@
 // components/layout/MobileMenuItem.tsx
 "use client";
+import { useParams } from "next/navigation";
 
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
@@ -12,6 +13,8 @@ type Props = {
 };
 
 export default function MobileMenuItem({ item, closeMenu }: Props) {
+  const params = useParams();
+  const locale = params?.locale || "en";
   const [open, setOpen] = useState(false);
 
   return (
@@ -26,7 +29,7 @@ export default function MobileMenuItem({ item, closeMenu }: Props) {
         </Link> */}
         {item.link ? (
           <Link
-            href={item.link}
+            href={`/${locale}${item.link}`}
             onClick={closeMenu}
             className="py-2 text-gray-800"
           >

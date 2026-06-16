@@ -1,4 +1,5 @@
 "use client";
+import { useParams } from "next/navigation";
 
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
@@ -10,6 +11,8 @@ type Props = {
 };
 
 export default function MenuDropdown({ items }: Props) {
+  const params = useParams();
+  const locale = params?.locale || "en";
   const [activeItem, setActiveItem] = useState<string | null>(null);
 
   return (
@@ -25,8 +28,7 @@ export default function MenuDropdown({ items }: Props) {
           {/* FIX: Changed wrapper to relative block and unified look under group utilities */}
           <div className="relative flex items-center justify-between hover:bg-teal-50 hover:text-teal-700 transition duration-150">
             {item.link ? (
-              <Link
-                href={item.link}
+              <Link href={`/${locale}${item.link}`}
                 className="block w-full px-4 py-3 text-sm text-gray-700 hover:text-teal-700 bg-transparent"
               >
                 {item.label}

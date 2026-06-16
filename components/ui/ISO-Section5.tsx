@@ -11,7 +11,7 @@ const ISO_Section5 = () => {
     },
     {
       title: "Continuous Process Improvement",
-      img: "/assets/icons/moving-up2.webp",
+      img: "/assets/icons/moving-up2.png",
     },
     {
       title: "Staff Training and Awareness",
