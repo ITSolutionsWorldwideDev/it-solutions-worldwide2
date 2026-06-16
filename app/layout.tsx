@@ -26,9 +26,11 @@ export const metadata: Metadata = {
   },
   description:
     "IT Solutions Worldwide delivers supply chain, digital, staffing & Oracle Cloud services in the Netherlands. Get a free consultation today.",
-  verification: {
-    facebook: "0ryxazzsetmvipkqgt60umo33s7ti7",
+ verification: {
+  other: {
+    "facebook-domain-verification": "0ryxazzsetmvipkqgt60umo33s7ti7",
   },
+},
   icons: {
     icon: [
       { url: "/favicon-16x16.webp", sizes: "16x16", type: "image/png" },
