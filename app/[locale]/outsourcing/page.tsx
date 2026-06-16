@@ -20,10 +20,15 @@ type Props = {
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const params = await props.params;
   const { locale } = params;
+  if (locale === "nl") {
+    return {
+      title: { absolute: "Remote Outsourcing Services for Every Role | IT Solutions Worldwide" },
+      description: "Krijg binnen 3-5 werkdagen een shortlist van gekwalificeerde remote kandidaten. Schaal je team betaalbaar op met vertrouwde experts in IT, marketing, administratie en meer.",
+    };
+  }
   return {
-    title: {
-      absolute: "outsourcing",
-    },
+    title: { absolute: "Remote Outsourcing Services for Every Role | IT Solutions Worldwide" },
+    description: "Get a shortlist of qualified remote candidates in 3-5 business days. Scale your team affordably with trusted experts in IT, marketing, administration, and more.",
   };
 }
 

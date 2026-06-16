@@ -8,7 +8,7 @@ import NavbarHome from "./nav-bar-home";
 import SegmentTabs from "./home/SegmentTabComponent";
 
 const HERO_POSTER = "/assets/images/backgrounds/hero-section-bg.webp";
-const HERO_VIDEO = "/assets/images/backgrounds/hero-section-bg.mp4";
+const HERO_VIDEO = "/assets/images/backgrounds/hero-bg 1";
 
 export default function Header() {
   const [showVideo, setShowVideo] = useState(false);
