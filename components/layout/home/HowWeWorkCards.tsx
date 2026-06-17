@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { howWeWork } from "@/lib/commonData";
 
 // Lightweight static replacement for AnimatedList ("How We Work").
@@ -26,9 +27,15 @@ export default function HowWeWorkCards() {
             key={index}
             className="flex flex-col items-center text-center gap-3"
           >
-            <img
+            {/* FIX: next/image with explicit dimensions instead of plain <img>.
+                Display is max 80x80 (md:w-20 h-20) so we request that size
+                instead of shipping the full original file. */}
+            <Image
               src={item.image.src}
               alt={item.image.alt}
+              width={80}
+              height={80}
+              quality={75}
               className="w-16 h-16 md:w-20 md:h-20"
             />
             <span className="text-base md:text-lg font-bold">

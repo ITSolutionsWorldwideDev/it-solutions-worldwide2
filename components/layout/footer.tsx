@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
@@ -14,10 +15,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-12">
           {/* Column 1: Logo + Company Info + Social Icons */}
           <div className="md:col-span-1">
-            <img
-              className="w-auto"
+            {/* FIX: next/image with explicit dimensions instead of plain <img>.
+                Replace width/height below with the ACTUAL rendered size of your
+                logo (check via DevTools > Inspect on the live footer logo). */}
+            <Image
+              className="w-auto h-auto"
               src="/assets/footer-logo.webp"
               alt="IT Solutions Worldwide"
+              width={160}
+              height={48}
+              quality={75}
             />
             <p className="mt-4 text-sm text-gray-500 leading-relaxed">
               IT Solutions Worldwide delivers innovative IT solutions in supply

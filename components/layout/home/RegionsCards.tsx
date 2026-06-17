@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { countriesData } from "@/lib/commonData";
 
 // Lightweight static replacement for AnimatedGlobe (Three.js).
@@ -22,13 +23,20 @@ export default function RegionsCards() {
             >
               {/* Fixed sizing container for the flag to ensure layout consistency */}
               <div className="w-10 h-10 flex items-center justify-center shrink-0">
-                <img
+                {/* FIX: next/image with explicit small width/height instead of
+                    plain <img>. Originals are 512x512 / 512x341 being displayed
+                    at 40x40 — this forces Next.js to actually resize + compress
+                    them instead of shipping the full-size file. */}
+                <Image
                   src={country.flag}
                   alt={country.name}
+                  width={40}
+                  height={40}
+                  quality={75}
                   className="w-full h-full object-contain"
                 />
               </div>
-              
+
               {/* Text center aligned with strict spacing */}
               <span className="text-white text-sm md:text-base text-center font-normal leading-tight">
                 {country.name}

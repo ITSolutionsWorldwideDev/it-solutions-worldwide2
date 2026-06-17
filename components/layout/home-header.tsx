@@ -46,7 +46,7 @@ export default function Header() {
         fill
         priority
         fetchPriority="high"
-        quality={85}
+        quality={70}
         sizes="100vw"
         className="object-cover z-0"
         aria-hidden
