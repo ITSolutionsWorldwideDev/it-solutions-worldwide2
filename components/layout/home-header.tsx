@@ -4,8 +4,17 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import dynamic from "next/dynamic";
 import NavbarHome from "./nav-bar-home";
-import SegmentTabs from "./home/SegmentTabComponent";
+
+// FIX: SegmentTabs pulls in framer-motion (AnimatePresence + motion.div for
+// a 3-step form). That JS was being parsed/executed on the main thread at
+// the exact moment the hero image needed to paint, causing a 4s+ LCP render
+// delay on mobile even though the image itself downloaded fast. Lazy-loading
+// it (ssr: false, no eager loading skeleton) keeps it out of the critical path.
+const SegmentTabs = dynamic(() => import("./home/SegmentTabComponent"), {
+  ssr: false,
+});
 
 const HERO_POSTER = "/assets/images/backgrounds/hero-section-bg.webp";
 const HERO_VIDEO = "/assets/images/backgrounds/hero-bg 1";

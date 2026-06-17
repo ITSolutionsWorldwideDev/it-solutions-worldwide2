@@ -1,6 +1,4 @@
 "use client";
-import { useEffect } from "react";
-import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import ExpandingCards from "./ExpandingCards";
 
@@ -40,40 +38,27 @@ export default function AnimationArea() {
   return (
     <section className="relative z-10 w-full">
       <div className="xl:max-h-fit container xl:max-w-[1200px] mx-auto text-center py-20">
-        <motion.h2
-          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 0.3,
-            ease: "easeOut",
-          }}
-        >
+        {/* FIX: framer-motion's <motion.h2> replaced with a plain CSS
+            fade-in. These were adding to the framer-motion bundle weight
+            for a simple one-time fade that CSS handles natively. */}
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 text-center animate-fade-in-up">
           <span className="bg-[#175864] text-white px-4 py-1 rounded-md inline-block">
             OUR SERVICES
           </span>
-        </motion.h2>
+        </h2>
 
         <ExpandingCards />
       </div>
 
       <div className="flex flex-col justify-center items-center bg-cover bg-center w-full pt-20">
         <div className="container mx-auto ">
-          <motion.h2
-            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 text-center"
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeOut",
-              delay: 0.5,
-            }}
-            viewport={{ once: true }}
-          >
+          {/* FIX: same as above — plain CSS fade/slide instead of framer-motion's
+              whileInView. Uses the existing .animate-fade-in-up keyframes. */}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 text-center animate-fade-in-up">
             <span className="bg-[#175864] text-white px-4 py-1 rounded-md inline-block">
               Our Clients
             </span>
-          </motion.h2>
+          </h2>
           <h2 className="text-center text-2xl md:text-3xl lg:text-3xl font-medium text-[#175864] w-11/12 lg:w-8/12 mx-auto">
             Empowering Customers, Automating Success Smart Solutions for Smarter
             Businesses
