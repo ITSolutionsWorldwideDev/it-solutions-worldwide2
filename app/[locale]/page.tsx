@@ -36,14 +36,14 @@ export default async function HomePage({
   const { locale } = await params;
 
   return (
-    <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    /* Yahan se gap-8 aur items-center/sm:items-start ko hata diya hai taake sections poore stretch hon aur khali jagah khatam ho */
+    <main className="flex flex-col w-full row-start-2">
       <AnimationArea />
       <BlogCarousel locale={locale} />
       <Certifications />
       <ContactSection />
     </main>
   );
-  
 }
 
 // interface LocalePageProps {

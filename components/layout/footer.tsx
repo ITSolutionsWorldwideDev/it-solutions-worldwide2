@@ -25,6 +25,7 @@ export default function Footer() {
               width={160}
               height={48}
               quality={75}
+              loading="lazy"
             />
             <p className="mt-4 text-sm text-gray-500 leading-relaxed">
               IT Solutions Worldwide delivers innovative IT solutions in supply

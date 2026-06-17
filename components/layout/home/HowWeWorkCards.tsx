@@ -36,6 +36,7 @@ export default function HowWeWorkCards() {
               width={80}
               height={80}
               quality={75}
+              loading="lazy"
               className="w-16 h-16 md:w-20 md:h-20"
             />
             <span className="text-base md:text-lg font-bold">
