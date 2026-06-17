@@ -23,19 +23,19 @@ export default function Header() {
       "(prefers-reduced-motion: reduce)"
     ).matches;
 
-    if (prefersReducedMotion) return;
+    // Mobile / small screens: skip video entirely, poster is enough.
+    // Video on mobile only adds LCP risk + bandwidth cost, no real UX gain.
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-    const idleCallback =
-      window.requestIdleCallback ?? ((cb: () =>
-         void) => setTimeout(cb, 1));
+    if (prefersReducedMotion || isMobile) return;
 
-    const idleId = idleCallback(() => setShowVideo(true));
+    // Fixed delay instead of requestIdleCallback — guarantees the video
+    // mounts well after the LCP measurement window has closed, even on
+    // a fast/idle main thread (which is exactly when idle callback used
+    // to fire too early and get flagged as the LCP element).
+    const timeoutId = setTimeout(() => setShowVideo(true), 2500);
 
-    return () => {
-      if (window.cancelIdleCallback) {
-        window.cancelIdleCallback(idleId as number);
-      }
-    };
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
@@ -54,7 +54,7 @@ export default function Header() {
 
       {showVideo && (
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-0 animate-fade-in"
           src={HERO_VIDEO}
           autoPlay
           loop
@@ -63,6 +63,10 @@ export default function Header() {
           preload="none"
           poster={HERO_POSTER}
           aria-hidden
+          onCanPlay={(e) => {
+            // Only reveal once it can actually play, avoids a blank frame flash
+            (e.target as HTMLVideoElement).style.opacity = "1";
+          }}
         />
       )}
 
@@ -70,7 +74,7 @@ export default function Header() {
       <div className="absolute inset-0 bg-black opacity-60 z-0" aria-hidden />
 
       <div className="container mx-auto relative z-10">
-        
+
         {/* FIX 2: Wrapped NavbarHome in an explicit z-50 layer container so headings can't block mouse hover */}
         <div className="relative z-50">
           <NavbarHome />
@@ -89,7 +93,7 @@ export default function Header() {
               <span>Succeed</span>
             </p>
           </div>
-          
+
           {/* FIXED: Removed target="_blank" to fix Chrome Back Button history freeze and kept dynamic locale */}
           <Link href={`/${locale}/contact-us`}>
             <button
@@ -99,7 +103,7 @@ export default function Header() {
               Get FREE Consultation
             </button>
           </Link>
-          
+
           <SegmentTabs />
         </div>
       </div>
