@@ -26,7 +26,8 @@ export default function Header() {
     if (prefersReducedMotion) return;
 
     const idleCallback =
-      window.requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 1));
+      window.requestIdleCallback ?? ((cb: () =>
+         void) => setTimeout(cb, 1));
 
     const idleId = idleCallback(() => setShowVideo(true));
 

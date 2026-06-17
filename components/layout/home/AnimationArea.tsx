@@ -1,31 +1,39 @@
 "use client";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-import ExpandingCards from "./ExpandingCards";
-import {
-  LogosSlider,
-  AnimatedList,
-  FunFacts,
-} from "./AnimationComponents";
+import ExpandingCards from "@/components/layout/home/ExpandingCards";
 
-// Heavy components — lazy load
+// Logos slider — uses Swiper, isolate it (Fixed Tailwind Lint)
+const LogosSlider = dynamic(() => import("@/components/layout/home/LogosSlider"), {
+  loading: () => <div className="min-h-75" />,
+});
+
+// "How We Work" — uses GSAP + ScrollTrigger, isolate it (Fixed Tailwind Lint)
+const AnimatedList = dynamic(() => import("@/components/layout/home/AnimatedList"), {
+  loading: () => <div className="min-h-100" />,
+});
+
+// Fun facts counters — lightweight, but keep split so it never
+// gets bundled together with GSAP/Swiper/Three.js code.
+const FunFacts = dynamic(() => import("@/components/layout/home/FunFacts"), {
+  loading: () => <div className="min-h-[250px]" />,
+});
+
+// Heavy: GSAP ScrollTrigger pin/scrub section
 const PinnedProgressSection = dynamic(
-  () => import("./AnimationComponents").then((mod) => mod.PinnedProgressSection),
+  () => import("@/components/layout/home/PinnedProgressSection"),
   { ssr: false, loading: () => <div className="min-h-screen" /> }
 );
 
-const AnimatedGlobe = dynamic(
-  () => import("./AnimationComponents").then((mod) => mod.AnimatedGlobe),
-  { ssr: false, loading: () => <div className="min-h-[40rem] bg-[#175864]" /> }
-);
+// Heaviest: Three.js globe
+const AnimatedGlobe = dynamic(() => import("@/components/layout/home/AnimatedGlobe"), {
+  ssr: false,
+  loading: () => <div className="min-h-[40rem] bg-[#175864]" />,
+});
 
 export default function AnimationArea() {
   return (
-    /* FIX: Swapped out the empty React fragment layer for a styled semantic section block */
-    /* This forces the entire home page animation pipeline to safely layer beneath your global navigation menu. */
     <section className="relative z-10 w-full">
-      
-      {/* FIXED: Duplicate div removed and padding fixed to py-20 */}
       <div className="xl:max-h-fit container xl:max-w-[1200px] mx-auto text-center py-20">
         <motion.h2
           className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 text-center"

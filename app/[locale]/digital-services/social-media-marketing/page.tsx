@@ -7,7 +7,7 @@ import ImageSection2 from "@/components/layout/image-section-2";
 import FAQSection2 from "@/components/layout/FAQ-section-2";
 import BannerSection2 from "@/components/layout/banner-section-2";
 import MarketingBanner from "@/components/ui/marketing-banner";
-import { ClientLogosSlider } from "@/components/layout/home/AnimationComponents";
+import { ClientLogosSlider } from "@/components/layout/home/LogosSlider";
 import { Metadata } from "next";
 
 
