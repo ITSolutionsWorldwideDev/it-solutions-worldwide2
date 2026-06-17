@@ -1,34 +1,39 @@
 "use client";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-import ExpandingCards from "@/components/layout/home/ExpandingCards";
+import ExpandingCards from "./ExpandingCards";
 
-// Logos slider — uses Swiper, isolate it (Fixed Tailwind Lint)
-const LogosSlider = dynamic(() => import("@/components/layout/home/LogosSlider"), {
-  loading: () => <div className="min-h-75" />,
-});
+// ===== STATIC REPLACEMENTS (currently active) =====
+// These replace the heavy GSAP/Three.js animated sections with plain
+// cards to reduce Total Blocking Time. No animation libraries needed.
+import HowWeWorkCards from "@/components/layout/home/HowWeWorkCards";
+import StatsCards from "@/components/layout/home/StatsCards";
+import IndustriesCards from "@/components/layout/home/IndustriesCards";
+import RegionsCards from "@/components/layout/home/RegionsCards";
 
-// "How We Work" — uses GSAP + ScrollTrigger, isolate it (Fixed Tailwind Lint)
-const AnimatedList = dynamic(() => import("@/components/layout/home/AnimatedList"), {
-  loading: () => <div className="min-h-100" />,
-});
+// ===== ORIGINAL ANIMATED VERSIONS (commented out, kept for revert) =====
+// To restore the animated versions, uncomment the imports below and
+// swap the corresponding JSX further down (also commented).
+//
+// const AnimatedList = dynamic(() => import("./AnimatedList"), {
+//   loading: () => <div className="min-h-[400px]" />,
+// });
+// const FunFacts = dynamic(() => import("./FunFacts"), {
+//   loading: () => <div className="min-h-[250px]" />,
+// });
+// const PinnedProgressSection = dynamic(
+//   () => import("./PinnedProgressSection"),
+//   { ssr: false, loading: () => <div className="min-h-screen" /> }
+// );
+// const AnimatedGlobe = dynamic(() => import("./AnimatedGlobe"), {
+//   ssr: false,
+//   loading: () => <div className="min-h-[40rem] bg-[#175864]" />,
+// });
 
-// Fun facts counters — lightweight, but keep split so it never
-// gets bundled together with GSAP/Swiper/Three.js code.
-const FunFacts = dynamic(() => import("@/components/layout/home/FunFacts"), {
-  loading: () => <div className="min-h-[250px]" />,
-});
-
-// Heavy: GSAP ScrollTrigger pin/scrub section
-const PinnedProgressSection = dynamic(
-  () => import("@/components/layout/home/PinnedProgressSection"),
-  { ssr: false, loading: () => <div className="min-h-screen" /> }
-);
-
-// Heaviest: Three.js globe
-const AnimatedGlobe = dynamic(() => import("@/components/layout/home/AnimatedGlobe"), {
-  ssr: false,
-  loading: () => <div className="min-h-[40rem] bg-[#175864]" />,
+// Logos slider — still uses Swiper, isolate it (kept as-is)
+const LogosSlider = dynamic(() => import("./LogosSlider"), {
+  loading: () => <div className="min-h-[300px]" />,
 });
 
 export default function AnimationArea() {
@@ -52,7 +57,7 @@ export default function AnimationArea() {
         <ExpandingCards />
       </div>
 
-      <div className="max-h-[400px] flex flex-col justify-center items-center bg-cover bg-center w-full pt-20">
+      <div className="flex flex-col justify-center items-center bg-cover bg-center w-full pt-20">
         <div className="container mx-auto ">
           <motion.h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 text-center"
@@ -78,7 +83,8 @@ export default function AnimationArea() {
       </div>
 
       <div className=" container xl:max-w-[1200px] mx-auto text-center py-20">
-        <AnimatedList />
+        {/* ORIGINAL: <AnimatedList /> */}
+        <HowWeWorkCards />
       </div>
 
       <div
@@ -88,12 +94,16 @@ export default function AnimationArea() {
         }}
       >
         <div className="container px-4 sm:px-6 lg:px-8 place-items-center">
-          <FunFacts />
+          {/* ORIGINAL: <FunFacts /> */}
+          <StatsCards />
         </div>
       </div>
 
-      <PinnedProgressSection />
-      <AnimatedGlobe />
+      {/* ORIGINAL: <PinnedProgressSection /> */}
+      <IndustriesCards />
+
+      {/* ORIGINAL: <AnimatedGlobe /> */}
+      <RegionsCards />
     </section>
   );
 }

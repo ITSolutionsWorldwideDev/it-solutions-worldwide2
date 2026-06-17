@@ -1,91 +1,51 @@
 "use client";
-import { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { servicesData } from "@/lib/commonData";
 
-export default function ExpandingCards(){
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [showDescription, setShowDescription] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowDescription(true);
-    }, 1000);
-
-    return () => {
-      clearTimeout(timeout);
-      setShowDescription(false);
-    };
-  }, [activeIndex]);
-
+export default function ExpandingCards() {
   if (!servicesData || servicesData.length === 0) {
     return <p className="text-center text-gray-500">No data to display</p>;
   }
 
   return (
-    <div
-      className="container w-11/12 flex h-[90vh] 2xl:max-h-[70vh] gap-2 items-center
-       overflow-hidden mx-auto flex-col md:flex-row"
-    >
-      {servicesData.map((card, index) => (
-        <div
-          key={index}
-          className={`relative cursor-pointer rounded-lg overflow-hidden transition-all duration-500 ease-linear w-full md:w-auto ${
-            activeIndex === index ? 'flex-grow' : 'flex-shrink'
-          }`}
-          style={{
-            flex: activeIndex === index ? 5 : 0.4,
-            height: '100%',
-          }}
-          onClick={() => setActiveIndex(index)}
-        >
-          {/* PERFORMANCE FIX: Replaced slow inline background CSS with Next.js Image Component */}
-          <Image
-            src={card.url}
-            alt={card.title}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            quality={80}
-            className="object-cover transition-transform duration-500"
-            // CRITICAL LCP FIX: Only priority load the first card because it renders immediately above-the-fold
-            priority={index === 0}
-            fetchPriority={index === 0 ? "high" : "low"}
-          />
+    <div className="w-full container xl:max-w-[1200px] mx-auto py-12 px-4">
+      {/* Grid setup creates identical heights automatically */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+        {servicesData.map((card, index) => (
+          <div
+            key={index}
+            className="group rounded-2xl overflow-hidden border border-gray-100 bg-white flex flex-col h-full transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(23,88,100,0.08)] shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
+          >
+            {/* 1. Image Container - Fixed height across all cards */}
+            <div className="w-full h-60 overflow-hidden bg-gray-900 relative shrink-0">
+              <Image
+                src={card.url}
+                alt={card.title}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={85}
+                className="object-cover object-center opacity-90 transition-transform duration-500 ease-out group-hover:scale-105 group-hover:opacity-100"
+                priority={index < 3} // Priority load top 3 desktop cards
+              />
+              {/* Subtle brand tint gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#175864]/40 to-transparent mix-blend-multiply" />
+            </div>
 
-          {activeIndex === index ? (
-            <div
-              className="absolute inset-0 flex flex-col justify-center sm:justify-end text-white p-3 sm:p-7 transition-opacity duration-500 delay-300 opacity-100 rounded-lg"
-              style={{
-                background:
-                  'linear-gradient(to bottom, rgba(23, 88, 100, 0.6) 100%)'
-              }}             
-            >
-              <h2 className="text-2xl font-bold transition-transform duration-500 delay-500 translate-y-0 z-10">
+            {/* 2. Content Container - Aligned perfectly with line clamping */}
+            <div className="p-6 sm:p-7 flex flex-col flex-1 bg-white text-left">
+              <h3 className="text-xl font-bold mb-3 text-gray-800 transition-colors duration-300 group-hover:text-[#175864]">
                 {card.title}
-              </h2>
-              <p
-                className={`mt-2 transition-opacity duration-500 z-10 ${
-                  showDescription ? 'opacity-100' : 'opacity-0'
-                }`}
-              >
+              </h3>
+              
+              {/* line-clamp prevents differing text lengths from altering card layouts */}
+              <p className="text-sm text-gray-500 leading-relaxed line-clamp-6">
                 {card.description}
               </p>
             </div>
-          ) : (
-            <div
-              className="absolute inset-0 flex items-center justify-center text-white p-2 rounded-lg"
-              style={{
-                background:
-                  'linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0) 100%)',
-              }}
-            >
-              <h2 className="transform rotate-0 md:-rotate-90 whitespace-nowrap z-10">
-                {card.title}
-              </h2>
-            </div>
-          )}
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
-};
+}
