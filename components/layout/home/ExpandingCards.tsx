@@ -8,44 +8,90 @@ export default function ExpandingCards() {
     return <p className="text-center text-gray-500">No data to display</p>;
   }
 
+  // Duplicate the set once so translateX(-50%) loops seamlessly
+  const loopCards = [...servicesData, ...servicesData];
+
   return (
-    <div className="w-full container xl:max-w-[1200px] mx-auto py-12 px-4">
-      {/* Grid setup creates identical heights automatically */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-        {servicesData.map((card, index) => (
+    <div className="w-full py-12 relative overflow-hidden">
+      {/* Edge fades — masks the slide-in/out so it feels intentional */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-white to-transparent z-10" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-white to-transparent z-10" />
+
+      <div className="marquee-track flex gap-6 w-max">
+        {loopCards.map((card, index) => (
           <div
             key={index}
-            className="group rounded-2xl overflow-hidden border border-gray-100 bg-white flex flex-col h-full transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(23,88,100,0.08)] shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
+            className="custom-card group rounded-2xl overflow-hidden border border-gray-100 bg-white flex flex-col shrink-0 w-[280px] sm:w-[320px] shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
           >
-            {/* 1. Image Container - Fixed height across all cards */}
-            <div className="w-full h-60 overflow-hidden bg-gray-900 relative shrink-0">
+            {/* Image */}
+            <div className="w-full h-52 overflow-hidden bg-gray-900 relative shrink-0">
               <Image
                 src={card.url}
                 alt={card.title}
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="320px"
                 quality={85}
                 className="object-cover object-center opacity-90 transition-transform duration-500 ease-out group-hover:scale-105 group-hover:opacity-100"
-                priority={index < 3} // Priority load top 3 desktop cards
+                priority={index < 3}
               />
-              {/* Subtle brand tint gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#175864]/40 to-transparent mix-blend-multiply" />
             </div>
 
-            {/* 2. Content Container - Aligned perfectly with line clamping */}
-            <div className="p-6 sm:p-7 flex flex-col flex-1 bg-white text-left">
-              <h3 className="text-xl font-bold mb-3 text-gray-800 transition-colors duration-300 group-hover:text-[#175864]">
+            {/* Content */}
+            <div className="card-content p-6 flex flex-col flex-1 text-left">
+              <h3 className="card-title text-lg font-bold mb-2 text-gray-800">
                 {card.title}
               </h3>
-              
-              {/* line-clamp prevents differing text lengths from altering card layouts */}
-              <p className="text-sm text-gray-500 leading-relaxed line-clamp-6">
+              <p className="card-desc text-sm text-gray-500 leading-relaxed line-clamp-5">
                 {card.description}
               </p>
             </div>
           </div>
         ))}
       </div>
+
+      <style jsx>{`
+        /* Marquee Animation */
+        .marquee-track {
+          animation: marquee-scroll 40s linear infinite;
+        }
+        .marquee-track:hover {
+          animation-play-state: paused;
+        }
+        @keyframes marquee-scroll {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+
+        /* 100% Guaranteed Hover Effect via CSS */
+        .custom-card {
+          transition: all 0.3s ease-out;
+        }
+        
+        .custom-card:hover {
+          background-color: #175864 !important;
+          transform: translateY(-8px);
+          box-shadow: 0 20px 40px rgba(23, 88, 100, 0.15);
+        }
+
+        .custom-card .card-content {
+          transition: background-color 0.3s ease-out;
+        }
+
+        /* Hover karne par text colors */
+        .custom-card:hover .card-title {
+          color: #ffffff !important;
+        }
+
+        .custom-card:hover .card-desc {
+          color: rgba(255, 255, 255, 0.85) !important;
+        }
+
+        /* Smooth transition text ke liye */
+        .card-title, .card-desc {
+          transition: color 0.3s ease-out;
+        }
+      `}</style>
     </div>
   );
 }
