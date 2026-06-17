@@ -13,9 +13,8 @@ export default function ExpandingCards() {
 
   return (
     <div className="w-full py-12 relative overflow-hidden">
-      {/* Edge fades — masks the slide-in/out so it feels intentional */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-white to-transparent z-10" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-white to-transparent z-10" />
+      
+      {/* NOTE: White glow elements code here has been removed */}
 
       <div className="marquee-track flex gap-6 w-max">
         {loopCards.map((card, index) => (
