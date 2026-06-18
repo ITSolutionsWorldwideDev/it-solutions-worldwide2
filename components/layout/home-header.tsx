@@ -7,23 +7,17 @@ import { useParams } from "next/navigation";
 import dynamic from "next/dynamic";
 import NavbarHome from "./nav-bar-home";
 
-// FIX: SegmentTabs pulls in framer-motion (AnimatePresence + motion.div for
-// a 3-step form). That JS was being parsed/executed on the main thread at
-// the exact moment the hero image needed to paint, causing a 4s+ LCP render
-// delay on mobile even though the image itself downloaded fast. Lazy-loading
-// it (ssr: false, no eager loading skeleton) keeps it out of the critical path.
 const SegmentTabs = dynamic(() => import("./home/SegmentTabComponent"), {
   ssr: false,
 });
 
-const HERO_POSTER = "/assets/images/backgrounds/hero-bg.webp";
-const HERO_VIDEO = "/assets/images/backgrounds/hero-bg 1";
+const HERO_POSTER = "/assets/images/backgrounds/hero-section-bg.webp";
+const HERO_VIDEO = "/assets/images/backgrounds/hero-bg.webp";
 
 export default function Header() {
   const [showVideo, setShowVideo] = useState(false);
-
   const params = useParams();
-  const locale = params?.locale || "en"; // Dutch me automatic 'nl' uthayega aur english me 'en'
+  const locale = params?.locale || "en";
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -31,36 +25,31 @@ export default function Header() {
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
-
-    // Mobile / small screens: skip video entirely, poster is enough.
-    // Video on mobile only adds LCP risk + bandwidth cost, no real UX gain.
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
     if (prefersReducedMotion || isMobile) return;
 
-    // Fixed delay instead of requestIdleCallback — guarantees the video
-    // mounts well after the LCP measurement window has closed, even on
-    // a fast/idle main thread (which is exactly when idle callback used
-    // to fire too early and get flagged as the LCP element).
-    const timeoutId = setTimeout(() => setShowVideo(true), 2500);
-
+    // Video 3.5 seconds ke baad load hogi, tab tak LCP window successfully close ho chuki hogi
+    const timeoutId = setTimeout(() => setShowVideo(true), 3500);
     return () => clearTimeout(timeoutId);
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden" id="hometop">
-   <Image
-  src={HERO_POSTER}
-  alt="IT Solutions Worldwide hero background"
-  fill
-  priority // Informs Next.js to inject a link preload tag
-  loading="eager" // Forces immediate rendering over processing cycles
-  fetchPriority="high" // Commands the browser network layer to fetch this first
-  quality={65} // Slightly lowers the quality parameter to maximize compression savings
-  sizes="100vw"
-  className="object-cover z-0"
-  aria-hidden
-/>
+    // FIX: Element wrapper ko explicit content constraints diye hain taaki reflow rendering block na ho
+    <div className="relative w-full min-h-screen overflow-hidden bg-black" id="hometop">
+      
+      {/* PERFECT LCP IMAGE: Isko state condition se upar rakha hai aur browser direct render karega */}
+      <Image
+        src={HERO_POSTER}
+        alt="IT Solutions Worldwide hero background"
+        fill
+        priority
+        loading="eager"
+        fetchPriority="high"
+        sizes="100vw"
+        className="object-cover z-0 pointer-events-none"
+        quality={75} // Quality thodi behtar rakhein kyunki size pehle hi 30 KB hai
+      />
 
       {showVideo && (
         <video
@@ -74,18 +63,15 @@ export default function Header() {
           poster={HERO_POSTER}
           aria-hidden
           onCanPlay={(e) => {
-            // Only reveal once it can actually play, avoids a blank frame flash
             (e.target as HTMLVideoElement).style.opacity = "1";
           }}
         />
       )}
 
-      {/* FIX 1: Moved black overlay out of the inner container container and gave it z-0 */}
-      <div className="absolute inset-0 bg-black opacity-60 z-0" aria-hidden />
+      {/* Black Overlay overlay block layer */}
+      <div className="absolute inset-0 bg-black/60 z-0 content-none pointer-events-none" aria-hidden />
 
       <div className="container mx-auto relative z-10">
-
-        {/* FIX 2: Wrapped NavbarHome in an explicit z-50 layer container so headings can't block mouse hover */}
         <div className="relative z-50">
           <NavbarHome />
         </div>
@@ -104,7 +90,6 @@ export default function Header() {
             </p>
           </div>
 
-          {/* FIXED: Removed target="_blank" to fix Chrome Back Button history freeze and kept dynamic locale */}
           <Link href={`/${locale}/contact-us`}>
             <button
               type="button"

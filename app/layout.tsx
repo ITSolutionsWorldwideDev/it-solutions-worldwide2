@@ -49,23 +49,28 @@ export default async function RootLayout({
 
   return (
     <html lang="en" className={lexend.className} suppressHydrationWarning>
-      <head>
-        <link
-          rel="preload"
-          as="image"
-          href="/assets/images/backgrounds/hero-bg.webp"
-          fetchPriority="high"
-          type="image/webp"
-        />
-        <link
-          rel="canonical"
-          href={`https://www.itsolutionsworldwide.com${pathname}`}
-        />
-        
-        {/* Shifting pixels to load asynchronously without blocking the LCP document wrapper thread */}
-        <MetaPixel pixelId="1766535074073515" />
-        <GoogleTagManager gtmId="GTM-PH8FNRK6" />
-      </head>
+    <head>
+  {/* Preload critical image with absolute high network and render priority */}
+  <link
+    rel="preload"
+    as="image"
+    href="/assets/images/backgrounds/hero-section-bg.webp"
+    fetchPriority="high"
+    type="image/webp"
+  />
+  
+  {/* Font loading blocking ko khatam karne ke liye preconnect */}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+  <link
+    rel="canonical"
+    href={`https://www.itsolutionsworldwide.com${pathname}`}
+  />
+  
+  <MetaPixel pixelId="1766535074073515" />
+  <GoogleTagManager gtmId="GTM-PH8FNRK6" />
+</head>
       <body className="mx-2 md:mx-0 lg:mx-0">
         {children}
         

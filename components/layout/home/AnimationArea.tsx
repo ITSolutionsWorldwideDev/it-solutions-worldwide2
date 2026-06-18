@@ -30,9 +30,9 @@ ssr: false,
 });
 
 // Logos slider — still uses Swiper, isolate it (kept as-is)
-const LogosSlider = dynamic(() => import("./LogosSlider"), {
-  loading: () => <div className="min-h-[300px]" />,
-});
+//const LogosSlider = dynamic(() => import("./LogosSlider"), {
+  //loading: () => <div className="min-h-[300px]" />,
+//});
 
 export default function AnimationArea() {
   return (
@@ -88,7 +88,7 @@ export default function AnimationArea() {
       <IndustriesCards />
 
       {/* ORIGINAL: <AnimatedGlobe /> */}
-      <AnimatedGlobe />
+     
     </section>
   );
 }
