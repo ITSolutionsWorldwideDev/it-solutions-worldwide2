@@ -57,6 +57,7 @@
     "@types/pg": "^8.15.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "critters": "^0.0.23",
     "eslint": "9.37.0",
     "eslint-config-next": "15.5.5",
     "tailwindcss": "^4",

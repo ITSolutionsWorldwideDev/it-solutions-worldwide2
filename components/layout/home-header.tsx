@@ -13,7 +13,7 @@ const SegmentTabs = dynamic(() => import("./home/SegmentTabComponent"), {
 
 const HERO_POSTER = "/assets/images/backgrounds/hero-bg.webp";
 // ✅ FIX 1: URL path ko safely encode kar diya hai taaki space ki wajah se break na ho
-const HERO_VIDEO = "/assets/images/backgrounds/hero-bg%201.mp4";
+const HERO_VIDEO = "/assets/images/backgrounds/hero-bg.mp4";
 
 export default function Header() {
   const [showVideo, setShowVideo] = useState(false);
@@ -48,6 +48,7 @@ export default function Header() {
         sizes="100vw"
         className="object-cover z-10 pointer-events-none"
         quality={75}
+        fetchPriority="high"
       />
 
       {/* Video Background */}
