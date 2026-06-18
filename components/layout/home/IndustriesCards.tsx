@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { industriesData } from "@/lib/commonData";
-import Image from 'next/image'; // Yeh import top par add karein
+import Image from 'next/image';
 
 type Rect = { top: number; left: number; width: number; height: number };
 
@@ -12,7 +12,7 @@ export default function IndustriesCards() {
   const [renderContent, setRenderContent] = useState(false);
   const cardRefs = useRef<Record<string | number, HTMLDivElement | null>>({});
 
-  // Pagination: 3 cards per page, navigated via arrows
+  // Pagination: 3 cards per page
   const [page, setPage] = useState(0);
   const cardsPerPage = 3;
   const totalPages = Math.ceil(industriesData.length / cardsPerPage);
@@ -88,10 +88,20 @@ export default function IndustriesCards() {
     return { ...base, transform: "translate(0px, 0px) scale(1, 1)" };
   };
 
+  // Helper logic to ensure image folder pathways match correctly
+  const getCleanSrc = (imgStr: string | undefined) => {
+    if (!imgStr) return "";
+    let clean = imgStr.trim();
+    
+    // Agar path full stream link nahi h aur direct name h, ya path structural error control me h:
+    if (!clean.startsWith("/") && !clean.startsWith("http")) {
+      clean = `/${clean}`;
+    }
+    return clean;
+  };
+
   return (
     <section className="w-full max-w-[1400px] mx-auto py-16 px-6 sm:px-12 relative flex items-center justify-center">
-      
-      {/* Main Wrapper: Controls the maximum inner row layout width */}
       <div className="w-full max-w-[1150px] flex items-center justify-between gap-4 md:gap-10">
         
         {/* Left Arrow */}
@@ -105,61 +115,68 @@ export default function IndustriesCards() {
           </svg>
         </button>
 
-        {/* Strict 3-Column Grid Layout: Prevents full screen expanding */}
+        {/* Grid Container */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 flex-1 justify-items-center">
-          {currentCards.map((slide) => (
-            <div 
-              key={slide.id} 
-              className="w-full max-w-[280px] md:max-w-[300px] flex flex-col"
-            >
-              <div
-                ref={(el) => { cardRefs.current[slide.id] = el; }}
-                onClick={() => openCard(slide.id)}
-                className={`group rounded-[24px] overflow-hidden border border-gray-100/80 bg-white flex flex-col h-full cursor-pointer transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_22px_45px_rgba(23,88,100,0.12)] shadow-[0_8px_30px_rgb(0,0,0,0.03)] ${
-                  activeId === slide.id ? "opacity-0" : "opacity-100"
-                }`}
+          {currentCards.map((slide) => {
+            const currentSrc = getCleanSrc(slide.image);
+
+            return (
+              <div 
+                key={slide.id} 
+                className="w-full max-w-[280px] md:max-w-[300px] flex flex-col"
               >
-                {/* Fixed Image Aspect Ratio Box */}
-               <div className="w-full aspect-[4/3] overflow-hidden bg-gray-50 relative shrink-0 border-b border-gray-50">
-  <Image
-    src={slide.image}
-    alt={slide.industry}
-    className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
-    loading="lazy"
-    quality={20} // Ab yeh perfect kaam karega
-    width={800}  // Next.js Image ke liye width/height ya layout="fill" zaroori hai
-    height={600} 
-    fetchPriority="low"
-  />
-                  <div className="absolute top-3 left-3 bg-white/80 backdrop-blur-md text-[#175864] font-extrabold text-[10px] px-2.5 py-1 rounded-full shadow-sm border border-white/40">
-                    {slide.number}
+                <div
+                  ref={(el) => { cardRefs.current[slide.id] = el; }}
+                  onClick={() => openCard(slide.id)}
+                  className={`group rounded-[24px] overflow-hidden border border-gray-100/80 bg-white flex flex-col h-full cursor-pointer transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_22px_45px_rgba(23,88,100,0.12)] shadow-[0_8px_30px_rgb(0,0,0,0.03)] ${
+                    activeId === slide.id ? "opacity-0" : "opacity-100"
+                  }`}
+                >
+                  {/* Fixed Image Aspect Ratio Box */}
+                  <div className="w-full aspect-[4/3] overflow-hidden bg-gray-100 relative shrink-0 border-b border-gray-50">
+                    {currentSrc ? (
+                      <Image
+                        src={currentSrc}
+                        alt={slide.industry || "Industry background"}
+                        className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
+                        loading="lazy"
+                        quality={50} 
+                        width={400}  
+                        height={300}
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gray-200 animate-pulse" />
+                    )}
+                    <div className="absolute top-3 left-3 bg-white/80 backdrop-blur-md text-[#175864] font-extrabold text-[10px] px-2.5 py-1 rounded-full shadow-sm border border-white/40">
+                      {slide.number}
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
 
-                {/* Content Container */}
-                <div className="p-5 flex flex-col flex-1 justify-between bg-gradient-to-b from-white to-gray-50/30">
-                  <div className="flex-1">
-                    <h3 className="text-sm md:text-base font-bold tracking-tight text-gray-800 transition-colors duration-300 group-hover:text-[#175864] line-clamp-2 min-h-[44px] mb-2">
-                      {slide.industry}
-                    </h3>
-                    <p className="text-xs text-gray-400 leading-relaxed line-clamp-3">
-                      {slide.content}
-                    </p>
-                  </div>
+                  {/* Content Container */}
+                  <div className="p-5 flex flex-col flex-1 justify-between bg-gradient-to-b from-white to-gray-50/30">
+                    <div className="flex-1">
+                      <h3 className="text-sm md:text-base font-bold tracking-tight text-gray-800 transition-colors duration-300 group-hover:text-[#175864] line-clamp-2 min-h-[44px] mb-2">
+                        {slide.industry}
+                      </h3>
+                      <p className="text-xs text-gray-400 leading-relaxed line-clamp-3">
+                        {slide.content}
+                      </p>
+                    </div>
 
-                  <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-[11px] font-bold text-[#175864] tracking-wide uppercase">
-                    <span>Explore</span>
-                    <div className="w-6 h-6 rounded-full bg-gray-50 text-[#175864] group-hover:bg-[#175864] group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm">
-                      <svg className="w-3 h-3 transform transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
-                      </svg>
+                    <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-[11px] font-bold text-[#175864] tracking-wide uppercase">
+                      <span>Explore</span>
+                      <div className="w-6 h-6 rounded-full bg-gray-50 text-[#175864] group-hover:bg-[#175864] group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm">
+                        <svg className="w-3 h-3 transform transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Right Arrow */}
@@ -174,7 +191,7 @@ export default function IndustriesCards() {
         </button>
       </div>
 
-      {/* 2. Beautiful Morphing Full-Screen Dialog Overlay — unchanged */}
+      {/* Morphing Full-Screen Dialog Overlay */}
       {activeId !== null && activeSlide && sourceRect && (
         <>
           <div
@@ -201,12 +218,18 @@ export default function IndustriesCards() {
             </button>
 
             <div className="w-full md:w-1/2 h-48 md:h-full overflow-hidden bg-gray-100 relative shrink-0">
-              <img
-                src={activeSlide.image}
-                alt={activeSlide.industry}
-                className="w-full h-full object-cover object-center"
-                loading="lazy"      
-              />
+              {getCleanSrc(activeSlide.image) ? (
+                <Image
+                  src={getCleanSrc(activeSlide.image)}
+                  alt={activeSlide.industry || "Industry detail View"}
+                  fill
+                  sizes="(max-w-768px) 100vw, 50vw"
+                  className="object-cover object-center"
+                  loading="lazy"      
+                />
+              ) : (
+                <div className="w-full h-full bg-gray-200 animate-pulse" />
+              )}
               <div className="absolute top-4 left-4 bg-[#175864] text-white font-extrabold text-xs px-3 py-1.5 rounded-full shadow-md">
                 {activeSlide.number}
               </div>
@@ -227,7 +250,7 @@ export default function IndustriesCards() {
                 </h3>
 
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-normal whitespace-pre-line">
-                  {activeSlide.content || "Detailed structural data and technical documentation overview is being updated."}
+                  {activeSlide.content || "Detailed data overview is being updated."}
                 </p>
               </div>
 

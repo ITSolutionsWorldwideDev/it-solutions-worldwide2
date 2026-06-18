@@ -16,7 +16,7 @@ const SegmentTabs = dynamic(() => import("./home/SegmentTabComponent"), {
   ssr: false,
 });
 
-const HERO_POSTER = "/assets/images/backgrounds/hero-section-bg.webp";
+const HERO_POSTER = "/assets/images/backgrounds/hero-bg.webp";
 const HERO_VIDEO = "/assets/images/backgrounds/hero-bg 1";
 
 export default function Header() {
@@ -49,18 +49,18 @@ export default function Header() {
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden" id="hometop">
-      <Image
-        src={HERO_POSTER}
-        alt="IT Solutions Worldwide hero background"
-        fill
-        priority
-        fetchPriority="high"
-        quality={70}
-        sizes="100vw"
-        className="object-cover z-0"
-        aria-hidden
-        
-      />
+   <Image
+  src={HERO_POSTER}
+  alt="IT Solutions Worldwide hero background"
+  fill
+  priority // Informs Next.js to inject a link preload tag
+  loading="eager" // Forces immediate rendering over processing cycles
+  fetchPriority="high" // Commands the browser network layer to fetch this first
+  quality={65} // Slightly lowers the quality parameter to maximize compression savings
+  sizes="100vw"
+  className="object-cover z-0"
+  aria-hidden
+/>
 
       {showVideo && (
         <video

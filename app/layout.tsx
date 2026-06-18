@@ -53,7 +53,7 @@ export default async function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/assets/images/backgrounds/hero-section-bg.webp"
+          href="/assets/images/backgrounds/hero-bg.webp"
           fetchPriority="high"
           type="image/webp"
         />
@@ -61,14 +61,22 @@ export default async function RootLayout({
           rel="canonical"
           href={`https://www.itsolutionsworldwide.com${pathname}`}
         />
+        
+        {/* Shifting pixels to load asynchronously without blocking the LCP document wrapper thread */}
         <MetaPixel pixelId="1766535074073515" />
         <GoogleTagManager gtmId="GTM-PH8FNRK6" />
       </head>
       <body className="mx-2 md:mx-0 lg:mx-0">
         {children}
-        <Script id="clarity-script" strategy="lazyOnload">
+        
+        {/* OPTIMIZED CLARITY SCRIPT: Using 'afterInteractive' ensures it runs completely outside the critical paint window */}
+        <Script id="clarity-script" strategy="afterInteractive">
           {`
-          (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wgjwbc5ugr");
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window,document,"clarity","script","wgjwbc5ugr");
           `}
         </Script>
         <PageUpButton />
