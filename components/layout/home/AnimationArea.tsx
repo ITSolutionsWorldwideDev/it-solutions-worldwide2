@@ -88,7 +88,6 @@ export default function AnimationArea() {
       <IndustriesCards />
 
       {/* ORIGINAL: <AnimatedGlobe /> */}
-      <RegionsCards />
     </section>
   );
 }
