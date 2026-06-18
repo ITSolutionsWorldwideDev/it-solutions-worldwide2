@@ -54,7 +54,7 @@ export default async function RootLayout({
   <link
     rel="preload"
     as="image"
-    href="/assets/images/backgrounds/hero-section-bg.webp"
+    href="/assets/images/backgrounds/hero-bg.webp"
     fetchPriority="high"
     type="image/webp"
   />

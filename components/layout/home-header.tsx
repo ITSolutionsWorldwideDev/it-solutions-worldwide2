@@ -11,8 +11,9 @@ const SegmentTabs = dynamic(() => import("./home/SegmentTabComponent"), {
   ssr: false,
 });
 
-const HERO_POSTER = "/assets/images/backgrounds/hero-section-bg.webp";
-const HERO_VIDEO = "/assets/images/backgrounds/hero-bg.webp";
+const HERO_POSTER = "/assets/images/backgrounds/hero-bg.webp";
+// ✅ FIX 1: URL path ko safely encode kar diya hai taaki space ki wajah se break na ho
+const HERO_VIDEO = "/assets/images/backgrounds/hero-bg%201.mp4";
 
 export default function Header() {
   const [showVideo, setShowVideo] = useState(false);
@@ -35,25 +36,25 @@ export default function Header() {
   }, []);
 
   return (
-    // FIX: Element wrapper ko explicit content constraints diye hain taaki reflow rendering block na ho
     <div className="relative w-full min-h-screen overflow-hidden bg-black" id="hometop">
       
-      {/* PERFECT LCP IMAGE: Isko state condition se upar rakha hai aur browser direct render karega */}
+      {/* ✅ FIX 2: Z-index ko explicitly z-10 rakha hai taaki image background par har haal mein dikhe */}
       <Image
         src={HERO_POSTER}
         alt="IT Solutions Worldwide hero background"
         fill
         priority
         loading="eager"
-        fetchPriority="high"
         sizes="100vw"
-        className="object-cover z-0 pointer-events-none"
-        quality={75} // Quality thodi behtar rakhein kyunki size pehle hi 30 KB hai
+        className="object-cover z-10 pointer-events-none"
+        quality={75}
       />
 
+      {/* Video Background */}
       {showVideo && (
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-0 animate-fade-in"
+          // ✅ FIX 3: Dynamic classes fix ki hain jo video active hote hi use image ke upar (z-20) le aayengi
+          className="absolute top-0 left-0 w-full h-full object-cover z-20 opacity-0 transition-opacity duration-1000 ease-in-out"
           src={HERO_VIDEO}
           autoPlay
           loop
@@ -63,20 +64,23 @@ export default function Header() {
           poster={HERO_POSTER}
           aria-hidden
           onCanPlay={(e) => {
-            (e.target as HTMLVideoElement).style.opacity = "1";
+            const videoEl = e.target as HTMLVideoElement;
+            videoEl.classList.remove("opacity-0");
+            videoEl.classList.add("opacity-100");
           }}
         />
       )}
 
-      {/* Black Overlay overlay block layer */}
-      <div className="absolute inset-0 bg-black/60 z-0 content-none pointer-events-none" aria-hidden />
+      {/* ✅ FIX 4: Black Overlay ko z-25 kiya taaki woh image aur video dono ke upar sahi se layer banaye */}
+      <div className="absolute inset-0 bg-black/60 z-25 pointer-events-none" aria-hidden />
 
-      <div className="container mx-auto relative z-10">
+      {/* ✅ FIX 5: Content container ko highest layer (z-30) di hai taaki text and buttons access ho sakein */}
+      <div className="container mx-auto relative z-30">
         <div className="relative z-50">
           <NavbarHome />
         </div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 pt-20">
+        <div className="relative z-30 flex flex-col items-center justify-center text-center text-white px-4 pt-20">
           <h1 className="text-[45px] sm:text-6xl/tight lg:text-7xl/tight 2xl:text-8xl/tight font-bold mb-8 w-full sm:w-10/12 lg:w-8/12 xl:w-9/12">
             Empowering Businesses with Smart IT Solutions
           </h1>
