@@ -47,6 +47,9 @@ export default function Certifications() {
                 height={100}
                 alt={item.name}
                 className="rounded-full object-cover shadow-sm bg-gray-50/50 p-1 border border-gray-100"
+                loading="lazy"
+                quality={10}
+                fetchPriority="low"
               />
             </Link>
           </div>

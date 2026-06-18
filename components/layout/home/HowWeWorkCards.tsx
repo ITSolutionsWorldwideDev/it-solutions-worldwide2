@@ -1,5 +1,6 @@
 import { howWeWork } from "@/lib/commonData";
 import { DottedLine } from "@/components/layout/home/animation-helpers";
+import Image from 'next/image';
 
 // Static replacement for AnimatedList — same exact layout/markup as the
 // original GSAP version, minus the scroll-triggered animation. Mobile
@@ -34,11 +35,16 @@ export default function HowWeWorkCards() {
               key={index}
               className={`flex flex-col md:flex-row process-list-item text-2xl font-bold items-center ${item.styles.largeScreens}`}
             >
-              <img
-                src={item.image.src}
-                alt={item.image.alt}
-                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
-              />
+            <Image
+  src={item.image.src}
+  alt={item.image.alt}
+  className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain" // object-contain safety ke liye add kiya hai
+  loading="lazy"
+  quality={20}
+  fetchPriority="low"
+  width={80}  // md:w-20 ka matlab 80px hota hai (20 * 4)
+  height={80} // md:h-20 ka matlab 80px hota hai (20 * 4)
+/>
               <DottedLine />
               <span className="ml-2 text-[clamp(1rem,2vw,1.5rem)] text-center md:text-left leading-tight">
                 {item.text}

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { BlogEntry } from "@/types/blogs";
+import Image from 'next/image';
 
 type Props = {
   post: BlogEntry;
@@ -45,12 +46,19 @@ export default function BlogCard({ post, locale }: Props) {
       itemType="http://schema.org/BlogPosting"
     >
       <div className="w-full lg:w-2/4 mb-4 lg:mb-0">
-        <img
-          src={getFeaturedImage()}
-          alt={post.content.title}
-          className="w-full h-[350px] object-cover object-center rounded-lg"
-          itemProp="image"
-        />
+  <Image
+    src={getFeaturedImage()}
+    alt={post.content.title}
+    className="w-full h-[350px] object-cover object-center rounded-lg"
+    itemProp="image"
+    loading="lazy"
+    quality={50} // Ab yeh bina kisi error ke perfect kaam karega!
+    width={800}  // Wrapper ke mutabiq munasib width aur height
+    height={350}
+    fetchPriority="low"
+
+  />
+
       </div>
       <div className="w-full lg:w-2/4 p-4">
         <h2 className="text-lg font-bold mt-2" itemProp="headline">

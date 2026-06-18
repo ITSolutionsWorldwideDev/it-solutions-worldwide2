@@ -9,8 +9,8 @@ const stats = [
 
 export default function StatsCards() {
   return (
-    <div className="min-h-[250px] container xl:max-w-[1200px] flex items-center justify-center">
-      <div className="flex flex-col sm:flex-row w-full justify-between text-white">
+<div className="min-h-[100px] container xl:max-w-[1200px] flex items-center justify-center py-6">
+        <div className="flex flex-col sm:flex-row w-full justify-between text-white">
         {stats.map((stat, index) => (
           <div
             key={stat.label}

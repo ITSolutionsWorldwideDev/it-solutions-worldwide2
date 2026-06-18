@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { industriesData } from "@/lib/commonData";
+import Image from 'next/image'; // Yeh import top par add karein
 
 type Rect = { top: number; left: number; width: number; height: number };
 
@@ -119,12 +120,17 @@ export default function IndustriesCards() {
                 }`}
               >
                 {/* Fixed Image Aspect Ratio Box */}
-                <div className="w-full aspect-[4/3] overflow-hidden bg-gray-50 relative shrink-0 border-b border-gray-50">
-                  <img
-                    src={slide.image}
-                    alt={slide.industry}
-                    className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
-                  />
+               <div className="w-full aspect-[4/3] overflow-hidden bg-gray-50 relative shrink-0 border-b border-gray-50">
+  <Image
+    src={slide.image}
+    alt={slide.industry}
+    className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
+    loading="lazy"
+    quality={20} // Ab yeh perfect kaam karega
+    width={800}  // Next.js Image ke liye width/height ya layout="fill" zaroori hai
+    height={600} 
+    fetchPriority="low"
+  />
                   <div className="absolute top-3 left-3 bg-white/80 backdrop-blur-md text-[#175864] font-extrabold text-[10px] px-2.5 py-1 rounded-full shadow-sm border border-white/40">
                     {slide.number}
                   </div>
@@ -199,6 +205,7 @@ export default function IndustriesCards() {
                 src={activeSlide.image}
                 alt={activeSlide.industry}
                 className="w-full h-full object-cover object-center"
+                loading="lazy"      
               />
               <div className="absolute top-4 left-4 bg-[#175864] text-white font-extrabold text-xs px-3 py-1.5 rounded-full shadow-md">
                 {activeSlide.number}

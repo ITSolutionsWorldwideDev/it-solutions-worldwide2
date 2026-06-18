@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { industriesData } from "@/lib/commonData";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -186,11 +187,16 @@ export default function PinnedProgressSection() {
           className="absolute inset-0 flex items-center justify-between"
         >
           <div className="image-container w-full md:w-1/2 h-2/5 md:h-full flex items-center justify-center z-20">
-            <img
-              src={slide.image}
-              alt={slide.industry}
-              className="w-full h-[90%] rounded object-cover"
-            />
+           <Image
+    src={slide.image}
+    alt={slide.industry}
+    className="w-full h-[90%] rounded object-cover"
+    loading="lazy"
+    quality={50}
+    fetchPriority="low"
+    width={600}  // Apne design ke mutabiq width dein
+    height={400} // Apne design ke mutabiq height dein
+  />
           </div>
           <div className="text-container w-full md:w-1/2 h-full flex flex-col items-start justify-center p-3 md:p-12 lg:pl-20 xl:pl-40 z-20">
             <h2 className="text-xl md:text-3xl 2xl:text-5xl font-bold mb-4">

@@ -78,6 +78,9 @@ export default function ClientSection() {
                     height={100}
                     alt={item.name}
                     className="rounded-full object-cover"
+                    loading="lazy"
+                    fetchPriority="low"
+                    quality={50}
                   />
                 </div>
               </div>

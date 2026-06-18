@@ -23,7 +23,9 @@ export default function ExpandingCards() {
                 alt={card.title}
                 fill
                 sizes="(max-width: 768px) 100vw, 350px"
-                quality={85}
+                quality={50}
+                fetchPriority="low"
+                loading="lazy"
                 className="object-cover object-center opacity-90 transition-transform duration-500 ease-out group-hover:scale-105 group-hover:opacity-100"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#175864]/40 to-transparent mix-blend-multiply" />

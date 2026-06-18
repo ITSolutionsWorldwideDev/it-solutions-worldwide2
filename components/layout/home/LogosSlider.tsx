@@ -14,9 +14,8 @@ export default function LogosSlider() {
   const [swiperRef, setSwiperRef] = useState<any>(null);
 
   return (
-    <div className="container w-full max-w-6xl md:px-5 mx-auto py-10 relative">
-      {/* Slider */}
-      <div className="relative z-10 mt-14 px-10 pb-20 mx-auto">
+ <div className="container w-full max-w-6xl md:px-5 mx-auto pb-10 relative">
+<div className="relative z-10 mt-8 px-10 pb-10 mx-auto">
         <Swiper
           modules={[Navigation, Autoplay]}
           onSwiper={setSwiperRef}
@@ -47,6 +46,9 @@ export default function LogosSlider() {
                   height={200}
                   alt={item.alt}
                   className="object-contain"
+                  loading="lazy"
+                  quality={20}
+                  fetchPriority="low"
                 />
               </div>
             </SwiperSlide>
@@ -81,12 +83,17 @@ export function ClientLogosSlider() {
         <div className="absolute top-0 left-0 w-16 md:w-32 h-full z-10 bg-gradient-to-r from-white via-transparent to-transparent" />
         <div className="inline-block animate-slide">
           {logosSlider.map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt={`logo-${index}`}
-              className="h-14 md:h-20 mx-4 md:mx-6 inline-block transition-transform duration-300 ease-in-out hover:scale-110 hover:drop-shadow-lg"
-            />
+         <Image
+  key={index}
+  src={src}
+  alt={`logo-${index}`}
+  className="h-14 md:h-20 w-auto mx-4 md:mx-6 inline-block transition-transform duration-300 ease-in-out hover:scale-110 hover:drop-shadow-lg"
+  quality={20}         // Logos ke liye 20 quality bilkul perfect hai, size bohot kam ho jayega
+  loading="lazy"
+  fetchPriority="low"
+  width={150}          // Ek safe/maximum aspect ratio ke liye width aur height broad de dein
+  height={80}          // 'w-auto' class height ke mutabiq width auto-adjust kar degi
+/>
           ))}
         </div>
 

@@ -44,7 +44,7 @@ useEffect(() => {
 
   return (
     <>
-      <nav className="relative z-10 flex items-center justify-between  pt-4 text-white 2xl:text-xl gap-5">{/* px-4 lg:px-8 py-5 */}
+<nav className="relative z-10 flex items-center justify-between px-4 lg:px-8 pt-4 text-white 2xl:text-xl gap-5">
         <div className="flex items-center space-x-2 w-32">
           {/* LOCALE FIX: logo link */}
           <Link href={`/${locale}/#hometop`}>

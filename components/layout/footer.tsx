@@ -9,8 +9,8 @@ export default function Footer() {
   const locale = params?.locale || "en"; // Agar locale nahi milta toh default 'en' par fallback karega
 
   return (
-    <footer className="bg-white py-12 sm:pt-16  text-center">
-      <div className=" container mx-auto ">
+<footer className="bg-white pb-12 pt-6 text-center">
+  <div className="container mx-auto px-4 lg:px-8">
         {/* Top section: 4 columns on md+ screens */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-12">
           {/* Column 1: Logo + Company Info + Social Icons */}
