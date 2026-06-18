@@ -24,10 +24,10 @@ import RegionsCards from "@/components/layout/home/RegionsCards";
 //   () => import("./PinnedProgressSection"),
 //   { ssr: false, loading: () => <div className="min-h-screen" /> }
 // );
-// const AnimatedGlobe = dynamic(() => import("./AnimatedGlobe"), {
-//   ssr: false,
-//   loading: () => <div className="min-h-[40rem] bg-[#175864]" />,
-// });
+const AnimatedGlobe = dynamic(() => import("./AnimatedGlobe"), {
+   ssr: false,
+   loading: () => <div className="min-h-[40rem] bg-[#175864]" />,
+ });
 
 // Logos slider — still uses Swiper, isolate it (kept as-is)
 const LogosSlider = dynamic(() => import("./LogosSlider"), {
@@ -37,7 +37,7 @@ const LogosSlider = dynamic(() => import("./LogosSlider"), {
 export default function AnimationArea() {
   return (
     <section className="relative z-10 w-full">
-      <div className="xl:max-h-fit container xl:max-w-[1200px] mx-auto text-center py-20">
+<div className="xl:max-h-fit container xl:max-w-[1200px] mx-auto text-center pt-20">
         {/* FIX: framer-motion's <motion.h2> replaced with a plain CSS
             fade-in. These were adding to the framer-motion bundle weight
             for a simple one-time fade that CSS handles natively. */}
@@ -67,7 +67,7 @@ export default function AnimationArea() {
         </div>
       </div>
 
-      <div className=" container xl:max-w-[1200px] mx-auto text-center py-20">
+<div className=" container xl:max-w-[1200px] mx-auto text-center pb-20">
         {/* ORIGINAL: <AnimatedList /> */}
         <HowWeWorkCards />
       </div>
@@ -88,7 +88,7 @@ export default function AnimationArea() {
       <IndustriesCards />
 
       {/* ORIGINAL: <AnimatedGlobe /> */}
-      <RegionsCards />
+      <AnimatedGlobe />
     </section>
   );
 }

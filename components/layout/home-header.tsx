@@ -59,6 +59,7 @@ export default function Header() {
         sizes="100vw"
         className="object-cover z-0"
         aria-hidden
+        
       />
 
       {showVideo && (

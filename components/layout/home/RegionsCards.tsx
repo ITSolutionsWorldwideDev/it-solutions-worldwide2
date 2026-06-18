@@ -3,7 +3,7 @@ import React from "react";
 
 export default function RegionsGlobe() {
   return (
-    <div className="w-full bg-[#175864] py-16 px-4 flex flex-col items-center justify-center relative z-10 min-h-[450px]">
+<div className="w-full bg-[#175864] pt-16 pb-20 px-4 flex flex-col items-center justify-center relative z-10 min-h-[450px]">
       <div className="max-w-5xl mx-auto w-full flex flex-col items-center justify-center">
         
         {/* Header Section */}

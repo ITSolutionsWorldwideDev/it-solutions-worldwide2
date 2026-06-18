@@ -10,7 +10,7 @@ export default function ExpandingCards() {
 
   return (
     <div className="w-full max-w-[1400px] mx-auto pt-6 pb-0 mb-0 px-4 sm:px-8 relative z-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full items-stretch">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-full items-stretch">
         {servicesData.map((card, index) => (
           <div
             key={index}

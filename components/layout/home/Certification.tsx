@@ -24,7 +24,7 @@ const certifications = [
 
 export default function Certifications() {
   return (
-    <div className="container xl:max-w-[1200px] md:px-5 mx-auto py-10 relative">
+<div className="container xl:max-w-[1200px] md:px-5 mx-auto pb-10 relative">
       <div className="flex justify-between items-center mb-6 px-4 pr-5 md:pr-0 md:px-0 relative">
         <div>
           <h2 className="text-teal-700 text-3xl font-bold">
@@ -34,7 +34,7 @@ export default function Certifications() {
       </div>
 
       {/* Static Icons Container: Hata diya loop aur scroll wala system */}
-      <div className="mt-10 flex flex-wrap items-center justify-center gap-10 md:gap-16 py-6">
+<div className="mt-10 flex flex-wrap items-center justify-center gap-10 md:gap-16 pb-6">
         {certifications.map((item, index) => (
           <div 
             key={index} 

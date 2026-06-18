@@ -15,7 +15,7 @@ interface ApiResponse {
   currentPage: number;
 }
 
-const PAGE_SIZE = 20;
+const PAGE_SIZE = 5;
 
 export default function BlogCarouselClient({ locale }: { locale: string; }) {
   const [activeIndex, setActiveIndex] = useState(0);
