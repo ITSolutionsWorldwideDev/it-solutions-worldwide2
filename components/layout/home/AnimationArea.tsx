@@ -24,15 +24,15 @@ import RegionsCards from "@/components/layout/home/RegionsCards";
 //   () => import("./PinnedProgressSection"),
 //   { ssr: false, loading: () => <div className="min-h-screen" /> }
 // );
-const AnimatedGlobe = dynamic(() => import("./AnimatedGlobe"), {
-ssr: false,
-   loading: () => <div className="min-h-[40rem] bg-[#175864]" />,
-});
+//const AnimatedGlobe = dynamic(() => import("./AnimatedGlobe"), {
+//ssr: false,
+   //loading: () => <div className="min-h-[40rem] bg-[#175864]" />,
+//});
 
 // Logos slider — still uses Swiper, isolate it (kept as-is)
-//const LogosSlider = dynamic(() => import("./LogosSlider"), {
-  //loading: () => <div className="min-h-[300px]" />,
-//});
+const LogosSlider = dynamic(() => import("./LogosSlider"), {
+  loading: () => <div className="min-h-[300px]" />,
+});
 
 export default function AnimationArea() {
   return (
@@ -88,7 +88,6 @@ export default function AnimationArea() {
       <IndustriesCards />
 
       {/* ORIGINAL: <AnimatedGlobe /> */}
-     
     </section>
   );
 }
