@@ -57,12 +57,12 @@ const FullContentSection = ({
       className="w-full lg:w-2/3 px-2 md:px-3 lg:px-0"
       style={{ backgroundColor: bgColor }}
     >
-      <h2
+      <h1
         className="text-3xl lg:text-3xl font-semibold mb-4"
         style={{ color: textColor }}
       >
         {heading}
-      </h2>
+      </h1>
       <span className="text-lg lg:text-lg" style={{ color: textColor }}>
         {text}
       </span>

@@ -46,11 +46,11 @@ export default function BlogCarouselClient({ locale }: { locale: string; }) {
       <div className="flex justify-between items-center mb-6 px-4 pr-5 md:pr-0 md:px-0 relative">
         <div>
           <p className="text-sm uppercase tracking-wider mb-2 text-gray-500">
-            Blogs
-          </p>
-          <h2 className="text-teal-700 text-3xl font-bold">
-            Stay Ahead With Insights And Trends
-          </h2>
+  Blogs
+</p>
+<p className="text-teal-700 text-3xl font-bold">
+  Stay Ahead With Insights And Trends
+</p>
         </div>
       </div>
 

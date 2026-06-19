@@ -18,9 +18,9 @@ export default function StatsCards() {
               index > 0 ? "border-t sm:border-t-0 sm:border-l border-gray-300" : ""
             }`}
           >
-            <h2 className="md:text-3xl text-xl mb-2 font-bold">
-              {stat.value}
-            </h2>
+           <p className="md:text-3xl text-xl mb-2 font-bold">
+  {stat.value}
+</p>
             <p className="text-lg md:text-base sm:text-sm mb-2">
               {stat.label}
             </p>
