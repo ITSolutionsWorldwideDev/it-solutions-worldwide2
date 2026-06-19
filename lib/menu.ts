@@ -11,27 +11,48 @@ export const menuItems: MenuItem[] = [
     link: "/about-us",
   },
   
-  {
-    label: "Business Transformation",
-    link: "/scm-services",
-    dropdown: [
-      { label: "SCM Consultancy", link: "/scm-services/scm-consultancy" },
-      {
-        label: "Business Consultancy",
-        link: "/scm-services/business-consultancy",
-      },
-      {
-        label: "Supply Chain Performance Check",
-        link: "/scm-services/supply-chain-performance-check",
-      },
-      { label: "Automation Services", link: "/it-support/automation-services" },
-      { label: "ERP-Implementation", link: "/it-support/erp-implementation" },
-      {
-        label: "Smart Warehouse Solutions",
-        link: "/logistics/smart-warehouse-solutions",
-      },
-    ],
-  },
+ {
+  label: "Business Transformation",
+  link: "/business-transformation",
+  dropdown: [
+    {
+      label: "SCM Services",
+      link: "/scm-services",
+      dropdown: [
+        {
+          label: "SCM Consultancy",
+          link: "/scm-services/scm-consultancy",
+        },
+        {
+          label: "Business Consultancy",
+          link: "/scm-services/business-consultancy",
+        },
+        {
+          label: "Supply Chain Performance Check",
+          link: "/scm-services/supply-chain-performance-check",
+        },
+      ],
+    },
+    {
+      label: "IT Support",
+      link: "/it-support",
+      dropdown: [
+        {
+          label: "Automation Services",
+          link: "/it-support/automation-services",
+        },
+        {
+          label: "ERP-Implementation",
+          link: "/it-support/erp-implementation",
+        },
+      ],
+    },
+    {
+      label: "Smart Warehouse Solutions",
+      link: "/logistics/smart-warehouse-solutions",
+    },
+  ],
+},
   {
     label: "Digital Services",
     link: "/digital-services",
