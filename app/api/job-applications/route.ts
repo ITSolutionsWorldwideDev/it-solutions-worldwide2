@@ -73,6 +73,59 @@ export async function POST(req: NextRequest) {
 
     const result = await pool.query(query, values);
     const applicationId = result.rows?.[0]?.job_applications_id;
+
+    const HR_BACKEND_API_BASE_URL =
+  process.env.HR_BACKEND_API_BASE_URL ||
+  "https://it-solution-code-hr-app-backend.vercel.app/api";
+
+  const hrFormData = new FormData();
+    hrFormData.append("file", resumeFile, safeFileName);
+    hrFormData.append("candidate_email", email);
+    hrFormData.append("candidate_name", name);
+    hrFormData.append("candidate_phone", phone);
+    hrFormData.append("address", address || "");
+    hrFormData.append("how_did_you_hear", hear || "");
+    hrFormData.append("cover_letter", message || "");
+    hrFormData.append("source_label", "website_job_apply");
+ 
+    if (job_category_id) {
+      hrFormData.append("vacancy_id", job_category_id);
+    }
+ 
+    const hrResponse = await fetch(
+      `${HR_BACKEND_API_BASE_URL}/applications/public-submit`,
+      {
+        method: "POST",
+        body: hrFormData,
+      }
+    );
+ 
+    const hrResponseText = await hrResponse.text();
+    let hrPayload: any = null;
+ 
+    try {
+      hrPayload = hrResponseText ? JSON.parse(hrResponseText) : null;
+    } catch {
+      hrPayload = { raw: hrResponseText };
+    }
+ 
+    if (!hrResponse.ok) {
+      console.error("HR backend forwarding failed", {
+        status: hrResponse.status,
+        body: hrPayload,
+        legacy_job_application_id: applicationId,
+      });
+ 
+      return NextResponse.json(
+        {
+          error: "Application stored on website, but HR sync failed.",
+          legacy_job_application_id: applicationId,
+          hr_error: hrPayload,
+        },
+        { status: 502 }
+      );
+    }
+
     /* const query = `
       INSERT INTO job_applications
       (name, email, phone, address, hear, message, job_category_id, job_category, resume_filename, resume_mime, resume_data)
@@ -161,10 +214,17 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail(applicantMail);
     await transporter.sendMail(hrMail);
 
+    // return NextResponse.json({
+    //   message: "Application submitted successfully!",
+    //   job_applications_id: applicationId,
+    // });
+
     return NextResponse.json({
       message: "Application submitted successfully!",
-      job_applications_id: applicationId,
+      legacy_job_application_id: applicationId,
+      talent_genie: hrPayload,
     });
+    
   } catch (err: any) {
     console.error(err);
     return NextResponse.json(

@@ -3151,5 +3151,124 @@
   "notfound": {
     "homeButton": "Back Home",
     "message": "Page is Unavailable"
+  },
+
+
+
+
+  "outsource-hire-data-engineer": {
+    "badge": "✦ Save up to 60%",
+    "hero": {
+      "title": "Hire a Dedicated Data Engineer",
+      "line2": "in Netherlands",
+      "description": "Your business is generating data every day. The question is whether you are using it — or losing value because the infrastructure is not there to support it. IT Solutions Worldwide helps businesses, startups, and scale-ups in the Netherlands hire dedicated data engineers who build reliable pipelines, warehouses, and analytics infrastructure so your team can make faster, smarter decisions."
+    },
+    "seo": {
+      "title": "Hire Data Engineers Netherlands | Data Engineering Outsourcing Services",
+      "description": "Hire dedicated data engineers in the Netherlands for data pipelines, warehousing, BI dashboards, AWS, Azure, and analytics infrastructure. Save up to 60% with IT Solutions Worldwide"
+    },
+    "section2": {
+      "heading": "Hire a Data Engineer in the Netherlands Trusted by Data-Driven Businesses Looking to Scale Faster"
+    },
+    "challenges": {
+      "heading": "Is Messy or Unusable Data Slowing Your Business Down?",
+      "subheading": "Many growing companies in the Netherlands reach a point where spreadsheets do not scale, reports take too long, and decision-making suffers because the data infrastructure is broken or missing entirely.",
+      "title": "Common challenges businesses face:",
+      "items": [
+        "No centralised data pipeline — data sits in silos across different tools and platforms",
+        "Inconsistent or unreliable reporting — teams make decisions based on inaccurate numbers",
+        "No real-time analytics capability — you are always looking at yesterday's data",
+        "High cost of senior local data engineers — salaries in the Netherlands are among the highest in Europe",
+        "Slow internal hiring cycles — finding the right engineer takes months, not weeks",
+        "Data scattered across tools and platforms — no single source of truth for your business"
+      ],
+      "conclusion": "That is why businesses choose to hire data engineers through IT Solutions Worldwide. You get experienced, dedicated talent without the overhead, delay, or recruitment cost.",
+      "cta": "Hire a Data Engineer Today →",
+      "image": "/assets/images/image_3cdc1d.jpg"
+    },
+    "build": {
+      "heading": "What Our Data Engineers Can Build and Manage",
+      "subheading": "Our dedicated data engineers are trained professionals who can support your business data infrastructure, pipeline development, and analytics needs immediately.",
+      "cards": [
+        { "icon": "pipeline", "title": "Data Pipelines 🔵", "bgColor": "#E2F1F8", "features": ["ETL and ELT pipeline design and development", "Real-time and batch data processing", "API and third-party data ingestion", "Automated data workflow management", "Pipeline monitoring and alerting setup"] },
+        { "icon": "warehouse", "title": "Data Warehousing 🟢", "bgColor": "#E4F5EE", "features": ["Cloud data warehouse setup (BigQuery, Snowflake, Redshift)", "Data modelling and schema design", "Historical data migration and management", "Data lake architecture design", "Multi-source data integration"] },
+        { "icon": "analytics", "title": "Analytics & Reporting Infrastructure 🟠", "bgColor": "#FDF0EB", "features": ["BI tool integration (Looker, Power BI, Tableau, Metabase)", "Dashboard and KPI reporting system builds", "Self-service analytics environment setup", "Data quality monitoring and validation", "Automated reporting pipeline development"] },
+        { "icon": "database", "title": "Database Management 🟣", "bgColor": "#F3E8FF", "features": ["PostgreSQL, MySQL, and MongoDB administration", "Query optimisation and performance tuning", "Database maintenance, scaling, and monitoring", "Backup and disaster recovery setup", "Database security and access management"] },
+        { "icon": "cloud", "title": "Cloud Data Infrastructure 🔷", "bgColor": "#E0F2FE", "features": ["AWS, Google Cloud, and Azure data services", "Infrastructure as Code with Terraform", "Cloud cost optimisation and governance", "Security, compliance, and data privacy setup", "Scalable and fault-tolerant architecture design"] },
+        { "icon": "bi", "title": "BI Tool Integration & Support 🟡", "bgColor": "#FEF9C3", "features": ["Power BI and Tableau data source connection", "Looker and Metabase setup and management", "Dashboard performance optimisation", "Data model development for BI layers", "Ongoing BI tool support and maintenance"] }
+      ]
+    },
+    "techstack": {
+      "heading": "Technologies Our Data Engineers Work With",
+      "subheading": "Our engineers are proficient across the full modern data stack — from ingestion to visualisation.",
+      "line1": ["Python", "SQL", "dbt", "Apache Spark", "Apache Airflow", "Apache Kafka", "BigQuery", "Snowflake", "AWS Redshift", "PostgreSQL", "MySQL", "MongoDB"],
+      "line2": ["Elasticsearch", "Power BI", "Tableau", "Looker", "Metabase", "AWS", "Google Cloud Platform", "Microsoft Azure", "Terraform", "Docker", "Kubernetes", "Databricks", "Pandas", "PySpark"]
+    },
+    "industry": {
+      "heading": "Data Engineers for Every Industry",
+      "subheading": "We match you with data engineers who have relevant experience in your sector — not just technical skills.",
+      "cards": [
+        { "icon": "ecommerce", "title": "Ecommerce & Retail 🛒", "description": "Sales analytics pipelines, customer behaviour data infrastructure, inventory reporting systems, and multi-channel data consolidation for online and offline retail operations." },
+        { "icon": "finance", "title": "Finance & Fintech 💹", "description": "Regulatory and compliance reporting pipelines, real-time transaction data systems, fraud detection infrastructure, and financial KPI reporting environments." },
+        { "icon": "saas", "title": "SaaS & Technology 💻", "description": "Product analytics and usage tracking pipelines, customer health score infrastructure, feature adoption reporting, and data-driven product development support." },
+        { "icon": "healthcare", "title": "Healthcare & Life Sciences 🏥", "description": "Patient data pipelines with compliance-ready architecture, clinical reporting systems, research data infrastructure, and GDPR-compliant data handling for healthcare organisations." },
+        { "icon": "logistics", "title": "Logistics & Supply Chain 🚚", "description": "Operational data platforms, route and delivery analytics, supplier and vendor data consolidation, real-time tracking data integration, and performance reporting systems." },
+        { "icon": "marketing", "title": "Marketing & Media 📣", "description": "Campaign performance pipelines, multi-channel attribution modelling, audience data infrastructure, content performance reporting, and marketing analytics environments." }
+      ]
+    },
+    "process": {
+      "heading": "How to Hire a Data Engineer in Netherlands",
+      "cta": "Book Free Consultation →",
+      "steps": [
+        { "number": 1, "title": "Share Your Requirements", "description": "Tell us about your data stack, the tools you currently use, your goals, and what you need to build or fix. No technical brief required — we guide the conversation." },
+        { "number": 2, "title": "We Match You With an Engineer", "description": "We shortlist vetted data engineers based on your technical requirements, industry, and project scope. You review and choose." },
+        { "number": 3, "title": "Start Work Quickly", "description": "Your selected engineer is onboarded and begins contributing within days — not weeks or months." },
+        { "number": 4, "title": "Ongoing Support", "description": "We remain available throughout the engagement for communication, quality assurance, scaling, and any adjustments you need." }
+      ]
+    },
+    "whyChoose": {
+      "heading": "Why Choose IT Solutions Worldwide",
+      "subheading": "We do more than connect you with a developer. We provide dedicated engineering talent backed by professional support, clear communication, and reliable delivery.",
+      "cards": [
+        { "title": "Pre-vetted data engineers", "description": "every engineer is technically assessed before placement" },
+        { "title": "Industry-relevant matching", "description": "we match on sector experience, not just skills" },
+        { "title": "Fast onboarding", "description": "most engagements start within days of your consultation" },
+        { "title": "Scalable team options", "description": "start with one engineer, scale to a team as you grow" },
+        { "title": "Flexible engagement models", "description": "part-time, full-time, or dedicated team" },
+        { "title": "Ongoing managed support", "description": "we stay involved throughout your engagement" },
+        { "title": "Clear communication", "description": "regular updates, transparent reporting, no surprises" },
+        { "title": "Reliable delivery", "description": "engineers are accountable to milestones and your goals" }
+      ]
+    },
+    "faq": {
+      "questions": [
+        { "q": "How do I hire a data engineer in the Netherlands?", "a": "Contact us for a free consultation. We will learn about your data environment, current stack, and goals — then match you with a vetted data engineer who fits your needs. Most clients are matched and started within a few days." },
+        { "q": "What tools and technologies do your data engineers use?", "a": "Our engineers work with Python, SQL, dbt, Apache Spark, Apache Airflow, Kafka, BigQuery, Snowflake, AWS Redshift, PostgreSQL, MySQL, MongoDB, Power BI, Tableau, Looker, Metabase, AWS, Google Cloud, Microsoft Azure, Terraform, Docker, Kubernetes, and more." },
+        { "q": "How quickly can we start?", "a": "Most clients begin within a few days of completing the initial requirements discussion. We move fast because we maintain a pool of vetted, available engineers at all times." },
+        { "q": "Is outsourcing a data engineer cheaper than hiring locally?", "a": "Significantly. Senior data engineers in the Netherlands command high salaries — often between €70,000 and €110,000 per year plus benefits and overhead. Our flexible plans offer a fraction of that total cost with no long-term commitment." },
+        { "q": "What is the difference between a data engineer and a data analyst?", "a": "A data engineer builds and maintains the infrastructure — pipelines, warehouses, and data systems that make data accessible and reliable. A data analyst uses that infrastructure to interpret data and produce insights. If your data is not yet structured or accessible, a data engineer is the right first hire." },
+        { "q": "Can a data engineer work with our existing tools and platforms?", "a": "Yes. Our engineers assess your current stack during onboarding and work within your existing environment — whether that includes specific cloud platforms, databases, BI tools, or third-party integrations already in place." },
+        { "q": "Do I need a full-time or part-time data engineer?", "a": "It depends on your project scope. If you are building infrastructure from scratch or scaling rapidly, full-time is recommended. For audits, fixes, or smaller pipeline projects, part-time works well. We help you decide the right model during your free consultation at no cost." },
+        { "q": "Can I hire for a short-term project?", "a": "Yes. We support short-term, project-based, and long-term ongoing engagements. There is no minimum commitment requirement beyond the initial plan period." },
+        { "q": "Is my data secure when working with a remote data engineer?", "a": "Yes. We require NDAs and data handling agreements before any engineer begins work. Access is granted based on the principle of least privilege, and all engineers follow your security policies, GDPR requirements, and compliance standards." },
+        { "q": "Will my data engineer understand our business context?", "a": "Yes. We match engineers based on both technical skills and industry familiarity. During the consultation we gather enough context to ensure the engineer we recommend has relevant sector experience — not just technical qualifications." }
+      ]
+    },
+    "related": {
+      "heading": "Related Services You Might Need",
+      "subheading": "Explore other dedicated specialists available through IT Solutions Worldwide.",
+      "cards": [
+        { "icon": "dataAnalyst", "title": "Hire a Data Analyst", "description": "Turn your data infrastructure into actionable business insights with a dedicated data analyst. → Learn More" },
+        { "icon": "biTool", "title": "Hire a Power BI & Tableau Specialist", "description": "Build interactive dashboards and automated reports on top of your data infrastructure. → Learn More" },
+        { "icon": "aiEngineer", "title": "Hire an AI Engineer", "description": "Take your data further with machine learning models, LLM integration, and AI automation. → Learn More" },
+        { "icon": "fullStack", "title": "Hire a Full Stack Developer", "description": "Build the web applications and interfaces that connect to and display your data. → Learn More" }
+      ]
+    }
   }
+
+
+  
+
+
+
 }
