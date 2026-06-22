@@ -51,11 +51,11 @@ const HeroSectionAdvanced = ({
       {/* Main Content Box Wrapper */}
       <div className="max-w-5xl w-full flex flex-col items-center relative z-10 text-center px-4 sm:px-6 lg:px-8">
         
-        {/* Pill Badge Tag */}
+       {/* Pill Badge Tag - Added automatic star cleaner */}
         <div className="inline-flex items-center gap-1.5 rounded-full border border-[#cbe7eb] bg-[#e6f4f6]/80 px-4 py-1 mb-8 shadow-sm">
           <Zap size={13} strokeWidth={2.5} className="fill-current opacity-90" style={{ color: "#1b8991" }} />
           <span className="text-[13px] font-semibold tracking-wide" style={{ color: "#1b8991" }}>
-            {badgeText}
+            {typeof badgeText === "string" ? badgeText.replace(/[✦★⭐✦]/g, "").trim() : badgeText}
           </span>
         </div>
 
@@ -122,31 +122,29 @@ const HeroSectionAdvanced = ({
         </div>
       </div>
 
-      {/* Trust Ribbon Bar — Completely detached from the bottom text labels */}
+     {/* Trust Ribbon Bar — Clean layout with single icon representation */}
       <div 
         className="w-full py-4 flex items-center justify-center border-t border-white/10 relative z-10"
         style={{ background: exactGradient }}
       >
         <div className="max-w-5xl w-full flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 px-4 text-center text-white text-[13px] sm:text-[14px] font-medium tracking-wide">
           
-          {/* Main Trust Statement */}
+          {/* Main Trust Statement (Icon retained here) */}
           <div className="flex items-center gap-2">
             <Check size={15} strokeWidth={3} className="text-white shrink-0" />
             <span>Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands</span>
           </div>
 
-          {/* Separation Pipeline Hidden on Mobile */}
+          {/* Separation Pipeline */}
           <span className="hidden sm:inline text-white/40 font-light">|</span>
 
-          {/* Cleaned Pre-Vetted Professionals Text without Star Elements */}
+          {/* Clean Text Block (Icon removed completely from here) */}
           <div className="flex items-center gap-2">
-            <Check size={15} strokeWidth={3} className="text-white shrink-0" />
             <span>Pre-Vetted Professionals</span>
           </div>
 
         </div>
       </div>
-
     </section>
   );
 };
