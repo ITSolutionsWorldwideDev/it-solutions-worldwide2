@@ -12,32 +12,47 @@ type SectionWhyChooseProps = {
 };
 
 export default function SectionWhyChoose({
-  heading = "",
-  subheading = "",
-  cards = [],
+  heading,
+  subheading,
+  cards,
 }: SectionWhyChooseProps) {
-  if (!heading && cards.length === 0) return null;
+  // ── Robust Data Normalization ──────────────────────────────────────────────
+  const finalHeading = heading || "Why Businesses Choose Our Resource Extensions";
+  const finalSubheading = subheading || "We marry production efficiency with robust service quality validation metrics.";
+  
+  const fallbackCards: WhyChooseCard[] = [
+    { title: "Rapid Scale", description: "Onboard talent within days instead of weeks." },
+    { title: "Cost Efficiency", description: "Reduce administrative overhead expenditure by up to 60%." },
+    { title: "Pre-Vetted Network", description: "Access strictly validated software and operations experts." },
+    { title: "Dedicated Talent", description: "Professionals work aligned directly within your internal business schedules." }
+  ];
+
+  const finalCards = Array.isArray(cards) && cards.length > 0 ? cards : fallbackCards;
 
   return (
     <section className="py-20 px-6 bg-white font-sans w-full">
       <div className="max-w-7xl mx-auto">
+        
+        {/* Header Block */}
         <div className="text-center mb-12 max-w-4xl mx-auto">
-          {heading && (
-            <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mb-4">
-              {heading}
-            </h2>
-          )}
-
-          {subheading && (
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mb-4">
+            {finalHeading}
+          </h2>
+          {finalSubheading && (
             <p className="text-[#334155] text-base md:text-lg leading-relaxed font-medium">
-              {subheading}
+              {finalSubheading}
             </p>
           )}
         </div>
 
-        {cards.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {cards.map((card, idx) => (
+        {/* Dynamic Card Grids */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {finalCards.map((card, idx) => {
+            // Safety normalize keys if raw structural variations slide through properties
+            const cardTitle = card.title || "";
+            const cardDesc = card.description || "";
+
+            return (
               <div
                 key={idx}
                 style={{
@@ -63,14 +78,15 @@ export default function SectionWhyChoose({
 
                 <div className="text-sm leading-relaxed text-[#334155]">
                   <strong className="font-bold text-[#0F172A]">
-                    {card.title}
+                    {cardTitle}
                   </strong>{" "}
-                  — {card.description}
+                  {cardDesc && `— ${cardDesc}`}
                 </div>
               </div>
-            ))}
-          </div>
-        )}
+            );
+          })}
+        </div>
+        
       </div>
     </section>
   );

@@ -83,25 +83,32 @@ export default async function Page({ params }: Props) {
   const content: any = rawContentObject ?? {};
   const humanReadableRole = cleanSlugToTitle(slug);
 
-  // ============================================
-  // HERO SECTION
-  // ============================================
-  const heroBadge = content?.badge ?? "✦ Pre-Vetted Professionals";
-  const heroTitle = content?.h1 ?? `Hire a Dedicated ${humanReadableRole}`;
-  const heroDescription = content?.subtext ?? `Scale your operations with dedicated ${humanReadableRole.toLowerCase()}s.`;
+ // ============================================
+// HERO SECTION
+// ============================================
+// Star symbol ko completely hata kar "Save up to 60%" text set kar diya hai
+const heroBadge = content?.badge ?? "Save up to 60%";
+const heroTitle = content?.h1 ?? `Hire a Dedicated ${humanReadableRole}`;
+const heroDescription = content?.subtext ?? `Scale your operations with dedicated ${humanReadableRole.toLowerCase()}s.`;
 
   // ============================================
   // SECTION 3 (CHALLENGES)
   // ============================================
-  // Your JSON uses: challenges.h2, challenges.intro, challenges.list
   const section3Heading = content?.challenges?.h2 ?? "Overcome operational resource bottlenecks immediately";
   const section3Subheading = content?.challenges?.intro ?? "Many organizations experience delays while sourcing talent locally.";
   const section3ChallengeTitle = content?.challenges?.h2 ?? "Key hurdles businesses routinely navigate:";
-  const section3Challenges = Array.isArray(content?.challenges?.list) ? content.challenges.list : [
-    "High recruitment cycles dragging team implementation velocity",
-    "Onboarding challenges related to variable standard procedures",
-    "High operational overhead margins impacting project cost scales"
-  ];
+  
+  // Handles .list or .items
+  const section3Challenges = Array.isArray(content?.challenges?.list)
+    ? content.challenges.list
+    : Array.isArray(content?.challenges?.items)
+    ? content.challenges.items
+    : [
+        "High recruitment cycles dragging team implementation velocity",
+        "Onboarding challenges related to variable standard procedures",
+        "High operational overhead margins impacting project cost scales"
+      ];
+      
   const section3Conclusion = content?.challenges?.conclusion ?? "Our custom staffing models eliminate administrative friction.";
   const section3CtaText = content?.challenges?.cta ?? "Get Started Instantly →";
   const section3ImageSrc = content?.challenges?.image ?? "/assets/images/image_3cdc1d.jpg";
@@ -109,7 +116,6 @@ export default async function Page({ params }: Props) {
   // ============================================
   // BUILD & MANAGE
   // ============================================
-  // Your JSON uses: build.h2, build.subtitle, build.cards
   const buildHeading = content?.build?.h2 ?? "Core Responsibilities Handled";
   const buildSubheading = content?.build?.subtitle ?? "Engineered to deliver high accountability standards across routine assignments.";
   const buildCards = Array.isArray(content?.build?.cards) ? content.build.cards : [];
@@ -117,10 +123,14 @@ export default async function Page({ params }: Props) {
   // ============================================
   // TECH STACK
   // ============================================
-  // Your JSON uses: techstack.h2, techstack.subtitle, techstack.pills
+  // Handles explicit .pills array or concatenated fallback fields (.line1 / .line2)
   const techHeading = content?.techstack?.h2 ?? "Core Platform and Technical Competencies";
   const techSubheading = content?.techstack?.subtitle ?? "Experienced across major digital toolsets.";
-  const techPills = Array.isArray(content?.techstack?.pills) ? content.techstack.pills : [];
+  
+  const techPills = Array.isArray(content?.techstack?.pills)
+    ? content.techstack.pills
+    : [...(content?.techstack?.line1 || []), ...(content?.techstack?.line2 || [])];
+    
   const midPoint = Math.ceil(techPills.length / 2);
   const techLine1 = techPills.slice(0, midPoint);
   const techLine2 = techPills.slice(midPoint);
@@ -128,24 +138,34 @@ export default async function Page({ params }: Props) {
   // ============================================
   // INDUSTRY FOCUS
   // ============================================
-  // Your JSON uses: industry.h2, industry.subtitle, industry.cards
+  // Maps schema property shapes to ensure `desc` fallback works seamlessly
   const industryHeading = content?.industry?.h2 ?? "Domain Capabilities Integrated Across Key Sectors";
   const industrySubheading = content?.industry?.subtitle ?? "Adapting execution rules to conform perfectly with specific business environments.";
-  const industryCards = Array.isArray(content?.industry?.cards) ? content.industry.cards : [];
+  
+  const industryCards = Array.isArray(content?.industry?.cards)
+    ? content.industry.cards.map((c: any) => ({ ...c, desc: c.desc || c.description }))
+    : [];
 
   // ============================================
   // HIRING PROCESS
   // ============================================
-  // Your JSON uses: process.h2, process.steps, process.cta
+  // Supports both Array<string> split schemas and direct structured Array<object> schemas
   const processHeading = content?.process?.h2 ?? "Our Seamless Deployment Timeline";
   
-  const processSteps = Array.isArray(content?.process?.steps) 
-    ? content.process.steps.map((text: string, idx: number) => {
-        const parts = text.split(/[:—]/);
+  const processSteps = Array.isArray(content?.process?.steps)
+    ? content.process.steps.map((step: any, idx: number) => {
+        if (typeof step === "string") {
+          const parts = step.split(/[:—]/);
+          return {
+            number: idx + 1,
+            title: parts[0]?.trim() || `Step ${idx + 1}`,
+            description: parts.slice(1).join(" ").trim() || step
+          };
+        }
         return {
-          number: idx + 1,
-          title: parts[0]?.trim() || `Step ${idx + 1}`,
-          description: parts.slice(1).join(" ").trim() || text
+          number: step.number || idx + 1,
+          title: step.title || `Step ${idx + 1}`,
+          description: step.description || ""
         };
       })
     : [
@@ -159,16 +179,23 @@ export default async function Page({ params }: Props) {
   // ============================================
   // WHY CHOOSE
   // ============================================
-  // Your JSON uses: why_choose.h2, why_choose.subtitle, why_choose.points
-  const whyHeading = content?.why_choose?.h2 ?? "Why Businesses Choose Our Resource Extensions";
-  const whySubheading = content?.why_choose?.subtitle ?? "We marry production efficiency with robust service quality validation metrics.";
+  // Resolves key differences (why_choose.points vs whyChoose.cards) and types safely
+  const whyHeading = content?.why_choose?.h2 ?? content?.whyChoose?.h2 ?? "Why Businesses Choose Our Resource Extensions";
+  const whySubheading = content?.why_choose?.subtitle ?? content?.whyChoose?.subtitle ?? "We marry production efficiency with robust service quality validation metrics.";
   
-  const whyCards = Array.isArray(content?.why_choose?.points) 
-    ? content.why_choose.points.map((text: string, idx: number) => {
-        const parts = text.split(/[:—]/);
+  const rawWhyPoints = content?.why_choose?.points || content?.whyChoose?.cards;
+  const whyCards = Array.isArray(rawWhyPoints)
+    ? rawWhyPoints.map((item: any, idx: number) => {
+        if (typeof item === "string") {
+          const parts = item.split(/[:—]/);
+          return {
+            title: parts[0]?.trim() || `Benefit ${idx + 1}`,
+            description: parts.slice(1).join(" ").trim() || item
+          };
+        }
         return {
-          title: parts[0]?.trim() || `Benefit ${idx + 1}`,
-          description: parts.slice(1).join(" ").trim() || text
+          title: item.title || `Benefit ${idx + 1}`,
+          description: item.description || ""
         };
       })
     : [];
@@ -176,15 +203,19 @@ export default async function Page({ params }: Props) {
   // ============================================
   // RELATED SERVICES
   // ============================================
-  // Your JSON uses: related_services.h2, related_services.subtitle, related_services.cards
-  const relatedHeading = content?.related_services?.h2 ?? "Explore Complementary Support Verticals";
-  const relatedSubheading = content?.related_services?.subtitle ?? "Further expand efficiency loops by combining related specialized workflows.";
-  const relatedCards = Array.isArray(content?.related_services?.cards) ? content.related_services.cards : [];
+  // Resolves schema key differences (`related_services` vs `related`)
+  const relatedHeading = content?.related_services?.h2 ?? content?.related?.h2 ?? "Explore Complementary Support Verticals";
+  const relatedSubheading = content?.related_services?.subtitle ?? content?.related?.subtitle ?? "Further expand efficiency loops by combining related specialized workflows.";
+  
+  const relatedCards = Array.isArray(content?.related_services?.cards)
+    ? content.related_services.cards
+    : Array.isArray(content?.related?.cards)
+    ? content.related.cards
+    : [];
 
   // ============================================
   // FAQ
   // ============================================
-  // Your JSON uses: faq.questions
   const mappedFaqData = Array.isArray(content?.faq?.questions) ? content.faq.questions : [];
 
   // ============================================
@@ -196,7 +227,6 @@ export default async function Page({ params }: Props) {
   // ============================================
   // READY CTA
   // ============================================
-  // Your JSON uses: final_cta.h2, final_cta.subtitle, final_cta.buttons, final_cta.trust_points
   const readyHeading = content?.final_cta?.h2 ?? `Ready to Hire a Dedicated ${humanReadableRole} in Netherlands?`;
   const readySubheading = content?.final_cta?.subtitle ?? "Stop letting operational gaps slow your business down.";
   const readyPrimaryCta = content?.final_cta?.buttons?.primary ?? "Book Free Consultation →";
@@ -226,15 +256,15 @@ export default async function Page({ params }: Props) {
 
   return (
     <div>
-      <HeroSectionAdvanced
-        badgeText={heroBadge}
-        headingLine1={heroTitle}
-        headingLine2="Ready to Deploy"
-        description={heroDescription}
-        primaryButtonText="Book Free Consultation →"
-        secondaryButtonText="Get Pricing Today"
-        stats={dummyStats}
-      />
+     <HeroSectionAdvanced
+  badgeText={heroBadge}
+  headingLine1={heroTitle}
+  headingLine2="" // <--- "Ready to Deploy" ko hata kar empty kar diya
+  description={heroDescription}
+  primaryButtonText="Book Free Consultation →"
+  secondaryButtonText="Get Pricing Today"
+  stats={dummyStats}
+/>
 
       <Section2 heading={`Hire specialized ${humanReadableRole} talents trusted by top companies.`} slug={slug} />
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Zap, Play, ArrowRight, Check, Star } from "lucide-react";
+import { Zap, Play, ArrowRight, Check } from "lucide-react";
 
 interface Stat {
   value: string;
@@ -129,7 +129,7 @@ const HeroSectionAdvanced = ({
       >
         <div className="max-w-5xl w-full flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 px-4 text-center text-white text-[13px] sm:text-[14px] font-medium tracking-wide">
           
-          {/* Left Text with Checkmark */}
+          {/* Main Trust Statement */}
           <div className="flex items-center gap-2">
             <Check size={15} strokeWidth={3} className="text-white shrink-0" />
             <span>Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands</span>
@@ -138,11 +138,10 @@ const HeroSectionAdvanced = ({
           {/* Separation Pipeline Hidden on Mobile */}
           <span className="hidden sm:inline text-white/40 font-light">|</span>
 
-          {/* Right Text with Star Rating */}
-          <div className="flex items-center gap-1.5">
-            <Star size={15} strokeWidth={0} className="fill-amber-400 text-amber-400 shrink-0" />
-            <span className="font-semibold text-white">4.x</span>
-            <span className="text-white/90 text-xs sm:text-[13px]">(xxx Reviews)</span>
+          {/* Cleaned Pre-Vetted Professionals Text without Star Elements */}
+          <div className="flex items-center gap-2">
+            <Check size={15} strokeWidth={3} className="text-white shrink-0" />
+            <span>Pre-Vetted Professionals</span>
           </div>
 
         </div>
