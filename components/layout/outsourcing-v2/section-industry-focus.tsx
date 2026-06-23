@@ -64,7 +64,7 @@ export default function SectionIndustryFocus({
   const finalCards = Array.isArray(cards) && cards.length > 0 ? cards : fallbackCards;
 
   return (
-    <section className="py-16 px-4 bg-white font-sans w-full">
+    <section className="pt-6 pb-16 px-4 bg-white font-sans w-full">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
           {finalHeading}

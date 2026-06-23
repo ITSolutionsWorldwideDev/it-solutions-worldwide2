@@ -81,10 +81,11 @@ export default async function Page(props: Props) {
     a: string;
   };
 
-  const faqData = t("outsourcing.faq.questions", {
-    returnObjects: true,
-  }) as FAQItem[];
+const rawFaqData = t("outsourcing.faq.questions", {
+  returnObjects: true,
+});
 
+const faqData: FAQItem[] = Array.isArray(rawFaqData) ? rawFaqData : [];
   // console.log(faqData);
 
   // const questions = faqData.map((item: FAQItem) => ({

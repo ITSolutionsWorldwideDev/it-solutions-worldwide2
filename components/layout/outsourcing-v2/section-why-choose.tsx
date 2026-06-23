@@ -56,8 +56,8 @@ export default function SectionWhyChoose({
               <div
                 key={idx}
                 style={{
-                  backgroundColor: "#EAF6FF",
-                  border: "1px solid #B6DCFF",
+                  backgroundColor: "#D6F9FA",
+                  border: "1.5px solid #6FD8DB",
                 }}
                 className="rounded-2xl p-6 flex items-start gap-4 shadow-sm min-h-[140px]"
               >

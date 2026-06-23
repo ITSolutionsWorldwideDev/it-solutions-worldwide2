@@ -42,11 +42,11 @@ const HeroSectionAdvanced = ({
       className="relative w-full overflow-hidden pt-16 flex flex-col items-center justify-center"
       style={{
         background:
-          "linear-gradient(135deg, #ffffff 0%, #f2fafb 40%, #e6f4f6 75%, #f4fafb 100%)",
+          "linear-gradient(90deg, #ffffff 0%, #ffffff 35%, #eef8f9 60%, #d9eef0 85%, #cbe8eb 100%)",
       }}
     >
-      {/* Background glow matching the screenshots */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_50%,rgba(216,233,235,0.5),transparent_50%)] pointer-events-none" />
+      {/* Background glow matching the screenshot - soft radial on right side */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_60%,rgba(176,221,224,0.6),transparent_55%)] pointer-events-none" />
 
       {/* Main Content Box Wrapper */}
       <div className="max-w-5xl w-full flex flex-col items-center relative z-10 text-center px-4 sm:px-6 lg:px-8">
@@ -60,18 +60,28 @@ const HeroSectionAdvanced = ({
         </div>
 
         {/* Headings */}
-        <h1
-          className="text-4xl sm:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.15] max-w-4xl"
-          style={{ color: darkColor }}
+    <h1
+  className="text-4xl sm:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.15] max-w-4xl"
+  style={{ color: darkColor }}
+>
+  {(() => {
+    const words = `${headingLine1} ${headingLine2}`.trim().split(" ");
+    const lastWord = words.pop();
+    const remainingText = words.join(" ");
+
+    return (
+      <>
+        {remainingText}{" "}
+        <span
+          className="bg-clip-text text-transparent"
+          style={{ backgroundImage: exactGradient }}
         >
-          {headingLine1}
-          <span 
-            className="block mt-1 font-extrabold bg-clip-text text-transparent pb-1" 
-            style={{ backgroundImage: exactGradient }}
-          >
-            {headingLine2}
-          </span>
-        </h1>
+          {lastWord}
+        </span>
+      </>
+    );
+  })()}
+</h1>
 
         {/* Accent Bar */}
         <div className="w-28 h-[4px] rounded-full mt-4 mb-8" style={{ background: exactGradient }} />
@@ -82,7 +92,7 @@ const HeroSectionAdvanced = ({
         </p>
 
         {/* Button Actions Row */}
-        <div className="flex flex-row flex-wrap items-center justify-center gap-5 w-full mb-14">
+        <div className="flex flex-row flex-wrap items-center justify-center gap-5 w-full mb-8">
           {/* Solid Primary Button */}
           <Link
             href={primaryButtonLink}
@@ -104,8 +114,8 @@ const HeroSectionAdvanced = ({
           </Link>
         </div>
 
-        {/* Performance Stats Counter Row — Pushed to pb-36 and added mb-12 to guarantee separation */}
-        <div className="flex flex-row items-center justify-between border-t border-[#d0e7ea] pt-8 pb-36 mb-12 w-full max-w-2xl px-2 sm:px-6 gap-2">
+        {/* Performance Stats Counter Row */}
+        <div className="flex flex-row items-center justify-between pt-0 pb-8 w-full max-w-2xl px-2 sm:px-6 gap-2">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center text-center flex-1">
               <span 

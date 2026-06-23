@@ -23,12 +23,26 @@ const Section3 = ({
   imageSrc // <--- Prop bilkul sahi aa rahi hai
 }: Section3Props) => {
   return (
-    /* Forceful background color integration matching the light blue tone */
-    <div className="w-full bg-[#E3EFF1] py-16 md:py-24 px-4 sm:px-6 lg:px-8 block clearfix">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+    /* Light blue flat background matching reference image exactly */
+    <div
+      className="relative w-full py-16 md:py-24 px-4 sm:px-6 lg:px-8 block clearfix overflow-hidden"
+      style={{
+        background: "#DCE9EC",
+      }}
+    >
+      {/* A few very faint, soft random white glow patches - no grid/boxes */}
+      <div
+        className="absolute inset-0 opacity-[0.45] pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(circle at 12% 18%, rgba(255,255,255,0.55) 0%, transparent 22%), radial-gradient(circle at 78% 10%, rgba(255,255,255,0.4) 0%, transparent 20%), radial-gradient(circle at 90% 70%, rgba(255,255,255,0.5) 0%, transparent 25%), radial-gradient(circle at 30% 85%, rgba(255,255,255,0.35) 0%, transparent 20%), radial-gradient(circle at 55% 45%, rgba(255,255,255,0.3) 0%, transparent 18%)",
+        }}
+      />
+
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
         
         {/* LEFT COLUMN: Explicitly forcing text content onto the left side */}
-        <div className="w-full lg:w-[58%] flex flex-col justify-center text-left order-1">
+        <div className="w-full lg:w-[50%] flex flex-col justify-center text-left order-1">
           
           {/* Main Typography Header matching image_3c72e3.png formatting */}
           <h2 className="text-2xl sm:text-3xl md:text-[38px] font-extrabold text-[#05262C] leading-[1.2] tracking-tight mb-6">
@@ -67,15 +81,15 @@ const Section3 = ({
           </div>
         </div>
 
-        {/* RIGHT COLUMN: Rigidly pinning the Showcase Card on the right side on desktop */}
-        <div className="w-full lg:w-[38%] flex justify-center lg:justify-end order-2 mt-8 lg:mt-0">
-          <div className="relative w-full max-w-[460px] aspect-[4/3] rounded-xl overflow-hidden shadow-xl border border-white/40 bg-white min-h-[300px]">
+        {/* RIGHT COLUMN: Larger showcase image, pinned right on desktop */}
+        <div className="w-full lg:w-[48%] flex justify-center lg:justify-end order-2 mt-8 lg:mt-0">
+          <div className="relative w-full max-w-[640px] aspect-[4/3] rounded-xl overflow-hidden shadow-xl border border-white/40 bg-white min-h-[340px] lg:min-h-[420px]">
             <Image
               src={imageSrc} /* <--- MAINE YAHAN DYNAMIC VARIABLE SET KAR DIYA HAI */
               alt="Challenge presentation illustration"
               fill
               style={{ objectFit: "cover" }}
-              sizes="(max-w-1024px) 100vw, 460px"
+              sizes="(max-width: 1024px) 100vw, 640px"
               priority
             />
           </div>

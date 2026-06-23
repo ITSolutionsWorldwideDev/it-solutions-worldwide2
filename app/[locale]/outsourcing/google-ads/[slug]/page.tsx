@@ -217,11 +217,12 @@ export default async function Page({ params }: Props) {
       <TrustSection />
 
       <Faqs
-        faqData={t(`${translationPageKey}.faq.questions`, {
-          returnObjects: true,
-        })}
-      />
-
+  faqData={
+    t(`${translationPageKey}.faq.questions`, {
+      returnObjects: true,
+    }) as unknown as { question: string; answer: string }[]
+  }
+/>
       <FullContentSection
         heading={t(`${translationPageKey}.footer_cta.title`)}
         text={t(`${translationPageKey}.footer_cta.description`)}

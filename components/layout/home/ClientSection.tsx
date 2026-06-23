@@ -98,7 +98,7 @@ export default function ClientSection() {
               // 🔥 Touch Target Fixed: Button ka physical size ab 48px ho gaya hai (Lighthouse Pass!)
               aria-label={`Go to slide ${index + 1}`}
             >
-              {/* 🔥 Visual Dot: actual dekhne wala dot chota hi rahega taaki design same rahe */}
+              
               <span
                 className={`w-3 h-3 rounded-full border border-black transition-all block
                   ${

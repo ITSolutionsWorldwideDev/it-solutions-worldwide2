@@ -1,6 +1,16 @@
 "use client";
 
 import React from "react";
+import {
+  GitBranch,
+  Database,
+  BarChart3,
+  Server,
+  Cloud,
+  SlidersHorizontal,
+  Boxes,
+  ShieldCheck,
+} from "lucide-react";
 
 export type BuildCardItem = {
   title: string;
@@ -15,12 +25,18 @@ interface SectionBuildManageProps {
   cards?: BuildCardItem[];
 }
 
-// Clean fallback task icon (Briefcase / Check-list theme)
-const DefaultTaskIcon = () => (
-  <svg className="w-5 h-5 text-[#0E6774]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-  </svg>
-);
+// Rotating set of distinct icons + tint colors so every card looks different
+// (used only when no custom iconPath/bgColor is supplied from content data)
+const iconStyleSet: { icon: React.ComponentType<any>; bg: string; color: string }[] = [
+  { icon: GitBranch, bg: "#E3EEFB", color: "#2D6BC0" },
+  { icon: Database, bg: "#E6F4F4", color: "#0E6774" },
+  { icon: BarChart3, bg: "#FCEFE6", color: "#C46A2B" },
+  { icon: Server, bg: "#F6E9F4", color: "#9C3F8C" },
+  { icon: Cloud, bg: "#E6F4F4", color: "#1B8991" },
+  { icon: SlidersHorizontal, bg: "#FCF3DC", color: "#B8860B" },
+  { icon: Boxes, bg: "#EAEAFB", color: "#5B4FCF" },
+  { icon: ShieldCheck, bg: "#E7F6EC", color: "#2E8B57" },
+];
 
 const SectionBuildManage = ({ heading, subheading, cards }: SectionBuildManageProps) => {
   
@@ -76,14 +92,20 @@ const SectionBuildManage = ({ heading, subheading, cards }: SectionBuildManagePr
         {/* 3-Column Premium Content Framework Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {finalCards.map((card, idx) => {
-            const cardTitle = card.title || `Capability Core ${idx + 1}`;
+            const cardTitle = (card.title || `Capability Core ${idx + 1}`).replace(
+              /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{2190}-\u{21FF}\u{2B00}-\u{2BFF}]/gu,
+              ""
+            ).trim();
             
             // Handle both dynamic JSON arrays or structured lists safely
             const cardFeatures = Array.isArray(card.features) ? card.features : [];
             
-            // Guard against missing aesthetic variables in standard json translation files
-            const backgroundTint = card.bgColor || "#E6F4F5";
-            const customIcon = card.iconPath || <DefaultTaskIcon />;
+            // Pick a distinct icon/color per card index so no two cards look identical
+            const style = iconStyleSet[idx % iconStyleSet.length];
+            const StyleIcon = style.icon;
+
+            const backgroundTint = card.bgColor || style.bg;
+            const customIcon = card.iconPath || <StyleIcon className="w-5 h-5" style={{ color: style.color }} strokeWidth={2.2} />;
 
             return (
               <div 

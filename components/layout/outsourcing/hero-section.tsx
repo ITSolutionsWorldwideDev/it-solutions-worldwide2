@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+
 interface FullContentSectionProps {
   imageUrl?: string;
   heading: string;
@@ -120,7 +121,7 @@ const FullContentSection = ({
 
   return (
     <section
-      className="w-full my-12 py-12 px-4 lg:px-8 rounded-md"
+      className="w-full my-0 py-10 px-4 lg:px-8 rounded-md"
       style={{
         backgroundColor: `${bgColor}`,
         // background: `linear-gradient(to right, ${leftColor}, ${rightColor})`,

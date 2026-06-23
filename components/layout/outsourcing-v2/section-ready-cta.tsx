@@ -17,7 +17,6 @@ export default function SectionReadyCTA({
   trustPoints,
   role = "Professional"
 }: SectionReadyCTAProps) {
-  // Use props with fallbacks
   const displayHeading = heading || `Ready to Hire a ${role} in Netherlands?`;
   const displaySubheading = subheading || `Scale your operations with dedicated ${role.toLowerCase()}s from IT Solutions Worldwide. Get pre-vetted, experienced professionals — GDPR-compliant, Dutch-market-aware, and ready to deliver from day one.`;
   const displayPrimary = primaryButtonText || "Book Free Consultation →";
@@ -35,27 +34,23 @@ export default function SectionReadyCTA({
     >
       <div className="max-w-6xl mx-auto flex flex-col items-center relative z-10">
         
-        {/* Main Heading Title */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mb-5 max-w-4xl leading-tight block">
           {displayHeading}
         </h2>
 
-        {/* Sub-description */}
         <p className="text-[#E2F5F7] text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed mb-10 font-medium opacity-95 block">
           {displaySubheading}
         </p>
 
-        {/* Action Buttons Box Group */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-10">
           
-          {/* Primary Action Button */}
+          {/* Primary Action Button: White BG with Green Text */}
           <button 
             type="button" 
-            style={{ background: 'linear-gradient(to right, #0C545A, #126870)' }}
-            className="w-full sm:w-auto text-white border-2 border-white/90 hover:brightness-110 font-bold px-7 py-4 rounded-xl transition-all duration-200 flex items-center justify-center gap-2 shadow-md text-sm sm:text-base cursor-pointer"
+            style={{ color: '#0C545A' }}
+            className="w-full sm:w-auto bg-white hover:bg-gray-100 font-bold px-7 py-4 rounded-xl transition-all duration-200 flex items-center justify-center gap-2 shadow-md text-sm sm:text-base cursor-pointer"
           >
             {displayPrimary}
-            <span className="text-lg font-normal leading-none mb-0.5">→</span>
           </button>
 
           {/* Secondary Outline Button */}
@@ -65,7 +60,6 @@ export default function SectionReadyCTA({
 
         </div>
 
-        {/* Footer inline small trust checkmarks line */}
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs sm:text-sm text-[#CCF2F6] font-medium opacity-90">
           {displayTrustPoints.map((point, index) => (
             <div key={index} className="flex items-center gap-1.5 whitespace-nowrap">

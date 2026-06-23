@@ -316,7 +316,7 @@ const heroDescription = content?.subtext ?? `Scale your operations with dedicate
         role={humanReadableRole}
       />
 
-      <Contact />
+      
     </div>
   );
 }

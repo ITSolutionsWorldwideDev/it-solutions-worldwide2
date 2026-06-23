@@ -16,7 +16,14 @@ const SectionTechStack = ({
   line2Tags = [],
 }: SectionTechStackProps) => {
   const tagClass =
-    "px-4 py-2 bg-white border border-[#D8E2E2] rounded-full text-[13px] font-medium text-[#1F383D] whitespace-nowrap shadow-sm hover:border-[#0E6774] transition-colors duration-200";
+    "px-4 py-2 rounded-full text-[13px] font-medium text-[#1F383D] whitespace-nowrap shadow-sm transition-colors duration-200";
+
+  // Two-tone gradient outline (light at top, teal at bottom) matching reference image
+  const tagStyle: React.CSSProperties = {
+    background:
+      "linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to bottom, #C7DEDD 0%, #4F9C94 100%) border-box",
+    border: "1.5px solid transparent",
+  };
 
   // ── Robust Local Fallbacks ───────────────────────────────────────────────
   const finalHeading = heading || "Core Platform and Technical Competencies";
@@ -51,7 +58,7 @@ const SectionTechStack = ({
         {/* Tags Section - single wrap, centered, fills full width */}
         <div className="flex flex-wrap items-center justify-center gap-3 max-w-[1300px] mx-auto">
           {allTags.map((tag, index) => (
-            <span key={`tag-${index}`} className={tagClass}>
+            <span key={`tag-${index}`} className={tagClass} style={tagStyle}>
               {tag}
             </span>
           ))}

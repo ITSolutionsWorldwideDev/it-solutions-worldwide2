@@ -14,15 +14,15 @@ const SectionComparisonTable = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-20 px-4 sm:px-6 lg:px-8 font-sans">
+    <section className="w-full bg-white pt-0 pb-20 px-4 sm:px-6 lg:px-8 font-sans">
       <div className="max-w-7xl mx-auto">
 
-        {/* Heading */}
-        <div className="text-center max-w-4xl mx-auto mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-[42px] font-black text-[#05262C] tracking-tight mb-4">
+        {/* Heading - single line on both heading and paragraph */}
+        <div className="text-center max-w-none mx-auto mb-12 px-2">
+          <h2 className="text-xl sm:text-2xl md:text-[34px] lg:text-[38px] font-black text-[#05262C] tracking-tight mb-4 whitespace-nowrap overflow-x-auto no-scrollbar">
             Why Hire a Data Engineer in Netherlands Through Us
           </h2>
-          <p className="text-[16px] md:text-[17px] text-[#4A5D61] font-normal leading-relaxed">
+          <p className="text-[13px] sm:text-[15px] md:text-[16px] text-[#4A5D61] font-normal leading-relaxed whitespace-nowrap overflow-x-auto no-scrollbar">
             Hiring locally often means higher costs, longer timelines, and limited specialist availability. Here is how we compare.
           </p>
         </div>

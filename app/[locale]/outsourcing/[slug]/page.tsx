@@ -9,6 +9,12 @@ import Faqs from "@/components/layout/outsourcing/Faqs";
 import Roles from "@/components/layout/outsourcing/Roles";
 import Contact from "@/components/layout/outsourcing/Contact";
 
+// Define the expected shape for FAQ items
+export type FaqItem = {
+  question: string;
+  answer: string;
+};
+
 export type RolesData = {
   title: string;
   intro: string;
@@ -20,6 +26,7 @@ export type RolesData = {
     }
   >;
 };
+
 type Props = {
   params: Promise<{
     slug: string;
@@ -113,26 +120,11 @@ const seoData = {
   },
 };
 
-export async function generateMetadata({
-  params,
-}: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, locale } = await params;
-
-  const seo =
-    seoData[slug as keyof typeof seoData]?.[
-      locale === "nl" ? "nl" : "en"
-    ];
-
-  if (seo) {
-    return {
-      title: seo.title,
-      description: seo.description,
-    };
-  }
-
-  return {
-    title: cleanSlug(slug),
-  };
+  const seo = seoData[slug as keyof typeof seoData]?.[locale === "nl" ? "nl" : "en"];
+  if (seo) return { title: seo.title, description: seo.description };
+  return { title: cleanSlug(slug) };
 }
 
 export default async function Page({ params }: Props) {
@@ -144,36 +136,21 @@ export default async function Page({ params }: Props) {
   const translationPageKey = `outsource-${slug}`;
 
   const cards2 = [
-    {
-      image: "/assets/images/outsource-icon-1.webp",
-      title: t(`${translationPageKey}.why_choose.benefits.1`),
-    },
-    {
-      image: "/assets/images/outsource-icon-2.webp",
-      title: t(`${translationPageKey}.why_choose.benefits.2`),
-    },
-    {
-      image: "/assets/images/outsource-icon-3.webp",
-      title: t(`${translationPageKey}.why_choose.benefits.3`),
-    },
-    {
-      image: "/assets/images/outsource-icon-4.webp",
-      title: t(`${translationPageKey}.why_choose.benefits.4`),
-    },
+    { image: "/assets/images/outsource-icon-1.webp", title: t(`${translationPageKey}.why_choose.benefits.1`) },
+    { image: "/assets/images/outsource-icon-2.webp", title: t(`${translationPageKey}.why_choose.benefits.2`) },
+    { image: "/assets/images/outsource-icon-3.webp", title: t(`${translationPageKey}.why_choose.benefits.3`) },
+    { image: "/assets/images/outsource-icon-4.webp", title: t(`${translationPageKey}.why_choose.benefits.4`) },
   ];
 
   const imagetext = (
     <>
       {t("outsourcing.hero.description")}
-      <br />
-      <br />
+      <br /><br />
       {t("outsourcing.hero.sub_description")}
     </>
   );
 
-  const hasSection2 =
-    t(`${translationPageKey}.why_choose.title`) !==
-    `${translationPageKey}.why_choose.title`;
+  const hasSection2 = t(`${translationPageKey}.why_choose.title`) !== `${translationPageKey}.why_choose.title`;
 
   return (
     <div>
@@ -200,11 +177,7 @@ export default async function Page({ params }: Props) {
       )}
 
       <Roles
-        roles={
-          t(`${translationPageKey}.services_section`, {
-            returnObjects: true,
-          }) as RolesData
-        }
+        roles={t(`${translationPageKey}.services_section`, { returnObjects: true }) as RolesData}
       />
 
       <FullContentSection
@@ -219,7 +192,7 @@ export default async function Page({ params }: Props) {
       <Faqs
         faqData={t(`${translationPageKey}.faq.questions`, {
           returnObjects: true,
-        })}
+        }) as FaqItem[]}
       />
 
       <FullContentSection
