@@ -91,7 +91,7 @@ const heroBadge = content?.badge ?? "Save up to 60%";
 const heroTitle = content?.h1 ?? `Hire a Dedicated ${humanReadableRole}`;
 const heroDescription = content?.subtext ?? `Scale your operations with dedicated ${humanReadableRole.toLowerCase()}s.`;
 
-  // ============================================
+// ============================================
   // SECTION 3 (CHALLENGES)
   // ============================================
   const section3Heading = content?.challenges?.h2 ?? "Overcome operational resource bottlenecks immediately";
@@ -111,8 +111,12 @@ const heroDescription = content?.subtext ?? `Scale your operations with dedicate
       
   const section3Conclusion = content?.challenges?.conclusion ?? "Our custom staffing models eliminate administrative friction.";
   const section3CtaText = content?.challenges?.cta ?? "Get Started Instantly →";
-  const section3ImageSrc = content?.challenges?.image ?? "/assets/images/image_3cdc1d.jpg";
 
+  // Dynamic Image Auto-Matcher: Clean slug to match exact file name (e.g., "hire-virtual-assistant" becomes "virtual-assistant")
+  const cleanImageSlug = slug.replace(/^(hire|outsource|staffing)-/, "").toLowerCase();
+  
+  // Pehle i18n JSON ka custom path check karega, nahi toh automatic sahi folder se dynamic image uthayega
+  const section3ImageSrc = content?.challenges?.image ?? `/assets/images/categories/${cleanImageSlug}.webp`;
   // ============================================
   // BUILD & MANAGE
   // ============================================

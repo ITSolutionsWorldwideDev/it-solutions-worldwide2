@@ -22,7 +22,7 @@ const cards = [
   },
   {
     title: "Our Partner Office",
-    phone: "+923187192053",
+    phone: "+92 319 5815278",
     phoneLink: "https://wa.me/923187192053",
     address: "Seventeen Square Block A Multi Gardens B-17 Islamabad, Pakistan",
     image: "/assets/images/career4.webp",

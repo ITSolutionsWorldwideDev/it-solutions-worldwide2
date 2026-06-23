@@ -20,7 +20,7 @@ const Section3 = ({
   challenges,
   conclusionText,
   ctaText,
-  imageSrc
+  imageSrc // <--- Prop bilkul sahi aa rahi hai
 }: Section3Props) => {
   return (
     /* Forceful background color integration matching the light blue tone */
@@ -71,7 +71,7 @@ const Section3 = ({
         <div className="w-full lg:w-[38%] flex justify-center lg:justify-end order-2 mt-8 lg:mt-0">
           <div className="relative w-full max-w-[460px] aspect-[4/3] rounded-xl overflow-hidden shadow-xl border border-white/40 bg-white min-h-[300px]">
             <Image
-              src="/assets/images/aboutus2.webp" /* Fallback check as per workflow requirement */
+              src={imageSrc} /* <--- MAINE YAHAN DYNAMIC VARIABLE SET KAR DIYA HAI */
               alt="Challenge presentation illustration"
               fill
               style={{ objectFit: "cover" }}

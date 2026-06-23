@@ -6,53 +6,51 @@ export interface MenuItem {
 }
 
 export const menuItems: MenuItem[] = [
-   {
+  {
     label: "About Us",
     link: "/about-us",
   },
-  
- {
-  label: "Business Transformation",
-  link: "/business-transformation",
-  dropdown: [
-    {
-      label: "SCM Services",
-      link: "/scm-services",
-      dropdown: [
-        {
-          label: "SCM Consultancy",
-          link: "/scm-services/scm-consultancy",
-        },
-        {
-          label: "Business Consultancy",
-          link: "/scm-services/business-consultancy",
-        },
-        {
-          label: "Supply Chain Performance Check",
-          link: "/scm-services/supply-chain-performance-check",
-        },
-      ],
-    },
-    {
-      label: "IT Support",
-      link: "/it-support",
-      dropdown: [
-        {
-          label: "Automation Services",
-          link: "/it-support/automation-services",
-        },
-        {
-          label: "ERP-Implementation",
-          link: "/it-support/erp-implementation",
-        },
-      ],
-    },
-    {
-      label: "Smart Warehouse Solutions",
-      link: "/logistics/smart-warehouse-solutions",
-    },
-  ],
-},
+  {
+    label: "Business Transformation", // 👈 Link property yahan se hata di hai, ab yeh click karne par open nahi hoga
+    dropdown: [
+      {
+        label: "SCM Services",
+        link: "/scm-services",
+        dropdown: [
+          {
+            label: "SCM Consultancy",
+            link: "/scm-services/scm-consultancy",
+          },
+          {
+            label: "Business Consultancy",
+            link: "/scm-services/business-consultancy",
+          },
+          {
+            label: "Supply Chain Performance Check",
+            link: "/scm-services/supply-chain-performance-check",
+          },
+        ],
+      },
+      {
+        label: "IT Support",
+        link: "/it-support",
+        dropdown: [
+          {
+            label: "Automation Services",
+            link: "/it-support/automation-services",
+          },
+          {
+            label: "ERP-Implementation",
+            link: "/it-support/erp-implementation",
+          },
+        ],
+      },
+      {
+        label: "Smart Warehouse Solutions",
+        link: "/logistics/smart-warehouse-solutions",
+      },
+    ],
+  },
   {
     label: "Digital Services",
     link: "/digital-services",
@@ -71,7 +69,6 @@ export const menuItems: MenuItem[] = [
         label: "Social Media Marketing",
         link: "/digital-services/social-media-marketing",
       },
-      { label: "IT Support", link: "/it-support" },
       {
         label: "Software Development",
         link: "/it-support/software-development",
@@ -136,12 +133,6 @@ export const menuItems: MenuItem[] = [
             label: "Electrical Engineer",
             link: "/staffing-support/hire-electrical-engineer",
           },
-        ],
-      },
-      {
-        label: "Business Support",
-        link: "/outsourcing/business-support",
-        dropdown: [
           {
             label: "Administrative Support",
             link: "/staffing-support/hire-admin-accounting-assistant",
@@ -221,9 +212,9 @@ export const menuItems: MenuItem[] = [
             link: "/staffing-support/hire-google-analytics-specialist",
           },
           {
-            label: "Power BI Specialist",
-            link: "/en/staffing-support/hire-power-bi-tableau-specialist",
-          },
+  label: "Power BI Specialist",
+  link: "/staffing-support/hire-power-bi-tableau-specialist",
+},
           {
             label: "Data Analyst",
             link: "/staffing-support/hire-data-analyst",
@@ -232,5 +223,4 @@ export const menuItems: MenuItem[] = [
       },
     ],
   },
- 
 ];
