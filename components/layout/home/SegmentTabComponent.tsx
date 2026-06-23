@@ -38,7 +38,6 @@ const serviceOptions: Record<string, Option[]> = {
     { label: "App Graphics", value: "app graphics" },
     { label: "Image and Video", value: "image and video" },
     { label: "3D modeling", value: "3D modeling" },
-    { label: "App Graphics", value: "app graphics" },
     { label: "I'd like your guidance.", value: "req for ui-ux advise" },
   ],
   "digital-marketing": [
@@ -88,38 +87,17 @@ const serviceOptions: Record<string, Option[]> = {
     { label: "AI Supply Chain Agent", value: "AI supply chain agent" },
     { label: "Warehouse Automation", value: "warehouse automation" },
     { label: "Transport & Logistics", value: "transport & logistics" },
-    {
-      label: "Robotic Process Automation",
-      value: "robotic process automation",
-    },
-    {
-      label: "Procurement & Demand Forecasting",
-      value: "procurement & demand forecasting",
-    },
-    {
-      label: "Data and Inetgration Automation",
-      value: "data and inetgration automation",
-    },
+    { label: "Robotic Process Automation", value: "robotic process automation" },
+    { label: "Procurement & Demand Forecasting", value: "procurement & demand forecasting" },
+    { label: "Data and Inetgration Automation", value: "data and inetgration automation" },
     { label: "I'd like your guidance.", value: "req for recruitter advise" },
   ],
   "bi-developer": [
     { label: "Databases (like SQL Server, Oracle)", value: "databases" },
-    {
-      label: "ETL tools (such as SSIS, Informatica, Talend)",
-      value: "ETL tools",
-    },
-    {
-      label: "BI platforms (Power BI, Tableau, Qlik)",
-      value: "BI platforms (Power BI, Tableau, Qlik)",
-    },
-    {
-      label: "Cloud Services (AWS, Azure, GCP)",
-      value: "cloud services (AWS, Azure, GCP)",
-    },
-    {
-      label: "Programming Languages (SQL, Python, DAX)",
-      value: "programming languages (SQL,Python,DAX)",
-    },
+    { label: "ETL tools (such as SSIS, Informatica, Talend)", value: "ETL tools" },
+    { label: "BI platforms (Power BI, Tableau, Qlik)", value: "BI platforms (Power BI, Tableau, Qlik)" },
+    { label: "Cloud Services (AWS, Azure, GCP)", value: "cloud services (AWS, Azure, GCP)" },
+    { label: "Programming Languages (SQL, Python, DAX)", value: "programming languages (SQL,Python,DAX)" },
     { label: "I'd like your guidance.", value: "req for recruitter advise" },
   ],
 };
@@ -204,7 +182,7 @@ export default function SegmentTabs() {
           {steps.map((s, i) => (
             <div key={s} className="flex-1 flex items-center relative">
               <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center z-10 font-semibold  text-white ${
+                className={`w-8 h-8 rounded-full flex items-center justify-center z-10 font-semibold text-white ${
                   step > i ? "bg-[#467a7e]" : "bg-gray-300"
                 }`}
               >
@@ -237,6 +215,7 @@ export default function SegmentTabs() {
                 value={selectedService}
                 onChange={(e) => setSelectedService(e.target.value)}
                 className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                aria-label="Select a Service" // 🔥 Fixed: Added label for accessibility
               >
                 <option value="">-- Select Service --</option>
                 {services.map((s) => (
@@ -248,7 +227,8 @@ export default function SegmentTabs() {
               <div className="flex justify-between mt-4">
                 <button
                   onClick={handleSkip}
-                  className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+                  className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 hover:text-black font-medium"
+
                 >
                   Skip
                 </button>
@@ -282,6 +262,7 @@ export default function SegmentTabs() {
                 value={selectedOption}
                 onChange={(e) => setSelectedOption(e.target.value)}
                 className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                aria-label="Select Service Option" // 🔥 Fixed: Added label for accessibility
               >
                 <option value="">-- Select Option --</option>
                 {selectedService &&
@@ -294,14 +275,16 @@ export default function SegmentTabs() {
               <div className="flex justify-between mt-4">
                 <button
                   onClick={handleBack}
-                  className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+                  className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 hover:text-black font-medium"
+// 🔥 text-gray-800 add karne se contrast foran pass ho jayega
                 >
                   Go Back
                 </button>
                 <div className="flex gap-2">
                   <button
                     onClick={handleSkip}
-                    className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+                    className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 hover:text-black font-medium"
+// 🔥 text-gray-800 add karne se contrast foran pass ho jayega
                   >
                     Skip
                   </button>
@@ -346,6 +329,7 @@ export default function SegmentTabs() {
                   value={formData.email}
                   onChange={handleFormChange}
                   className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                  aria-label="Email Address"
                 />
                 <input
                   type="text"
@@ -354,6 +338,7 @@ export default function SegmentTabs() {
                   value={formData.name}
                   onChange={handleFormChange}
                   className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                  aria-label="Full Name"
                 />
                 <input
                   type="text"
@@ -362,12 +347,14 @@ export default function SegmentTabs() {
                   value={formData.phone}
                   onChange={handleFormChange}
                   className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                  aria-label="Phone Number"
                 />
                 <select
                   name="country"
                   value={formData.country}
                   onChange={handleFormChange}
                   className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                  aria-label="Select Country" // 🔥 Fixed: Added label for accessibility
                 >
                   {euCountries.map((c) => (
                     <option key={c} value={c}>
@@ -382,12 +369,14 @@ export default function SegmentTabs() {
                   value={formData.city}
                   onChange={handleFormChange}
                   className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
+                  aria-label="City"
                 />
                 <div className="flex justify-between mt-2">
                   <button
                     onClick={handleBack}
                     type="button"
-                    className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+                    className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 hover:text-black font-medium"
+// 🔥 text-gray-800 add karne se contrast foran pass ho jayega
                   >
                     Go Back
                   </button>
@@ -519,7 +508,8 @@ export default function SegmentTabs() {
           <div className="flex justify-between mt-4">
             <button
               onClick={handleSkip}
-              className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+              className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 hover:text-black font-medium"
+// 🔥 text-gray-800 add karne se contrast foran pass ho jayega
             >
               Skip
             </button>
@@ -556,7 +546,8 @@ export default function SegmentTabs() {
           <div className="flex justify-between mt-4">
             <button
               onClick={handleSkip}
-              className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+              className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 hover:text-black font-medium"
+// 🔥 text-gray-800 add karne se contrast foran pass ho jayega
             >
               Skip
             </button>

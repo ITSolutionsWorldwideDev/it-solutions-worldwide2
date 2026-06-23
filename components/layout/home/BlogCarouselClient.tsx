@@ -95,31 +95,35 @@ export default function BlogCarouselClient({ locale }: { locale: string }) {
           </SwiperSlide>
         ))}
       </Swiper>
+<div className="absolute top-16 right-4 flex gap-2 z-40">
+  {/* Previous Slide Button */}
+  <button
+    className={`blog-prev-btn w-10 h-10 flex items-center justify-center rounded-full cursor-pointer 
+    ${
+      activeIndex === 0
+        ? "bg-gray-300 text-white cursor-not-allowed"
+        : "bg-teal-500 text-white"
+    }`}
+    disabled={activeIndex === 0}
+    aria-label="Previous slide" 
+  >
+    ←
+  </button>
 
-      <div className="absolute top-16 right-4 flex gap-2 z-40">
-        <button
-          className={`blog-prev-btn w-10 h-10 flex items-center justify-center rounded-full cursor-pointer 
-          ${
-            activeIndex === 0
-              ? "bg-gray-300 text-white cursor-not-allowed"
-              : "bg-teal-500 text-white"
-          }`}
-          disabled={activeIndex === 0}
-        >
-          ←
-        </button>
-        <button
-          className={`blog-next-btn w-10 h-10 flex items-center justify-center rounded-full cursor-pointer
-          ${
-            blogs.length === 0 || activeIndex === blogs.length - 1
-              ? "bg-gray-300 text-white cursor-not-allowed"
-              : "bg-teal-500 text-white"
-          }`}
-          disabled={blogs.length === 0 || activeIndex === blogs.length - 1}
-        >
-          →
-        </button>
-      </div>
+  {/* Next Slide Button */}
+  <button
+    className={`blog-next-btn w-10 h-10 flex items-center justify-center rounded-full cursor-pointer
+    ${
+      blogs.length === 0 || activeIndex === blogs.length - 1
+        ? "bg-gray-300 text-white cursor-not-allowed"
+        : "bg-teal-500 text-white"
+    }`}
+    disabled={blogs.length === 0 || activeIndex === blogs.length - 1}
+    aria-label="Next slide" 
+  >
+    →
+  </button>
+</div>
     </div>
   );
 }

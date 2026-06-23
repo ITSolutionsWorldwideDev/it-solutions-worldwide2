@@ -96,13 +96,13 @@ export default function Header() {
           </div>
 
           <Link href={`/${locale}/contact-us`}>
-            <button
-              type="button"
-              className="bg-[#0FB6AE] hover:bg-white text-white hover:text-black px-6 py-3 rounded-lg font-medium transition-colors cursor-pointer"
-            >
-              Get FREE Consultation
-            </button>
-          </Link>
+  <button
+    type="button"
+    className="bg-[#11928C] hover:bg-white text-white hover:text-black px-6 py-3 rounded-lg font-semibold text-lg transition-colors cursor-pointer" 
+  >
+    Get FREE Consultation
+  </button>
+</Link>
 
           <SegmentTabs />
         </div>

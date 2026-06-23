@@ -23,7 +23,8 @@ export default async function LocaleLayout(props: {
       attribute="class"
       defaultTheme="light"
       enableSystem={false}
-      disableTransitionOnChange
+      forcedTheme="light" // 🔥 1. Isse theme switching calculations ka execution time khatam ho jayega
+      disableTransitionOnChange // 2. CSS transitions layout shift block nahi karengi
     >
       <LayoutWrapper locale={locale}>
         {props.children}

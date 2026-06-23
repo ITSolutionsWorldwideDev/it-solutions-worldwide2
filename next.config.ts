@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   compress: true,
   experimental: {
-    optimizeCss: true,
+    optimizeCss: true, // 🔥 Yeh perfectly configured hai!
   },
   eslint: {
     ignoreDuringBuilds: true,

@@ -1,33 +1,41 @@
-// app/[locale]/page.tsx
-import dynamic from "next/dynamic";
+import nextDynamic from "next/dynamic"; // 👈 IMPORT KO RENAMED RAKHEIN
 import type { Metadata } from 'next';
+
+// Page Configuration
+export const dynamic = 'force-static';
+export const revalidate = 3600;
 
 export const generateMetadata = async (props: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const params = await props.params;
   return {
+    title: "Home | IT Solutions Worldwide",
+    description: "Empowering businesses with smart IT solutions.",
   };
 };
 
-// ERROR FIXED: Dynamic imports aur revalidate ko function ke bahar top-level par kar diya hai
-const AnimationArea = dynamic(
+// 2. Dynamic Imports (Ab "nextDynamic" use karein, koi error nahi aayega)
+const AnimationArea = nextDynamic(
   () => import("@/components/layout/home/AnimationArea"),
-  { loading: () => <div className="min-h-[50vh]" aria-hidden /> },
+  { loading: () => <div className="min-h-[50vh] bg-gray-50 animate-pulse" aria-hidden /> },
 );
-const BlogCarousel = dynamic(
+
+const BlogCarousel = nextDynamic(
   () => import("@/components/layout/home/BlogCarousel"),
 );
 
-const Certifications = dynamic(
+const Certifications = nextDynamic(
   () => import("@/components/layout/home/Certification"),
 );
 
-const ContactSection = dynamic(
+const ContactSection = nextDynamic(
   () => import("@/components/layout/home/ContactSection"),
 );
 
-export const revalidate = 3600;
+const LogosSlider = nextDynamic(
+  () => import("@/components/layout/home/LogosSlider"),
+);
 
-// ERROR FIXED: Pehla adhoora duplicate HomePage function hata diya hai
+// 3. Main Page Component
 export default async function HomePage({
   params,
 }: {
@@ -36,36 +44,12 @@ export default async function HomePage({
   const { locale } = await params;
 
   return (
-    /* Yahan se gap-8 aur items-center/sm:items-start ko hata diya hai taake sections poore stretch hon aur khali jagah khatam ho */
     <main className="flex flex-col w-full row-start-2">
       <AnimationArea />
+      <LogosSlider />
       <BlogCarousel locale={locale} />
       <Certifications />
       <ContactSection />
     </main>
   );
 }
-
-// interface LocalePageProps {
-//   params: Promise<{ locale: string }>;
-// }
-// { params }: LocalePageProps
-
-/* export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = params;
-
-  return (
-    <>
-      <BlogCarousel locale={locale} />
-    </>
-  );
-} */
-/* import type { Metadata } from 'next';
-export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
-  const { locale } = params;
-
-  return {
-    title: `Home | ${locale.toUpperCase()} | IT Solutions`,
-    description: 'Localized home page description',
-  };
-}; */

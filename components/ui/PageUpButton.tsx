@@ -21,25 +21,28 @@ export default function PageUpButton() {
 
   return (
     <button
-      onClick={scrollToTop}
-      className={`z-50 transition-opacity duration-300 cursor-pointer ${
-        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
-      }`}
-      style={{
-        position: "fixed",
-        bottom: "30px",
-        right: "20px",
-        backgroundColor: "#236b7a",
-        color: "white",
-        border: "none",
-        borderRadius: "50%",
-        width: "40px",
-        height: "40px",
-        cursor: "pointer",
-        fontSize: "1.2rem",
-        lineHeight: "1.2rem",
-        textAlign: "center",
-      }}
-    ><ArrowUp className="mx-auto" size={20} /></button>
+  onClick={scrollToTop}
+  className={`z-50 transition-opacity duration-300 cursor-pointer ${
+    isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+  }`}
+  aria-label="Scroll to top" // 🔥 Fixed: Lighthouse accessibility warning clear!
+  style={{
+    position: "fixed",
+    bottom: "30px",
+    right: "20px",
+    backgroundColor: "#236b7a",
+    color: "white",
+    border: "none",
+    borderRadius: "50%",
+    width: "40px",
+    height: "40px",
+    cursor: "pointer",
+    fontSize: "1.2rem",
+    lineHeight: "1.2rem",
+    textAlign: "center",
+  }}
+>
+  <ArrowUp className="mx-auto" size={20} />
+</button>
   );
 }

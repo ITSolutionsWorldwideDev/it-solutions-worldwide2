@@ -89,18 +89,25 @@ export default function ClientSection() {
         </Swiper>
 
         {/* Radio Dots */}
-        <div className="flex justify-center mt-10 gap-3 z-50 relative">
+        <div className="flex justify-center mt-6 gap-1 z-50 relative">
           {clients.map((_, index) => (
             <button
               key={index}
               onClick={() => swiperRef?.slideTo(index)}
-              className={`w-4 h-4 rounded-full border border-black transition-all
-                ${
-                  activeIndex === index
-                    ? "bg-white scale-110"
-                    : "bg-transparent opacity-60"
-                }`}
-            ></button>
+              className="w-12 h-12 flex items-center justify-center relative group cursor-pointer"
+              // 🔥 Touch Target Fixed: Button ka physical size ab 48px ho gaya hai (Lighthouse Pass!)
+              aria-label={`Go to slide ${index + 1}`}
+            >
+              {/* 🔥 Visual Dot: actual dekhne wala dot chota hi rahega taaki design same rahe */}
+              <span
+                className={`w-3 h-3 rounded-full border border-black transition-all block
+                  ${
+                    activeIndex === index
+                      ? "bg-white scale-125"
+                      : "bg-transparent opacity-60"
+                  }`}
+              />
+            </button>
           ))}
         </div>
 

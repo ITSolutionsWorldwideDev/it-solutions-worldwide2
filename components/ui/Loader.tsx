@@ -1,6 +1,7 @@
 // components/ui/Loader.tsx
 'use client';
 import React from 'react';
+import Image from "next/image";
 
 interface LoaderProps {
   message?: string;
@@ -10,9 +11,12 @@ export default function Loader({ message = 'Loading...' }: LoaderProps) {
   return (
     <div className="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
       {/* Logo */}
-      <img
+      <Image
         src="/assets/images/main-logo.webp"
         alt="IT Solutions Worldwide Logo"
+        width={64} 
+        height={64} 
+        priority     
         className="h-16 w-16 mb-6 animate-bounce"
       />
 

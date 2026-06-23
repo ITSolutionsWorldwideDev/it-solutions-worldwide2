@@ -2,35 +2,21 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useTheme } from "next-themes";
 
 export function Logo() {
-  const { theme } = useTheme();
-
-  console.log('theme ==== ',theme);
+  // 💡 Agar light aur dark dono mein same logo use ho raha hai, 
+  // toh useTheme aur console.log ki yahan zaroorat nahi hai.
 
   return (
     <Link href="/" className="flex flex-shrink-0 items-center gap-2">
       <Image
-        src={
-          theme === "light" ? "/assets/images/main-logo.webp" : "/assets/images/main-logo.webp"
-        }
+        src="/assets/images/main-logo.webp"
         alt="ITSW Logo"
-        width={260}
-        height={78}
+        // 🔥 Dimensions ko kam kar diya taake Next.js choti aur optimized image deliver kare
+        width={160} 
+        height={48} 
         className="h-10 w-auto"
-        priority
-      />
-      {/* Hidden image preload for smoother theme switching */}
-      <Image
-        src={
-          theme === "light" ? "/assets/images/main-logo.webp" : "/assets/images/main-logo.webp"
-        }
-        alt="ITSW Logo Preload"
-        width={260}
-        height={78}
-        className="hidden"
-        priority
+        priority // ⚡ LCP boost karne ke liye yeh zaroori hai
       />
     </Link>
   );

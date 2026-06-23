@@ -48,14 +48,15 @@ useEffect(() => {
         <div className="flex items-center space-x-2 w-32">
           {/* LOCALE FIX: logo link */}
           <Link href={`/${locale}/#hometop`}>
-            <img
-              src="/assets/images/main-logo.webp"
-              alt="IT Solutions Worldwide Logo"
-              width={128}
-              height={40}
-              fetchPriority="high"
-            />
-          </Link>
+  <Image
+    src="/assets/images/main-logo.webp"
+    alt="IT Solutions Worldwide Logo"
+    width={128}  
+    height={40}  
+    priority     
+    className="h-10 w-auto" 
+  />
+</Link>
         </div>
 
         <div className="md:hidden">

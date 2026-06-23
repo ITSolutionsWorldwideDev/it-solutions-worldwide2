@@ -1,4 +1,4 @@
-// components/layout/home/BlogCard.tsx
+"use client"; // Next.js hydration standard ke liye safety check
 
 import Link from "next/link";
 import { BlogEntry } from "@/types/blogs";
@@ -24,15 +24,6 @@ export default function BlogCard({ post, locale }: Props) {
     return section?.content || "No description available.";
   };
 
-  // const getDescription = () => {
-  //   if (post.content.description) return post.content.description;
-  //   if (post.content.sections?.length) {
-  //     if (post.content.sections[0].content) return post.content.sections[0].content;
-  //     if (post.content.sections[1]?.content) return post.content.sections[1].content;
-  //   }
-  //   return "No description available.";
-  // };
-
   const getFeaturedImage = () => {
     if (post.content.featuredImage) return post.content.featuredImage;
     const sectionWithImage = post.content.sections?.find((s) => s.image);
@@ -46,19 +37,17 @@ export default function BlogCard({ post, locale }: Props) {
       itemType="http://schema.org/BlogPosting"
     >
       <div className="w-full lg:w-2/4 mb-4 lg:mb-0">
-  <Image
-    src={getFeaturedImage()}
-    alt={post.content.title}
-    className="w-full h-[350px] object-cover object-center rounded-lg"
-    itemProp="image"
-    loading="lazy"
-    quality={50} // Ab yeh bina kisi error ke perfect kaam karega!
-    width={800}  // Wrapper ke mutabiq munasib width aur height
-    height={350}
-    fetchPriority="low"
-
-  />
-
+        <Image
+          src={getFeaturedImage()}
+          alt={post.content.title}
+          className="w-full h-[350px] object-cover object-center rounded-lg"
+          itemProp="image"
+          loading="lazy"
+          quality={50}
+          width={800}
+          height={350}
+          fetchPriority="low"
+        />
       </div>
       <div className="w-full lg:w-2/4 p-4">
         <h2 className="text-lg font-bold mt-2" itemProp="headline">
@@ -69,15 +58,16 @@ export default function BlogCard({ post, locale }: Props) {
         </p>
         <p className="text-gray-600 mt-2" itemProp="description" dangerouslySetInnerHTML={{
           __html: truncateText(getDescription(), 30),
-        }}>
-          {/* {truncateText(getDescription(), 30)} */}
-        </p>
+        }} />
 
         <div className="flex items-center mt-4">
           <Link
             href={`/blogs/${post.slug}`}
-            className="bg-teal-600 text-white px-4 py-2 rounded-lg"
+            className="bg-teal-700 hover:bg-teal-800 text-white px-4 py-2 rounded-lg font-semibold transition-colors" 
+            // 🔥 Fixed 1: Color Contrast ko pass karwane ke liye bg-teal-700 aur font-semibold kiya
             itemProp="url"
+            aria-label={`Read more about ${post.content.title}`} 
+            // 🔥 Fixed 2: Har link ko unique context diya taaki identical links ka accessibility issue solve ho sake!
           >
             Read More →
           </Link>
