@@ -32,6 +32,40 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // NEW: resolve real HR vacancy id from jobs_infos
+    let resolvedHrVacancyId: number | null = null;
+
+    if (job_category_id) {
+      const vacancyLookupQuery = `
+        SELECT job_info_id, title, hr_vacancy_id
+        FROM jobs_infos
+        WHERE job_info_id = $1
+        LIMIT 1
+      `;
+
+      const vacancyLookupResult = await pool.query(vacancyLookupQuery, [
+        Number(job_category_id),
+      ]);
+
+      const websiteJob = vacancyLookupResult.rows?.[0];
+
+      if (!websiteJob) {
+        return NextResponse.json(
+          { error: "Selected website job was not found." },
+          { status: 404 },
+        );
+      }
+
+      if (!websiteJob.hr_vacancy_id) {
+        return NextResponse.json(
+          { error: "This website vacancy is not linked to an HR vacancy yet." },
+          { status: 409 },
+        );
+      }
+
+      resolvedHrVacancyId = Number(websiteJob.hr_vacancy_id);
+    }
+
     // Convert resume file to Buffer (for attachment + optional saving)
     const arrayBuffer = await resumeFile.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
@@ -75,10 +109,10 @@ export async function POST(req: NextRequest) {
     const applicationId = result.rows?.[0]?.job_applications_id;
 
     const HR_BACKEND_API_BASE_URL =
-  process.env.HR_BACKEND_API_BASE_URL ||
-  "https://it-solution-code-hr-app-backend.vercel.app/api";
+      process.env.HR_BACKEND_API_BASE_URL ||
+      "https://it-solution-code-hr-app-backend.vercel.app/api";
 
-  const hrFormData = new FormData();
+    const hrFormData = new FormData();
     hrFormData.append("file", resumeFile, safeFileName);
     hrFormData.append("candidate_email", email);
     hrFormData.append("candidate_name", name);
@@ -87,11 +121,12 @@ export async function POST(req: NextRequest) {
     hrFormData.append("how_did_you_hear", hear || "");
     hrFormData.append("cover_letter", message || "");
     hrFormData.append("source_label", "website_job_apply");
- 
-    if (job_category_id) {
-      hrFormData.append("vacancy_id", job_category_id);
+
+    // CHANGED: send real HR vacancy id, not website job id
+    if (resolvedHrVacancyId) {
+      hrFormData.append("vacancy_id", String(resolvedHrVacancyId));
     }
- 
+
     const hrResponse = await fetch(
       `${HR_BACKEND_API_BASE_URL}/applications/public-submit`,
       {
@@ -99,23 +134,25 @@ export async function POST(req: NextRequest) {
         body: hrFormData,
       }
     );
- 
+
     const hrResponseText = await hrResponse.text();
     let hrPayload: any = null;
- 
+
     try {
       hrPayload = hrResponseText ? JSON.parse(hrResponseText) : null;
     } catch {
       hrPayload = { raw: hrResponseText };
     }
- 
+
     if (!hrResponse.ok) {
       console.error("HR backend forwarding failed", {
         status: hrResponse.status,
         body: hrPayload,
         legacy_job_application_id: applicationId,
+        website_job_id: job_category_id,
+        resolved_hr_vacancy_id: resolvedHrVacancyId,
       });
- 
+
       return NextResponse.json(
         {
           error: "Application stored on website, but HR sync failed.",
@@ -214,11 +251,6 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail(applicantMail);
     await transporter.sendMail(hrMail);
 
-    // return NextResponse.json({
-    //   message: "Application submitted successfully!",
-    //   job_applications_id: applicationId,
-    // });
-
     return NextResponse.json({
       message: "Application submitted successfully!",
       legacy_job_application_id: applicationId,
@@ -234,65 +266,3 @@ export async function POST(req: NextRequest) {
   }
 }
 
-/*
-    const cc_email = "info@itsolutionsworldwide.com";
-
-        // console.log('attachments ==== ',attachments);
-
-        await strapi.plugin('email').service('email').send({
-          to: email_hr,
-          cc: cc_email,
-          subject: email_subject,
-          html: `
-            <p>Dear <strong>HR Manager</strong>,</p>
-            <p>Here is a job application for the post of <strong>${jobTitle}</strong>. </p>          
-            <p><strong>Applicant details</strong></p>
-            <p></p>
-            <p><strong>Name: </strong>${name}</p>
-            <p><strong>Email: </strong>${email}</p>
-            <p><strong>Phone: </strong>${phone}</p>
-            <p><strong>Address: </strong>${address}</p>
-            <p><strong>Hear From: </strong>${hear}</p>
-            <p><strong>Message: </strong>${message}</p>
-          `,
-          attachments,
-        });
-    
-    */
-
-/* await Promise.all([
-      fetch(`${strapiUrl}/api/send-application-email`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email,
-          name,
-          jobTitle: selectedJob.attributes.title,
-          phone,
-          address,
-          hear: hearAbout,
-          message,
-          resume: resumeUrl,
-          email_subject: `Thank You for Reaching Out to IT Solutions Worldwide`,
-          email_hr: "info@itsolutionsworldwide.com",
-          type: 1,
-        }),
-      }),
-      fetch(`${strapiUrl}/api/send-application-email`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email,
-          name,
-          jobTitle: selectedJob.attributes.title,
-          phone,
-          address,
-          hear: hearAbout,
-          message,
-          resume: resumeUrl,
-          email_subject: `Job application for ${selectedJob.attributes.title}`,
-          email_hr: "info@itsolutionsworldwide.com",
-          type: 2,
-        }),
-      }),
-    ]); */
