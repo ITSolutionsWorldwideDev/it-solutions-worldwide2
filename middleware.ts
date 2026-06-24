@@ -74,8 +74,10 @@ const res = NextResponse.redirect(redirectUrl, 301);
   }
 
 // Sabse end mein — return NextResponse.next(); ki jagah yeh lagao:
+// middleware.ts mein jahan aap rewrite/redirect kar rahe hain
+// Ensure response header gets the correct path including locale
 const response = NextResponse.next();
-response.headers.set("x-pathname", request.nextUrl.pathname);
+response.headers.set("x-pathname", request.nextUrl.pathname); 
 return response;}
 
 export const config = {

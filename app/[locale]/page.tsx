@@ -8,8 +8,8 @@ export const revalidate = 3600;
 export const generateMetadata = async (props: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const params = await props.params;
   return {
-    title: "Home | IT Solutions Worldwide",
-    description: "Empowering businesses with smart IT solutions.",
+    title: " IT Solutions & Supply Chain Management Services | ITWW ",
+    description: " Empowering businesses with smart IT solutions, supply chain management, digital marketing, outsourcing services & more. Get a free consultation with our expert team today.",
   };
 };
 

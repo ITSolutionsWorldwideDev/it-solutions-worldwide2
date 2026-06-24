@@ -45,36 +45,41 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const headersList = await headers();
-  const pathname = headersList.get("x-pathname") ?? "";
+  
+  // 1. Try to get the path from Next.js internal headers
+  // 'x-invoke-path' is the most reliable way to get the route in App Router
+  const pathname = headersList.get("x-invoke-path") || headersList.get("next-url") || "/";
 
   return (
     <html lang="en" className={lexend.className} suppressHydrationWarning>
-    <head>
-  {/* Preload critical image with absolute high network and render priority */}
-  <link
-    rel="preload"
-    as="image"
-    href="/assets/images/backgrounds/hero-bg.webp"
-    fetchPriority="high"
-    type="image/webp"
-  />
-  
-  {/* Font loading blocking ko khatam karne ke liye preconnect */}
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <head>
+        {/* Preload critical image */}
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/images/backgrounds/hero-bg.webp"
+          fetchPriority="high"
+          type="image/webp"
+        />
+        
+        {/* Font loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
-  <link
-    rel="canonical"
-    href={`https://www.itsolutionsworldwide.com${pathname}`}
-  />
-  
-  <MetaPixel pixelId="1766535074073515" />
-  <GoogleTagManager gtmId="GTM-PH8FNRK6" />
-</head>
+        {/* Canonical Tag - Using resolved path */}
+        <link
+          rel="canonical"
+          href={`https://www.itsolutionsworldwide.com${pathname}`}
+        />
+        
+        <MetaPixel pixelId="1766535074073515" />
+        <GoogleTagManager gtmId="GTM-PH8FNRK6" />
+      </head>
+      
       <body className="mx-2 md:mx-0 lg:mx-0">
         {children}
         
-        {/* OPTIMIZED CLARITY SCRIPT: Using 'afterInteractive' ensures it runs completely outside the critical paint window */}
+        {/* Clarity Script */}
         <Script id="clarity-script" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){

@@ -1,7 +1,3 @@
-/**
- * Maps legacy URLs (old site structure) to current canonical paths.
- * Used by middleware for 301 redirects so Google can de-index old URLs.
- */
 
 const BLOG_SLUG =
   "it-procurement-guide-process-types-and-best-practices-for-tech-teams";

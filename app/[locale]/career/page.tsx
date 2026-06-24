@@ -9,7 +9,6 @@ import CareerJobsSection from "@/components/layout/career-jobs";
 // ISR revalidation time
 export const revalidate = 3600;
 
-// Dynamic Metadata (Isme canonical link locale ke sath automatic banega)
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const params = await props.params;
   return {
