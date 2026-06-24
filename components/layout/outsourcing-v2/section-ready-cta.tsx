@@ -1,10 +1,13 @@
 import React from "react";
+import Link from "next/link"; // Required for routing
 
 interface SectionReadyCTAProps {
   heading?: string;
   subheading?: string;
   primaryButtonText?: string;
+  primaryButtonLink?: string; // Added to interface
   secondaryButtonText?: string;
+  secondaryButtonLink?: string; // Added for completeness
   trustPoints?: string[];
   role?: string;
 }
@@ -13,10 +16,13 @@ export default function SectionReadyCTA({
   heading, 
   subheading, 
   primaryButtonText, 
-  secondaryButtonText, 
+  primaryButtonLink = "/en/contact-us", // Default link
+  secondaryButtonText,
+  secondaryButtonLink = "#",
   trustPoints,
   role = "Professional"
 }: SectionReadyCTAProps) {
+  
   const displayHeading = heading || `Ready to Hire a ${role} in Netherlands?`;
   const displaySubheading = subheading || `Scale your operations with dedicated ${role.toLowerCase()}s from IT Solutions Worldwide. Get pre-vetted, experienced professionals — GDPR-compliant, Dutch-market-aware, and ready to deliver from day one.`;
   const displayPrimary = primaryButtonText || "Book Free Consultation →";
@@ -44,19 +50,27 @@ export default function SectionReadyCTA({
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-10">
           
-          {/* Primary Action Button: White BG with Green Text */}
-          <button 
-            type="button" 
+          {/* Primary Action Button: Wrapped in Link */}
+          <Link 
+            href={primaryButtonLink} 
             style={{ color: '#0C545A' }}
-            className="w-full sm:w-auto bg-white hover:bg-gray-100 font-bold px-7 py-4 rounded-xl transition-all duration-200 flex items-center justify-center gap-2 shadow-md text-sm sm:text-base cursor-pointer"
+            className="w-full sm:w-auto bg-white hover:bg-gray-100 font-bold px-7 py-4 rounded-xl transition-all duration-200 flex items-center justify-center gap-2 shadow-md text-sm sm:text-base text-center"
           >
             {displayPrimary}
-          </button>
+          </Link>
 
-          {/* Secondary Outline Button */}
-          <button type="button" className="w-full sm:w-auto bg-transparent text-white border-2 border-white/80 hover:bg-white/10 font-bold px-7 py-4 rounded-xl transition-all duration-200 text-sm sm:text-base cursor-pointer">
-            {displaySecondary}
-          </button>
+        
+
+{/* Secondary Outline Button (WhatsApp Integrated) */}
+<Link 
+  href={`https://wa.me/31107660786?text=Hi%20there!%20I%20would%20like%20to%20get%20matched%20with%20a%20dedicated%20${encodeURIComponent(role)}.`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full sm:w-auto bg-transparent text-white border-2 border-white/80 hover:bg-white/10 font-bold px-7 py-4 rounded-xl transition-all duration-200 text-sm sm:text-base text-center"
+>
+  {displaySecondary}
+</Link>
+
 
         </div>
 

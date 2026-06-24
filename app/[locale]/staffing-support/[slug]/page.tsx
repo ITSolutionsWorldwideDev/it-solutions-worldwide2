@@ -18,7 +18,7 @@ import SectionReadyCTA from "@/components/layout/outsourcing-v2/section-ready-ct
 import Faqs from "@/components/layout/outsourcing/Faqs";
 import Contact from "@/components/layout/outsourcing/Contact";
 
-type Props = {
+ type Props = {
   params: Promise<{ slug: string; locale: string }>;
 };
 
@@ -178,7 +178,7 @@ const heroDescription = content?.subtext ?? `Scale your operations with dedicate
         { number: 3, title: "Launch", description: "Start production." },
         { number: 4, title: "Support", description: "Ongoing managed support." }
       ];
-  const processCtaText = content?.process?.cta ?? "Book Free Consultation →";
+  const processCtaText = content?.process?.cta ?? "Book Free Consultationnpm run ";
 
   // ============================================
   // WHY CHOOSE
@@ -233,7 +233,7 @@ const heroDescription = content?.subtext ?? `Scale your operations with dedicate
   // ============================================
   const readyHeading = content?.final_cta?.h2 ?? `Ready to Hire a Dedicated ${humanReadableRole} in Netherlands?`;
   const readySubheading = content?.final_cta?.subtitle ?? "Stop letting operational gaps slow your business down.";
-  const readyPrimaryCta = content?.final_cta?.buttons?.primary ?? "Book Free Consultation →";
+  const readyPrimaryCta = content?.final_cta?.buttons?.primary ?? "Book Free Consultation ";
   const readySecondaryCta = content?.final_cta?.buttons?.secondary ?? `Get Matched With a ${humanReadableRole}`;
   const readyTrustPoints = Array.isArray(content?.final_cta?.trust_points) ? content.final_cta.trust_points : [
     "✓ No commitment",
@@ -260,28 +260,29 @@ const heroDescription = content?.subtext ?? `Scale your operations with dedicate
 
   return (
     <div>
-     <HeroSectionAdvanced
+   <HeroSectionAdvanced
   badgeText={heroBadge}
   headingLine1={heroTitle}
-  headingLine2="" // <--- "Ready to Deploy" ko hata kar empty kar diya
+  headingLine2="" 
   description={heroDescription}
-  primaryButtonText="Book Free Consultation →"
+  primaryButtonText="Book Free Consultation"
+  primaryButtonLink="/en/contact-us"
   secondaryButtonText="Get Pricing Today"
+  service="Dedicated Virtual Assistant" // Yahan apni service ka naam likhein
   stats={dummyStats}
 />
-
       <Section2 heading={`Hire specialized ${humanReadableRole} talents trusted by top companies.`} slug={slug} />
 
-      <Section3
-        heading={section3Heading}
-        subheading={section3Subheading}
-        challengeTitle={section3ChallengeTitle}
-        challenges={section3Challenges}
-        conclusionText={section3Conclusion}
-        ctaText={section3CtaText}
-        imageSrc={section3ImageSrc}
-      />
-
+     <Section3
+  heading={section3Heading}
+  subheading={section3Subheading}
+  challengeTitle={section3ChallengeTitle}
+  challenges={section3Challenges}
+  conclusionText={section3Conclusion}
+  ctaText={section3CtaText}
+  imageSrc={section3ImageSrc}
+  service="Virtual Assistant" // Yahan apni service ka naam pass karein
+/>
       <SectionBuildManage heading={buildHeading} subheading={buildSubheading} cards={buildCards} />
 
       <SectionTechStack heading={techHeading} subheading={techSubheading} line1Tags={techLine1} line2Tags={techLine2} />
@@ -290,8 +291,12 @@ const heroDescription = content?.subtext ?? `Scale your operations with dedicate
 
       <SectionIndustryFocus heading={industryHeading} subheading={industrySubheading} cards={industryCards} />
 
-      <SectionHiringProcess heading={processHeading} steps={processSteps} ctaText={processCtaText} />
-
+    <SectionHiringProcess 
+  heading={processHeading} 
+  steps={processSteps} 
+  ctaText={processCtaText}
+  ctaLink="/en/contact-us" // Add this line
+/>
       <FullContentSection
         heading={reputationTitle}
         text={reputationText}
@@ -307,14 +312,16 @@ const heroDescription = content?.subtext ?? `Scale your operations with dedicate
 
       <SectionRelatedServices heading={relatedHeading} subheading={relatedSubheading} cards={relatedCards} />
 
-      <SectionReadyCTA
-        heading={readyHeading}
-        subheading={readySubheading}
-        primaryButtonText={readyPrimaryCta}
-        secondaryButtonText={readySecondaryCta}
-        trustPoints={readyTrustPoints}
-        role={humanReadableRole}
-      />
+     <SectionReadyCTA
+  heading={readyHeading}
+  subheading={readySubheading}
+  primaryButtonText={readyPrimaryCta}
+  primaryButtonLink="/en/contact-us"
+  secondaryButtonText={readySecondaryCta}
+  trustPoints={readyTrustPoints}
+  role={humanReadableRole}
+  // secondaryButtonLink pass karne ki zaroorat nahi hai ab
+/>
 
       
     </div>

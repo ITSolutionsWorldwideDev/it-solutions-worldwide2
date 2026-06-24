@@ -111,43 +111,43 @@ export const menuItems: MenuItem[] = [
         dropdown: [
           {
             label: "Virtual Assistant",
-            link: "/staffing-support/hire-virtual-assistant",
+            link: "/outsourcing/hire-virtual-assistant",
           },
           {
             label: "Data Engineer",
-            link: "/staffing-support/hire-data-engineer",
+            link: "/outsourcing/hire-data-engineer",
           },
           {
             label: "Full-stack Developer",
-            link: "/staffing-support/hire-full-stack-developer",
+            link: "/outsourcing/hire-full-stack-developer",
           },
           {
             label: "AI/ML Engineer",
-            link: "/staffing-support/hire-ai-engineer",
+            link: "/outsourcing/hire-ai-engineer",
           },
           {
             label: "Ecommerce Assistant",
-            link: "/staffing-support/hire-ecommerce-assistant",
+            link: "/outsourcing/hire-ecommerce-assistant",
           },
           {
             label: "Electrical Engineer",
-            link: "/staffing-support/hire-electrical-engineer",
+            link: "/outsourcing/hire-electrical-engineer",
           },
           {
             label: "Administrative Support",
-            link: "/staffing-support/hire-admin-accounting-assistant",
+            link: "/outsourcing/hire-admin-accounting-assistant",
           },
           {
             label: "HR Assistant Remote",
-            link: "/staffing-support/hire-hr-assistant-remote",
+            link: "/outsourcing/hire-hr-assistant-remote",
           },
           {
             label: "Customer Support",
-            link: "/staffing-support/hire-customer-support-agent",
+            link: "/outsourcing/hire-customer-support-agent",
           },
           {
             label: "Data Entry",
-            link: "/staffing-support/hire-data-entry-specialist",
+            link: "/outsourcing/hire-data-entry-specialist",
           },
         ],
       },
@@ -157,11 +157,11 @@ export const menuItems: MenuItem[] = [
         dropdown: [
           {
             label: "Web Designer",
-            link: "/staffing-support/hire-webdesigner-developer",
+            link: "/outsourcing/hire-webdesigner-developer",
           },
           {
             label: "Graphic Designer",
-            link: "/staffing-support/hire-graphic-designer",
+            link: "/outsourcing/hire-graphic-designer",
           },
         ],
       },
@@ -171,23 +171,23 @@ export const menuItems: MenuItem[] = [
         dropdown: [
           {
             label: "Front-end Developer",
-            link: "/staffing-support/hire-front-end-developer",
+            link: "/outsourcing/hire-front-end-developer",
           },
           {
             label: "Back-end Developer",
-            link: "/staffing-support/hire-back-end-developer",
+            link: "/outsourcing/hire-back-end-developer",
           },
           {
             label: "App Developer",
-            link: "/staffing-support/hire-app-developer",
+            link: "/outsourcing/hire-app-developer",
           },
           {
             label: "It Support Specialist",
-            link: "/staffing-support/hire-it-support-specialist",
+            link: "/outsourcing/hire-it-support-specialist",
           },
           {
             label: "Software Tester QA",
-            link: "/staffing-support/hire-software-tester-qa",
+            link: "/outsourcing/hire-software-tester-qa",
           },
         ],
       },
@@ -197,27 +197,27 @@ export const menuItems: MenuItem[] = [
         dropdown: [
           {
             label: "Social Media Manager",
-            link: "/staffing-support/hire-social-media-manager",
+            link: "/outsourcing/hire-social-media-manager",
           },
           {
             label: "Content Creator",
-            link: "/staffing-support/hire-content-creator",
+            link: "/outsourcing/hire-content-creator",
           },
           {
             label: "Online Marketeer",
-            link: "/staffing-support/hire-online-marketer",
+            link: "/outsourcing/hire-online-marketer",
           },
           {
             label: "Google Analytics Specialist",
-            link: "/staffing-support/hire-google-analytics-specialist",
+            link: "/outsourcing/hire-google-analytics-specialist",
           },
           {
   label: "Power BI Specialist",
-  link: "/staffing-support/hire-power-bi-tableau-specialist",
+  link: "/outsourcing/hire-power-bi-tableau-specialist",
 },
           {
             label: "Data Analyst",
-            link: "/staffing-support/hire-data-analyst",
+            link: "/outsourcing/hire-data-analyst",
           },
         ],
       },

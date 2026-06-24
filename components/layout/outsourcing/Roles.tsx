@@ -79,8 +79,17 @@ export default function Roles({
   roles: RolesData;
   isCategory?: boolean;
 }) {
+  // Safeguard — i18n se data missing/malformed aaya to crash nahi, silently skip
+  if (!roles || typeof roles.roles !== "object" || roles.roles === null) {
+    if (process.env.NODE_ENV === "development") {
+      console.warn("[Roles] Missing or invalid `roles` prop:", roles);
+    }
+    return null;
+  }
+
   return (
     <section className="py-14 px-4 bg-white" id="roles">
+      {/* ...baaki sab same rahega... */}
       <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
         Explore Our <span className="text-teal-500">{roles.title}</span>
       </h2>

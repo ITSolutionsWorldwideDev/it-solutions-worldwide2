@@ -15,17 +15,21 @@ const SectionTechStack = ({
   line1Tags = [],
   line2Tags = [],
 }: SectionTechStackProps) => {
+  
+  // Hover effect ke liye classes add ki hain:
+  // hover:-translate-y-1 (halka uper)
+  // hover:shadow-md (shadow badhega)
+  // transition-all duration-300 (smooth movement)
   const tagClass =
-    "px-4 py-2 rounded-full text-[13px] font-medium text-[#1F383D] whitespace-nowrap shadow-sm transition-colors duration-200";
+    "px-4 py-2 rounded-full text-[13px] font-medium text-[#1F383D] whitespace-nowrap shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-default";
 
-  // Two-tone gradient outline (light at top, teal at bottom) matching reference image
+  // Two-tone gradient outline
   const tagStyle: React.CSSProperties = {
     background:
       "linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to bottom, #C7DEDD 0%, #4F9C94 100%) border-box",
     border: "1.5px solid transparent",
   };
 
-  // ── Robust Local Fallbacks ───────────────────────────────────────────────
   const finalHeading = heading || "Core Platform and Technical Competencies";
   const finalSubheading = subheading || "Experienced across major industry digital toolsets and production environments.";
 
@@ -35,7 +39,6 @@ const SectionTechStack = ({
     "Slack Workspace", "Notion", "Airtable Systems", "QuickBooks"
   ];
 
-  // Combine passed tags. If both incoming arrays are empty, use the fallback array.
   const combinedIncoming = [...(line1Tags || []), ...(line2Tags || [])];
   const allTags = combinedIncoming.length > 0 ? combinedIncoming : fallbackTags;
 
@@ -55,7 +58,7 @@ const SectionTechStack = ({
           )}
         </div>
 
-        {/* Tags Section - single wrap, centered, fills full width */}
+        {/* Tags Section */}
         <div className="flex flex-wrap items-center justify-center gap-3 max-w-[1300px] mx-auto">
           {allTags.map((tag, index) => (
             <span key={`tag-${index}`} className={tagClass} style={tagStyle}>

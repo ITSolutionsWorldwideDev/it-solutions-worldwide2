@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-// Fallback static data if common.json doesn't contain faq questions for this slug
+// Fallback static data
 const fallbackFaqData = [
   {
     question: "What types of roles can IT Solutions Worldwide fill?",
@@ -109,7 +109,7 @@ export default function Faqs({ faqData }: FaqsProps) {
             Frequently Asked Questions
           </h2>
           <p className="mt-2 text-gray-400 text-sm">
-            Got questions? We&apos;ve got answers.
+            Got questions? We've got answers.
           </p>
         </div>
 
@@ -133,36 +133,15 @@ export default function Faqs({ faqData }: FaqsProps) {
 
           <div className="relative w-full h-[500px] lg:h-full lg:min-h-[500px] rounded-2xl overflow-hidden shadow-sm border border-gray-100">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39253.91733507426!2d4.4397!3d51.9244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434efef3f7ff5%3A0xb6d40fe25a4ed0a!2sRotterdam%2C+Netherlands!5e0!3m2!1sen!2snl!4v1700000000000!5m2!1sen!2snl"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2229.4664779419377!2d4.3753155!3d51.867517199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c44b8a79991dfd%3A0xfeb452cbb689e588!2sIT%20Solutions%20Worldwide%20BV!5e1!3m2!1sen!2s!4v1782289665315!5m2!1sen!2s"
               width="100%"
               height="100%"
               style={{ border: 0, position: "absolute", inset: 0 }}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Rotterdam Location Map"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="IT Solutions Worldwide BV Location"
             />
-
-            <a
-              href="https://wa.me/your-number-here"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-4 right-4 flex items-center gap-3 bg-white rounded-2xl shadow-md px-4 py-3 hover:shadow-lg transition-shadow duration-200"
-            >
-              <span className="flex items-center justify-center w-9 h-9 rounded-full bg-[#25D366]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="white"
-                >
-                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.39 1.26 4.81L2.05 22l5.46-1.31a9.86 9.86 0 0 0 4.53 1.1h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.13-2.91-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.21 0 4.29.86 5.85 2.42a8.2 8.2 0 0 1 2.43 5.84c0 4.55-3.71 8.26-8.27 8.26a8.2 8.2 0 0 1-4.18-1.15l-.3-.17-3.12.75.76-3.04-.2-.32a8.2 8.2 0 0 1-1.26-4.36c0-4.56 3.71-8.27 8.29-8.27z" />
-                  <path d="M9.16 7.34c-.18-.4-.37-.41-.55-.41h-.47c-.16 0-.43.06-.59.27-.16.21-.62.6-.62 1.47s.64 1.7.73 1.82c.09.12 1.5 2.41 3.78 3.28 1.96.76 2.36.61 2.79.57.43-.04 1.38-.56 1.57-1.1.19-.54.19-1 .13-1.1-.06-.1-.22-.16-.46-.28-.24-.12-1.38-.68-1.6-.76-.21-.08-.37-.12-.52.12-.16.24-.6.76-.74.91-.13.15-.27.16-.5.06-.23-.1-.99-.36-1.88-1.16-.7-.62-1.16-1.39-1.3-1.62-.13-.23-.01-.36.1-.49.11-.13.25-.33.37-.49.12-.16.16-.27.24-.45.08-.18.04-.34-.05-.46z" />
-                </svg>
-              </span>
-           
-            </a>
           </div>
         </div>
       </div>

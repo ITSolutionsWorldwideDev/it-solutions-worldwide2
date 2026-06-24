@@ -16,7 +16,7 @@ interface HeroSectionAdvancedProps {
   primaryButtonText: string;
   primaryButtonLink?: string;
   secondaryButtonText: string;
-  secondaryButtonLink?: string;
+  service: string; // Naya prop add kiya
   stats: Stat[];
   darkColor?: string;
 }
@@ -29,12 +29,11 @@ const HeroSectionAdvanced = ({
   primaryButtonText,
   primaryButtonLink = "#roles",
   secondaryButtonText,
-  secondaryButtonLink = "#services",
+  service, // Destructured
   stats,
   darkColor = "#05262C",
 }: HeroSectionAdvancedProps) => {
   
-  // Exact high-end custom multi-stop gradient provided by you
   const exactGradient = "linear-gradient(90deg, #22a3ad, #219fa9 7.14%, #209ba5 14.29%, #1f98a1 21.43%, #1e949d 28.57%, #1d9099 35.71%, #1c8c95 42.86%, #1b8991 50%, #1a858d 57.14%, #1a8189 64.29%, #197d85 71.43%, #187a81 78.57%, #17767e 85.71%, #16737a 92.86%, #156f76)";
 
   return (
@@ -45,13 +44,11 @@ const HeroSectionAdvanced = ({
           "linear-gradient(90deg, #ffffff 0%, #ffffff 35%, #eef8f9 60%, #d9eef0 85%, #cbe8eb 100%)",
       }}
     >
-      {/* Background glow matching the screenshot - soft radial on right side */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_60%,rgba(176,221,224,0.6),transparent_55%)] pointer-events-none" />
 
-      {/* Main Content Box Wrapper */}
       <div className="max-w-5xl w-full flex flex-col items-center relative z-10 text-center px-4 sm:px-6 lg:px-8">
         
-       {/* Pill Badge Tag - Added automatic star cleaner */}
+        {/* Pill Badge Tag */}
         <div className="inline-flex items-center gap-1.5 rounded-full border border-[#cbe7eb] bg-[#e6f4f6]/80 px-4 py-1 mb-8 shadow-sm">
           <Zap size={13} strokeWidth={2.5} className="fill-current opacity-90" style={{ color: "#1b8991" }} />
           <span className="text-[13px] font-semibold tracking-wide" style={{ color: "#1b8991" }}>
@@ -60,40 +57,40 @@ const HeroSectionAdvanced = ({
         </div>
 
         {/* Headings */}
-    <h1
-  className="text-4xl sm:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.15] max-w-4xl"
-  style={{ color: darkColor }}
->
-  {(() => {
-    const words = `${headingLine1} ${headingLine2}`.trim().split(" ");
-    const lastWord = words.pop();
-    const remainingText = words.join(" ");
-
-    return (
-      <>
-        {remainingText}{" "}
-        <span
-          className="bg-clip-text text-transparent"
-          style={{ backgroundImage: exactGradient }}
+        <h1
+          className="text-4xl sm:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.15] max-w-4xl"
+          style={{ color: darkColor }}
         >
-          {lastWord}
-        </span>
-      </>
-    );
-  })()}
-</h1>
+          {(() => {
+            const words = `${headingLine1} ${headingLine2}`.trim().split(" ");
+            const lastWord = words.pop();
+            const remainingText = words.join(" ");
+
+            return (
+              <>
+                {remainingText}{" "}
+                <span
+                  className="bg-clip-text text-transparent"
+                  style={{ backgroundImage: exactGradient }}
+                >
+                  {lastWord}
+                </span>
+              </>
+            );
+          })()}
+        </h1>
 
         {/* Accent Bar */}
         <div className="w-28 h-[4px] rounded-full mt-4 mb-8" style={{ background: exactGradient }} />
 
-        {/* Description Paragraph */}
+        {/* Description */}
         <p className="max-w-3xl text-[15px] sm:text-[16px] leading-relaxed text-[#3a5357] font-normal mb-10 px-2 sm:px-6">
           {description}
         </p>
 
         {/* Button Actions Row */}
         <div className="flex flex-row flex-wrap items-center justify-center gap-5 w-full mb-8">
-          {/* Solid Primary Button */}
+          {/* Primary Button */}
           <Link
             href={primaryButtonLink}
             className="inline-flex items-center justify-center gap-2 h-[50px] px-10 rounded-xl text-[15px] font-bold text-white shadow-md transition-all duration-200 hover:brightness-95 whitespace-nowrap min-w-[180px] sm:min-w-[210px]"
@@ -103,9 +100,11 @@ const HeroSectionAdvanced = ({
             <ArrowRight size={16} strokeWidth={2.5} />
           </Link>
 
-          {/* Outlined Secondary Button */}
+          {/* WhatsApp Secondary Button */}
           <Link
-            href={secondaryButtonLink}
+            href={`https://wa.me/31107660786?text=Hi%20there!%20I%20would%20like%20to%20book%20a%20free%20consultation%20for%20hiring%20a%20dedicated%20${encodeURIComponent(service)}.`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 h-[50px] px-10 rounded-xl text-[15px] font-bold border-2 bg-transparent transition-all duration-200 hover:bg-[#e6f4f6]/40 whitespace-nowrap min-w-[180px] sm:min-w-[210px]"
             style={{ color: "#1b8991", borderColor: "#1b8991" }}
           >
@@ -114,7 +113,7 @@ const HeroSectionAdvanced = ({
           </Link>
         </div>
 
-        {/* Performance Stats Counter Row */}
+        {/* Stats */}
         <div className="flex flex-row items-center justify-between pt-0 pb-8 w-full max-w-2xl px-2 sm:px-6 gap-2">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center text-center flex-1">
@@ -132,27 +131,20 @@ const HeroSectionAdvanced = ({
         </div>
       </div>
 
-     {/* Trust Ribbon Bar — Clean layout with single icon representation */}
+      {/* Trust Ribbon */}
       <div 
         className="w-full py-4 flex items-center justify-center border-t border-white/10 relative z-10"
         style={{ background: exactGradient }}
       >
         <div className="max-w-5xl w-full flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 px-4 text-center text-white text-[13px] sm:text-[14px] font-medium tracking-wide">
-          
-          {/* Main Trust Statement (Icon retained here) */}
           <div className="flex items-center gap-2">
             <Check size={15} strokeWidth={3} className="text-white shrink-0" />
             <span>Trusted by 500+ Businesses Looking to Scale Faster Across Netherlands</span>
           </div>
-
-          {/* Separation Pipeline */}
           <span className="hidden sm:inline text-white/40 font-light">|</span>
-
-          {/* Clean Text Block (Icon removed completely from here) */}
           <div className="flex items-center gap-2">
             <span>Pre-Vetted Professionals</span>
           </div>
-
         </div>
       </div>
     </section>

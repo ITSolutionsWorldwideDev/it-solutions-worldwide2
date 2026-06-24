@@ -11,6 +11,7 @@ interface Section3Props {
   conclusionText: string;
   ctaText: string;
   imageSrc: string;
+  service: string; // Naya prop: WhatsApp message ke liye service ka naam
 }
 
 const Section3 = ({
@@ -20,7 +21,8 @@ const Section3 = ({
   challenges,
   conclusionText,
   ctaText,
-  imageSrc // <--- Prop bilkul sahi aa rahi hai
+  imageSrc,
+  service,
 }: Section3Props) => {
   return (
     /* Light blue flat background matching reference image exactly */
@@ -30,7 +32,7 @@ const Section3 = ({
         background: "#DCE9EC",
       }}
     >
-      {/* A few very faint, soft random white glow patches - no grid/boxes */}
+      {/* A few very faint, soft random white glow patches */}
       <div
         className="absolute inset-0 opacity-[0.45] pointer-events-none"
         style={{
@@ -41,10 +43,9 @@ const Section3 = ({
 
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
         
-        {/* LEFT COLUMN: Explicitly forcing text content onto the left side */}
+        {/* LEFT COLUMN */}
         <div className="w-full lg:w-[50%] flex flex-col justify-center text-left order-1">
           
-          {/* Main Typography Header matching image_3c72e3.png formatting */}
           <h2 className="text-2xl sm:text-3xl md:text-[38px] font-extrabold text-[#05262C] leading-[1.2] tracking-tight mb-6">
             {heading}
           </h2>
@@ -57,7 +58,6 @@ const Section3 = ({
             {challengeTitle}
           </h4>
 
-          {/* Hardcoded Red/Coral Multipliers List Layout */}
           <ul className="space-y-3.5 mb-8 max-w-2xl">
             {challenges.map((challenge, idx) => (
               <li key={idx} className="flex items-start gap-3 text-[14.5px] sm:text-[15px] text-[#1C3B40] leading-relaxed">
@@ -73,19 +73,24 @@ const Section3 = ({
             {conclusionText}
           </p>
 
-          {/* Core Action Accent Element Button */}
+          {/* WhatsApp Action Button */}
           <div className="flex justify-start">
-            <button className="bg-[#1B8991] hover:bg-[#156F76] text-white text-[15px] font-bold py-3 px-6 rounded-[8px] transition-all duration-200 shadow-sm">
+            <a
+              href={`https://wa.me/31107660786?text=Hi%20there!%20I%20would%20like%20to%20discuss%20hiring%20a%20dedicated%20${encodeURIComponent(service)}.%20${encodeURIComponent(conclusionText)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#1B8991] hover:bg-[#156F76] text-white text-[15px] font-bold py-3 px-6 rounded-[8px] transition-all duration-200 shadow-sm inline-block"
+            >
               {ctaText}
-            </button>
+            </a>
           </div>
         </div>
 
-        {/* RIGHT COLUMN: Larger showcase image, pinned right on desktop */}
+        {/* RIGHT COLUMN */}
         <div className="w-full lg:w-[48%] flex justify-center lg:justify-end order-2 mt-8 lg:mt-0">
           <div className="relative w-full max-w-[640px] aspect-[4/3] rounded-xl overflow-hidden shadow-xl border border-white/40 bg-white min-h-[340px] lg:min-h-[420px]">
             <Image
-              src={imageSrc} /* <--- MAINE YAHAN DYNAMIC VARIABLE SET KAR DIYA HAI */
+              src={imageSrc}
               alt="Challenge presentation illustration"
               fill
               style={{ objectFit: "cover" }}
