@@ -139,7 +139,7 @@ export const menuItems: MenuItem[] = [
           },
           {
             label: "HR Assistant Remote",
-            link: "/outsourcing/hire-hr-assistant-remote",
+            link: "/outsourcing/hire-hr-assistant",
           },
           {
             label: "Customer Support",
