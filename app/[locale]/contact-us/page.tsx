@@ -5,19 +5,23 @@ import initServerI18n from "@/utils/serverTranslation";
 import BannerSection from "@/components/layout/banner-section";
 import ContactCard from "@/components/layout/contact-page-section";
 import LocationMap from "@/components/layout/location-map";
-// import Herosection from '../../components/Herosection2';
-// import ContactSection from '../../components/Contact';
-// import LocationMap from '../../components/Location';
 import { Metadata } from "next";
+import { getCanonicalUrl, getLanguageAlternates } from "@/utils/seo";
 
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const params = await props.params;
+  const { locale } = params;
+
   return {
     title: {
       absolute: "Free IT Consultation in Netherlands | Contact Us",
     },
     description:
       "Get in touch with IT Solutions Worldwide for a free consultation on IT, supply chain, digital services or staffing support in the Netherlands.",
+    alternates: {
+      canonical: getCanonicalUrl(locale, "/contact-us"),
+      languages: getLanguageAlternates("/contact-us"),
+    },
   };
 }
 export default async function ContactUs(

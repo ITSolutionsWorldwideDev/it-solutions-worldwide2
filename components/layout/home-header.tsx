@@ -86,19 +86,17 @@ export default function Header() {
         {/* Hero Content */}
         <div className="relative z-30 flex flex-col items-center justify-center text-center text-white pt-28 lg:pt-32">
           {/* Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 max-w-5xl leading-tight">
-            Empowering Businesses with Smart IT Solutions
-          </h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-[1.15] mb-5">
+  Empowering Businesses with Smart IT Solutions & Supply Chain Management
+</h1>
 
           {/* Description */}
-          <p className="text-base md:text-lg text-gray-200 mb-8 max-w-4xl leading-relaxed px-4">
-            Welcome to IT Solutions Worldwide, a trusted IT service provider,
-            business consultant, and supply chain provider helping businesses
-            across the Netherlands and worldwide scale through smart technology
-            and streamlined operations. From warehouse management systems to
-            full-scale IT outsourcing, we deliver innovative solutions that
-            drive efficiency, growth, and long-term success.
-          </p>
+     <p className="text-[15px] md:text-lg text-gray-200 max-w-6xl leading-7 mb-8 px-2">
+  Welcome to IT Solutions Worldwide, a trusted IT service provider,
+  business consultant, and supply chain partner helping businesses
+  across the Netherlands and worldwide scale through smart technology,
+  streamlined operations, and innovative digital solutions.
+</p>
 
           {/* Tagline */}
           <div className="flex items-center gap-4 mb-10 text-lg md:text-xl font-bold uppercase tracking-wider text-white">

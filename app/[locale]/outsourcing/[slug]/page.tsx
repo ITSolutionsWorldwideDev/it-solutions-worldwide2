@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
 import initServerI18n from "@/utils/serverTranslation";
+import { getCanonicalUrl, getLanguageAlternates } from "@/utils/seo";
 
 // ===== Category page components =====
 import Section2 from "@/components/layout/outsourcing/section-2";
@@ -149,8 +150,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Category page metadata
   if (isCategorySlug(slug)) {
     const seo = seoData[slug][locale === "nl" ? "nl" : "en"];
-    if (seo) return { title: seo.title, description: seo.description };
-    return { title: cleanSlug(slug) };
+    const canonical = getCanonicalUrl(locale, `/${slug}`);
+    const languages = getLanguageAlternates(`/${slug}`);
+
+    if (seo) {
+      return {
+        title: seo.title,
+        description: seo.description,
+        alternates: { canonical, languages },
+      };
+    }
+    return { 
+      title: cleanSlug(slug), 
+      alternates: { canonical, languages } 
+    };
   }
 
   // Detail page metadata
@@ -170,10 +183,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
+  const canonical = getCanonicalUrl(locale, `/${slug}`);
+  const languages = getLanguageAlternates(`/${slug}`);
+
   if (seoTitle) {
-    return { title: seoTitle, description: seoDescription };
+    return {
+      title: seoTitle,
+      description: seoDescription,
+      alternates: { canonical, languages },
+    };
   }
-  return { title: `Hire Dedicated ${cleanSlugToTitle(slug)} | IT Solutions` };
+  return {
+    title: `Hire Dedicated ${cleanSlugToTitle(slug)} | IT Solutions`,
+    alternates: { canonical, languages },
+  };
 }
 
 // ============================================

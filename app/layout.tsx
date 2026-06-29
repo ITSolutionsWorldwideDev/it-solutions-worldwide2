@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import MetaPixel from "@/components/MetaPixel";
 import GoogleTagManager from "@/components/GoogleTagManager";
 import Script from "next/script";
-import { headers } from "next/headers";
 
 const PageUpButton = dynamic(() => import("@/components/ui/PageUpButton"));
 
@@ -17,9 +16,8 @@ const lexend = Lexend({
   adjustFontFallback: true,
 });
 
-export const metadataBase = new URL("https://www.itsolutionsworldwide.com");
-
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.itsolutionsworldwide.com"),
   title: {
     default: "Smart IT & Business Services in Netherlands | ITWW",
     template: "%s | IT Solutions Worldwide",
@@ -37,6 +35,10 @@ export const metadata: Metadata = {
       { url: "/favicon-32x32.webp", sizes: "32x32", type: "image/png" },
     ],
   },
+  // Canonical tag ab automatically metadataBase aur route ke base par generate hoga
+  alternates: {
+    canonical: "./",
+  },
 };
 
 export default async function RootLayout({
@@ -44,16 +46,9 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const headersList = await headers();
-  
-  // 1. Try to get the path from Next.js internal headers
-  // 'x-invoke-path' is the most reliable way to get the route in App Router
-  const pathname = headersList.get("x-invoke-path") || headersList.get("next-url") || "/";
-
   return (
     <html lang="en" className={lexend.className} suppressHydrationWarning>
       <head>
-        {/* Preload critical image */}
         <link
           rel="preload"
           as="image"
@@ -62,15 +57,8 @@ export default async function RootLayout({
           type="image/webp"
         />
         
-        {/* Font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-
-        {/* Canonical Tag - Using resolved path */}
-        <link
-          rel="canonical"
-          href={`https://www.itsolutionsworldwide.com${pathname}`}
-        />
         
         <MetaPixel pixelId="1766535074073515" />
         <GoogleTagManager gtmId="GTM-PH8FNRK6" />
@@ -79,7 +67,6 @@ export default async function RootLayout({
       <body className="mx-2 md:mx-0 lg:mx-0">
         {children}
         
-        {/* Clarity Script */}
         <Script id="clarity-script" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){

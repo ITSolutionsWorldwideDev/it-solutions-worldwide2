@@ -139,33 +139,40 @@ export const logosSlider = [
 export const servicesData = [
   {
     url: "/assets/images/services/supply-chain-management.webp",
-    title: "Supply Chain Transformation",
+    title: "Supply Chain Management & Transformation",
     description:
-      "We drive supply chain transformation by implementing efficient, agile, and technology-driven solutions that enhance visibility, optimize operations, and reduce costs. Our approach ensures seamless integration, data-driven decision-making, and long-term sustainability to help businesses stay competitive in a dynamic market.",
+      "TWW drive supply chain transformation through efficient, agile, technology-driven solutions that enhance visibility, optimize supply chain activities, and reduce costs. As a reliable supply chain supplier and SCM service partner, we ensure seamless integration and long-term sustainability.",
   },
   {
     url: "/assets/images/services/oracle-cloud.webp",
-    title: "Oracle Cloud",
+    title: "Oracle Cloud Solutions",
     description:
-      "We help businesses leverage Oracle Cloud to drive innovation, improve agility, and reduce costs. Our Oracle Cloud services include consulting, implementation, migration, and support to help businesses unlock the full potential of Oracle Cloud and drive digital transformation.",
+      "Enterprise value starts with the right cloud strategy. Our proven Oracle solutions help you implement, migrate, and optimize Oracle Cloud to boost agility, streamline operations, and reduce costs across your organization.",
   },
   {
     url: "/assets/images/services/digital-services.webp",
-    title: "Digital Services",
+    title: "Digital Services & Web Development",
     description:
-      "We offer a comprehensive suite of digital services to help businesses drive digital transformation, improve customer experience, and enhance operational efficiency. Our digital services include web development, mobile app development, UI/UX design, and digital marketing to help businesses stay competitive in a digital-first world.",
+      "A comprehensive suite of digital services — including web development, SaaS development, WordPress website builds, UI/UX design, and digital marketing — helps businesses build a stronger, more competitive digital-first presence .",
   },
   {
     url: "/assets/images/services/automation.webp",
-    title: "IT Support",
+    title: "IT Consulting & Managed Services",
     description:
-      "We provide end-to-end IT support services to help businesses improve operational efficiency, reduce downtime, and enhance productivity. Our IT support services include helpdesk support, network management, cybersecurity, cloud services, and more to help businesses stay secure and competitive.",
+      "End-to-end IT support keeps your business running — improving operational efficiency, reducing downtime, and enhancing productivity. As your IT managed service provider, our services include helpdesk support, network management, cybersecurity, and cloud services for businesses of any size.",
   },
   {
     url: "/assets/images/services/staffing-support.webp",
-    title: "Staffing Support",
+    title: "Staffing Support & Business Consulting",
     description:
-      "We offer staffing support services to help businesses find the right talent, improve workforce productivity, and reduce hiring costs. Our staffing support services include temporary staffing, permanent staffing, contract staffing, and more to help businesses build high-performing teams.",
+      "The right talent changes everything. Temporary, permanent, and contract staffing solutions help businesses improve workforce productivity and reduce hiring costs — including expert IT consultants, business consultants, and skilled software developers.",
+  },
+
+    {
+    url: "/assets/images/services/staffing-support.webp",
+    title: " IT Outsourcing & Procurement",
+    description:
+      "Scale efficiently by outsourcing IT functions to a trusted partner. Recognized among leading IT outsourcing companies, we help businesses reduce overhead through flexible staffing models, dedicated teams, and end-to-end information technology procurement — without compromising quality or control. ",
   },
 ];
 
@@ -233,7 +240,7 @@ export const industriesData = [
     image: "assets/images/industries/manufacturing.webp",
     heading: "Industry-Specific Expertise",
     content:
-      "We help manufacturing industries optimize operations through tailored ERP solutions, supply chain management, automation, and IT support. Our services streamline production workflows, enhance inventory control, improve procurement efficiency, and integrate smart technologies to boost productivity and reduce costs.",
+      "Tailored ERP solutions, supply chain management, automation, and IT support help manufacturing industries optimize operations. These services streamline production workflows, enhance inventory control, improve procurement efficiency, and integrate smart technologies to boost productivity and reduce costs. From shop floor to warehouse, manufacturers benefit from a robust warehouse management system, real-time visibility into supply chain activities, and seamless coordination with SCM suppliers. Whether the need is a dependable supply chain supplier for raw materials or end-to-end supply chain services to manage multi-site operations, our team builds resilient, scalable systems. IT infrastructure support, cybersecurity, and managed supply chain services round out the offering — so manufacturers can focus on production while we handle the technology and logistics behind it, driving measurable efficiency at every stage",
     buttonText: "Discover",
   },
   {
@@ -243,7 +250,7 @@ export const industriesData = [
     image: "assets/images/industries/healthcare.webp",
     heading: "Industry-Specific Expertise",
     content:
-      "ITWW supports healthcare providers with secure IT infrastructure, digital health solutions, and patient data management systems. Our expertise in telemedicine, electronic health records (EHR), and AI-driven diagnostics enables medical professionals to enhance patient care while maintaining compliance with industry regulations.",
+      "ITWW supports healthcare providers with secure IT infrastructure, digital health solutions, and patient data management systems. Our expertise in telemedicine, electronic health records (EHR), and AI-driven diagnostics enables medical professionals to enhance patient care while maintaining compliance with industry regulations. As a trusted IT service provider for healthcare organizations, we deliver IT managed service provider solutions that reduce downtime and protect sensitive patient data. Our IT consultant team designs secure, compliant infrastructure tailored to clinics, hospitals, and healthcare networks of any size. We also support healthcare supply chains — from medical equipment procurement to pharmaceutical logistics — applying the same supply chain management rigor we bring to other sectors, ensuring critical supplies move efficiently and securely across your network.",
     buttonText: "Discover",
   },
   {
@@ -253,27 +260,27 @@ export const industriesData = [
     image: "assets/images/industries/it.webp",
     heading: "Industry-Specific Expertise",
     content:
-      "In the fast-evolving finance sector, we provide robust cybersecurity, blockchain integration, and AI-powered analytics to safeguard transactions and optimize financial operations. Our FinTech solutions help organizations improve risk management, automate processes, and enhance customer experiences.",
+      "Robust cybersecurity, blockchain integration, and AI-powered analytics safeguard transactions and optimize financial operations in the fast-evolving finance sector. These FinTech solutions help organizations improve risk management, automate processes, and enhance customer experiences. As a dedicated IT business consultant for financial institutions, ITWW helps banks, fintechs, and insurance providers modernize legacy systems without disrupting day-to-day operations. An IT outsourcing model gives finance teams access to specialized engineers and IT service engineer support on demand, without the overhead of building an in-house team.  Secure cloud migration and information technology procurement for compliant hardware and software keep financial infrastructure agile, audit-ready, and protected against evolving cyber threats — so businesses can scale with confidence.",
     buttonText: "Discover",
   },
   {
     id: 4,
     number: "04",
-    industry: "Supply Chain",
+    industry: "Logistics",
     image: "assets/images/industries/logistics.webp",
     heading: "Industry-Specific Expertise",
     content:
-      "We help businesses in logistics and supply chain management with real-time inventory tracking, demand forecasting, and AI-driven route optimization. Our digital solutions improve operational visibility, reduce costs, and ensure seamless supply chain operations.",
+      "Intelligent logistics IT solutions — from warehouse management systems to real-time shipment tracking — help freight, transport, and distribution businesses run leaner, more responsive operations. As an experienced supply chain provider, ITWW supports logistics firms with full supply chain management — coordinating with SCM suppliers, optimizing supply chain activities across multiple warehouses, and acting as an extension of the supply chain manager team. An integrated SCM solution brings inventory, transportation, and fulfillment data into a single, actionable view. Whether the need is a reliable supply chain supplier network or comprehensive supply chain managed services to handle day-to-day complexity, the team brings the technology and expertise to reduce delays, cut costs, and keep logistics networks moving smoothly — even at scale. ",
     buttonText: "Discover",
   },
   {
     id: 5,
     number: "05",
-    industry: "Software Development",
+    industry: "Retail & E-commerce",
     image: "assets/images/industries/e-commerce.webp",
     heading: "Industry-Specific Expertise",
     content:
-      "From custom software solutions to enterprise applications, ITWW delivers scalable and high-performance software tailored to your business needs. Our expertise in cloud computing, AI, and agile development ensures that our clients receive innovative and future-ready software solutions.",
+      "Inventory, fulfillment, and digital operations come together for retail and e-commerce brands through smart supply chain solution design combined with high-converting websites and digital marketing. Behind the scenes, a warehouse management system and SCM service keep stock levels accurate and orders moving, while a dedicated supply chain services team manages supplier relationships and demand forecasting — so businesses never oversell or run short. On the customer-facing side, a full-service Digital Marketing Agency builds and optimizes WordPress websites, runs targeted social media marketing campaigns, and improves conversion rates across the digital storefront. Need a software developer to build custom checkout flows or integrations? That's covered too. From warehouse to website, retail and e-commerce businesses get the operational backbone and digital presence needed to compete and grow.",
     buttonText: "Discover",
   },
 ];

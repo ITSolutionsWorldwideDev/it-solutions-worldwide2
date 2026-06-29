@@ -1,15 +1,21 @@
-import nextDynamic from "next/dynamic"; // 👈 IMPORT KO RENAMED RAKHEIN
+import nextDynamic from "next/dynamic";
 import type { Metadata } from 'next';
+import { getCanonicalUrl, getLanguageAlternates } from "@/utils/seo";
 
-// Page Configuration
 export const dynamic = 'force-static';
 export const revalidate = 3600;
 
 export const generateMetadata = async (props: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const params = await props.params;
+  const { locale } = params;
+
   return {
     title: " IT Solutions & Supply Chain Management Services | ITWW ",
     description: " Empowering businesses with smart IT solutions, supply chain management, digital marketing, outsourcing services & more. Get a free consultation with our expert team today.",
+    alternates: {
+      canonical: getCanonicalUrl(locale, ""),
+      languages: getLanguageAlternates(""),
+    },
   };
 };
 

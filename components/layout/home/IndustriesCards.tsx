@@ -104,7 +104,10 @@ export default function IndustriesCards() {
 
   return (
     <section className="w-full max-w-[1400px] mx-auto py-16 px-6 relative group">
-      
+      {/* ADDED HEADING HERE */}
+      <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-12">
+        Industries We Empower
+      </h2>
       {/* Subtle Left Arrow */}
       <button 
         onClick={scrollLeft}

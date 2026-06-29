@@ -133,13 +133,15 @@ export default function FunFacts() {
   return (
     <div
       ref={funFactsRef}
-      className="min-h-[250px] container xl:max-w-[1200px]"
-      style={{
+      className="min-h-[250px] container xl:max-w-[1200px] bg-green-700 rounded-3xl py-12 px-6 my-10"      style={{
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
+      <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-12">
+        Global Reach, Local Expertise
+      </h2>
       <div className="flex flex-col sm:flex-row w-full justify-between text-white">
         <div className="flex-1 text-center p-4">
           <h2 className="md:text-3xl text-xl mb-2 font-bold">
