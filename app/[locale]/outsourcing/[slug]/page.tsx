@@ -150,8 +150,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Category page metadata
   if (isCategorySlug(slug)) {
     const seo = seoData[slug][locale === "nl" ? "nl" : "en"];
-    const canonical = getCanonicalUrl(locale, `/${slug}`);
-    const languages = getLanguageAlternates(`/${slug}`);
+    const canonical = getCanonicalUrl(locale, `/outsourcing/${slug}`);   // 👈 fix
+    const languages = getLanguageAlternates(`/outsourcing/${slug}`);     // 👈 fix
 
     if (seo) {
       return {
@@ -183,8 +183,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
-  const canonical = getCanonicalUrl(locale, `/${slug}`);
-  const languages = getLanguageAlternates(`/${slug}`);
+  const canonical = getCanonicalUrl(locale, `/outsourcing/${slug}`);   // 👈 fix
+  const languages = getLanguageAlternates(`/outsourcing/${slug}`);     // 👈 fix
 
   if (seoTitle) {
     return {
