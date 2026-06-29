@@ -2,7 +2,6 @@
 
 "use client";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
 interface Option {
   label: string;
@@ -199,23 +198,16 @@ export default function SegmentTabs() {
           ))}
         </div>
 
-        <AnimatePresence mode="wait">
+        <>
           {/* Step 1: Service */}
           {step === 1 && (
-            <motion.div
-              key="step1"
-              initial={{ x: 50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -50, opacity: 0 }}
-              transition={{ duration: 0.4 }}
-              className="flex flex-col gap-4"
-            >
+            <div key="step1" className="flex flex-col gap-4 animate-fade-in">
               <h2 className="text-2xl font-semibold">Select a Service</h2>
               <select
                 value={selectedService}
                 onChange={(e) => setSelectedService(e.target.value)}
                 className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
-                aria-label="Select a Service" // 🔥 Fixed: Added label for accessibility
+                aria-label="Select a Service"
               >
                 <option value="">-- Select Service --</option>
                 {services.map((s) => (
@@ -228,7 +220,6 @@ export default function SegmentTabs() {
                 <button
                   onClick={handleSkip}
                   className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 hover:text-black font-medium"
-
                 >
                   Skip
                 </button>
@@ -244,25 +235,18 @@ export default function SegmentTabs() {
                   Continue
                 </button>
               </div>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 2: Option */}
           {step === 2 && (
-            <motion.div
-              key="step2"
-              initial={{ x: 50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -50, opacity: 0 }}
-              transition={{ duration: 0.4 }}
-              className="flex flex-col gap-4"
-            >
+            <div key="step2" className="flex flex-col gap-4 animate-fade-in">
               <h2 className="text-2xl font-semibold">Select Option</h2>
               <select
                 value={selectedOption}
                 onChange={(e) => setSelectedOption(e.target.value)}
                 className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
-                aria-label="Select Service Option" // 🔥 Fixed: Added label for accessibility
+                aria-label="Select Service Option"
               >
                 <option value="">-- Select Option --</option>
                 {selectedService &&
@@ -276,7 +260,6 @@ export default function SegmentTabs() {
                 <button
                   onClick={handleBack}
                   className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 hover:text-black font-medium"
-// 🔥 text-gray-800 add karne se contrast foran pass ho jayega
                 >
                   Go Back
                 </button>
@@ -284,7 +267,6 @@ export default function SegmentTabs() {
                   <button
                     onClick={handleSkip}
                     className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 hover:text-black font-medium"
-// 🔥 text-gray-800 add karne se contrast foran pass ho jayega
                   >
                     Skip
                   </button>
@@ -301,19 +283,12 @@ export default function SegmentTabs() {
                   </button>
                 </div>
               </div>
-            </motion.div>
+            </div>
           )}
 
           {/* Step 3: Enquiry Form */}
           {step === 3 && (
-            <motion.div
-              key="step3"
-              initial={{ x: 50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -50, opacity: 0 }}
-              transition={{ duration: 0.4 }}
-              className="flex flex-col gap-4"
-            >
+            <div key="step3" className="flex flex-col gap-4 animate-fade-in">
               <h2 className="text-2xl font-semibold">Enquiry Form</h2>
               {success && (
                 <div className="p-4 bg-green-100 text-green-800 rounded">
@@ -354,7 +329,7 @@ export default function SegmentTabs() {
                   value={formData.country}
                   onChange={handleFormChange}
                   className="border px-3 py-2 rounded shadow-sm focus:ring-2 focus:ring-[#467a7e]"
-                  aria-label="Select Country" // 🔥 Fixed: Added label for accessibility
+                  aria-label="Select Country"
                 >
                   {euCountries.map((c) => (
                     <option key={c} value={c}>
@@ -376,7 +351,6 @@ export default function SegmentTabs() {
                     onClick={handleBack}
                     type="button"
                     className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 hover:text-black font-medium"
-// 🔥 text-gray-800 add karne se contrast foran pass ho jayega
                   >
                     Go Back
                   </button>
@@ -389,9 +363,9 @@ export default function SegmentTabs() {
                   </button>
                 </div>
               </form>
-            </motion.div>
+            </div>
           )}
-        </AnimatePresence>
+        </>
       </div>
     </div>
   );

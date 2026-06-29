@@ -27,18 +27,38 @@ const AnimationArea = nextDynamic(
 
 const BlogCarousel = nextDynamic(
   () => import("@/components/layout/home/BlogCarousel"),
+  {
+    loading: () => (
+      <div className="h-72 bg-gray-100 animate-pulse rounded-xl" />
+    ),
+  }
 );
 
 const Certifications = nextDynamic(
   () => import("@/components/layout/home/Certification"),
+  {
+    loading: () => (
+      <div className="h-48 bg-gray-100 animate-pulse rounded-xl" />
+    ),
+  }
 );
 
 const ContactSection = nextDynamic(
   () => import("@/components/layout/home/ContactSection"),
+  {
+    loading: () => (
+      <div className="h-80 bg-gray-100 animate-pulse rounded-xl" />
+    ),
+  }
 );
 
 const LogosSlider = nextDynamic(
   () => import("@/components/layout/home/LogosSlider"),
+  {
+    loading: () => (
+      <div className="h-24 bg-gray-100 animate-pulse rounded-xl" />
+    ),
+  }
 );
 
 // 3. Main Page Component

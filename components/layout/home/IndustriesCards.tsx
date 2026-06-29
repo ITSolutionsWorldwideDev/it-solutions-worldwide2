@@ -1,8 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { industriesData } from "@/lib/commonData";
-import Image from 'next/image';
-import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 type Rect = { top: number; left: number; width: number; height: number };
 

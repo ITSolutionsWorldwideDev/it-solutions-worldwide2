@@ -60,7 +60,7 @@ const pages = [
 module.exports = {
   siteUrl,
   generateRobotsTxt: true,
-  generateIndexSitemap: true,
+  generateIndexSitemap: false,
 
   robotsTxtOptions: {
     policies: [

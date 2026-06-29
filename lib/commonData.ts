@@ -141,38 +141,43 @@ export const servicesData = [
     url: "/assets/images/services/supply-chain-management.webp",
     title: "Supply Chain Management & Transformation",
     description:
-      "TWW drive supply chain transformation through efficient, agile, technology-driven solutions that enhance visibility, optimize supply chain activities, and reduce costs. As a reliable supply chain supplier and SCM service partner, we ensure seamless integration and long-term sustainability.",
+      "ITWW drive supply chain transformation through efficient, agile, technology-driven solutions that enhance visibility, optimize supply chain activities, and reduce costs. As a reliable supply chain supplier and SCM service partner, we ensure seamless integration and long-term sustainability.",
+    link: "https://www.itsolutionsworldwide.com/en/scm-services",
   },
   {
     url: "/assets/images/services/oracle-cloud.webp",
     title: "Oracle Cloud Solutions",
     description:
       "Enterprise value starts with the right cloud strategy. Our proven Oracle solutions help you implement, migrate, and optimize Oracle Cloud to boost agility, streamline operations, and reduce costs across your organization.",
+    link: "https://www.itsolutionsworldwide.com/en/oracle-cloud",
   },
   {
     url: "/assets/images/services/digital-services.webp",
     title: "Digital Services & Web Development",
     description:
-      "A comprehensive suite of digital services — including web development, SaaS development, WordPress website builds, UI/UX design, and digital marketing — helps businesses build a stronger, more competitive digital-first presence .",
+      "A comprehensive suite of digital services — including web development, SaaS development, WordPress website builds, UI/UX design, and digital marketing — helps businesses build a stronger, more competitive digital-first presence.",
+    link: "https://www.itsolutionsworldwide.com/en/digital-services",
   },
   {
     url: "/assets/images/services/automation.webp",
     title: "IT Consulting & Managed Services",
     description:
       "End-to-end IT support keeps your business running — improving operational efficiency, reducing downtime, and enhancing productivity. As your IT managed service provider, our services include helpdesk support, network management, cybersecurity, and cloud services for businesses of any size.",
+    link: "https://www.itsolutionsworldwide.com/en/it-support",
   },
   {
     url: "/assets/images/services/staffing-support.webp",
     title: "Staffing Support & Business Consulting",
     description:
       "The right talent changes everything. Temporary, permanent, and contract staffing solutions help businesses improve workforce productivity and reduce hiring costs — including expert IT consultants, business consultants, and skilled software developers.",
+    link: "https://www.itsolutionsworldwide.com/en/staffing-support",
   },
-
-    {
+  {
     url: "/assets/images/services/staffing-support.webp",
-    title: " IT Outsourcing & Procurement",
+    title: "IT Outsourcing & Procurement",
     description:
-      "Scale efficiently by outsourcing IT functions to a trusted partner. Recognized among leading IT outsourcing companies, we help businesses reduce overhead through flexible staffing models, dedicated teams, and end-to-end information technology procurement — without compromising quality or control. ",
+      "Scale efficiently by outsourcing IT functions to a trusted partner. Recognized among leading IT outsourcing companies, we help businesses reduce overhead through flexible staffing models, dedicated teams, and end-to-end information technology procurement — without compromising quality or control.",
+    link: "https://www.itsolutionsworldwide.com/en/outsourcing",
   },
 ];
 
