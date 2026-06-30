@@ -20,6 +20,15 @@ function isStaticAssetPath(pathname: string): boolean {
 acceptLanguage.languages(locales);
 
 export function middleware(request: NextRequest) {
+  // --- 1. Enforce naked to www redirect with 301 ---
+  const host = request.headers.get("host");
+  if (host === "itsolutionsworldwide.com") {
+    const url = request.nextUrl.clone();
+    url.hostname = "www.itsolutionsworldwide.com";
+    return NextResponse.redirect(url, 301);
+  }
+
+  // --- 2. Existing Middleware Logic ---
   const { pathname } = request.nextUrl;
 
   if (request.nextUrl.searchParams.has("_rsc")) {
