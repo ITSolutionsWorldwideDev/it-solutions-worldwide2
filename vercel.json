@@ -1,0 +1,15 @@
+﻿{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "itsolutionsworldwide.com"
+        }
+      ],
+      "destination": "https://www.itsolutionsworldwide.com/:path*",
+      "permanent": true
+    }
+  ]
+}
