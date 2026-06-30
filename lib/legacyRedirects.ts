@@ -1,4 +1,3 @@
-
 const BLOG_SLUG =
   "it-procurement-guide-process-types-and-best-practices-for-tech-teams";
 
@@ -29,9 +28,6 @@ const EXACT_REDIRECTS: Record<string, string> = {
   "/index/": "/",
   "/index.html": "/",
   "/index.htm": "/",
-  "/$": "/",
-  "/en/$": "/en",
-  "/nl/$": "/nl",
 
   "/contact": "/en/contact-us",
   "/contact/": "/en/contact-us",
@@ -177,6 +173,13 @@ export function isGonePath(pathname: string): boolean {
   }
 
   if (/^\/job\/.*\.pdf$/i.test(lower)) {
+    return true;
+  }
+
+  // Junk URLs ending in a literal "$" (regex artifact picked up by
+  // crawlers/SEO tools from a malformed sitemap or scan). Covers
+  // "/$", "/en/$", "/nl/$", and any future locale variants.
+  if (lower.endsWith("/$")) {
     return true;
   }
 
