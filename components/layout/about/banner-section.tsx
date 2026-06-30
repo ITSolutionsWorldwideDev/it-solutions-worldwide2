@@ -13,7 +13,7 @@ type Slide = {
   button3?: string;
   button4?: string;
   buttonTextColor?: string;
-  priority?: boolean; // 👈 Peacefully accept incoming performance optimization flags
+  priority?: boolean;
 };
 
 type BannerSectionProps = {
@@ -44,8 +44,6 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({
   return (
     <div className="relative w-full py-2 mt-2">
       <div className="relative w-full h-[600px] md:h-[400px] lg:h-[600px] mx-auto rounded-xl shadow-lg overflow-hidden flex items-center">
-        
-        {/* PERFORMANCE FIX: Render the background asset through next/image with preloading priorities */}
         <Image
           src={slides[currentSlide].backgroundImage}
           alt={slides[currentSlide].heading || "About Us Banner background"}
@@ -58,7 +56,6 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({
           className="object-cover object-center pointer-events-none select-none z-0"
         />
 
-        {/* Backdrop tint to guarantee text clarity contrast layout ratios */}
         <div className="absolute inset-0 bg-black/20 z-0" />
 
         <div className="relative w-full h-full z-10 text-left text-white px-6 md:px-12">
@@ -71,10 +68,10 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({
                 {slides[currentSlide].text}
               </p>
               
+              {/* Button 1 */}
               {slides[currentSlide].button ? (
                 <div className="gap-4 mt-2 inline-flex align-middle">
                   <Link href={`/${locale}/contact-us`}
-                    target="_blank"
                     className="transition px-4 py-2 rounded-[10px] bg-[#418F92] text-base shrink-0 inline-flex align-middle leading-[50.37px] text-[16.79px] hover:bg-[#347477]"
                   >
                     {slides[currentSlide].button}
@@ -89,10 +86,11 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({
                 </div>
               ) : null}
 
+              {/* Button 2 */}
               {slides[currentSlide].button2 ? (
                 <div className="justify-start gap-4 mt-2 inline-flex align-middle ml-10">
                   <Link
-                    href="#"
+                    href={`/${locale}/contact-us`}
                     className="bg-white transition px-4 py-2 rounded-[10px] border border-[#418F92] text-[#418F92] shrink-0 text-base leading-[50.37px] text-[16.79px] inline-flex align-middle hover:text-[#236B7A] hover:bg-neutral-50"
                   >
                     {slides[currentSlide].button2}
@@ -107,10 +105,11 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({
                 </div>
               ) : null}
 
+              {/* Button 3 */}
               {slides[currentSlide].button3 ? (
                 <div className="flex justify-start gap-4 mt-2">
                   <Link
-                    href="#"
+                    href={`/${locale}/contact-us`}
                     className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition hover:bg-neutral-50`}
                   >
                     {slides[currentSlide].button3}
@@ -118,10 +117,11 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({
                 </div>
               ) : null}
 
+              {/* Button 4 */}
               {slides[currentSlide].button4 ? (
                 <div className="flex justify-start gap-4 mt-2">
                   <Link
-                    href="#"
+                    href={`/${locale}/contact-us`}
                     className={`bg-white text-${buttonTextColor} px-4 py-2 rounded font-semibold transition hover:bg-neutral-50`}
                   >
                     {slides[currentSlide].button4}

@@ -22,24 +22,12 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
       "Learn about IT Solutions Worldwide | a trusted IT partner in the Netherlands specializing in business transformation, digital services & staffing support.",
   };
 }
+
 export const revalidate = 3600;
 
-/* JUST COMMENTED OUT TO FIX BUILD: Nothing is changed or deleted.
-export const metadata: Metadata = {
-  title: {
-    absolute: "Your Trusted IT Partner in the Netherlands | ITWW",
-  },
-  description:
-    "Learn about IT Solutions Worldwide | a trusted IT partner in the Netherlands specializing in business transformation, digital services & staffing support.",
-};
-*/
-
-export default async function AboutUsPage(
-  props: {
-    params: Promise<{ locale: string }>;
-  }
-) {
-  const params = await props.params;  const { locale } = params;
+export default async function AboutUsPage(props: { params: Promise<{ locale: string }> }) {
+  const params = await props.params;
+  const { locale } = params;
 
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
@@ -71,55 +59,36 @@ export default async function AboutUsPage(
     title: t("aboutus.faq_title"),
     description: t("aboutus.faq_desc"),
     faqs: [
-      {
-        question: t("aboutus.question1"),
-        answer: t("aboutus.answer1"),
-      },
-      {
-        question: t("aboutus.question2"),
-        answer: t("aboutus.answer2"),
-      },
-      {
-        question: t("aboutus.question3"),
-        answer: t("aboutus.answer3"),
-      },
-      {
-        question: t("aboutus.question4"),
-        answer: t("aboutus.answer4"),
-      },
-      {
-        question: t("aboutus.question5"),
-        answer: t("aboutus.answer5"),
-      },
-      {
-        question: t("aboutus.question6"),
-        answer: t("aboutus.answer6"),
-      },
+      { question: t("aboutus.question1"), answer: t("aboutus.answer1") },
+      { question: t("aboutus.question2"), answer: t("aboutus.answer2") },
+      { question: t("aboutus.question3"), answer: t("aboutus.answer3") },
+      { question: t("aboutus.question4"), answer: t("aboutus.answer4") },
+      { question: t("aboutus.question5"), answer: t("aboutus.answer5") },
+      { question: t("aboutus.question6"), answer: t("aboutus.answer6") },
     ],
     helpCenterLink: `/${locale}/contact-us`,
-  privacyPolicyLink: `/${locale}/privacy-policy`,
-
+    privacyPolicyLink: `/${locale}/privacy-policy`,
   };
 
-  // PERFORMANCE FIX: Appended explicit priority true property flag down to the sub-component layout block
   const slides = [
     {
       backgroundImage: "/assets/images/aboutus/about-us-banner.webp",
-      backgroundMainImage: "",
+      backgroundMainImage: "", 
       heading: t("aboutus.banner_heading"),
       text: t("aboutus.banner_text"),
       button: t("aboutus.contactheading"),
       button2: "",
-      textcolor: "#0000",
-      priority: true, // 👈 Signals the banner component to use eager asset preloading
+      button3: "",
+      button4: "",
+      buttonTextColor: "#0000",
+      priority: true,
     },
   ];
 
   const vision = {
     heading: t("aboutus.our_vision_heading"),
     text: t("aboutus.our_vision_text"),
-    imageUrl:
-      "/assets/images/aboutus/d-0035-a-757-d-44406901-c-3-a-6-f-1-c-10-c-1-f-1-copy-1.webp",
+    imageUrl: "/assets/images/aboutus/d-0035-a-757-d-44406901-c-3-a-6-f-1-c-10-c-1-f-1-copy-1.webp",
     leftColor: "#278083",
     rightColor: "#000",
   };
@@ -134,22 +103,18 @@ export default async function AboutUsPage(
   };
 
   return (
-    <>
-      <main className="container mx-auto max-w-7xl">
-        <BannerSectionAboutUs
-  slides={slides}
-  locale={locale}
-/>
-        <Group9319 />
-        <WhyUsSection locale={locale} />
-        <OurMission locale={locale} />
-        <VisionSection {...vision} />
-        <OurValuesSection locale={locale} />
-        <CreativeTeamSection locale={locale} />
-        <AboutUsProcessFlow {...processFlow} />
-        <MaskGroup />
-        <FAQSection {...faqData} />
-<GetInTouchSection locale={locale} />      </main>
-    </>
+    <main className="container mx-auto max-w-7xl">
+      <BannerSectionAboutUs slides={slides} locale={locale} />
+      <Group9319 />
+      <WhyUsSection locale={locale} />
+      <OurMission locale={locale} />
+      <VisionSection {...vision} />
+      <OurValuesSection locale={locale} />
+      <CreativeTeamSection locale={locale} />
+      <AboutUsProcessFlow {...processFlow} />
+      <MaskGroup />
+      <FAQSection {...faqData} />
+      <GetInTouchSection locale={locale} />
+    </main>
   );
 }
