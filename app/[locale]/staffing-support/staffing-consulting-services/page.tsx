@@ -129,13 +129,16 @@ export default async function StaffingConsultingServices(
       heading:
         "Enhance Your Recruitment Process - Get Started with Expert Staffing Consultancy!",
       buttonText: "Get Started Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
       <ImageSection2
         heading={t("staffingconsulting.heading_2")}
         text={imagetext}

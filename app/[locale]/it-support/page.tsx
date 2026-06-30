@@ -153,12 +153,15 @@ export default async function ItSupport(
       backgroundImage: "/assets/images/itsupport8.webp",
       heading: "Ready to Transform Your IT Infrastructure?",
       buttonText: "Schedule Your Consultation Now",
-      buttonLink: "/contact-us",
+       buttonLink: `/${locale}/contact-us`,
     },
   ];
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
 
       <ImageSection
         heading={t("oraclecloud.heading_2")}

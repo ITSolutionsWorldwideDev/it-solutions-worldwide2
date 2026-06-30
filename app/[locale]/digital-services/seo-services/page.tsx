@@ -111,7 +111,10 @@ export default async function SEOServices(
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
       <ImageSection2
         heading={t("seo.heading_2")}
         text={imagetext}
@@ -152,7 +155,7 @@ export default async function SEOServices(
         title="Rank Higher and Drive More Traffic"
         description="Get Started with Our SEO Services Today!"
         buttonText="Contact Us Today"
-        buttonLink="/contact-us"
+        buttonLink={`/${locale}/contact-us`}
       />
     </div>
   );

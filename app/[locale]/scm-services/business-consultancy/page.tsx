@@ -120,13 +120,16 @@ export default async function BusinessConsultancy(
       heading:
         "Let's Work Together to Drive Success – Contact Our Consultancy Team Now!",
       buttonText: "Schedule Your Consultation Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
 
       <ImageSection2
         heading={t("businessconsultancy.heading_2")}

@@ -3,7 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const ISO_Section7 = () => {
+interface ISOSection7Props {
+  locale: string;
+}
+
+const ISO_Section7 = ({ locale }: ISOSection7Props) => {
   return (
     <section className="w-full bg-linear-to-br from-teal-700 via-teal-600 to-cyan-700 py-20 text-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
@@ -29,14 +33,14 @@ const ISO_Section7 = () => {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            href="/contact-us"
+           href={`/${locale}/contact-us`}
             className="px-8 py-3 rounded-xl bg-white text-teal-700 font-semibold shadow-md hover:shadow-lg transition"
           >
             Get in Touch
           </Link>
 
           <Link
-            href="/contact-us"
+            href={`/${locale}/contact-us`}
             className="px-8 py-3 rounded-xl border-2 border-white text-white font-semibold hover:bg-white hover:text-teal-700 transition"
           >
             Request a Consultation

@@ -112,13 +112,16 @@ export default async function SmartWarehouseSolutions(
       heading:
         "Enhance Efficiency with Smart Warehouse Solutions - Get Started Today!",
       buttonText: "Schedule Your Consultation Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
       <ImageSection2
         heading={t("smartwarehouse.heading_2")}
         text={imagetext}

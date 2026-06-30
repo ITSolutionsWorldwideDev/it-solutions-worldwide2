@@ -139,7 +139,10 @@ export default async function PPCAdvertising(
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
       <ImageSection2
         heading={t("ppc.heading_2")}
         text={imagetext}
@@ -177,7 +180,7 @@ export default async function PPCAdvertising(
         title="Get Instant Leads & Higher Conversions with PPC"
         description="Start Your Campaign Today!"
         buttonText="Contact Us Today"
-        buttonLink="/contact-us"
+        buttonLink={`/${locale}/contact-us`}
       />
     </div>
   );

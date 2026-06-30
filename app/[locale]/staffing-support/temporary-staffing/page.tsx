@@ -111,7 +111,7 @@ export default async function TemporaryStaffing(
       backgroundImage: "/assets/images/staffingsupport4.webp",
       heading: "Hire Skilled Temporary Staff On-Demand - Contact Us Today!",
       buttonText: "Get Started Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
@@ -119,7 +119,10 @@ export default async function TemporaryStaffing(
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
       <ImageSection2
         heading={t("tempstaffing.heading_2")}
         text={imagetext}

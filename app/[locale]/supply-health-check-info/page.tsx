@@ -6,6 +6,8 @@ export const revalidate = 3600;
 import BannerSection from "@/components/layout/banner-section";
 import Link from "next/link";
 import { Metadata } from "next";
+
+
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const params = await props.params;
   return {
@@ -26,7 +28,12 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
   // const i18nInstance = await initServerI18n(locale);
   // const t = await i18nInstance.getFixedT(locale, "common");
 
-export default async function SupplyHealth() {
+export default async function SupplyHealth({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
 
   const slides = [
     {
@@ -34,6 +41,8 @@ export default async function SupplyHealth() {
       heading: "Supply Chain Health Check",
     },
   ];
+
+  // baaki code...
   const sections = [
     {
       content:
@@ -115,14 +124,14 @@ export default async function SupplyHealth() {
                 )} */}
               </div>
             ))}
-            <div className="mt-10 flex justify-center">
-              <Link
-                href="/supply-health-check"
-                className="bg-[#278083] text-white py-3 px-6 rounded-full text-lg items-center gap-2 shadow-md hover:bg-[#1f6460] transition"
-              >
-                Click Here To Start Your Free Scan
-              </Link>
-            </div>
+         <div className="mt-10 flex justify-center">
+  <Link
+    href={`/${locale}/supply-health-check`}
+    className="bg-[#278083] text-white py-3 px-6 rounded-full text-lg items-center gap-2 shadow-md hover:bg-[#1f6460] transition"
+  >
+    Click Here To Start Your Free Scan
+  </Link>
+</div>
           </div>
         </section>
       </main>

@@ -105,7 +105,10 @@ export default async function DigitalServices(
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
 
       <ImageSection
         heading={t("digitalservices.heading_2")}
@@ -155,7 +158,7 @@ export default async function DigitalServices(
         title="Grow Your Business with Data-Driven Digital Marketing - Schedule a Consultation!"
         description="Let's create a custom strategy for your business."
         buttonText="Contact Us Today"
-        buttonLink="/contact-us"
+  buttonLink={`/${locale}/contact-us`}
       />
     </div>
   );

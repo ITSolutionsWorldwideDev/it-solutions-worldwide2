@@ -79,13 +79,16 @@ export default async function SCMConsultancy(
       heading:
         "Unlock Your Supply Chain Potential – Contact Us for a Free Consultation Today!",
       buttonText: "Schedule Your Consultation Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
 
       <ImageSection2
         heading={t("scmconsultancy.heading_2")}

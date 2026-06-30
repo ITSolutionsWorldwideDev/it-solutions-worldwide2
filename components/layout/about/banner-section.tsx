@@ -18,9 +18,13 @@ type Slide = {
 
 type BannerSectionProps = {
   slides: Slide[];
+  locale: string;
 };
 
-const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({ slides }) => {
+const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({
+  slides,
+  locale,
+}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -69,8 +73,7 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({ slides }) => {
               
               {slides[currentSlide].button ? (
                 <div className="gap-4 mt-2 inline-flex align-middle">
-                  <Link
-                    href="/contact-us"
+                  <Link href={`/${locale}/contact-us`}
                     target="_blank"
                     className="transition px-4 py-2 rounded-[10px] bg-[#418F92] text-base shrink-0 inline-flex align-middle leading-[50.37px] text-[16.79px] hover:bg-[#347477]"
                   >

@@ -113,13 +113,16 @@ export default async function ERPImplementation(
       heading:
         "Transform Your Operations with a Scalable ERP System – Let's Connect!",
       buttonText: "Schedule Your Consultation Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
 
       <ImageSection2
         heading={t("erpimplementation.heading_2")}

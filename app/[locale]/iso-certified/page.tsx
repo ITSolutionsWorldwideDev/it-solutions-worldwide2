@@ -50,10 +50,17 @@ export default async function ISOCertified({
         title="Certified Excellence"
         mainHeading="ISO Certified IT Solutions You Can Trust"
         description="IT Solutions Worldwide is an ISO-certified company, committed to international standards of quality, security, and continuous improvement—so our clients receive reliable, compliant, and future-ready IT services."
-        buttons={[
-          { label: "Work With an ISO Certified Partner", href: "/contact" },
-          { label: "Contact Us", href: "/contact", variant: "outline" },
-        ]}
+       buttons={[
+  {
+    label: "Work With an ISO Certified Partner",
+    href: `/${locale}/contact-us`,
+  },
+  {
+    label: "Contact Us",
+    href: `/${locale}/contact-us`,
+    variant: "outline",
+  },
+]}
       />
 
       <section className="w-full bg-whitesmoke-100 py-16">
@@ -161,7 +168,7 @@ export default async function ISOCertified({
       <ISO_Section4 />
       <ISO_Section5 />
       <ISO_Section6 />
-      <ISO_Section7 />
+      <ISO_Section7 locale={locale} />
     </>
   );
 }

@@ -95,13 +95,16 @@ export default async function AutomationServices(
       backgroundImage: "/assets/images/automationservices5.webp",
       heading: "Automate and Optimize Your Operations – Reach Out Today!",
       buttonText: "Schedule Your Consultation Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
 
       <ImageSection2
         heading={t("automationservices.heading_2")}

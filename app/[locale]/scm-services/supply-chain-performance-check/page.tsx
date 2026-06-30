@@ -110,13 +110,16 @@ export default async function SupplyChainPerformanceCheck(
       heading:
         "Is Your Supply Chain Performing at Its Best? Get Your SCM Performance Check Now!",
       buttonText: "Schedule Your Consultation Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
 
       <ImageSection2
         heading={t("supplychainperformancecheck.heading_2")}

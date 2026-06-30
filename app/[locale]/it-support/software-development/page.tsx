@@ -113,13 +113,16 @@ export default async function SoftwareDevelopment(
       backgroundImage: "/assets/images/itsupport8.webp",
       heading: "Transform Your Ideas into Powerful Software – Contact Us Now!",
       buttonText: "Schedule Your Consultation Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
 
       <ImageSection
         heading={t("softwaredev.heading_2")}

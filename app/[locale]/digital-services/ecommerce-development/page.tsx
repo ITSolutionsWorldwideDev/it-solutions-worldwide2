@@ -36,8 +36,7 @@ export default async function EcommerceDevelopment(
       text: t("ecommerce.text_1"),
       button: t("ecommerce.button_1"),
       textcolor: "#0000",
-      buttonLink: "/digital-services/website-design-&-development/inquiry",
-    },
+buttonLink: `/${locale}/digital-services/website-design-&-development/inquiry`,    },
   ];
   const imagetext = (
     <>
@@ -183,7 +182,7 @@ export default async function EcommerceDevelopment(
         title="Launch & Scale Your Online Store with Expert E-Commerce Solutions"
         description="Get Started Today!"
         buttonText="Contact Us Today"
-        buttonLink="/contact-us"
+        buttonLink={`/${locale}/contact-us`}
       />
     </div>
   );

@@ -126,13 +126,16 @@ export default async function SCM(
       backgroundImage: "/assets/images/scm4.webp",
       heading: "Let’s Optimize Your Supply Chain Today",
       buttonText: "Schedule Your Consultation Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
 
       <ImageSection
         heading={t("scmservices.heading_2")}

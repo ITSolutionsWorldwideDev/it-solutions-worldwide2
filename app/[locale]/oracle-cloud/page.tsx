@@ -158,13 +158,15 @@ export default async function OracleCloud(
       backgroundImage: "/assets/images/oraclecloud13.webp",
       heading: "Drive Sales and Growth with a Customized CRM - Contact Us Now!",
       buttonText: "Schedule Your Consultation Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
   return (
     <div>
-      <BannerSection2 slides={slides} />
-
+    <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
       <ImageSection
         heading={t("oraclecloud.heading_2")}
         text={imagetext}

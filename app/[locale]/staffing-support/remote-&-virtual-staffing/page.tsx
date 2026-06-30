@@ -108,13 +108,16 @@ export default async function RemoteVirtualStaffing(
       heading:
         "Find Skilled Remote Professionals to Grow Your Business – Reach Out Today!",
       buttonText: "Get Started Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
       <ImageSection2
         heading={t("remotestff.heading_2")}
         text={imagetext}

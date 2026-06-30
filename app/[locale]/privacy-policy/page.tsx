@@ -3,16 +3,21 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const params = await props.params;
+  const { locale } = await props.params;
   return {
     title: {
-      absolute: "Privacy Policy | ITWW Netherlands",
+      absolute: `Privacy Policy | ITWW ${locale === 'nl' ? 'Netherlands' : 'Worldwide'}`,
     },
     description:
       "Read the privacy policy of IT Solutions Worldwide to understand how we collect, use and protect your personal data in line with GDPR regulations.",
   };
 }
-export default function Privacy() {
+
+export default async function Privacy(props: { params: Promise<{ locale: string }> }) {
+  const { locale } = await props.params;
+  const baseUrl = "https://www.itsolutionsworldwide.com";
+  const localizedUrl = `${baseUrl}/${locale}`;
+
   return (
     <div className="flex justify-center mt-5 mb-10">
       <div className="container mx-6 md:mx-20">
@@ -23,11 +28,12 @@ export default function Privacy() {
           Welcome to IT Solutions Worldwide. Your privacy is important to us.
           This Privacy Policy explains how we collect, use, share, and protect
           your personal information when you visit our website{" "}
-          <Link href="https://itsolutionsworldwide.com" className="underline">
-            https://itsolutionsworldwide.com
+          <Link href={localizedUrl} className="underline">
+            {`itsolutionsworldwide.com/${locale}`}
           </Link>{" "}
           or engage with our services.
         </p>
+
         <h2 className="text-[22px] md:text-[26px] font-semibold py-2 text-[#2B8C8C]">
           1. Who We Are
         </h2>
@@ -37,36 +43,33 @@ export default function Privacy() {
           automation, and related digital services. Our commitment to your
           privacy is based on transparency and trust.
         </p>
+
         <h2 className="text-[22px] md:text-[26px] font-semibold py-2 text-[#2B8C8C]">
           2. Information We Collect
         </h2>
-        <p>
-          We collect the following types of information: <br />
-          <br />
-          a. Personal Information You Provide <br />
-          <ul className="list-disc ml-10">
-            <li>Name</li>
-            <li>Email address</li>
-            <li>Company name</li>
-            <li>Phone number</li>
-            <li>Job title</li>
-            <li>
-              Any other data you submit via contact forms, newsletter sign-ups,
-              or demo requests
-            </li>
-          </ul>{" "}
-          <br />
-          b. Automatically Collected Information <br />
-          <ul className="list-disc ml-10">
-            <li>IP address</li>
-            <li>Browser type and device</li>
-            <li>Pages visited and time spent</li>
-            <li>Referring site and geographic location</li>
-            <li>
-              Cookies and analytics data (via tools like Google Analytics)
-            </li>
-          </ul>
-        </p>
+        // Replace the offending sections with this structure:
+<p>
+  We collect the following types of information:
+</p>
+<p className="font-semibold">a. Personal Information You Provide</p>
+<ul className="list-disc ml-10 mb-4">
+  <li>Name</li>
+  <li>Email address</li>
+  <li>Company name</li>
+  <li>Phone number</li>
+  <li>Job title</li>
+  <li>Any other data you submit via contact forms, newsletter sign-ups, or demo requests</li>
+</ul>
+
+<p className="font-semibold">b. Automatically Collected Information</p>
+<ul className="list-disc ml-10 mb-4">
+  <li>IP address</li>
+  <li>Browser type and device</li>
+  <li>Pages visited and time spent</li>
+  <li>Referring site and geographic location</li>
+  <li>Cookies and analytics data (via tools like Google Analytics)</li>
+</ul>
+
         <h2 className="text-[22px] md:text-[26px] font-semibold py-2 text-[#2B8C8C]">
           3. How We Use Your Information
         </h2>
@@ -81,6 +84,7 @@ export default function Privacy() {
             <li>Comply with legal obligations</li>
           </ul>
         </p>
+
         <h2 className="text-[22px] md:text-[26px] font-semibold py-2 text-[#2B8C8C]">
           4. Cookies and Tracking Technologies
         </h2>
@@ -90,6 +94,7 @@ export default function Privacy() {
           cookies in accordance with this policy. <br />
           You can modify your cookie settings in your browser.
         </p>
+
         <h2 className="text-[22px] md:text-[26px] font-semibold py-2 text-[#2B8C8C]">
           5. Data Sharing
         </h2>
@@ -108,6 +113,7 @@ export default function Privacy() {
             </li>
           </ul>
         </p>
+
         <h2 className="text-[22px] md:text-[26px] font-semibold py-2 text-[#2B8C8C]">
           6. International Data Transfers
         </h2>
@@ -117,6 +123,7 @@ export default function Privacy() {
           appropriate safeguards are in place for international data transfers,
           particularly under GDPR.
         </p>
+
         <h2 className="text-[22px] md:text-[26px] font-semibold py-2 text-[#2B8C8C]">
           7. Your Data Rights
         </h2>
@@ -135,6 +142,7 @@ export default function Privacy() {
             email]
           </li>
         </ul>
+
         <h2 className="text-[22px] md:text-[26px] font-semibold py-2 text-[#2B8C8C]">
           8. Data Retention
         </h2>
@@ -146,6 +154,7 @@ export default function Privacy() {
             <li>Support ongoing business relationships</li>
           </ul>
         </p>
+
         <h2 className="text-[22px] md:text-[26px] font-semibold py-2 text-[#2B8C8C]">
           9. Third-Party Links
         </h2>
@@ -154,6 +163,7 @@ export default function Privacy() {
           responsible for the privacy practices of these websites and recommend
           reviewing their policies separately.
         </p>
+
         <h2 className="text-[22px] md:text-[26px] font-semibold py-2 text-[#2B8C8C]">
           10. Security Measures
         </h2>
@@ -162,6 +172,7 @@ export default function Privacy() {
           protect your personal data from unauthorized access, alteration,
           disclosure, or destruction.
         </p>
+
         <h2 className="text-[22px] md:text-[26px] font-semibold py-2 text-[#2B8C8C]">
           11. Children’s Privacy
         </h2>

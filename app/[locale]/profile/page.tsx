@@ -98,8 +98,8 @@ export default async function ProfilePage(
         answer: t("aboutus.answer6"),
       },
     ],
-    helpCenterLink: "/contact-us",
-    privacyPolicyLink: "/privacy-policy",
+     helpCenterLink: `/${locale}/contact-us`,
+  privacyPolicyLink: `/${locale}/privacy-policy`,
   };
 
   /* const faqData = {
@@ -144,7 +144,10 @@ export default async function ProfilePage(
   return (
     <>
       <main className="container mx-auto max-w-7xl">
-        <BannerSection3 slides={slides} />
+        <BannerSection3
+  slides={slides}
+  locale={locale}
+/>
         <ProfileInfoSection
           heading={t("profile.cards_main_heading")}
           cards={cards2}
@@ -154,8 +157,7 @@ export default async function ProfilePage(
         <ProjectSection />
         <TechStackSection />
         <FAQSection {...faqData} />
-        <GetInTouchSection />
-      </main>
+<GetInTouchSection locale={locale} />      </main>
     </>
   );
 }

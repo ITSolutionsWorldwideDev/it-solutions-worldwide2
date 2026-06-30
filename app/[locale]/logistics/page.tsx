@@ -120,13 +120,16 @@ export default async function Logistics(
       heading:
         "Enhance Your Supply Chain with Scalable Logistics & Warehousing Solutions - Reach Out Today!",
       buttonText: "Schedule Your Consultation Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
 
       <ImageSection
         heading={t("logistics.heading_2")}

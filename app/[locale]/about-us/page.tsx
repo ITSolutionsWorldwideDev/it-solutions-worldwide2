@@ -96,8 +96,9 @@ export default async function AboutUsPage(
         answer: t("aboutus.answer6"),
       },
     ],
-    helpCenterLink: "/contact-us",
-    privacyPolicyLink: "/privacy-policy",
+    helpCenterLink: `/${locale}/contact-us`,
+  privacyPolicyLink: `/${locale}/privacy-policy`,
+
   };
 
   // PERFORMANCE FIX: Appended explicit priority true property flag down to the sub-component layout block
@@ -135,7 +136,10 @@ export default async function AboutUsPage(
   return (
     <>
       <main className="container mx-auto max-w-7xl">
-        <BannerSectionAboutUs slides={slides} />
+        <BannerSectionAboutUs
+  slides={slides}
+  locale={locale}
+/>
         <Group9319 />
         <WhyUsSection locale={locale} />
         <OurMission locale={locale} />
@@ -145,8 +149,7 @@ export default async function AboutUsPage(
         <AboutUsProcessFlow {...processFlow} />
         <MaskGroup />
         <FAQSection {...faqData} />
-        <GetInTouchSection />
-      </main>
+<GetInTouchSection locale={locale} />      </main>
     </>
   );
 }

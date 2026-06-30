@@ -2,8 +2,11 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-const GetInTouchSection: NextPage = () => {
-  return (
+
+type Props = {
+  locale: string;
+};
+const GetInTouchSection = ({ locale }: Props) => {  return (
     <div className="w-full  md:h-[511px] relative text-left text-[25px] text-white font-lexend">
       {/* <div className="">
         <Image
@@ -137,7 +140,7 @@ const GetInTouchSection: NextPage = () => {
                 /> */}
 
               <Link
-                href="/contact-us"
+                href={`/${locale}/contact-us`}
                 className="rounded-[5px] bg-white text-base leading-[50.37px] text-[16.79px] text-[#467a7e] inline-flex px-4 py-0 align-middle hover:text-[#236B7A]"
               >
                 Contact Us

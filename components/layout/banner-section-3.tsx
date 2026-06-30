@@ -1,4 +1,3 @@
-// components/layout/banner-section-3.tsx
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,34 +12,39 @@ type Slide = {
   button2?: string;
   button3?: string;
   button4?: string;
-  buttonTextColor?: string;
 };
 
 type BannerSectionProps = {
   slides: Slide[];
+  locale: string;
 };
 
-const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
+const BannerSection3: React.FC<BannerSectionProps> = ({ slides, locale }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  // This state ensures we only render dynamic content after the component has hydrated
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    if (slides.length <= 1) return; // ✅ single slide par interval nahi
+    setIsMounted(true);
+    if (slides.length <= 1) return;
+    
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 10000);
+    
     return () => clearInterval(interval);
   }, [slides]);
 
-  if (slides.length === 0) return null;
-
-  const slide = slides[currentSlide];
+  // If not yet mounted, force the first slide to match the server-rendered HTML exactly
+  const slide = isMounted ? slides[currentSlide] : slides[0];
   const isFirst = currentSlide === 0;
+
+  if (slides.length === 0) return null;
 
   return (
     <div className="relative w-full py-2 mt-2">
       <div className="relative w-full h-[900px] md:h-[400px] lg:h-[600px] mx-auto rounded-xl shadow-lg overflow-hidden flex items-center">
-
-        {/* ✅ CSS background hata ke next/image lagaya — LCP fix */}
+        {/* Background Image */}
         <Image
           src={slide.backgroundImage}
           alt={`${slide.heading} banner`}
@@ -64,10 +68,11 @@ const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
                 {slide.text}
               </p>
 
+              {/* Contact Button */}
               {slide.button && (
                 <div className="gap-4 mt-2 inline-flex align-middle sm:w-full">
                   <Link
-                    href="/contact-us"
+                    href={`/${locale}/contact-us`}
                     target="_blank"
                     className="transition px-4 py-2 rounded-[10px] bg-[#418F92] text-base shrink-0 inline-flex align-middle leading-[50.37px] text-[16.79px]"
                   >
@@ -83,12 +88,14 @@ const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
                 </div>
               )}
 
+              {/* Button 2 */}
               {slide.button2 && (
                 <div className="justify-start gap-4 mt-2 inline-flex align-middle md:ml-10 sm:w-full">
-                  <Link
-                    href="#"
-                    className="bg-white transition px-4 py-2 rounded-[10px] border border-[#418F92] text-[#418F92] shrink-0 text-base leading-[50.37px] text-[16.79px] inline-flex align-middle hover:text-[#236B7A]"
-                  >
+                 <Link
+  href={`/${locale}/contact-us`}
+  target="_blank"
+  className="bg-white transition px-4 py-2 rounded-[10px] border border-[#418F92] text-[#418F92] shrink-0 text-base leading-[50.37px] text-[16.79px] inline-flex align-middle hover:text-[#236B7A]"
+>
                     {slide.button2}
                     <Image
                       className="w-6 h-6 ml-2 self-center"
@@ -100,24 +107,9 @@ const BannerSection3: React.FC<BannerSectionProps> = ({ slides }) => {
                   </Link>
                 </div>
               )}
-
-              {slide.button3 && (
-                <div className="flex justify-start gap-4 mt-2">
-                  <Link href="#" className="bg-white px-4 py-2 rounded font-semibold transition">
-                    {slide.button3}
-                  </Link>
-                </div>
-              )}
-
-              {slide.button4 && (
-                <div className="flex justify-start gap-4 mt-2">
-                  <Link href="#" className="bg-white px-4 py-2 rounded font-semibold transition">
-                    {slide.button4}
-                  </Link>
-                </div>
-              )}
             </div>
 
+            {/* Illustration side */}
             <div className="relative">
               {slide.backgroundMainImage && (
                 <Image

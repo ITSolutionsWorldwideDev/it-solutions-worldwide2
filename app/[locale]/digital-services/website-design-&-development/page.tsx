@@ -29,16 +29,18 @@ export default async function WebsiteDesignDevelopment(
   const i18nInstance = await initServerI18n(locale);
   const t = await i18nInstance.getFixedT(locale, "common");
 
-  const slides = [
-    {
-      backgroundImage: "/assets/images/website1.webp",
-      heading: t("webdev.heading_1"),
-      text: t("webdev.text_1"),
-      button: t("webdev.button_1"),
-      textcolor: "#0000",
-      buttonLink: "/digital-services/website-design-&-development/inquiry",
-    },
-  ];
+// Inside your component
+const slides = [
+  {
+    backgroundImage: "/assets/images/website1.webp",
+    heading: t("webdev.heading_1"),
+    text: t("webdev.text_1"),
+    button: t("webdev.button_1"), // Ensure this translation key exists for "Get a Free Consultation"
+    textcolor: "#0000",
+    // Update this line to include the locale:
+    buttonLink: `/${locale}/digital-services/website-design-&-development/inquiry`,
+  },
+];
   const imagetext = (
     <>
       {t("webdev.text_2")}
@@ -170,7 +172,7 @@ export default async function WebsiteDesignDevelopment(
         title="Transform Your Online Presence With Responsive, Fast, and SEO-Optimized Websites"
         description="Contact Us Today!"
         buttonText="Contact Us Today"
-        buttonLink="/contact-us"
+        buttonLink={`/${locale}/contact-us`}
       />
     </div>
   );

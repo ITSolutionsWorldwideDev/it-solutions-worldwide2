@@ -124,7 +124,10 @@ export default async function SocialMediaMarketing(
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
       <ImageSection2
         heading={t("socialmedia.heading_2")}
         text={imagetext}
@@ -153,7 +156,7 @@ export default async function SocialMediaMarketing(
         title="Boost Your Brand Visibility and Growth on Social Media"
         description="Schedule a Consultation!"
         buttonText="Contact Us Today"
-        buttonLink="/contact-us"
+  buttonLink={`/${locale}/contact-us`}
       />
     </div>
   );

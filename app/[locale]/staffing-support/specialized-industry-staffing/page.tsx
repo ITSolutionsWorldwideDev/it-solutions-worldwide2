@@ -114,13 +114,16 @@ export default async function SpecializedIndustryStaffing(
       heading:
         "Find Top Talent with the Expertise Your Industry Needs – Reach Out Today!",
       buttonText: "Get Started Now",
-      buttonLink: "/contact-us",
+      buttonLink: `/${locale}/contact-us`,
     },
   ];
 
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
       <ImageSection2
         heading={t("industrystaffing.heading_2")}
         text={imagetext}

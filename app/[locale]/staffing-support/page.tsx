@@ -104,8 +104,7 @@ export default async function StaffingSupport(
       heading:
         "Build a Stronger Team with Our Staffing Services – Reach Out Today!",
       buttonText: "Get Started Now",
-      buttonLink: "/contact-us",
-    },
+buttonLink: `/${locale}/contact-us`,    },
   ];
 
   const points = [
@@ -118,7 +117,10 @@ export default async function StaffingSupport(
   ];
   return (
     <div>
-      <BannerSection2 slides={slides} />
+      <BannerSection2
+  slides={slides}
+  locale={locale}
+/>
 
       <ImageSection
         heading={t("staffingsupport.heading_2")}
