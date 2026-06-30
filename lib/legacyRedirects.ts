@@ -176,12 +176,7 @@ export function isGonePath(pathname: string): boolean {
     return true;
   }
 
-  // Junk URLs ending in a literal "$" (regex artifact picked up by
-  // crawlers/SEO tools from a malformed sitemap or scan). Covers
-  // "/$", "/en/$", "/nl/$", and any future locale variants.
-  if (lower.endsWith("/$")) {
-    return true;
-  }
+ 
 
   return false;
 }

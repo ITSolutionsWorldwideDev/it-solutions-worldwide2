@@ -41,9 +41,9 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(clean, 301);
   }
 
-  if (isGonePath(pathname)) {
-    return new NextResponse(null, { status: 410 });
-  }
+  //if (isGonePath(pathname)) {
+    //return new NextResponse(null, { status: 410 });
+  //}
 
   const legacyTarget = getLegacyRedirect(pathname);
   if (legacyTarget) {
