@@ -1,4 +1,3 @@
-// middleware.ts
 import { NextRequest, NextResponse } from "next/server";
 import acceptLanguage from "accept-language";
 import i18nConfig from "./i18n/i18nConfig";
@@ -10,13 +9,9 @@ const defaultLocale = i18nConfig.defaultLocale;
 function isStaticAssetPath(pathname: string): boolean {
   if (pathname.startsWith("/assets/")) return true;
   if (pathname.startsWith("/_next")) return true;
-  if (pathname.startsWith("/uploads/")) return true; // ✅ yeh add karo
+  if (pathname.startsWith("/uploads/")) return true;
 
-  if (
-    /\.(svg|png|jpe?g|webp|gif|ico|css|js|woff2?|txt|xml|json|pdf)$/i.test(
-      pathname,
-    )
-  ) {
+  if (/\.(svg|png|jpe?g|webp|gif|ico|css|js|woff2?|txt|xml|json|pdf)$/i.test(pathname)) {
     return true;
   }
   return false;
@@ -27,19 +22,16 @@ acceptLanguage.languages(locales);
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Strip Next.js RSC query params (should not be indexed)
   if (request.nextUrl.searchParams.has("_rsc")) {
     const clean = request.nextUrl.clone();
     clean.searchParams.delete("_rsc");
     return NextResponse.redirect(clean, 301);
   }
 
-  // Removed URLs → 410 Gone
   if (isGonePath(pathname)) {
     return new NextResponse(null, { status: 410 });
   }
 
-  // Legacy URL → canonical path (before static-file bypass)
   const legacyTarget = getLegacyRedirect(pathname);
   if (legacyTarget) {
     return NextResponse.redirect(new URL(legacyTarget, request.url), 301);
@@ -54,31 +46,23 @@ export function middleware(request: NextRequest) {
   }
 
   const pathnameIsMissingLocale = locales.every(
-    (locale) => !pathname.startsWith(`/${locale}`),
+    (locale) => !pathname.startsWith(`/${locale}`)
   );
 
   if (pathnameIsMissingLocale) {
     const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
-    const browserLocale = acceptLanguage.get(
-      request.headers.get("accept-language") || "",
-    );
+    const browserLocale = acceptLanguage.get(request.headers.get("accept-language") || "");
     const locale = cookieLocale || browserLocale || defaultLocale;
     const redirectUrl = new URL(`/${locale}${pathname}`, request.url);
-const res = NextResponse.redirect(redirectUrl, 301);
-    // 301 permanent redirect for SEO - passes link authority to canonical URL
-    res.headers.set(
-      "Cache-Control",
-      "public, s-maxage=3600, stale-while-revalidate=59",
-    );
+    const res = NextResponse.redirect(redirectUrl, 301);
+    res.headers.set("Cache-Control", "public, s-maxage=3600, stale-while-revalidate=59");
     return res;
   }
 
-// Sabse end mein — return NextResponse.next(); ki jagah yeh lagao:
-// middleware.ts mein jahan aap rewrite/redirect kar rahe hain
-// Ensure response header gets the correct path including locale
-const response = NextResponse.next();
-response.headers.set("x-pathname", request.nextUrl.pathname); 
-return response;}
+  const response = NextResponse.next();
+  response.headers.set("x-pathname", request.nextUrl.pathname);
+  return response;
+}
 
 export const config = {
   matcher: ["/((?!api|_next|favicon.ico).*)"],
