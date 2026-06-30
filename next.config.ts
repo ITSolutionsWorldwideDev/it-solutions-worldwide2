@@ -17,12 +17,18 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     // ✅ Yeh part add karna zaruri hai taake optimization error na aaye
-    remotePatterns: [
+ remotePatterns: [
       {
         protocol: "https",
         hostname: "www.itsolutionsworldwide.com",
         port: "",
         pathname: "/assets/**",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+        pathname: "/**",
       },
     ],
   },

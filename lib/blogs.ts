@@ -1,59 +1,101 @@
-import { unstable_cache } from "next/cache";
-import pool from "@/lib/db";
+// lib/blogs.ts
+import { blogModules } from "./blogIndex";
 
-// ✅ Yeh function add karo (same as route.ts wala)
-function getLocalImage(slug: string): string {
-  const map: Record<string, string> = {
-    "why-linkedin-is-critical-for-b2b-industries": "/assets/images/blogs/linkedin.webp",
-    "what-supply-chains-looked-like-before-digital-transformation": "/assets/images/blogs/supply1.webp",
-    "the-future-of-supply-chains-resilience-technology-and-global-impact": "/assets/images/blogs/supply2.webp",
-    "why-workflow-automation-matters-for-hr": "/assets/images/blogs/work1.webp",
-    "top-10-strategies-to-optimize-your-supply-chain-in-2025": "/assets/images/blogs/supply3.webp",
-    "it-procurement-guide-process-types-best-practices-for-tech-teams": "/assets/images/blogs/procurement-blog-1.webp",
-    "omnichannel-strategies-that-drive-engagement-and-growth-in-2025": "/assets/images/blogs/omnichannel.webp",
-    "last-mile-delivery-challenges-and-how-to-overcome-them": "/assets/images/blogs/lastmiled.webp",
-  };
-  return map[slug] || "/assets/images/blogs/biggest1.webp";
+interface BlogSection {
+  title?: string;
+  subtitle?: string;
+  content: string;
+  image?: string;
 }
 
-async function fetchBlogBySlug(slug: string) {
-  const query = `
-    SELECT
-      slug,
-      title,
-      content,
-      imageurl,
-      created_at
-    FROM blogs
-    WHERE slug = $1
-    LIMIT 1
-  `;
+interface BlogModule {
+  title: string;
+  date: string;
+  sections: BlogSection[];
+}
 
-  const result = await pool.query(query, [slug]);
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/['"’]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-+|-+$)/g, "");
+}
 
-  if (!result.rows.length) {
-    return null;
-  }
+function getFeaturedImage(mod: BlogModule): string {
+  const withImage = mod.sections.find((s) => s.image);
+  return withImage?.image || "/assets/images/blogs/biggest1.webp";
+}
 
-  const blog = result.rows[0];
+function getExcerpt(mod: BlogModule): string {
+  const first = mod.sections.find((s) => s.content);
+  const text = (first?.content || "").trim();
+  return text.length > 220 ? text.slice(0, 220).trim() + "..." : text;
+}
 
+function renderHTML(mod: BlogModule): string {
+  return mod.sections
+    .map((s) => {
+      const heading = s.title
+        ? `<h2>${s.title}</h2>`
+        : s.subtitle
+        ? `<h3>${s.subtitle}</h3>`
+        : "";
+      const image = s.image
+        ? `<img src="${s.image}" alt="${s.title || s.subtitle || mod.title}" />`
+        : "";
+      const paragraphs = (s.content || "")
+        .split("\n\n")
+        .filter(Boolean)
+        .map((p) => `<p>${p.replace(/\n/g, "<br/>")}</p>`)
+        .join("");
+      return `${heading}${image}${paragraphs}`;
+    })
+    .join("\n");
+}
+
+export interface BlogEntry {
+  slug: string;
+  date: string;
+  content: {
+    title: string;
+    description: string;
+    featuredImage: string;
+  };
+}
+
+function toBlogEntry(mod: BlogModule): BlogEntry {
   return {
-    slug: blog.slug,
-    date: blog.created_at,
+    slug: slugify(mod.title),
+    date: mod.date,
     content: {
-      title: blog.title,
-      description: blog.content,
-      featuredImage: getLocalImage(blog.slug), // ✅ Fix: slug se image lo
+      title: mod.title,
+      description: getExcerpt(mod),
+      featuredImage: getFeaturedImage(mod),
     },
   };
 }
 
+export async function getAllBlogs(): Promise<BlogEntry[]> {
+  return (blogModules as BlogModule[])
+    .map(toBlogEntry)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
 export async function getBlogBySlug(slug: string) {
-  const cached = unstable_cache(
-    () => fetchBlogBySlug(slug),
-    [`blog-${slug}`],
-    { revalidate: 300, tags: [`blog-${slug}`] },
+  const mod = (blogModules as BlogModule[]).find(
+    (m) => slugify(m.title) === slug
   );
 
-  return cached();
+  if (!mod) return null;
+
+  return {
+    slug,
+    date: mod.date,
+    content: {
+      title: mod.title,
+      description: renderHTML(mod),
+      featuredImage: getFeaturedImage(mod),
+    },
+  };
 }
