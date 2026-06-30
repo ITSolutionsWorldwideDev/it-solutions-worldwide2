@@ -31,6 +31,10 @@ export function middleware(request: NextRequest) {
   // --- 2. Existing Middleware Logic ---
   const { pathname } = request.nextUrl;
 
+  if (pathname === "/") {
+    return NextResponse.redirect(new URL("/en", request.url), 301);
+  }
+
   if (request.nextUrl.searchParams.has("_rsc")) {
     const clean = request.nextUrl.clone();
     clean.searchParams.delete("_rsc");

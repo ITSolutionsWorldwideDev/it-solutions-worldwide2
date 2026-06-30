@@ -29,6 +29,9 @@ const EXACT_REDIRECTS: Record<string, string> = {
   "/index/": "/",
   "/index.html": "/",
   "/index.htm": "/",
+  "/$": "/",
+  "/en/$": "/en",
+  "/nl/$": "/nl",
 
   "/contact": "/en/contact-us",
   "/contact/": "/en/contact-us",
