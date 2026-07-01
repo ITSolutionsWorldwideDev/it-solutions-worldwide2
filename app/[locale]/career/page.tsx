@@ -8,6 +8,7 @@ import CareerJobsSection from "@/components/layout/career-jobs";
 
 // ISR revalidation time
 export const revalidate = 3600;
+export const dynamic = 'force-static';
 
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const params = await props.params;

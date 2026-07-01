@@ -24,6 +24,7 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
 }
 
 export const revalidate = 3600;
+export const dynamic = 'force-static';
 
 export default async function AboutUsPage(props: { params: Promise<{ locale: string }> }) {
   const params = await props.params;

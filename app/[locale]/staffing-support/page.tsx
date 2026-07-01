@@ -1,3 +1,4 @@
+export const dynamic = 'force-static';
 // app/[locale]/staffing-support/page.tsx
 
 import initServerI18n from "@/utils/serverTranslation";

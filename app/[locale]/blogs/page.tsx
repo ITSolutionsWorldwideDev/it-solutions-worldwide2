@@ -6,6 +6,7 @@ import initServerI18n from "@/utils/serverTranslation";
 import { Metadata } from "next";
 
 export const revalidate = 3600;
+export const dynamic = 'force-static';
 
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const params = await props.params;

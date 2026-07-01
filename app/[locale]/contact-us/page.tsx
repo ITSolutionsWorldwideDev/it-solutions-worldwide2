@@ -1,6 +1,7 @@
 // app/[locale]/contact-us/page.tsx
 
 export const revalidate = 3600;
+export const dynamic = 'force-static';
 import initServerI18n from "@/utils/serverTranslation";
 import BannerSection from "@/components/layout/banner-section";
 import ContactCard from "@/components/layout/contact-page-section";

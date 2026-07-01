@@ -12,6 +12,7 @@ import BannerSection2 from "@/components/layout/banner-section-2";
 import { Metadata } from "next";
 
 export const revalidate = 3600;
+export const dynamic = 'force-static';
 
 
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {

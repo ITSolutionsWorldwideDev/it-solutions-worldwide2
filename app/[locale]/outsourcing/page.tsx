@@ -1,3 +1,4 @@
+export const dynamic = 'force-static';
 // app/[locale]/outsourcing/page.tsx
 
 import { Metadata } from "next";

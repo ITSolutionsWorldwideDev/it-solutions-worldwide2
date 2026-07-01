@@ -11,6 +11,7 @@ import MarketingBanner from "@/components/ui/marketing-banner";
 import { Metadata } from "next";
 
 export const revalidate = 3600;
+export const dynamic = 'force-static';
 
 
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {

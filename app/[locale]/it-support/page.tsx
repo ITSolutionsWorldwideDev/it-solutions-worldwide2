@@ -1,6 +1,7 @@
 // app/[locale]/it-support/page.tsx
 
 export const revalidate = 3600;
+export const dynamic = 'force-static';
 
 import initServerI18n from "@/utils/serverTranslation";
 import ImageSection from "@/components/layout/image-section";

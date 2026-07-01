@@ -1,3 +1,4 @@
+export const dynamic = 'force-static';
 // app/[locale]/privacy-policy/page.tsx
 import { Metadata } from "next";
 import Link from "next/link";
