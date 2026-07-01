@@ -8,7 +8,6 @@ import {
 } from "@/components/GoogleTagManager";
 import GoogleTag from "@/components/GoogleTag";
 
-// Scripts only — safe to render inside <head>
 export function AnalyticsScripts() {
   return (
     <>
