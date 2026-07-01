@@ -141,6 +141,21 @@ function cleanSlugToTitle(slug: string): string {
     .join(" ");
 }
 
+
+
+export const dynamic = 'force-static';
+export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  const locales = ["en", "nl"];
+  const categorySlugs = Object.keys(seoData);
+
+  return locales.flatMap((locale) =>
+    categorySlugs.map((slug) => ({ locale, slug }))
+  );
+}
+
+
 // ============================================
 // METADATA
 // ============================================
