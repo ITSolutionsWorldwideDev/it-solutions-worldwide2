@@ -131,6 +131,15 @@ const LOCALE_LANDING_PAGE =
 
 const BLOG_WITHOUT_LOCALE = /^\/blogs\/([^/]+)\/?$/i;
 
+/**
+ * ✅ NEW: Matches old staffing-support hire-* URLs (directly under staffing-support,
+ * NOT the google-ads/[slug] variant which is a live route, not a redirect).
+ * Example match: /en/staffing-support/hire-software-tester-qa
+ * Does NOT match: /en/staffing-support/google-ads/hire-software-tester-qa
+ */
+const STAFFING_HIRE_LEGACY =
+  /^\/(en|nl)\/staffing-support\/(hire-[^/]+)\/?$/i;
+
 export function getLegacyRedirect(pathname: string): string | null {
   const normalized = normalizeLegacyPathname(pathname);
   const key = normalized.toLowerCase();
@@ -139,6 +148,12 @@ export function getLegacyRedirect(pathname: string): string | null {
 
   if (exactRedirect) {
     return exactRedirect;
+  }
+
+  // ✅ NEW: staffing-support/hire-* -> outsourcing/hire-*
+  const staffingHire = normalized.match(STAFFING_HIRE_LEGACY);
+  if (staffingHire) {
+    return `/${staffingHire[1].toLowerCase()}/outsourcing/${staffingHire[2]}`;
   }
 
   const localeIndex = normalized.match(
