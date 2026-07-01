@@ -1,4 +1,3 @@
-// components/layout/nav-bar.tsx
 "use client";
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
@@ -6,6 +5,8 @@ import { menuItems } from "@/lib/menu";
 import MenuDropdown from "./MenuDropdown";
 import MobileMenuItem from "./MobileMenuItem";
 import Image from "next/image";
+import { useParams } from "next/navigation";
+
 
 export default function NavbarHome() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,12 +14,8 @@ export default function NavbarHome() {
 
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const hideTimeout = useRef<NodeJS.Timeout | null>(null);
-const [locale, setLocale] = useState("en");
-
-useEffect(() => {
-  const path = window.location.pathname;
-  setLocale(path.startsWith("/nl") ? "nl" : "en");
-  }, []);
+const params = useParams();
+const locale = (params?.locale as string) || "en";
 
   const handleMouseEnter = (item: string) => {
     if (hideTimeout.current) {

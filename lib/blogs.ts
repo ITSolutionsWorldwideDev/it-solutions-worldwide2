@@ -33,7 +33,9 @@ function getExcerpt(mod: BlogModule): string {
   return text.length > 220 ? text.slice(0, 220).trim() + "..." : text;
 }
 
-function renderHTML(mod: BlogModule): string {
+function renderHTML(mod: BlogModule, featuredImage: string): string {
+  let usedFeaturedImage = false;
+
   return mod.sections
     .map((s) => {
       const heading = s.title
@@ -41,9 +43,17 @@ function renderHTML(mod: BlogModule): string {
         : s.subtitle
         ? `<h3>${s.subtitle}</h3>`
         : "";
-      const image = s.image
-        ? `<img src="${s.image}" alt="${s.title || s.subtitle || mod.title}" />`
-        : "";
+
+      // Skip rendering the image if it's the same one already shown as the hero image
+      let image = "";
+      if (s.image) {
+        if (s.image === featuredImage && !usedFeaturedImage) {
+          usedFeaturedImage = true; // mark as "consumed" by the hero, don't render again
+        } else {
+          image = `<img src="${s.image}" alt="${s.title || s.subtitle || mod.title}" />`;
+        }
+      }
+
       const paragraphs = (s.content || "")
         .split("\n\n")
         .filter(Boolean)
@@ -89,13 +99,15 @@ export async function getBlogBySlug(slug: string) {
 
   if (!mod) return null;
 
+  const featuredImage = getFeaturedImage(mod);
+
   return {
     slug,
     date: mod.date,
     content: {
       title: mod.title,
-      description: renderHTML(mod),
-      featuredImage: getFeaturedImage(mod),
+      description: renderHTML(mod, featuredImage),
+      featuredImage,
     },
   };
 }
