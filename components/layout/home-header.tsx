@@ -100,11 +100,11 @@ export default function Header() {
 
           {/* Tagline */}
           <div className="flex items-center gap-4 mb-10 text-lg md:text-xl font-bold uppercase tracking-wider text-white">
-  <span>Innovate</span>
-  <span>|</span>
-  <span>Automate</span>
-  <span>|</span>
-  <span>Succeed</span>
+    <span>Innovate</span>
+    <span>|</span>
+    <span>Automate</span>
+    <span>|</span>
+    <span>Succeed</span>
 </div>
 
           {/* CTA Button */}

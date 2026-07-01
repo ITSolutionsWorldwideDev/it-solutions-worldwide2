@@ -1,9 +1,13 @@
+// app/layout.tsx
 import "./globals.css";
 import { Lexend } from "next/font/google";
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
-import MetaPixel from "@/components/MetaPixel";
-import GoogleTagManager from "@/components/GoogleTagManager";
+import { MetaPixelScript, MetaPixelNoScript } from "@/components/MetaPixel";
+import {
+  GoogleTagManagerScript,
+  GoogleTagManagerNoScript,
+} from "@/components/GoogleTagManager";
 import Script from "next/script";
 
 const PageUpButton = dynamic(() => import("@/components/ui/PageUpButton"));
@@ -56,17 +60,24 @@ export default async function RootLayout({
           fetchPriority="high"
           type="image/webp"
         />
-        
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
-        <MetaPixel pixelId="1766535074073515" />
-        <GoogleTagManager gtmId="GTM-PH8FNRK6" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+
+        <MetaPixelScript pixelId="1766535074073515" />
+        <GoogleTagManagerScript gtmId="GTM-PH8FNRK6" />
       </head>
-      
+
       <body className="mx-2 md:mx-0 lg:mx-0">
+        <MetaPixelNoScript pixelId="1766535074073515" />
+        <GoogleTagManagerNoScript gtmId="GTM-PH8FNRK6" />
+
         {children}
-        
+
         <Script id="clarity-script" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){
