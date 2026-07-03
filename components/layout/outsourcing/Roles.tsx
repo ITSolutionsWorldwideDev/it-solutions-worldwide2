@@ -82,23 +82,22 @@ export default function Roles({
         {roles.intro}
       </p>
 
-      {/* Grid container with center alignment */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
         {Object.entries(roles.roles).map(([key, role]) => {
           const typedRole = role as RoleItem;
 
+          // Resolve paths
           const categorySlug = ROLE_SLUGS[key] || key.replace(/_/g, "-");
-          const categoryLabel = ROLE_LINK_LABELS[key] || `Explore ${typedRole.title}`;
           const categoryHref = `/${locale}/outsourcing/${categorySlug}`;
+          
+          const staffingPath = STAFFING_LINKS[key] || typedRole.link;
+          const staffingHref = staffingPath ? `/${locale}${staffingPath.startsWith('/') ? '' : '/'}${staffingPath}` : null;
 
-          const staffingPath =
-            STAFFING_LINKS[key] ||
-            (typedRole.link?.startsWith("/") ? typedRole.link : null);
-          const staffingHref = staffingPath ? `/${locale}${staffingPath}` : null;
-          const staffingLabel = `Hire a ${typedRole.title} Specialist`;
-
-          const href = isCategory ? categoryHref : staffingHref;
-          const label = isCategory ? categoryLabel : staffingLabel;
+          // Force a fallback: if staffingHref is missing, use categoryHref
+          const href = isCategory ? categoryHref : (staffingHref || categoryHref);
+          const label = isCategory 
+            ? (ROLE_LINK_LABELS[key] || `Explore ${typedRole.title}`) 
+            : `Hire a ${typedRole.title} Specialist`;
 
           return (
             <div
@@ -121,15 +120,13 @@ export default function Roles({
                 {typedRole.description}
               </p>
 
-              {href && (
-                <Link
-                  href={href}
-                  className="inline-flex items-center text-sm font-semibold text-teal-500 hover:text-teal-700 transition-colors mt-2"
-                >
-                  {label}
-                  <ChevronRight className="size-4 ml-1" />
-                </Link>
-              )}
+              <Link
+                href={href}
+                className="inline-flex items-center text-sm font-semibold text-teal-500 hover:text-teal-700 transition-colors mt-2"
+              >
+                {label}
+                <ChevronRight className="size-4 ml-1" />
+              </Link>
             </div>
           );
         })}

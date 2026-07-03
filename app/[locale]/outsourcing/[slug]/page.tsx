@@ -307,7 +307,7 @@ export default async function Page({ params }: Props) {
     );
   }
 
-  // ============================================
+ // ============================================
   // BRANCH 2: DETAIL / HIRE PAGE (e.g. hire-data-engineer)
   // ============================================
   const possibleKeys = [`outsource-${slug}`, `staffing-${slug}`, slug];
@@ -320,9 +320,11 @@ export default async function Page({ params }: Props) {
       break;
     }
   }
-if (slug === "hire-hr-assistant-remote") {
-  notFound();
-}
+  
+  if (slug === "hire-hr-assistant-remote") {
+    notFound();
+  }
+  
   const content: any = rawContentObject ?? {};
   const humanReadableRole = cleanSlugToTitle(slug);
 
@@ -437,47 +439,42 @@ if (slug === "hire-hr-assistant-remote") {
     ? content.related.cards
     : [];
 
+  const relatedCardsForRoles: Record<string, { title: string; description: string }> = {};
 
-const relatedCardsForRoles: Record<
-  string,
-  { title: string; description: string }
-> = {};
+  relatedCards.forEach((card: any) => {
+    const title = (card.title || "").toLowerCase();
+    let key = "";
 
-relatedCards.forEach((card: any) => {
-  const title = (card.title || "").toLowerCase();
+    if (title.includes("virtual assistant")) key = "virtual_assistant";
+    else if (title.includes("full stack")) key = "full_stack_developer";
+    else if (title.includes("data engineer")) key = "data_engineer";
+    else if (title.includes("ai engineer")) key = "ai_ml_engineer";
+    else if (title.includes("electrical engineer")) key = "electrical_engineer";
+    else if (title.includes("admin")) key = "admin";
+    else if (title.includes("hr")) key = "hr";
+    else if (title.includes("customer support")) key = "customer_support";
+    else if (title.includes("data entry")) key = "data_entry";
+    else if (title.includes("web designer")) key = "web_designer";
+    else if (title.includes("graphic designer")) key = "graphic_designer";
+    else if (title.includes("front end")) key = "front_end";
+    else if (title.includes("back end")) key = "back_end";
+    else if (title.includes("app developer")) key = "app_dev";
+    else if (title.includes("it support")) key = "it_support";
+    else if (title.includes("software tester")) key = "qa_tester";
+    else if (title.includes("social media")) key = "social_media";
+    else if (title.includes("content creator")) key = "content_creator";
+    else if (title.includes("online marketer")) key = "online_marketer";
+    else if (title.includes("google analytics")) key = "ga_specialist";
+    else if (title.includes("power bi")) key = "power_bi";
+    else if (title.includes("data analyst")) key = "data_analyst";
 
-  let key = "";
-
-  if (title.includes("virtual assistant")) key = "virtual_assistant";
-  else if (title.includes("full stack")) key = "full_stack_developer";
-  else if (title.includes("data engineer")) key = "data_engineer";
-  else if (title.includes("ai engineer")) key = "ai_ml_engineer";
-  else if (title.includes("electrical engineer")) key = "electrical_engineer";
-  else if (title.includes("admin")) key = "admin";
-  else if (title.includes("hr")) key = "hr";
-  else if (title.includes("customer support")) key = "customer_support";
-  else if (title.includes("data entry")) key = "data_entry";
-  else if (title.includes("web designer")) key = "web_designer";
-  else if (title.includes("graphic designer")) key = "graphic_designer";
-  else if (title.includes("front end")) key = "front_end";
-  else if (title.includes("back end")) key = "back_end";
-  else if (title.includes("app developer")) key = "app_dev";
-  else if (title.includes("it support")) key = "it_support";
-  else if (title.includes("software tester")) key = "qa_tester";
-  else if (title.includes("social media")) key = "social_media";
-  else if (title.includes("content creator")) key = "content_creator";
-  else if (title.includes("online marketer")) key = "online_marketer";
-  else if (title.includes("google analytics")) key = "ga_specialist";
-  else if (title.includes("power bi")) key = "power_bi";
-  else if (title.includes("data analyst")) key = "data_analyst";
-
-  if (key) {
-    relatedCardsForRoles[key] = {
-      title: card.title,
-      description: card.desc || card.description || "",
-    };
-  }
-});
+    if (key) {
+      relatedCardsForRoles[key] = {
+        title: card.title,
+        description: card.desc || card.description || "",
+      };
+    }
+  });
 
   const mappedFaqData = Array.isArray(content?.faq?.questions) ? content.faq.questions : [];
 
@@ -556,14 +553,13 @@ relatedCards.forEach((card: any) => {
 
       <Faqs faqData={mappedFaqData} />
 
-<Roles
-  roles={{
-    title: relatedHeading,
-    intro: relatedSubheading,
-    roles: relatedCardsForRoles,
-  }}
-  locale={locale}
-/>
+      <SectionRelatedServices 
+        heading={relatedHeading} 
+        subheading={relatedSubheading} 
+        cards={relatedCardsForRoles} 
+        locale={locale} 
+      />
+
       <SectionReadyCTA
         heading={readyHeading}
         subheading={readySubheading}
