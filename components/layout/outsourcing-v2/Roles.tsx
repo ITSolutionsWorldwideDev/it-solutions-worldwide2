@@ -53,7 +53,7 @@ const STAFFING_LINKS: Record<string, string> = {
   ecommerce_assistant: "/staffing-support/hire-ecommerce-assistant",
   electrical_engineer: "/staffing-support/hire-electrical-engineer",
   admin: "/staffing-support/hire-admin-accounting-assistant",
-  hr: "/staffing-support/hire-hr-assistant-remote",
+  hr: "/staffing-support/hire-hr-assistant",
   customer_support: "/staffing-support/hire-customer-support-agent",
   data_entry: "/staffing-support/hire-data-entry-specialist",
   web_designer: "/staffing-support/hire-webdesigner-developer",

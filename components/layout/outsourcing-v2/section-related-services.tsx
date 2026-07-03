@@ -1,88 +1,112 @@
-import React from "react";
+import { TrendingUp, Target, Headphones, UserCheck, Mail, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
-type ServiceCard = {
+type RoleItem = {
   title: string;
   description: string;
-  icon?: React.ReactNode;
+  link?: string;
 };
 
-type SectionRelatedServicesProps = {
-  heading?: string;
-  subheading?: string;
-  cards?: ServiceCard[];
+// Yeh props ka naya interface hai
+type SectionProps = {
+  heading: string;
+  subheading: string;
+  cards: Record<string, RoleItem>;
+  locale: string;
+  isCategory?: boolean;
 };
 
-// Unique Icons
-const BarChartIcon = () => (
-  <svg className="w-7 h-7 text-[#0E6774]" viewBox="0 0 24 24" fill="currentColor">
-    <rect x="4" y="13" width="3.5" height="7" rx="1" /><rect x="10.25" y="8" width="3.5" height="12" rx="1" /><rect x="16.5" y="4" width="3.5" height="16" rx="1" />
-  </svg>
-);
+const ROLE_ICONS = [TrendingUp, Target, Headphones, UserCheck, Mail];
 
-const TrendChartIcon = () => (
-  <svg className="w-7 h-7 text-[#0E6774]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-  </svg>
-);
+const ROLE_SLUGS: Record<string, string> = {
+  hire_roles: "hire-roles",
+  business_support: "business-support",
+  design_services: "design-services",
+  it_development: "it-development",
+  marketing_analytics: "marketing-analytics",
+};
 
-const RobotIcon = () => (
-  <svg className="w-7 h-7 text-[#0E6774]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 10h18M7 10l1.292-6.46a.5.5 0 01.48-.4h6.456a.5.5 0 01.48.4L17 10M9 14h6" />
-  </svg>
-);
+const STAFFING_LINKS: Record<string, string> = {
+  virtual_assistant: "/outsourcing/hire-virtual-assistant",
+  data_engineer: "/outsourcing/hire-data-engineer",
+  full_stack_developer: "/outsourcing/hire-full-stack-developer",
+  ai_ml_engineer: "/outsourcing/hire-ai-engineer",
+  ecommerce_assistant: "/outsourcing/hire-ecommerce-assistant",
+  electrical_engineer: "/outsourcing/hire-electrical-engineer",
+  admin: "/outsourcing/hire-admin-accounting-assistant",
+  hr: "/outsourcing/hire-hr-assistant",
+  customer_support: "/outsourcing/hire-customer-support-agent",
+  data_entry: "/outsourcing/hire-data-entry-specialist",
+  web_designer: "/outsourcing/hire-webdesigner-developer",
+  graphics_designer: "/outsourcing/hire-graphic-designer",
+  graphic_designer: "/outsourcing/hire-graphic-designer",
+  front_end: "/outsourcing/hire-front-end-developer",
+  back_end: "/outsourcing/hire-back-end-developer",
+  app_dev: "/outsourcing/hire-app-developer",
+  it_support: "/outsourcing/hire-it-support-specialist",
+  qa_tester: "/outsourcing/hire-software-tester-qa",
+  social_media: "/outsourcing/hire-social-media-manager",
+  content_creator: "/outsourcing/hire-content-creator",
+  online_marketer: "/outsourcing/hire-online-marketer",
+  ga_specialist: "/outsourcing/hire-google-analytics-specialist",
+  power_bi: "/outsourcing/hire-power-bi-tableau-specialist",
+  data_analyst: "/outsourcing/hire-data-analyst",
+};
 
-const LaptopIcon = () => (
-  <svg className="w-7 h-7 text-[#0E6774]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17H9l-2 3H5l4-10h6l4 10h-2l-2-3h-.75M12 10v4" />
-    <path strokeLinecap="round" d="M4 10h16v8a1 1 0 01-1 1H5a1 1 0 01-1-1v-8z" />
-  </svg>
-);
-
-export default function SectionRelatedServices({
-  heading,
-  subheading,
-  cards,
-}: SectionRelatedServicesProps) {
-  const finalHeading = heading || "Explore Complementary Support Verticals";
-  const finalSubheading = subheading || "Further expand efficiency loops by combining related specialized workflows.";
-
-  // Utility to remove emojis from string
-  const cleanTitle = (text: string) => {
-    return text.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g, '').trim();
+export default function Roles({ heading, subheading, cards, locale, isCategory = false }: SectionProps) {
+  // Data ko us structure mein convert kar rahe hain jo neeche use ho raha hai
+  const roles = {
+    title: heading,
+    intro: subheading,
+    roles: cards,
   };
 
-  const finalCards = Array.isArray(cards) && cards.length > 0 ? cards : [
-    { title: "Administrative Support", description: "Manage day-to-day operations and scheduling.", icon: <BarChartIcon /> },
-    { title: "Customer Support Teams", description: "High-touch communication for client retention.", icon: <TrendChartIcon /> },
-    { title: "Data Engineering", description: "Build scalable pipelines for your data architecture.", icon: <RobotIcon /> },
-    { title: "Tech Development", description: "Scale software projects with dedicated talent.", icon: <LaptopIcon /> }
-  ];
+  if (!roles?.roles || Object.keys(roles.roles).length === 0) return null;
 
   return (
-    <section className="pt-6 pb-20 px-6 bg-white font-sans w-full">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12 max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight mb-4">{finalHeading}</h2>
-          {finalSubheading && <p className="text-[#334155] text-base md:text-lg leading-relaxed font-medium">{finalSubheading}</p>}
-        </div>
+    <section className="py-14 px-4 bg-white" id="roles">
+      <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
+        <span className="text-teal-500">{roles.title}</span>
+      </h2>
+      <p className="max-w-4xl mx-auto text-center text-gray-900 mb-10">{roles.intro}</p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {finalCards.map((card, idx) => (
-            <div key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-14 h-14 rounded-xl bg-[#E6F4F5] flex items-center justify-center shrink-0">
-                  {card.icon || <BarChartIcon />}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {Object.entries(roles.roles).map(([key, role], index) => {
+          const Icon = ROLE_ICONS[index % ROLE_ICONS.length];
+          
+    const predefinedLink = STAFFING_LINKS[key];
+
+const customLink =
+  role.link && role.link.startsWith("/")
+    ? role.link
+    : null;
+
+const href = isCategory
+  ? `/${locale}/outsourcing/${ROLE_SLUGS[key] || key.replace(/_/g, "-")}`
+  : predefinedLink
+    ? `/${locale}${predefinedLink}`
+    : customLink
+      ? `/${locale}${customLink}`
+      : "#";
+          const label = isCategory 
+            ? "Explore Service" 
+            : `Hire a ${role.title} Specialist`;
+
+          return (
+            <div key={key} className="border border-gray-200 rounded-xl p-5 flex flex-col gap-3 hover:shadow-md transition-shadow">
+              <h3 className="text-base font-semibold text-gray-900 flex items-center gap-3">
+                <div className="text-white p-3 rounded-xl bg-gradient-to-br from-[#22A3AD] to-[#1A8D96]">
+                  <Icon className="w-6 h-6" />
                 </div>
-                <h3 className="font-bold text-base text-[#0F172A] leading-snug">
-                  {cleanTitle(card.title)}
-                </h3>
-              </div>
-              <p className="text-sm leading-relaxed text-[#475569]">
-                {(card as any).description || (card as any).desc || ""}
-              </p>
+                {role.title}
+              </h3>
+              <p className="text-sm text-gray-500 line-clamp-3 flex-1">{role.description}</p>
+              <Link href={href} className="inline-flex items-center text-sm font-semibold text-teal-500 hover:text-teal-700">
+                {label} <ChevronRight className="size-4 ml-1" />
+              </Link>
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </section>
   );

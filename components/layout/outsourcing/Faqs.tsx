@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 
 // Fallback static data
 const fallbackFaqData = [
@@ -87,6 +87,26 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
   );
 }
 
+// Isolated map component — React.memo se yeh accordion ke re-renders se
+// completely decouple ho jata hai, isliye ad-blocker jaisi cheezein isko
+// disturb nahi karti aur "insertBefore" DOM error nahi aata.
+const MapEmbed = React.memo(function MapEmbed() {
+  return (
+    <div className="relative w-full h-[500px] lg:h-full lg:min-h-[500px] rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2229.4664779419377!2d4.3753155!3d51.867517199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c44b8a79991dfd%3A0xfeb452cbb689e588!2sIT%20Solutions%20Worldwide%20BV!5e1!3m2!1sen!2s!4v1782289665315!5m2!1sen!2s"
+        width="100%"
+        height="100%"
+        style={{ border: 0, position: "absolute", inset: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="strict-origin-when-cross-origin"
+        title="IT Solutions Worldwide BV Location"
+      />
+    </div>
+  );
+});
+
 interface FaqsProps {
   faqData?: any[];
 }
@@ -131,18 +151,7 @@ export default function Faqs({ faqData }: FaqsProps) {
             })}
           </div>
 
-          <div className="relative w-full h-[500px] lg:h-full lg:min-h-[500px] rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2229.4664779419377!2d4.3753155!3d51.867517199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c44b8a79991dfd%3A0xfeb452cbb689e588!2sIT%20Solutions%20Worldwide%20BV!5e1!3m2!1sen!2s!4v1782289665315!5m2!1sen!2s"
-              width="100%"
-              height="100%"
-              style={{ border: 0, position: "absolute", inset: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-              title="IT Solutions Worldwide BV Location"
-            />
-          </div>
+          <MapEmbed />
         </div>
       </div>
     </section>

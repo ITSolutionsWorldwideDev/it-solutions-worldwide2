@@ -22,7 +22,7 @@ export const defaultConsent: CookieConsent = {
   timestamp: Date.now(),
 };
 
-export function getConsent(): CookieConsent | null {
+export function getClientConsent(): CookieConsent | null {
   const value = Cookies.get(COOKIE_NAME);
   return value ? JSON.parse(value) : null;
 }
@@ -35,11 +35,9 @@ export function setConsent(consent: CookieConsent) {
 }
 
 export function shouldShowBanner(): boolean {
-  const consent = getConsent();
+  const consent = getClientConsent();
   return !consent || consent.version !== CONSENT_VERSION;
 }
-
-
 /* import Cookies from 'js-cookie';
 
 export const COOKIE_NAME = 'cookie_consent';

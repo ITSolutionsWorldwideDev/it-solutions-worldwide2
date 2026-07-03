@@ -130,8 +130,7 @@ const faqData: FAQItem[] = Array.isArray(rawFaqData) ? rawFaqData : [];
       />
       {/* )} */}
 
-      <Roles roles={outsourcingRolesData} isCategory={true} />
-
+<Roles roles={outsourcingRolesData} isCategory={true} locale={locale} />
       <FullContentSection
         heading={t("outsourcing.why_us.title")}
         text={imagetext}

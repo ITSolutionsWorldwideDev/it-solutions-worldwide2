@@ -6,8 +6,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.itsolutionsworldwide.com"),
   title: {
     default: "Smart IT & Business Services in Netherlands | ITWW",
-    template: "%s | IT Solutions Worldwide",
+    template: "%s",
   },
+  
   description:
     "IT Solutions Worldwide delivers supply chain, digital, staffing & Oracle Cloud services in the Netherlands. Get a free consultation today.",
   verification: {

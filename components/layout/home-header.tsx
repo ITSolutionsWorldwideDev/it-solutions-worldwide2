@@ -86,7 +86,7 @@ export default function Header() {
         {/* Hero Content */}
         <div className="relative z-30 flex flex-col items-center justify-center text-center text-white pt-28 lg:pt-32">
           {/* Heading */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-[1.15] mb-5">
+     <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-[1.15] mb-5">
   Empowering Businesses with Smart IT Solutions & Supply Chain Management
 </h1>
 

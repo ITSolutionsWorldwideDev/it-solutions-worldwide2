@@ -50,14 +50,12 @@ export default async function LocaleLayout(props: {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <MetaPixelScript pixelId="1766535074073515" />
+        <MetaPixelScript pixelId="1766535074073515" enabled={true} />
         <GoogleTagManagerScript gtmId="GTM-PH8FNRK6" />
       </head>
-
       <body className="mx-2 md:mx-0 lg:mx-0">
         <MetaPixelNoScript pixelId="1766535074073515" />
         <GoogleTagManagerNoScript gtmId="GTM-PH8FNRK6" />
-
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -70,7 +68,6 @@ export default async function LocaleLayout(props: {
             <CookieConsent />
           </LayoutWrapper>
         </ThemeProvider>
-
         <Script id="clarity-script" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){

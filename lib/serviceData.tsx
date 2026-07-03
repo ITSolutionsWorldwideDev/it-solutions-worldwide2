@@ -3770,7 +3770,7 @@ const contentMap: ServicePageConfig =
       ],
     },
 
-    "hire-hr-assistant-remote": {
+    "hire-hr-assistant": {
       heading: "HR Assistant",
       subText:
         "HR administration is essential but time-consuming — and letting it fall behind creates compliance risks and employee experience issues. Get a dedicated remote HR assistant who keeps your people processes organised, compliant, and running smoothly every day.",

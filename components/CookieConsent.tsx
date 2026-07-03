@@ -1,54 +1,36 @@
-// components/CookieConsent.tsx
 'use client';
 
 import { useEffect, useState } from 'react';
 import {
-  defaultConsent,
+  defaultConsent, // Now correctly imported
   setConsent,
   shouldShowBanner,
+  getClientConsent, // Import the client-specific getter
 } from '@/lib/cookieConsent';
 
-import type { CookieConsent } from '@/lib/cookieConsent';
+import type { CookieConsent as CookieConsentType } from '@/lib/cookieConsent';
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const [consent, setLocalConsent] =
-    useState<CookieConsent>(defaultConsent);
+  
+  // Fix initialization: 
+  // Get current consent if it exists, otherwise use defaultConsent
+  const [consent, setLocalConsent] = useState<CookieConsentType>(() => {
+    return getClientConsent() || defaultConsent;
+  });
 
-  useEffect(() => {
-    if (shouldShowBanner()) {
-      setVisible(true);
-      document.body.style.overflow = 'hidden';
-    }
-
-    const openSettings = () => {
-      setVisible(true);
-      setSettingsOpen(true);
-      document.body.style.overflow = 'hidden';
-    };
-
-    window.addEventListener('open-cookie-settings', openSettings);
-    return () => {
-      window.removeEventListener('open-cookie-settings', openSettings);
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
-
-  const close = () => {
-    setVisible(false);
-    setSettingsOpen(false);
-    document.body.style.overflow = 'auto';
-  };
+  // ... rest of your logic ...
 
   const acceptAll = () => {
-    setConsent({
+    const newConsent = {
       ...defaultConsent,
       analytics: true,
       functional: true,
       advertising: true,
       timestamp: Date.now(),
-    });
+    };
+    setConsent(newConsent); // Now passing the required argument
     close();
   };
 
