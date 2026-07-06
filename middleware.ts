@@ -6,6 +6,9 @@ import { getLegacyRedirect, isGonePath } from "./lib/legacyRedirects";
 const locales = i18nConfig.locales;
 const defaultLocale = i18nConfig.defaultLocale;
 
+const PRODUCTION_HOST = "www.itsolutionsworldwide.com";
+const BLOCKED_HOSTS = ["itsolutionsworldwide.com", "test.itsolutionsworldwide.com"];
+
 function isStaticAssetPath(pathname: string): boolean {
   if (pathname.startsWith("/assets/")) return true;
   if (pathname.startsWith("/_next")) return true;
@@ -28,26 +31,28 @@ export function middleware(request: NextRequest) {
   }
 
   // --- Combine host-fix + path-fix into ONE redirect ---
-  const needsHostFix = host === "itsolutionsworldwide.com";
+  // Covers both the bare domain AND the test subdomain — every child path
+  // under test.itsolutionsworldwide.com gets redirected to the same path on prod.
+  const needsHostFix = !!host && BLOCKED_HOSTS.includes(host);
 
   // _rsc cleanup (kept separate — rare edge case, low SEO impact)
   if (request.nextUrl.searchParams.has("_rsc")) {
     const clean = request.nextUrl.clone();
     clean.searchParams.delete("_rsc");
-    clean.hostname = "www.itsolutionsworldwide.com"; // combine host-fix here too
+    clean.hostname = PRODUCTION_HOST;
     return NextResponse.redirect(clean, 301);
   }
 
   const legacyTarget = getLegacyRedirect(pathname);
   if (legacyTarget) {
     const url = new URL(legacyTarget, request.url);
-    if (needsHostFix) url.hostname = "www.itsolutionsworldwide.com";
+    if (needsHostFix) url.hostname = PRODUCTION_HOST;
     return NextResponse.redirect(url, 301);
   }
 
   if (pathname === "/index" || pathname === "/index/") {
     const url = new URL("/", request.url);
-    if (needsHostFix) url.hostname = "www.itsolutionsworldwide.com";
+    if (needsHostFix) url.hostname = PRODUCTION_HOST;
     return NextResponse.redirect(url, 301);
   }
 
@@ -71,7 +76,7 @@ export function middleware(request: NextRequest) {
   // --- Single combined redirect if host OR path needs fixing ---
   if (needsHostFix || targetPath) {
     const url = request.nextUrl.clone();
-    if (needsHostFix) url.hostname = "www.itsolutionsworldwide.com";
+    if (needsHostFix) url.hostname = PRODUCTION_HOST;
     if (targetPath) url.pathname = targetPath;
     const res = NextResponse.redirect(url, 301);
     if (targetPath) {
