@@ -58,8 +58,9 @@ export default function LogosSlider() {
 
         {/* Radio Dots */}
         {/* ✅ FIXED: Gap ko thoda manage kiya taaki touch targets overlap na karein */}
-        <div className="flex justify-center mt-6 gap-1 z-50 relative">
-          {clientLogos.map((_, index) => (
+{/* Radio Dots */}
+<div className="flex justify-center mt-6 gap-1 z-10 relative">
+            {clientLogos.map((_, index) => (
             <button
               key={index}
               onClick={() => swiperRef?.slideTo(index)}

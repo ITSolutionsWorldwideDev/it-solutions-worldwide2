@@ -107,8 +107,11 @@ const industriesData = getIndustriesData(t);
   };
 
   return (
-    <section className="w-full max-w-[1400px] mx-auto py-16 px-6 relative group">
-      {/* ADDED HEADING HERE */}
+<section
+  className={`w-full max-w-[1400px] mx-auto py-16 px-6 relative group ${
+    activeId ? "z-0" : "z-10"
+  }`}
+>      {/* ADDED HEADING HERE */}
       <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-12">
         {t("industries.sectionHeading")}
       </h2>
@@ -165,6 +168,7 @@ const industriesData = getIndustriesData(t);
                     {slide.content}
                   </p>
                 </div>
+
               </div>
             </div>
           );
@@ -185,11 +189,11 @@ const industriesData = getIndustriesData(t);
       {/* Morphing Overlay */}
       {activeId !== null && activeSlide && sourceRect && (
         <>
-          <div onClick={closeCard} className={`fixed inset-0 bg-gray-900/40 backdrop-blur-md z-40 transition-opacity duration-500 ${animateIn ? "opacity-100" : "opacity-0"}`} />
-          <div
-            className="fixed z-50 rounded-[32px] overflow-hidden bg-white shadow-2xl flex flex-col md:flex-row"
-            style={{ ...getOverlayStyle(), transition: "all 450ms cubic-bezier(0.25, 1, 0.5, 1)" }}
-          >
+         <div onClick={closeCard} className={`fixed inset-0 bg-gray-900/40 backdrop-blur-md z-[9998] transition-opacity duration-500 ${animateIn ? "opacity-100" : "opacity-0"}`} />
+<div
+  className="fixed z-[9999] rounded-[32px] overflow-hidden bg-white shadow-2xl flex flex-col md:flex-row"
+  style={{ ...getOverlayStyle(), transition: "all 450ms cubic-bezier(0.25, 1, 0.5, 1)" }}
+>
             <button onClick={closeCard} className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/80 backdrop-blur flex items-center justify-center hover:bg-white transition-all">✕</button>
             
             <div className="w-full md:w-1/2 relative bg-gray-100">

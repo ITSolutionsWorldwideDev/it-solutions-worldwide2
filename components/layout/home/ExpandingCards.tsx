@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-
 export default function ExpandingCards({
   servicesData,
   learnMoreText,
@@ -12,9 +11,8 @@ export default function ExpandingCards({
   servicesData: any[];
   learnMoreText: string;
   visitServicePageText: string;
-}) {  const [selectedCard, setSelectedCard] = useState<
-    (typeof servicesData)[0] | null
-  >(null);
+}) {
+  const [selectedCard, setSelectedCard] = useState<any | null>(null);
 
   if (!servicesData || servicesData.length === 0) {
     return <p className="text-center text-gray-500">No data to display</p>;
@@ -22,15 +20,16 @@ export default function ExpandingCards({
 
   return (
     <div className="w-full max-w-[1400px] mx-auto pt-6 pb-20 px-4 sm:px-8 relative z-10">
-      {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      {/* Cards Grid - items-stretch ensure karta hai ki sabhi cards ki height barabar rahe */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-stretch">
         {servicesData.map((card, index) => (
           <div
             key={index}
             onClick={() => setSelectedCard(card)}
-            className="group rounded-2xl overflow-hidden border border-gray-100 bg-white flex flex-col h-[420px] cursor-pointer shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-2 hover:bg-[#175864] hover:shadow-[0_20px_40px_rgba(23,88,100,0.15)]"
+            className="group rounded-2xl overflow-hidden border border-gray-100 bg-white flex flex-col h-full min-h-[420px] cursor-pointer shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-2 hover:bg-[#175864] hover:shadow-[0_20px_40px_rgba(23,88,100,0.15)]"
           >
-            <div className="relative w-full h-48 overflow-hidden bg-gray-900">
+            {/* Image Wrapper - fixed height */}
+            <div className="relative w-full h-48 overflow-hidden bg-gray-900 shrink-0">
               <Image
                 src={card.url}
                 alt={card.title}
@@ -41,36 +40,40 @@ export default function ExpandingCards({
               />
             </div>
 
+            {/* Content Container - flex-1 stretch karta hai content ko niche tak */}
             <div className="p-5 flex flex-col flex-1">
-              <h3 className="text-lg font-bold mb-2 text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-bold mb-2 text-gray-800 group-hover:text-white transition-colors">
                 {card.title}
               </h3>
 
-              <p className="text-sm text-gray-500 leading-relaxed flex-1 line-clamp-4 group-hover:text-white">
+              <p className="text-sm text-gray-500 leading-relaxed flex-1 line-clamp-4 group-hover:text-white transition-colors mb-4">
                 {card.description}
               </p>
 
-              {/* Link Button */}
-              <a
-                href={card.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-                className="mt-5 inline-flex items-center justify-center rounded-lg bg-[#175864] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0f434d] group-hover:bg-white group-hover:text-[#175864]"
-              >
-                {learnMoreText}
-              </a>
+              {/* Button fixed at bottom */}
+              <div className="mt-auto">
+                <a
+                  href={card.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="inline-flex items-center justify-center rounded-lg bg-[#175864] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0f434d] group-hover:bg-white group-hover:text-[#175864]"
+                >
+                  {learnMoreText}
+                </a>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
       {/* Popup */}
-      {selectedCard && (
-        <div
-          onClick={() => setSelectedCard(null)}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
-        >
+      {/* Popup */}
+{selectedCard && (
+  <div
+    onClick={() => setSelectedCard(null)}
+    className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
+  >
           <div
             onClick={(e) => e.stopPropagation()}
             className="bg-white rounded-3xl overflow-hidden max-w-2xl w-full max-h-[90vh] shadow-2xl relative"
