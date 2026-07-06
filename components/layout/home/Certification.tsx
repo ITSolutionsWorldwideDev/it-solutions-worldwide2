@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import enCommon from "@/public/locales/en/common.json";
+import nlCommon from "@/public/locales/nl/common.json";
 
 const certifications = [
   {
@@ -26,14 +28,15 @@ const certifications = [
 export default function Certifications() {
   const params = useParams();
   const locale = (params?.locale as string) || "en";
+  const t = locale === "nl" ? nlCommon.certifications : enCommon.certifications;
 
   return (
     <div className="container xl:max-w-[1200px] md:px-5 mx-auto pb-10 relative">
       <div className="flex justify-between items-center mb-6 px-4 pr-5 md:pr-0 md:px-0 relative">
         <div>
           <h2 className="text-teal-700 text-3xl font-bold">
-            Certifications
-          </h2>
+  {t.heading}
+</h2>
         </div>
       </div>
 

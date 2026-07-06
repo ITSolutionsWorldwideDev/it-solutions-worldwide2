@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, ChangeEvent, FormEvent } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useState, useEffect } from 'react';
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -11,19 +10,15 @@ import {
   FaTiktok,
 } from 'react-icons/fa';
 import Link from 'next/link';
-import { useRouter } from "next/navigation";
-
-type FormData = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
-
-type Errors = Partial<FormData>;
+import { useRouter, useParams } from "next/navigation";
+import enCommon from "@/public/locales/en/common.json";
+import nlCommon from "@/public/locales/nl/common.json";
 
 const ContactSection: React.FC = () => {
   const router = useRouter();
+  const params = useParams();
+  const locale = (params?.locale as string) || "en";
+  const t = locale === "nl" ? nlCommon.contact : enCommon.contact;
 
   const [status, setStatus] = useState<null | "success" | "error">(null);
   const [showModal, setShowModal] = useState(false);
@@ -33,7 +28,6 @@ const ContactSection: React.FC = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const [errors, setErrors] = useState<Errors>({});
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [emailStatus, setEmailStatus] = useState<string | null>(null);
 
@@ -92,10 +86,10 @@ const ContactSection: React.FC = () => {
         {/* Left Side */}
         <div className="text-left">
           <header>
-            <p className="text-lg mb-2 font-extralight">Get in touch</p>
+            <p className="text-lg mb-2 font-extralight">{t.getInTouch}</p>
             <h2 id="contact-heading" className="text-5xl font-bold mb-6">
-              Your <span className="text-[#F5A623]">Success</span> <br />
-              Starts With A <br /> Conversation
+              {t.headingPart1} <span className="text-[#F5A623]">{t.headingSuccess}</span> <br />
+              {t.headingPart2} <br /> {t.headingPart3}
             </h2>
           </header>
 
@@ -122,7 +116,7 @@ const ContactSection: React.FC = () => {
           </address>
 
           <div>
-            <p className="text-lg mb-2">Connect with us:</p>
+            <p className="text-lg mb-2">{t.connectWithUs}</p>
             <div className="flex space-x-4" aria-label="Social media links">
               <Link href="https://www.facebook.com/itsolutionsww" aria-label="Facebook">
                 <FaFacebook className="text-2xl hover:text-[#F5A623]" />
@@ -146,14 +140,16 @@ const ContactSection: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Full Name */}
               <div>
-                <label htmlFor="fullName" className="block text-white mb-1">
-                  Full name
+                <label htmlFor="name" className="block text-white mb-1">
+                  {t.fullName}
                 </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="John Doe"
+                  placeholder={t.fullNamePlaceholder}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="p-3 w-full bg-white/10 border border-gray-400 rounded-md text-white placeholder-gray-300"
                   required
                 />
@@ -162,13 +158,15 @@ const ContactSection: React.FC = () => {
               {/* Email */}
               <div>
                 <label htmlFor="email" className="block text-white mb-1">
-                  Email address
+                  {t.emailAddress}
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="johndoe@example.com"
+                  placeholder={t.emailPlaceholder}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="p-3 w-full bg-white/10 border border-gray-400 rounded-md text-white placeholder-gray-300"
                   required
                 />
@@ -178,13 +176,15 @@ const ContactSection: React.FC = () => {
             {/* Subject */}
             <div>
               <label htmlFor="subject" className="block text-white mb-1">
-                Subject
+                {t.subject}
               </label>
               <input
                 type="text"
                 id="subject"
                 name="subject"
-                placeholder="Need Web Development Services"
+                placeholder={t.subjectPlaceholder}
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
                 className="p-3 w-full bg-white/10 border border-gray-400 rounded-md text-white placeholder-gray-300"
                 required
               />
@@ -193,12 +193,14 @@ const ContactSection: React.FC = () => {
             {/* Message */}
             <div>
               <label htmlFor="message" className="block text-white mb-1">
-                Tell us about your project...
+                {t.projectLabel}
               </label>
               <textarea
                 id="message"
                 name="message"
-                placeholder="Provide details about your project"
+                placeholder={t.projectPlaceholder}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 rows={6}
                 className="p-3 w-full bg-white/10 border border-gray-400 rounded-md text-white placeholder-gray-300"
                 required
@@ -212,26 +214,24 @@ const ContactSection: React.FC = () => {
                 className="bg-white text-[#0C415C] px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-300 cursor-pointer"
                 disabled={isLoading}
               >
-                
-                <span>{isLoading ? 'Sending...' : 'Send Message'}</span>
+                <span>{isLoading ? t.sending : t.sendMessage}</span>
                 <span className="ml-2">→</span>
               </button>
             </div>
           </form>
 
-              {status === "success" && (
-                <p className="mt-4 text-green-600 font-semibold">
-                  Your message has been sent!
-                </p>
-              )}
+          {status === "success" && (
+            <p className="mt-4 text-green-600 font-semibold">
+              {t.successMsg}
+            </p>
+          )}
 
-              {status === "error" && (
-                <p className="mt-4 text-red-600 font-semibold">
-                  Something went wrong. Please try again.
-                </p>
-              )}
+          {status === "error" && (
+            <p className="mt-4 text-red-600 font-semibold">
+              {t.errorMsg}
+            </p>
+          )}
 
-          {/* Status Message */}
           {emailStatus && (
             <p className={`mt-4 ${emailStatus.includes('successfully') ? 'text-green-400' : 'text-red-400'}`}>
               {emailStatus}

@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
-import { howWeWork } from "@/lib/commonData";
+import { getHowWeWorkData } from "@/lib/commonData";
+import { useTranslations } from "next-intl";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -8,6 +9,9 @@ import { useMediaQuery, DottedLine } from "@/components/layout/home/animation-he
 gsap.registerPlugin(ScrollTrigger);
 
 export default function AnimatedList() {
+  const t = useTranslations();
+  const howWeWork = getHowWeWorkData(t);
+
   const sectionRef = useRef(null);
   const listRef = useRef(null);
   const isTabletOrMobile = useMediaQuery("(max-width: 768px)");
@@ -36,13 +40,11 @@ export default function AnimatedList() {
         trigger: sectionRef.current,
         start: "top top",
         end: "bottom center",
-        // pin: true,
       });
     }
   }, [isTabletOrMobile]);
 
   if (isTabletOrMobile) {
-    // Render simplified version for tablet or mobile
     return (
       <div className="flex flex-col items-center space-y-0 px-4 pt-0">
         <div
@@ -50,17 +52,12 @@ export default function AnimatedList() {
           style={{ background: "#194A59" }}
         >
           <h2 className="w-[58%] text-center text-[clamp(1rem,4vw,2.5rem)]">
-            HOW WE WORK?
+            {t("howWeWork.title")}
           </h2>
         </div>
         <div className="w-[320px] lg:w-[569px] md:w-[470px] aspect-square flex items-center justify-center font-normal rounded-full bg-[#29A1B626]">
           <p className="w-[45%] text-center text-[clamp(0.75rem,1.5vw,1.2rem)] leading-tight">
-            We start with a quick, free analysis of your architecture, applying
-            a pragmatic approach to identify gaps.
-            <br />
-            <br />
-            We propose advanced business models to enhance efficiency,
-            scalability, and overall performance.
+            {t("howWeWork.description")}
           </p>
         </div>
         <div className="flex flex-col space-y-6 items-center w-full">
@@ -84,7 +81,6 @@ export default function AnimatedList() {
     );
   }
 
-  // Render animated version for larger screens
   return (
     <div
       className="flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:items-start"
@@ -96,17 +92,12 @@ export default function AnimatedList() {
           style={{ background: "#194A59" }}
         >
           <h2 className="w-[58%] text-center text-[clamp(1rem,4vw,2.5rem)]">
-            HOW WE WORK?
+            {t("howWeWork.title")}
           </h2>
         </div>
         <div className="w-[320px] md:w-[470px] lg:w-[569px] aspect-square flex items-center justify-center font-normal rounded-full bg-[#29A1B626]">
           <p className="w-[45%] text-center text-[clamp(0.75rem,1.5vw,1.2rem)] leading-tight">
-            We start with a quick, free analysis of your architecture, applying
-            a pragmatic approach to identify gaps.
-            <br />
-            <br />
-            We propose advanced business models to enhance efficiency,
-            scalability, and overall performance.
+            {t("howWeWork.description")}
           </p>
         </div>
         <div

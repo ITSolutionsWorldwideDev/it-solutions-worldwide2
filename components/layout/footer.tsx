@@ -2,22 +2,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import enCommon from "@/public/locales/en/common.json";
+import nlCommon from "@/public/locales/nl/common.json";
 
-// components/layout/footer.tsx
 export default function Footer() {
   const params = useParams();
-  const locale = params?.locale || "en"; // Agar locale nahi milta toh default 'en' par fallback karega
+  const locale = (params?.locale as string) || "en";
+  const t = locale === "nl" ? nlCommon.footer : enCommon.footer;
 
   return (
-<footer className="bg-white pb-12 pt-6 text-center">
-  <div className="container mx-auto px-4 lg:px-8">
-        {/* Top section: 4 columns on md+ screens */}
+    <footer className="bg-white pb-12 pt-6 text-center">
+      <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-12">
-          {/* Column 1: Logo + Company Info + Social Icons */}
+          {/* Column 1: Logo + Company Info */}
           <div className="md:col-span-1">
-            {/* FIX: next/image with explicit dimensions instead of plain <img>.
-                Replace width/height below with the ACTUAL rendered size of your
-                logo (check via DevTools > Inspect on the live footer logo). */}
             <Image
               className="w-auto h-auto"
               src="/assets/footer-logo.webp"
@@ -28,37 +26,29 @@ export default function Footer() {
               loading="lazy"
             />
             <p className="mt-4 text-sm text-gray-500 leading-relaxed">
-              IT Solutions Worldwide delivers innovative IT solutions in supply
-              chain management, IT support, digital marketing, and provides
-              operational excellence.
+              {t.description}
             </p>
           </div>
 
           {/* Column 2: Quick Links */}
           <div>
             <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
-              Quick Links
+              {t.quickLinks}
             </h3>
             <ul className="mt-4 space-y-3 text-gray-500">
               <li>
                 <Link href={`/${locale}/blogs`} className="text-base hover:text-[#236B7A]">
-                  Blogs
+                  {t.blogs}
                 </Link>
               </li>
               <li>
-                <Link
-                  href={`/${locale}/about-us`}
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  About Us
+                <Link href={`/${locale}/about-us`} className="text-base hover:text-[#236B7A]">
+                  {t.aboutUs}
                 </Link>
               </li>
               <li>
-                <Link
-                  href={`/${locale}/profile`}
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  Profile
+                <Link href={`/${locale}/profile`} className="text-base hover:text-[#236B7A]">
+                  {t.profile}
                 </Link>
               </li>
               <li>
@@ -67,7 +57,7 @@ export default function Footer() {
                   href="/assets/Branding_Guide_For_ITWW.pdf"
                   className="text-base hover:text-[#236b7a]"
                 >
-                  Our Branding
+                  {t.ourBranding}
                 </Link>
               </li>
               <li>
@@ -76,7 +66,7 @@ export default function Footer() {
                   target="_blank"
                   className="text-base hover:text-[#236B7A]"
                 >
-                  Contact Us
+                  {t.contactUs}
                 </Link>
               </li>
             </ul>
@@ -85,55 +75,37 @@ export default function Footer() {
           {/* Column 3: Services */}
           <div>
             <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
-              Services
+              {t.services}
             </h3>
             <ul className="mt-4 space-y-3 text-gray-500">
               <li>
-                <Link
-                  href={`/${locale}/scm-services`}
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  SCM Services
+                <Link href={`/${locale}/scm-services`} className="text-base hover:text-[#236B7A]">
+                  {t.scmServices}
                 </Link>
               </li>
               <li>
-                <Link
-                  href={`/${locale}/it-support`}
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  IT Support
+                <Link href={`/${locale}/it-support`} className="text-base hover:text-[#236B7A]">
+                  {t.itSupport}
                 </Link>
               </li>
               <li>
-                <Link
-                  href={`/${locale}/oracle-cloud`}
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  Oracle Cloud
+                <Link href={`/${locale}/oracle-cloud`} className="text-base hover:text-[#236B7A]">
+                  {t.oracleCloud}
                 </Link>
               </li>
               <li>
-                <Link
-                  href={`/${locale}/digital-services`}
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  Digital Services
+                <Link href={`/${locale}/digital-services`} className="text-base hover:text-[#236B7A]">
+                  {t.digitalServices}
                 </Link>
               </li>
               <li>
-                <Link
-                  href={`/${locale}/staffing-support`}
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  Staffing Support
+                <Link href={`/${locale}/staffing-support`} className="text-base hover:text-[#236B7A]">
+                  {t.staffingSupport}
                 </Link>
               </li>
               <li>
-                <Link
-                  href={`/${locale}/supply-health-check-info`}
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  Supply Health Check
+                <Link href={`/${locale}/supply-health-check-info`} className="text-base hover:text-[#236B7A]">
+                  {t.supplyHealthCheck}
                 </Link>
               </li>
             </ul>
@@ -142,69 +114,50 @@ export default function Footer() {
           {/* Column 4: Company */}
           <div>
             <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
-              Company
+              {t.company}
             </h3>
             <ul className="mt-4 space-y-3 text-gray-500">
               <li>
-                <Link
-                  href={`/${locale}/contact-us`}
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  Help Center
+                <Link href={`/${locale}/contact-us`} className="text-base hover:text-[#236B7A]">
+                  {t.helpCenter}
                 </Link>
               </li>
               <li>
-                <Link
-                  href={`/${locale}/about-us/#faq`}
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  FAQ
+                <Link href={`/${locale}/about-us/#faq`} className="text-base hover:text-[#236B7A]">
+                  {t.faq}
                 </Link>
               </li>
               <li>
                 <Link href={`/${locale}/career`} className="text-base hover:text-[#236B7A]">
-                  Career
+                  {t.career}
                 </Link>
               </li>
               <li>
-                <Link
-                  href={`/${locale}/privacy-policy`}
-                  className="text-base hover:text-[#236B7A]"
-                >
-                  Privacy Policy
+                <Link href={`/${locale}/privacy-policy`} className="text-base hover:text-[#236B7A]">
+                  {t.privacyPolicy}
                 </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Divider */}
         <hr className="mt-12 border-gray-200" />
 
-        {/* Bottom row: disclaimers/contact info */}
         <div className="mt-8 flex flex-col md:flex-row items-center justify-evenly space-y-4 md:space-y-0 md:space-x-6">
-          <p className="text-sm text-[#236B7A]">
-            © IT Solutions Worldwide. All rights reserved
-          </p>
+          <p className="text-sm text-[#236B7A]">{t.copyright}</p>
           <span className="text-sm text-[#236B7A]">
-            <Link
-              href="mailto:info@itsolutionsworldwide.com"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link href="mailto:info@itsolutionsworldwide.com" target="_blank" rel="noreferrer">
               info@itsolutionsworldwide.com
             </Link>
           </span>
-          <span className="text-sm text-[#236B7A]">
-            Chamber of Commerce No. 72768916
-          </span>
+          <span className="text-sm text-[#236B7A]">{t.chamberOfCommerce}</span>
         </div>
       </div>
       <button
         onClick={() => window.dispatchEvent(new Event("open-cookie-settings"))}
         className="text-sm text-gray-500 hover:underline mt-4"
       >
-        Cookie Settings
+        {t.cookieSettings}
       </button>
     </footer>
   );

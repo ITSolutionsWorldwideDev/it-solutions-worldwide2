@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import { industriesData } from "@/lib/commonData";
+import { useTranslations } from "next-intl"; // 1. Add this import
+import { getIndustriesData } from "@/lib/commonData";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from 'next/image';
@@ -13,6 +14,9 @@ export default function PinnedProgressSection() {
   const dotRefs = useRef<(SVGCircleElement | null)[]>([]);
   const svgRef = useRef<SVGSVGElement | null>(null);
 
+  // Initialize data inside the component
+const t = useTranslations();
+const industriesData = getIndustriesData(t);
   useEffect(() => {
     if (!containerRef.current) return;
 
@@ -151,14 +155,6 @@ export default function PinnedProgressSection() {
       });
     }, containerRef);
 
-    // Content above this section (LogosSlider, AnimatedList, FunFacts) is
-    // dynamically imported and can finish loading AFTER this component
-    // mounts, changing the total page height. ScrollTrigger calculates pin
-    // start/end based on page height at mount time, so if that height
-    // changes afterward, the pin point becomes wrong — causing the
-    // double-render / white-screen flash during scroll.
-    // Refreshing after a short delay (and once more on window load)
-    // re-syncs ScrollTrigger with the final page layout.
     const refreshTimeout = setTimeout(() => {
       ScrollTrigger.refresh();
     }, 500);
@@ -171,7 +167,7 @@ export default function PinnedProgressSection() {
       window.removeEventListener("load", handleLoad);
       ctx.revert();
     };
-  }, []);
+  }, [industriesData]); // Added dependency
 
   return (
     <section
@@ -188,15 +184,15 @@ export default function PinnedProgressSection() {
         >
           <div className="image-container w-full md:w-1/2 h-2/5 md:h-full flex items-center justify-center z-20">
            <Image
-    src={slide.image}
-    alt={slide.industry}
-    className="w-full h-[90%] rounded object-cover"
-    loading="lazy"
-    quality={50}
-    fetchPriority="low"
-    width={600}  // Apne design ke mutabiq width dein
-    height={400} // Apne design ke mutabiq height dein
-  />
+            src={slide.image}
+            alt={slide.industry}
+            className="w-full h-[90%] rounded object-cover"
+            loading="lazy"
+            quality={50}
+            fetchPriority="low"
+            width={600}
+            height={400}
+          />
           </div>
           <div className="text-container w-full md:w-1/2 h-full flex flex-col items-start justify-center p-3 md:p-12 lg:pl-20 xl:pl-40 z-20">
             <h2 className="text-xl md:text-3xl 2xl:text-5xl font-bold mb-4">

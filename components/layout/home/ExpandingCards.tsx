@@ -2,10 +2,17 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { servicesData } from "@/lib/commonData";
 
-export default function ExpandingCards() {
-  const [selectedCard, setSelectedCard] = useState<
+
+export default function ExpandingCards({
+  servicesData,
+  learnMoreText,
+  visitServicePageText,
+}: {
+  servicesData: any[];
+  learnMoreText: string;
+  visitServicePageText: string;
+}) {  const [selectedCard, setSelectedCard] = useState<
     (typeof servicesData)[0] | null
   >(null);
 
@@ -51,7 +58,7 @@ export default function ExpandingCards() {
                 onClick={(e) => e.stopPropagation()}
                 className="mt-5 inline-flex items-center justify-center rounded-lg bg-[#175864] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0f434d] group-hover:bg-white group-hover:text-[#175864]"
               >
-                Learn More →
+                {learnMoreText}
               </a>
             </div>
           </div>
@@ -101,7 +108,7 @@ export default function ExpandingCards() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center rounded-lg bg-[#175864] px-5 py-3 text-white font-semibold hover:bg-[#0f434d]"
               >
-                Visit Service Page →
+                {visitServicePageText}
               </a>
             </div>
           </div>

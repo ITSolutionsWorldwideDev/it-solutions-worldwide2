@@ -1,4 +1,5 @@
 {
+
   "home": {
     "heading1": "SUPPLY CHAIN MANAGEMENT",
     "text1": "Wij combineren expertise in managementadvies en de implementatie van bedrijfsapplicaties.",
@@ -70,6 +71,193 @@
     "message": "Bericht",
     "sendmessage": "Verstuur Bericht"
   },
+
+
+"menu": {
+    "contactUs": "Contact Opnemen",
+    "aboutUs": "Over Ons",
+    "businessTransformation": "Bedrijfstransformatie",
+    "scmServices": "SCM-diensten",
+    "scmConsultancy": "SCM-consultancy",
+    "businessConsultancy": "Bedrijfsadvies",
+    "supplyChainPerformanceCheck": "Supply Chain Prestatiecheck",
+    "itSupport": "IT-ondersteuning",
+    "automationServices": "Automatiseringsdiensten",
+    "erpImplementation": "ERP-implementatie",
+    "smartWarehouseSolutions": "Slimme Magazijnoplossingen",
+    "digitalServices": "Digitale Diensten",
+    "websiteDesignDevelopment": "Website Ontwerp & Ontwikkeling",
+    "ecommerceDevelopment": "E-commerce Ontwikkeling",
+    "seoServices": "SEO-diensten",
+    "ppcAdvertising": "PPC-advertenties",
+    "socialMediaMarketing": "Social Media Marketing",
+    "softwareDevelopment": "Softwareontwikkeling",
+    "staffingSupport": "Personeelsondersteuning",
+    "temporaryStaffing": "Tijdelijke Personeelsvoorziening",
+    "managedStaffingServices": "Beheerde Personeelsdiensten",
+    "remoteVirtualStaffing": "Remote & Virtuele Personeelsvoorziening",
+    "specializedIndustryStaffing": "Gespecialiseerde Sectorpersoneel",
+    "staffingConsultingServices": "Personeelsadviesdiensten",
+    "outsourcing": "Outsourcing",
+    "hireRoles": "Functies Inhuren",
+    "virtualAssistant": "Virtuele Assistent",
+    "dataEngineer": "Data-engineer",
+    "fullStackDeveloper": "Full-stack Ontwikkelaar",
+    "aiMlEngineer": "AI/ML-engineer",
+    "ecommerceAssistant": "E-commerce Assistent",
+    "electricalEngineer": "Elektrotechnisch Ingenieur",
+    "administrativeSupport": "Administratieve Ondersteuning",
+    "hrAssistantRemote": "HR-assistent Remote",
+    "customerSupport": "Klantenservice",
+    "dataEntry": "Gegevensinvoer",
+    "designServices": "Ontwerpdiensten",
+    "webDesigner": "Webdesigner",
+    "graphicDesigner": "Grafisch Ontwerper",
+    "itDevelopment": "IT & Ontwikkeling",
+    "frontEndDeveloper": "Front-end Ontwikkelaar",
+    "backEndDeveloper": "Back-end Ontwikkelaar",
+    "appDeveloper": "App-ontwikkelaar",
+    "itSupportSpecialist": "IT-ondersteuningsspecialist",
+    "softwareTesterQa": "Software Tester QA",
+    "marketingAnalytics": "Marketing & Analyse",
+    "socialMediaManager": "Social Media Manager",
+    "contentCreator": "Content Creator",
+    "onlineMarketeer": "Online Marketeer",
+    "googleAnalyticsSpecialist": "Google Analytics Specialist",
+    "powerBiSpecialist": "Power BI Specialist",
+    "dataAnalyst": "Data-analist"
+  },
+
+
+"footer": {
+    "description": "IT Solutions Worldwide levert innovatieve IT-oplossingen op het gebied van supply chain management, IT-ondersteuning, digitale marketing en operationele excellentie.",
+    "quickLinks": "Snelle Links",
+    "blogs": "Blogs",
+    "aboutUs": "Over Ons",
+    "profile": "Profiel",
+    "ourBranding": "Onze Huisstijl",
+    "contactUs": "Contact Opnemen",
+    "services": "Diensten",
+    "scmServices": "SCM-diensten",
+    "itSupport": "IT-ondersteuning",
+    "oracleCloud": "Oracle Cloud",
+    "digitalServices": "Digitale Diensten",
+    "staffingSupport": "Personeelsondersteuning",
+    "supplyHealthCheck": "Supply Chain Gezondheidscheck",
+    "company": "Bedrijf",
+    "helpCenter": "Helpcentrum",
+    "faq": "Veelgestelde Vragen",
+    "career": "Carrière",
+    "privacyPolicy": "Privacybeleid",
+    "copyright": "© IT Solutions Worldwide. Alle rechten voorbehouden",
+    "chamberOfCommerce": "KvK-nummer 72768916",
+    "cookieSettings": "Cookie-instellingen"
+  },
+
+
+"hero": {
+    "title": "Bedrijven versterken met slimme IT-oplossingen & supply chain management",
+    "description": "Welkom bij IT Solutions Worldwide, een betrouwbare IT-serviceprovider, bedrijfsadviseur en supply chain partner die bedrijven in Nederland en wereldwijd helpt te groeien door slimme technologie, gestroomlijnde processen en innovatieve digitale oplossingen.",
+    "innovate": "Innoveren",
+    "automate": "Automatiseren",
+    "succeed": "Slagen",
+    "ctaButton": "Vraag GRATIS Consultatie Aan"
+  },
+"homeServices": {
+    "sectionTitle": "ONZE DIENSTEN",
+    "scmTitle": "Supply Chain Management & Transformatie",
+    "scmDesc": "ITWW stimuleert supply chain transformatie door efficiënte, flexibele, technologiegedreven oplossingen die zichtbaarheid verbeteren, supply chain activiteiten optimaliseren en kosten verlagen. Als betrouwbare supply chain leverancier en SCM-servicepartner zorgen wij voor naadloze integratie en duurzaamheid op lange termijn.",
+    "oracleTitle": "Oracle Cloud Oplossingen",
+    "oracleDesc": "Ondernemingswaarde begint met de juiste cloudstrategie. Onze bewezen Oracle-oplossingen helpen u Oracle Cloud te implementeren, migreren en optimaliseren om wendbaarheid te vergroten, activiteiten te stroomlijnen en kosten binnen uw organisatie te verlagen.",
+    "digitalTitle": "Digitale Diensten & Webontwikkeling",
+    "digitalDesc": "Een uitgebreid pakket digitale diensten — waaronder webontwikkeling, SaaS-ontwikkeling, WordPress-websites, UI/UX-ontwerp en digitale marketing — helpt bedrijven een sterkere, competitievere digitale aanwezigheid op te bouwen.",
+    "itConsultingTitle": "IT-Consulting & Beheerde Diensten",
+    "itConsultingDesc": "End-to-end IT-ondersteuning houdt uw bedrijf draaiende — door operationele efficiëntie te verbeteren, downtime te verminderen en productiviteit te verhogen. Als uw IT-beheerpartner omvatten onze diensten helpdesk-ondersteuning, netwerkbeheer, cybersecurity en cloud-diensten voor bedrijven van elke omvang.",
+    "staffingTitle": "Personeelsondersteuning & Bedrijfsadvies",
+    "staffingDesc": "Het juiste talent verandert alles. Tijdelijke, permanente en contractuele personeelsoplossingen helpen bedrijven de productiviteit van hun personeel te verbeteren en wervingskosten te verlagen — inclusief ervaren IT-consultants, bedrijfsadviseurs en vakkundige softwareontwikkelaars.",
+    "outsourcingTitle": "IT-Outsourcing & Inkoop",
+    "outsourcingDesc": "Schaal efficiënt door IT-functies uit te besteden aan een betrouwbare partner. Erkend als een van de leidende IT-outsourcingbedrijven, helpen wij bedrijven overheadkosten te verlagen via flexibele personeelsmodellen, toegewijde teams en end-to-end IT-inkoop — zonder in te leveren op kwaliteit of controle.",
+    "ourClients": "Onze Klanten",
+    "clientsTagline": "Klanten versterken, succes automatiseren. Slimme oplossingen voor slimmere bedrijven.",
+    "learnMore": "Meer Informatie →",
+    "visitServicePage": "Bezoek Servicepagina →"
+  },
+
+"howWeWork": {
+    "heading": "HOE WERKEN WIJ?",
+    "paragraph1": "We beginnen met een snelle, gratis analyse van uw architectuur, waarbij we een pragmatische aanpak toepassen om knelpunten te identificeren.",
+    "paragraph2": "We stellen geavanceerde bedrijfsmodellen voor om efficiëntie, schaalbaarheid en algehele prestaties te verbeteren.",
+    "discover": "Ontdekken",
+    "proposeplan": "Voorstellen, Plannen & Ontwerpen",
+    "implement": "Implementeren & Ondersteunen",
+    "stabilization": "Stabilisatie"
+  },
+  "stats": {
+    "heading": "Wereldwijd Bereik, Lokale Expertise",
+    "years": "Jaar Wereldwijd Actief",
+    "satisfaction": "Klanttevredenheid",
+    "projects": "Voltooide Projecten",
+    "countries": "Landen Die Wij Bedienen"
+  },
+
+
+  "industries": {
+    "sectionHeading": "Sectoren Die Wij Versterken",
+    "manufacturing": {
+      "name": "Productie",
+      "content": "Op maat gemaakte ERP-oplossingen, supply chain management, automatisering en IT-ondersteuning helpen productiebedrijven hun activiteiten te optimaliseren. Deze diensten stroomlijnen productieprocessen, verbeteren voorraadbeheer, verhogen inkoopefficiëntie en integreren slimme technologieën om productiviteit te verhogen en kosten te verlagen. Van fabrieksvloer tot magazijn profiteren fabrikanten van een robuust warehouse management systeem, real-time zichtbaarheid in supply chain activiteiten en naadloze afstemming met SCM-leveranciers. Ons team bouwt veerkrachtige, schaalbare systemen — of de behoefte nu een betrouwbare supply chain leverancier voor grondstoffen is of end-to-end supply chain diensten voor multi-site operaties."
+    },
+    "healthcare": {
+      "name": "Gezondheidszorg",
+      "content": "ITWW ondersteunt zorgverleners met veilige IT-infrastructuur, digitale gezondheidsoplossingen en patiëntgegevensbeheersystemen. Onze expertise in telemedicine, elektronische patiëntendossiers (EPD) en AI-gestuurde diagnostiek stelt medische professionals in staat de patiëntenzorg te verbeteren met behoud van naleving van industrienormen. Als betrouwbare IT-serviceprovider voor zorginstellingen leveren wij IT-beheeroplossingen die downtime verminderen en gevoelige patiëntgegevens beschermen. Ons IT-consultantteam ontwerpt veilige, conforme infrastructuur op maat van klinieken, ziekenhuizen en zorgnetwerken van elke omvang."
+    },
+    "finance": {
+      "name": "Financiën",
+      "content": "Robuuste cybersecurity, blockchain-integratie en AI-gestuurde analyses beveiligen transacties en optimaliseren financiële activiteiten in de snel evoluerende financiële sector. Deze FinTech-oplossingen helpen organisaties risicobeheer te verbeteren, processen te automatiseren en klantervaringen te verbeteren. Als toegewijde IT-bedrijfsadviseur voor financiële instellingen helpt ITWW banken, fintechs en verzekeraars om verouderde systemen te moderniseren zonder de dagelijkse activiteiten te verstoren."
+    },
+    "logistics": {
+      "name": "Logistiek",
+      "content": "Intelligente logistieke IT-oplossingen — van warehouse management systemen tot real-time zendingstracking — helpen vracht-, transport- en distributiebedrijven efficiënter en flexibeler te werken. Als ervaren supply chain provider ondersteunt ITWW logistiekbedrijven met volledig supply chain management — coördinatie met SCM-leveranciers, optimalisatie van supply chain activiteiten over meerdere magazijnen en als verlengstuk van het supply chain managementteam."
+    },
+    "retail": {
+      "name": "Retail & E-commerce",
+      "content": "Voorraad, orderafhandeling en digitale activiteiten komen samen voor retail- en e-commercebedrijven door slim supply chain ontwerp te combineren met goed converterende websites en digitale marketing. Achter de schermen houden een warehouse management systeem en SCM-service de voorraadniveaus nauwkeurig en de bestellingen in beweging, terwijl een toegewijd supply chain team leveranciersrelaties en vraagvoorspelling beheert."
+    }
+  },
+
+"certifications": {
+    "heading": "Certificeringen"
+  },
+
+  "contact": {
+    "getInTouch": "Neem contact op",
+    "headingPart1": "Uw",
+    "headingSuccess": "Succes",
+    "headingPart2": "Begint Met Een",
+    "headingPart3": "Gesprek",
+    "connectWithUs": "Volg ons:",
+    "fullName": "Volledige naam",
+    "fullNamePlaceholder": "Jan Jansen",
+    "emailAddress": "E-mailadres",
+    "emailPlaceholder": "janjansen@example.com",
+    "subject": "Onderwerp",
+    "subjectPlaceholder": "Webontwikkelingsdiensten Nodig",
+    "projectLabel": "Vertel ons over uw project...",
+    "projectPlaceholder": "Geef details over uw project",
+    "sending": "Verzenden...",
+    "sendMessage": "Verstuur Bericht",
+    "successMsg": "Uw bericht is verzonden!",
+    "errorMsg": "Er is iets misgegaan. Probeer het opnieuw."
+  },
+
+  "blog": {
+    "label": "Blogs",
+    "heading": "Blijf Voorop Met Inzichten En Trends",
+    "loading": "Blogs laden...",
+    "readMore": "Meer Lezen →"
+  },
+
+
   "profile": {
     "banner_heading": "Van idee naar impact",
     "banner_text": "wij regelen alles.",
@@ -760,17 +948,7 @@
     "question5": "Hoe helpen jullie met kostenbesparing?",
     "answer5": "Door automatisering, routeoptimalisatie en efficiënt voorraadbeheer."
   },
-  "footer": {
-    "quicklinks": "Snelle Links",
-    "services": "Diensten",
-    "contact": "Contact",
-    "about": "Over Ons",
-    "careers": "Carrières",
-    "privacypolicy": "Privacybeleid",
-    "terms": "Algemene Voorwaarden",
-    "followus": "Volg Ons",
-    "rights": "Alle rechten voorbehouden."
-  },
+  
   "commonlabels": {
     "learnmore": "Lees Meer",
     "readmore": "Meer Lezen",

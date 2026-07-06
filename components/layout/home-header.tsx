@@ -6,7 +6,8 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import dynamic from "next/dynamic";
 import NavbarHome from "./nav-bar-home";
-
+import enCommon from "@/public/locales/en/common.json";
+import nlCommon from "@/public/locales/nl/common.json";
 const SegmentTabs = dynamic(() => import("./home/SegmentTabComponent"), {
   ssr: false,
 });
@@ -18,6 +19,7 @@ export default function Header() {
   const [showVideo, setShowVideo] = useState(false);
   const params = useParams();
   const locale = params?.locale || "en";
+  const t = locale === "nl" ? nlCommon.hero : enCommon.hero;
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -87,34 +89,31 @@ export default function Header() {
         <div className="relative z-30 flex flex-col items-center justify-center text-center text-white pt-28 lg:pt-32">
           {/* Heading */}
      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-[1.15] mb-5">
-  Empowering Businesses with Smart IT Solutions & Supply Chain Management
+  {t.title}
 </h1>
 
           {/* Description */}
-     <p className="text-[15px] md:text-lg text-gray-200 max-w-6xl leading-7 mb-8 px-2">
-  Welcome to IT Solutions Worldwide, a trusted IT service provider,
-  business consultant, and supply chain partner helping businesses
-  across the Netherlands and worldwide scale through smart technology,
-  streamlined operations, and innovative digital solutions.
+ <p className="text-[15px] md:text-lg text-gray-200 max-w-6xl leading-7 mb-8 px-2">
+  {t.description}
 </p>
 
           {/* Tagline */}
-          <div className="flex items-center gap-4 mb-10 text-lg md:text-xl font-bold uppercase tracking-wider text-white">
-    <span>Innovate</span>
-    <span>|</span>
-    <span>Automate</span>
-    <span>|</span>
-    <span>Succeed</span>
+       <div className="flex items-center gap-4 mb-10 text-lg md:text-xl font-bold uppercase tracking-wider text-white">
+  <span>{t.innovate}</span>
+  <span>|</span>
+  <span>{t.automate}</span>
+  <span>|</span>
+  <span>{t.succeed}</span>
 </div>
 
           {/* CTA Button */}
           <Link href={`/${locale}/contact-us`}>
             <button
-              type="button"
-              className="bg-[#11928C] hover:bg-white hover:text-black text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 mb-16"
-            >
-              Get FREE Consultation
-            </button>
+  type="button"
+  className="bg-[#11928C] hover:bg-white hover:text-black text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 mb-16"
+>
+  {t.ctaButton}
+</button>
           </Link>
 
           {/* Segment Tabs */}

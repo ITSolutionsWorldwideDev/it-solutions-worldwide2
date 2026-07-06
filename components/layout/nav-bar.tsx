@@ -2,8 +2,9 @@
 import Link from "next/link";
 import React, { useState, useRef } from "react";
 import { useParams } from "next/navigation";
-import { menuItems } from "@/lib/menu";
-import MenuDropdown from "./MenuDropdown";
+import { getMenuItems } from "@/lib/menu";
+import enCommon from "@/public/locales/en/common.json";
+import nlCommon from "@/public/locales/nl/common.json";import MenuDropdown from "./MenuDropdown";
 import MobileMenuItem from "./MobileMenuItem";
 
 export default function Navbar() {
@@ -15,6 +16,11 @@ export default function Navbar() {
 
   const params = useParams();
   const locale = params?.locale || "en";
+  const t = (key: string) => {
+    const dict = locale === "nl" ? nlCommon : enCommon;
+    return key.split(".").reduce((obj: any, k) => obj?.[k], dict) || key;
+  };
+  const menuItems = getMenuItems(t);
 
   const handleMouseEnter = (item: string) => {
     if (hideTimeout.current) {
@@ -112,7 +118,7 @@ export default function Navbar() {
             {/* LOCALE FIX: contact us bhi locale ke saath */}
             <Link href={`/${locale}/contact-us`}>
               <button className="bg-[#278083] text-white md:my-2 px-4 py-2 rounded-md hover:bg-[#278083] transition cursor-pointer">
-                Contact Us
+                {t("menu.contactUs")}
               </button>
             </Link>
           </div>

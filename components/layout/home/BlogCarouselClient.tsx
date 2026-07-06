@@ -8,7 +8,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import BlogCard from "./BlogCard";
 import type { BlogEntry } from "@/types/blogs";
-
+import enCommon from "@/public/locales/en/common.json";
+import nlCommon from "@/public/locales/nl/common.json";
 interface ApiResponse {
   items: BlogEntry[];
   totalPages: number;
@@ -25,6 +26,7 @@ export default function BlogCarouselClient({ locale }: { locale: string }) {
   
   // Track mounting state to handle safe hydration transitions
   const [isMounted, setIsMounted] = useState(false);
+  const t = locale === "nl" ? nlCommon.blog : enCommon.blog;
 
   useEffect(() => {
     setIsMounted(true);
@@ -61,20 +63,20 @@ export default function BlogCarouselClient({ locale }: { locale: string }) {
   }, [page, isMounted]);
 
   // CRITICAL FIX: Match the server's streaming text block perfectly to clear hydration checks
-  if (!isMounted) {
-    return <p>Loading blogs...</p>;
-  }
+ if (!isMounted) {
+    return <p>{t.loading}</p>;
+}
 
   return (
     <div className="container xl:max-w-[1200px] md:px-5 mx-auto py-10 relative">
       <div className="flex justify-between items-center mb-6 px-4 pr-5 md:pr-0 md:px-0 relative">
         <div>
           <p className="text-sm uppercase tracking-wider mb-2 text-gray-500">
-            Blogs
-          </p>
-          <p className="text-teal-700 text-3xl font-bold">
-            Stay Ahead With Insights And Trends
-          </p>
+  {t.label}
+</p>
+<p className="text-teal-700 text-3xl font-bold">
+  {t.heading}
+</p>
         </div>
       </div>
 

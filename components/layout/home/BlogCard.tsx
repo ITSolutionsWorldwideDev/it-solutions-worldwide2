@@ -3,13 +3,15 @@
 import Link from "next/link";
 import { BlogEntry } from "@/types/blogs";
 import Image from 'next/image';
-
+import enCommon from "@/public/locales/en/common.json";
+import nlCommon from "@/public/locales/nl/common.json";
 type Props = {
   post: BlogEntry;
   locale: string;
 };
 
 export default function BlogCard({ post, locale }: Props) {
+  const t = locale === "nl" ? nlCommon.blog : enCommon.blog;
   const truncateText = (text: string, wordLimit: number) => {
     const words = text.split(" ");
     return words.length > wordLimit
@@ -69,7 +71,7 @@ export default function BlogCard({ post, locale }: Props) {
             aria-label={`Read more about ${post.content.title}`} 
             // 🔥 Fixed 2: Har link ko unique context diya taaki identical links ka accessibility issue solve ho sake!
           >
-            Read More →
+            {t.readMore}
           </Link>
         </div>
       </div>

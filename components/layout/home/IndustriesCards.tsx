@@ -1,11 +1,16 @@
 "use client";
 import React, { useState, useRef, useEffect, useCallback } from "react";
-import { industriesData } from "@/lib/commonData";
-import Image from "next/image";
+import { getIndustriesData } from "@/lib/commonData";
+import enCommon from "@/public/locales/en/common.json";
+import nlCommon from "@/public/locales/nl/common.json";import Image from "next/image";
 
 type Rect = { top: number; left: number; width: number; height: number };
 
-export default function IndustriesCards() {
+export default function IndustriesCards({ locale }: { locale: string }) {
+  const t = (key: string) => {
+    const dict = locale === "nl" ? nlCommon : enCommon;
+    return key.split(".").reduce((obj: any, k) => obj?.[k], dict) || key;
+  };
   const [activeId, setActiveId] = useState<string | number | null>(null);
   const [sourceRect, setSourceRect] = useState<Rect | null>(null);
   const [animateIn, setAnimateIn] = useState(false);
@@ -15,8 +20,8 @@ export default function IndustriesCards() {
   // Slider ke liye naya Ref
   const sliderRef = useRef<HTMLDivElement>(null);
 
+const industriesData = getIndustriesData(t);
   const activeSlide = industriesData.find((s) => s.id === activeId) || null;
-
   const openCard = (id: string | number) => {
     const el = cardRefs.current[id];
     if (!el) return;
@@ -105,7 +110,7 @@ export default function IndustriesCards() {
     <section className="w-full max-w-[1400px] mx-auto py-16 px-6 relative group">
       {/* ADDED HEADING HERE */}
       <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-12">
-        Industries We Empower
+        {t("industries.sectionHeading")}
       </h2>
       {/* Subtle Left Arrow */}
       <button 
