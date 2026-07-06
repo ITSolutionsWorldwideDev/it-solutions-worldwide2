@@ -11,11 +11,7 @@ function isStaticAssetPath(pathname: string): boolean {
   if (pathname.startsWith("/_next")) return true;
   if (pathname.startsWith("/uploads/")) return true;
 
-  if (
-    /\.(svg|png|jpe?g|webp|gif|ico|css|js|woff2?|txt|xml|json|pdf)$/i.test(
-      pathname
-    )
-  ) {
+  if (/\.(svg|png|jpe?g|webp|gif|ico|css|js|woff2?|txt|xml|json|pdf)$/i.test(pathname)) {
     return true;
   }
   return false;
@@ -26,16 +22,6 @@ acceptLanguage.languages(locales);
 export function middleware(request: NextRequest) {
   const host = request.headers.get("host");
   const { pathname } = request.nextUrl;
-
-  // ✅ Block the test domain completely
-  if (host === "test.itsolutionsworldwide.com") {
-    return new NextResponse("Not Found", {
-      status: 404,
-      headers: {
-        "X-Robots-Tag": "noindex, nofollow",
-      },
-    });
-  }
 
   if (pathname.startsWith("/api") || isStaticAssetPath(pathname)) {
     return;
@@ -48,7 +34,7 @@ export function middleware(request: NextRequest) {
   if (request.nextUrl.searchParams.has("_rsc")) {
     const clean = request.nextUrl.clone();
     clean.searchParams.delete("_rsc");
-    clean.hostname = "www.itsolutionsworldwide.com";
+    clean.hostname = "www.itsolutionsworldwide.com"; // combine host-fix here too
     return NextResponse.redirect(clean, 301);
   }
 
@@ -74,12 +60,9 @@ export function middleware(request: NextRequest) {
     const pathnameIsMissingLocale = locales.every(
       (locale) => !pathname.startsWith(`/${locale}`)
     );
-
     if (pathnameIsMissingLocale) {
       const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
-      const browserLocale = acceptLanguage.get(
-        request.headers.get("accept-language") || ""
-      );
+      const browserLocale = acceptLanguage.get(request.headers.get("accept-language") || "");
       const locale = cookieLocale || browserLocale || defaultLocale;
       targetPath = `/${locale}${pathname}`;
     }
@@ -88,19 +71,12 @@ export function middleware(request: NextRequest) {
   // --- Single combined redirect if host OR path needs fixing ---
   if (needsHostFix || targetPath) {
     const url = request.nextUrl.clone();
-
     if (needsHostFix) url.hostname = "www.itsolutionsworldwide.com";
     if (targetPath) url.pathname = targetPath;
-
     const res = NextResponse.redirect(url, 301);
-
     if (targetPath) {
-      res.headers.set(
-        "Cache-Control",
-        "public, s-maxage=3600, stale-while-revalidate=59"
-      );
+      res.headers.set("Cache-Control", "public, s-maxage=3600, stale-while-revalidate=59");
     }
-
     return res;
   }
 
