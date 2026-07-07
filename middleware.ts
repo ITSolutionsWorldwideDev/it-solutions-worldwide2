@@ -7,9 +7,13 @@ const locales = i18nConfig.locales;
 const defaultLocale = i18nConfig.defaultLocale;
 
 const PRODUCTION_HOST = "www.itsolutionsworldwide.com";
+
+// Bare domain (no www) — still redirect to canonical prod host
 const BARE_HOST = "itsolutionsworldwide.com";
+
+// Test subdomain — must NEVER be crawlable or resolve to real content
 const TEST_HOST = "test.itsolutionsworldwide.com";
-const TEST_HOST_WWW = "www.test.itsolutionsworldwide.com";
+const TEST_HOST_WWW = "www.test.itsolutionsworldwide.com"; // Add this
 
 function isStaticAssetPath(pathname: string): boolean {
   if (pathname.startsWith("/assets/")) return true;
@@ -28,47 +32,27 @@ export function middleware(request: NextRequest) {
   const host = request.headers.get("host") || "";
   const { pathname } = request.nextUrl;
 
-  // --- Handle test subdomain ---
-  const isTestDomain = host === TEST_HOST || host === TEST_HOST_WWW || host.includes("test.");
-
-  if (isTestDomain) {
-    // Special case: serve robots.txt for test domain with Disallow: /
-    if (pathname === '/robots.txt') {
-      return new NextResponse('User-agent: *\nDisallow: /\n', {
-        status: 200,
-        headers: {
-          'Content-Type': 'text/plain',
-        },
-      });
-    }
-
-    // Special case: serve sitemap.xml for test domain (empty)
-    if (pathname === '/sitemap.xml') {
-      return new NextResponse('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>', {
-        status: 200,
-        headers: {
-          'Content-Type': 'application/xml',
-        },
-      });
-    }
-
-    // Everything else gets 404
+  // --- Hard-block the test subdomain: return 404 for EVERYTHING, no redirect ---
+  // Check for ANY test subdomain variation
+  if (host === TEST_HOST || host === TEST_HOST_WWW || host.includes("test.")) {
     return new NextResponse("Not Found", {
       status: 404,
       headers: {
         "Content-Type": "text/plain",
         "X-Robots-Tag": "noindex, nofollow",
-        "Cache-Control": "no-cache, no-store, must-revalidate",
       },
     });
   }
 
+  // --- Move static asset and API checks AFTER test domain check ---
   if (pathname.startsWith("/api") || isStaticAssetPath(pathname)) {
     return;
   }
 
+  // --- Bare domain (no www) still redirects to canonical prod host ---
   const needsHostFix = host === BARE_HOST;
 
+  // _rsc cleanup (kept separate — rare edge case, low SEO impact)
   if (request.nextUrl.searchParams.has("_rsc")) {
     const clean = request.nextUrl.clone();
     clean.searchParams.delete("_rsc");
@@ -89,6 +73,7 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 301);
   }
 
+  // --- Determine target path (root or missing-locale) ---
   let targetPath: string | null = null;
 
   if (pathname === "/") {
@@ -105,6 +90,7 @@ export function middleware(request: NextRequest) {
     }
   }
 
+  // --- Single combined redirect if host OR path needs fixing ---
   if (needsHostFix || targetPath) {
     const url = request.nextUrl.clone();
     if (needsHostFix) url.hostname = PRODUCTION_HOST;
