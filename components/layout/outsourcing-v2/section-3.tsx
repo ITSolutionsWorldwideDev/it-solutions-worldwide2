@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 interface Section3Props {
@@ -14,6 +14,27 @@ interface Section3Props {
   service: string; // Naya prop: WhatsApp message ke liye service ka naam
 }
 
+// Fallback image pool — agar slug-specific image na mile to inhi mein se
+// ek consistent image select hogi (service name ke hash se), taake
+// har page pe koi na koi image zaroor dikhe, chahe repeat ho jaye.
+const FALLBACK_IMAGES = [
+  "/assets/images/staffingconsulting2.webp",
+  "/assets/images/categories/it-development.webp",
+  "/assets/images/categories/business-support.webp",
+  "/assets/images/categories/design-services.webp",
+  "/assets/images/categories/marketing-analytics.webp",
+];
+
+// Simple deterministic hash: same input => same fallback image, hamesha.
+const hashToIndex = (text: string, mod: number) => {
+  let hash = 0;
+  for (let i = 0; i < text.length; i++) {
+    hash = (hash << 5) - hash + text.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash) % mod;
+};
+
 const Section3 = ({
   heading,
   subheading,
@@ -24,6 +45,9 @@ const Section3 = ({
   imageSrc,
   service,
 }: Section3Props) => {
+  const fallbackImage = FALLBACK_IMAGES[hashToIndex(service || imageSrc || "default", FALLBACK_IMAGES.length)];
+  const [currentSrc, setCurrentSrc] = useState(imageSrc || fallbackImage);
+
   return (
     /* Light blue flat background matching reference image exactly */
     <div
@@ -90,12 +114,17 @@ const Section3 = ({
         <div className="w-full lg:w-[48%] flex justify-center lg:justify-end order-2 mt-8 lg:mt-0">
           <div className="relative w-full max-w-[640px] aspect-[4/3] rounded-xl overflow-hidden shadow-xl border border-white/40 bg-white min-h-[340px] lg:min-h-[420px]">
             <Image
-              src={imageSrc}
+              src={currentSrc}
               alt="Challenge presentation illustration"
               fill
               style={{ objectFit: "cover" }}
               sizes="(max-width: 1024px) 100vw, 640px"
               priority
+              onError={() => {
+                if (currentSrc !== fallbackImage) {
+                  setCurrentSrc(fallbackImage);
+                }
+              }}
             />
           </div>
         </div>

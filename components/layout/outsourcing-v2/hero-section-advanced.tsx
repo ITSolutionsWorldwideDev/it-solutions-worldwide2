@@ -16,8 +16,9 @@ interface HeroSectionAdvancedProps {
   primaryButtonText: string;
   primaryButtonLink?: string;
   secondaryButtonText: string;
-  service: string; // Naya prop add kiya
+  service: string;
   stats: Stat[];
+  icons?: string[]; // NEW: dynamic icon/feature strip, e.g. "🔷 Dedicated Front-End Developers"
   darkColor?: string;
 }
 
@@ -29,11 +30,12 @@ const HeroSectionAdvanced = ({
   primaryButtonText,
   primaryButtonLink = "#roles",
   secondaryButtonText,
-  service, // Destructured
+  service,
   stats,
+  icons = [],
   darkColor = "#05262C",
 }: HeroSectionAdvancedProps) => {
-  
+
   const exactGradient = "linear-gradient(90deg, #22a3ad, #219fa9 7.14%, #209ba5 14.29%, #1f98a1 21.43%, #1e949d 28.57%, #1d9099 35.71%, #1c8c95 42.86%, #1b8991 50%, #1a858d 57.14%, #1a8189 64.29%, #197d85 71.43%, #187a81 78.57%, #17767e 85.71%, #16737a 92.86%, #156f76)";
 
   return (
@@ -47,7 +49,7 @@ const HeroSectionAdvanced = ({
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_60%,rgba(176,221,224,0.6),transparent_55%)] pointer-events-none" />
 
       <div className="max-w-5xl w-full flex flex-col items-center relative z-10 text-center px-4 sm:px-6 lg:px-8">
-        
+
         {/* Pill Badge Tag */}
         <div className="inline-flex items-center gap-1.5 rounded-full border border-[#cbe7eb] bg-[#e6f4f6]/80 px-4 py-1 mb-8 shadow-sm">
           <Zap size={13} strokeWidth={2.5} className="fill-current opacity-90" style={{ color: "#1b8991" }} />
@@ -88,6 +90,20 @@ const HeroSectionAdvanced = ({
           {description}
         </p>
 
+        {/* Icons Row (dynamic, from content.icons) */}
+        {icons.length > 0 && (
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-10 px-2">
+            {icons.map((icon, index) => (
+              <span
+                key={`hero-icon-${index}`}
+                className="text-[13px] sm:text-[14px] font-medium text-[#1b8991] whitespace-nowrap"
+              >
+                {icon}
+              </span>
+            ))}
+          </div>
+        )}
+
         {/* Button Actions Row */}
         <div className="flex flex-row flex-wrap items-center justify-center gap-5 w-full mb-8">
           {/* Primary Button */}
@@ -117,8 +133,8 @@ const HeroSectionAdvanced = ({
         <div className="flex flex-row items-center justify-between pt-0 pb-8 w-full max-w-2xl px-2 sm:px-6 gap-2">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center text-center flex-1">
-              <span 
-                className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight mb-0.5 whitespace-nowrap bg-clip-text text-transparent" 
+              <span
+                className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight mb-0.5 whitespace-nowrap bg-clip-text text-transparent"
                 style={{ backgroundImage: exactGradient }}
               >
                 {stat.value}
@@ -132,7 +148,7 @@ const HeroSectionAdvanced = ({
       </div>
 
       {/* Trust Ribbon */}
-      <div 
+      <div
         className="w-full py-4 flex items-center justify-center border-t border-white/10 relative z-10"
         style={{ background: exactGradient }}
       >

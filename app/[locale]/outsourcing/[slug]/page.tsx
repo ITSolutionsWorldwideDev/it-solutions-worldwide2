@@ -509,11 +509,10 @@ export default async function Page({ params }: Props) {
         stats={dummyStats}
       />
 
-      <Section2V2
-        heading={`Hire specialized ${humanReadableRole} talents trusted by top companies.`}
-        slug={slug}
-      />
-
+   <Section2V2
+  heading={content?.h2_hero ?? `Hire specialized ${humanReadableRole} talents trusted by top companies.`}
+  icons={content?.icons}
+/>
       <Section3
         heading={section3Heading}
         subheading={section3Subheading}
@@ -529,8 +528,12 @@ export default async function Page({ params }: Props) {
 
       <SectionTechStack heading={techHeading} subheading={techSubheading} line1Tags={techLine1} line2Tags={techLine2} />
 
-      <SectionComparison />
-
+<SectionComparison
+  heading={content?.comparison?.h2}
+  subheading={content?.comparison?.subtitle}
+  table={content?.comparison?.table}
+  summary={content?.comparison?.summary}
+/>
       <SectionIndustryFocus heading={industryHeading} subheading={industrySubheading} cards={industryCards} />
 
       <SectionHiringProcess
