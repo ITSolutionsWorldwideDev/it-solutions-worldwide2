@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@microsoft/clarity": "^1.0.2",
     "@next/third-parties": "^16.2.4",
     "@radix-ui/react-menubar": "^1.1.16",
     "@radix-ui/react-slot": "^1.2.3",

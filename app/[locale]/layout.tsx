@@ -7,11 +7,9 @@ import CookieConsent from "@/components/CookieConsent";
 import { Lexend } from "next/font/google";
 import dynamic from "next/dynamic";
 import { MetaPixelScript, MetaPixelNoScript } from "@/components/MetaPixel";
-import {
-  GoogleTagManagerScript,
-  GoogleTagManagerNoScript,
-} from "@/components/GoogleTagManager";
-import Script from "next/script";
+import { GoogleTagManagerScript, GoogleTagManagerNoScript } from "@/components/GoogleTagManager";
+// 1. Import the Clarity component
+import Clarity from "@microsoft/clarity";
 
 const PageUpButton = dynamic(() => import("@/components/ui/PageUpButton"));
 
@@ -34,22 +32,16 @@ export default async function LocaleLayout(props: {
     notFound();
   }
 
+  // 2. Initialize Clarity (This handles the script injection correctly)
+  if (typeof window !== "undefined") {
+    Clarity.init("wgjwbc5ugr");
+  }
+
   return (
     <html lang={locale} className={lexend.className} suppressHydrationWarning>
       <head>
-        <link
-          rel="preload"
-          as="image"
-          href="/assets/images/backgrounds/hero-bg.webp"
-          fetchPriority="high"
-          type="image/webp"
-        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <MetaPixelScript pixelId="1766535074073515" enabled={true} />
         <GoogleTagManagerScript gtmId="GTM-PH8FNRK6" />
       </head>
@@ -68,15 +60,7 @@ export default async function LocaleLayout(props: {
             <CookieConsent />
           </LayoutWrapper>
         </ThemeProvider>
-        <Script id="clarity-script" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window,document,"clarity","script","wgjwbc5ugr");
-          `}
-        </Script>
+        {/* 3. The manual <Script> tag for Clarity is removed entirely */}
         <PageUpButton />
       </body>
     </html>
