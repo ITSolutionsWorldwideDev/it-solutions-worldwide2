@@ -7,7 +7,12 @@ const locales = i18nConfig.locales;
 const defaultLocale = i18nConfig.defaultLocale;
 
 const PRODUCTION_HOST = "www.itsolutionsworldwide.com";
-const BLOCKED_HOSTS = ["itsolutionsworldwide.com", "test.itsolutionsworldwide.com"];
+
+// Bare domain (no www) — still redirect to canonical prod host
+const BARE_HOST = "itsolutionsworldwide.com";
+
+// Test subdomain — must NEVER be crawlable or resolve to real content
+const TEST_HOST = "test.itsolutionsworldwide.com";
 
 function isStaticAssetPath(pathname: string): boolean {
   if (pathname.startsWith("/assets/")) return true;
@@ -26,14 +31,25 @@ export function middleware(request: NextRequest) {
   const host = request.headers.get("host");
   const { pathname } = request.nextUrl;
 
+  // --- Hard-block the test subdomain: return 404 for EVERYTHING, no redirect ---
+  // This ensures crawlers see a dead end instead of being redirected to prod,
+  // so test.* links get dropped from search indexes instead of resolving.
+  if (host === TEST_HOST) {
+    return new NextResponse("Not Found", {
+      status: 404,
+      headers: {
+        "Content-Type": "text/plain",
+        "X-Robots-Tag": "noindex, nofollow",
+      },
+    });
+  }
+
   if (pathname.startsWith("/api") || isStaticAssetPath(pathname)) {
     return;
   }
 
-  // --- Combine host-fix + path-fix into ONE redirect ---
-  // Covers both the bare domain AND the test subdomain — every child path
-  // under test.itsolutionsworldwide.com gets redirected to the same path on prod.
-  const needsHostFix = !!host && BLOCKED_HOSTS.includes(host);
+  // --- Bare domain (no www) still redirects to canonical prod host ---
+  const needsHostFix = host === BARE_HOST;
 
   // _rsc cleanup (kept separate — rare edge case, low SEO impact)
   if (request.nextUrl.searchParams.has("_rsc")) {

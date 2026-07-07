@@ -17,24 +17,20 @@ export default function BlogsClient({ locale, title }: { locale: string; title: 
   const [blogs, setBlogs] = useState<BlogEntry[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const load = async () => {
-      try {
-        const res = await fetch(`/api/blogs?page=1&limit=${PAGE_SIZE}`);
-        const data: ApiResponse = await res.json();
-        
-        console.log("Data received from API:", data); // Check this in Browser Console
-        
-        setBlogs(data.items || []);
-      } catch (err) {
-        console.error("Fetch error:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    load();
-  }, []);
-
+ useEffect(() => {
+  const load = async () => {
+    try {
+      const res = await fetch(`/api/blogs?page=1&limit=${PAGE_SIZE}&locale=${locale}`);
+      const data: ApiResponse = await res.json();
+      setBlogs(data.items || []);
+    } catch (err) {
+      console.error("Fetch error:", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+  load();
+}, [locale]);
   if (loading) return <div>Loading...</div>;
 
   return (

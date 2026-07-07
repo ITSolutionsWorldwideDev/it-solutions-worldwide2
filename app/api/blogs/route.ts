@@ -1,19 +1,19 @@
 // app/api/blogs/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { getAllBlogs } from "@/lib/blogs";
+export const dynamic = 'force-dynamic';
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const page = Number(searchParams.get("page") || 1);
   const limit = Number(searchParams.get("limit") || 20);
-
+  const locale = searchParams.get("locale") || "en";
   try {
-    const allBlogs = await getAllBlogs();
+    const allBlogs = await getAllBlogs(locale);
     const totalResults = allBlogs.length;
     const start = (page - 1) * limit;
     const end = start + limit;
     const items = allBlogs.slice(start, end);
-
     return NextResponse.json({
       items,
       totalResults,

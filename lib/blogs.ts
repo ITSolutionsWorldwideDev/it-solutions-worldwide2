@@ -12,6 +12,8 @@ interface BlogModule {
   title: string;
   date: string;
   sections: BlogSection[];
+  title_nl?: string;
+  sections_nl?: BlogSection[];
 }
 
 function slugify(text: string): string {
@@ -22,21 +24,29 @@ function slugify(text: string): string {
     .replace(/(^-+|-+$)/g, "");
 }
 
-function getFeaturedImage(mod: BlogModule): string {
-  const withImage = mod.sections.find((s) => s.image);
+function getLocalizedContent(mod: BlogModule, locale: string) {
+  const useDutch = locale === "nl" && mod.title_nl && mod.sections_nl;
+  return {
+    title: useDutch ? mod.title_nl! : mod.title,
+    sections: useDutch ? mod.sections_nl! : mod.sections,
+  };
+}
+
+function getFeaturedImage(sections: BlogSection[]): string {
+  const withImage = sections.find((s) => s.image);
   return withImage?.image || "/assets/images/blogs/biggest1.webp";
 }
 
-function getExcerpt(mod: BlogModule): string {
-  const first = mod.sections.find((s) => s.content);
+function getExcerpt(sections: BlogSection[]): string {
+  const first = sections.find((s) => s.content);
   const text = (first?.content || "").trim();
   return text.length > 220 ? text.slice(0, 220).trim() + "..." : text;
 }
 
-function renderHTML(mod: BlogModule, featuredImage: string): string {
+function renderHTML(sections: BlogSection[], title: string, featuredImage: string): string {
   let usedFeaturedImage = false;
 
-  return mod.sections
+  return sections
     .map((s) => {
       const heading = s.title
         ? `<h2>${s.title}</h2>`
@@ -44,13 +54,12 @@ function renderHTML(mod: BlogModule, featuredImage: string): string {
         ? `<h3>${s.subtitle}</h3>`
         : "";
 
-      // Skip rendering the image if it's the same one already shown as the hero image
       let image = "";
       if (s.image) {
         if (s.image === featuredImage && !usedFeaturedImage) {
-          usedFeaturedImage = true; // mark as "consumed" by the hero, don't render again
+          usedFeaturedImage = true;
         } else {
-          image = `<img src="${s.image}" alt="${s.title || s.subtitle || mod.title}" />`;
+          image = `<img src="${s.image}" alt="${s.title || s.subtitle || title}" />`;
         }
       }
 
@@ -74,39 +83,41 @@ export interface BlogEntry {
   };
 }
 
-function toBlogEntry(mod: BlogModule): BlogEntry {
+function toBlogEntry(mod: BlogModule, locale: string): BlogEntry {
+  const { title, sections } = getLocalizedContent(mod, locale);
   return {
-    slug: slugify(mod.title),
+    slug: slugify(mod.title), // slug hamesha English title se banta hai, URL consistent rahe
     date: mod.date,
     content: {
-      title: mod.title,
-      description: getExcerpt(mod),
-      featuredImage: getFeaturedImage(mod),
+      title,
+      description: getExcerpt(sections),
+      featuredImage: getFeaturedImage(sections),
     },
   };
 }
 
-export async function getAllBlogs(): Promise<BlogEntry[]> {
+export async function getAllBlogs(locale: string = "en"): Promise<BlogEntry[]> {
   return (blogModules as BlogModule[])
-    .map(toBlogEntry)
+    .map((mod) => toBlogEntry(mod, locale))
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
-export async function getBlogBySlug(slug: string) {
+export async function getBlogBySlug(slug: string, locale: string = "en") {
   const mod = (blogModules as BlogModule[]).find(
     (m) => slugify(m.title) === slug
   );
 
   if (!mod) return null;
 
-  const featuredImage = getFeaturedImage(mod);
+  const { title, sections } = getLocalizedContent(mod, locale);
+  const featuredImage = getFeaturedImage(sections);
 
   return {
     slug,
     date: mod.date,
     content: {
-      title: mod.title,
-      description: renderHTML(mod, featuredImage),
+      title,
+      description: renderHTML(sections, title, featuredImage),
       featuredImage,
     },
   };

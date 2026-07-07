@@ -64,7 +64,7 @@ export default function BlogCard({ post, locale }: Props) {
 
         <div className="flex items-center mt-4">
           <Link
-            href={`/blogs/${post.slug}`}
+href={`/${locale}/blogs/${post.slug}`}
             className="bg-teal-700 hover:bg-teal-800 text-white px-4 py-2 rounded-lg font-semibold transition-colors" 
             // 🔥 Fixed 1: Color Contrast ko pass karwane ke liye bg-teal-700 aur font-semibold kiya
             itemProp="url"

@@ -21,6 +21,7 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
 export default async function BlogsPage(
   props: {
     params: Promise<{ locale: string }>;
+    
   }
 ) {
   const params = await props.params;

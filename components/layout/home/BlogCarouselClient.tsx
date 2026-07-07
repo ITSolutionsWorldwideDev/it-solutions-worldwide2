@@ -39,10 +39,10 @@ export default function BlogCarouselClient({ locale }: { locale: string }) {
       try {
         setLoading(true);
 
-        const res = await fetch(
-          `/api/blogs?page=${page}&limit=${PAGE_SIZE}`,
-          { cache: "no-store" }
-        );
+      const res = await fetch(
+  `/api/blogs?page=${page}&limit=${PAGE_SIZE}&locale=${locale}`,
+  { cache: "no-store" }
+);
 
         if (!res.ok) {
           setBlogs([]);
