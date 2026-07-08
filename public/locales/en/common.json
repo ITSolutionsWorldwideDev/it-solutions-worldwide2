@@ -8948,6 +8948,8 @@
       ]
     }
   },
+
+
 "outsource-hire-customer-support-agent": {
     "meta": {
       "title": "Hire Customer Support Agents Netherlands | Customer Support Outsourcing Services",
@@ -12189,6 +12191,8 @@
       ]
     }
   },
+  
+  
   "outsource-hire-travel-customer-service-agent": {
     "meta": {
       "title": "Hire Travel Agency Customer Service Agents Netherlands | Travel Customer Service Outsourcing",
@@ -13067,6 +13071,9 @@
       ]
     }
   },
+
+
+
   "outsource-hire-administrative-accounting-assistant": {
     "meta": {
       "title": "Hire Administrative Accounting Assistants Netherlands | Admin & Finance Support Outsourcing",
@@ -13356,6 +13363,8 @@
       ]
     }
   },
+
+
   "outsource-hire-customer-relations-agent": {
     "meta": {
       "title": "Hire Customer Relations Agents Netherlands | Customer Relations Outsourcing Services",
@@ -15966,12 +15975,39 @@
         "✓ Start in 48 hours"
       ]
     }
+  },
+
+
+  "trustSection": {
+    "headingPart1": "Trusted by",
+    "headingHighlight": "Industry Leaders",
+    "subheading": "Powering innovation for 200+ global enterprises",
+    "testimonials": [
+      {
+        "desc": "Their AI solutions transformed our operations, reducing costs by 40% while improving accuracy.",
+        "name": "Sarah Johnson",
+        "role": "CTO, Tech Corp"
+      },
+      {
+        "desc": "Exceptional cloud migration expertise. Our infrastructure is now more reliable and scalable.",
+        "name": "Michael Chen",
+        "role": "VP Engineering, Global Systems"
+      },
+      {
+        "desc": "The supply chain transformation project exceeded all expectations. Real-time visibility changed everything.",
+        "name": "Emily Rodriguez",
+        "role": "COO, Logistics Plus"
+      }
+    ]
+  },
+
+
+"outsourcingDefaults": {
+    "reputationTitle": "Achieve High Impact {{role}} Delivery",
+    "reputationText": "Optimize your operations by working with a dedicated {{role}}."
   }
 
-  
-  
 }
-
 
 
 

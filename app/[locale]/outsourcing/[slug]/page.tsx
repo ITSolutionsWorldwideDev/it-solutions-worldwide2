@@ -478,8 +478,10 @@ export default async function Page({ params }: Props) {
 
   const mappedFaqData = Array.isArray(content?.faq?.questions) ? content.faq.questions : [];
 
-  const reputationTitle = content?.reputation?.title ?? "Achieve High Impact Operational Velocity";
-  const reputationText = content?.reputation?.text ?? "Optimize internal budget allocation metrics by up to 60%.";
+  const reputationTitle =
+  content?.reputation?.title ?? t("outsourcingDefaults.reputationTitle", { role: humanReadableRole });
+const reputationText =
+  content?.reputation?.text ?? t("outsourcingDefaults.reputationText", { role: humanReadableRole });
 
   const readyHeading = content?.final_cta?.h2 ?? `Ready to Hire a Dedicated ${humanReadableRole} in Netherlands?`;
   const readySubheading = content?.final_cta?.subtitle ?? "Stop letting operational gaps slow your business down.";
@@ -489,26 +491,25 @@ export default async function Page({ params }: Props) {
     ? content.final_cta.trust_points
     : ["✓ No commitment", "✓ Free consultation", "✓ Start in 48 hours"];
 
-  const dummyStats = [
-    { value: "60%", label: "Average Cost Savings" },
-    { value: "48h", label: "Average Matching Time" },
-    { value: "97%", label: "Client Satisfaction" },
+ const heroStats = [
+    { value: "500+", label: content?.trust_stats?.professionals?.replace(/[👥⏱💰]/g, "").trim() || "Dedicated Professionals" },
+    { value: "24hrs", label: content?.trust_stats?.start_time?.replace(/[👥⏱💰]/g, "").trim() || "Start Time" },
+    { value: "60%", label: content?.trust_stats?.savings?.replace(/[👥⏱💰]/g, "").trim() || "Cost Savings" },
   ];
 
   return (
     <div>
-      <HeroSectionAdvanced
-        badgeText={heroBadge}
-        headingLine1={heroTitle}
-        headingLine2=""
-        description={heroDescription}
-        primaryButtonText="Book Free Consultation"
-        primaryButtonLink="/en/contact-us"
-        secondaryButtonText="Get Pricing Today"
-        service={humanReadableRole}
-        stats={dummyStats}
-      />
-
+     <HeroSectionAdvanced
+  badgeText={heroBadge}
+  headingLine1={heroTitle}
+  headingLine2=""
+  description={heroDescription}
+  primaryButtonText={content?.cta?.primary ?? "Book Free Consultation"}
+  primaryButtonLink={`/${locale}/contact-us`}
+  secondaryButtonText={content?.cta?.secondary ?? "Get Pricing Today"}
+  service={humanReadableRole}
+  stats={heroStats}
+/>
    <Section2V2
   heading={content?.h2_hero ?? `Hire specialized ${humanReadableRole} talents trusted by top companies.`}
   icons={content?.icons}

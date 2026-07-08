@@ -1,6 +1,8 @@
 // components/layout/outsourcing/section-trust.tsx
 "use client";
-import type { NextPage } from "next";
+import { useParams } from "next/navigation";
+import enCommon from "@/public/locales/en/common.json";
+import nlCommon from "@/public/locales/nl/common.json";
 
 const companies = [
   "Microsoft",
@@ -20,25 +22,11 @@ const companies = [
   "PwC",
 ];
 
-const testimonials = [
-  {
-    desc: "Their AI solutions transformed our operations, reducing costs by 40% while improving accuracy.",
-    name: "Sarah Johnson",
-    role: "CTO, Tech Corp",
-  },
-  {
-    desc: "Exceptional cloud migration expertise. Our infrastructure is now more reliable and scalable.",
-    name: "Michael Chen",
-    role: "VP Engineering, Global Systems",
-  },
-  {
-    desc: "The supply chain transformation project exceeded all expectations. Real-time visibility changed everything.",
-    name: "Emily Rodriguez",
-    role: "COO, Logistics Plus",
-  },
-];
+const TrustSection = () => {
+  const params = useParams();
+  const locale = (params?.locale as string) || "en";
+  const t = locale === "nl" ? nlCommon.trustSection : enCommon.trustSection;
 
-const TrustSection: NextPage = () => {
   return (
     <section className="relative w-full overflow-hidden bg-[linear-gradient(180deg,#002025,#002228_11.11%,#00252b_22.22%,#00272d_33.33%,#002a30_44.44%,#002d33_55.56%,#002f36_66.67%,#003239_77.78%,#00343c_88.89%,#00373f)] py-16 text-white">
       {/* Glow Effect */}
@@ -48,23 +36,20 @@ const TrustSection: NextPage = () => {
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-3xl font-bold md:text-4xl">
-            Trusted by{" "}
+            {t.headingPart1}{" "}
             <span className="bg-linear-to-r from-[#22a3ad] to-[#156f76] bg-clip-text text-transparent">
-              Industry Leaders
+              {t.headingHighlight}
             </span>
           </h2>
 
           <p className="mt-2 text-sm text-gray-400 md:text-base">
-            Powering innovation for 200+ global enterprises
+            {t.subheading}
           </p>
         </div>
 
         {/* Company Marquee */}
         <div className="relative mt-14 w-full overflow-hidden">
-          {/* Left Fade */}
           <div className="absolute left-0 top-0 z-10 h-full w-24 bg-linear-to-r from-[#002025] to-transparent" />
-
-          {/* Right Fade */}
           <div className="absolute right-0 top-0 z-10 h-full w-24 bg-linear-to-l from-[#00373f] to-transparent" />
 
           <div className="flex w-max animate-[marquee_30s_linear_infinite] items-center gap-16">
@@ -81,7 +66,7 @@ const TrustSection: NextPage = () => {
 
         {/* Testimonials */}
         <div className="mt-20 grid w-full grid-cols-1 gap-8 lg:grid-cols-3">
-          {testimonials.map((item, index) => (
+          {t.testimonials.map((item, index) => (
             <div
               key={index}
               className="rounded-[14px] border border-teal-700 bg-[#10292d]/70 p-6"
@@ -104,13 +89,11 @@ const TrustSection: NextPage = () => {
         </div>
       </div>
 
-      {/* Marquee Animation */}
       <style jsx>{`
         @keyframes marquee {
           from {
             transform: translateX(0);
           }
-
           to {
             transform: translateX(-50%);
           }
