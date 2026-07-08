@@ -161,12 +161,12 @@ export const getServicesData = (t: (key: string) => string, locale: string) => [
     description: t("homeServices.itConsultingDesc"),
     link: `https://www.itsolutionsworldwide.com/${locale}/it-support`,
   },
-  {
-    url: "/assets/images/services/staffing-support.webp",
-    title: t("homeServices.staffingTitle"),
-    description: t("homeServices.staffingDesc"),
-    link: `https://www.itsolutionsworldwide.com/${locale}/staffing-support`,
-  },
+ {
+  url: "/assets/images/categories/virtual-assistant.webp",
+  title: t("homeServices.staffingTitle"),
+  description: t("homeServices.staffingDesc"),
+  link: `https://www.itsolutionsworldwide.com/${locale}/staffing-support`,
+},
   {
     url: "/assets/images/services/staffing-support.webp",
     title: t("homeServices.outsourcingTitle"),
