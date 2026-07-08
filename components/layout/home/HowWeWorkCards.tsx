@@ -10,7 +10,7 @@ export default async function HowWeWorkCards({ locale }: { locale: string }) {
 
   return (
     <div className="flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:items-start">
-      <section className="relative flex flex-col items-center md:flex-row md:justify-center lg:-space-x-16 md:-space-x-28 px-4 pt-4">
+      <section className="relative flex flex-col items-center md:flex-row md:justify-center lg:-space-x-16 md:-space-x-28 px-4">
         <div
           className="w-[280px] lg:w-[345px] aspect-square flex items-center justify-center font-bold text-white rounded-full shadow-lg"
           style={{ background: "#194A59" }}

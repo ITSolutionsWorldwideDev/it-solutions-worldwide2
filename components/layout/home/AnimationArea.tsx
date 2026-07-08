@@ -60,7 +60,7 @@ export default async function AnimationArea({ locale }: { locale: string }) {
 
       {/* ================= OUR CLIENTS ================= */}
 
-      <section className="w-full pt-12 md:pt-20">
+      <section className="w-full pt-6 md:pt-10">
         <div className="container xl:max-w-[1200px] mx-auto px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-5">
             <span className="bg-[#175864] text-white px-4 py-1 rounded-md inline-block">
@@ -78,8 +78,9 @@ export default async function AnimationArea({ locale }: { locale: string }) {
 
       {/* ================= HOW WE WORK ================= */}
 
-      <section className="container xl:max-w-[1200px] mx-auto text-center py-12 md:py-20 px-4">
-<HowWeWorkCards locale={locale} />      </section>
+      <section className="container xl:max-w-[1200px] mx-auto text-center pb-12 md:pb-20 px-4">
+        <HowWeWorkCards locale={locale} />
+      </section>
 
       {/* ================= STATS ================= */}
 
@@ -91,12 +92,15 @@ export default async function AnimationArea({ locale }: { locale: string }) {
         }}
       >
         <div className="container xl:max-w-[1200px] mx-auto px-4 py-10 md:py-16">
-<StatsCards locale={locale} />        </div>
+          <StatsCards locale={locale} />
+        </div>
       </section>
 
       {/* ================= INDUSTRIES ================= */}
 
-      <section className="py-12 md:py-20">
+    {/* ================= INDUSTRIES ================= */}
+
+      <section className="pt-6 md:pt-10">
         <IndustriesCards locale={locale} />
       </section>
     </section>

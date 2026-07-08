@@ -1,8 +1,10 @@
 "use client";
 import React, { useState, useRef, useEffect, useCallback } from "react";
+import { createPortal } from "react-dom";
 import { getIndustriesData } from "@/lib/commonData";
 import enCommon from "@/public/locales/en/common.json";
-import nlCommon from "@/public/locales/nl/common.json";import Image from "next/image";
+import nlCommon from "@/public/locales/nl/common.json";
+import Image from "next/image";
 
 type Rect = { top: number; left: number; width: number; height: number };
 
@@ -15,13 +17,18 @@ export default function IndustriesCards({ locale }: { locale: string }) {
   const [sourceRect, setSourceRect] = useState<Rect | null>(null);
   const [animateIn, setAnimateIn] = useState(false);
   const [renderContent, setRenderContent] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const cardRefs = useRef<Record<string | number, HTMLDivElement | null>>({});
-  
-  // Slider ke liye naya Ref
+
   const sliderRef = useRef<HTMLDivElement>(null);
 
-const industriesData = getIndustriesData(t);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const industriesData = getIndustriesData(t);
   const activeSlide = industriesData.find((s) => s.id === activeId) || null;
+
   const openCard = (id: string | number) => {
     const el = cardRefs.current[id];
     if (!el) return;
@@ -93,7 +100,6 @@ const industriesData = getIndustriesData(t);
     return clean;
   };
 
-  // Scroll Functions
   const scrollLeft = () => {
     if (sliderRef.current) {
       sliderRef.current.scrollBy({ left: -340, behavior: "smooth" });
@@ -106,17 +112,52 @@ const industriesData = getIndustriesData(t);
     }
   };
 
+  // Modal ab portal ke through document.body me render hoga,
+  // is se yeh kisi bhi ancestor ke stacking context (relative/z-index) me trap nahi hoga
+  const modalContent =
+    activeId !== null && activeSlide && sourceRect ? (
+      <>
+        <div
+          onClick={closeCard}
+          className={`fixed inset-0 bg-gray-900/40 backdrop-blur-md z-[9998] transition-opacity duration-500 ${
+            animateIn ? "opacity-100" : "opacity-0"
+          }`}
+        />
+        <div
+          className="fixed z-[9999] rounded-[32px] overflow-hidden bg-white shadow-2xl flex flex-col md:flex-row"
+          style={{ ...getOverlayStyle(), transition: "all 450ms cubic-bezier(0.25, 1, 0.5, 1)" }}
+        >
+          <button
+            onClick={closeCard}
+            className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/80 backdrop-blur flex items-center justify-center hover:bg-white transition-all"
+          >
+            ✕
+          </button>
+
+          <div className="w-full md:w-1/2 relative bg-gray-100">
+            <Image src={getCleanSrc(activeSlide.image)} alt={activeSlide.industry} fill className="object-cover" />
+          </div>
+
+          <div
+            className={`w-full md:w-1/2 p-10 overflow-y-auto flex flex-col ${
+              renderContent ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <h3 className="text-3xl font-black text-gray-900 mb-4">{activeSlide.industry}</h3>
+            <p className="text-gray-600 leading-relaxed">{activeSlide.content}</p>
+          </div>
+        </div>
+      </>
+    ) : null;
+
   return (
-<section
-  className={`w-full max-w-[1400px] mx-auto py-16 px-6 relative group ${
-    activeId ? "z-0" : "z-10"
-  }`}
->      {/* ADDED HEADING HERE */}
+    <section className="w-full max-w-[1400px] mx-auto pt-16 px-6 relative group">
       <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-12">
         {t("industries.sectionHeading")}
       </h2>
+
       {/* Subtle Left Arrow */}
-      <button 
+      <button
         onClick={scrollLeft}
         aria-label="Scroll Left"
         className="absolute left-0 md:-left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur border border-gray-100 shadow-md rounded-full flex items-center justify-center text-[#175864] hover:scale-110 hover:bg-white transition-all duration-300 opacity-0 group-hover:opacity-100"
@@ -127,21 +168,20 @@ const industriesData = getIndustriesData(t);
       </button>
 
       {/* Scrollable Container for Slider Effect */}
-      <div 
+      <div
         ref={sliderRef}
-        className="flex overflow-x-auto pb-8 gap-6 snap-x scroll-smooth [&::-webkit-scrollbar]:hidden"
-        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} // Safely hides scrollbar in Firefox/IE
+        className="flex overflow-x-auto pb-10 gap-6 snap-x scroll-smooth [&::-webkit-scrollbar]:hidden"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {industriesData.map((slide) => {
           const currentSrc = getCleanSrc(slide.image);
 
           return (
-            <div 
-              key={slide.id} 
-              className="min-w-[300px] sm:min-w-[340px] md:flex-1 snap-start"
-            >
+            <div key={slide.id} className="min-w-[300px] sm:min-w-[340px] md:flex-1 snap-start">
               <div
-                ref={(el) => { cardRefs.current[slide.id] = el; }}
+                ref={(el) => {
+                  cardRefs.current[slide.id] = el;
+                }}
                 onClick={() => openCard(slide.id)}
                 className="group/card rounded-[28px] overflow-hidden border border-gray-100 bg-white flex flex-col h-full cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_22px_45px_rgba(23,88,100,0.12)] shadow-[0_8px_30px_rgb(0,0,0,0.03)]"
               >
@@ -154,7 +194,9 @@ const industriesData = getIndustriesData(t);
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
-                  ) : <div className="w-full h-full bg-gray-200 animate-pulse" />}
+                  ) : (
+                    <div className="w-full h-full bg-gray-200 animate-pulse" />
+                  )}
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur text-[#175864] font-bold text-xs px-3 py-1 rounded-full shadow-sm">
                     {slide.number}
                   </div>
@@ -164,11 +206,8 @@ const industriesData = getIndustriesData(t);
                   <h3 className="text-lg font-bold text-gray-900 group-hover/card:text-[#175864] transition-colors mb-3">
                     {slide.industry}
                   </h3>
-                  <p className="text-sm text-gray-500 leading-relaxed line-clamp-3">
-                    {slide.content}
-                  </p>
+                  <p className="text-sm text-gray-500 leading-relaxed line-clamp-3">{slide.content}</p>
                 </div>
-
               </div>
             </div>
           );
@@ -176,7 +215,7 @@ const industriesData = getIndustriesData(t);
       </div>
 
       {/* Subtle Right Arrow */}
-      <button 
+      <button
         onClick={scrollRight}
         aria-label="Scroll Right"
         className="absolute right-0 md:-right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur border border-gray-100 shadow-md rounded-full flex items-center justify-center text-[#175864] hover:scale-110 hover:bg-white transition-all duration-300 opacity-0 group-hover:opacity-100"
@@ -186,28 +225,8 @@ const industriesData = getIndustriesData(t);
         </svg>
       </button>
 
-      {/* Morphing Overlay */}
-      {activeId !== null && activeSlide && sourceRect && (
-        <>
-         <div onClick={closeCard} className={`fixed inset-0 bg-gray-900/40 backdrop-blur-md z-[9998] transition-opacity duration-500 ${animateIn ? "opacity-100" : "opacity-0"}`} />
-<div
-  className="fixed z-[9999] rounded-[32px] overflow-hidden bg-white shadow-2xl flex flex-col md:flex-row"
-  style={{ ...getOverlayStyle(), transition: "all 450ms cubic-bezier(0.25, 1, 0.5, 1)" }}
->
-            <button onClick={closeCard} className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/80 backdrop-blur flex items-center justify-center hover:bg-white transition-all">✕</button>
-            
-            <div className="w-full md:w-1/2 relative bg-gray-100">
-               {/* Modal Image Content */}
-               <Image src={getCleanSrc(activeSlide.image)} alt={activeSlide.industry} fill className="object-cover" />
-            </div>
-
-            <div className={`w-full md:w-1/2 p-10 overflow-y-auto flex flex-col ${renderContent ? "opacity-100" : "opacity-0"}`}>
-              <h3 className="text-3xl font-black text-gray-900 mb-4">{activeSlide.industry}</h3>
-              <p className="text-gray-600 leading-relaxed">{activeSlide.content}</p>
-            </div>
-          </div>
-        </>
-      )}
+      {/* Modal ab portal se body me jayega, koi bhi section uske upar nahi aa sakta */}
+      {mounted && modalContent && createPortal(modalContent, document.body)}
     </section>
   );
 }

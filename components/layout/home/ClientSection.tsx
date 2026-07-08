@@ -35,7 +35,7 @@ export default function ClientSection() {
   const [swiperRef, setSwiperRef] = useState<any>(null);
 
   return (
-    <div className="container xl:max-w-[1200px] md:px-5 mx-auto py-10 relative">
+    <div className="container xl:max-w-[1200px] md:px-5 mx-auto pt-10 relative">
       <div className="flex justify-between items-center mb-6 px-4 pr-5 md:pr-0 md:px-0 relative">
         <div>
           <h2 className="text-teal-700 text-3xl font-bold">
@@ -45,7 +45,7 @@ export default function ClientSection() {
       </div>
 
       {/* Slider */}
-      <div className="relative z-10 mt-14 px-10 pb-20 xl:max-w-[600px] mx-auto">
+      <div className="relative z-10 mt-14 px-10 xl:max-w-[600px] mx-auto">
         <Swiper
           modules={[Navigation, Autoplay]}
           onSwiper={setSwiperRef}

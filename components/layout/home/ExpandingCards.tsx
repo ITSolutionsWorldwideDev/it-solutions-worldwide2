@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 
 export default function ExpandingCards({
@@ -13,10 +14,64 @@ export default function ExpandingCards({
   visitServicePageText: string;
 }) {
   const [selectedCard, setSelectedCard] = useState<any | null>(null);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   if (!servicesData || servicesData.length === 0) {
     return <p className="text-center text-gray-500">No data to display</p>;
   }
+
+  const modalContent = selectedCard ? (
+    <div
+      onClick={() => setSelectedCard(null)}
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="bg-white rounded-3xl overflow-hidden max-w-2xl w-full max-h-[90vh] shadow-2xl relative"
+      >
+        <button
+          onClick={() => setSelectedCard(null)}
+          className="absolute top-4 right-4 z-10 bg-white/80 hover:bg-white rounded-full p-2"
+        >
+          ✕
+        </button>
+
+        <div className="relative h-64 w-full">
+          <Image
+            src={selectedCard.url}
+            alt={selectedCard.title}
+            fill
+            loading="lazy"
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
+
+        <div className="p-8">
+          <h3 className="text-3xl font-bold mb-4 text-[#175864]">
+            {selectedCard.title}
+          </h3>
+
+          <p className="text-gray-600 text-lg leading-relaxed mb-6">
+            {selectedCard.description}
+          </p>
+
+          <a
+            href={selectedCard.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center rounded-lg bg-[#175864] px-5 py-3 text-white font-semibold hover:bg-[#0f434d]"
+          >
+            {visitServicePageText}
+          </a>
+        </div>
+      </div>
+    </div>
+  ) : null;
 
   return (
     <div className="w-full max-w-[1400px] mx-auto pt-6 pb-20 px-4 sm:px-8 relative z-10">
@@ -67,56 +122,8 @@ export default function ExpandingCards({
         ))}
       </div>
 
-      {/* Popup */}
-      {/* Popup */}
-{selectedCard && (
-  <div
-    onClick={() => setSelectedCard(null)}
-    className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
-  >
-          <div
-            onClick={(e) => e.stopPropagation()}
-            className="bg-white rounded-3xl overflow-hidden max-w-2xl w-full max-h-[90vh] shadow-2xl relative"
-          >
-            <button
-              onClick={() => setSelectedCard(null)}
-              className="absolute top-4 right-4 z-10 bg-white/80 hover:bg-white rounded-full p-2"
-            >
-              ✕
-            </button>
-
-            <div className="relative h-64 w-full">
-              <Image
-                src={selectedCard.url}
-                alt={selectedCard.title}
-                fill
-                loading="lazy"
-                sizes="100vw"
-                className="object-cover"
-              />
-            </div>
-
-            <div className="p-8">
-              <h3 className="text-3xl font-bold mb-4 text-[#175864]">
-                {selectedCard.title}
-              </h3>
-
-              <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                {selectedCard.description}
-              </p>
-
-              <a
-                href={selectedCard.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center rounded-lg bg-[#175864] px-5 py-3 text-white font-semibold hover:bg-[#0f434d]"
-              >
-                {visitServicePageText}
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Popup - portal se body me render hota hai taake koi bhi sibling section stacking context ke wajah se iske upar na aa sake */}
+      {mounted && modalContent && createPortal(modalContent, document.body)}
     </div>
   );
 }
