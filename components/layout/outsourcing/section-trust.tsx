@@ -65,19 +65,17 @@ const TrustSection = () => {
         </div>
 
         {/* Testimonials */}
-        <div className="mt-20 grid w-full grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="mt-12 grid w-full grid-cols-1 gap-8 lg:grid-cols-3">
           {t.testimonials.map((item, index) => (
             <div
               key={index}
               className="rounded-[14px] border border-teal-700 bg-[#10292d]/70 p-6"
             >
-              <div className="text-4xl leading-none text-[#22a3ad]">"</div>
-
-              <p className="mt-8 text-[16px] leading-[26px] text-gray-300">
+              <p className="text-[16px] leading-[26px] text-gray-300">
                 {item.desc}
               </p>
 
-              <div className="mt-8">
+              <div className="mt-6">
                 <h4 className="text-base font-semibold text-white">
                   {item.name}
                 </h4>
@@ -104,3 +102,28 @@ const TrustSection = () => {
 };
 
 export default TrustSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

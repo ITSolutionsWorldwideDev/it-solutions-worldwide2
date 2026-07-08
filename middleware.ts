@@ -11,10 +11,6 @@ const PRODUCTION_HOST = "www.itsolutionsworldwide.com";
 // Bare domain (no www) — still redirect to canonical prod host
 const BARE_HOST = "itsolutionsworldwide.com";
 
-// Test subdomain — must NEVER be crawlable or resolve to real content
-const TEST_HOST = "test.itsolutionsworldwide.com";
-const TEST_HOST_WWW = "www.test.itsolutionsworldwide.com"; // Add this
-
 function isStaticAssetPath(pathname: string): boolean {
   if (pathname.startsWith("/assets/")) return true;
   if (pathname.startsWith("/_next")) return true;
@@ -26,6 +22,18 @@ function isStaticAssetPath(pathname: string): boolean {
   return false;
 }
 
+// Test/staging host check — matches test.itsolutionsworldwide.com,
+// www.test.itsolutionsworldwide.com, and any other test.* subdomain,
+// while never matching the real production hosts.
+function isTestHost(host: string): boolean {
+  const normalizedHost = host.split(":")[0].toLowerCase(); // strip port if present
+  return (
+    normalizedHost === PRODUCTION_HOST || normalizedHost === BARE_HOST
+      ? false
+      : normalizedHost.includes("test.")
+  );
+}
+
 acceptLanguage.languages(locales);
 
 export function middleware(request: NextRequest) {
@@ -33,13 +41,15 @@ export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // --- Hard-block the test subdomain: return 404 for EVERYTHING, no redirect ---
-  // Check for ANY test subdomain variation
-  if (host === TEST_HOST || host === TEST_HOST_WWW || host.includes("test.")) {
+  // This runs before anything else — static assets, api, robots.txt, sitemap.xml,
+  // all of it. Nothing on the test host is ever reachable or crawlable.
+  if (isTestHost(host)) {
     return new NextResponse("Not Found", {
       status: 404,
       headers: {
         "Content-Type": "text/plain",
-        "X-Robots-Tag": "noindex, nofollow",
+        "X-Robots-Tag": "noindex, nofollow, noarchive, nosnippet",
+        "Cache-Control": "no-store",
       },
     });
   }
