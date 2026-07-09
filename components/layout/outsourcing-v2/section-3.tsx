@@ -11,12 +11,9 @@ interface Section3Props {
   conclusionText: string;
   ctaText: string;
   imageSrc: string;
-  service: string; // Naya prop: WhatsApp message ke liye service ka naam
+  service: string; 
 }
 
-// Fallback image pool — agar slug-specific image na mile to inhi mein se
-// ek consistent image select hogi (service name ke hash se), taake
-// har page pe koi na koi image zaroor dikhe, chahe repeat ho jaye.
 const FALLBACK_IMAGES = [
   "/assets/images/staffingconsulting2.webp",
   "/assets/images/categories/it-development.webp",
@@ -49,7 +46,7 @@ const Section3 = ({
   const [currentSrc, setCurrentSrc] = useState(imageSrc || fallbackImage);
 
   return (
-    /* Light blue flat background matching reference image exactly */
+   
     <div
       className="relative w-full py-16 md:py-24 px-4 sm:px-6 lg:px-8 block clearfix overflow-hidden"
       style={{

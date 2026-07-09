@@ -18,7 +18,7 @@ interface HeroSectionAdvancedProps {
   secondaryButtonText: string;
   service: string;
   stats: Stat[];
-  icons?: string[]; // NEW: dynamic icon/feature strip, e.g. "🔷 Dedicated Front-End Developers"
+  icons?: string[]; 
   darkColor?: string;
 }
 
@@ -85,8 +85,8 @@ const HeroSectionAdvanced = ({
         {/* Accent Bar */}
         <div className="w-28 h-[4px] rounded-full mt-4 mb-8" style={{ background: exactGradient }} />
 
-        {/* Description */}
-        <p className="max-w-3xl text-[15px] sm:text-[16px] leading-relaxed text-[#3a5357] font-normal mb-10 px-2 sm:px-6">
+        {/* Description — width aur barhai gayi taake ye 2 lines mein fit ho */}
+        <p className="max-w-6xl w-full text-[15px] sm:text-[16px] leading-relaxed text-[#3a5357] font-normal mb-10 px-2 sm:px-6">
           {description}
         </p>
 
@@ -113,7 +113,6 @@ const HeroSectionAdvanced = ({
             style={{ background: exactGradient }}
           >
             <span className="leading-[27.77px]">{primaryButtonText}</span>
-            <ArrowRight size={16} strokeWidth={2.5} />
           </Link>
 
           {/* WhatsApp Secondary Button */}

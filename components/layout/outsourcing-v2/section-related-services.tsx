@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
 
 type RoleItem = {
   title: string;
@@ -44,6 +43,9 @@ export default function SectionRelatedServices({
 }: SectionProps) {
 
   // FALLBACK: Agar cards khali hain toh ye 3 show honge
+  // NOTE: Agar tumhe har page pe DIFFERENT cards chahiye, to har page se
+  // apni khud ki `cards` prop pass karo (kam se kam 3 keys ke saath).
+  // Jab tak alag prop nahi jayega, ye fallback hi chalega har jagah.
   const finalCards = (cards && Object.keys(cards).length > 0) ? cards : {
     virtual_assistant: { title: "Virtual Assistant", description: "Efficiently manage your administrative tasks and scheduling." },
     full_stack_developer: { title: "Full Stack Developer", description: "Build robust web applications with modern technology stacks." },
@@ -60,21 +62,22 @@ export default function SectionRelatedServices({
           {stripEmoji(subheading) || "Further expand efficiency loops by combining related specialized workflows."}
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {Object.entries(finalCards).map(([key, role]) => {
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-stretch">
+          {Object.entries(finalCards).slice(0, 3).map(([key, role]) => {
             const predefinedLink = STAFFING_LINKS[key] || `/outsourcing/hire-${key.replace(/_/g, "-")}`;
             const href = isCategory
               ? `/${locale}/outsourcing/${key.replace(/_/g, "-")}`
               : `/${locale}${predefinedLink}`;
 
             return (
-              <div key={key} className="border border-gray-200 rounded-xl p-6 flex flex-col gap-3 hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-bold text-gray-900">{stripEmoji(role.title)}</h3>
+              <Link
+                key={key}
+                href={href}
+                className="group h-full border border-gray-200 rounded-xl p-6 flex flex-col gap-3 bg-white hover:shadow-lg hover:border-teal-500 hover:-translate-y-1 transition-all duration-200 cursor-pointer"
+              >
+                <h3 className="text-lg font-bold text-gray-900 group-hover:text-teal-600 transition-colors">{stripEmoji(role.title)}</h3>
                 <p className="text-sm text-gray-500 line-clamp-3 flex-1">{stripEmoji(role.description)}</p>
-                <Link href={href} className="inline-flex items-center text-sm font-semibold text-teal-500 hover:text-teal-700 mt-2">
-                  Explore Service <ChevronRight className="size-4 ml-1" />
-                </Link>
-              </div>
+              </Link>
             );
           })}
         </div>
