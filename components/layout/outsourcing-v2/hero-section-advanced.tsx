@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Zap, Play, ArrowRight, Check } from "lucide-react";
+import { Play, ArrowRight, Check } from "lucide-react";
 
 interface Stat {
   value: string;
@@ -9,7 +9,6 @@ interface Stat {
 }
 
 interface HeroSectionAdvancedProps {
-  badgeText: string;
   headingLine1: string;
   headingLine2: string;
   description: string;
@@ -23,7 +22,6 @@ interface HeroSectionAdvancedProps {
 }
 
 const HeroSectionAdvanced = ({
-  badgeText,
   headingLine1,
   headingLine2,
   description,
@@ -50,14 +48,6 @@ const HeroSectionAdvanced = ({
 
       <div className="max-w-5xl w-full flex flex-col items-center relative z-10 text-center px-4 sm:px-6 lg:px-8">
 
-        {/* Pill Badge Tag */}
-        <div className="inline-flex items-center gap-1.5 rounded-full border border-[#cbe7eb] bg-[#e6f4f6]/80 px-4 py-1 mb-8 shadow-sm">
-          <Zap size={13} strokeWidth={2.5} className="fill-current opacity-90" style={{ color: "#1b8991" }} />
-          <span className="text-[13px] font-semibold tracking-wide" style={{ color: "#1b8991" }}>
-            {typeof badgeText === "string" ? badgeText.replace(/[✦★⭐✦]/g, "").trim() : badgeText}
-          </span>
-        </div>
-
         {/* Headings */}
         <h1
           className="text-4xl sm:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.15] max-w-4xl"
@@ -83,7 +73,7 @@ const HeroSectionAdvanced = ({
         </h1>
 
         {/* Accent Bar */}
-        <div className="w-28 h-[4px] rounded-full mt-4 mb-8" style={{ background: exactGradient }} />
+           <div className="w-28 h-[4px] rounded-full mt-4 mb-8" style={{ background: exactGradient }} />
 
         {/* Description — width aur barhai gayi taake ye 2 lines mein fit ho */}
         <p className="max-w-6xl w-full text-[15px] sm:text-[16px] leading-relaxed text-[#3a5357] font-normal mb-10 px-2 sm:px-6">

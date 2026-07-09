@@ -48,7 +48,6 @@ export default function SectionWhyChoose({
         {/* Dynamic Card Grids */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {finalCards.map((card, idx) => {
-            // Safety normalize keys if raw structural variations slide through properties
             const cardTitle = card.title || "";
             const cardDesc = card.description || "";
 
@@ -59,29 +58,35 @@ export default function SectionWhyChoose({
                   backgroundColor: "#D6F9FA",
                   border: "1.5px solid #6FD8DB",
                 }}
-                className="rounded-2xl p-6 flex items-start gap-4 shadow-sm min-h-[140px]"
+                className="rounded-2xl p-6 flex flex-col gap-3 shadow-sm min-h-[140px]"
               >
-                <div className="shrink-0 text-[#0E6774] mt-1">
-                  <svg
-                    className="w-6 h-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M2 12l4 4 5-5" />
-                    <path d="M9 16l4 4 9-9" />
-                  </svg>
-                </div>
-
-                <div className="text-sm leading-relaxed text-[#334155]">
+                {/* Top row: Icon aur Title ek line mein */}
+                <div className="flex items-center gap-3">
+                  <div className="shrink-0 text-[#0E6774]">
+                    <svg
+                      className="w-6 h-6"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M2 12l4 4 5-5" />
+                      <path d="M9 16l4 4 9-9" />
+                    </svg>
+                  </div>
                   <strong className="font-bold text-[#0F172A]">
                     {cardTitle}
-                  </strong>{" "}
-                  {cardDesc && `— ${cardDesc}`}
+                  </strong>
                 </div>
+
+                {/* Description niche se shuru hogi (Icon aur gap ki alignment mein) */}
+                {cardDesc && (
+                  <p className="text-sm leading-relaxed text-[#334155] pl-9">
+                    {cardDesc}
+                  </p>
+                )}
               </div>
             );
           })}

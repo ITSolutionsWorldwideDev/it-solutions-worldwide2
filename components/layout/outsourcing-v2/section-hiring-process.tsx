@@ -18,7 +18,7 @@ type SectionHiringProcessProps = {
 
 const TEAL = "#0E5E64";
 
-export default function SectionHiringProcess({
+export default function zSectionHiringProcess({
   heading,
   steps,
   ctaText,

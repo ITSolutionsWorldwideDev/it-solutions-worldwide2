@@ -62,6 +62,8 @@ export default function SectionRelatedServices({
           {stripEmoji(subheading) || "Further expand efficiency loops by combining related specialized workflows."}
         </p>
 
+ 
+
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-stretch">
           {Object.entries(finalCards).slice(0, 3).map(([key, role]) => {
             const predefinedLink = STAFFING_LINKS[key] || `/outsourcing/hire-${key.replace(/_/g, "-")}`;
@@ -73,14 +75,21 @@ export default function SectionRelatedServices({
               <Link
                 key={key}
                 href={href}
-                className="group h-full border border-gray-200 rounded-xl p-6 flex flex-col gap-3 bg-white hover:shadow-lg hover:border-teal-500 hover:-translate-y-1 transition-all duration-200 cursor-pointer"
+                // Removed h-full to allow natural height expansion
+                className="group border border-gray-200 rounded-xl p-6 flex flex-col gap-3 bg-white hover:shadow-lg hover:border-teal-500 hover:-translate-y-1 transition-all duration-200 cursor-pointer"
               >
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-teal-600 transition-colors">{stripEmoji(role.title)}</h3>
-                <p className="text-sm text-gray-500 line-clamp-3 flex-1">{stripEmoji(role.description)}</p>
+                <h3 className="text-lg font-bold text-gray-900 group-hover:text-teal-600 transition-colors">
+                  {stripEmoji(role.title)}
+                </h3>
+                {/* Removed line-clamp-3 and flex-1 so text can expand freely */}
+                <p className="text-sm text-gray-500">
+                  {stripEmoji(role.description)}
+                </p>
               </Link>
             );
           })}
         </div>
+
       </div>
     </section>
   );

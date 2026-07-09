@@ -500,7 +500,6 @@ const reputationText =
   return (
     <div>
      <HeroSectionAdvanced
-  badgeText={heroBadge}
   headingLine1={heroTitle}
   headingLine2=""
   description={heroDescription}

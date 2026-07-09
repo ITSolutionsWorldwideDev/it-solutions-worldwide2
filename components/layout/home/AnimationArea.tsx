@@ -60,22 +60,6 @@ export default async function AnimationArea({ locale }: { locale: string }) {
 
       {/* ================= OUR CLIENTS ================= */}
 
-      <section className="w-full pt-6 md:pt-10">
-        <div className="container xl:max-w-[1200px] mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-5">
-            <span className="bg-[#175864] text-white px-4 py-1 rounded-md inline-block">
-              {t("homeServices.ourClients")}
-            </span>
-          </h2>
-
-          <p className="text-center text-lg md:text-2xl lg:text-3xl font-medium text-[#175864] max-w-4xl mx-auto mb-10">
-            {t("homeServices.clientsTagline")}
-          </p>
-
-          <LogosSlider />
-        </div>
-      </section>
-
       {/* ================= HOW WE WORK ================= */}
 
       <section className="container xl:max-w-[1200px] mx-auto text-center pb-12 md:pb-20 px-4">
@@ -96,12 +80,32 @@ export default async function AnimationArea({ locale }: { locale: string }) {
         </div>
       </section>
 
-      {/* ================= INDUSTRIES ================= */}
+   
 
     {/* ================= INDUSTRIES ================= */}
 
       <section className="pt-6 md:pt-10">
         <IndustriesCards locale={locale} />
+
+
+      <section className="w-full pt-6 md:pt-10">
+        <div className="container xl:max-w-[1200px] mx-auto px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-5">
+            <span className="bg-[#175864] text-white px-4 py-1 rounded-md inline-block">
+              {t("homeServices.ourClients")}
+            </span>
+          </h2>
+
+          <p className="text-center text-lg md:text-2xl lg:text-3xl font-medium text-[#175864] max-w-4xl mx-auto mb-10">
+            {t("homeServices.clientsTagline")}
+          </p>
+
+          <LogosSlider />
+        </div>
+      </section>
+
+
+
       </section>
     </section>
   );

@@ -71,7 +71,7 @@ export default async function HomePage({
 
   return (
     <main className="flex flex-col w-full row-start-2">
-<AnimationArea locale={locale} />      <LogosSlider />
+<AnimationArea locale={locale} />      
       <BlogCarousel locale={locale} />
       <Certifications />
       <ContactSection />
