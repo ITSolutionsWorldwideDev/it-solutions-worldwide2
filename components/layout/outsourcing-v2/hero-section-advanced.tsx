@@ -49,8 +49,8 @@ const HeroSectionAdvanced = ({
       <div className="max-w-5xl w-full flex flex-col items-center relative z-10 text-center px-4 sm:px-6 lg:px-8">
 
         {/* Headings */}
-        <h1
-          className="text-4xl sm:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.15] max-w-4xl"
+       <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.15] max-w-4xl"
+
           style={{ color: darkColor }}
         >
           {(() => {
@@ -76,10 +76,11 @@ const HeroSectionAdvanced = ({
            <div className="w-28 h-[4px] rounded-full mt-4 mb-8" style={{ background: exactGradient }} />
 
         {/* Description — width aur barhai gayi taake ye 2 lines mein fit ho */}
-        <p className="max-w-6xl w-full text-[15px] sm:text-[16px] leading-relaxed text-[#3a5357] font-normal mb-10 px-2 sm:px-6">
-          {description}
-        </p>
-
+        {/* Description — Width aur alignment fix ki */}
+{/* Description - Side padding aur max-width adjust ki */}
+<p className="w-full max-w-7xl text-[15px] sm:text-[16px] leading-relaxed text-[#3a5357] font-normal mb-8 mx-auto px-4">
+  {description}
+</p>
         {/* Icons Row (dynamic, from content.icons) */}
         {icons.length > 0 && (
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-10 px-2">

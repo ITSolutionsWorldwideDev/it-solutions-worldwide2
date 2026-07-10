@@ -64,9 +64,11 @@ const t = (key: string) => {
 
         <div className="md:hidden">
           <button
-            onClick={toggleMenu}
-            className="focus:outline-none cursor-pointer"
-          >
+  onClick={toggleMenu}
+  className="focus:outline-none cursor-pointer"
+  aria-label={menuOpen ? "Close menu" : "Open menu"}
+  aria-expanded={menuOpen}
+>
             <svg
               className="h-6 w-6"
               fill="none"

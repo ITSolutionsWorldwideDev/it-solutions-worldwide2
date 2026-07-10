@@ -60,10 +60,12 @@ export default function Navbar() {
           </div>
 
           <div className="md:hidden">
-            <button
-              className="lg:hidden text-[#278083] focus:outline-none cursor-pointer"
-              onClick={toggleMenu}
-            >
+           <button
+  className="lg:hidden text-[#278083] focus:outline-none cursor-pointer"
+  onClick={toggleMenu}
+  aria-label={menuOpen ? "Close menu" : "Open menu"}
+  aria-expanded={menuOpen}
+>
               <svg
                 className="h-6 w-6"
                 fill="none"

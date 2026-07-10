@@ -52,9 +52,30 @@ export default function zSectionHiringProcess({
 
         <div className="relative flex items-center justify-between h-[120px] my-1 overflow-visible">
           <div className="absolute inset-0 flex items-center px-10 overflow-visible z-0">
-            <svg className="w-full h-[100px]" viewBox="0 0 920 120" fill="none" preserveAspectRatio="none">
-              <path d="M 75 35 C 190 35, 210 85, 325 85 C 440 85, 460 35, 575 35 C 690 35, 710 85, 825 85 L 910 85" stroke={TEAL} strokeWidth="2.5" strokeDasharray="6 7" strokeLinecap="round" />
-            </svg>
+       <svg className="w-full h-[100px]" viewBox="0 0 920 120" fill="none" preserveAspectRatio="none">
+  <defs>
+    <marker
+      id="arrowhead"
+      markerWidth="6"  // Pehle 10 tha
+      markerHeight="5" // Pehle 7 tha
+      refX="5"         // Arrow ko line ke paas shift kiya
+      refY="2.5"
+      orient="auto"
+    >
+      {/* Triangle points */}
+      <polygon points="0 0, 6 2.5, 0 5" fill={TEAL} />
+    </marker>
+  </defs>
+
+  <path 
+    d="M 75 35 C 190 35, 210 85, 325 85 C 440 85, 460 35, 575 35 C 690 35, 710 85, 825 85 L 910 85" 
+    stroke={TEAL} 
+    strokeWidth="2.5" 
+    strokeDasharray="6 7" 
+    strokeLinecap="round" 
+    markerEnd="url(#arrowhead)" 
+  />
+</svg>
           </div>
           {steps.map((step, idx) => (
             <div key={idx} className="flex-1 flex justify-center relative z-10 overflow-visible">

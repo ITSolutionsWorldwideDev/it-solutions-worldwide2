@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 interface Section3Props {
@@ -14,24 +14,6 @@ interface Section3Props {
   service: string; 
 }
 
-const FALLBACK_IMAGES = [
-  "/assets/images/staffingconsulting2.webp",
-  "/assets/images/categories/it-development.webp",
-  "/assets/images/categories/business-support.webp",
-  "/assets/images/categories/design-services.webp",
-  "/assets/images/categories/marketing-analytics.webp",
-];
-
-// Simple deterministic hash: same input => same fallback image, hamesha.
-const hashToIndex = (text: string, mod: number) => {
-  let hash = 0;
-  for (let i = 0; i < text.length; i++) {
-    hash = (hash << 5) - hash + text.charCodeAt(i);
-    hash |= 0;
-  }
-  return Math.abs(hash) % mod;
-};
-
 const Section3 = ({
   heading,
   subheading,
@@ -42,18 +24,15 @@ const Section3 = ({
   imageSrc,
   service,
 }: Section3Props) => {
-  const fallbackImage = FALLBACK_IMAGES[hashToIndex(service || imageSrc || "default", FALLBACK_IMAGES.length)];
-  const [currentSrc, setCurrentSrc] = useState(imageSrc || fallbackImage);
 
   return (
-   
     <div
       className="relative w-full py-16 md:py-24 px-4 sm:px-6 lg:px-8 block clearfix overflow-hidden"
       style={{
         background: "#DCE9EC",
       }}
     >
-      {/* A few very faint, soft random white glow patches */}
+      {/* Soft random white glow patches */}
       <div
         className="absolute inset-0 opacity-[0.45] pointer-events-none"
         style={{
@@ -66,7 +45,6 @@ const Section3 = ({
         
         {/* LEFT COLUMN */}
         <div className="w-full lg:w-[50%] flex flex-col justify-center text-left order-1">
-          
           <h2 className="text-2xl sm:text-3xl md:text-[38px] font-extrabold text-[#05262C] leading-[1.2] tracking-tight mb-6">
             {heading}
           </h2>
@@ -94,7 +72,6 @@ const Section3 = ({
             {conclusionText}
           </p>
 
-          {/* WhatsApp Action Button */}
           <div className="flex justify-start">
             <a
               href={`https://wa.me/31107660786?text=Hi%20there!%20I%20would%20like%20to%20discuss%20hiring%20a%20dedicated%20${encodeURIComponent(service)}.%20${encodeURIComponent(conclusionText)}`}
@@ -111,17 +88,12 @@ const Section3 = ({
         <div className="w-full lg:w-[48%] flex justify-center lg:justify-end order-2 mt-8 lg:mt-0">
           <div className="relative w-full max-w-[640px] aspect-[4/3] rounded-xl overflow-hidden shadow-xl border border-white/40 bg-white min-h-[340px] lg:min-h-[420px]">
             <Image
-              src={currentSrc}
+              src={imageSrc}
               alt="Challenge presentation illustration"
               fill
               style={{ objectFit: "cover" }}
               sizes="(max-width: 1024px) 100vw, 640px"
               priority
-              onError={() => {
-                if (currentSrc !== fallbackImage) {
-                  setCurrentSrc(fallbackImage);
-                }
-              }}
             />
           </div>
         </div>

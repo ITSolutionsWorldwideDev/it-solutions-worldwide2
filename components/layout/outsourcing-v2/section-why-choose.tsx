@@ -61,32 +61,34 @@ export default function SectionWhyChoose({
                 className="rounded-2xl p-6 flex flex-col gap-3 shadow-sm min-h-[140px]"
               >
                 {/* Top row: Icon aur Title ek line mein */}
-                <div className="flex items-center gap-3">
-                  <div className="shrink-0 text-[#0E6774]">
-                    <svg
-                      className="w-6 h-6"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M2 12l4 4 5-5" />
-                      <path d="M9 16l4 4 9-9" />
-                    </svg>
-                  </div>
-                  <strong className="font-bold text-[#0F172A]">
-                    {cardTitle}
-                  </strong>
-                </div>
+              
+{/* Top row */}
+<div className="flex items-start gap-3">
+  <div className="shrink-0 text-[#0E6774]">
+    <svg
+      className="w-6 h-6"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M2 12l4 4 5-5" />
+      <path d="M9 16l4 4 9-9" />
+    </svg>
+  </div>
+  <strong className="font-bold text-[#0F172A] leading-tight">
+    {cardTitle}
+  </strong>
+</div>
 
-                {/* Description niche se shuru hogi (Icon aur gap ki alignment mein) */}
-                {cardDesc && (
-                  <p className="text-sm leading-relaxed text-[#334155] pl-9">
-                    {cardDesc}
-                  </p>
-                )}
+{/* Description: pl-[36px] icon ke start point se exact align hoga */}
+{cardDesc && (
+  <p className="text-sm leading-relaxed text-[#334155] pl-[36px] -mt-1">
+    {cardDesc}
+  </p>
+)}
               </div>
             );
           })}
