@@ -1,10 +1,23 @@
 /** @type {import('next-sitemap').IConfig} */
-const siteUrl =  process.env.NEXT_PUBLIC_SITE_URL || 'https://www.itsolutionsworldwide.com';
-
-//  
-//  ;
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.itsolutionsworldwide.com';
+const enCommon = require("./public/locales/en/common.json");
 
 const locales = ["en", "nl"];
+
+// Detail/hire pages ke slugs — common.json se automatically extract
+const outsourcingSlugs = Object.keys(enCommon)
+  .filter((key) => key.startsWith("outsource-") || key.startsWith("staffing-"))
+  .map((key) => key.replace(/^outsource-/, "").replace(/^staffing-/, ""));
+
+// Category listing pages (business-support, design-services, etc.)
+const outsourcingCategorySlugs = [
+  "business-support",
+  "design-services",
+  "hire-roles",
+  "marketing-analytics",
+  "it-development",
+];
+
 const pages = [
   "", // homepage
   "/about-us",
@@ -78,10 +91,10 @@ module.exports = {
   additionalPaths: async (config) => {
     const urls = [];
 
-  //   const [blogSlugs, staffingSlugs] = await Promise.all([
-  //   fetchBlogSlugs(),
-  //   // fetchStaffingSlugs(),
-  // ]);
+    //   const [blogSlugs, staffingSlugs] = await Promise.all([
+    //   fetchBlogSlugs(),
+    //   // fetchStaffingSlugs(),
+    // ]);
 
     locales.forEach((locale) => {
       pages.forEach((p) => {
@@ -97,24 +110,30 @@ module.exports = {
         });
       });
 
+      // Detail / hire pages (dynamic [slug] route)
+      outsourcingSlugs.forEach((slug) => {
+        urls.push({
+          loc: `/${locale}/outsourcing/${slug}`,
+          changefreq: "weekly",
+          priority: 0.8,
+          lastmod: new Date().toISOString(),
+        });
+      });
 
+      // Category listing pages
+      outsourcingCategorySlugs.forEach((slug) => {
+        urls.push({
+          loc: `/${locale}/outsourcing/${slug}`,
+          changefreq: "weekly",
+          priority: 0.8,
+          lastmod: new Date().toISOString(),
+        });
+      });
     });
-
-    // locales.forEach((locale) => {
-    //   pages.forEach((p) => {
-    //     urls.push({
-    //       loc: `/${locale}${p}`,
-    //       changefreq: "weekly",
-    //       priority: 0.7,
-    //       lastmod: new Date().toISOString(),
-    //     });
-    //   });
-    // });
 
     return urls;
   },
 };
-
 
 /* module.exports = {
   siteUrl,

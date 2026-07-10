@@ -50,7 +50,6 @@ export default function Navbar() {
       <nav className="bg-white relative z-[9999] shadow-sm">
         <div className="mx-auto pt-6 flex justify-between items-center px-4 md:px-12">
           <div className="flex items-center space-x-2 w-32">
-            {/* LOCALE FIX: logo bhi locale ke saath */}
             <Link href={`/${locale}/`}>
               <img
                 src="/assets/images/logo.webp"
