@@ -77,7 +77,7 @@ export default async function OurMission({ locale }: { locale: string }) {
             </div>
             <div className="w-full md:w-1/2 text-[18.17px] text-gray">
               <div className=" text-[34.61px] text-black">
-                <div className=" md:w-[466px]  md:h-[167px]">
+                <div className="md:w-[466px] md:min-h-[167px] mb-4">
                   <div className="font-semibold">{t("aboutus.our_mission_heading")}</div>
                 </div>
               </div>
