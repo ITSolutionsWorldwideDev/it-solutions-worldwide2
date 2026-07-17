@@ -33,7 +33,7 @@ export default async function WhyUsSection({ locale }: { locale: string }) {
 
           <div>
             <div className="text-[45px] font-semibold">
-              {t("aboutus.why_us_heading_2")} IT Solutions Worldwide{/* What Define Us */}
+{t("aboutus.why_us_heading_2")}
             </div>
             <div className=" text-lg text-gray flex items-center sm:w-auto md:w-[549px] mb-4">
                {t("aboutus.why_us_text")}

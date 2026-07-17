@@ -15,55 +15,28 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-type Props = {
-  translations: Record<string, string>;
+type FAQItem = {
+  question: string;
+  answer: string;
 };
 
-const contactInfo = [
-  {
-    title: "Call Us",
-    value: "+31 10 766 0786",
-    icon: <Phone className="h-6 w-6" />,
-    // "/icons/phone.svg",
-  },
-  {
-    title: "Email Us",
-    value: "info@itsolutionsworldwide.com",
-    icon: <Mail className="h-6 w-6" />,
-    // "/icons/mail.svg",
-  },
-  {
-    title: "Visit Us",
-    value: "Mandenmakerstraat 100C, 3194 DG Hoogvliet Rotterdam, Netherlands",
-    icon: <Phone className="h-6 w-6" />,
-    // "/icons/location.svg",
-  },
-];
+type Props = {
+  translations: Record<string, string>;
+  variant?: "contact" | "about"; // NEW: which left-side content to show
+  faqs?: FAQItem[]; // NEW: only used when variant === "about"
+};
 
-/* const socialIcons = [
-  <Facebook className="h-6 w-6" />,
-  <Twitter className="h-6 w-6" />,
-  <Linkedin className="h-6 w-6" />,
-]; */
-
-// const socialIcons = [
-//   "/icons/facebook.svg",
-//   "/icons/twitter.svg",
-//   "/icons/linkedin.svg",
-// ];
-
-export default function ContactCardClient2({ translations }: Props) {
+export default function ContactCardClient2({
+  translations,
+  variant = "contact",
+  faqs = [],
+}: Props) {
   const t = translations;
 
   const router = useRouter();
 
   const [status, setStatus] = useState<null | "success" | "error">(null);
   const [showModal, setShowModal] = useState(false);
-
-  //   const [name, setName] = useState("");
-  //   const [email, setEmail] = useState("");
-  //   const [subject, setSubject] = useState("");
-  //   const [message, setMessage] = useState("");
 
   const [sending, setSending] = useState(false);
   const [responseMessage, setResponseMessage] = useState("");
@@ -78,6 +51,13 @@ export default function ContactCardClient2({ translations }: Props) {
     message: "",
     acceptedTerms: false,
   });
+
+  // NEW: FAQ accordion state (used only for variant === "about")
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   useEffect(() => {
     if (showModal) {
@@ -206,147 +186,161 @@ export default function ContactCardClient2({ translations }: Props) {
       )}
 
       <section className="container mx-auto ">
-        {/* px-4 py-10 sm:px-6 lg:px-8  */}
         <div className="mx-auto overflow-hidden rounded-[32px] bg-gradient-to-r from-[#18626c] to-[#2fbfd2] shadow-2xl">
           <div className="grid lg:grid-cols-2">
             {/* LEFT SIDE */}
             <div className="p-8 text-white sm:p-12 lg:p-16">
-              <h2 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                {t.contactheading}
-              </h2>
+              {variant === "contact" ? (
+                <>
+                  <h2 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+                    {t.contactheading}
+                  </h2>
 
-              <p className="mt-6 max-w-xl text-base leading-7 text-white/90 sm:text-lg">                
-                {t.contactdesc}
-              </p>
+                  <p className="mt-6 max-w-xl text-base leading-7 text-white/90 sm:text-lg">
+                    {t.contactdesc}
+                  </p>
 
-              {/* Contact Info */}
-              <div className="mt-12 space-y-8">
-                {/* {contactInfo.map((item, index) => (
-                  <div key={index} className="flex items-start gap-5">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
-                      {item.icon}
+                  {/* Contact Info */}
+                  <div className="mt-12 space-y-8">
+                    {/* Phone */}
+                    <div className="flex items-center space-x-4">
+                      <div className="bg-[#29A1B6] p-3 rounded-full hover:bg-[#236B7A] transition">
+                        <Phone className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <p className="text-sm">{t.contactephone}</p>
+                        <p className="font-medium">
+                          <Link
+                            href="https://wa.me/+31107660786"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            +31 10 766 0786
+                          </Link>
+                        </p>
+                      </div>
                     </div>
 
-                    <div>
-                      <p className="text-sm text-white/70">{item.title}</p>
+                    {/* Email */}
+                    <div className="flex items-center space-x-4">
+                      <div className="bg-[#29A1B6] p-3 rounded-full hover:bg-[#236B7A] transition">
+                        <Mail className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <p className="text-sm">{t.contactemail}</p>
+                        <p className="font-medium break-all">
+                          <Link
+                            href="mailto:info@itsolutionsworldwide.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            info@itsolutionsworldwide.com
+                          </Link>
+                        </p>
+                      </div>
+                    </div>
 
-                      <h3 className="mt-1 text-lg font-semibold sm:text-xl">
-                        {item.value}
-                      </h3>
+                    {/* Address */}
+                    <div className="flex items-center space-x-4">
+                      <div className="bg-[#29A1B6] p-3 rounded-full hover:bg-[#236B7A] transition">
+                        <MapPinHouse className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <p className="text-sm">{t.contactaddress}</p>
+                        <p className="font-medium break-all">
+                          Mandenmakerstraat 100C, 3194 DG Hoogvliet Rotterdam, Netherlands
+                        </p>
+                      </div>
                     </div>
                   </div>
-                ))} */}
 
-                {/* Phone */}
-                <div className="flex items-center space-x-4">
-                  <div className="bg-[#29A1B6] p-3 rounded-full hover:bg-[#236B7A] transition">
-                    <Phone className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <p className="text-sm">{t.contactephone}</p>
-                    <p className="font-medium">
-                      <Link
-                        href="https://wa.me/+31107660786"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        +31 10 766 0786
-                      </Link>
-                    </p>
-                  </div>
-                </div>
+                  {/* Social Icons */}
+                  <div className="mt-14">
+                    <p className="mb-5 text-lg font-medium">{t.contactconnect}</p>
 
-                {/* Email */}
-                <div className="flex items-center space-x-4">
-                  <div className="bg-[#29A1B6] p-3 rounded-full hover:bg-[#236B7A] transition">
-                    <Mail className="h-6 w-6" />
+                    <div className="flex gap-4">
+                      {[
+                        {
+                          href: "https://www.facebook.com/itsolutionsww/",
+                          Icon: Facebook,
+                          label: "Facebook",
+                        },
+                        {
+                          href: "https://nl.linkedin.com/company/it-solutions-worldwide-bv",
+                          Icon: Linkedin,
+                          label: "LinkedIn",
+                        },
+                        {
+                          href: "https://www.instagram.com/itsolutionsworldwide/",
+                          Icon: Instagram,
+                          label: "Instagram",
+                        },
+                      ].map(({ href, Icon, label }, index) => (
+                        <Link
+                          key={label}
+                          href={href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={label}
+                          className=""
+                        >
+                          <button
+                            key={index}
+                            className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/20 bg-white/10 transition hover:bg-white/20"
+                          >
+                            <Icon className="h-5 w-5 text-white" />
+                          </button>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-sm">{t.contactemail}</p>
-                    <p className="font-medium break-all">
-                      <Link
-                        href="mailto:info@itsolutionsworldwide.com"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        info@itsolutionsworldwide.com
-                      </Link>
-                    </p>
-                  </div>
-                </div>
+                </>
+              ) : (
+                <>
+                  {/* FAQ variant (About Us page) */}
+                  <h2 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+                    FAQ
+                  </h2>
 
-                {/* Address */}
-                <div className="flex items-center space-x-4">
-                  <div className="bg-[#29A1B6] p-3 rounded-full hover:bg-[#236B7A] transition">
-                    <MapPinHouse className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <p className="text-sm">{t.contactaddress}</p>
-                    <p className="font-medium break-all">
-                      Mandenmakerstraat 100C, 3194 DG Hoogvliet Rotterdam, Netherlands
-                    </p>
-                  </div>
-                </div>
-              </div>
+                  <p className="mt-6 max-w-xl text-base leading-7 text-white/90 sm:text-lg">
+                    {t.faqdesc}
+                  </p>
 
-              {/* Social Icons */}
-              <div className="mt-14">
-                <p className="mb-5 text-lg font-medium">{t.contactconnect}</p>
-
-                <div className="flex gap-4">
-                  {[
-                    {
-                      href: "https://www.facebook.com/itsolutionsww/",
-                      Icon: Facebook,
-                      label: "Facebook",
-                    },
-                    // {
-                    //   href: "https://twitter.com/ITSolutionsBV",
-                    //   Icon: Twitter,
-                    //   label: "Twitter",
-                    // },
-                    {
-                      href: "https://nl.linkedin.com/company/it-solutions-worldwide-bv",
-                      Icon: Linkedin,
-                      label: "LinkedIn",
-                    },
-                    {
-                      href: "https://www.instagram.com/itsolutionsworldwide/",
-                      Icon: Instagram,
-                      label: "Instagram",
-                    },
-                  ].map(({ href, Icon, label }, index) => (
-                    <Link
-                      key={label}
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={label}
-                      className=""
-                    >
-                      {/* <Icon className="h-5 w-5 text-white" /> */}
-                      <button
+                  <dl className="mt-10 space-y-4">
+                    {faqs.map((faq, index) => (
+                      <div
                         key={index}
-                        className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/20 bg-white/10 transition hover:bg-white/20"
+                        className="border-b border-white/30 last:border-b-0"
                       >
-                        <Icon className="h-5 w-5 text-white" />
-                      </button>
-                    </Link>
-                  ))}
-
-                  {/* {socialIcons.map((icon, index) => (
-                    <button
-                      key={index}
-                      className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/20 bg-white/10 transition hover:bg-white/20"
-                    >
-                      <Image src={icon} alt="social" width={24} height={24} />
-                    </button>
-                  ))} */}
-                </div>
-              </div>
+                        <dt>
+                          <button
+                            type="button"
+                            onClick={() => toggleFAQ(index)}
+                            className="flex justify-between items-center w-full py-4 text-left focus:outline-none cursor-pointer"
+                            aria-expanded={activeIndex === index}
+                            aria-controls={`faq-${index}`}
+                          >
+                            <span className="font-medium">{faq.question}</span>
+                            <span className="text-xl">
+                              {activeIndex === index ? "–" : "+"}
+                            </span>
+                          </button>
+                        </dt>
+                        <dd
+                          id={`faq-${index}`}
+                          hidden={activeIndex !== index}
+                          className="py-2 text-white/90"
+                        >
+                          {faq.answer}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                </>
+              )}
             </div>
 
-            {/* RIGHT SIDE */}
+            {/* RIGHT SIDE — form, unchanged for both variants */}
             <div className="bg-white p-8 sm:p-12 lg:p-16">
               <div className="max-w-2xl">
                 <h2 className="text-4xl font-semibold text-gray-900">
@@ -354,7 +348,6 @@ export default function ContactCardClient2({ translations }: Props) {
                 </h2>
 
                 <p className="mt-4 text-lg text-gray-600">
-                  {/* Fill out the form to hire your virtual assistant */}
                   {t.contactformdesc}
                 </p>
 
@@ -411,7 +404,7 @@ export default function ContactCardClient2({ translations }: Props) {
                   <div>
                     <label className="mb-2 block text-sm font-medium text-gray-700">
                       {t.contactformservice} <span className="text-red-500">*</span>
-                    </label>{/* Service Required */}
+                    </label>
 
                     <select
                       name="service"
@@ -437,7 +430,6 @@ export default function ContactCardClient2({ translations }: Props) {
                   <div>
                     <label className="mb-2 block text-sm font-medium text-gray-700">
                       {t.contactformmsg}
-                      {/* Message / Requirement Details{" "} */}
                       <span className="text-red-500">*</span>
                     </label>
 
@@ -547,134 +539,3 @@ function InputField({
     </div>
   );
 }
-
-/* type InputFieldProps = {
-  label: string;
-  placeholder: string;
-  type?: string;
-};
-
-function InputField({ label, placeholder, type = "text" }: InputFieldProps) {
-  return (
-    <div>
-      <label className="mb-2 block text-sm font-medium text-gray-700">
-        {label} <span className="text-red-500">*</span>
-      </label>
-
-      <input
-        type={type}
-        placeholder={placeholder}
-        className="w-full rounded-xl border border-gray-300 px-4 py-4 text-gray-700 outline-none transition focus:border-teal-600 focus:ring-2 focus:ring-teal-100"
-      />
-    </div>
-  );
-} */
-
-/* 
-  <InputField
-                      label={t.name}
-                      placeholder={`Enter your ${t.name}`}
-                    />
-
-                    <InputField
-                      label="Company name"
-                      placeholder="Enter your company name"
-                    />
-                  </div>
-
-                  <div className="grid gap-6 md:grid-cols-2">
-                    <InputField
-                      label="Phone number"
-                      placeholder="+31 123456789"
-                    />
-
-  <InputField
-                      label="Email address"
-                      placeholder="Enter your email"
-                      type="email"
-                    />
-
-
-
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-gray-700">
-                      Service Required <span className="text-red-500">*</span>
-                    </label>
-
-                    <select className="w-full rounded-xl border border-gray-300 px-4 py-4 text-gray-700 outline-none transition focus:border-teal-600 focus:ring-2 focus:ring-teal-100">
-                      <option>Software Development</option>
-                      <option>Virtual Assistant</option>
-                      <option>Customer Support</option>
-                      <option>Social Media Management</option>
-                    </select>
-                  </div>
-
-       
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-gray-700">
-                      Message / Requirement Details
-                    </label>
-
-                    <textarea
-                      rows={5}
-                      placeholder="Tell us about your requirements..."
-                      className="w-full rounded-xl border border-gray-300 px-4 py-4 text-gray-700 outline-none transition focus:border-teal-600 focus:ring-2 focus:ring-teal-100"
-                    />
-                  </div>
-
-
-                  <div className="flex items-start gap-3">
-                    <input
-                      type="checkbox"
-                      className="mt-1 h-4 w-4 rounded border-gray-300 text-teal-600"
-                    />
-
-                    <p className="text-sm leading-6 text-gray-500">
-                      By submitting, you consent to being contacted about our
-                      products per our{" "}
-                      <span className="cursor-pointer text-teal-700 underline">
-                        Privacy Policy
-                      </span>{" "}
-                      &{" "}
-                      <span className="cursor-pointer text-teal-700 underline">
-                        Terms
-                      </span>
-                      .
-                    </p>
-                  </div>
-
-                  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setSending(true);
-
-    try {
-      const formData = new FormData();
-      formData.append("name", name);
-      formData.append("email", email);
-      formData.append("subject", subject);
-      formData.append("message", message);
-
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        body: formData,
-      });
-
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Failed to send message.");
-
-      setShowModal(true);
-      setStatus("success");
-
-      setName("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
-    } catch (err: any) {
-      setStatus("error");
-      setResponseMessage(err.message);
-    } finally {
-      setSending(false);
-    }
-  };
-
-  */

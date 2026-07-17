@@ -61,10 +61,10 @@ const BannerSectionAboutUs: React.FC<BannerSectionProps> = ({
         <div className="relative w-full h-full z-10 text-left text-white px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 w-full h-full">
             <div className="self-center">
-              <h1 className="uppercase text-xl md:text-3xl lg:text-4xl font-bold mb-1 sm:mb-4 w-[90%] md:w-[90%] lg:w-1/2">
+              <h1 className="uppercase text-xl md:text-3xl lg:text-4xl font-bold mb-1 sm:mb-4 w-full lg:w-full">
                 {slides[currentSlide].heading}
               </h1>
-              <p className="text-sm sm:text-base w-[90%] md:w-[90%] lg:w-1/2">
+              <p className="text-sm sm:text-base w-full lg:w-full">
                 {slides[currentSlide].text}
               </p>
               

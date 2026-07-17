@@ -19,14 +19,13 @@ const GetInTouchSection = ({ locale }: Props) => {  return (
       </div> */}
       {/* overflow-hidden */}
 
-      <div
-        className=" bg-cover bg-center w-full px-10 mx-auto bg-no-repeat rounded-xl shadow-lg  flex items-center justify-center"
-        style={{
-          backgroundImage: `url("/assets/images/aboutus/get-in-touch-footer.webp")`,
-        }}
-        role="img"
-      >
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 ">
+   <div
+  className="bg-cover bg-center w-full mx-auto bg-no-repeat rounded-xl shadow-lg flex items-center justify-center overflow-hidden"
+  style={{
+    backgroundImage: `url("/assets/images/aboutus/get-in-touch-footer.webp")`,
+  }}
+>
+  <div className="grid grid-cols-1 md:grid-cols-2 w-full">
           {/* <div className="relative grid pt-20 text-center">
             <div className="font-semibold">Make an Appointment</div>
             <div className="text-justify">
@@ -87,8 +86,8 @@ const GetInTouchSection = ({ locale }: Props) => {  return (
             </div>
           </div> */}
 
-          <div className="relative grid pt-20 text-left text-lg">
-            <div className="text-[45px] font-semibold">Get In Touch</div>
+<div className="relative grid pt-20 px-10 text-left text-lg">
+              <div className="text-[45px] font-semibold">Get In Touch</div>
 
             <div className="text-justify flex flex-row gap-4 mt-5 md:mt-0">
               <div className="w-auto">
@@ -156,14 +155,13 @@ const GetInTouchSection = ({ locale }: Props) => {  return (
             </div>
           </div>
 
-          <div className="md:relative md:w-[550px] md:h-[500px]">
-            <Image
-              className=" md:absolute  md:-top-10"
-              width={550}
-              height={565}
-              sizes="100vw"
-              alt="lady calling customer support"
-              src="/assets/images/aboutus/lady-caller.webp"
+<div className="w-full h-[300px] md:h-[500px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2229.4664779419377!2d4.3753155!3d51.867517199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c44b8a79991dfd%3A0xfeb452cbb689e588!2sIT%20Solutions%20Worldwide%20BV!5e1!3m2!1sen!2s!4v1782289665315!5m2!1sen!2s"
+              className="w-full h-full border-0 "
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="IT Solutions Worldwide location map"
             />
           </div>
         </div>

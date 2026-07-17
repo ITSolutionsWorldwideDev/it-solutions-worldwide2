@@ -9,16 +9,14 @@ export default function ExpandingCards({
 }: {
   servicesData: any[];
   learnMoreText: string;
-  visitServicePageText: string; // Isse yahan add karein
+  visitServicePageText: string;
 }) {
   if (!servicesData || servicesData.length === 0) {
     return <p className="text-center text-gray-500">No data to display</p>;
   }
 
   return (
-    // 'w-full' se pura width lega, 'px-0' se corners se touch ho jayega
     <div className="w-full px-0 py-12">
-      {/* gap-6 cards ke beech mein space dega */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {servicesData.map((card, index) => (
           <div

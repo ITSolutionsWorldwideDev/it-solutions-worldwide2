@@ -8,6 +8,7 @@ import MaskGroup from "@/components/layout/about/mask-group";
 import Group9319 from "@/components/layout/about/group-9319";
 import VisionSection from "@/components/layout/vision-section";
 import FAQSection from "@/components/layout/FAQ-section";
+import AboutUsContactForm from "@/components/layout/about/about-us-contact-form.client";
 import AboutUsProcessFlow from "@/components/layout/aboutus-process-flow";
 import BannerSectionAboutUs from "@/components/layout/about/banner-section";
 import { Metadata } from "next";
@@ -57,8 +58,6 @@ export default async function AboutUsPage(props: { params: Promise<{ locale: str
   ];
 
   const faqData = {
-    title: t("aboutus.faq_title"),
-    description: t("aboutus.faq_desc"),
     faqs: [
       { question: t("aboutus.question1"), answer: t("aboutus.answer1") },
       { question: t("aboutus.question2"), answer: t("aboutus.answer2") },
@@ -67,8 +66,18 @@ export default async function AboutUsPage(props: { params: Promise<{ locale: str
       { question: t("aboutus.question5"), answer: t("aboutus.answer5") },
       { question: t("aboutus.question6"), answer: t("aboutus.answer6") },
     ],
-    helpCenterLink: `/${locale}/contact-us`,
-    privacyPolicyLink: `/${locale}/privacy-policy`,
+  };
+
+  // Hardcoded for now (common.* translation keys were missing/broken)
+  const contactFormTranslations = {
+    contactform: "Request a Consultation",
+    contactformdesc: "Fill out the form and our team will get back to you shortly.",
+    contactformfullname: "Full Name",
+    contactformcompanyname: "Company Name",
+    contactformphoneno: "Phone Number",
+    contactformemail: "Email Address",
+    contactformservice: "Service Required",
+    contactformmsg: "Message / Requirement Details",
   };
 
   const slides = [
@@ -112,9 +121,10 @@ export default async function AboutUsPage(props: { params: Promise<{ locale: str
       <VisionSection {...vision} />
       <OurValuesSection locale={locale} />
       <CreativeTeamSection locale={locale} />
-      <AboutUsProcessFlow {...processFlow} />
       <MaskGroup />
-      <FAQSection {...faqData} />
+      <FAQSection faqs={faqData.faqs}>
+        <AboutUsContactForm translations={contactFormTranslations} />
+      </FAQSection>
       <GetInTouchSection locale={locale} />
     </main>
   );
