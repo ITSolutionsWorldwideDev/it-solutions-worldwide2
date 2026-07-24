@@ -7,8 +7,6 @@ const locales = i18nConfig.locales;
 const defaultLocale = i18nConfig.defaultLocale;
 
 const PRODUCTION_HOST = "www.itsolutionsworldwide.com";
-
-// Bare domain (no www) — still redirect to canonical prod host
 const BARE_HOST = "itsolutionsworldwide.com";
 
 function isStaticAssetPath(pathname: string): boolean {
@@ -22,11 +20,8 @@ function isStaticAssetPath(pathname: string): boolean {
   return false;
 }
 
-// Test/staging host check — matches test.itsolutionsworldwide.com,
-// www.test.itsolutionsworldwide.com, and any other test.* subdomain,
-// while never matching the real production hosts.
 function isTestHost(host: string): boolean {
-  const normalizedHost = host.split(":")[0].toLowerCase(); // strip port if present
+  const normalizedHost = host.split(":")[0].toLowerCase();
   return (
     normalizedHost === PRODUCTION_HOST || normalizedHost === BARE_HOST
       ? false
@@ -40,9 +35,6 @@ export function middleware(request: NextRequest) {
   const host = request.headers.get("host") || "";
   const { pathname } = request.nextUrl;
 
-  // --- Hard-block the test subdomain: return 404 for EVERYTHING, no redirect ---
-  // This runs before anything else — static assets, api, robots.txt, sitemap.xml,
-  // all of it. Nothing on the test host is ever reachable or crawlable.
   if (isTestHost(host)) {
     return new NextResponse("Not Found", {
       status: 404,
@@ -54,15 +46,25 @@ export function middleware(request: NextRequest) {
     });
   }
 
-  // --- Move static asset and API checks AFTER test domain check ---
   if (pathname.startsWith("/api") || isStaticAssetPath(pathname)) {
     return;
   }
 
-  // --- Bare domain (no www) still redirects to canonical prod host ---
+  // --- Gone paths: hard 404, NO redirect at all ---
+  // Wrong-case / duplicate / retired URLs live here (see lib/legacyRedirects.ts)
+  if (isGonePath(pathname)) {
+    return new NextResponse("Not Found", {
+      status: 404,
+      headers: {
+        "Content-Type": "text/plain",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store",
+      },
+    });
+  }
+
   const needsHostFix = host === BARE_HOST;
 
-  // _rsc cleanup (kept separate — rare edge case, low SEO impact)
   if (request.nextUrl.searchParams.has("_rsc")) {
     const clean = request.nextUrl.clone();
     clean.searchParams.delete("_rsc");
@@ -73,12 +75,6 @@ export function middleware(request: NextRequest) {
   const legacyTarget = getLegacyRedirect(pathname);
   if (legacyTarget) {
     const url = new URL(legacyTarget, request.url);
-    if (needsHostFix) url.hostname = PRODUCTION_HOST;
-    return NextResponse.redirect(url, 301);
-  }
-
-  if (pathname === "/index" || pathname === "/index/") {
-    const url = new URL("/", request.url);
     if (needsHostFix) url.hostname = PRODUCTION_HOST;
     return NextResponse.redirect(url, 301);
   }
@@ -100,7 +96,6 @@ export function middleware(request: NextRequest) {
     }
   }
 
-  // --- Single combined redirect if host OR path needs fixing ---
   if (needsHostFix || targetPath) {
     const url = request.nextUrl.clone();
     if (needsHostFix) url.hostname = PRODUCTION_HOST;

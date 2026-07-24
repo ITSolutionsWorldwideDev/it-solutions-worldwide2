@@ -24,10 +24,7 @@ export function normalizeLegacyPathname(pathname: string): string {
 
 /** Exact legacy paths (lowercase keys). Values are full redirect paths. */
 const EXACT_REDIRECTS: Record<string, string> = {
-  "/index": "/",
-  "/index/": "/",
-  "/index.html": "/",
-  "/index.htm": "/",
+ 
 
   "/contact": "/en/contact-us",
   "/contact/": "/en/contact-us",
@@ -180,6 +177,7 @@ export function getLegacyRedirect(pathname: string): string | null {
 }
 
 /** Paths that should return 410 Gone (removed content). */
+/** Paths that should return 410 Gone (removed content). */
 export function isGonePath(pathname: string): boolean {
   const lower = pathname.toLowerCase();
 
@@ -191,7 +189,16 @@ export function isGonePath(pathname: string): boolean {
     return true;
   }
 
- 
+  // ✅ NEW: bare /index variants — no redirect, just gone
+  if (lower === "/index" || lower === "/index/" || lower === "/index.html" || lower === "/index.htm") {
+    return true;
+  }
+
+  // ✅ NEW: bare /career with wrong casing or missing locale prefix
+  // (valid pages are /en/career and /nl/career — those are untouched)
+  if (lower === "/career" || lower === "/career/") {
+    return true;
+  }
 
   return false;
 }
