@@ -10,8 +10,8 @@ export const generateMetadata = async (props: { params: Promise<{ locale: string
   const { locale } = params;
 
   return {
-    title: " IT Solutions & Supply Chain Management Services | ITWW ",
-    description: " Empowering businesses with smart IT solutions, supply chain management, digital marketing, outsourcing services & more. Get a free consultation with our expert team today.",
+    title: "Smart IT & Business Services in Netherlands | ITWW",
+    description: " IT Solutions Worldwide delivers supply chain Management, digital marketing, staff outsourcing services in Netherlands. Get a free consultation today.",
     alternates: {
       canonical: getCanonicalUrl(locale, ""),
       languages: getLanguageAlternates(""),
