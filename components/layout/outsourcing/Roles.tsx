@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
@@ -86,15 +87,21 @@ export default function Roles({
         {Object.entries(roles.roles).map(([key, role]) => {
           const typedRole = role as RoleItem;
 
-          // Resolve paths
-          const categorySlug = ROLE_SLUGS[key] || key.replace(/_/g, "-");
-          const categoryHref = `/${locale}/outsourcing/${categorySlug}`;
-          
-          const staffingPath = STAFFING_LINKS[key] || typedRole.link;
-          const staffingHref = staffingPath ? `/${locale}${staffingPath.startsWith('/') ? '' : '/'}${staffingPath}` : null;
+          // 1. Agar role ke paas apni direct link maujood hai (jo CategoryListingPage ne inject ki hai), to sab se pehle wohi uthao!
+          let href = "";
+          if (typedRole.link) {
+            href = `/${locale}${typedRole.link.startsWith("/") ? "" : "/"}${typedRole.link}`;
+          } else {
+            // 2. Warna purana outsourcing fallback logic chalega
+            const categorySlug = ROLE_SLUGS[key] || key.replace(/_/g, "-");
+            const categoryHref = `/${locale}/outsourcing/${categorySlug}`;
+            
+            const staffingPath = STAFFING_LINKS[key];
+            const staffingHref = staffingPath ? `/${locale}${staffingPath.startsWith('/') ? '' : '/'}${staffingPath}` : null;
 
-          // Force a fallback: if staffingHref is missing, use categoryHref
-          const href = isCategory ? categoryHref : (staffingHref || categoryHref);
+            href = isCategory ? categoryHref : (staffingHref || categoryHref);
+          }
+
           const label = isCategory 
             ? (ROLE_LINK_LABELS[key] || `Explore ${typedRole.title}`) 
             : `Hire a ${typedRole.title} Specialist`;
