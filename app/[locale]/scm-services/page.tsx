@@ -1,200 +1,30 @@
-import initServerI18n from "@/utils/serverTranslation";
-import ImageSection from "@/components/layout/image-section";
-import InfoSection from "@/components/layout/info-section";
-import ImageSection2 from "@/components/layout/image-section-2";
-import ProcessFlow from "@/components/layout/process-flow";
-import FAQSection2 from "@/components/layout/FAQ-section-2";
-import ConsultationSection from "@/components/layout/consultation-section";
-import BannerSection2 from "@/components/layout/banner-section-2";
 import { Metadata } from "next";
+import initServerI18n from "@/utils/serverTranslation";
+import { getCanonicalUrl, getLanguageAlternates } from "@/utils/seo";
+import CategoryListingPage from "@/components/layout/outsourcing/CategoryListingPage";
 
+export const dynamic = "force-static";
 export const revalidate = 3600;
-export const dynamic = 'force-static';
 
-export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const params = await props.params;
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const i18nInstance = await initServerI18n(locale);
+  const t: any = await i18nInstance.getFixedT(locale, "common");
+  const canonical = getCanonicalUrl(locale, `/scm-services`);
+  const languages = getLanguageAlternates(`/scm-services`);
   return {
-    title: {
-      absolute: "Supply Chain Management Services | Netherlands",
-    },
-    description:
-      "Expert supply chain management services in the Netherlands. We optimize procurement, logistics, warehousing & distribution for your business.",
+    title: t("category-scm-services.meta.title"),
+    description: t("category-scm-services.meta.description"),
+    alternates: { canonical, languages },
   };
 }
 
-export default async function SCM(
-  props: {
-    params: Promise<{ locale: string; }>;
-  }
-) {
-  const params = await props.params;
-  const { locale } = params;
-
+export default async function Page({ params }: Props) {
+  const { locale } = await params;
   const i18nInstance = await initServerI18n(locale);
-  const t = await i18nInstance.getFixedT(locale, "common");
+  const t: any = await i18nInstance.getFixedT(locale, "common");
 
-  // PERFORMANCE FIX: Added explicit priority fields for our top banner visual data array
-  const slides = [
-    {
-      backgroundImage: "/assets/images/scm1.webp",
-      heading: t("scmservices.heading_1"),
-      text: t("scmservices.text_1"),
-      button: t("scmservices.button_1"),
-      buttonTextColor: "#FC4C02",
-      priority: true, // 👈 Tells BannerSection2 to treat this image as the immediate LCP focus
-    },
-  ];
-  const imagetext = (
-    <>
-      {t("scmservices.text_2")}
-      <br />
-      <br />
-      {t("scmservices.text_3")}
-      <br />
-      <br />
-      {t("scmservices.text_4")}
-    </>
-  );
-
-  const imagetext2 = (
-    <>
-      <li>{t("scmservices.listitem1")}</li>
-      <li>{t("scmservices.listitem2")}</li>
-      <li>{t("scmservices.listitem3")}</li>
-      <li>{t("scmservices.listitem4")}</li>
-    </>
-  );
-  const cards = [
-    {
-      title: t("scmservices.card_heading_1"),
-      description: t("scmservices.card_text_1"),
-    },
-    {
-      title: t("scmservices.card_heading_2"),
-      description: t("scmservices.card_text_2"),
-    },
-    {
-      title: t("scmservices.card_heading_3"),
-      description: t("scmservices.card_text_3"),
-    },
-  ];
-
-  const cards2 = [
-    {
-      image: "/assets/images/scmicon1.webp",
-      title: t("scmservices.card2_heading_1"),
-      description: t("scmservices.card2_text_1"),
-    },
-    {
-      image: "/assets/images/scmicon2.webp",
-      title: t("scmservices.card2_heading_2"),
-      description: t("scmservices.card2_text_2"),
-    },
-    {
-      image: "/assets/images/scmicon3.webp",
-      title: t("scmservices.card2_heading_3"),
-      description: t("scmservices.card2_text_3"),
-    },
-  ];
-
-  const questions = [
-    {
-      question: t("scmservices.question1"),
-      answer: t("scmservices.answer1"),
-    },
-    {
-      question: t("scmservices.question2"),
-      answer: t("scmservices.answer2"),
-    },
-    {
-      question: t("scmservices.question3"),
-      answer: t("scmservices.answer3"),
-    },
-    {
-      question: t("scmservices.question4"),
-      answer: t("scmservices.answer4"),
-    },
-    {
-      question: t("scmservices.question5"),
-      answer: t("scmservices.answer5"),
-    },
-  ];
-
-  const gradientColors = ["#ffffff", "#f3f4f6", "#FC4C02"];
-
-  const slidesData2 = [
-    {
-      backgroundImage: "/assets/images/scm4.webp",
-      heading: "Let’s Optimize Your Supply Chain Today",
-      buttonText: "Schedule Your Consultation Now",
-      buttonLink: `/${locale}/contact-us`,
-    },
-  ];
-
-  return (
-    <div>
-      <BannerSection2
-  slides={slides}
-  locale={locale}
-/>
-
-      <ImageSection
-        heading={t("scmservices.heading_2")}
-        text={imagetext}
-        imageUrl="/assets/images/scm2.webp"
-        borderWidth="2px"
-        borderColor="#fed4c2"
-      />
-      <InfoSection
-        heading={t("scmservices.heading_3")}
-        text={t("scmservices.text_5")}
-        cards={cards}
-      />
-      <ImageSection2
-        heading={t("scmservices.heading_4")}
-        text={imagetext2}
-        imageUrl="/assets/images/scm3.webp"
-        leftColor="#FC4C02"
-        rightColor="#ffff"
-      />
-      <InfoSection heading={t("scmservices.heading_5")} cards={cards2} />
-
-      <ProcessFlow
-        heading="Our Proven Process"
-        subheading="A Streamlined Approach to Supply Chain Excellence"
-        steps={[
-          {
-            title: t("scmservices.processflow1"),
-            icon: "/assets/icons/scmicon1.svg",
-          },
-          {
-            title: t("scmservices.processflow2"),
-            icon: "/assets/icons/scmicon2.svg",
-          },
-          {
-            title: t("scmservices.processflow3"),
-            icon: "/assets/icons/scmicon3.svg",
-          },
-          {
-            title: t("scmservices.processflow4"),
-            icon: "/assets/icons/scmicon4.svg",
-          },
-          {
-            title: t("scmservices.processflow5"),
-            icon: "/assets/icons/scmicon5.svg",
-          },
-        ]}
-        circleColor="#FC4C02"
-        lineColor="#FC4C02"
-        textColor="#000"
-      />
-      <FAQSection2 questions={questions} gradientColors={gradientColors} />
-
-      <ConsultationSection
-        slides={slidesData2}
-        hoverBgColor="#FC4C02"
-        hoverTextColor="#FFFFFF"
-      />
-    </div>
-  );
+  return <CategoryListingPage translationKey="category-scm-services" locale={locale} t={t} />;
 }

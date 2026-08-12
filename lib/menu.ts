@@ -57,7 +57,7 @@ export const getMenuItems = (t: (key: string) => string): MenuItem[] => [
     dropdown: [
       {
         label: t("menu.websiteDesignDevelopment"),
-        link: "/digital-services/website-design-&-development",
+        link: "/digital-services/website-design-development",
       },
       {
         label: t("menu.ecommerceDevelopment"),

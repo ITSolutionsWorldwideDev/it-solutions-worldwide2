@@ -1,166 +1,30 @@
-// app/[locale]/digital-services/page.tsx
-
-import initServerI18n from "@/utils/serverTranslation";
-import ImageSection from "@/components/layout/image-section";
-import FAQSection2 from "@/components/layout/FAQ-section-2";
-import BannerSection2 from "@/components/layout/banner-section-2";
-import ImageSection2 from "@/components/layout/image-section-2";
-import DynamicTabs from "@/components/ui/dynamic-tabs";
-import MarketingServices from "@/components/ui/marketing-services";
-import MarketingBanner from "@/components/ui/marketing-banner";
 import { Metadata } from "next";
+import initServerI18n from "@/utils/serverTranslation";
+import { getCanonicalUrl, getLanguageAlternates } from "@/utils/seo";
+import CategoryListingPage from "@/components/layout/outsourcing/CategoryListingPage";
 
+export const dynamic = "force-static";
 export const revalidate = 3600;
-export const dynamic = 'force-static';
 
+type Props = { params: Promise<{ locale: string }> };
 
-export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const params = await props.params;
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const i18nInstance = await initServerI18n(locale);
+  const t: any = await i18nInstance.getFixedT(locale, "common");
+  const canonical = getCanonicalUrl(locale, `/digital-services`);
+  const languages = getLanguageAlternates(`/digital-services`);
   return {
-    title: {
-      absolute: "Digital Marketing Services in Netherlands | ITWW",
-    },
-    description:
-      "Boost your online presence with expert digital marketing services in the Netherlands. SEO, PPC, social media, web design & eCommerce development.",
+    title: t("category-digital-services.meta.title"),
+    description: t("category-digital-services.meta.description"),
+    alternates: { canonical, languages },
   };
 }
-export default async function DigitalServices(
-  props: {
-    params: Promise<{ locale: string; }>;
-  }
-) {
-  const params = await props.params;
-  const { locale } = params;
 
+export default async function Page({ params }: Props) {
+  const { locale } = await params;
   const i18nInstance = await initServerI18n(locale);
-  const t = await i18nInstance.getFixedT(locale, "common");
+  const t: any = await i18nInstance.getFixedT(locale, "common");
 
-  const slides = [
-    {
-      backgroundImage: "/assets/images/digital1.webp",
-      heading: t("digitalservices.heading_1"),
-      text: t("digitalservices.text_1"),
-      button: t("digitalservices.button_1"),
-      textcolor: "#0000",
-    },
-  ];
-
-  const imagetext = (
-    <>
-      {t("digitalservices.text_2")}
-      <br />
-      <br />
-      {t("digitalservices.text_3")}
-    </>
-  );
-
-  const questions = [
-    {
-      question: t("digitalservices.question1"),
-      answer: t("digitalservices.answer1"),
-    },
-    {
-      question: t("digitalservices.question2"),
-      answer: t("digitalservices.answer2"),
-    },
-    {
-      question: t("digitalservices.question3"),
-      answer: t("digitalservices.answer3"),
-    },
-    {
-      question: t("digitalservices.question4"),
-      answer: t("digitalservices.answer4"),
-    },
-    {
-      question: t("digitalservices.question5"),
-      answer: t("digitalservices.answer5"),
-    },
-  ];
-
-  const gradientColors = ["#ffffff", "#f3f4f6", "#f7f2fd"];
-
-  const imagetext2 = (
-    <>
-      {t("digitalservices.text_4")}
-      <br />
-      <br />
-      {t("digitalservices.text_5")}
-    </>
-  );
-
-  const headings = [
-    t("digitalservices.dynamic_card_heading_1"),
-    t("digitalservices.dynamic_card_heading_2"),
-    t("digitalservices.dynamic_card_heading_3"),
-    t("digitalservices.dynamic_card_heading_4"),
-    t("digitalservices.dynamic_card_heading_5"),
-  ];
-
-  const content = [
-    t("digitalservices.dynamic_card_text_1"),
-    t("digitalservices.dynamic_card_text_2"),
-    t("digitalservices.dynamic_card_text_3"),
-    t("digitalservices.dynamic_card_text_4"),
-    t("digitalservices.dynamic_card_text_5"),
-  ];
-
-  return (
-    <div>
-      <BannerSection2
-  slides={slides}
-  locale={locale}
-/>
-
-      <ImageSection
-        heading={t("digitalservices.heading_2")}
-        text={imagetext}
-        imageUrl="/assets/images/digital2.webp"
-      />
-      <DynamicTabs
-        headingh2={t("digitalservices.heading_4")}
-        headings={headings}
-        content={content}
-        activeColor="#9B51E0"
-        inactiveColor="#F3F4F6"
-      />
-
-      <MarketingServices
-        title="Local And B2B Digital Marketing Services For Every Business"
-        services={[
-          {
-            title: "Local Digital Marketing Services",
-            image: "/assets/images/digital3.webp",
-            points: [
-              "Increase visibility within your community.",
-              "Stay updated to the regional trends and demands.",
-              "Strengthen community connections.",
-            ],
-          },
-          {
-            title: "B2B Digital Marketing Services",
-            image: "/assets/images/digital4.webp",
-            points: [
-              "Build long-term partnerships with targeted strategies.",
-              "Targeted lead generation.",
-              "Boost conversion rates.",
-            ],
-          },
-        ]}
-      />
-
-      <ImageSection2
-        heading={t("digitalservices.heading_5")}
-        text={imagetext2}
-        imageUrl="/assets/images/digital5.webp"
-      />
-      <FAQSection2 questions={questions} gradientColors={gradientColors} />
-      <MarketingBanner
-        imageSrc="/assets/images/digital6.webp"
-        title="Grow Your Business with Data-Driven Digital Marketing - Schedule a Consultation!"
-        description="Let's create a custom strategy for your business."
-        buttonText="Contact Us Today"
-  buttonLink={`/${locale}/contact-us`}
-      />
-    </div>
-  );
+  return <CategoryListingPage translationKey="category-digital-services" locale={locale} t={t} />;
 }

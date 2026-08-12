@@ -1,159 +1,30 @@
-// app/[locale]/logistics/smart-warehouse-solutions/page.tsx
-
-import initServerI18n from "@/utils/serverTranslation";
-import ImageSection from "@/components/layout/image-section";
-import InfoSection from "@/components/layout/info-section";
-import ImageSection2 from "@/components/layout/image-section-2";
-import FAQSection2 from "@/components/layout/FAQ-section-2";
-import ConsultationSection from "@/components/layout/consultation-section";
-import BannerSection2 from "@/components/layout/banner-section-2";
 import { Metadata } from "next";
+import initServerI18n from "@/utils/serverTranslation";
+import { getCanonicalUrl, getLanguageAlternates } from "@/utils/seo";
+import CategoryListingPage from "@/components/layout/outsourcing/CategoryListingPage";
 
+export const dynamic = "force-static";
+export const revalidate = 3600;
 
+type Props = { params: Promise<{ locale: string }> };
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Smart Warehouse Solutions in Netherlands",
-  },
-  description:
-    "Modernize your warehouse with smart automation and technology solutions in the Netherlands. Improve accuracy, speed & inventory management.",
-};
-export default async function SmartWarehouseSolutions(
-  props: {
-    params: Promise<{ locale: string; }>;
-  }
-) {
-  const params = await props.params;
-  const { locale } = params;
-
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
   const i18nInstance = await initServerI18n(locale);
-  const t = await i18nInstance.getFixedT(locale, "common");
+  const t: any = await i18nInstance.getFixedT(locale, "common");
+  const canonical = getCanonicalUrl(locale, `/logistics/smart-warehouse-solutions`);
+  const languages = getLanguageAlternates(`/logistics/smart-warehouse-solutions`);
+  return {
+    title: t("category-smart-warehouse-solutions.meta.title"),
+    description: t("category-smart-warehouse-solutions.meta.description"),
+    alternates: { canonical, languages },
+  };
+}
 
-  const slides = [
-    {
-      backgroundImage: "/assets/images/smartwarehouse1.webp",
-      heading: t("smartwarehouse.heading_1"),
-      text: t("smartwarehouse.text_1"),
-      button: t("smartwarehouse.button_1"),
-      textcolor: "#0000",
-    },
-  ];
-  const imagetext = (
-    <>
-      {t("smartwarehouse.text_2")}
-      <br />
-      <br />
-      {t("smartwarehouse.text_3")}
-    </>
-  );
-  const cards = [
-    {
-      title: t("smartwarehouse.card_heading_1"),
-    },
-    {
-      title: t("smartwarehouse.card_heading_2"),
-    },
-    {
-      title: t("smartwarehouse.card_heading_3"),
-    },
-    {
-      title: t("smartwarehouse.card_heading_4"),
-    },
-  ];
+export default async function Page({ params }: Props) {
+  const { locale } = await params;
+  const i18nInstance = await initServerI18n(locale);
+  const t: any = await i18nInstance.getFixedT(locale, "common");
 
-  const questions = [
-    {
-      question: t("smartwarehouse.question1"),
-      answer: t("smartwarehouse.answer1"),
-    },
-    {
-      question: t("smartwarehouse.question2"),
-      answer: t("smartwarehouse.answer2"),
-    },
-    {
-      question: t("smartwarehouse.question3"),
-      answer: t("smartwarehouse.answer3"),
-    },
-    {
-      question: t("smartwarehouse.question4"),
-      answer: t("smartwarehouse.answer4"),
-    },
-    {
-      question: t("smartwarehouse.question5"),
-      answer: t("smartwarehouse.answer5"),
-    },
-  ];
-
-  const gradientColors = ["#ffffff", "#f3f4f6", "#FEAE3D"];
-
-  const imagetext2 = (
-    <>
-      <li>{t("smartwarehouse.listitem1")}</li>
-      <li>{t("smartwarehouse.listitem2")}</li>
-      <li>{t("smartwarehouse.listitem3")}</li>
-      <li>{t("smartwarehouse.listitem4")}</li>
-      <li>{t("smartwarehouse.listitem5")}</li>
-    </>
-  );
-
-  const imagetext3 = (
-    <>
-      <li>{t("smartwarehouse.listitem6")}</li>
-      <li>{t("smartwarehouse.listitem7")}</li>
-      <li>{t("smartwarehouse.listitem8")}</li>
-      <li>{t("smartwarehouse.listitem9")}</li>
-      <li>{t("smartwarehouse.listitem10")}</li>
-    </>
-  );
-
-  const slidesData2 = [
-    {
-      backgroundImage: "/assets/images/logandsupply5.webp",
-      heading:
-        "Enhance Efficiency with Smart Warehouse Solutions - Get Started Today!",
-      buttonText: "Schedule Your Consultation Now",
-      buttonLink: `/${locale}/contact-us`,
-    },
-  ];
-
-  return (
-    <div>
-      <BannerSection2
-  slides={slides}
-  locale={locale}
-/>
-      <ImageSection2
-        heading={t("smartwarehouse.heading_2")}
-        text={imagetext}
-        imageUrl="/assets/images/smartwarehouse2.webp"
-        borderWidth="2px"
-        borderColor="#ffd7a0"
-      />
-      <InfoSection
-        heading={t("smartwarehouse.heading_3")}
-        cards={cards}
-        columns={4}
-      />
-      <ImageSection
-        heading={t("smartwarehouse.heading_4")}
-        text={imagetext2}
-        imageUrl="/assets/images/smartwarehouse3.webp"
-        borderWidth="2px"
-        borderColor="#ffd7a0"
-      />
-      <ImageSection2
-        heading={t("smartwarehouse.heading_5")}
-        text={imagetext3}
-        imageUrl="/assets/images/smartwarehouse4.webp"
-        borderWidth="2px"
-        borderColor="#ffd7a0"
-      />
-      <FAQSection2 questions={questions} gradientColors={gradientColors} />
-      <ConsultationSection
-        slides={slidesData2}
-        hoverBgColor="#FEAE3D"
-        hoverTextColor="#FFFFFF"
-      />
-    </div>
-  );
+  return <CategoryListingPage translationKey="category-smart-warehouse-solutions" locale={locale} t={t} />;
 }
