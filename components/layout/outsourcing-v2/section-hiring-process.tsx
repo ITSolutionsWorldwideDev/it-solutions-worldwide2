@@ -37,14 +37,11 @@ export default function zSectionHiringProcess({
 
       {/* Desktop View */}
       <div className="max-w-7xl mx-auto hidden md:block relative select-none px-8 overflow-visible">
-        <div className="flex justify-between items-end min-h-[60px] mb-2 gap-4">
+        <div className="flex justify-between items-end min-h-[40px] mb-2 gap-4">
           {steps.map((step, idx) => (
             <div key={idx} className="flex-1 min-w-0 text-center px-2">
               {idx % 2 === 0 && (
-                <>
-                  <h3 className="text-[12px] font-bold text-[#0F172A] mb-1">{step.title}</h3>
-                  <p className="text-[#475569] text-[10px] leading-snug max-w-[160px] mx-auto">{step.description}</p>
-                </>
+                <h3 className="text-[18px] font-bold text-[#0F172A]">{step.title}</h3>
               )}
             </div>
           ))}
@@ -92,14 +89,11 @@ export default function zSectionHiringProcess({
           ))}
         </div>
 
-        <div className="flex justify-between items-start min-h-[60px] mt-2 gap-4">
+        <div className="flex justify-between items-start min-h-[40px] mt-2 gap-4">
           {steps.map((step, idx) => (
             <div key={idx} className="flex-1 min-w-0 text-center px-2">
               {idx % 2 === 1 && (
-                <>
-                  <h3 className="text-[12px] font-bold text-[#0F172A] mb-1">{step.title}</h3>
-                  <p className="text-[#475569] text-[10px] leading-snug max-w-[160px] mx-auto">{step.description}</p>
-                </>
+                <h3 className="text-[18px] font-bold text-[#0F172A]">{step.title}</h3>
               )}
             </div>
           ))}
@@ -109,14 +103,11 @@ export default function zSectionHiringProcess({
       {/* Mobile View */}
       <div className="block md:hidden space-y-8 max-w-sm mx-auto relative before:absolute before:left-6 before:top-4 before:bottom-4 before:w-0.5 before:border-l-2 before:border-dashed mt-8" style={{ borderColor: TEAL }}>
         {steps.map((step, idx) => (
-          <div key={idx} className="flex gap-4 items-start pl-2">
+          <div key={idx} className="flex gap-4 items-center pl-2">
             <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-base font-bold shadow-sm shrink-0" style={{ backgroundColor: TEAL }}>
               {step.number}
             </div>
-            <div>
-              <h3 className="text-sm font-bold text-[#0F172A] mb-0.5">{step.title}</h3>
-              <p className="text-gray-500 text-[11px] leading-relaxed">{step.description}</p>
-            </div>
+            <h3 className="text-[18px] font-bold text-[#0F172A]">{step.title}</h3>
           </div>
         ))}
       </div>

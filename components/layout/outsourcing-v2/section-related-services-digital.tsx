@@ -148,38 +148,38 @@ export default function SectionRelatedServicesDigital({
     const entries = Object.entries(finalCardsToRender).slice(0, maxCards);
     const gridColsClass = entries.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3";
 
-    return (
-      <section className="py-14 px-4 bg-white" id="related-digital-services">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
-            <span className="text-black-500">
-              {stripEmoji(heading || "") || "Explore Digital & Business Solutions"}
-            </span>
-          </h2>
-          <p className="max-w-4xl mx-auto text-center text-gray-900 mb-10">
-            {stripEmoji(subheading || "") ||
-              "Pair this service with our digital and business transformation solutions."}
-          </p>
+return (
+<section className="py-14 pl-[22px] pr-6 bg-white" id="related-digital-services">
+        <div className="max-w-7xl mx-auto">
+      <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
+        <span className="text-black-500">
+          {stripEmoji(heading || "") || "Explore Digital & Business Solutions"}
+        </span>
+      </h2>
+      <p className="max-w-4xl mx-auto text-center text-gray-900 mb-10">
+        {stripEmoji(subheading || "") ||
+          "Pair this service with our digital and business transformation solutions."}
+      </p>
 
-          <div className={`grid grid-cols-1 ${gridColsClass} gap-6 items-stretch`}>
-            {entries.map(([key, item]) => {
-              const href = `/${locale}${item.link}`;
-              return (
-                <Link
-                  key={key}
-                  href={href}
-                  className="group border border-gray-200 rounded-xl p-6 flex flex-col gap-3 bg-white hover:shadow-lg hover:border-teal-500 hover:-translate-y-1 transition-all duration-200 cursor-pointer"
-                >
-                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-teal-600 transition-colors">
-                    {stripEmoji(item.title)}
-                  </h3>
-                  <p className="text-sm text-gray-500">{stripEmoji(item.description)}</p>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-    );
+      <div className={`grid grid-cols-1 ${gridColsClass} gap-6 items-stretch`}>
+        {entries.map(([key, item]) => {
+          const href = `/${locale}${item.link}`;
+          return (
+            <Link
+              key={key}
+              href={href}
+              className="group border border-gray-200 rounded-xl p-6 flex flex-col gap-3 bg-white hover:shadow-lg hover:border-teal-500 hover:-translate-y-1 transition-all duration-200 cursor-pointer"
+            >
+              <h3 className="text-lg font-bold text-gray-900 group-hover:text-teal-600 transition-colors">
+                {stripEmoji(item.title)}
+              </h3>
+              <p className="text-sm text-gray-500">{stripEmoji(item.description)}</p>
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+);
   }
 }
