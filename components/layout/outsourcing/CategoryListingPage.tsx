@@ -6,6 +6,7 @@ import TrustSection from "@/components/layout/outsourcing/section-trust";
 import Faqs from "@/components/layout/outsourcing/Faqs";
 import CategoryRoles from "@/components/layout/outsourcing/CategoryRoles";
 import Contact from "@/components/layout/outsourcing/Contact";
+import Script from "next/script";
 
 
 type Props = {
@@ -106,15 +107,41 @@ export default function CategoryListingPage({
   //
   // =========================================================
 
-  const servicesData = t(
-    `${translationKey}.services_section`,
-    {
-      returnObjects: true,
-    }
-  ) as any;
+const servicesData = t(
+  `${translationKey}.services_section`,
+  {
+    returnObjects: true,
+  }
+) as any;
 
+// =========================================================
+// FAQ DATA + SCHEMA
+// =========================================================
+const rawFaqData = t(
+  `${translationKey}.faq.questions`,
+  {
+    returnObjects: true,
+  }
+) as any;
 
-  // =========================================================
+const mappedFaqData = Array.isArray(rawFaqData) ? rawFaqData : [];
+
+// FAQ Schema (JSON-LD) — Google rich snippets ke liye
+const faqSchema =
+  mappedFaqData.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: mappedFaqData.map((faq: any) => ({
+          "@type": "Question",
+          name: faq.q || "",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.a || "",
+          },
+        })),
+      }
+    : null;
   // PAGE
   // =========================================================
 
@@ -216,14 +243,16 @@ export default function CategoryListingPage({
           FAQ SECTION
       ===================================================== */}
 
-      <Faqs
-        faqData={t(
-          `${translationKey}.faq.questions`,
-          {
-            returnObjects: true,
-          }
-        )}
+     {faqSchema && (
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        strategy="beforeInteractive"
       />
+    )}
+
+     <Faqs faqData={mappedFaqData} />
 
 
       {/* =====================================================
