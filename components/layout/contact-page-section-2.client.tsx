@@ -14,6 +14,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import ReCAPTCHA from "react-google-recaptcha"; // 1. Import reCAPTCHA
 
 type FAQItem = {
   question: string;
@@ -22,8 +23,8 @@ type FAQItem = {
 
 type Props = {
   translations: Record<string, string>;
-  variant?: "contact" | "about"; // NEW: which left-side content to show
-  faqs?: FAQItem[]; // NEW: only used when variant === "about"
+  variant?: "contact" | "about";
+  faqs?: FAQItem[];
 };
 
 export default function ContactCardClient2({
@@ -32,14 +33,11 @@ export default function ContactCardClient2({
   faqs = [],
 }: Props) {
   const t = translations;
-
   const router = useRouter();
 
   const [status, setStatus] = useState<null | "success" | "error">(null);
   const [showModal, setShowModal] = useState(false);
-
   const [sending, setSending] = useState(false);
-  const [responseMessage, setResponseMessage] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   const [formData, setFormData] = useState({
@@ -50,9 +48,9 @@ export default function ContactCardClient2({
     service: "",
     message: "",
     acceptedTerms: false,
+    captchaToken: "", // 2. Added captchaToken to formData
   });
 
-  // NEW: FAQ accordion state (used only for variant === "about")
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -85,43 +83,33 @@ export default function ContactCardClient2({
     }));
   };
 
+  // 3. Handle Captcha Change
+  const handleCaptchaChange = (token: string | null) => {
+    setFormData((prev) => ({ ...prev, captchaToken: token || "" }));
+    setErrors((prev) => ({ ...prev, captcha: "" }));
+  };
+
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
 
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-    }
-
-    if (!formData.company.trim()) {
-      newErrors.company = "Company name is required";
-    }
-
-    if (!formData.phone.trim()) {
-      newErrors.phone = "Phone number is required";
-    }
-
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.company.trim()) newErrors.company = "Company name is required";
+    if (!formData.phone.trim()) newErrors.phone = "Phone number is required";
     if (!formData.email.trim()) {
       newErrors.email = "Email is required";
-    } else if (
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)
-    ) {
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)) {
       newErrors.email = "Invalid email address";
     }
-
-    if (!formData.service) {
-      newErrors.service = "Please select a service";
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-    }
-
-    if (!formData.acceptedTerms) {
-      newErrors.acceptedTerms = "You must accept terms";
+    if (!formData.service) newErrors.service = "Please select a service";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
+    if (!formData.acceptedTerms) newErrors.acceptedTerms = "You must accept terms";
+    
+    // 4. Validate Captcha Token
+    if (!formData.captchaToken) {
+      newErrors.captcha = "Please complete the CAPTCHA verification";
     }
 
     setErrors(newErrors);
-
     return Object.keys(newErrors).length === 0;
   };
 
@@ -157,6 +145,7 @@ export default function ContactCardClient2({
         service: "",
         message: "",
         acceptedTerms: false,
+        captchaToken: "",
       });
     } catch (error: any) {
       alert(error.message);
@@ -282,10 +271,8 @@ export default function ContactCardClient2({
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={label}
-                          className=""
                         >
                           <button
-                            key={index}
                             className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/20 bg-white/10 transition hover:bg-white/20"
                           >
                             <Icon className="h-5 w-5 text-white" />
@@ -297,7 +284,6 @@ export default function ContactCardClient2({
                 </>
               ) : (
                 <>
-                  {/* FAQ variant (About Us page) */}
                   <h2 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                     FAQ
                   </h2>
@@ -340,7 +326,7 @@ export default function ContactCardClient2({
               )}
             </div>
 
-            {/* RIGHT SIDE — form, unchanged for both variants */}
+            {/* RIGHT SIDE — form */}
             <div className="bg-white p-8 sm:p-12 lg:p-16">
               <div className="max-w-2xl">
                 <h2 className="text-4xl font-semibold text-gray-900">
@@ -449,6 +435,17 @@ export default function ContactCardClient2({
                     )}
                   </div>
 
+                  {/* 5. Google reCAPTCHA v2 Component Integration */}
+                  <div>
+                    <ReCAPTCHA
+                      sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+                      onChange={handleCaptchaChange}
+                    />
+                    {errors.captcha && (
+                      <p className="mt-1 text-sm text-red-500">{errors.captcha}</p>
+                    )}
+                  </div>
+
                   {/* Checkbox */}
                   <div className="flex items-start gap-3">
                     <input
@@ -459,7 +456,7 @@ export default function ContactCardClient2({
                       className="mt-1 h-4 w-4 rounded border-gray-300 text-teal-600"
                     />
 
-                    <p className="text-sm leading-6 text-gray-500">
+                    <div className="text-sm leading-6 text-gray-500">
                       By submitting, you consent to being contacted about our
                       products per our{" "}
                       <span className="cursor-pointer text-teal-700 underline">
@@ -474,7 +471,7 @@ export default function ContactCardClient2({
                           {errors.acceptedTerms}
                         </p>
                       )}
-                    </p>
+                    </div>
                   </div>
 
                   {/* Button */}
