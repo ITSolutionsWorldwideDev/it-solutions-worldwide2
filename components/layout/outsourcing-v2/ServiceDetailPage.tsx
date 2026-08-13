@@ -252,7 +252,6 @@ export default function ServiceDetailPage({ content, slug, locale, humanReadable
       <TrustSection />
       <SectionWhyChoose heading={whyHeading} subheading={whySubheading} cards={whyCards} />
       <Faqs faqData={mappedFaqData} />
-      <SectionRelatedServices heading={relatedHeading} subheading={relatedSubheading} cards={relatedCardsForRoles} locale={locale} />
       <SectionReadyCTA
         heading={readyHeading}
         subheading={readySubheading}

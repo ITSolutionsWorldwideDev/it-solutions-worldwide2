@@ -5,7 +5,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import { usePathname } from "next/navigation";
 
 interface FullContentSectionProps {
   imageUrl?: string;
@@ -46,10 +46,15 @@ const FullContentSection = ({
   borderColor = "transparent",
   bgColor = "transparent",
 }: FullContentSectionProps) => {
+  const pathname = usePathname();
   const [showPopup, setShowPopup] = useState(false);
 
   const handlePopupOpen = () => setShowPopup(true);
   const handlePopupClose = () => setShowPopup(false);
+
+  // Automatically detect Dutch locale from URL path
+  const isDutch = pathname?.startsWith("/nl");
+  const contactLink = isDutch ? "/nl/contact-us" : "/en/contact-us";
 
   const isInternalLink = buttonLink?.startsWith("/");
 
@@ -77,7 +82,7 @@ const FullContentSection = ({
         <div className="mt-10">
           {isInternalLink ? (
             <Link
-              href="#roles"
+              href={contactLink}
               className="text-white px-4 py-2 rounded font-semibold"
               style={{ backgroundColor: bgButton }}
             >
@@ -85,7 +90,7 @@ const FullContentSection = ({
             </Link>
           ) : (
             <Link
-              href="#roles"
+              href={contactLink}
               // target="_blank"
               // rel="noopener noreferrer"
               className="text-white p-4 rounded font-semibold"
