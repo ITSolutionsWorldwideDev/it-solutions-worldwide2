@@ -8,7 +8,7 @@ import SectionComparison from "@/components/layout/outsourcing-v2/section-compar
 import SectionIndustryFocus from "@/components/layout/outsourcing-v2/section-industry-focus";
 import SectionHiringProcess from "@/components/layout/outsourcing-v2/section-hiring-process";
 import SectionWhyChoose from "@/components/layout/outsourcing-v2/section-why-choose";
-import SectionRelatedServices from "@/components/layout/outsourcing-v2/section-related-services";
+import SectionRelatedServicesDigital from "@/components/layout/outsourcing-v2/section-related-services-digital";
 import SectionReadyCTA from "@/components/layout/outsourcing-v2/section-ready-cta";
 import FullContentSection from "@/components/layout/outsourcing/hero-section";
 import TrustSection from "@/components/layout/outsourcing/section-trust";
@@ -140,50 +140,30 @@ export default function ServiceDetailPage({ content, slug, locale, humanReadable
       })
     : [];
 
-  const relatedHeading = content?.related_services?.h2 ?? content?.related?.h2 ?? "Explore Complementary Support Verticals";
+  // Related Services / Cards mapping logic (Digital Services & Business Transformation)
+  const relatedHeading = content?.related_services?.h2 ?? content?.related?.h2 ?? "Explore Complementary Solutions";
   const relatedSubheading =
     content?.related_services?.subtitle ??
     content?.related?.subtitle ??
-    "Further expand efficiency loops by combining related specialized workflows.";
+    "Enhance your capabilities with integrated digital and business transformation services.";
 
-  const relatedCards = Array.isArray(content?.related_services?.cards)
+  // Agar JSON mein cards available hain toh wo use honge, warna fallback ke tor par Digital Services / Business Transformation ke links aur details set ho jayengi
+  const relatedCards = Array.isArray(content?.related_services?.cards) && content.related_services.cards.length > 0
     ? content.related_services.cards
-    : Array.isArray(content?.related?.cards)
-    ? content.related.cards
-    : [];
+    : [
+        { title: "Website Design & Development", description: "Build high-performing, responsive websites tailored to your brand.", link: "/digital-services/website-design-development" },
+        { title: "SEO Services", description: "Improve your search engine rankings and drive organic traffic.", link: "/digital-services/seo-services" },
+        { title: "SCM Consultancy", description: "Optimize your supply chain workflows for maximum efficiency.", link: "/scm-services/scm-consultancy" },
+      ];
 
-  const relatedCardsForRoles: Record<string, { title: string; description: string }> = {};
-  relatedCards.forEach((card: any) => {
-    const title = (card.title || "").toLowerCase();
-    let key = "";
-    if (title.includes("virtual assistant")) key = "virtual_assistant";
-    else if (title.includes("full stack")) key = "full_stack_developer";
-    else if (title.includes("data engineer")) key = "data_engineer";
-    else if (title.includes("ai engineer")) key = "ai_ml_engineer";
-    else if (title.includes("electrical engineer")) key = "electrical_engineer";
-    else if (title.includes("admin")) key = "admin";
-    else if (title.includes("hr")) key = "hr";
-    else if (title.includes("customer support")) key = "customer_support";
-    else if (title.includes("data entry")) key = "data_entry";
-    else if (title.includes("web designer")) key = "web_designer";
-    else if (title.includes("graphic designer")) key = "graphic_designer";
-    else if (title.includes("front end")) key = "front_end";
-    else if (title.includes("back end")) key = "back_end";
-    else if (title.includes("app developer")) key = "app_dev";
-    else if (title.includes("it support")) key = "it_support";
-    else if (title.includes("software tester")) key = "qa_tester";
-    else if (title.includes("social media")) key = "social_media";
-    else if (title.includes("content creator")) key = "content_creator";
-    else if (title.includes("online marketer")) key = "online_marketer";
-    else if (title.includes("google analytics")) key = "ga_specialist";
-    else if (title.includes("power bi")) key = "power_bi";
-    else if (title.includes("data analyst")) key = "data_analyst";
-    if (key) {
-      relatedCardsForRoles[key] = {
-        title: card.title,
-        description: card.desc || card.description || "",
-      };
-    }
+  const mappedRelatedCards: Record<string, { title: string; description: string; link?: string }> = {};
+  relatedCards.forEach((card: any, index: number) => {
+    const key = `service_${index}`;
+    mappedRelatedCards[key] = {
+      title: card.title,
+      description: card.desc || card.description || "",
+      link: card.link,
+    };
   });
 
   const mappedFaqData = Array.isArray(content?.faq?.questions) ? content.faq.questions : [];
@@ -251,6 +231,17 @@ export default function ServiceDetailPage({ content, slug, locale, humanReadable
       />
       <TrustSection />
       <SectionWhyChoose heading={whyHeading} subheading={whySubheading} cards={whyCards} />
+      
+      {/* Related Services Section with Digital Services & Business Transformation Cards */}
+     {/* Related Services Section with Digital Services & Business Transformation Cards */}
+<SectionRelatedServicesDigital
+  heading={relatedHeading}
+  subheading={relatedSubheading}
+  locale={locale}
+  slug={slug}
+  maxCards={3}
+/>
+
       <Faqs faqData={mappedFaqData} />
       <SectionReadyCTA
         heading={readyHeading}
