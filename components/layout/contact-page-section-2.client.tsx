@@ -439,15 +439,22 @@ export default function ContactCardClient2({
                   </div>
 
                   {/* Google reCAPTCHA v2 Component Integration */}
-                  <div>
-                    <ReCAPTCHA
-                      sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-                      onChange={handleCaptchaChange}
-                    />
-                    {errors.captcha && (
-                      <p className="mt-1 text-sm text-red-500">{errors.captcha}</p>
-                    )}
-                  </div>
+                  {/* Google reCAPTCHA v2 Component Integration */}
+<div>
+  {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ? (
+    <ReCAPTCHA
+      sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+      onChange={handleCaptchaChange}
+    />
+  ) : (
+    <p className="text-sm text-red-500">
+      CAPTCHA is not configured. Please contact site admin.
+    </p>
+  )}
+  {errors.captcha && (
+    <p className="mt-1 text-sm text-red-500">{errors.captcha}</p>
+  )}
+</div>
 
                   {/* Checkbox */}
                   <div className="flex items-start gap-3">
