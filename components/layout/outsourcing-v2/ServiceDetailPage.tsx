@@ -13,6 +13,7 @@ import SectionReadyCTA from "@/components/layout/outsourcing-v2/section-ready-ct
 import FullContentSection from "@/components/layout/outsourcing/hero-section";
 import TrustSection from "@/components/layout/outsourcing/section-trust";
 import Faqs from "@/components/layout/outsourcing/Faqs";
+import Script from "next/script";
 
 type Props = {
   content: any;
@@ -166,7 +167,24 @@ export default function ServiceDetailPage({ content, slug, locale, humanReadable
     };
   });
 
-  const mappedFaqData = Array.isArray(content?.faq?.questions) ? content.faq.questions : [];
+ const mappedFaqData = Array.isArray(content?.faq?.questions) ? content.faq.questions : [];
+
+// FAQ Schema (JSON-LD) — Google rich snippets ke liye
+const faqSchema =
+  mappedFaqData.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: mappedFaqData.map((faq: any) => ({
+          "@type": "Question",
+          name: faq.q || "",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.a || "",
+          },
+        })),
+      }
+    : null;
 
   const reputationTitle =
     content?.reputation?.title ?? t("outsourcingDefaults.reputationTitle", { role: humanReadableRole });
@@ -189,6 +207,14 @@ export default function ServiceDetailPage({ content, slug, locale, humanReadable
 
   return (
     <div>
+         {faqSchema && (
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        strategy="beforeInteractive"
+      />
+    )}
       <HeroSectionAdvanced
         headingLine1={heroTitle}
         headingLine2=""

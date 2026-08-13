@@ -50,6 +50,16 @@ const nextConfig: NextConfig = {
       { source: "/profile", destination: "/en/profile", permanent: true },
       { source: "/it-support", destination: "/en/it-support", permanent: true },
       { source: "/terms-and-conditions", destination: "/en/terms-and-conditions", permanent: true },
+       {
+        source: '/en/digital-services/website-design-%26-development',
+        destination: '/en/digital-services/website-design-development',
+        permanent: true, // 301 redirect
+       },
+       {
+        source: '/nl/digital-services/website-design-%26-development',
+        destination: '/nl/digital-services/website-design-development',
+        permanent: true,
+      },
     ];
   },
   async headers() {
