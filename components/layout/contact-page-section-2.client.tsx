@@ -14,7 +14,12 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import ReCAPTCHA from "react-google-recaptcha"; // 1. Import reCAPTCHA
+import dynamic from "next/dynamic"; // 1. Import dynamic from next
+
+// 2. Load ReCAPTCHA dynamically with SSR disabled to prevent client-side exception
+const ReCAPTCHA = dynamic(() => import("react-google-recaptcha"), {
+  ssr: false,
+});
 
 type FAQItem = {
   question: string;
@@ -48,7 +53,7 @@ export default function ContactCardClient2({
     service: "",
     message: "",
     acceptedTerms: false,
-    captchaToken: "", // 2. Added captchaToken to formData
+    captchaToken: "",
   });
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -83,7 +88,6 @@ export default function ContactCardClient2({
     }));
   };
 
-  // 3. Handle Captcha Change
   const handleCaptchaChange = (token: string | null) => {
     setFormData((prev) => ({ ...prev, captchaToken: token || "" }));
     setErrors((prev) => ({ ...prev, captcha: "" }));
@@ -104,7 +108,6 @@ export default function ContactCardClient2({
     if (!formData.message.trim()) newErrors.message = "Message is required";
     if (!formData.acceptedTerms) newErrors.acceptedTerms = "You must accept terms";
     
-    // 4. Validate Captcha Token
     if (!formData.captchaToken) {
       newErrors.captcha = "Please complete the CAPTCHA verification";
     }
@@ -435,7 +438,7 @@ export default function ContactCardClient2({
                     )}
                   </div>
 
-                  {/* 5. Google reCAPTCHA v2 Component Integration */}
+                  {/* Google reCAPTCHA v2 Component Integration */}
                   <div>
                     <ReCAPTCHA
                       sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
