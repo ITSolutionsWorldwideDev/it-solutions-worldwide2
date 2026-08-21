@@ -71,8 +71,6 @@ interface RelatedJob {
 
 /* ------------------------------------------------------------------ */
 /* REAL JOB POOL — production career URLs                            */
-/* Har card is pool se shuffle hoke aayega, current job apna khud    */
-/* ka card kabhi nahi dekhega (self-exclude)                         */
 /* ------------------------------------------------------------------ */
 
 const RELATED_JOBS_POOL: RelatedJob[] = [
@@ -152,8 +150,6 @@ const RELATED_JOBS_POOL: RelatedJob[] = [
 
 /* ------------------------------------------------------------------ */
 /* SHUFFLE HELPER                                                    */
-/* NOTE: .tsx file me generic <T> likhna JSX tag jaisa parse hota hai */
-/* isliye trailing comma <T,> zaroori hai warna syntax error aata hai  */
 /* ------------------------------------------------------------------ */
 
 function shuffleArray<T,>(arr: T[]): T[] {
@@ -259,7 +255,7 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
   const hasKeySkills = !!(job.keySkills && job.keySkills.length > 0);
 
   /* -------------------------------------------------------------- */
-  /* RELATED JOBS: pool se current job exclude karke shuffle karo    */
+  /* RELATED JOBS                                                   */
   /* -------------------------------------------------------------- */
   const basePool = useMemo(() => {
     const pool: RelatedJob[] =
@@ -291,7 +287,6 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                 {job.seniority}
               </span>
             )}
-            {job.postedAgo && <span className="text-[11px] text-white/40">{job.postedAgo}</span>}
           </div>
 
           <h1 className="text-[34px] sm:text-[42px] font-extrabold tracking-tight leading-[1.1] mb-8 max-w-2xl">
@@ -331,7 +326,7 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
         </div>
       </div>
 
-      {/* ============ MOBILE APPLY NOW BAR (header ke turant niche) ============ */}
+      {/* ============ MOBILE APPLY NOW BAR ============ */}
       <div className="lg:hidden bg-white border-b border-gray-200/70 px-6 py-3 sticky top-0 z-30 shadow-sm">
         <Link
           href={applyHref}
@@ -464,7 +459,8 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                 <p className="text-[10px] font-bold tracking-[0.12em] uppercase text-white/70 mb-1.5">
                   Ready to apply?
                 </p>
-                <p className="text-lg font-extrabold mb-1">Only Take 1 minute.</p>
+                <p className="text-lg font-extrabold mb-1">Only Takes 1 minute.</p>
+                <p className="text-[11px] text-white/70"></p>
               </div>
               <div className="p-3 space-y-2 bg-white relative">
                 <Link
@@ -524,7 +520,7 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
 
             <div className="bg-white border border-gray-200/70 rounded-2xl p-5">
               <h4 className="text-sm font-bold text-[#06282C] mb-4">Role Details</h4>
-              <dl className="space-y-3.5 text-xs">
+              <dl className="space-y-4 text-xs">
                 {job.salaryRange && (
                   <div className="flex items-center justify-between">
                     <dt className="flex items-center gap-2 text-gray-400">
@@ -533,11 +529,14 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                     <dd className="font-semibold text-[#06282C]">{job.salaryRange}</dd>
                   </div>
                 )}
-                <div className="flex items-center justify-between">
-                  <dt className="flex items-center gap-2 text-gray-400">
+                {/* Location row with smart alignment: single-line text stays right, multi-line addresses stack safely */}
+                <div className="flex items-start justify-between gap-4">
+                  <dt className="flex items-center gap-2 text-gray-400 shrink-0 pt-0.5">
                     <MapPin className="w-3.5 h-3.5" /> Location
                   </dt>
-                  <dd className="font-semibold text-[#06282C]">{job.location}</dd>
+                  <dd className="font-semibold text-[#06282C] text-right leading-relaxed max-w-[180px]">
+                    {job.location}
+                  </dd>
                 </div>
                 <div className="flex items-center justify-between">
                   <dt className="flex items-center gap-2 text-gray-400">
@@ -559,14 +558,6 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                       <Building2 className="w-3.5 h-3.5" /> Department
                     </dt>
                     <dd className="font-semibold text-[#06282C]">{job.department}</dd>
-                  </div>
-                )}
-                {job.postedAgo && (
-                  <div className="flex items-center justify-between">
-                    <dt className="flex items-center gap-2 text-gray-400">
-                      <Clock className="w-3.5 h-3.5" /> Posted
-                    </dt>
-                    <dd className="font-semibold text-[#06282C]">{job.postedAgo}</dd>
                   </div>
                 )}
               </dl>
