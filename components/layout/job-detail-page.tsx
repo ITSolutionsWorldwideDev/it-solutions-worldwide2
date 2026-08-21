@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import {
   MapPin,
   Briefcase,
@@ -25,7 +25,7 @@ import {
 import PdfViewer from "@/components/ui/pdf-viewer";
 
 /* ------------------------------------------------------------------ */
-/* TYPES                                                              */
+/* TYPES                                                             */
 /* ------------------------------------------------------------------ */
 
 export interface JobDetail {
@@ -51,51 +51,78 @@ export interface JobDetail {
 
   keySkills?: string[];
 
-  relatedJobs?: {
-    slug: string;
-    title: string;
-    department?: string;
-    level?: string;
-    postedAgo?: string;
-    location: string;
-    workType: string;
-    salaryRange?: string;
-    description?: string;
-    skills?: string[];
-    isExternalLink?: boolean;
-    externalUrl?: string;
-  }[];
+  relatedJobs?: RelatedJob[];
+}
+
+interface RelatedJob {
+  slug: string;
+  title: string;
+  department?: string;
+  level?: string;
+  postedAgo?: string;
+  location: string;
+  workType: string;
+  salaryRange?: string;
+  description?: string;
+  skills?: string[];
+  isExternalLink?: boolean;
+  externalUrl?: string;
 }
 
 /* ------------------------------------------------------------------ */
-/* DEFAULT / FALLBACK CARDS                                           */
+/* REAL JOB POOL — production career URLs                            */
+/* Har card is pool se shuffle hoke aayega, current job apna khud    */
+/* ka card kabhi nahi dekhega (self-exclude)                         */
 /* ------------------------------------------------------------------ */
 
-const DEFAULT_RELATED_JOBS = [
+const RELATED_JOBS_POOL: RelatedJob[] = [
   {
-    slug: "main-website",
-    title: "IT Solutions Worldwide Portal",
-    department: "Company",
-    level: "Global",
-    location: "Remote / Office",
+    slug: "finance-specialist",
+    title: "Finance Specialist",
+    department: "Finance",
+    level: "Mid-level",
+    location: "Netherlands",
     workType: "Full-time",
-    description: "Explore our main global platform and discover more enterprise services.",
+    description: "Manage financial reporting, reconciliations, and support budgeting cycles.",
     isExternalLink: true,
-    externalUrl: "https://www.itsolutionsworldwide.com/en",
-    skills: ["Enterprise", "Solutions"],
+    externalUrl: "https://www.itsolutionsworldwide.com/en/career/finance-specialist",
+    skills: ["Finance", "Reporting"],
   },
   {
-    slug: "it-support-intern",
-    title: "IT Support Intern",
-    department: "IT",
-    level: "Internship",
-    location: "Hybrid",
-    workType: "Internship",
-    postedAgo: "Active",
-    description: "Help troubleshoot hardware, software, and network issues for internal teams.",
+    slug: "hvac-service-technician-cooling-technology",
+    title: "HVAC Service Technician",
+    department: "Technical",
+    level: "Skilled",
+    location: "Netherlands",
+    workType: "Full-time",
+    description: "Install, maintain, and repair cooling and HVAC systems for clients.",
     isExternalLink: true,
-    externalUrl: "http://localhost:4000/en/career/it-support-intern",
-    skills: ["Troubleshooting", "Helpdesk"],
+    externalUrl: "https://www.itsolutionsworldwide.com/en/career/hvac-service-technician-cooling-technology",
+    skills: ["HVAC", "Cooling Tech"],
+  },
+  {
+    slug: "master-data-specialist-sap-s4hana",
+    title: "Master Data Specialist (SAP S/4HANA)",
+    department: "IT",
+    level: "Mid-level",
+    location: "Netherlands",
+    workType: "Full-time",
+    description: "Own master data quality and governance within SAP S/4HANA environments.",
+    isExternalLink: true,
+    externalUrl: "https://www.itsolutionsworldwide.com/en/career/master-data-specialist-sap-s4hana",
+    skills: ["SAP", "S/4HANA"],
+  },
+  {
+    slug: "cyber-security-intern",
+    title: "Cyber Security Intern",
+    department: "Security",
+    level: "Internship",
+    location: "Remote",
+    workType: "Internship",
+    description: "Support the security team with monitoring, audits, and vulnerability checks.",
+    isExternalLink: true,
+    externalUrl: "https://www.itsolutionsworldwide.com/en/career/cyber-security-intern",
+    skills: ["Security", "Monitoring"],
   },
   {
     slug: "backoffice-intern",
@@ -104,29 +131,42 @@ const DEFAULT_RELATED_JOBS = [
     level: "Internship",
     location: "Remote",
     workType: "Internship",
-    postedAgo: "Active",
     description: "Assist with daily administrative operations, data management, and documentation.",
     isExternalLink: true,
-    externalUrl: "http://localhost:4000/en/career/backoffice-intern",
+    externalUrl: "https://www.itsolutionsworldwide.com/en/career/backoffice-intern",
     skills: ["Operations", "Admin"],
   },
   {
-    slug: "junior-supply-chain-planner-startersprogramma",
-    title: "Junior Supply Chain Planner",
-    department: "Supply Chain",
-    level: "Junior",
-    location: "On-site",
+    slug: "oracle-erp-consultant-specialist",
+    title: "Oracle ERP Consultant Specialist",
+    department: "IT",
+    level: "Senior",
+    location: "Netherlands",
     workType: "Full-time",
-    postedAgo: "Active",
-    description: "Join the starter program to optimize inventory, logistics, and supply coordination.",
+    description: "Implement and optimize Oracle ERP modules for enterprise clients.",
     isExternalLink: true,
-    externalUrl: "http://localhost:4000/en/career/junior-supply-chain-planner-startersprogramma",
-    skills: ["Logistics", "Planning"],
+    externalUrl: "https://www.itsolutionsworldwide.com/en/career/oracle-erp-consultant-specialist",
+    skills: ["Oracle ERP", "Consulting"],
   },
 ];
 
 /* ------------------------------------------------------------------ */
-/* STATIC — company perks                                             */
+/* SHUFFLE HELPER                                                    */
+/* NOTE: .tsx file me generic <T> likhna JSX tag jaisa parse hota hai */
+/* isliye trailing comma <T,> zaroori hai warna syntax error aata hai  */
+/* ------------------------------------------------------------------ */
+
+function shuffleArray<T,>(arr: T[]): T[] {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+/* ------------------------------------------------------------------ */
+/* STATIC — company perks                                            */
 /* ------------------------------------------------------------------ */
 
 const COMPANY_PERKS: { icon: "wifi" | "cert" | "building" | "pay"; title: string; description: string }[] = [
@@ -137,7 +177,7 @@ const COMPANY_PERKS: { icon: "wifi" | "cert" | "building" | "pay"; title: string
 ];
 
 /* ------------------------------------------------------------------ */
-/* SMALL HELPERS                                                      */
+/* SMALL HELPERS                                                     */
 /* ------------------------------------------------------------------ */
 
 function SectionNumber({ n }: { n: string }) {
@@ -166,11 +206,13 @@ function PerkIcon({ icon }: { icon: "wifi" | "cert" | "building" | "pay" }) {
       return <Building2 className={cls} />;
     case "pay":
       return <TrendingUp className={cls} />;
+    default:
+      return null;
   }
 }
 
 /* ------------------------------------------------------------------ */
-/* MAIN COMPONENT                                                     */
+/* MAIN COMPONENT                                                    */
 /* ------------------------------------------------------------------ */
 
 export default function JobDetailPage({ job }: { job: JobDetail }) {
@@ -216,9 +258,22 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
   const hasNiceToHave = !!(job.niceToHave && job.niceToHave.length > 0);
   const hasKeySkills = !!(job.keySkills && job.keySkills.length > 0);
 
-  const displayCards = (job.relatedJobs && job.relatedJobs.length > 0)
-    ? job.relatedJobs
-    : DEFAULT_RELATED_JOBS.slice(0, 3);
+  /* -------------------------------------------------------------- */
+  /* RELATED JOBS: pool se current job exclude karke shuffle karo    */
+  /* -------------------------------------------------------------- */
+  const basePool = useMemo(() => {
+    const pool: RelatedJob[] =
+      job.relatedJobs && job.relatedJobs.length > 0 ? job.relatedJobs : RELATED_JOBS_POOL;
+    return pool.filter((rj) => rj.slug !== job.slug);
+  }, [job.relatedJobs, job.slug]);
+
+  const [displayCards, setDisplayCards] = useState<RelatedJob[]>(() => basePool.slice(0, 3));
+
+  useEffect(() => {
+    setDisplayCards(shuffleArray(basePool).slice(0, 3));
+  }, [basePool]);
+
+  const applyHref = `/job-apply?slug=${job.slug}`;
 
   return (
     <div className="bg-[#FAFCFC] min-h-screen">
@@ -276,6 +331,16 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
         </div>
       </div>
 
+      {/* ============ MOBILE APPLY NOW BAR (header ke turant niche) ============ */}
+      <div className="lg:hidden bg-white border-b border-gray-200/70 px-6 py-3 sticky top-0 z-30 shadow-sm">
+        <Link
+          href={applyHref}
+          className="w-full flex items-center justify-center gap-2 bg-[#06282C] hover:bg-[#0A3438] text-white font-semibold text-sm py-3 rounded-xl transition"
+        >
+          Apply Now <ArrowRight className="w-4 h-4" />
+        </Link>
+      </div>
+
       {/* ============ BODY ============ */}
       <div className="mx-auto w-full max-w-[1180px] px-6 sm:px-8 lg:px-0 py-14">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-12 items-start">
@@ -308,7 +373,7 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
               <section className="flex gap-4 mb-12">
                 <SectionNumber n={nextNumber()} />
                 <div className="flex-1 pt-1.5">
-                  <h2 className="text-xl font-bold text-[#06282C] mb-4">What You'll Do</h2>
+                  <h2 className="text-xl font-bold text-[#06282C] mb-4">What You&apos;ll Do</h2>
                   <ul className="space-y-3">
                     {job.whatYoullDo!.map((item, i) => (
                       <li key={i} className="flex gap-3 text-sm text-gray-500 leading-relaxed">
@@ -327,7 +392,7 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
               <section className="flex gap-4 mb-12">
                 <SectionNumber n={nextNumber()} />
                 <div className="flex-1 pt-1.5">
-                  <h2 className="text-xl font-bold text-[#06282C] mb-4">What You'll Bring</h2>
+                  <h2 className="text-xl font-bold text-[#06282C] mb-4">What You&apos;ll Bring</h2>
                   <ul className="space-y-3">
                     {job.whatYoullBring!.map((item, i) => (
                       <li key={i} className="flex gap-3 text-sm text-gray-500 leading-relaxed">
@@ -392,26 +457,25 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
             </div>
           </div>
 
-          {/* ---------------- RIGHT SIDEBAR ---------------- */}
-          <div className="h-fit space-y-4">            
+          {/* ---------------- RIGHT SIDEBAR (desktop) ---------------- */}
+          <div className="h-fit space-y-4">
             <div className="rounded-2xl overflow-hidden border border-gray-200/70">
               <div className="bg-[#1C8C93] text-white p-5">
                 <p className="text-[10px] font-bold tracking-[0.12em] uppercase text-white/70 mb-1.5">
                   Ready to apply?
                 </p>
-                <p className="text-lg font-extrabold mb-1">Takes 3 minutes.</p>
-                <p className="text-[11px] text-white/70">No cover letter required.</p>
+                <p className="text-lg font-extrabold mb-1">Only Take 1 minute.</p>
               </div>
               <div className="p-3 space-y-2 bg-white relative">
                 <Link
-                  href={`/job-apply?slug=${job.slug}`}
+                  href={applyHref}
                   className="w-full flex items-center justify-center gap-2 bg-[#06282C] hover:bg-[#0A3438] text-white font-semibold text-sm py-3 rounded-xl transition"
                 >
                   Apply for This Role <ArrowRight className="w-4 h-4" />
                 </Link>
-                
+
                 <div className="relative">
-                  <button 
+                  <button
                     onClick={handleShareClick}
                     className="w-full flex items-center justify-center gap-2 border border-gray-200 hover:bg-gray-50 text-[#06282C] font-semibold text-sm py-3 rounded-xl transition"
                   >
@@ -422,28 +486,30 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                   {showShareMenu && (
                     <div className="absolute left-0 right-0 bottom-full mb-2 bg-white border border-gray-200 rounded-xl shadow-lg p-3 z-20 space-y-2 animate-in fade-in slide-in-from-bottom-2">
                       <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-1">Share via</p>
-                      
-                      <a
-                        href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`Check out this job: ${job.title} - ${currentUrl}`)}`}
+
+                      <Link
+                        href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+                          `Check out this job: ${job.title} - ${currentUrl}`
+                        )}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full flex items-center gap-2 px-3 py-2 text-xs font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition"
                       >
                         <MessageCircle className="w-4 h-4 text-emerald-500" /> WhatsApp
-                      </a>
+                      </Link>
 
-                      <a
+                      <Link
                         href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full flex items-center gap-2 px-3 py-2 text-xs font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition"
                       >
                         <Facebook className="w-4 h-4 text-blue-600" /> Facebook
-                      </a>
+                      </Link>
 
                       <button
                         onClick={copyToClipboard}
-                        className="w-full flex items-center justify-between px-3 py-2 text-xs font-medium text-gray-700 hover:bg-gray-50 rounded-lg transition w-full"
+                        className="w-full flex items-center justify-between px-3 py-2 text-xs font-medium text-gray-700 hover:bg-gray-50 rounded-lg transition"
                       >
                         <span className="flex items-center gap-2">
                           {copied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4 text-gray-500" />}
@@ -537,8 +603,8 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-[1000px]">
             {displayCards.map((rj) => {
-              const targetUrl = rj.externalUrl || `/career/${rj.slug}`;
               const isExternal = rj.isExternalLink || rj.externalUrl?.startsWith("http");
+              const targetUrl = rj.externalUrl || `/career/${rj.slug}`;
 
               return (
                 <div

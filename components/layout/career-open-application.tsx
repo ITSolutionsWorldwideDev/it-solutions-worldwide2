@@ -16,6 +16,13 @@ import {
   FiFile
 } from "react-icons/fi";
 
+const ALLOWED_FILE_TYPES = [
+  "application/pdf",
+  "application/msword",
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+];
+const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
+
 export default function CareerOpenApplication() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -24,29 +31,45 @@ export default function CareerOpenApplication() {
     expertise: "",
     message: "",
   });
+  const [resume, setResume] = useState<File | null>(null);
   const [coverLetter, setCoverLetter] = useState<File | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const fileInputRef = useRef<HTMLInputElement>(null);
+  const resumeInputRef = useRef<HTMLInputElement>(null);
+  const coverLetterInputRef = useRef<HTMLInputElement>(null);
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const validateFile = (file: File): string | null => {
+    if (!ALLOWED_FILE_TYPES.includes(file.type)) {
+      return "File must be a PDF or Word document.";
+    }
+    if (file.size > MAX_FILE_SIZE) {
+      return "File must be under 5MB.";
+    }
+    return null;
+  };
+
+  const handleResumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
 
-    const allowedTypes = [
-      "application/pdf",
-      "application/msword",
-      "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    ];
-    const maxSize = 5 * 1024 * 1024; // 5MB
-
-    if (!allowedTypes.includes(file.type)) {
-      setErrorMessage("Cover letter must be a PDF or Word document.");
+    const error = validateFile(file);
+    if (error) {
+      setErrorMessage(`Resume: ${error}`);
       return;
     }
-    if (file.size > maxSize) {
-      setErrorMessage("Cover letter must be under 5MB.");
+
+    setErrorMessage("");
+    setResume(file);
+  };
+
+  const handleCoverLetterChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const error = validateFile(file);
+    if (error) {
+      setErrorMessage(`Cover letter: ${error}`);
       return;
     }
 
@@ -54,9 +77,14 @@ export default function CareerOpenApplication() {
     setCoverLetter(file);
   };
 
-  const removeFile = () => {
+  const removeResume = () => {
+    setResume(null);
+    if (resumeInputRef.current) resumeInputRef.current.value = "";
+  };
+
+  const removeCoverLetter = () => {
     setCoverLetter(null);
-    if (fileInputRef.current) fileInputRef.current.value = "";
+    if (coverLetterInputRef.current) coverLetterInputRef.current.value = "";
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -71,6 +99,11 @@ export default function CareerOpenApplication() {
       payload.append("phone", formData.phone);
       payload.append("expertise", formData.expertise);
       payload.append("message", formData.message);
+      // Resume aur cover letter dono optional hain — sirf tab append
+      // hote hain jab user ne actually file select ki ho
+      if (resume) {
+        payload.append("resume", resume);
+      }
       if (coverLetter) {
         payload.append("coverLetter", coverLetter);
       }
@@ -88,8 +121,10 @@ export default function CareerOpenApplication() {
 
       setSuccess(true);
       setFormData({ fullName: "", email: "", phone: "", expertise: "", message: "" });
+      setResume(null);
       setCoverLetter(null);
-      if (fileInputRef.current) fileInputRef.current.value = "";
+      if (resumeInputRef.current) resumeInputRef.current.value = "";
+      if (coverLetterInputRef.current) coverLetterInputRef.current.value = "";
     } catch (err) {
       console.error("Submission error:", err);
       setErrorMessage("Something went wrong. Please try again later.");
@@ -113,7 +148,7 @@ export default function CareerOpenApplication() {
               </span>
 
               <h2 className="text-[28px] sm:text-[34px] font-extrabold tracking-tight leading-[1.15] mb-4">
-                Don't see your <br />perfect role?
+                Don&apos;t see your <br />perfect role?
               </h2>
 
               <p className="text-xs sm:text-sm text-gray-300 leading-relaxed mb-8">
@@ -147,7 +182,7 @@ export default function CareerOpenApplication() {
             <div className="mb-6">
               <h3 className="text-xl font-bold text-[#06282C]">Send your profile</h3>
               <p className="text-xs text-gray-500 mt-1">
-                Takes less than 2 minutes. No cover letter needed.
+                Takes less than 2 minutes.
               </p>
             </div>
 
@@ -247,9 +282,45 @@ export default function CareerOpenApplication() {
                   />
                 </div>
 
+                {/* RESUME UPLOAD — optional */}
                 <div>
                   <label className="block text-[11px] font-bold text-gray-700 uppercase tracking-wider mb-1">
-                    Cover Letter <span className="normal-case font-normal text-gray-400">(optional, PDF or Word, max 5MB)</span>
+                    Resume / CV <span className="normal-case font-normal text-gray-400">(PDF or Word, max 5MB)</span>
+                  </label>
+
+                  {!resume ? (
+                    <label className="flex items-center justify-center gap-2 w-full px-4 py-4 bg-[#FAFAFA] border border-dashed border-gray-300 rounded-xl text-xs sm:text-sm text-gray-500 cursor-pointer hover:border-[#2B8A99] hover:text-[#2B8A99] transition">
+                      <FiUpload className="w-4 h-4" />
+                      <span>Click to upload your resume</span>
+                      <input
+                        ref={resumeInputRef}
+                        type="file"
+                        accept=".pdf,.doc,.docx"
+                        onChange={handleResumeChange}
+                        className="hidden"
+                      />
+                    </label>
+                  ) : (
+                    <div className="flex items-center justify-between w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-700">
+                      <div className="flex items-center gap-2 truncate">
+                        <FiFile className="w-4 h-4 text-[#2B8A99] shrink-0" />
+                        <span className="truncate">{resume.name}</span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={removeResume}
+                        className="text-gray-400 hover:text-red-500 transition shrink-0 ml-2 cursor-pointer"
+                      >
+                        <FiX className="w-4 h-4" />
+                      </button>
+                    </div>
+                  )}
+                </div>
+
+                {/* COVER LETTER UPLOAD — optional */}
+                <div>
+                  <label className="block text-[11px] font-bold text-gray-700 uppercase tracking-wider mb-1">
+                    Cover Letter <span className="normal-case font-normal text-gray-400">(PDF or Word, max 5MB)</span>
                   </label>
 
                   {!coverLetter ? (
@@ -257,10 +328,10 @@ export default function CareerOpenApplication() {
                       <FiUpload className="w-4 h-4" />
                       <span>Click to upload your cover letter</span>
                       <input
-                        ref={fileInputRef}
+                        ref={coverLetterInputRef}
                         type="file"
                         accept=".pdf,.doc,.docx"
-                        onChange={handleFileChange}
+                        onChange={handleCoverLetterChange}
                         className="hidden"
                       />
                     </label>
@@ -272,7 +343,7 @@ export default function CareerOpenApplication() {
                       </div>
                       <button
                         type="button"
-                        onClick={removeFile}
+                        onClick={removeCoverLetter}
                         className="text-gray-400 hover:text-red-500 transition shrink-0 ml-2 cursor-pointer"
                       >
                         <FiX className="w-4 h-4" />
