@@ -59,10 +59,10 @@ export default function Footer() {
               <Link href="https://www.linkedin.com/company/it-solutions-worldwide-bv" aria-label="LinkedIn" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#2B8A99]">
                 <FaLinkedinIn className="w-3.5 h-3.5" />
               </Link>
-              <Link href="https://www.instagram.com/itsolutionsworldwide" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#2B8A99]">
+              <Link href="https://www.instagram.com/itsolutionsworldwidebv/" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#2B8A99]">
                 <FaInstagram className="w-3.5 h-3.5" />
               </Link>
-              <Link href="https://www.tiktok.com/@itsolutionsworldwide" aria-label="TikTok" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#2B8A99]">
+              <Link href="https://www.tiktok.com/@itsolutionsitsolu?lang=en-GB" aria-label="TikTok" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#2B8A99]">
                 <FaTiktok className="w-3.5 h-3.5" />
               </Link>
             </div>
