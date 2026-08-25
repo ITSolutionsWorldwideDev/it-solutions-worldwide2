@@ -22,10 +22,9 @@ import {
   Facebook,
   Copy,
 } from "lucide-react";
-import PdfViewer from "@/components/ui/pdf-viewer";
 
 /* ------------------------------------------------------------------ */
-/* TYPES                                                             */
+/* TYPES                                                              */
 /* ------------------------------------------------------------------ */
 
 export interface JobDetail {
@@ -39,8 +38,6 @@ export interface JobDetail {
   postedAgo?: string;
   salaryRange?: string;
   schedule?: string;
-
-  pdfUrl?: string | null;
 
   aboutRole?: string[];
   whatYoullDo?: string[];
@@ -81,9 +78,11 @@ const RELATED_JOBS_POOL: RelatedJob[] = [
     level: "Mid-level",
     location: "Netherlands",
     workType: "Full-time",
-    description: "Manage financial reporting, reconciliations, and support budgeting cycles.",
+    description:
+      "Manage financial reporting, reconciliations, and support budgeting cycles.",
     isExternalLink: true,
-    externalUrl: "https://www.itsolutionsworldwide.com/en/career/finance-specialist",
+    externalUrl:
+      "https://www.itsolutionsworldwide.com/en/career/finance-specialist",
     skills: ["Finance", "Reporting"],
   },
   {
@@ -93,9 +92,11 @@ const RELATED_JOBS_POOL: RelatedJob[] = [
     level: "Skilled",
     location: "Netherlands",
     workType: "Full-time",
-    description: "Install, maintain, and repair cooling and HVAC systems for clients.",
+    description:
+      "Install, maintain, and repair cooling and HVAC systems for clients.",
     isExternalLink: true,
-    externalUrl: "https://www.itsolutionsworldwide.com/en/career/hvac-service-technician-cooling-technology",
+    externalUrl:
+      "https://www.itsolutionsworldwide.com/en/career/hvac-service-technician-cooling-technology",
     skills: ["HVAC", "Cooling Tech"],
   },
   {
@@ -105,9 +106,11 @@ const RELATED_JOBS_POOL: RelatedJob[] = [
     level: "Mid-level",
     location: "Netherlands",
     workType: "Full-time",
-    description: "Own master data quality and governance within SAP S/4HANA environments.",
+    description:
+      "Own master data quality and governance within SAP S/4HANA environments.",
     isExternalLink: true,
-    externalUrl: "https://www.itsolutionsworldwide.com/en/career/master-data-specialist-sap-s4hana",
+    externalUrl:
+      "https://www.itsolutionsworldwide.com/en/career/master-data-specialist-sap-s4hana",
     skills: ["SAP", "S/4HANA"],
   },
   {
@@ -117,9 +120,11 @@ const RELATED_JOBS_POOL: RelatedJob[] = [
     level: "Internship",
     location: "Remote",
     workType: "Internship",
-    description: "Support the security team with monitoring, audits, and vulnerability checks.",
+    description:
+      "Support the security team with monitoring, audits, and vulnerability checks.",
     isExternalLink: true,
-    externalUrl: "https://www.itsolutionsworldwide.com/en/career/cyber-security-intern",
+    externalUrl:
+      "https://www.itsolutionsworldwide.com/en/career/cyber-security-intern",
     skills: ["Security", "Monitoring"],
   },
   {
@@ -129,9 +134,11 @@ const RELATED_JOBS_POOL: RelatedJob[] = [
     level: "Internship",
     location: "Remote",
     workType: "Internship",
-    description: "Assist with daily administrative operations, data management, and documentation.",
+    description:
+      "Assist with daily administrative operations, data management, and documentation.",
     isExternalLink: true,
-    externalUrl: "https://www.itsolutionsworldwide.com/en/career/backoffice-intern",
+    externalUrl:
+      "https://www.itsolutionsworldwide.com/en/career/backoffice-intern",
     skills: ["Operations", "Admin"],
   },
   {
@@ -141,39 +148,67 @@ const RELATED_JOBS_POOL: RelatedJob[] = [
     level: "Senior",
     location: "Netherlands",
     workType: "Full-time",
-    description: "Implement and optimize Oracle ERP modules for enterprise clients.",
+    description:
+      "Implement and optimize Oracle ERP modules for enterprise clients.",
     isExternalLink: true,
-    externalUrl: "https://www.itsolutionsworldwide.com/en/career/oracle-erp-consultant-specialist",
+    externalUrl:
+      "https://www.itsolutionsworldwide.com/en/career/oracle-erp-consultant-specialist",
     skills: ["Oracle ERP", "Consulting"],
   },
 ];
 
 /* ------------------------------------------------------------------ */
-/* SHUFFLE HELPER                                                    */
+/* SHUFFLE HELPER                                                     */
 /* ------------------------------------------------------------------ */
 
-function shuffleArray<T,>(arr: T[]): T[] {
+function shuffleArray<T>(arr: T[]): T[] {
   const copy = [...arr];
+
   for (let i = copy.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [copy[i], copy[j]] = [copy[j], copy[i]];
   }
+
   return copy;
 }
 
 /* ------------------------------------------------------------------ */
-/* STATIC — company perks                                            */
+/* STATIC — company perks                                             */
 /* ------------------------------------------------------------------ */
 
-const COMPANY_PERKS: { icon: "wifi" | "cert" | "building" | "pay"; title: string; description: string }[] = [
-  { icon: "wifi", title: "Remote-First", description: "Full flexibility — work from wherever you do your best thinking." },
-  { icon: "cert", title: "Cert Budget", description: "Yearly budget to spend on courses, conferences, and certifications." },
-  { icon: "building", title: "Job Stability", description: "15 years in operation, zero layoffs, 200+ enterprise clients." },
-  { icon: "pay", title: "Competitive Pay", description: "Market-leading base + performance bonus for the right candidate." },
+const COMPANY_PERKS: {
+  icon: "wifi" | "cert" | "building" | "pay";
+  title: string;
+  description: string;
+}[] = [
+  {
+    icon: "wifi",
+    title: "Remote-First",
+    description:
+      "Full flexibility — work from wherever you do your best thinking.",
+  },
+  {
+    icon: "cert",
+    title: "Cert Budget",
+    description:
+      "Yearly budget to spend on courses, conferences, and certifications.",
+  },
+  {
+    icon: "building",
+    title: "Job Stability",
+    description:
+      "15 years in operation, zero layoffs, 200+ enterprise clients.",
+  },
+  {
+    icon: "pay",
+    title: "Competitive Pay",
+    description:
+      "Market-leading base + performance bonus for the right candidate.",
+  },
 ];
 
 /* ------------------------------------------------------------------ */
-/* SMALL HELPERS                                                     */
+/* SMALL HELPERS                                                      */
 /* ------------------------------------------------------------------ */
 
 function SectionNumber({ n }: { n: string }) {
@@ -191,8 +226,13 @@ function SectionNumber({ n }: { n: string }) {
   );
 }
 
-function PerkIcon({ icon }: { icon: "wifi" | "cert" | "building" | "pay" }) {
+function PerkIcon({
+  icon,
+}: {
+  icon: "wifi" | "cert" | "building" | "pay";
+}) {
   const cls = "w-4 h-4 text-[#1C8C93]";
+
   switch (icon) {
     case "wifi":
       return <Wifi className={cls} />;
@@ -208,7 +248,7 @@ function PerkIcon({ icon }: { icon: "wifi" | "cert" | "building" | "pay" }) {
 }
 
 /* ------------------------------------------------------------------ */
-/* MAIN COMPONENT                                                    */
+/* MAIN COMPONENT                                                     */
 /* ------------------------------------------------------------------ */
 
 export default function JobDetailPage({ job }: { job: JobDetail }) {
@@ -230,40 +270,69 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
           text: `Check out this job opening: ${job.title}`,
           url: currentUrl,
         });
+
         return;
       } catch (err) {
         // Fallback to custom menu if user cancels or API fails
       }
     }
+
     setShowShareMenu(!showShareMenu);
   };
 
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(currentUrl);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(currentUrl);
+      setCopied(true);
+
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    } catch (error) {
+      console.error("Failed to copy URL:", error);
+    }
   };
 
   let sectionCount = 0;
+
   const nextNumber = () => String(++sectionCount).padStart(2, "0");
 
-  const hasAboutContent = !!(job.aboutRole && job.aboutRole.length > 0);
-  const hasPdf = !!job.pdfUrl;
-  const hasWhatYoullDo = !!(job.whatYoullDo && job.whatYoullDo.length > 0);
-  const hasWhatYoullBring = !!(job.whatYoullBring && job.whatYoullBring.length > 0);
-  const hasNiceToHave = !!(job.niceToHave && job.niceToHave.length > 0);
-  const hasKeySkills = !!(job.keySkills && job.keySkills.length > 0);
+  const hasAboutContent = !!(
+    job.aboutRole && job.aboutRole.length > 0
+  );
+
+  const hasWhatYoullDo = !!(
+    job.whatYoullDo && job.whatYoullDo.length > 0
+  );
+
+  const hasWhatYoullBring = !!(
+    job.whatYoullBring && job.whatYoullBring.length > 0
+  );
+
+  const hasNiceToHave = !!(
+    job.niceToHave && job.niceToHave.length > 0
+  );
+
+  const hasKeySkills = !!(
+    job.keySkills && job.keySkills.length > 0
+  );
 
   /* -------------------------------------------------------------- */
   /* RELATED JOBS                                                   */
   /* -------------------------------------------------------------- */
+
   const basePool = useMemo(() => {
     const pool: RelatedJob[] =
-      job.relatedJobs && job.relatedJobs.length > 0 ? job.relatedJobs : RELATED_JOBS_POOL;
+      job.relatedJobs && job.relatedJobs.length > 0
+        ? job.relatedJobs
+        : RELATED_JOBS_POOL;
+
     return pool.filter((rj) => rj.slug !== job.slug);
   }, [job.relatedJobs, job.slug]);
 
-  const [displayCards, setDisplayCards] = useState<RelatedJob[]>(() => basePool.slice(0, 3));
+  const [displayCards, setDisplayCards] = useState<RelatedJob[]>(() =>
+    basePool.slice(0, 3)
+  );
 
   useEffect(() => {
     setDisplayCards(shuffleArray(basePool).slice(0, 3));
@@ -274,6 +343,7 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
   return (
     <div className="bg-[#FAFCFC] min-h-screen">
       {/* ============ HERO BAND ============ */}
+
       <div className="bg-[#0A2220] text-white">
         <div className="mx-auto w-full max-w-[1180px] px-6 sm:px-8 lg:px-0 pt-12 pb-10">
           <div className="flex items-center gap-3 mb-5">
@@ -282,6 +352,7 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                 {job.department}
               </span>
             )}
+
             {job.seniority && (
               <span className="text-[11px] font-semibold px-3 py-1 rounded-full bg-white/10 text-white/80">
                 {job.seniority}
@@ -296,29 +367,42 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
           <div className="flex flex-wrap gap-x-14 gap-y-5">
             <div>
               <div className="flex items-center gap-1.5 text-[10px] font-semibold tracking-[0.12em] uppercase text-white/40 mb-1.5">
-                <MapPin className="w-3 h-3" /> Location
+                <MapPin className="w-3 h-3" />
+                Location
               </div>
+
               <p className="text-sm font-bold">{job.location}</p>
             </div>
+
             <div>
               <div className="flex items-center gap-1.5 text-[10px] font-semibold tracking-[0.12em] uppercase text-white/40 mb-1.5">
-                <Briefcase className="w-3 h-3" /> Work Type
+                <Briefcase className="w-3 h-3" />
+                Work Type
               </div>
+
               <p className="text-sm font-bold">{job.workType}</p>
             </div>
+
             {job.salaryRange && (
               <div>
                 <div className="flex items-center gap-1.5 text-[10px] font-semibold tracking-[0.12em] uppercase text-white/40 mb-1.5">
-                  <DollarSign className="w-3 h-3" /> Salary
+                  <DollarSign className="w-3 h-3" />
+                  Salary
                 </div>
-                <p className="text-sm font-bold">{job.salaryRange}</p>
+
+                <p className="text-sm font-bold">
+                  {job.salaryRange}
+                </p>
               </div>
             )}
+
             {job.schedule && (
               <div>
                 <div className="flex items-center gap-1.5 text-[10px] font-semibold tracking-[0.12em] uppercase text-white/40 mb-1.5">
-                  <Clock className="w-3 h-3" /> Schedule
+                  <Clock className="w-3 h-3" />
+                  Schedule
                 </div>
+
                 <p className="text-sm font-bold">{job.schedule}</p>
               </div>
             )}
@@ -327,39 +411,43 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
       </div>
 
       {/* ============ MOBILE APPLY NOW BAR ============ */}
+
       <div className="lg:hidden bg-white border-b border-gray-200/70 px-6 py-3 sticky top-0 z-30 shadow-sm">
         <Link
           href={applyHref}
           className="w-full flex items-center justify-center gap-2 bg-[#06282C] hover:bg-[#0A3438] text-white font-semibold text-sm py-3 rounded-xl transition"
         >
-          Apply Now <ArrowRight className="w-4 h-4" />
+          Apply Now
+          <ArrowRight className="w-4 h-4" />
         </Link>
       </div>
 
       {/* ============ BODY ============ */}
+
       <div className="mx-auto w-full max-w-[1180px] px-6 sm:px-8 lg:px-0 py-14">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-12 items-start">
           {/* ---------------- LEFT COLUMN ---------------- */}
+
           <div>
-            {(hasAboutContent || hasPdf) && (
+            {hasAboutContent && (
               <section className="flex gap-4 mb-12">
                 <SectionNumber n={nextNumber()} />
+
                 <div className="flex-1 pt-1.5">
-                  <h2 className="text-xl font-bold text-[#06282C] mb-3">About the Role</h2>
-                  {hasAboutContent && (
-                    <div className="space-y-3 mb-4">
-                      {job.aboutRole!.map((p, i) => (
-                        <p key={i} className="text-sm text-gray-500 leading-relaxed">
-                          {p}
-                        </p>
-                      ))}
-                    </div>
-                  )}
-                  {hasPdf && job.pdfUrl && (
-                    <div className="rounded-2xl overflow-hidden border border-gray-200/70">
-                      <PdfViewer pdfUrl={job.pdfUrl} />
-                    </div>
-                  )}
+                  <h2 className="text-xl font-bold text-[#06282C] mb-3">
+                    About the Role
+                  </h2>
+
+                  <div className="space-y-3 mb-4">
+                    {job.aboutRole!.map((p, i) => (
+                      <p
+                        key={i}
+                        className="text-sm text-gray-500 leading-relaxed"
+                      >
+                        {p}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </section>
             )}
@@ -367,14 +455,22 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
             {hasWhatYoullDo && (
               <section className="flex gap-4 mb-12">
                 <SectionNumber n={nextNumber()} />
+
                 <div className="flex-1 pt-1.5">
-                  <h2 className="text-xl font-bold text-[#06282C] mb-4">What You&apos;ll Do</h2>
+                  <h2 className="text-xl font-bold text-[#06282C] mb-4">
+                    What You&apos;ll Do
+                  </h2>
+
                   <ul className="space-y-3">
                     {job.whatYoullDo!.map((item, i) => (
-                      <li key={i} className="flex gap-3 text-sm text-gray-500 leading-relaxed">
+                      <li
+                        key={i}
+                        className="flex gap-3 text-sm text-gray-500 leading-relaxed"
+                      >
                         <span className="text-[#1C8C93] font-bold text-xs pt-0.5 shrink-0">
                           {String(i + 1).padStart(2, "0")}
                         </span>
+
                         {item}
                       </li>
                     ))}
@@ -386,11 +482,18 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
             {hasWhatYoullBring && (
               <section className="flex gap-4 mb-12">
                 <SectionNumber n={nextNumber()} />
+
                 <div className="flex-1 pt-1.5">
-                  <h2 className="text-xl font-bold text-[#06282C] mb-4">What You&apos;ll Bring</h2>
+                  <h2 className="text-xl font-bold text-[#06282C] mb-4">
+                    What You&apos;ll Bring
+                  </h2>
+
                   <ul className="space-y-3">
                     {job.whatYoullBring!.map((item, i) => (
-                      <li key={i} className="flex gap-3 text-sm text-gray-500 leading-relaxed">
+                      <li
+                        key={i}
+                        className="flex gap-3 text-sm text-gray-500 leading-relaxed"
+                      >
                         <CheckCircle2 className="w-4 h-4 text-[#1C8C93] shrink-0 mt-0.5" />
                         {item}
                       </li>
@@ -403,12 +506,19 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
             {hasNiceToHave && (
               <section className="flex gap-4 mb-12">
                 <SectionNumber n={nextNumber()} />
+
                 <div className="flex-1 pt-1.5">
-                  <h2 className="text-xl font-bold text-[#06282C] mb-4">Nice to Have</h2>
+                  <h2 className="text-xl font-bold text-[#06282C] mb-4">
+                    Nice to Have
+                  </h2>
+
                   <div className="bg-[#EEF8F7] rounded-2xl p-5">
                     <ul className="space-y-2.5">
                       {job.niceToHave!.map((item, i) => (
-                        <li key={i} className="flex gap-3 text-sm text-gray-600 leading-relaxed">
+                        <li
+                          key={i}
+                          className="flex gap-3 text-sm text-gray-600 leading-relaxed"
+                        >
                           <span className="w-1.5 h-1.5 rounded-full bg-[#1C8C93] mt-2 shrink-0" />
                           {item}
                         </li>
@@ -421,8 +531,12 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
 
             <section className="flex gap-4 mb-10">
               <SectionNumber n={nextNumber()} />
+
               <div className="flex-1 pt-1.5">
-                <h2 className="text-xl font-bold text-[#06282C] mb-5">Why IT Solutions Worldwide</h2>
+                <h2 className="text-xl font-bold text-[#06282C] mb-5">
+                  Why IT Solutions Worldwide
+                </h2>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {COMPANY_PERKS.map((perk, i) => (
                     <div
@@ -432,9 +546,15 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                       <div className="w-8 h-8 rounded-lg bg-[#EEF8F7] flex items-center justify-center shrink-0">
                         <PerkIcon icon={perk.icon} />
                       </div>
+
                       <div>
-                        <p className="text-sm font-bold text-[#06282C] mb-0.5">{perk.title}</p>
-                        <p className="text-xs text-gray-500 leading-relaxed">{perk.description}</p>
+                        <p className="text-sm font-bold text-[#06282C] mb-0.5">
+                          {perk.title}
+                        </p>
+
+                        <p className="text-xs text-gray-500 leading-relaxed">
+                          {perk.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -453,21 +573,28 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
           </div>
 
           {/* ---------------- RIGHT SIDEBAR (desktop) ---------------- */}
+
           <div className="h-fit space-y-4">
             <div className="rounded-2xl overflow-hidden border border-gray-200/70">
               <div className="bg-[#1C8C93] text-white p-5">
                 <p className="text-[10px] font-bold tracking-[0.12em] uppercase text-white/70 mb-1.5">
                   Ready to apply?
                 </p>
-                <p className="text-lg font-extrabold mb-1">Only Takes 1 minute.</p>
+
+                <p className="text-lg font-extrabold mb-1">
+                  Only Takes 1 minute.
+                </p>
+
                 <p className="text-[11px] text-white/70"></p>
               </div>
+
               <div className="p-3 space-y-2 bg-white relative">
                 <Link
                   href={applyHref}
                   className="w-full flex items-center justify-center gap-2 bg-[#06282C] hover:bg-[#0A3438] text-white font-semibold text-sm py-3 rounded-xl transition"
                 >
-                  Apply for This Role <ArrowRight className="w-4 h-4" />
+                  Apply for This Role
+                  <ArrowRight className="w-4 h-4" />
                 </Link>
 
                 <div className="relative">
@@ -475,13 +602,17 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                     onClick={handleShareClick}
                     className="w-full flex items-center justify-center gap-2 border border-gray-200 hover:bg-gray-50 text-[#06282C] font-semibold text-sm py-3 rounded-xl transition"
                   >
-                    <Share2 className="w-4 h-4" /> Share This Job
+                    <Share2 className="w-4 h-4" />
+                    Share This Job
                   </button>
 
                   {/* SHARE OPTIONS POPUP */}
+
                   {showShareMenu && (
                     <div className="absolute left-0 right-0 bottom-full mb-2 bg-white border border-gray-200 rounded-xl shadow-lg p-3 z-20 space-y-2 animate-in fade-in slide-in-from-bottom-2">
-                      <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-1">Share via</p>
+                      <p className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-1">
+                        Share via
+                      </p>
 
                       <Link
                         href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
@@ -491,16 +622,20 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                         rel="noopener noreferrer"
                         className="w-full flex items-center gap-2 px-3 py-2 text-xs font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition"
                       >
-                        <MessageCircle className="w-4 h-4 text-emerald-500" /> WhatsApp
+                        <MessageCircle className="w-4 h-4 text-emerald-500" />
+                        WhatsApp
                       </Link>
 
                       <Link
-                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
+                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                          currentUrl
+                        )}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full flex items-center gap-2 px-3 py-2 text-xs font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition"
                       >
-                        <Facebook className="w-4 h-4 text-blue-600" /> Facebook
+                        <Facebook className="w-4 h-4 text-blue-600" />
+                        Facebook
                       </Link>
 
                       <button
@@ -508,7 +643,12 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                         className="w-full flex items-center justify-between px-3 py-2 text-xs font-medium text-gray-700 hover:bg-gray-50 rounded-lg transition"
                       >
                         <span className="flex items-center gap-2">
-                          {copied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4 text-gray-500" />}
+                          {copied ? (
+                            <Check className="w-4 h-4 text-green-500" />
+                          ) : (
+                            <Copy className="w-4 h-4 text-gray-500" />
+                          )}
+
                           {copied ? "Copied Link!" : "Copy Link"}
                         </span>
                       </button>
@@ -519,45 +659,71 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
             </div>
 
             <div className="bg-white border border-gray-200/70 rounded-2xl p-5">
-              <h4 className="text-sm font-bold text-[#06282C] mb-4">Role Details</h4>
+              <h4 className="text-sm font-bold text-[#06282C] mb-4">
+                Role Details
+              </h4>
+
               <dl className="space-y-4 text-xs">
                 {job.salaryRange && (
                   <div className="flex items-center justify-between">
                     <dt className="flex items-center gap-2 text-gray-400">
-                      <DollarSign className="w-3.5 h-3.5" /> Salary
+                      <DollarSign className="w-3.5 h-3.5" />
+                      Salary
                     </dt>
-                    <dd className="font-semibold text-[#06282C]">{job.salaryRange}</dd>
+
+                    <dd className="font-semibold text-[#06282C]">
+                      {job.salaryRange}
+                    </dd>
                   </div>
                 )}
-                {/* Location row with smart alignment: single-line text stays right, multi-line addresses stack safely */}
+
+                {/* Location row with smart alignment */}
+
                 <div className="flex items-start justify-between gap-4">
                   <dt className="flex items-center gap-2 text-gray-400 shrink-0 pt-0.5">
-                    <MapPin className="w-3.5 h-3.5" /> Location
+                    <MapPin className="w-3.5 h-3.5" />
+                    Location
                   </dt>
+
                   <dd className="font-semibold text-[#06282C] text-right leading-relaxed max-w-[180px]">
                     {job.location}
                   </dd>
                 </div>
+
                 <div className="flex items-center justify-between">
                   <dt className="flex items-center gap-2 text-gray-400">
-                    <Briefcase className="w-3.5 h-3.5" /> Work Type
+                    <Briefcase className="w-3.5 h-3.5" />
+                    Work Type
                   </dt>
-                  <dd className="font-semibold text-[#06282C]">{job.workType}</dd>
+
+                  <dd className="font-semibold text-[#06282C]">
+                    {job.workType}
+                  </dd>
                 </div>
+
                 {job.seniority && (
                   <div className="flex items-center justify-between">
                     <dt className="flex items-center gap-2 text-gray-400">
-                      <TrendingUp className="w-3.5 h-3.5" /> Seniority
+                      <TrendingUp className="w-3.5 h-3.5" />
+                      Seniority
                     </dt>
-                    <dd className="font-semibold text-[#06282C]">{job.seniority}</dd>
+
+                    <dd className="font-semibold text-[#06282C]">
+                      {job.seniority}
+                    </dd>
                   </div>
                 )}
+
                 {job.department && (
                   <div className="flex items-center justify-between">
                     <dt className="flex items-center gap-2 text-gray-400">
-                      <Building2 className="w-3.5 h-3.5" /> Department
+                      <Building2 className="w-3.5 h-3.5" />
+                      Department
                     </dt>
-                    <dd className="font-semibold text-[#06282C]">{job.department}</dd>
+
+                    <dd className="font-semibold text-[#06282C]">
+                      {job.department}
+                    </dd>
                   </div>
                 )}
               </dl>
@@ -565,7 +731,10 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
 
             {hasKeySkills && (
               <div className="bg-white border border-gray-200/70 rounded-2xl p-5">
-                <h4 className="text-sm font-bold text-[#06282C] mb-4">Key Skills</h4>
+                <h4 className="text-sm font-bold text-[#06282C] mb-4">
+                  Key Skills
+                </h4>
+
                 <div className="flex flex-wrap gap-2">
                   {job.keySkills!.map((skill) => (
                     <span
@@ -582,11 +751,13 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
         </div>
 
         {/* ============ FULL-WIDTH CENTERED RELATED CARDS SECTION ============ */}
+
         <div className="mt-20 pt-12 border-t border-gray-200/60 w-full flex flex-col items-center">
           <div className="text-center mb-8">
             <p className="text-[11px] font-bold tracking-[0.15em] uppercase text-gray-400 mb-2">
               Explore More
             </p>
+
             <h3 className="text-2xl sm:text-3xl font-extrabold text-[#06282C]">
               You might also like
             </h3>
@@ -594,8 +765,12 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-[1000px]">
             {displayCards.map((rj) => {
-              const isExternal = rj.isExternalLink || rj.externalUrl?.startsWith("http");
-              const targetUrl = rj.externalUrl || `/career/${rj.slug}`;
+              const isExternal =
+                rj.isExternalLink ||
+                rj.externalUrl?.startsWith("http");
+
+              const targetUrl =
+                rj.externalUrl || `/career/${rj.slug}`;
 
               return (
                 <div
@@ -610,26 +785,38 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                             {rj.department}
                           </span>
                         )}
+
                         {rj.level && (
                           <span className="text-[10px] font-semibold px-2 py-0.5 bg-[#F3E8FF] text-[#7E22CE] rounded-full">
                             {rj.level}
                           </span>
                         )}
                       </div>
-                      {rj.postedAgo && <span className="text-[10px] text-gray-400">{rj.postedAgo}</span>}
+
+                      {rj.postedAgo && (
+                        <span className="text-[10px] text-gray-400">
+                          {rj.postedAgo}
+                        </span>
+                      )}
                     </div>
 
-                    <h4 className="text-sm font-bold text-[#06282C] mb-2">{rj.title}</h4>
+                    <h4 className="text-sm font-bold text-[#06282C] mb-2">
+                      {rj.title}
+                    </h4>
 
                     <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-gray-400 mb-3">
                       <span className="flex items-center gap-1">
-                        <MapPin className="w-3 h-3" /> {rj.location}
+                        <MapPin className="w-3 h-3" />
+                        {rj.location}
                       </span>
+
                       <span>{rj.workType}</span>
                     </div>
 
                     {rj.description && (
-                      <p className="text-xs text-gray-500 leading-relaxed mb-4">{rj.description}</p>
+                      <p className="text-xs text-gray-500 leading-relaxed mb-4">
+                        {rj.description}
+                      </p>
                     )}
 
                     {rj.skills && rj.skills.length > 0 && (
@@ -653,14 +840,16 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                       rel="noopener noreferrer"
                       className="text-xs font-semibold text-[#1C8C93] hover:underline flex items-center gap-1 pt-2 border-t border-gray-100"
                     >
-                      Visit Link <Globe className="w-3 h-3" />
+                      Visit Link
+                      <Globe className="w-3 h-3" />
                     </a>
                   ) : (
                     <Link
                       href={targetUrl}
                       className="text-xs font-semibold text-[#1C8C93] hover:underline flex items-center gap-1 pt-2 border-t border-gray-100"
                     >
-                      View Role <ArrowRight className="w-3 h-3" />
+                      View Role
+                      <ArrowRight className="w-3 h-3" />
                     </Link>
                   )}
                 </div>

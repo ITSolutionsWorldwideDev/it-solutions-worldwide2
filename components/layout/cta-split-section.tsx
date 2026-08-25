@@ -7,6 +7,7 @@ type CtaSplitSectionProps = {
   heading: string;
   highlightWord?: string;
   subtext?: string;
+  
   imageUrl: string;
   imageAlt: string;
   overlayText?: string;

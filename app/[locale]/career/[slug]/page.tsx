@@ -1,17 +1,16 @@
 // app/[locale]/career/[slug]/page.tsx
 "use client";
-
 import { useEffect, useState } from "react";
 import { useParams, notFound } from "next/navigation";
 import JobDetailPage, { JobDetail } from "@/components/layout/job-detail-page";
-import { extractPdfText, parseJobPdfText, parseMarkdownJobContent, isParsedContentEmpty } from "@/utils/pdf-job-parser";
+import { parseJobContent } from "@/lib/parse-job-content";
+
 
 interface ApiJob {
   job_info_id: number;
   title: string;
   location: string;
   type: string;
-  pdf_url?: string | null;
   content?: string | null;
   created_at: string;
 }
@@ -47,21 +46,19 @@ export default function Page() {
 
   useEffect(() => {
     let cancelled = false;
-
     const load = async () => {
       try {
         const res = await fetch(`/api/jobs-info?page=1&limit=1000`, { cache: "no-store" });
         const data = await res.json();
         const items: ApiJob[] = data.items || [];
-
         const match = items.find((j) => slugify(j.title) === params.slug);
-
         if (!match) {
-          setFailed(true);
-          setLoading(false);
+          if (!cancelled) {
+            setFailed(true);
+            setLoading(false);
+          }
           return;
         }
-
         const baseJob: JobDetail = {
           slug: slugify(match.title),
           title: match.title,
@@ -69,57 +66,18 @@ export default function Page() {
           workType: match.type,
           postedAgo: timeAgo(match.created_at),
         };
-
-        // 1) DB ke content field mein pehle se text hai — markdown headings ke
-        // hisaab se structured sections mein todo
-        if (match.content && match.content.trim().length > 0) {
-          const parsed = parseMarkdownJobContent(match.content);
-
-          if (!isParsedContentEmpty(parsed)) {
-            setJob({
-              ...baseJob,
-              aboutRole: parsed.aboutRole.length ? parsed.aboutRole : undefined,
-              whatYoullDo: parsed.whatYoullDo.length ? parsed.whatYoullDo : undefined,
-              whatYoullBring: parsed.whatYoullBring.length ? parsed.whatYoullBring : undefined,
-              niceToHave: parsed.niceToHave.length ? parsed.niceToHave : undefined,
-            });
-          } else {
-            // Headings match nahi hui — raw text hi paragraphs ki tarah dikha do
-            setJob({ ...baseJob, aboutRole: contentToParagraphs(match.content) });
-          }
-          setLoading(false);
-          return;
-        }
-
-        // 2) content khali hai — PDF khud parse karo (agar PDF hai)
-        if (match.pdf_url) {
-          try {
-            const rawText = await extractPdfText(match.pdf_url);
-            const parsed = parseJobPdfText(rawText);
-
-            if (!cancelled) {
-              if (!isParsedContentEmpty(parsed)) {
-                setJob({
-                  ...baseJob,
-                  aboutRole: parsed.aboutRole.length ? parsed.aboutRole : undefined,
-                  whatYoullDo: parsed.whatYoullDo.length ? parsed.whatYoullDo : undefined,
-                  whatYoullBring: parsed.whatYoullBring.length ? parsed.whatYoullBring : undefined,
-                  niceToHave: parsed.niceToHave.length ? parsed.niceToHave : undefined,
-                });
-              } else {
-                // Headings match nahi hui — kam se kam raw text hi dikha do
-                setJob({ ...baseJob, aboutRole: contentToParagraphs(rawText).slice(0, 6) });
-              }
-            }
-          } catch (pdfErr) {
-            console.error("PDF parse failed, falling back to PDF link", pdfErr);
-            if (!cancelled) setJob({ ...baseJob, pdfUrl: match.pdf_url });
-          }
-        } else {
-          // Na content, na PDF — basic info ke sath page dikha do
-          setJob(baseJob);
-        }
-
+      if (match.content && match.content.trim().length > 0) {
+  const parsed = parseJobContent(match.content);
+  setJob({
+    ...baseJob,
+    aboutRole: parsed.aboutRole,
+    whatYoullDo: parsed.whatYoullDo,
+    whatYoullBring: parsed.whatYoullBring,
+    niceToHave: parsed.niceToHave,
+  });
+} else {
+  setJob(baseJob);
+}
         if (!cancelled) setLoading(false);
       } catch (err) {
         console.error("Failed to load job detail", err);
@@ -129,7 +87,6 @@ export default function Page() {
         }
       }
     };
-
     load();
     return () => {
       cancelled = true;
