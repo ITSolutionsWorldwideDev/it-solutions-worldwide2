@@ -23,6 +23,7 @@ function slugify(title: string): string {
     .replace(/\s+/g, "-");
 }
 
+
 function timeAgo(dateStr: string): string {
   const diffMs = Date.now() - new Date(dateStr).getTime();
   const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
@@ -74,6 +75,8 @@ export default function Page() {
     whatYoullDo: parsed.whatYoullDo,
     whatYoullBring: parsed.whatYoullBring,
     niceToHave: parsed.niceToHave,
+        additionalInfo: parsed.additionalInfo, // ⬅️ FIX — yeh line missing thi
+
   });
 } else {
   setJob(baseJob);
