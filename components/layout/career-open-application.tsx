@@ -32,12 +32,10 @@ export default function CareerOpenApplication() {
     message: "",
   });
   const [resume, setResume] = useState<File | null>(null);
-  const [coverLetter, setCoverLetter] = useState<File | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const resumeInputRef = useRef<HTMLInputElement>(null);
-  const coverLetterInputRef = useRef<HTMLInputElement>(null);
 
   const validateFile = (file: File): string | null => {
     if (!ALLOWED_FILE_TYPES.includes(file.type)) {
@@ -63,32 +61,20 @@ export default function CareerOpenApplication() {
     setResume(file);
   };
 
-  const handleCoverLetterChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
-    const error = validateFile(file);
-    if (error) {
-      setErrorMessage(`Cover letter: ${error}`);
-      return;
-    }
-
-    setErrorMessage("");
-    setCoverLetter(file);
-  };
-
   const removeResume = () => {
     setResume(null);
     if (resumeInputRef.current) resumeInputRef.current.value = "";
   };
 
-  const removeCoverLetter = () => {
-    setCoverLetter(null);
-    if (coverLetterInputRef.current) coverLetterInputRef.current.value = "";
-  };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Resume ab mandatory hai — submit se pehle check karo
+    if (!resume) {
+      setErrorMessage("Please upload your resume/CV to continue.");
+      return;
+    }
+
     setSubmitting(true);
     setErrorMessage("");
 
@@ -99,14 +85,7 @@ export default function CareerOpenApplication() {
       payload.append("phone", formData.phone);
       payload.append("expertise", formData.expertise);
       payload.append("message", formData.message);
-      // Resume aur cover letter dono optional hain — sirf tab append
-      // hote hain jab user ne actually file select ki ho
-      if (resume) {
-        payload.append("resume", resume);
-      }
-      if (coverLetter) {
-        payload.append("coverLetter", coverLetter);
-      }
+      payload.append("resume", resume);
 
       const response = await fetch("/api/career-application", {
         method: "POST",
@@ -122,9 +101,7 @@ export default function CareerOpenApplication() {
       setSuccess(true);
       setFormData({ fullName: "", email: "", phone: "", expertise: "", message: "" });
       setResume(null);
-      setCoverLetter(null);
       if (resumeInputRef.current) resumeInputRef.current.value = "";
-      if (coverLetterInputRef.current) coverLetterInputRef.current.value = "";
     } catch (err) {
       console.error("Submission error:", err);
       setErrorMessage("Something went wrong. Please try again later.");
@@ -156,7 +133,6 @@ export default function CareerOpenApplication() {
               </p>
             </div>
 
-            {/* BULLET POINTS WITH EXACT TARGET ICON COLORS */}
             <div className="space-y-4 pt-6 border-t border-white/10">
               <div className="flex items-center gap-3">
                 <FiClock className="w-4 h-4 text-[#5CD2C8] shrink-0" />
@@ -282,10 +258,11 @@ export default function CareerOpenApplication() {
                   />
                 </div>
 
-                {/* RESUME UPLOAD — optional */}
+                {/* RESUME UPLOAD — ab mandatory hai */}
                 <div>
                   <label className="block text-[11px] font-bold text-gray-700 uppercase tracking-wider mb-1">
-                    Resume / CV <span className="normal-case font-normal text-gray-400">(PDF or Word, max 5MB)</span>
+                    Resume / CV <span className="normal-case font-normal text-red-500">*required</span>{" "}
+                    <span className="normal-case font-normal text-gray-400">(PDF or Word, max 5MB)</span>
                   </label>
 
                   {!resume ? (
@@ -309,41 +286,6 @@ export default function CareerOpenApplication() {
                       <button
                         type="button"
                         onClick={removeResume}
-                        className="text-gray-400 hover:text-red-500 transition shrink-0 ml-2 cursor-pointer"
-                      >
-                        <FiX className="w-4 h-4" />
-                      </button>
-                    </div>
-                  )}
-                </div>
-
-                {/* COVER LETTER UPLOAD — optional */}
-                <div>
-                  <label className="block text-[11px] font-bold text-gray-700 uppercase tracking-wider mb-1">
-                    Cover Letter <span className="normal-case font-normal text-gray-400">(PDF or Word, max 5MB)</span>
-                  </label>
-
-                  {!coverLetter ? (
-                    <label className="flex items-center justify-center gap-2 w-full px-4 py-4 bg-[#FAFAFA] border border-dashed border-gray-300 rounded-xl text-xs sm:text-sm text-gray-500 cursor-pointer hover:border-[#2B8A99] hover:text-[#2B8A99] transition">
-                      <FiUpload className="w-4 h-4" />
-                      <span>Click to upload your cover letter</span>
-                      <input
-                        ref={coverLetterInputRef}
-                        type="file"
-                        accept=".pdf,.doc,.docx"
-                        onChange={handleCoverLetterChange}
-                        className="hidden"
-                      />
-                    </label>
-                  ) : (
-                    <div className="flex items-center justify-between w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-700">
-                      <div className="flex items-center gap-2 truncate">
-                        <FiFile className="w-4 h-4 text-[#2B8A99] shrink-0" />
-                        <span className="truncate">{coverLetter.name}</span>
-                      </div>
-                      <button
-                        type="button"
-                        onClick={removeCoverLetter}
                         className="text-gray-400 hover:text-red-500 transition shrink-0 ml-2 cursor-pointer"
                       >
                         <FiX className="w-4 h-4" />
