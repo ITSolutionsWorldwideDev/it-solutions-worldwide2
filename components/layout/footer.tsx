@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
 
         {/* MIDDLE GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 py-12 border-b border-white/10 text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 py-12 border-b border-white/10 text-left">
           {/* Col 1 */}
           <div className="space-y-6">
             <p className="text-xs text-gray-400 leading-relaxed">IT Solutions Worldwide delivers innovative IT solutions in supply chain management, IT support, digital marketing, and provides operational excellence.</p>
@@ -100,14 +100,25 @@ export default function Footer() {
               <li><Link href={`/${locale}/privacy-policy`} className="hover:text-white">Privacy Policy</Link></li>
             </ul>
           </div>
-                        
-          {/* Col 5: Contact */}
-            <div className="space-y-4">
+
+          {/* Col 5: Open Career */}
+          <div className="space-y-4">
+            <h3 className="text-sm font-bold uppercase tracking-wider">OPEN CAREER</h3>
+            <ul className="space-y-2.5 text-xs text-gray-400">
+              <li><Link href={`/${locale}/career/warehouse-planner`} className="hover:text-white">Warehouse Planner</Link></li>
+              <li><Link href={`/${locale}/career/logistiek-administratief-medewerker`} className="hover:text-white">Logistic Administration</Link></li>
+              <li><Link href={`/${locale}/career/warehouse-engineer`} className="hover:text-white">Warehouse Engineer</Link></li>
+              <li><Link href={`/${locale}/career/supply-chain-starter`} className="hover:text-white">Supply Chain Starter</Link></li>
+            </ul>
+          </div>
+                    
+          {/* Col 6: Contact */}
+          <div className="space-y-4">
             <h3 className="text-sm font-bold uppercase tracking-wider">CONTACT</h3>
             <ul className="space-y-3 text-xs text-gray-400">
-              <li className="flex gap-2"><FiMail className="text-[#2B8A99]" /><a href="mailto:info@itsolutionsworldwide.com">info@itsolutionsworldwide.com</a></li>
-              <li className="flex gap-2"><FiPhone className="text-[#2B8A99]" /><a href="tel:+31123456789">+31 123 456 789</a></li>
-              <li className="flex gap-2"><FiMapPin className="text-[#2B8A99]" /><span>123 Tech Avenue, Netherlands</span></li>
+              <li className="flex gap-2"><FiMail className="text-[#2B8A99] shrink-0 mt-0.5" /><a href="mailto:info@itsolutionsworldwide.com" className="hover:text-white">info@itsolutionsworldwide.com</a></li>
+              <li className="flex gap-2"><FiPhone className="text-[#2B8A99] shrink-0 mt-0.5" /><a href="tel:+31107660786" className="hover:text-white">+31 10 766 0786</a></li>
+              <li className="flex gap-2"><FiMapPin className="text-[#2B8A99] shrink-0 mt-0.5" /><span>Mandenmakerstraat 100C, 3194 DG Hoogvliet Rotterdam, Netherlands</span></li>
             </ul>
           </div>
         </div>
@@ -115,10 +126,10 @@ export default function Footer() {
         {/* BOTTOM */}
         <div className="flex flex-col md:flex-row justify-between pt-8 text-xs text-gray-400 gap-4">
           <p>© 2026 IT Solutions Worldwide. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a href="mailto:info@itsolutionsworldwide.com">info@itsolutionsworldwide.com</a>
+          <div className="flex flex-wrap gap-6">
+            <a href="mailto:info@itsolutionsworldwide.com" className="hover:text-white">info@itsolutionsworldwide.com</a>
             <span>Chamber of Commerce No. 72768916</span>
-            <button onClick={() => window.dispatchEvent(new Event("open-cookie-settings"))} className="underline">Cookie Settings</button>
+            <button onClick={() => window.dispatchEvent(new Event("open-cookie-settings"))} className="underline hover:text-white">Cookie Settings</button>
           </div>
         </div>
       </div>
