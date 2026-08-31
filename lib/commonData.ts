@@ -92,6 +92,28 @@ export const clientLogos = [
     src: "/assets/images/SSL-Electrotechneik.webp",
     alt: "SSL",
   },
+
+
+  {
+    src: "/assets/images/logos/allseas-lg.webp",
+    alt: "Allseas",
+  },
+  {
+    src: "/assets/images/logos/altas-corpo.svg",
+    alt: "Altas Corpo",
+  },
+  {
+    src: "/assets/images/logos/hdp.png",
+    alt: "HDU",
+  },
+  {
+    src: "/assets/images/logos/Mel 'n Nel.webp",
+    alt: "Mel 'n Nel",
+  },
+  {
+    src: "/assets/images/logos/werk-helden.svg",
+    alt: "Werk Helden",
+  },
 ];
 
 export const logosSlider2 = [
@@ -131,6 +153,11 @@ export const logosSlider = [
   "/assets/images/x-treme-tunings.webp",
   "/assets/images/hassan_travels.webp",
   "/assets/images/portugees_to_go.svg",
+  "/assets/images/logos/allseas-lg.webp",
+  "/assets/images/logos/altas-corpo.svg",
+  "/assets/images/logos/hdp.png",
+  "/assets/images/logos/Mel 'n Nel.webp",
+  "/assets/images/logos/werk-helden.svg",
 ];
 
 export const getServicesData = (t: (key: string) => string, locale: string) => [
