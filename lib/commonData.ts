@@ -67,10 +67,7 @@ export const clientLogos = [
     src: "/assets/images/g-rollz.webp",
     alt: "g-rollz",
   },
-  {
-    src: "/assets/images/THE_NEWWAYS_LOGO.webp",
-    alt: "THE NEWWAYS",
-  },
+ 
   {
     src: "/assets/images/dinel.webp",
     alt: "Dinel",
