@@ -1,8 +1,12 @@
-// components/layout/career-jobs.tsx
 "use client";
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+import enCommon from "@/public/locales/en/common.json";
+import nlCommon from "@/public/locales/nl/common.json";
+
+type CommonTranslations = Record<string, any>;
 
 interface JobInfo {
   job_info_id: number;
@@ -27,8 +31,6 @@ interface ApiResponse {
 
 const PAGE_SIZE = 50;
 
-// Title ko slug mein convert karta hai — [slug]/page.tsx mein bhi
-// bilkul yehi function hona chahiye taake match ho
 function slugify(title: string): string {
   return title
     .toLowerCase()
@@ -37,7 +39,13 @@ function slugify(title: string): string {
     .replace(/\s+/g, "-");
 }
 
-const CareerJobsSection = () => {
+const CareerJobsSection = ({ locale = "en" }: { locale?: string }) => {
+  const translations = (
+    locale.toLowerCase().startsWith("nl") ? nlCommon : enCommon
+  ) as CommonTranslations;
+
+  const jobsData = translations.career?.jobs || {};
+
   const [JobInfos, setJobInfos] = useState<JobInfo[]>([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
@@ -45,7 +53,6 @@ const CareerJobsSection = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeTab, setActiveTab] = useState("All");
 
-  // ✅ Fetch jobsInfo
   const fetchjobsInfo = async (page = 1) => {
     setLoading(true);
     try {
@@ -53,12 +60,12 @@ const CareerJobsSection = () => {
         `/api/jobs-info?page=${page}&limit=${PAGE_SIZE}`,
         {
           cache: "no-store",
-        },
+        }
       );
       const data: ApiResponse = await res.json();
       setJobInfos(data.items || []);
-      setTotalPages(data.totalPages);
-      setCurrentPage(data.currentPage);
+      setTotalPages(data.totalPages || 1);
+      setCurrentPage(data.currentPage || 1);
     } catch (err) {
       console.error("Failed to load jobsInfo", err);
     } finally {
@@ -70,7 +77,6 @@ const CareerJobsSection = () => {
     fetchjobsInfo(currentPage);
   }, [currentPage]);
 
-  // Filter jobs based on search input and tabs
   const filteredJobs = JobInfos.filter((job) => {
     const matchesSearch =
       job.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -81,108 +87,102 @@ const CareerJobsSection = () => {
     return matchesSearch && job.type.toLowerCase() === activeTab.toLowerCase();
   });
 
+  const tabFilters = [
+    { key: "All", label: jobsData.tabs?.all || "All" },
+    { key: "Full-Time", label: jobsData.tabs?.fullTime || "Full-Time" },
+    { key: "Part-Time", label: jobsData.tabs?.partTime || "Part-Time" },
+    { key: "Contract", label: jobsData.tabs?.contract || "Contract" },
+    { key: "Internship", label: jobsData.tabs?.internship || "Internship" },
+  ];
+
   if (loading)
     return (
-      <div className="mx-auto w-full max-w-[1180px] px-6 py-12 sm:px-8 lg:px-0 flex flex-col items-center justify-center">
-        <p className="text-gray-400 font-medium text-sm">Loading positions...</p>
+      <div className="mx-auto flex w-full max-w-[1180px] flex-col items-center justify-center px-6 py-12 sm:px-8 lg:px-0">
+        <p className="text-sm font-medium text-gray-400">
+          {jobsData.loading || "Loading positions..."}
+        </p>
       </div>
     );
 
+  const langPrefix = locale ? `/${locale}` : "";
+
   return (
     <section className="w-full bg-[#FAFCFC] py-16">
-      <div
-        className="
-          mx-auto
-          w-full
-          max-w-[1180px]
-          px-6
-          sm:px-8
-          lg:px-0
-        "
-      >
-
-        {/* HEADER SECTION */}
-        <div className="text-center mb-10">
-          <span className="text-[11px] font-bold tracking-[0.15em] uppercase text-[#2B8A99] block mb-2">
-            OUR WORK · PORTFOLIO
+      <div className="mx-auto w-full max-w-[1180px] px-6 sm:px-8 lg:px-0">
+        <div className="mb-10 text-center">
+          <span className="mb-2 block text-[11px] font-bold uppercase tracking-[0.15em] text-[#2B8A99]">
+            {jobsData.eyebrow}
           </span>
-          <h2 className="text-[36px] sm:text-[44px] font-extrabold text-[#06282C] tracking-tight">
-            Find Your Next <span className="text-[#2B8A99]">Great Role</span>
+          <h2 className="text-[36px] font-extrabold tracking-tight text-[#06282C] sm:text-[44px]">
+            {jobsData.headingPrefix}{" "}
+            <span className="text-[#2B8A99]">
+              {jobsData.headingHighlight}
+            </span>
           </h2>
         </div>
 
-        {/* SEARCH & FILTER BOX */}
-        <div className="bg-white p-4 sm:p-5 rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.03)] border border-gray-100 mb-6">
+        <div className="mb-6 rounded-2xl border border-gray-100 bg-white p-4 shadow-[0_2px_12px_rgba(0,0,0,0.03)] sm:p-5">
           <div className="relative mb-4 flex items-center">
-            <span className="absolute left-4 flex items-center pointer-events-none text-gray-400">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span className="pointer-events-none absolute left-4 flex items-center text-gray-400">
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </span>
             <input
               type="text"
-              placeholder="Search by role, skill, or location..."
+              placeholder={jobsData.searchPlaceholder}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-11 pr-4 py-3 bg-[#F8FAFA] border border-gray-200/70 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition"
+              className="w-full rounded-xl border border-gray-200/70 bg-[#F8FAFA] py-3 pl-11 pr-4 text-sm text-gray-800 placeholder-gray-400 transition focus:border-[#2B8A99] focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20"
             />
           </div>
 
-          <div className="flex flex-wrap gap-2 items-center">
-            <button
-              onClick={() => setActiveTab("All")}
-              className={`px-4 py-1.5 rounded-full text-xs font-semibold transition ${
-                activeTab === "All"
-                  ? "bg-[#2B8A99] text-white shadow-sm"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              }`}
-            >
-              All <span className="ml-1 opacity-90">({JobInfos.length})</span>
-            </button>
-            {["Full-Time", "Part-Time", "Contract", "Internship"].map((type) => (
+          <div className="flex flex-wrap items-center gap-2">
+            {tabFilters.map((tab) => (
               <button
-                key={type}
-                onClick={() => setActiveTab(type)}
-                className={`px-4 py-1.5 rounded-full text-xs font-semibold transition ${
-                  activeTab === type
+                key={tab.key}
+                onClick={() => setActiveTab(tab.key)}
+                className={`rounded-full px-4 py-1.5 text-xs font-semibold transition ${
+                  activeTab === tab.key
                     ? "bg-[#2B8A99] text-white shadow-sm"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
-                {type}
+                {tab.label}{" "}
+                {tab.key === "All" && (
+                  <span className="ml-1 opacity-90">({JobInfos.length})</span>
+                )}
               </button>
             ))}
           </div>
         </div>
 
-        <p className="text-xs font-medium text-gray-400 mb-4">
-          {filteredJobs.length} positions found
+        <p className="mb-4 text-xs font-medium text-gray-400">
+          {filteredJobs.length} {jobsData.positionsFound}
         </p>
 
-        {/* JOBS LIST CARDS */}
         <div className="flex flex-col gap-4">
           {filteredJobs.map((job, index) => (
             <div
               key={job.job_info_id || index}
-              className="bg-white border border-gray-200/70 rounded-2xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-md transition duration-300 flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
+              className="flex flex-col items-start justify-between gap-6 rounded-2xl border border-gray-200/70 bg-white p-6 shadow-[0_2px_8px_rgba(0,0,0,0.02)] transition duration-300 hover:shadow-md md:flex-row md:items-center"
             >
-              {/* Left Details */}
               <div className="flex-1">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-[11px] font-semibold px-2.5 py-0.5 bg-[#E6F4F5] text-[#2B8A99] rounded-full">
+                <div className="mb-2 flex items-center gap-2">
+                  <span className="rounded-full bg-[#E6F4F5] px-2.5 py-0.5 text-[11px] font-semibold text-[#2B8A99]">
                     {job.type}
                   </span>
-                  <span className="text-[11px] font-semibold px-2.5 py-0.5 bg-[#F3E8FF] text-[#7E22CE] rounded-full">
-                    Active
+                  <span className="rounded-full bg-[#F3E8FF] px-2.5 py-0.5 text-[11px] font-semibold text-[#7E22CE]">
+                    {jobsData.statusActive}
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#06282C] mb-1.5">
+                <h3 className="mb-1.5 text-lg font-bold text-[#06282C]">
                   {job.title}
                 </h3>
 
-                <p className="text-xs font-medium text-gray-500 flex items-center gap-1.5 mb-3">
-                  <svg className="w-3.5 h-3.5 text-[#2B8A99]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <p className="mb-3 flex items-center gap-1.5 text-xs font-medium text-gray-500">
+                  <svg className="h-3.5 w-3.5 text-[#2B8A99]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
@@ -190,32 +190,32 @@ const CareerJobsSection = () => {
                 </p>
 
                 <Link
-                  href={`/career/${slugify(job.title)}`}
+                  href={`${langPrefix}/career/${slugify(job.title)}`}
                   className="inline-flex items-center gap-1 text-xs font-semibold text-[#2B8A99] hover:underline"
                 >
-                  View Job Details →
+                  {jobsData.viewDetails}
                 </Link>
               </div>
 
-              {/* Right Action Button */}
-              <div className="w-full md:w-auto flex items-center justify-between md:justify-end gap-4">
+              <div className="flex w-full items-center justify-between gap-4 md:w-auto md:justify-end">
                 <Link
-                  href="/job-apply"
-                  className="w-full md:w-auto text-center bg-[#2B8A99] hover:bg-[#237380] text-white font-semibold text-xs py-2.5 px-6 rounded-xl shadow-sm transition duration-300 ease-in-out"
+                  href={`${langPrefix}/job-apply`}
+                  className="w-full rounded-xl bg-[#2B8A99] px-6 py-2.5 text-center text-xs font-semibold text-white shadow-sm transition duration-300 ease-in-out hover:bg-[#237380] md:w-auto"
                 >
-                  Apply now
+                  {jobsData.applyNow}
                 </Link>
               </div>
             </div>
           ))}
 
           {filteredJobs.length === 0 && (
-            <div className="text-center py-12 bg-white rounded-2xl border border-gray-100">
-              <p className="text-gray-500 text-sm">No positions found matching your criteria.</p>
+            <div className="rounded-2xl border border-gray-100 bg-white py-12 text-center">
+              <p className="text-sm text-gray-500">
+                {jobsData.noResults}
+              </p>
             </div>
           )}
         </div>
-
       </div>
     </section>
   );

@@ -288,25 +288,22 @@ export default function CareerOpenApplication() {
         </div>
 
         {/* BOTTOM STATS ROW */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-          <div className="bg-white border border-gray-200/70 p-4 rounded-2xl shadow-sm flex items-center gap-3">
-            <FiGlobe className="w-5 h-5 text-[#2B8A99] shrink-0" />
-            <span className="text-xs font-semibold text-gray-800">Netherlands</span>
-          </div>
-          <div className="bg-white border border-gray-200/70 p-4 rounded-2xl shadow-sm flex items-center gap-3">
-            <FiUsers className="w-5 h-5 text-[#2B8A99] shrink-0" />
-            <span className="text-xs font-semibold text-gray-800">40+ Employees</span>
-          </div>
-          <div className="bg-white border border-gray-200/70 p-4 rounded-2xl shadow-sm flex items-center gap-3">
-            <FiStar className="w-5 h-5 text-[#2B8A99] shrink-0" />
-            <span className="text-xs font-semibold text-gray-800">4.8 Glassdoor</span>
-          </div>
-          <div className="bg-white border border-gray-200/70 p-4 rounded-2xl shadow-sm flex items-center gap-3">
-            <FiBookOpen className="w-5 h-5 text-[#2B8A99] shrink-0" />
-            <span className="text-xs font-semibold text-gray-800">Certified</span>
-          </div>
-        </div>
+  <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+  <div className="flex flex-1 items-center justify-center gap-3 rounded-2xl border border-gray-200/70 bg-white p-4 shadow-sm">
+    <FiGlobe className="h-5 w-5 shrink-0 text-[#2B8A99]" />
+    <span className="text-xs font-semibold text-gray-800">Netherlands</span>
+  </div>
 
+  <div className="flex flex-1 items-center justify-center gap-3 rounded-2xl border border-gray-200/70 bg-white p-4 shadow-sm">
+    <FiUsers className="h-5 w-5 shrink-0 text-[#2B8A99]" />
+    <span className="text-xs font-semibold text-gray-800">40+ Employees</span>
+  </div>
+
+  <div className="flex flex-1 items-center justify-center gap-3 rounded-2xl border border-gray-200/70 bg-white p-4 shadow-sm">
+    <FiBookOpen className="h-5 w-5 shrink-0 text-[#2B8A99]" />
+    <span className="text-xs font-semibold text-gray-800">Certified</span>
+  </div>
+</div>
       </div>
     </section>
   );

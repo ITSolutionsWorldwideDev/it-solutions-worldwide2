@@ -18570,7 +18570,144 @@
     "description": "Stop losing customers to competitors who show up first. IT Solutions Worldwide makes digital growth simple, fast, and genuinely affordable. Explore the services above or reach out today and tell us what you need — we will handle the rest.",
     "instruction": "✓ No commitment required · ✓ Free initial consultation · ✓ Live within days · ✓ Customised to your business"
   }
-}
+},
+
+
+
+
+  
+  "career": {
+    "metadata": {
+      "title": "IT & Supply Chain Jobs in Netherlands | Apply Now",
+      "description": "Looking for IT, supply chain or digital marketing jobs in the Netherlands? Explore career opportunities at IT Solutions Worldwide and grow with us."
+    },
+    "hero": {
+      "eyebrow": "Join Our Team",
+      "heading": "Build Your Career. Make Work Matter.",
+      "subtext": "Join a global outsourcing team helping Dutch and international businesses work smarter, move faster, and grow further — across supply chain, IT, engineering, and data roles.",
+      "tags": [
+        "40+ Employees",
+        "International Clients",
+        "31 Open Roles",
+        "Real Responsibility"
+      ],
+      "breadcrumbs": {
+        "home": "Home",
+        "careers": "Careers"
+      }
+    },
+    "cta": {
+      "eyebrow": "Who Is IT Solutions Worldwide?",
+      "heading": "Rotterdam-Based Outsourcing & Staff Augmentation.",
+      "highlightWord": "Outsourcing",
+      "subtext": "IT Solutions Worldwide is a Rotterdam-based outsourcing and staff augmentation company with 40+ employees, headquartered at Mandenmakerstraat 100C, 3194 DG Hoogvliet, Rotterdam, Netherlands. The company hires for full-time, part-time, contract, and internship roles across supply chain, IT support, software engineering, data, finance, and administrative functions throughout the Netherlands, and is rated 4.8 on Glassdoor.",
+      "overlayText": "Career Open.",
+      "ctaLabel": "Explore Careers",
+      "imageAlt": "Team collaborating at IT Solutions Worldwide"
+    },
+    "growth": {
+      "eyebrow": "A Place Where Careers Actually Grow",
+      "headingPrefix": "A Place Where ",
+      "headingHighlight1": "Careers",
+      "headingMiddle": " Actually ",
+      "headingHighlight2": "Grow",
+      "subtext": "We have built the kind of company we always wanted to work at — and we keep raising the bar every year.",
+      "features": {
+        "global": {
+          "badge": "Global & International",
+          "title": "Global Reach",
+          "description": "We work with international clients across supply chain, IT, and engineering sectors."
+        },
+        "path": {
+          "badge": "Career Path",
+          "title": "Real Growth",
+          "description": "Career paths with real progression, not just title changes."
+        },
+        "impact": {
+          "badge": "Impact",
+          "title": "Real Responsibility",
+          "description": "New hires take on meaningful work from day one — not months of shadowing."
+        },
+        "location": {
+          "badge": "Location",
+          "title": "Rotterdam-Based",
+          "description": "Headquartered in Hoogvliet, Rotterdam, with roles across the Netherlands."
+        }
+      }
+    },
+    "jobs": {
+      "eyebrow": "OUR WORK · PORTFOLIO",
+      "headingPrefix": "Find Your Next ",
+      "headingHighlight": "Great Role",
+      "searchPlaceholder": "Search by role, skill, or location...",
+      "positionsFound": "positions found",
+      "viewDetails": "View Job Details →",
+      "applyNow": "Apply now",
+      "noResults": "No positions found matching your criteria.",
+      "loading": "Loading positions...",
+      "statusActive": "Active",
+      "tabs": {
+        "all": "All",
+        "fullTime": "Full-Time",
+        "partTime": "Part-Time",
+        "contract": "Contract",
+        "internship": "Internship"
+      }
+    },
+    "faq": {
+      "eyebrow": "Got Questions?",
+      "headingPrefix": "Frequently Asked ",
+      "headingHighlight": "Questions",
+      "subtext": "Everything candidates ask us before applying to IT Solutions Worldwide.",
+      "items": [
+        {
+          "question": "How long does it take to hear back after applying to IT Solutions Worldwide?",
+          "answer": "We respond within 5 business days of receiving your application, whether you've applied to an open role or submitted an open application."
+        },
+        {
+          "question": "What happens to my profile if there's no open role matching my skills right now?",
+          "answer": "Your profile stays active in our system for 6 months. We reach out proactively when a role opens that matches your background, so you don't need to keep reapplying."
+        },
+        {
+          "question": "Does IT Solutions Worldwide offer a referral bonus?",
+          "answer": "Yes. We offer a referral bonus for successful hires made through employee or candidate referrals — ask your contact for current terms."
+        },
+        {
+          "question": "What should I expect from the first interview?",
+          "answer": "A relaxed introductory call with no preparation required. We want to understand your experience, what kind of role you're looking for, and whether there's a mutual fit — not test you cold."
+        },
+        {
+          "question": "What types of employment does IT Solutions Worldwide offer?",
+          "answer": "We hire for full-time, part-time, contract, and internship positions across supply chain, warehousing, IT support, software engineering, data, finance, marketing, and administrative roles."
+        },
+        {
+          "question": "Where is IT Solutions Worldwide based, and where are roles located?",
+          "answer": "Our headquarters is at Mandenmakerstraat 100C, 3194 DG Hoogvliet, Rotterdam, Netherlands. Open roles are located across the country, including Rotterdam, Delft, Spijkenisse, Hoogeveen, Capelle aan den IJssel, Heinkenszand, and Roosendaal, alongside on-site and remote-eligible positions."
+        },
+        {
+          "question": "Is IT Solutions Worldwide a certified, verifiable employer?",
+          "answer": "Yes. We are registered with the KVK (Dutch Chamber of Commerce), operate in compliance with Dutch AVG (GDPR) data protection requirements, and are rated 4.8 on Glassdoor by current and former employees."
+        },
+        {
+          "question": "Can I apply if I don't see a role that matches my skills?",
+          "answer": "Yes. We accept open applications year-round. Send us your profile and tell us what you'd like to build — we hire for talent and potential, not only for open headcount."
+        },
+        {
+          "question": "How is my CV and personal data handled once I apply?",
+          "answer": "All applicant data is processed in line with Dutch AVG (GDPR) requirements. Your CV and profile information are used solely for recruitment purposes, stored securely, and never sold or shared with third parties without your consent."
+        },
+        {
+          "question": "Does IT Solutions Worldwide hire internationally or only within the Netherlands?",
+          "answer": "The majority of our current openings are based in the Netherlands, spanning on-site and hybrid arrangements. As an international outsourcing partner, we also support select remote and cross-border roles depending on client and project needs."
+        }
+      ],
+      "banner": {
+        "title": "Still have questions?",
+        "subtext": "We are here to help you with your application process.",
+        "button": "Contact Support"
+      }
+    }
+  }
 
 
 

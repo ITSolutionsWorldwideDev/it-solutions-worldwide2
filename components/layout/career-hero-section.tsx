@@ -1,4 +1,3 @@
-// components/layout/career-hero-section.tsx
 import Link from "next/link";
 
 type Breadcrumb = {
@@ -12,19 +11,15 @@ type CareerHeroSectionProps = {
   subtext?: string;
   tags?: string[];
   breadcrumbs?: Breadcrumb[];
-  /**
-   * Optional: pass a real background image path (e.g. "/assets/images/career-hero-bg.webp").
-   * If omitted, an SVG wave pattern (matching the reference design) is rendered instead.
-   */
   backgroundImage?: string;
 };
 
 export default function CareerHeroSection({
-  eyebrow = "Join Our Team",
+  eyebrow,
   heading,
   subtext,
   tags = [],
-  breadcrumbs = [{ label: "Home", href: "/" }, { label: "Careers" }],
+  breadcrumbs = [],
   backgroundImage,
 }: CareerHeroSectionProps) {
   return (
@@ -40,7 +35,6 @@ export default function CareerHeroSection({
           : undefined
       }
     >
-      {/* Wave pattern fallback background (used only when no backgroundImage prop is passed) */}
       {!backgroundImage && (
         <div className="absolute inset-0 -z-10">
           <svg
@@ -70,34 +64,31 @@ export default function CareerHeroSection({
         </div>
       )}
 
-      {/* Subtle overlay keeps text readable without hiding the background image */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />
 
       <div className="relative mx-auto flex max-w-5xl flex-col items-center px-4 py-24 text-center sm:py-28 lg:py-32">
-        {/* Eyebrow */}
-        <div className="mb-6 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#00A896]">
-          <span className="h-px w-8 bg-[#00A896]/60" />
-          {eyebrow}
-          <span className="h-px w-8 bg-[#00A896]/60" />
-        </div>
+        {eyebrow && (
+          <div className="mb-6 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#00A896]">
+            <span className="h-px w-8 bg-[#00A896]/60" />
+            {eyebrow}
+            <span className="h-px w-8 bg-[#00A896]/60" />
+          </div>
+        )}
 
-        {/* Heading */}
         <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
           {heading}
         </h1>
 
-        {/* Subtext */}
         {subtext && (
           <p className="mt-5 max-w-2xl text-sm text-gray-300 sm:text-base">
             {subtext}
           </p>
         )}
 
-        {/* Tags row */}
         {tags.length > 0 && (
           <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xs font-semibold uppercase tracking-wider text-[#00A896] sm:text-sm">
             {tags.map((tag, index) => (
-              <span key={tag} className="flex items-center gap-3">
+              <span key={index} className="flex items-center gap-3">
                 {tag}
                 {index < tags.length - 1 && (
                   <span className="text-white/30">|</span>
@@ -108,12 +99,11 @@ export default function CareerHeroSection({
         )}
       </div>
 
-      {/* Breadcrumb strip */}
       {breadcrumbs.length > 0 && (
         <div className="relative border-t border-white/10 bg-black/30 py-3">
           <div className="mx-auto flex max-w-5xl items-center justify-center gap-2 px-4 text-xs font-medium uppercase tracking-wide text-gray-300">
             {breadcrumbs.map((crumb, index) => (
-              <span key={crumb.label} className="flex items-center gap-2">
+              <span key={index} className="flex items-center gap-2">
                 {crumb.href ? (
                   <Link
                     href={crumb.href}

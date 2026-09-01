@@ -5703,5 +5703,142 @@
       "button": "Boek een Gratis Consultatie",
       "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
     }
+  },
+
+
+
+
+  
+  "career": {
+    "metadata": {
+      "title": "IT & Supply Chain Banen in Nederland | Solliciteer Nu",
+      "description": "Op zoek naar banen in IT, supply chain of digitale marketing in Nederland? Ontdek carrièremogelijkheden bij IT Solutions Worldwide en groei met ons mee."
+    },
+    "hero": {
+      "eyebrow": "Word Deel Van Ons Team",
+      "heading": "Bouw Aan Je Carrière. Maak Werk Dat Ertoe Doet.",
+      "subtext": "Sluit je aan bij een wereldwijd outsourcingteam dat Nederlandse en internationale bedrijven helpt slimmer te werken, sneller te bewegen en verder te groeien — in supply chain, IT, engineering en datarollen.",
+      "tags": [
+        "40+ Medewerkers",
+        "Internationale Klanten",
+        "31 Openstaande Rollen",
+        "Echte Verantwoordelijkheid"
+      ],
+      "breadcrumbs": {
+        "home": "Home",
+        "careers": "Carrières"
+      }
+    },
+    "cta": {
+      "eyebrow": "Wie is IT Solutions Worldwide?",
+      "heading": "Outsourcing & Staff Augmentation in Rotterdam.",
+      "highlightWord": "Outsourcing",
+      "subtext": "IT Solutions Worldwide is een in Rotterdam gevestigd outsourcing- en staff augmentation-bedrijf met meer dan 40 medewerkers, gevestigd aan de Mandenmakerstraat 100C, 3194 DG Hoogvliet, Rotterdam, Nederland. Het bedrijf werft voor fulltime, parttime, contract- en stagerollen in supply chain, IT-ondersteuning, software engineering, data, financiën en administratieve functies in heel Nederland en heeft een beoordeling van 4.8 op Glassdoor.",
+      "overlayText": "Carrières Open.",
+      "ctaLabel": "Ontdek Carrières",
+      "imageAlt": "Team dat samenwerkt bij IT Solutions Worldwide"
+    },
+    "growth": {
+      "headingPrefix": "Een Plek Waar ",
+      "headingHighlight1": "Carrières",
+      "headingMiddle": " Daadwerkelijk ",
+      "headingHighlight2": "Groeien",
+      "subtext": "We hebben het soort bedrijf gebouwd waar we zelf altijd al wilden werken — en we leggen de lat elk jaar hoger.",
+      "features": {
+        "global": {
+          "badge": "Mondiaal & Internationaal",
+          "title": "Wereldwijd Bereik",
+          "description": "We werken met internationale klanten in supply chain, IT en engineering."
+        },
+        "path": {
+          "badge": "Carrièrepad",
+          "title": "Echte Groei",
+          "description": "Carrièrepaden met echte vooruitgang, niet alleen functietitelveranderingen."
+        },
+        "impact": {
+          "badge": "Impact",
+          "title": "Echte Verantwoordelijkheid",
+          "description": "Nieuwe medewerkers nemen vanaf dag één betekenisvol werk op zich — geen maanden inwerken."
+        },
+        "location": {
+          "badge": "Locatie",
+          "title": "Gevestigd in Rotterdam",
+          "description": "Hoofdkantoor in Hoogvliet, Rotterdam, met rollen door heel Nederland."
+        }
+      }
+    },
+    "jobs": {
+      "eyebrow": "ONS WERK · PORTFOLIO",
+      "headingPrefix": "Vind Je Volgende ",
+      "headingHighlight": "Geweldige Rol",
+      "searchPlaceholder": "Zoek op rol, vaardigheid of locatie...",
+      "positionsFound": "vacatures gevonden",
+      "viewDetails": "Bekijk Vacaturedetails →",
+      "applyNow": "Nu solliciteren",
+      "noResults": "Geen vacatures gevonden die aan je criteria voldoen.",
+      "loading": "Vacatures laden...",
+      "statusActive": "Actief",
+      "tabs": {
+        "all": "Alles",
+        "fullTime": "Fulltime",
+        "partTime": "Parttime",
+        "contract": "Contract",
+        "internship": "Stage"
+      }
+    },
+    "faq": {
+      "eyebrow": "Vragen?",
+      "headingPrefix": "Veelgestelde ",
+      "headingHighlight": "Vragen",
+      "subtext": "Alles wat kandidaten ons vragen voordat ze solliciteren bij IT Solutions Worldwide.",
+      "items": [
+        {
+          "question": "Hoe lang duurt het voordat ik iets hoor na mijn sollicitatie bij IT Solutions Worldwide?",
+          "answer": "We reageren binnen 5 werkdagen na ontvangst van je sollicitatie, of je nu op een openstaande rol hebt gesolliciteerd of een open sollicitatie hebt ingestuurd."
+        },
+        {
+          "question": "Wat gebeurt er met mijn profiel als er nu geen passende rol is?",
+          "answer": "Je profiel blijft 6 maanden actief in ons systeem. We nemen proactief contact op als er een rol vrijkomt die bij je achtergrond past."
+        },
+        {
+          "question": "Biedt IT Solutions Worldwide een aanbevelingsbonus?",
+          "answer": "Ja. We bieden een referral bonus voor succesvolle wervingen via aanbevelingen."
+        },
+        {
+          "question": "Wat kan ik verwachten van het eerste gesprek?",
+          "answer": "Een ontspannen kennismakingsgesprek zonder voorbereiding. We willen je ervaring en wensen begrijpen."
+        },
+        {
+          "question": "Welke werk vormen biedt IT Solutions Worldwide aan?",
+          "answer": "We werven voor fulltime, parttime, contract- en stagerollen in supply chain, IT, software engineering, data, financiën en administratie."
+        },
+        {
+          "question": "Waar is IT Solutions Worldwide gevestigd en waar zijn de rollen?",
+          "answer": "Ons hoofdkantoor staat aan de Mandenmakerstraat 100C, 3194 DG Hoogvliet, Rotterdam. Rollen zijn verspreid over heel Nederland."
+        },
+        {
+          "question": "Is IT Solutions Worldwide een gecertificeerde werkgever?",
+          "answer": "Ja. We staan ingeschreven bij de KVK, voldoen aan de AVG (GDPR) wetgeving en hebben een 4.8 score op Glassdoor."
+        },
+        {
+          "question": "Kan ik solliciteren als er geen passende vacature openstaat?",
+          "answer": "Ja. We accepteren het hele jaar door open sollicitaties."
+        },
+        {
+          "question": "Hoe wordt mijn CV en persoonlijke data verwerkt?",
+          "answer": "Alle gegevens worden strikt verwerkt volgens de AVG (GDPR) richtlijnen en nooit verkocht of gedeeld."
+        },
+        {
+          "question": "Werft IT Solutions Worldwide ook internationaal?",
+          "answer": "De meeste functies zijn in Nederland, maar we ondersteunen ook remote en grensoverschrijdende rollen."
+        }
+      ],
+      "banner": {
+        "title": "Heb je nog vragen?",
+        "subtext": "We helpen je graag verder met je sollicitatieproces.",
+        "button": "Contact Support"
+      }
+    }
   }
+
 }

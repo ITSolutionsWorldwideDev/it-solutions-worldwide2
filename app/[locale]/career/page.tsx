@@ -1,86 +1,97 @@
-// app/[locale]/career/page.tsx
 import initServerI18n from "@/utils/serverTranslation";
-import ImageSection2 from "@/components/layout/image-section-2";
-import CardSection from "@/components/layout/card-section";
-import { Metadata } from "next";
+import type { Metadata } from "next";
+
 import CareerJobsSection from "@/components/layout/career-jobs";
 import CareerHeroSection from "@/components/layout/career-hero-section";
 import CtaSplitSection from "@/components/layout/cta-split-section";
 import CareerGrowthSection from "@/components/layout/career-growth-section";
 import CareerOpenApplication from "@/components/layout/career-open-application";
-import CareerFaqSection from "@/components/layout/career-faq-section"; // ✅ FAQ Import Added
-import CareerFooter from "@/components/layout/career-footer";
+import CareerFaqSection from "@/components/layout/career-faq-section";
 
-// ISR revalidation time
 export const revalidate = 3600;
 export const dynamic = "force-static";
 
-export async function generateMetadata(props: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const params = await props.params;
+type PageProps = {
+  params: Promise<{
+    locale: string;
+
+  }>;
+};
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  const i18nInstance = await initServerI18n(locale);
+  const t = i18nInstance.getFixedT(locale, "common");
 
   return {
     title: {
-      absolute: "IT & Supply Chain Jobs in Netherlands | Apply Now",
+      absolute: t("career.metadata.title"),
     },
-    description:
-      "Looking for IT, supply chain or digital marketing jobs in the Netherlands? Explore career opportunities at IT Solutions Worldwide and grow with us.",
+    description: t("career.metadata.description"),
   };
 }
 
-export default async function Career(props: {
-  params: Promise<{ locale: string }>;
-}) {
-  const params = await props.params;
-  const { locale } = params;
+export default async function Career({ params }: PageProps) {
+  const { locale } = await params;
 
   const i18nInstance = await initServerI18n(locale);
-  const t = await i18nInstance.getFixedT(locale, "common");
+  const t = i18nInstance.getFixedT(locale, "common");
 
   return (
-    <div>
+    <main>
       {/* CAREER HERO */}
       <CareerHeroSection
-        eyebrow="Join Our Team"
-        heading="Build Your Career. Make Work Matter."
-        subtext="Join a global outsourcing team helping Dutch and international businesses work smarter, move faster, and grow further — across supply chain, IT, engineering, and data roles. "
+        eyebrow={t("career.hero.eyebrow")}
+        heading={t("career.hero.heading")}
+        subtext={t("career.hero.subtext")}
         tags={[
-          "40+ Employees",
-          "International Clients",
-          "31 Open Roles",
-          "Real Responsibility",
+          t("career.hero.tags.0"),
+          t("career.hero.tags.1"),
+          t("career.hero.tags.2"),
+          t("career.hero.tags.3"),
         ]}
         breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: "Careers" },
+          {
+            label: t("career.hero.breadcrumbs.home"),
+            href: `/${locale}`,
+          },
+          {
+            label: t("career.hero.breadcrumbs.careers"),
+          },
         ]}
         backgroundImage="/assets/images/career/c_bg.webp"
       />
 
-      {/* CTA SPLIT SECTION */}
+      {/* CTA SPLIT */}
       <CtaSplitSection
-        eyebrow="Who Is IT Solutions Worldwide?"
-        heading="Rotterdam-Based Outsourcing & Staff Augmentation."
-        highlightWord="Outsourcing"
-        subtext="IT Solutions Worldwide is a Rotterdam-based outsourcing and staff augmentation company with 40+ employees, headquartered at Mandenmakerstraat 100C, 3194 DG Hoogvliet, Rotterdam, Netherlands. The company hires for full-time, part-time, contract, and internship roles across supply chain, IT support, software engineering, data, finance, and administrative functions throughout the Netherlands, and is rated 4.8 on Glassdoor."
+        eyebrow={t("career.cta.eyebrow")}
+        heading={t("career.cta.heading")}
+        highlightWord={t("career.cta.highlightWord")}
+        subtext={t("career.cta.subtext")}
         imageUrl="/assets/images/career/c-bg1.webp"
-        imageAlt="Team collaborating at IT Solutions Worldwide"
-        overlayText="Career Open."
-        ctaLabel="Explore Careers"
-        ctaHref="/careers"
+        imageAlt={t("career.cta.imageAlt")}
+        overlayText={t("career.cta.overlayText")}
+        ctaLabel={t("career.cta.ctaLabel")}
+        ctaHref={`/${locale}/careers`}
       />
 
-      <CareerGrowthSection />
+      {/* CAREER GROWTH */}
+    <CareerGrowthSection locale={locale} />
 
-      {/* JOBS SECTION */}
-      <CareerJobsSection />
+      {/* JOBS */}
+      <CareerJobsSection locale={locale} />
 
-      {/* FAQ SECTION */}
-      <CareerFaqSection />
+      {/* FAQ
+          This component gets translations itself
+          using useTranslation("common")
+      */}
+    <CareerFaqSection locale={locale} />
 
-      {/* OPEN APPLICATION SECTION */}
+      {/* OPEN APPLICATION */}
       <CareerOpenApplication />
-    </div>
+    </main>
   );
 }
