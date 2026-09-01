@@ -16,13 +16,6 @@ import {
   FiFile
 } from "react-icons/fi";
 
-const ALLOWED_FILE_TYPES = [
-  "application/pdf",
-  "application/msword",
-  "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-];
-const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
-
 export default function CareerOpenApplication() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -37,25 +30,9 @@ export default function CareerOpenApplication() {
   const [errorMessage, setErrorMessage] = useState("");
   const resumeInputRef = useRef<HTMLInputElement>(null);
 
-  const validateFile = (file: File): string | null => {
-    if (!ALLOWED_FILE_TYPES.includes(file.type)) {
-      return "File must be a PDF or Word document.";
-    }
-    if (file.size > MAX_FILE_SIZE) {
-      return "File must be under 5MB.";
-    }
-    return null;
-  };
-
   const handleResumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-
-    const error = validateFile(file);
-    if (error) {
-      setErrorMessage(`Resume: ${error}`);
-      return;
-    }
 
     setErrorMessage("");
     setResume(file);
@@ -69,7 +46,7 @@ export default function CareerOpenApplication() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Resume ab mandatory hai — submit se pehle check karo
+    // Resume mandatory hai — submit se pehle check karo
     if (!resume) {
       setErrorMessage("Please upload your resume/CV to continue.");
       return;
@@ -258,11 +235,10 @@ export default function CareerOpenApplication() {
                   />
                 </div>
 
-                {/* RESUME UPLOAD — ab mandatory hai */}
+                {/* RESUME UPLOAD — mandatory, no type/size restriction */}
                 <div>
                   <label className="block text-[11px] font-bold text-gray-700 uppercase tracking-wider mb-1">
-                    Resume / CV <span className="normal-case font-normal text-red-500">*required</span>{" "}
-                    <span className="normal-case font-normal text-gray-400">(PDF or Word, max 5MB)</span>
+                    CV / Resume <span className="normal-case font-normal text-red-500">*required</span>
                   </label>
 
                   {!resume ? (
@@ -272,7 +248,6 @@ export default function CareerOpenApplication() {
                       <input
                         ref={resumeInputRef}
                         type="file"
-                        accept=".pdf,.doc,.docx"
                         onChange={handleResumeChange}
                         className="hidden"
                       />

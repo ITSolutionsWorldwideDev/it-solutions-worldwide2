@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
     const phone = formData.get("phone") as string;
     const expertise = formData.get("expertise") as string;
     const message = formData.get("message") as string;
-    const coverLetterFile = formData.get("coverLetter") as File | null;
+    const resumeFile = formData.get("resume") as File | null; // matches frontend's payload.append("resume", resume)
 
     if (!email || !name) {
       return NextResponse.json(
@@ -36,13 +36,13 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Prepare attachment if a cover letter was uploaded
+    // Prepare attachment if a resume was uploaded
     const attachments = [];
-    if (coverLetterFile && coverLetterFile.size > 0) {
-      const arrayBuffer = await coverLetterFile.arrayBuffer();
+    if (resumeFile && resumeFile.size > 0) {
+      const arrayBuffer = await resumeFile.arrayBuffer();
       const buffer = Buffer.from(arrayBuffer);
       attachments.push({
-        filename: coverLetterFile.name,
+        filename: resumeFile.name,
         content: buffer,
       });
     }
@@ -64,9 +64,9 @@ export async function POST(req: NextRequest) {
         <p><strong>Message:</strong></p>
         <p>${message || "-"}</p>
         ${
-          coverLetterFile && coverLetterFile.size > 0
-            ? `<p><strong>Cover Letter:</strong> Attached (${coverLetterFile.name})</p>`
-            : `<p><strong>Cover Letter:</strong> Not provided</p>`
+          resumeFile && resumeFile.size > 0
+            ? `<p><strong>Resume/CV:</strong> Attached (${resumeFile.name})</p>`
+            : `<p><strong>Resume/CV:</strong> Not provided</p>`
         }
         `,
       attachments,

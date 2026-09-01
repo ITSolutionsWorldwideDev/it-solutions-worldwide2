@@ -8,7 +8,8 @@ import CareerHeroSection from "@/components/layout/career-hero-section";
 import CtaSplitSection from "@/components/layout/cta-split-section";
 import CareerGrowthSection from "@/components/layout/career-growth-section";
 import CareerOpenApplication from "@/components/layout/career-open-application";
-import CareerFooter from "@/components/layout/career-footer"; // ✅ Footer Import Added
+import CareerFaqSection from "@/components/layout/career-faq-section"; // ✅ FAQ Import Added
+import CareerFooter from "@/components/layout/career-footer";
 
 // ISR revalidation time
 export const revalidate = 3600;
@@ -43,11 +44,11 @@ export default async function Career(props: {
       <CareerHeroSection
         eyebrow="Join Our Team"
         heading="Build Your Career. Make Work Matter."
-        subtext="Join a global team helping businesses work smarter, move faster, and grow further."
+        subtext="Join a global outsourcing team helping Dutch and international businesses work smarter, move faster, and grow further — across supply chain, IT, engineering, and data roles. "
         tags={[
-          "Global Team",
+          "40+ Employees",
           "International Clients",
-          "Growing Careers",
+          "31 Open Roles",
           "Real Responsibility",
         ]}
         breadcrumbs={[
@@ -59,13 +60,15 @@ export default async function Career(props: {
 
       {/* CTA SPLIT SECTION */}
       <CtaSplitSection
-        eyebrow="Our Work · Portfolio"
-        heading="Let's Build Something Exceptional Together."
-        highlightWord="Exceptional"
-        subtext="Tell us about your project. We'll respond within one business day with a tailored proposal."
+        eyebrow="Who Is IT Solutions Worldwide?"
+        heading="Rotterdam-Based Outsourcing & Staff Augmentation."
+        highlightWord="Outsourcing"
+        subtext="IT Solutions Worldwide is a Rotterdam-based outsourcing and staff augmentation company with 40+ employees, headquartered at Mandenmakerstraat 100C, 3194 DG Hoogvliet, Rotterdam, Netherlands. The company hires for full-time, part-time, contract, and internship roles across supply chain, IT support, software engineering, data, finance, and administrative functions throughout the Netherlands, and is rated 4.8 on Glassdoor."
         imageUrl="/assets/images/career/c-bg1.webp"
-        imageAlt="Team collaborating on a project"
+        imageAlt="Team collaborating at IT Solutions Worldwide"
         overlayText="Career Open."
+        ctaLabel="Explore Careers"
+        ctaHref="/careers"
       />
 
       <CareerGrowthSection />
@@ -73,9 +76,11 @@ export default async function Career(props: {
       {/* JOBS SECTION */}
       <CareerJobsSection />
 
+      {/* FAQ SECTION */}
+      <CareerFaqSection />
+
       {/* OPEN APPLICATION SECTION */}
       <CareerOpenApplication />
-
     </div>
   );
 }

@@ -1,4 +1,3 @@
-// components/layout/cta-split-section.tsx
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +6,6 @@ type CtaSplitSectionProps = {
   heading: string;
   highlightWord?: string;
   subtext?: string;
-  
   imageUrl: string;
   imageAlt: string;
   overlayText?: string;
@@ -57,8 +55,8 @@ export default function CtaSplitSection({
           py-12
           sm:px-8
           sm:py-16
-          lg:grid-cols-[1.15fr_0.85fr]
-          lg:gap-10
+          lg:grid-cols-[1.1fr_0.9fr]
+          lg:gap-12
           lg:px-0
           lg:py-16
         "
@@ -68,12 +66,12 @@ export default function CtaSplitSection({
           <p
             className="
               mb-3
-              text-[10px]
+              text-[11px]
               font-bold
               uppercase
-              tracking-[0.22em]
+              tracking-[0.2em]
               text-[#00A896]
-              sm:text-[11px]
+              sm:text-[12px]
             "
           >
             {eyebrow}
@@ -81,14 +79,14 @@ export default function CtaSplitSection({
 
           <h2
             className="
-              max-w-[560px]
-              text-[34px]
+              max-w-[580px]
+              text-[30px]
               font-extrabold
-              leading-[1.08]
-              tracking-[-0.025em]
+              leading-[1.12]
+              tracking-[-0.02em]
               text-black
-              sm:text-[40px]
-              lg:text-[42px]
+              sm:text-[36px]
+              lg:text-[38px]
             "
           >
             {renderHeading()}
@@ -98,10 +96,10 @@ export default function CtaSplitSection({
             <p
               className="
                 mt-4
-                max-w-[480px]
+                max-w-[540px]
                 text-[13px]
-                leading-[1.55]
-                text-gray-500
+                leading-[1.6]
+                text-gray-600
                 sm:text-[14px]
               "
             >
@@ -113,7 +111,7 @@ export default function CtaSplitSection({
             <Link
               href={ctaHref}
               className="
-                mt-7
+                mt-6
                 inline-flex
                 w-fit
                 items-center
@@ -138,10 +136,11 @@ export default function CtaSplitSection({
         <div
           className="
             relative
-            aspect-[16/9]
+            aspect-[16/10]
             w-full
             overflow-hidden
             rounded-[24px]
+            shadow-sm
           "
         >
           <Image
@@ -150,7 +149,7 @@ export default function CtaSplitSection({
             fill
             className="object-cover"
             sizes="
-              (min-width: 1024px) 430px,
+              (min-width: 1024px) 480px,
               (min-width: 640px) 600px,
               100vw
             "
@@ -162,13 +161,13 @@ export default function CtaSplitSection({
                 <p
                   className="
                     text-center
-                    text-[30px]
+                    text-[28px]
                     font-extrabold
                     leading-none
                     tracking-[-0.02em]
                     text-white
-                    sm:text-[34px]
-                    lg:text-[36px]
+                    sm:text-[32px]
+                    lg:text-[34px]
                   "
                 >
                   {overlayText}

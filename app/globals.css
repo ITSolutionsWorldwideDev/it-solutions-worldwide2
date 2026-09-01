@@ -254,3 +254,18 @@
 .animate-globe-orbit {
   animation: globeRotate 20s linear infinite;
 }
+
+
+/* Running Green Border Animation */
+@keyframes border-trace {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-border-trace {
+  animation: border-trace 3s linear infinite;
+}

@@ -1,171 +1,110 @@
-// components/layout/career-growth-section.tsx
+"use client";
 
-import Image from "next/image";
+import { Globe, TrendingUp, Zap, MapPin } from "lucide-react";
+
+const features = [
+  {
+    icon: Globe,
+    badge: "Global & International",
+    title: "Global Reach",
+    description:
+      "We work with international clients across supply chain, IT, and engineering sectors.",
+    colSpan: "lg:col-span-2",
+  },
+  {
+    icon: TrendingUp,
+    badge: "Career Path",
+    title: "Real Growth",
+    description: "Career paths with real progression, not just title changes.",
+    colSpan: "lg:col-span-1",
+  },
+  {
+    icon: Zap,
+    badge: "Impact",
+    title: "Real Responsibility",
+    description:
+      "New hires take on meaningful work from day one — not months of shadowing.",
+    colSpan: "lg:col-span-1",
+  },
+  {
+    icon: MapPin,
+    badge: "Location",
+    title: "Rotterdam-Based",
+    description:
+      "Headquartered in Hoogvliet, Rotterdam, with roles across the Netherlands.",
+    colSpan: "lg:col-span-2",
+  },
+];
 
 export default function CareerGrowthSection() {
   return (
-    <section className="w-full bg-white">
-      <div
-        className="
-          mx-auto
-          w-full
-          max-w-[1180px]
-          px-6
-          py-14
-          sm:px-8
-          sm:py-16
-          lg:px-0
-          lg:py-16
-        "
-      >
-        {/* HEADING */}
+    <section className="w-full bg-white py-16 sm:py-20">
+      <div className="mx-auto w-full max-w-[1180px] px-6 sm:px-8 lg:px-0">
+        
+        {/* HEADING SECTION */}
         <div className="text-center">
-          <h2
-            className="
-              text-[32px]
-              font-extrabold
-              leading-[1.05]
-              tracking-[-0.03em]
-              text-[#06282C]
-              sm:text-[38px]
-              lg:text-[40px]
-            "
-          >
-            A Place Where{" "}
-            <span className="text-[#2B8A99]">Careers</span>{" "}
-            Actually{" "}
-            <span className="text-[#2B8A99]">Grow</span>
+          <h2 className="text-[32px] font-extrabold leading-[1.1] tracking-[-0.03em] text-[#06282C] sm:text-[38px] lg:text-[44px]">
+            A Place Where <span className="text-[#00A896]">Careers</span> Actually{" "}
+            <span className="text-[#00A896]">Grow</span>
           </h2>
-
-          <p
-            className="
-              mx-auto
-              mt-2
-              max-w-[700px]
-              text-[12px]
-              leading-[1.5]
-              text-gray-500
-              sm:text-[13px]
-            "
-          >
-            We have built the kind of company we always wanted to work at —
-            and we keep raising the bar every year.
+          <p className="mx-auto mt-3 max-w-[650px] text-[13px] leading-[1.6] text-gray-500 sm:text-[15px]">
+            We have built the kind of company we always wanted to work at — and
+            we keep raising the bar every year.
           </p>
         </div>
 
-        {/* IMAGE COLLAGE */}
-        <div
-          className="
-            mt-8
-            grid
-            grid-cols-1
-            gap-3
-            sm:grid-cols-2
-            lg:grid-cols-[1.55fr_0.72fr_0.72fr]
-            lg:grid-rows-[240px_240px]
-            lg:gap-3
-          "
-        >
-          {/* LARGE IMAGE — CB1 */}
-          <div
-            className="
-              relative
-              min-h-[300px]
-              overflow-hidden
-              rounded-[14px]
-              sm:row-span-2
-              lg:min-h-full
-            "
-          >
-            <Image
-              src="/assets/images/career/c1.webp"
-              alt="Team working together"
-              fill
-              className="object-cover"
-              sizes="
-                (min-width: 1024px) 45vw,
-                (min-width: 640px) 50vw,
-                100vw
-              "
-            />
-          </div>
+        {/* CARDS GRID */}
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {features.map((item, index) => {
+            const IconComponent = item.icon;
+            return (
+              <div
+                key={index}
+                className={`group relative rounded-2xl p-[2px] transition-all duration-300 hover:-translate-y-1.5 ${item.colSpan}`}
+              >
+                {/* STATIC LIGHT BORDER */}
+                <div className="absolute inset-0 rounded-2xl border border-gray-200 transition-opacity duration-300 group-hover:opacity-0" />
 
-          {/* SMALL IMAGE — CB2 */}
-          <div
-            className="
-              relative
-              min-h-[220px]
-              overflow-hidden
-              rounded-[14px]
-              lg:min-h-full
-            "
-          >
-            <Image
-              src="/assets/images/career/c2.webp"
-              alt="Technology and workspace"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 22vw, 50vw"
-            />
-          </div>
+                {/* GLOWING GREEN BORDER ON HOVER */}
+                <div className="absolute inset-0 rounded-2xl border-2 border-transparent transition-all duration-300 group-hover:border-[#00A896] group-hover:shadow-[0_0_20px_rgba(0,168,150,0.3)]" />
 
-          {/* SMALL IMAGE — CB3 */}
-          <div
-            className="
-              relative
-              min-h-[220px]
-              overflow-hidden
-              rounded-[14px]
-              lg:min-h-full
-            "
-          >
-            <Image
-              src="/assets/images/career/c3.webp"
-              alt="Team enjoying time together"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 22vw, 50vw"
-            />
-          </div>
+                {/* CARD CONTENT */}
+                <div className="relative z-10 flex h-full flex-col justify-between overflow-hidden rounded-[14px] bg-white p-7 shadow-sm transition-all duration-300 group-hover:shadow-xl">
+                  <div>
+                    {/* ICON & BADGE */}
+                    <div className="flex items-center justify-between mb-5">
+                      
+                      {/* ICON BOX - Always visible with crisp styling */}
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#00A896]/30 bg-teal-50/80 text-[#00A896] transition-all duration-300 group-hover:scale-110 group-hover:border-[#00A896] group-hover:bg-[#00A896] group-hover:text-white group-hover:shadow-md group-hover:shadow-[#00A896]/30">
+                        <IconComponent className="h-6 w-6 stroke-[2.2]" />
+                      </div>
 
-          {/* SMALL IMAGE — CB4 */}
-          <div
-            className="
-              relative
-              min-h-[220px]
-              overflow-hidden
-              rounded-[14px]
-              lg:min-h-full
-            "
-          >
-            <Image
-              src="/assets/images/career/c4.webp"
-              alt="Modern office workspace"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 22vw, 50vw"
-            />
-          </div>
+                      <span className="rounded-full bg-teal-50 px-3 py-1 text-[11px] font-semibold text-[#00A896] transition-colors duration-300 group-hover:bg-[#00A896]/10">
+                        {item.badge}
+                      </span>
+                    </div>
 
-          {/* SMALL IMAGE — CB5 */}
-          <div
-            className="
-              relative
-              min-h-[220px]
-              overflow-hidden
-              rounded-[14px]
-              lg:min-h-full
-            "
-          >
-            <Image
-              src="/assets/images/career/c5.webp"
-              alt="Employees collaborating"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 22vw, 50vw"
-            />
-          </div>
+                    {/* TITLE */}
+                    <h3 className="text-xl font-bold tracking-tight text-[#06282C] transition-colors duration-300 group-hover:text-[#00A896]">
+                      {item.title}
+                    </h3>
+
+                    {/* DESCRIPTION */}
+                    <p className="mt-2.5 text-sm leading-relaxed text-gray-600">
+                      {item.description}
+                    </p>
+                  </div>
+
+                  {/* BOTTOM LOADING / ACCENT LINE */}
+                  <div className="mt-6 h-[2px] w-full overflow-hidden rounded-full bg-gray-100">
+                    <div className="h-full w-0 bg-[#00A896] transition-all duration-500 ease-out group-hover:w-full" />
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
+
       </div>
     </section>
   );
