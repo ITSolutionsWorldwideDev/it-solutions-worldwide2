@@ -12,9 +12,9 @@ export default async function StatsCards({ locale }: { locale: string }) {
   ];
 
   return (
-    <div className="container xl:max-w-[1200px] my-10">
-      <div className="bg-[#0F5A63] rounded-3xl px-6">
-        <h2 className="text-white text-center text-[28px] md:text-[34px] font-bold mb-6 tracking-wide">
+    <div className="w-full my-10 flex justify-center">
+      <div className="container xl:max-w-[1200px] bg-[#0F5A63] rounded-3xl px-6 py-10 shadow-lg">
+        <h2 className="text-white text-center text-[28px] md:text-[34px] font-bold mb-8 tracking-wide">
           {t("stats.heading")}
         </h2>
 
@@ -22,14 +22,18 @@ export default async function StatsCards({ locale }: { locale: string }) {
           {stats.map((stat, index) => (
             <div
               key={stat.label}
-              className={`flex-1 text-center p-4 ${
+              className={`flex-1 text-center p-4 flex flex-col items-center justify-center ${
                 index > 0
-                  ? "border-t sm:border-t-0 sm:border-l border-white/30"
+                  ? "border-t sm:border-t-0 sm:border-l border-white/20"
                   : ""
               }`}
             >
-              <p className="text-3xl md:text-5xl font-bold">{stat.value}</p>
-              <p className="mt-2 text-base md:text-lg">{stat.label}</p>
+              <p className="text-3xl md:text-5xl font-extrabold tracking-tight">
+                {stat.value}
+              </p>
+              <p className="mt-2 text-sm md:text-base text-neutral-100 font-medium">
+                {stat.label}
+              </p>
             </div>
           ))}
         </div>

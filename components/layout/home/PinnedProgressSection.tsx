@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import { useTranslations } from "next-intl"; // 1. Add this import
+import { useTranslations } from "next-intl";
 import { getIndustriesData } from "@/lib/commonData";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -14,9 +14,9 @@ export default function PinnedProgressSection() {
   const dotRefs = useRef<(SVGCircleElement | null)[]>([]);
   const svgRef = useRef<SVGSVGElement | null>(null);
 
-  // Initialize data inside the component
-const t = useTranslations();
-const industriesData = getIndustriesData(t);
+  const t = useTranslations();
+  const industriesData = getIndustriesData(t);
+
   useEffect(() => {
     if (!containerRef.current) return;
 
@@ -167,12 +167,12 @@ const industriesData = getIndustriesData(t);
       window.removeEventListener("load", handleLoad);
       ctx.revert();
     };
-  }, [industriesData]); // Added dependency
+  }, [industriesData]);
 
   return (
     <section
       ref={containerRef}
-      className="w-[95%] relative h-screen overflow-hidden bg-white z-10"
+      className="w-[95%] relative h-screen overflow-hidden bg-white z-10 mx-auto"
     >
       {industriesData.map((slide, i) => (
         <div
@@ -182,17 +182,19 @@ const industriesData = getIndustriesData(t);
           }}
           className="absolute inset-0 flex items-center justify-between"
         >
-          <div className="image-container w-full md:w-1/2 h-2/5 md:h-full flex items-center justify-center z-20">
-           <Image
-            src={slide.image}
-            alt={slide.industry}
-            className="w-full h-[90%] rounded object-cover"
-            loading="lazy"
-            quality={50}
-            fetchPriority="low"
-            width={600}
-            height={400}
-          />
+          <div className="image-container w-full md:w-1/2 h-2/5 md:h-full flex items-center justify-center z-20 relative px-4">
+            <div className="relative w-full h-[90%] rounded overflow-hidden">
+              <Image
+                src={slide.image}
+                alt={slide.industry}
+                className="object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
+                quality={75}
+                fetchPriority="low"
+              />
+            </div>
           </div>
           <div className="text-container w-full md:w-1/2 h-full flex flex-col items-start justify-center p-3 md:p-12 lg:pl-20 xl:pl-40 z-20">
             <h2 className="text-xl md:text-3xl 2xl:text-5xl font-bold mb-4">

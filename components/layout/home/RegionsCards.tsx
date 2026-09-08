@@ -1,17 +1,20 @@
 "use client";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function RegionsGlobe() {
+  const t = useTranslations();
+
   return (
-<div className="w-full bg-[#175864] pt-16 pb-20 px-4 flex flex-col items-center justify-center relative z-10 min-h-[450px]">
+    <div className="w-full bg-[#175864] pt-16 pb-20 px-4 flex flex-col items-center justify-center relative z-10 min-h-[450px]">
       <div className="max-w-5xl mx-auto w-full flex flex-col items-center justify-center">
         
         {/* Header Section */}
         <h2 className="text-center text-2xl md:text-4xl font-bold text-white tracking-tight block">
-          Delivering Excellence Globally
+          {t("regionsGlobe.heading", { default: "Delivering Excellence Globally" })}
         </h2>
         <p className="text-center text-sm md:text-lg font-normal text-neutral-200 max-w-md mt-2 mx-auto mb-10 md:mb-14 block">
-          Tailored Solutions Across Borders with Global Connectivity
+          {t("regionsGlobe.subheading", { default: "Tailored Solutions Across Borders with Global Connectivity" })}
         </p>
 
         {/* 3D Tech Globe Canvas Component */}

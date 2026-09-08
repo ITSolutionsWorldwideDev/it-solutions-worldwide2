@@ -1,21 +1,35 @@
 // utils/serverTranslation.ts
-import enCommon from "../public/locales/en/common.json";
-import nlCommon from "../public/locales/nl/common.json";
+import "server-only";
 import i18next, { type i18n } from "i18next";
-
-const resources = {
-  en: { common: enCommon },
-  nl: { common: nlCommon },
-};
 
 const i18nCache = new Map<string, Promise<i18n>>();
 
+async function loadLocaleResources(locale: string) {
+  switch (locale) {
+    case "nl":
+      return { common: (await import("../public/locales/nl/common.json")).default };
+    case "en":
+    default:
+      return { common: (await import("../public/locales/en/common.json")).default };
+  }
+}
+
 async function createI18nInstance(locale: string): Promise<i18n> {
   const i18nInstance = i18next.createInstance();
+  const commonResources = await loadLocaleResources(locale);
+
+  const fallbackResources =
+    locale !== "en"
+      ? { common: (await import("../public/locales/en/common.json")).default }
+      : commonResources;
+
   await i18nInstance.init({
     lng: locale,
     fallbackLng: "en",
-    resources,
+    resources: {
+      [locale]: commonResources,
+      en: fallbackResources,
+    },
     initAsync: true,
   });
   return i18nInstance;

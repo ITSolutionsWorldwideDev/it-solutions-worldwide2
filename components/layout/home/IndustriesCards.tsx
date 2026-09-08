@@ -112,8 +112,6 @@ export default function IndustriesCards({ locale }: { locale: string }) {
     }
   };
 
-  // Modal ab portal ke through document.body me render hoga,
-  // is se yeh kisi bhi ancestor ke stacking context (relative/z-index) me trap nahi hoga
   const modalContent =
     activeId !== null && activeSlide && sourceRect ? (
       <>
@@ -135,7 +133,13 @@ export default function IndustriesCards({ locale }: { locale: string }) {
           </button>
 
           <div className="w-full md:w-1/2 relative bg-gray-100">
-            <Image src={getCleanSrc(activeSlide.image)} alt={activeSlide.industry} fill className="object-cover" />
+            <Image 
+              src={getCleanSrc(activeSlide.image)} 
+              alt={activeSlide.industry} 
+              fill 
+              className="object-cover" 
+              sizes="(max-width: 768px) 100vw, 400px"
+            />
           </div>
 
           <div
@@ -156,7 +160,6 @@ export default function IndustriesCards({ locale }: { locale: string }) {
         {t("industries.sectionHeading")}
       </h2>
 
-      {/* Subtle Left Arrow */}
       <button
         onClick={scrollLeft}
         aria-label="Scroll Left"
@@ -167,7 +170,6 @@ export default function IndustriesCards({ locale }: { locale: string }) {
         </svg>
       </button>
 
-      {/* Scrollable Container for Slider Effect */}
       <div
         ref={sliderRef}
         className="flex overflow-x-auto pb-10 gap-6 snap-x scroll-smooth [&::-webkit-scrollbar]:hidden"
@@ -214,7 +216,6 @@ export default function IndustriesCards({ locale }: { locale: string }) {
         })}
       </div>
 
-      {/* Subtle Right Arrow */}
       <button
         onClick={scrollRight}
         aria-label="Scroll Right"
@@ -225,7 +226,6 @@ export default function IndustriesCards({ locale }: { locale: string }) {
         </svg>
       </button>
 
-      {/* Modal ab portal se body me jayega, koi bhi section uske upar nahi aa sakta */}
       {mounted && modalContent && createPortal(modalContent, document.body)}
     </section>
   );

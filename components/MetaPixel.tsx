@@ -1,18 +1,40 @@
 "use client";
 
 import Script from "next/script";
+import { useEffect, useState } from "react";
+import { getClientConsent } from "@/lib/cookieConsent";
 
-export function MetaPixelScript({
-  pixelId,
-  enabled = true,
-}: {
-  pixelId: string;
-  enabled?: boolean;
-}) {
-  if (!enabled) return null;
+function useAnalyticsConsent() {
+  const [mounted, setMounted] = useState(false);
+  const [enabled, setEnabled] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+
+    const checkConsent = () => {
+      const consent = getClientConsent();
+      setEnabled(!!consent?.analytics);
+    };
+
+    checkConsent();
+
+    window.addEventListener("cookie-consent-changed", checkConsent);
+
+    return () => {
+      window.removeEventListener("cookie-consent-changed", checkConsent);
+    };
+  }, []);
+
+  return { mounted, enabled };
+}
+
+export function MetaPixelScript({ pixelId }: { pixelId: string }) {
+  const { mounted, enabled } = useAnalyticsConsent();
+
+  if (!mounted || !enabled) return null;
 
   return (
-    <Script id="fb-pixel" strategy="afterInteractive">
+    <Script id="fb-pixel" strategy="lazyOnload">
       {`
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -30,6 +52,14 @@ fbq('track', 'PageView');
 }
 
 export function MetaPixelNoScript({ pixelId }: { pixelId: string }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
     <noscript>
       <img

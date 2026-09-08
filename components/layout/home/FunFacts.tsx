@@ -133,68 +133,64 @@ export default function FunFacts() {
   return (
     <div
       ref={funFactsRef}
-      className="min-h-[250px] container xl:max-w-[1200px] bg-green-700 rounded-3xl py-12 px-6 my-10"      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
+      className="min-h-[250px] container xl:max-w-[1200px] mx-auto bg-green-700 rounded-3xl py-12 px-6 my-10 flex flex-col items-center justify-center"
     >
       <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-12">
         Global Reach, Local Expertise
       </h2>
       <div className="flex flex-col sm:flex-row w-full justify-between text-white">
         <div className="flex-1 text-center p-4">
-          <h2 className="md:text-3xl text-xl mb-2 font-bold">
+          <div className="flex justify-center items-center md:text-3xl text-xl mb-2 font-bold">
             <AnimatedNumber
               value={8}
               duration={2000}
               digitHeight={60}
               startAnimation={startAnimation}
             />
-            +
-          </h2>
+            <span>+</span>
+          </div>
           <p className="text-lg md:text-base sm:text-sm mb-2">
             Years Serving Globally
           </p>
         </div>
         <div className="flex-1 text-center p-4 border-t sm:border-t-0 sm:border-l border-gray-300">
-          <h2 className="md:text-3xl text-xl mb-2 font-bold">
+          <div className="flex justify-center items-center md:text-3xl text-xl mb-2 font-bold">
             <AnimatedNumber
               value={98}
               duration={2000}
               digitHeight={60}
               startAnimation={startAnimation}
             />
-            %
-          </h2>
+            <span>%</span>
+          </div>
           <p className="text-lg md:text-base sm:text-sm mb-2">
             Customer Satisfaction
           </p>
         </div>
         <div className="flex-1 text-center p-4 border-t sm:border-t-0 sm:border-l border-gray-300">
-          <h2 className="md:text-3xl text-xl mb-2 font-bold">
+          <div className="flex justify-center items-center md:text-3xl text-xl mb-2 font-bold">
             <AnimatedNumber
               value={90}
               duration={2000}
               digitHeight={60}
               startAnimation={startAnimation}
             />
-            +
-          </h2>
+            <span>+</span>
+          </div>
           <p className="text-lg md:text-base sm:text-sm mb-2">
             Projects Completed
           </p>
         </div>
         <div className="flex-1 text-center p-4 border-t sm:border-t-0 sm:border-l border-gray-300">
-          <h2 className="md:text-3xl text-xl mb-2 font-bold">
+          <div className="flex justify-center items-center md:text-3xl text-xl mb-2 font-bold">
             <AnimatedNumber
               value={20}
               duration={2000}
               digitHeight={60}
               startAnimation={startAnimation}
             />
-            +
-          </h2>
+            <span>+</span>
+          </div>
           <p className="text-lg md:text-base sm:text-sm mb-2">
             Countries We Serve
           </p>

@@ -1,5 +1,10 @@
 // next.config.ts
 import type { NextConfig } from "next";
+import createBundleAnalyzer from "@next/bundle-analyzer";
+
+const withBundleAnalyzer = createBundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+});
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -13,11 +18,10 @@ const nextConfig: NextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
-    minimumCacheTTL: 2592000, // 30 days
+    minimumCacheTTL: 2592000,
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    // ✅ Yeh part add karna zaruri hai taake optimization error na aaye
- remotePatterns: [
+    remotePatterns: [
       {
         protocol: "https",
         hostname: "www.itsolutionsworldwide.com",
@@ -50,14 +54,14 @@ const nextConfig: NextConfig = {
       { source: "/profile", destination: "/en/profile", permanent: true },
       { source: "/it-support", destination: "/en/it-support", permanent: true },
       { source: "/terms-and-conditions", destination: "/en/terms-and-conditions", permanent: true },
-       {
-        source: '/en/digital-services/website-design-%26-development',
-        destination: '/en/digital-services/website-design-development',
-        permanent: true, // 301 redirect
-       },
-       {
-        source: '/nl/digital-services/website-design-%26-development',
-        destination: '/nl/digital-services/website-design-development',
+      {
+        source: "/en/digital-services/website-design-%26-development",
+        destination: "/en/digital-services/website-design-development",
+        permanent: true,
+      },
+      {
+        source: "/nl/digital-services/website-design-%26-development",
+        destination: "/nl/digital-services/website-design-development",
         permanent: true,
       },
     ];
@@ -84,4 +88,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withBundleAnalyzer(nextConfig);

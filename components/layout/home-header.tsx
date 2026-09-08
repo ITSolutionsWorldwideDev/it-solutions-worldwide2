@@ -14,7 +14,6 @@ const SegmentTabs = dynamic(() => import("./home/SegmentTabComponent"), {
 });
 
 const HERO_POSTER = "/assets/images/backgrounds/hero-bg.webp";
-const HERO_VIDEO = "/assets/images/backgrounds/hero-bg.mp4";
 
 export default function Header() {
   const [showVideo, setShowVideo] = useState(false);
@@ -36,35 +35,17 @@ export default function Header() {
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden bg-black" id="hometop">
-      {/* Background Poster: 'priority' handles the preload automatically */}
+      {/* Background Poster optimized with fetchPriority high for LCP */}
       <Image
         src={HERO_POSTER}
         alt="IT Solutions Worldwide hero background"
         fill
         priority
+        fetchPriority="high"
         sizes="100vw"
         className="object-cover z-10 pointer-events-none"
         quality={75}
       />
-
-      {/* Background Video */}
-      {showVideo && (
-        <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-20 opacity-0 transition-opacity duration-1000 ease-in-out"
-          src={HERO_VIDEO}
-          autoPlay
-          loop
-          muted
-          playsInline
-          poster={HERO_POSTER}
-          aria-hidden
-          onCanPlay={(e) => {
-            const videoEl = e.target as HTMLVideoElement;
-            videoEl.classList.remove("opacity-0");
-            videoEl.classList.add("opacity-100");
-          }}
-        />
-      )}
 
       <div className="absolute inset-0 bg-black/60 z-25 pointer-events-none" aria-hidden />
 

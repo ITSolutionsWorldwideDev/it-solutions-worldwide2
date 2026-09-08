@@ -8,31 +8,20 @@ import CareerGrowthSection from "@/components/layout/career-growth-section";
 import CareerOpenApplication from "@/components/layout/career-open-application";
 import CareerFaqSection from "@/components/layout/career-faq-section";
 
+export const metadata: Metadata = {
+  title: "Careers at IT Solutions Worldwide | Jobs in Supply Chain, IT & Engineering, Netherlands",
+  description:
+    "Explore 31+ open roles at IT Solutions Worldwide — a Rotterdam-based outsourcing company hiring across supply chain, IT support, engineering, and data roles throughout the Netherlands. Apply today.",
+};
+
 export const revalidate = 3600;
 export const dynamic = "force-static";
 
 type PageProps = {
   params: Promise<{
     locale: string;
-
   }>;
 };
-
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
-  const { locale } = await params;
-
-  const i18nInstance = await initServerI18n(locale);
-  const t = i18nInstance.getFixedT(locale, "common");
-
-  return {
-    title: {
-      absolute: t("career.metadata.title"),
-    },
-    description: t("career.metadata.description"),
-  };
-}
 
 export default async function Career({ params }: PageProps) {
   const { locale } = await params;
@@ -79,16 +68,13 @@ export default async function Career({ params }: PageProps) {
       />
 
       {/* CAREER GROWTH */}
-    <CareerGrowthSection locale={locale} />
+      <CareerGrowthSection locale={locale} />
 
       {/* JOBS */}
       <CareerJobsSection locale={locale} />
 
-      {/* FAQ
-          This component gets translations itself
-          using useTranslation("common")
-      */}
-    <CareerFaqSection locale={locale} />
+      {/* FAQ */}
+      <CareerFaqSection locale={locale} />
 
       {/* OPEN APPLICATION */}
       <CareerOpenApplication />

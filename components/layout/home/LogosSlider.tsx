@@ -49,26 +49,21 @@ export default function LogosSlider() {
                   alt={item.alt}
                   className="object-contain max-h-14 w-auto"
                   loading="lazy"
-                  quality={40} // 20 standard compression se visual blur hota hai, 40 metadata remove rakhta hai
+                  quality={75}
                 />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        {/* Radio Dots */}
-        {/* ✅ FIXED: Gap ko thoda manage kiya taaki touch targets overlap na karein */}
-{/* Radio Dots */}
-<div className="flex justify-center mt-6 gap-1 z-10 relative">
-            {clientLogos.map((_, index) => (
+        <div className="flex justify-center mt-6 gap-1 z-10 relative">
+          {clientLogos.map((_, index) => (
             <button
               key={index}
               onClick={() => swiperRef?.slideTo(index)}
               className="w-12 h-12 flex items-center justify-center relative group cursor-pointer" 
-              // 🔥 Touch Target Fixed: Physical size ab 48px vertical/horizontal ho chuka hai
               aria-label={`Go to slide ${index + 1}`} 
             >
-              {/* 🔥 Visual Dot: actual visual rendering choti hi rahegi taaki layout structure safe rahe */}
               <span 
                 className={`w-3 h-3 rounded-full border border-black transition-all block
                   ${
@@ -85,27 +80,29 @@ export default function LogosSlider() {
   );
 }
 
-// Alternate continuous-scroll logos slider
+// Alternate continuous-scroll logos slider with doubled mapping for smooth infinite ticker loops
 export function ClientLogosSlider() {
+  const duplicatedLogos = [...logosSlider, ...logosSlider];
+
   return (
     <div className="w-full max-w-6xl mx-auto py-12">
       <div className="relative overflow-hidden py-8 whitespace-nowrap">
-        <div className="absolute top-0 left-0 w-16 md:w-32 h-full z-10 bg-gradient-to-r from-white via-transparent to-transparent" />
+        <div className="absolute top-0 left-0 w-16 md:w-32 h-full z-10 bg-gradient-to-r from-white via-transparent to-transparent pointer-events-none" />
         <div className="inline-block animate-slide">
-          {logosSlider.map((src, index) => (
+          {duplicatedLogos.map((src, index) => (
             <Image
               key={index}
               src={src}
               alt={`logo-${index}`}
               className="h-14 md:h-20 w-auto mx-4 md:mx-6 inline-block transition-transform duration-300 ease-in-out hover:scale-110 hover:drop-shadow-lg"
-              quality={40}
+              quality={75}
               loading="lazy"
               width={140}
               height={60}
             />
           ))}
         </div>
-        <div className="absolute top-0 right-0 w-16 md:w-32 h-full z-10 bg-gradient-to-l from-white via-transparent to-transparent" />
+        <div className="absolute top-0 right-0 w-16 md:w-32 h-full z-10 bg-gradient-to-l from-white via-transparent to-transparent pointer-events-none" />
       </div>
     </div>
   );
