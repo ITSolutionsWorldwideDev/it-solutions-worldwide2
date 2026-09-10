@@ -117,12 +117,41 @@ export default function Faqs({ faqData }: FaqsProps) {
   const finalFaqList =
     Array.isArray(faqData) && faqData.length > 0 ? faqData : fallbackFaqData;
 
+  // Resolve question/answer once so both the UI and the schema use the same values
+  const resolvedFaqs = finalFaqList.map((item: any) => ({
+    question: item.question || item.q || "",
+    answer: item.answer || item.a || "",
+  }));
+
+  // FAQPage JSON-LD schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: resolvedFaqs
+      .filter((faq) => faq.question && faq.answer)
+      .map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+  };
+
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
     <section className="bg-gray-50 px-4 py-16 lg:py-20">
+      {/* FAQ Structured Data */}
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight">
@@ -135,20 +164,15 @@ export default function Faqs({ faqData }: FaqsProps) {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <div className="flex flex-col gap-3">
-            {finalFaqList.map((item: any, index: number) => {
-              const questionText = item.question || item.q || "";
-              const answerText = item.answer || item.a || "";
-
-              return (
-                <FAQItem
-                  key={index}
-                  question={questionText}
-                  answer={answerText}
-                  isOpen={openIndex === index}
-                  onToggle={() => toggle(index)}
-                />
-              );
-            })}
+            {resolvedFaqs.map((item, index: number) => (
+              <FAQItem
+                key={index}
+                question={item.question}
+                answer={item.answer}
+                isOpen={openIndex === index}
+                onToggle={() => toggle(index)}
+              />
+            ))}
           </div>
 
           <MapEmbed />

@@ -29,6 +29,12 @@ export async function POST(req: NextRequest) {
     const message = formData.get("message") as string;
     const resumeFile = formData.get("resume") as File | null; // matches frontend's payload.append("resume", resume)
 
+    // ⬇️ NEW — sent from CareerOpenApplication when rendered on a job's
+    // detail page (locked "Area of Expertise" field)
+    const source = (formData.get("source") as string) || "open-application";
+    const jobTitle = formData.get("jobTitle") as string | null;
+    const isJobApplication = source === "job-page" && !!jobTitle;
+
     if (!email || !name) {
       return NextResponse.json(
         { error: "Missing required fields." },
@@ -47,14 +53,25 @@ export async function POST(req: NextRequest) {
       });
     }
 
+    // ⬇️ NEW — dynamic subject/heading depending on whether this came
+    // from a specific job page or the generic open-application form
+    const subject = isJobApplication
+      ? `New Job Application: ${jobTitle}`
+      : `New Open Application: ${expertise || "Unspecified"}`;
+
+    const heading = isJobApplication
+      ? `New Job Application — ${jobTitle}`
+      : "New Open Application (Career Page)";
+
     const mailBody = {
       from: `"Career Open Application" <${process.env.SMTP_USER}>`,
       to: process.env.CAREER_EMAIL,
       cc: process.env.CAREER_CC_EMAIL,
-      subject: `New Open Application: ${expertise || "Unspecified"}`,
+      subject,
       html: `
-        <h2>New Open Application (Career Page)</h2>
+        <h2>${heading}</h2>
         <ul>
+          ${isJobApplication ? `<li><strong>Applied For:</strong> ${jobTitle}</li>` : ""}
           <li><strong>Name:</strong> ${name || "-"}</li>
           <li><strong>Email:</strong> ${email}</li>
           <li><strong>Phone:</strong> ${phone || "-"}</li>

@@ -22,13 +22,29 @@ export default function CareerFaqSection({
 }: CareerFaqSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-const translations = (
-  locale.toLowerCase().startsWith("nl") ? nlCommon : enCommon
-) as unknown as CommonTranslations;
+  const translations = (
+    locale.toLowerCase().startsWith("nl") ? nlCommon : enCommon
+  ) as unknown as CommonTranslations;
 
   const faq = translations.career.faq;
 
   const faqs = faq.items as FaqItem[];
+
+  // FAQPage JSON-LD schema (locale-aware, follows the same items shown on screen)
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs
+      .filter((item) => item.question && item.answer)
+      .map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+  };
 
   const toggleFaq = (index: number) => {
     setOpenIndex((current) =>
@@ -38,6 +54,13 @@ const translations = (
 
   return (
     <section className="w-full border-t border-gray-100 bg-white py-16 sm:py-20">
+      {/* FAQ Structured Data */}
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <div className="mx-auto w-full max-w-[1180px] px-6 sm:px-8 lg:px-0">
 
         {/* HEADER */}

@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 
-// ── FAQ data in JSON format ──────────────────────────────────────────────────
-const faqData: { question: string; answer: string }[] = [
+// ── Fallback FAQ data (used when no faqData prop is passed) ────────────────
+const fallbackFaqData: { question: string; answer: string }[] = [
   {
     question: "What types of roles can IT Solutions Worldwide fill?",
     answer:
@@ -94,9 +94,37 @@ function FAQItem({
 }
 
 // ── Main FAQ section ─────────────────────────────────────────────────────────
-export default function Faqs({faqData}:any) {
-    // console.log(faqData)
+interface FaqsProps {
+  faqData?: any[];
+}
+
+export default function Faqs({ faqData }: FaqsProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0); // first item open by default
+
+  const finalFaqList =
+    Array.isArray(faqData) && faqData.length > 0 ? faqData : fallbackFaqData;
+
+  // Normalize both { q, a } and { question, answer } shapes into one
+  const resolvedFaqs = finalFaqList.map((item: any) => ({
+    question: item.question || item.q || "",
+    answer: item.answer || item.a || "",
+  }));
+
+  // FAQPage JSON-LD schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: resolvedFaqs
+      .filter((faq) => faq.question && faq.answer)
+      .map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+  };
 
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -104,6 +132,13 @@ export default function Faqs({faqData}:any) {
 
   return (
     <section className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-16">
+      {/* FAQ Structured Data */}
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <div className="w-full max-w-2xl">
         {/* Heading */}
         <div className="text-center mb-10">
@@ -117,11 +152,11 @@ export default function Faqs({faqData}:any) {
 
         {/* Accordion list */}
         <div className="flex flex-col gap-3">
-          {faqData.map((item:any, index:number) => (
+          {resolvedFaqs.map((item, index: number) => (
             <FAQItem
               key={index}
-              question={item.q}
-              answer={item.a}
+              question={item.question}
+              answer={item.answer}
               isOpen={openIndex === index}
               onToggle={() => toggle(index)}
             />

@@ -30,12 +30,33 @@ const FAQSection = ({ faqs, children }: FAQSectionProps) => {
     }
   }, []);
 
+  // FAQPage JSON-LD schema (generated from the faqs prop)
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <section
       id="faq"
       className="mx-auto p-6 py-12 max-w-7xl"
       aria-labelledby="faq-heading"
     >
+      {/* FAQ Structured Data */}
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         {/* Left Section: Contact Form */}
         <div className="w-full">{children}</div>

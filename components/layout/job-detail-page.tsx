@@ -3,7 +3,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect, useMemo } from "react";
+import CareerOpenApplication from "./career-open-application";
+import { useState, useEffect, useMemo, useRef } from "react";
 import {
   MapPin,
   Briefcase,
@@ -43,8 +44,11 @@ export interface JobDetail {
   whatYoullDo?: string[];
   whatYoullBring?: string[];
   niceToHave?: string[];
-  additionalInfo?: string[]; // ⬅️ NEW
+  additionalInfo?: string[];
 
+  datePosted?: string;
+  validThrough?: string;
+  isRemote?: boolean;
 
   teamImage?: string;
 
@@ -210,6 +214,123 @@ const COMPANY_PERKS: {
 ];
 
 /* ------------------------------------------------------------------ */
+/* JOBPOSTING SCHEMA HELPER                                           */
+/* ------------------------------------------------------------------ */
+
+function mapEmploymentType(workType: string): string {
+  const w = workType.toLowerCase();
+
+  if (w.includes("full")) return "FULL_TIME";
+  if (w.includes("part")) return "PART_TIME";
+  if (w.includes("intern")) return "INTERN";
+  if (w.includes("contract") || w.includes("freelance")) return "CONTRACTOR";
+  if (w.includes("temp")) return "TEMPORARY";
+
+  return "FULL_TIME";
+}
+
+function parseSalaryRange(
+  salaryRange: string | undefined
+): Record<string, unknown> | undefined {
+  if (!salaryRange) return undefined;
+
+  const numbers = salaryRange.match(/[\d.,]+/g);
+  if (!numbers || numbers.length === 0) return undefined;
+
+  const parsed = numbers
+    .map((n) => parseFloat(n.replace(/\./g, "").replace(",", ".")))
+    .filter((n) => !Number.isNaN(n));
+
+  if (parsed.length === 0) return undefined;
+
+  const currencyMatch = salaryRange.match(/€|EUR|\$|USD|£|GBP/);
+  const currency = currencyMatch
+    ? { "€": "EUR", EUR: "EUR", $: "USD", USD: "USD", "£": "GBP", GBP: "GBP" }[
+        currencyMatch[0]
+      ]
+    : "EUR";
+
+  const unitText = /year|annum|p\.a/i.test(salaryRange)
+    ? "YEAR"
+    : /week/i.test(salaryRange)
+    ? "WEEK"
+    : /day/i.test(salaryRange)
+    ? "DAY"
+    : /hour/i.test(salaryRange)
+    ? "HOUR"
+    : "MONTH";
+
+  return {
+    "@type": "MonetaryAmount",
+    currency,
+    value: {
+      "@type": "QuantitativeValue",
+      ...(parsed.length >= 2
+        ? { minValue: Math.min(...parsed), maxValue: Math.max(...parsed) }
+        : { value: parsed[0] }),
+      unitText,
+    },
+  };
+}
+
+function getJobPostingSchema(job: JobDetail, currentUrl: string) {
+  const isRemote = job.isRemote ?? /remote/i.test(job.location);
+
+  const description =
+    [
+      ...(job.aboutRole ?? []),
+      ...(job.whatYoullDo ?? []),
+      ...(job.whatYoullBring ?? []),
+    ]
+      .join(" ")
+      .trim() || job.title;
+
+  const baseSalary = parseSalaryRange(job.salaryRange);
+
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    title: job.title,
+    description,
+    identifier: {
+      "@type": "PropertyValue",
+      name: "IT Solutions Worldwide",
+      value: job.slug,
+    },
+    datePosted: job.datePosted ?? new Date().toISOString().split("T")[0],
+    ...(job.validThrough ? { validThrough: job.validThrough } : {}),
+    employmentType: mapEmploymentType(job.workType),
+    hiringOrganization: {
+      "@type": "Organization",
+      name: "IT Solutions Worldwide",
+      sameAs: currentUrl.split("/career")[0],
+      logo: "https://www.itsolutionsworldwide.com/logo.png",
+    },
+    ...(baseSalary ? { baseSalary } : {}),
+    ...(isRemote
+      ? {
+          jobLocationType: "TELECOMMUTE",
+          applicantLocationRequirements: {
+            "@type": "Country",
+            name: "Netherlands",
+          },
+        }
+      : {
+          jobLocation: {
+            "@type": "Place",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: job.location,
+              addressCountry: "NL",
+            },
+          },
+        }),
+  };
+
+  return schema;
+}
+
+/* ------------------------------------------------------------------ */
 /* SMALL HELPERS                                                      */
 /* ------------------------------------------------------------------ */
 
@@ -257,12 +378,52 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
   const [currentUrl, setCurrentUrl] = useState("");
   const [showShareMenu, setShowShareMenu] = useState(false);
   const [copied, setCopied] = useState(false);
+  const applyFormRef = useRef<HTMLDivElement>(null);
+
+  const scrollToApplyForm = () => {
+    applyFormRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       setCurrentUrl(window.location.href);
     }
   }, []);
+
+     // Agar URL mein #apply hash hai (career listing se "Apply Now" click hua),
+  // toh form tak scroll karo. Single setTimeout se yeh miss ho sakta tha
+  // agar us waqt tak applyFormRef DOM mein attach nahi hua tha — isliye
+  // ab poll karte hain jab tak ref mil na jaye (max ~2 second try karega).
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (window.location.hash !== "#apply") return;
+
+    let attempts = 0;
+    const maxAttempts = 40; // 40 * 50ms = ~2 seconds
+
+    const tryScroll = () => {
+      if (applyFormRef.current) {
+        applyFormRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+
+      attempts++;
+      if (attempts < maxAttempts) {
+        setTimeout(tryScroll, 50);
+      }
+    };
+
+    tryScroll();
+  }, []);
+
+  const jobPostingSchema = useMemo(
+    () =>
+      getJobPostingSchema(
+        job,
+        currentUrl || `https://www.itsolutionsworldwide.com/career/${job.slug}`
+      ),
+    [job, currentUrl]
+  );
 
   const handleShareClick = async () => {
     if (typeof navigator !== "undefined" && navigator.share) {
@@ -299,29 +460,16 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
 
   const nextNumber = () => String(++sectionCount).padStart(2, "0");
 
-  const hasAboutContent = !!(
-    job.aboutRole && job.aboutRole.length > 0
-  );
-
-  const hasWhatYoullDo = !!(
-    job.whatYoullDo && job.whatYoullDo.length > 0
-  );
-
+  const hasAboutContent = !!(job.aboutRole && job.aboutRole.length > 0);
+  const hasWhatYoullDo = !!(job.whatYoullDo && job.whatYoullDo.length > 0);
   const hasWhatYoullBring = !!(
     job.whatYoullBring && job.whatYoullBring.length > 0
   );
-
-  const hasNiceToHave = !!(
-    job.niceToHave && job.niceToHave.length > 0
-  );
-
+  const hasNiceToHave = !!(job.niceToHave && job.niceToHave.length > 0);
   const hasAdditionalInfo = !!(
-  job.additionalInfo && job.additionalInfo.length > 0
-); 
-
-  const hasKeySkills = !!(
-    job.keySkills && job.keySkills.length > 0
+    job.additionalInfo && job.additionalInfo.length > 0
   );
+  const hasKeySkills = !!(job.keySkills && job.keySkills.length > 0);
 
   /* -------------------------------------------------------------- */
   /* RELATED JOBS                                                   */
@@ -344,10 +492,15 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
     setDisplayCards(shuffleArray(basePool).slice(0, 3));
   }, [basePool]);
 
-  const applyHref = `/job-apply?slug=${job.slug}`;
-
   return (
     <div className="bg-[#FAFCFC] min-h-screen">
+      {/* JobPosting Structured Data */}
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jobPostingSchema) }}
+      />
+
       {/* ============ HERO BAND ============ */}
 
       <div className="bg-[#0A2220] text-white">
@@ -396,9 +549,7 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                   Salary
                 </div>
 
-                <p className="text-sm font-bold">
-                  {job.salaryRange}
-                </p>
+                <p className="text-sm font-bold">{job.salaryRange}</p>
               </div>
             )}
 
@@ -419,13 +570,13 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
       {/* ============ MOBILE APPLY NOW BAR ============ */}
 
       <div className="lg:hidden bg-white border-b border-gray-200/70 px-6 py-3 sticky top-0 z-30 shadow-sm">
-        <Link
-          href={applyHref}
+        <button
+          onClick={scrollToApplyForm}
           className="w-full flex items-center justify-center gap-2 bg-[#06282C] hover:bg-[#0A3438] text-white font-semibold text-sm py-3 rounded-xl transition"
         >
           Apply Now
           <ArrowRight className="w-4 h-4" />
-        </Link>
+        </button>
       </div>
 
       {/* ============ BODY ============ */}
@@ -446,10 +597,7 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
 
                   <div className="space-y-3 mb-4">
                     {job.aboutRole!.map((p, i) => (
-                      <p
-                        key={i}
-                        className="text-sm text-gray-500 leading-relaxed"
-                      >
+                      <p key={i} className="text-sm text-gray-500 leading-relaxed">
                         {p}
                       </p>
                     ))}
@@ -535,30 +683,25 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
               </section>
             )}
 
+            {hasAdditionalInfo && (
+              <section className="flex gap-4 mb-12">
+                <SectionNumber n={nextNumber()} />
 
-            {/* ⬇️ NEW — Additional Information section */}
-{hasAdditionalInfo && (
-  <section className="flex gap-4 mb-12">
-    <SectionNumber n={nextNumber()} />
+                <div className="flex-1 pt-1.5">
+                  <h2 className="text-xl font-bold text-[#06282C] mb-3">
+                    Additional Information
+                  </h2>
 
-    <div className="flex-1 pt-1.5">
-      <h2 className="text-xl font-bold text-[#06282C] mb-3">
-        Additional Information
-      </h2>
-
-      <div className="space-y-3 mb-4">
-        {job.additionalInfo!.map((p, i) => (
-          <p
-            key={i}
-            className="text-sm text-gray-500 leading-relaxed"
-          >
-            {p}
-          </p>
-        ))}
-      </div>
-    </div>
-  </section>
-)}
+                  <div className="space-y-3 mb-4">
+                    {job.additionalInfo!.map((p, i) => (
+                      <p key={i} className="text-sm text-gray-500 leading-relaxed">
+                        {p}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              </section>
+            )}
 
             <section className="flex gap-4 mb-10">
               <SectionNumber n={nextNumber()} />
@@ -612,21 +755,19 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                   Ready to apply?
                 </p>
 
-                <p className="text-lg font-extrabold mb-1">
-                  Only Takes 1 minute.
-                </p>
+                <p className="text-lg font-extrabold mb-1">Only Takes 1 minute.</p>
 
                 <p className="text-[11px] text-white/70"></p>
               </div>
 
               <div className="p-3 space-y-2 bg-white relative">
-                <Link
-                  href={applyHref}
+                <button
+                  onClick={scrollToApplyForm}
                   className="w-full flex items-center justify-center gap-2 bg-[#06282C] hover:bg-[#0A3438] text-white font-semibold text-sm py-3 rounded-xl transition"
                 >
                   Apply for This Role
                   <ArrowRight className="w-4 h-4" />
-                </Link>
+                </button>
 
                 <div className="relative">
                   <button
@@ -708,8 +849,6 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                   </div>
                 )}
 
-                {/* Location row with smart alignment */}
-
                 <div className="flex items-start justify-between gap-4">
                   <dt className="flex items-center gap-2 text-gray-400 shrink-0 pt-0.5">
                     <MapPin className="w-3.5 h-3.5" />
@@ -727,9 +866,7 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                     Work Type
                   </dt>
 
-                  <dd className="font-semibold text-[#06282C]">
-                    {job.workType}
-                  </dd>
+                  <dd className="font-semibold text-[#06282C]">{job.workType}</dd>
                 </div>
 
                 {job.seniority && (
@@ -797,11 +934,9 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-[1000px]">
             {displayCards.map((rj) => {
               const isExternal =
-                rj.isExternalLink ||
-                rj.externalUrl?.startsWith("http");
+                rj.isExternalLink || rj.externalUrl?.startsWith("http");
 
-              const targetUrl =
-                rj.externalUrl || `/career/${rj.slug}`;
+              const targetUrl = rj.externalUrl || `/career/${rj.slug}`;
 
               return (
                 <div
@@ -864,7 +999,7 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
                     )}
                   </div>
 
-                  {isExternal ? (
+                                  {isExternal ? (
                     <a
                       href={targetUrl}
                       target="_blank"
@@ -888,6 +1023,11 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
             })}
           </div>
         </div>
+      </div>
+
+      {/* ============ INLINE APPLICATION FORM — locked to this job ============ */}
+      <div ref={applyFormRef}>
+        <CareerOpenApplication jobTitle={job.title} />
       </div>
     </div>
   );

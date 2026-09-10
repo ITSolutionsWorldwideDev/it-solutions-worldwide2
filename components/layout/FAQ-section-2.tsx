@@ -5,7 +5,7 @@ import React, { useState, ReactNode } from 'react';
 
 interface Question {
   question: string;
-  answer: string| ReactNode;
+  answer: string | ReactNode;
 }
 
 interface FAQ2Props {
@@ -25,11 +25,41 @@ const FAQSection2: React.FC<FAQ2Props> = ({
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+  // FAQPage JSON-LD schema — only string answers can be serialized safely.
+  // JSX/ReactNode answers are skipped here since they can't be represented
+  // as plain text without a server-side render step.
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: questions
+      .filter(
+        (q): q is Question & { answer: string } =>
+          typeof q.answer === 'string' && q.question.trim().length > 0
+      )
+      .map((q) => ({
+        '@type': 'Question',
+        name: q.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: q.answer,
+        },
+      })),
+  };
+
   return (
     <section
       className="flex justify-center py-12"
       aria-labelledby="faq-heading"
     >
+      {/* FAQ Structured Data (string answers only) */}
+      {faqSchema.mainEntity.length > 0 && (
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       <div
         className="faq-container p-8 rounded-md w-full max-w-[1152px]"
         style={{

@@ -198,8 +198,9 @@ const CareerJobsSection = ({ locale = "en" }: { locale?: string }) => {
               </div>
 
               <div className="flex w-full items-center justify-between gap-4 md:w-auto md:justify-end">
-                <Link
-                  href={`${langPrefix}/job-apply`}
+                                <Link
+                  href={`${langPrefix}/career/${slugify(job.title)}#apply`}
+                  scroll={false}
                   className="w-full rounded-xl bg-[#2B8A99] px-6 py-2.5 text-center text-xs font-semibold text-white shadow-sm transition duration-300 ease-in-out hover:bg-[#237380] md:w-auto"
                 >
                   {jobsData.applyNow}

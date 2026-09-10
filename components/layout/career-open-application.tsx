@@ -1,7 +1,7 @@
 // components/layout/career-open-application.tsx
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { 
   FiClock, 
   FiUsers, 
@@ -13,15 +13,25 @@ import {
   FiSend,
   FiUpload,
   FiX,
-  FiFile
+  FiFile,
+  FiLock
 } from "react-icons/fi";
 
-export default function CareerOpenApplication() {
+interface CareerOpenApplicationProps {
+  // Pass this when the component is rendered on a specific job's page
+  // (e.g. "Warehouse Planner"). When present, the expertise field is
+  // locked to this value instead of showing the dropdown.
+  jobTitle?: string;
+}
+
+export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicationProps) {
+  const isJobLocked = !!jobTitle;
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     phone: "",
-    expertise: "",
+    expertise: jobTitle ?? "",
     message: "",
   });
   const [resume, setResume] = useState<File | null>(null);
@@ -29,6 +39,14 @@ export default function CareerOpenApplication() {
   const [success, setSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const resumeInputRef = useRef<HTMLInputElement>(null);
+
+  // Keep expertise in sync if jobTitle prop changes (e.g. navigating
+  // between different job pages without a full remount)
+  useEffect(() => {
+    if (jobTitle) {
+      setFormData((prev) => ({ ...prev, expertise: jobTitle }));
+    }
+  }, [jobTitle]);
 
   const handleResumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -60,9 +78,20 @@ export default function CareerOpenApplication() {
       payload.append("name", formData.fullName);
       payload.append("email", formData.email);
       payload.append("phone", formData.phone);
+      // Always send the resolved expertise value — locked (jobTitle) or
+      // user-selected (dropdown) — mail ke andar yehi jayega
       payload.append("expertise", formData.expertise);
       payload.append("message", formData.message);
       payload.append("resume", resume);
+
+      // Optional: lets the backend distinguish a job-page application
+      // from a generic open application, useful for mail subject/tagging
+      if (isJobLocked) {
+        payload.append("source", "job-page");
+        payload.append("jobTitle", jobTitle as string);
+      } else {
+        payload.append("source", "open-application");
+      }
 
       const response = await fetch("/api/career-application", {
         method: "POST",
@@ -76,7 +105,13 @@ export default function CareerOpenApplication() {
       }
 
       setSuccess(true);
-      setFormData({ fullName: "", email: "", phone: "", expertise: "", message: "" });
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        expertise: jobTitle ?? "",
+        message: "",
+      });
       setResume(null);
       if (resumeInputRef.current) resumeInputRef.current.value = "";
     } catch (err) {
@@ -98,15 +133,23 @@ export default function CareerOpenApplication() {
           <div className="lg:col-span-5 bg-[#06282C] text-white p-8 sm:p-12 flex flex-col justify-between">
             <div>
               <span className="inline-block text-[10px] font-bold tracking-[0.2em] uppercase px-3.5 py-1.5 bg-white/10 border border-white/10 text-[#5CD2C8] rounded-full mb-6">
-                OPEN APPLICATION
+                {isJobLocked ? "JOB APPLICATION" : "OPEN APPLICATION"}
               </span>
 
-              <h2 className="text-[28px] sm:text-[34px] font-extrabold tracking-tight leading-[1.15] mb-4">
-                Don&apos;t see your <br />perfect role?
-              </h2>
+              {isJobLocked ? (
+                <h2 className="text-[28px] sm:text-[34px] font-extrabold tracking-tight leading-[1.15] mb-4">
+                  Apply for <br />{jobTitle}
+                </h2>
+              ) : (
+                <h2 className="text-[28px] sm:text-[34px] font-extrabold tracking-tight leading-[1.15] mb-4">
+                  Don&apos;t see your <br />perfect role?
+                </h2>
+              )}
 
               <p className="text-xs sm:text-sm text-gray-300 leading-relaxed mb-8">
-                We hire for talent, not just open headcount. Send us your profile and tell us what you would like to build — we will reach out when the right opportunity opens.
+                {isJobLocked
+                  ? `Tell us a bit about yourself and we'll review your profile for the ${jobTitle} position.`
+                  : "We hire for talent, not just open headcount. Send us your profile and tell us what you would like to build — we will reach out when the right opportunity opens."}
               </p>
             </div>
 
@@ -133,7 +176,9 @@ export default function CareerOpenApplication() {
           {/* RIGHT FORM PANEL */}
           <div className="lg:col-span-7 p-8 sm:p-12 bg-white flex flex-col justify-center">
             <div className="mb-6">
-              <h3 className="text-xl font-bold text-[#06282C]">Send your profile</h3>
+              <h3 className="text-xl font-bold text-[#06282C]">
+                {isJobLocked ? "Send your application" : "Send your profile"}
+              </h3>
               <p className="text-xs text-gray-500 mt-1">
                 Takes less than 2 minutes.
               </p>
@@ -201,23 +246,35 @@ export default function CareerOpenApplication() {
                       className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition"
                     />
                   </div>
+
                   <div>
                     <label className="block text-[11px] font-bold text-gray-700 uppercase tracking-wider mb-1">
                       Area of Expertise
                     </label>
-                    <select
-                      required
-                      value={formData.expertise}
-                      onChange={(e) => setFormData({ ...formData, expertise: e.target.value })}
-                      className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition"
-                    >
-                      <option value="" disabled>Select your field...</option>
-                      <option value="Engineering">Engineering</option>
-                      <option value="Design">Design</option>
-                      <option value="Sales">Sales</option>
-                      <option value="Operations">Operations</option>
-                      <option value="Support">Support</option>
-                    </select>
+
+                    {isJobLocked ? (
+                      // Locked view — job page se aaya hai, dropdown ki
+                      // zaroorat nahi, value fix hai aur formData mein
+                      // already set hai (upar useState + useEffect se)
+                      <div className="flex items-center justify-between w-full px-4 py-3 bg-[#EEF8F7] border border-[#2B8A99]/30 rounded-xl text-xs sm:text-sm text-[#06282C] font-semibold">
+                        <span className="truncate">{jobTitle}</span>
+                        <FiLock className="w-3.5 h-3.5 text-[#2B8A99] shrink-0 ml-2" />
+                      </div>
+                    ) : (
+                      <select
+                        required
+                        value={formData.expertise}
+                        onChange={(e) => setFormData({ ...formData, expertise: e.target.value })}
+                        className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition"
+                      >
+                        <option value="" disabled>Select your field...</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Design">Design</option>
+                        <option value="Sales">Sales</option>
+                        <option value="Operations">Operations</option>
+                        <option value="Support">Support</option>
+                      </select>
+                    )}
                   </div>
                 </div>
 
