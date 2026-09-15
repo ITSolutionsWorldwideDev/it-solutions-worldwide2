@@ -2,6 +2,7 @@
 
 "use client";
 
+import { useState } from "react";
 import {
   Mail,
   Phone,
@@ -13,42 +14,117 @@ import {
   Send,
 } from "lucide-react";
 
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const PHONE_RE = /^[+]?[\d\s()-]{7,20}$/;
+
 export default function Contact() {
+  const [submitting, setSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  // Backend ka raw error kabhi client pe show nahi karte — sirf
+  // status code ke hisaab se generic safe message
+  const messageForStatus = (status: number): string => {
+    if (status === 400 || status === 422)
+      return "Some details look incorrect. Please review the form and try again.";
+    if (status === 429)
+      return "Too many attempts. Please wait a few minutes and try again.";
+    if (status >= 500)
+      return "We couldn't send your message right now. Please try again later.";
+    return "Something went wrong. Please try again.";
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (submitting) return;
+
     const form = e.currentTarget;
     const formData = {
-      name: (form.name as unknown as HTMLInputElement).value,
-      email: (form.email as HTMLInputElement).value,
-      phone: (form.phone as HTMLInputElement).value,
-      company: (form.company as HTMLInputElement).value,
-      service: (form.service as HTMLInputElement).value,
-      message: (form.message as HTMLTextAreaElement).value,
+      name: (form.elements.namedItem("name") as HTMLInputElement).value.trim(),
+      email: (form.elements.namedItem("email") as HTMLInputElement).value.trim(),
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value.trim(),
+      company: (form.elements.namedItem("company") as HTMLInputElement).value.trim(),
+      service: (form.elements.namedItem("service") as HTMLInputElement).value.trim(),
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value.trim(),
     };
-    console.log(formData);
+
+    // Client-side validation
+    if (formData.name.length < 2) {
+      setErrorMessage("Please enter your name.");
+      return;
+    }
+    if (!EMAIL_RE.test(formData.email)) {
+      setErrorMessage("Please enter a valid email address.");
+      return;
+    }
+    if (formData.phone && !PHONE_RE.test(formData.phone)) {
+      setErrorMessage("Please enter a valid phone number.");
+      return;
+    }
+    if (formData.message.length < 10) {
+      setErrorMessage("Please tell us a little more about your project (at least 10 characters).");
+      return;
+    }
+
+    setSubmitting(true);
+    setErrorMessage("");
+    setSuccess(false);
+
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 30000);
 
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
+        signal: controller.signal,
       });
 
-      const data = await response.json();
-
-      if (response.ok) {
-        alert("Message sent successfully!");
-        form.reset();
-      } else {
-        alert(data.message || "Something went wrong");
+      // Body empty/invalid ho to bhi crash na ho
+      let data: { success?: boolean } | null = null;
+      try {
+        data = await response.json();
+      } catch {
+        data = null;
       }
+
+      if (!response.ok) {
+        setErrorMessage(messageForStatus(response.status));
+        return;
+      }
+
+      if (data && data.success === false) {
+        setErrorMessage("Something went wrong. Please try again.");
+        return;
+      }
+
+      setSuccess(true);
+      form.reset();
     } catch (error) {
-      console.log(error);
-      alert("Failed to send message");
+      if (process.env.NODE_ENV === "development") {
+        console.error("Contact form error:", error);
+      }
+      if (error instanceof DOMException && error.name === "AbortError") {
+        setErrorMessage("The request timed out. Please try again.");
+      } else {
+        setErrorMessage(
+          "We couldn't reach the server. Please check your connection and try again."
+        );
+      }
+    } finally {
+      clearTimeout(timeout);
+      setSubmitting(false);
     }
   };
+
+  const clearFeedback = () => {
+    if (errorMessage) setErrorMessage("");
+    if (success) setSuccess(false);
+  };
+
+  const inputClass =
+    "w-full h-12 rounded-xl bg-[#00171b] border border-white/5 px-4 text-white outline-none focus:border-cyan-400 disabled:opacity-60";
 
   return (
     <section className="w-full min-h-screen bg-linear-to-br from-[#002025] via-[#002A30] to-[#00373F] flex items-center justify-center px-4 py-16 overflow-hidden relative">
@@ -147,10 +223,12 @@ export default function Contact() {
             {/* Map */}
             <div className="mt-8 rounded-3xl overflow-hidden border border-white/5">
               <iframe
+                title="Office location map"
                 src="https://www.google.com/maps?q=Rotterdam&output=embed"
                 width="100%"
                 height="250"
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
                 className="w-full"
               ></iframe>
             </div>
@@ -158,7 +236,28 @@ export default function Contact() {
 
           {/* Right Side Form */}
           <div className="bg-[#03272d]/90 border border-white/5 rounded-3xl p-8 shadow-2xl">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} noValidate className="space-y-6">
+              {/* Feedback */}
+              {success && (
+                <div
+                  role="status"
+                  aria-live="polite"
+                  className="rounded-xl border border-cyan-400/30 bg-cyan-500/10 px-4 py-3 text-sm text-cyan-200"
+                >
+                  Message sent successfully. We&apos;ll get back to you soon.
+                </div>
+              )}
+
+              {errorMessage && (
+                <div
+                  role="alert"
+                  aria-live="polite"
+                  className="rounded-xl border border-red-400/30 bg-red-500/10 px-4 py-3 text-sm text-red-200"
+                >
+                  {errorMessage}
+                </div>
+              )}
+
               {/* Row 1 */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
@@ -170,8 +269,12 @@ export default function Contact() {
                     type="text"
                     name="name"
                     required
+                    maxLength={100}
+                    autoComplete="name"
+                    disabled={submitting}
+                    onChange={clearFeedback}
                     placeholder="John Doe"
-                    className="w-full h-12 rounded-xl bg-[#00171b] border border-white/5 px-4 text-white outline-none focus:border-cyan-400"
+                    className={inputClass}
                   />
                 </div>
 
@@ -184,8 +287,12 @@ export default function Contact() {
                     type="email"
                     name="email"
                     required
+                    maxLength={150}
+                    autoComplete="email"
+                    disabled={submitting}
+                    onChange={clearFeedback}
                     placeholder="john@example.com"
-                    className="w-full h-12 rounded-xl bg-[#00171b] border border-white/5 px-4 text-white outline-none focus:border-cyan-400"
+                    className={inputClass}
                   />
                 </div>
               </div>
@@ -198,10 +305,14 @@ export default function Contact() {
                   </label>
 
                   <input
-                    type="text"
+                    type="tel"
                     name="phone"
+                    maxLength={20}
+                    autoComplete="tel"
+                    disabled={submitting}
+                    onChange={clearFeedback}
                     placeholder="+31 xx xxx-xxxx"
-                    className="w-full h-12 rounded-xl bg-[#00171b] border border-white/5 px-4 text-white outline-none focus:border-cyan-400"
+                    className={inputClass}
                   />
                 </div>
 
@@ -213,8 +324,12 @@ export default function Contact() {
                   <input
                     type="text"
                     name="company"
+                    maxLength={100}
+                    autoComplete="organization"
+                    disabled={submitting}
+                    onChange={clearFeedback}
                     placeholder="Your Company"
-                    className="w-full h-12 rounded-xl bg-[#00171b] border border-white/5 px-4 text-white outline-none focus:border-cyan-400"
+                    className={inputClass}
                   />
                 </div>
               </div>
@@ -228,7 +343,10 @@ export default function Contact() {
                 <input
                   type="text"
                   name="service"
-                  className="w-full h-12 rounded-xl bg-[#00171b] border border-white/5 px-4 text-white outline-none focus:border-cyan-400"
+                  maxLength={120}
+                  disabled={submitting}
+                  onChange={clearFeedback}
+                  className={inputClass}
                 />
               </div>
 
@@ -242,18 +360,22 @@ export default function Contact() {
                   name="message"
                   required
                   rows={6}
+                  maxLength={2000}
+                  disabled={submitting}
+                  onChange={clearFeedback}
                   placeholder="Tell us about your project..."
-                  className="w-full rounded-xl bg-[#00171b] border border-white/5 px-4 py-4 text-white outline-none resize-none focus:border-cyan-400"
+                  className="w-full rounded-xl bg-[#00171b] border border-white/5 px-4 py-4 text-white outline-none resize-none focus:border-cyan-400 disabled:opacity-60"
                 ></textarea>
               </div>
 
               {/* Button */}
               <button
                 type="submit"
-                className="w-full h-14 rounded-xl bg-cyan-500 hover:bg-cyan-400 transition-all duration-300 text-white font-semibold flex items-center justify-center gap-2 cursor-pointer"
+                disabled={submitting}
+                className="w-full h-14 rounded-xl bg-cyan-500 hover:bg-cyan-400 transition-all duration-300 text-white font-semibold flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
-                <Send size={18} />
+                {submitting ? "Sending..." : "Send Message"}
+                {!submitting && <Send size={18} />}
               </button>
             </form>
           </div>

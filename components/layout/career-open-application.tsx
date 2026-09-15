@@ -2,19 +2,19 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { 
-  FiClock, 
-  FiUsers, 
-  FiAward, 
-  FiCoffee, 
-  FiGlobe, 
-  FiStar, 
-  FiBookOpen, 
+import {
+  FiClock,
+  FiUsers,
+  FiAward,
+  FiCoffee,
+  FiGlobe,
+  FiStar,
+  FiBookOpen,
   FiSend,
   FiUpload,
   FiX,
   FiFile,
-  FiLock
+  FiLock,
 } from "react-icons/fi";
 
 interface CareerOpenApplicationProps {
@@ -23,6 +23,17 @@ interface CareerOpenApplicationProps {
   // locked to this value instead of showing the dropdown.
   jobTitle?: string;
 }
+
+const MAX_RESUME_BYTES = 5 * 1024 * 1024; // 5 MB
+const ALLOWED_RESUME_TYPES = [
+  "application/pdf",
+  "application/msword",
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+];
+const ALLOWED_RESUME_EXT = [".pdf", ".doc", ".docx"];
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const PHONE_RE = /^[+]?[\d\s()-]{7,20}$/;
 
 export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicationProps) {
   const isJobLocked = !!jobTitle;
@@ -48,9 +59,32 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
     }
   }, [jobTitle]);
 
+  const updateField = (field: keyof typeof formData, value: string) => {
+    if (errorMessage) setErrorMessage("");
+    setFormData((prev) => ({ ...prev, [field]: value }));
+  };
+
   const handleResumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
+
+    const ext = file.name.slice(file.name.lastIndexOf(".")).toLowerCase();
+    const typeOk =
+      ALLOWED_RESUME_TYPES.includes(file.type) || ALLOWED_RESUME_EXT.includes(ext);
+
+    if (!typeOk) {
+      setErrorMessage("Please upload a PDF, DOC or DOCX file.");
+      e.target.value = "";
+      setResume(null);
+      return;
+    }
+
+    if (file.size > MAX_RESUME_BYTES) {
+      setErrorMessage("File is too large. Maximum allowed size is 5 MB.");
+      e.target.value = "";
+      setResume(null);
+      return;
+    }
 
     setErrorMessage("");
     setResume(file);
@@ -58,31 +92,66 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
 
   const removeResume = () => {
     setResume(null);
+    setErrorMessage("");
     if (resumeInputRef.current) resumeInputRef.current.value = "";
+  };
+
+  // Client-side validation — returns an error string or null
+  const validate = (): string | null => {
+    const name = formData.fullName.trim();
+    const email = formData.email.trim();
+    const phone = formData.phone.trim();
+    const message = formData.message.trim();
+
+    if (name.length < 2) return "Please enter your full name.";
+    if (!EMAIL_RE.test(email)) return "Please enter a valid email address.";
+    if (!PHONE_RE.test(phone)) return "Please enter a valid phone number.";
+    if (!formData.expertise) return "Please select your area of expertise.";
+    if (message.length < 10)
+      return "Please tell us a little more about yourself (at least 10 characters).";
+    if (!resume) return "Please upload your resume/CV to continue.";
+    return null;
+  };
+
+  // Map HTTP status to a safe, generic message — backend ka raw error
+  // kabhi bhi client pe show nahi karte (info leakage)
+  const messageForStatus = (status: number): string => {
+    if (status === 400 || status === 422)
+      return "Some details look incorrect. Please review the form and try again.";
+    if (status === 413) return "Your file is too large. Please upload a smaller file.";
+    if (status === 429)
+      return "Too many attempts. Please wait a few minutes and try again.";
+    if (status >= 500)
+      return "We couldn't submit your application right now. Please try again later.";
+    return "Something went wrong. Please try again.";
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (submitting) return;
 
-    // Resume mandatory hai — submit se pehle check karo
-    if (!resume) {
-      setErrorMessage("Please upload your resume/CV to continue.");
+    const validationError = validate();
+    if (validationError) {
+      setErrorMessage(validationError);
       return;
     }
 
     setSubmitting(true);
     setErrorMessage("");
 
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 30000);
+
     try {
       const payload = new FormData();
-      payload.append("name", formData.fullName);
-      payload.append("email", formData.email);
-      payload.append("phone", formData.phone);
+      payload.append("name", formData.fullName.trim());
+      payload.append("email", formData.email.trim());
+      payload.append("phone", formData.phone.trim());
       // Always send the resolved expertise value — locked (jobTitle) or
       // user-selected (dropdown) — mail ke andar yehi jayega
       payload.append("expertise", formData.expertise);
-      payload.append("message", formData.message);
-      payload.append("resume", resume);
+      payload.append("message", formData.message.trim());
+      payload.append("resume", resume as File);
 
       // Optional: lets the backend distinguish a job-page application
       // from a generic open application, useful for mail subject/tagging
@@ -96,12 +165,25 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
       const response = await fetch("/api/career-application", {
         method: "POST",
         body: payload,
+        signal: controller.signal,
       });
 
-      const result = await response.json();
+      // Body invalid/empty ho to bhi crash na ho
+      let result: { success?: boolean } | null = null;
+      try {
+        result = await response.json();
+      } catch {
+        result = null;
+      }
 
-      if (!response.ok || !result.success) {
-        throw new Error(result.error || "Failed to submit application");
+      if (!response.ok) {
+        setErrorMessage(messageForStatus(response.status));
+        return;
+      }
+
+      if (result && result.success === false) {
+        setErrorMessage("Something went wrong. Please try again.");
+        return;
       }
 
       setSuccess(true);
@@ -115,9 +197,18 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
       setResume(null);
       if (resumeInputRef.current) resumeInputRef.current.value = "";
     } catch (err) {
-      console.error("Submission error:", err);
-      setErrorMessage("Something went wrong. Please try again later.");
+      if (process.env.NODE_ENV === "development") {
+        console.error("Submission error:", err);
+      }
+      if (err instanceof DOMException && err.name === "AbortError") {
+        setErrorMessage("The request timed out. Please try again.");
+      } else {
+        setErrorMessage(
+          "We couldn't reach the server. Please check your connection and try again."
+        );
+      }
     } finally {
+      clearTimeout(timeout);
       setSubmitting(false);
     }
   };
@@ -125,10 +216,10 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
   return (
     <section className="w-full bg-white py-16">
       <div className="mx-auto w-full max-w-[1180px] px-6 sm:px-8 lg:px-0">
-        
+
         {/* MAIN CONTAINER CARD */}
         <div className="bg-white rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 overflow-hidden grid grid-cols-1 lg:grid-cols-12">
-          
+
           {/* LEFT DARK PANEL */}
           <div className="lg:col-span-5 bg-[#06282C] text-white p-8 sm:p-12 flex flex-col justify-between">
             <div>
@@ -196,9 +287,13 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} noValidate className="space-y-4">
                 {errorMessage && (
-                  <div className="bg-red-50 border border-red-200 text-red-700 p-3 rounded-xl text-xs">
+                  <div
+                    role="alert"
+                    aria-live="polite"
+                    className="bg-red-50 border border-red-200 text-red-700 p-3 rounded-xl text-xs"
+                  >
                     {errorMessage}
                   </div>
                 )}
@@ -211,10 +306,13 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
                     <input
                       type="text"
                       required
+                      maxLength={100}
+                      autoComplete="name"
+                      disabled={submitting}
                       placeholder="Alexandra Kim"
                       value={formData.fullName}
-                      onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition"
+                      onChange={(e) => updateField("fullName", e.target.value)}
+                      className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition disabled:opacity-60"
                     />
                   </div>
                   <div>
@@ -224,10 +322,13 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
                     <input
                       type="email"
                       required
+                      maxLength={150}
+                      autoComplete="email"
+                      disabled={submitting}
                       placeholder="alex@example.com"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition"
+                      onChange={(e) => updateField("email", e.target.value)}
+                      className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition disabled:opacity-60"
                     />
                   </div>
                 </div>
@@ -240,10 +341,13 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
                     <input
                       type="tel"
                       required
+                      maxLength={20}
+                      autoComplete="tel"
+                      disabled={submitting}
                       placeholder="+31 6 1234 5678"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition"
+                      onChange={(e) => updateField("phone", e.target.value)}
+                      className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition disabled:opacity-60"
                     />
                   </div>
 
@@ -263,9 +367,10 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
                     ) : (
                       <select
                         required
+                        disabled={submitting}
                         value={formData.expertise}
-                        onChange={(e) => setFormData({ ...formData, expertise: e.target.value })}
-                        className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition"
+                        onChange={(e) => updateField("expertise", e.target.value)}
+                        className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition disabled:opacity-60"
                       >
                         <option value="" disabled>Select your field...</option>
                         <option value="Engineering">Engineering</option>
@@ -285,14 +390,16 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
                   <textarea
                     rows={4}
                     required
+                    maxLength={2000}
+                    disabled={submitting}
                     placeholder="Briefly describe your experience, what kind of role you're looking for, and what excites you about IT Solutions Worldwide..."
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition resize-none"
+                    onChange={(e) => updateField("message", e.target.value)}
+                    className="w-full px-4 py-3 bg-[#FAFAFA] border border-gray-200 rounded-xl text-xs sm:text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2B8A99]/20 focus:border-[#2B8A99] transition resize-none disabled:opacity-60"
                   />
                 </div>
 
-                {/* RESUME UPLOAD — mandatory, no type/size restriction */}
+                {/* RESUME UPLOAD — mandatory, PDF/DOC/DOCX, max 5 MB */}
                 <div>
                   <label className="block text-[11px] font-bold text-gray-700 uppercase tracking-wider mb-1">
                     CV / Resume <span className="normal-case font-normal text-red-500">*required</span>
@@ -301,10 +408,12 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
                   {!resume ? (
                     <label className="flex items-center justify-center gap-2 w-full px-4 py-4 bg-[#FAFAFA] border border-dashed border-gray-300 rounded-xl text-xs sm:text-sm text-gray-500 cursor-pointer hover:border-[#2B8A99] hover:text-[#2B8A99] transition">
                       <FiUpload className="w-4 h-4" />
-                      <span>Click to upload your resume</span>
+                      <span>Click to upload your resume (PDF, DOC, DOCX — max 5 MB)</span>
                       <input
                         ref={resumeInputRef}
                         type="file"
+                        accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                        disabled={submitting}
                         onChange={handleResumeChange}
                         className="hidden"
                       />
@@ -318,7 +427,9 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
                       <button
                         type="button"
                         onClick={removeResume}
-                        className="text-gray-400 hover:text-red-500 transition shrink-0 ml-2 cursor-pointer"
+                        disabled={submitting}
+                        aria-label="Remove resume"
+                        className="text-gray-400 hover:text-red-500 transition shrink-0 ml-2 cursor-pointer disabled:opacity-50"
                       >
                         <FiX className="w-4 h-4" />
                       </button>
@@ -329,7 +440,7 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full py-3.5 px-6 bg-[#2B8A99] hover:bg-[#237380] text-white font-semibold text-xs sm:text-sm rounded-xl shadow-sm transition duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+                  className="w-full py-3.5 px-6 bg-[#2B8A99] hover:bg-[#237380] text-white font-semibold text-xs sm:text-sm rounded-xl shadow-sm transition duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <span>{submitting ? "Submitting..." : "Submit Application"}</span>
                   {!submitting && <FiSend className="w-4 h-4" />}
@@ -345,22 +456,22 @@ export default function CareerOpenApplication({ jobTitle }: CareerOpenApplicatio
         </div>
 
         {/* BOTTOM STATS ROW */}
-  <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-  <div className="flex flex-1 items-center justify-center gap-3 rounded-2xl border border-gray-200/70 bg-white p-4 shadow-sm">
-    <FiGlobe className="h-5 w-5 shrink-0 text-[#2B8A99]" />
-    <span className="text-xs font-semibold text-gray-800">Netherlands</span>
-  </div>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <div className="flex flex-1 items-center justify-center gap-3 rounded-2xl border border-gray-200/70 bg-white p-4 shadow-sm">
+            <FiGlobe className="h-5 w-5 shrink-0 text-[#2B8A99]" />
+            <span className="text-xs font-semibold text-gray-800">Netherlands</span>
+          </div>
 
-  <div className="flex flex-1 items-center justify-center gap-3 rounded-2xl border border-gray-200/70 bg-white p-4 shadow-sm">
-    <FiUsers className="h-5 w-5 shrink-0 text-[#2B8A99]" />
-    <span className="text-xs font-semibold text-gray-800">40+ Employees</span>
-  </div>
+          <div className="flex flex-1 items-center justify-center gap-3 rounded-2xl border border-gray-200/70 bg-white p-4 shadow-sm">
+            <FiUsers className="h-5 w-5 shrink-0 text-[#2B8A99]" />
+            <span className="text-xs font-semibold text-gray-800">40+ Employees</span>
+          </div>
 
-  <div className="flex flex-1 items-center justify-center gap-3 rounded-2xl border border-gray-200/70 bg-white p-4 shadow-sm">
-    <FiBookOpen className="h-5 w-5 shrink-0 text-[#2B8A99]" />
-    <span className="text-xs font-semibold text-gray-800">Certified</span>
-  </div>
-</div>
+          <div className="flex flex-1 items-center justify-center gap-3 rounded-2xl border border-gray-200/70 bg-white p-4 shadow-sm">
+            <FiBookOpen className="h-5 w-5 shrink-0 text-[#2B8A99]" />
+            <span className="text-xs font-semibold text-gray-800">Certified</span>
+          </div>
+        </div>
       </div>
     </section>
   );

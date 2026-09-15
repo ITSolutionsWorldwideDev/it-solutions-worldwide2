@@ -6,6 +6,69 @@ const withBundleAnalyzer = createBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
 
+// --- Content-Security-Policy ---
+// Adjust the domains below to match whatever you actually load:
+// analytics scripts, fonts, embedded iframes (maps/video), API hosts, etc.
+// Keep this in sync with next.config's `images.remotePatterns` and any
+// third-party script tags in your layout/head.
+const ContentSecurityPolicy = `
+  default-src 'self';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com;
+  style-src 'self' 'unsafe-inline';
+  img-src 'self' data: blob: https://www.itsolutionsworldwide.com https://images.unsplash.com https://www.google-analytics.com;
+  font-src 'self' data:;
+  connect-src 'self' https://www.google-analytics.com;
+  frame-src 'self';
+  frame-ancestors 'self';
+  object-src 'none';
+  base-uri 'self';
+  form-action 'self';
+  upgrade-insecure-requests;
+`
+  .replace(/\s{2,}/g, " ")
+  .trim();
+
+const securityHeaders = [
+  {
+    key: "Content-Security-Policy",
+    value: ContentSecurityPolicy,
+  },
+  {
+    // Forces HTTPS for 2 years, including subdomains.
+    // NOTE: only send this once you're 100% sure the site is always served
+    // over HTTPS everywhere (including subdomains) — it's hard to undo
+    // quickly for users who already received it.
+    key: "Strict-Transport-Security",
+    value: "max-age=63072000; includeSubDomains; preload",
+  },
+  {
+    // Prevents the site from being embedded in an <iframe> elsewhere (clickjacking).
+    key: "X-Frame-Options",
+    value: "SAMEORIGIN",
+  },
+  {
+    // Stops browsers from MIME-sniffing a response away from the declared Content-Type.
+    key: "X-Content-Type-Options",
+    value: "nosniff",
+  },
+  {
+    // Controls how much referrer info is sent on cross-origin navigations/requests.
+    key: "Referrer-Policy",
+    value: "strict-origin-when-cross-origin",
+  },
+  {
+    // Disables powerful browser features/APIs you're not using.
+    key: "Permissions-Policy",
+    value: "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+  },
+  {
+    // Legacy XSS filter header — mostly a no-op in modern browsers but
+    // harmless to keep for older clients.
+    key: "X-XSS-Protection",
+    value: "1; mode=block",
+  },
+];
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
@@ -68,6 +131,11 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [
+      {
+        // Applies to every route — security headers should be global.
+        source: "/:path*",
+        headers: securityHeaders,
+      },
       {
         source: "/assets/:path*",
         headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],

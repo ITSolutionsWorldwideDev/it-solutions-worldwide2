@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import acceptLanguage from "accept-language";
 import i18nConfig from "./i18n/i18nConfig";
 import { getLegacyRedirect, isGonePath } from "./lib/legacyRedirects";
+import { checkRateLimit, getClientIp, getRuleForPath } from "./lib/rateLimit";
 
 const locales = i18nConfig.locales;
 const defaultLocale = i18nConfig.defaultLocale;
@@ -46,7 +47,41 @@ export function middleware(request: NextRequest) {
     });
   }
 
-  if (pathname.startsWith("/api") || isStaticAssetPath(pathname)) {
+  // --- API routes: rate limit here, then hand off to the route handler ---
+  if (pathname.startsWith("/api")) {
+    const ip = getClientIp(request.headers);
+    const rule = getRuleForPath(pathname);
+    const key = `${ip}:${rule.prefix}`;
+
+    const result = checkRateLimit(key, rule.limit, rule.windowMs);
+
+    if (!result.success) {
+      const retryAfterSec = Math.max(1, Math.ceil((result.resetAt - Date.now()) / 1000));
+      return new NextResponse(
+        JSON.stringify({
+          error: "Too many requests. Please try again later.",
+        }),
+        {
+          status: 429,
+          headers: {
+            "Content-Type": "application/json",
+            "Retry-After": String(retryAfterSec),
+            "X-RateLimit-Limit": String(result.limit),
+            "X-RateLimit-Remaining": "0",
+            "X-RateLimit-Reset": String(Math.ceil(result.resetAt / 1000)),
+          },
+        }
+      );
+    }
+
+    const res = NextResponse.next();
+    res.headers.set("X-RateLimit-Limit", String(result.limit));
+    res.headers.set("X-RateLimit-Remaining", String(result.remaining));
+    res.headers.set("X-RateLimit-Reset", String(Math.ceil(result.resetAt / 1000)));
+    return res;
+  }
+
+  if (isStaticAssetPath(pathname)) {
     return;
   }
 
@@ -113,5 +148,6 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next|favicon.ico).*)"],
+  // Previously excluded "api" entirely — now included so rate limiting runs.
+  matcher: ["/((?!_next|favicon.ico).*)"],
 };
