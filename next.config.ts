@@ -13,9 +13,9 @@ const withBundleAnalyzer = createBundleAnalyzer({
 // third-party script tags in your layout/head.
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com;
   style-src 'self' 'unsafe-inline';
-  img-src 'self' data: blob: https://www.itsolutionsworldwide.com https://images.unsplash.com https://www.google-analytics.com;
+  img-src 'self' data: blob: https://www.itsolutionsworldwide.com https://images.unsplash.com https://www.google-analytics.com https://www.gstatic.com;
   font-src 'self' data:;
   connect-src 'self' https://www.google-analytics.com;
   frame-src 'self' https://www.google.com https://maps.google.com;

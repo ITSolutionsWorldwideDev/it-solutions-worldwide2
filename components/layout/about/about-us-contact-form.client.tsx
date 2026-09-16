@@ -74,41 +74,46 @@ export default function AboutUsContactForm({ translations }: Props) {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!validateForm()) return;
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  if (!validateForm()) return;
 
-    setSending(true);
+  setSending(true);
 
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+  try {
+    const payload = {
+      ...formData,
+      message: `Consultation request from ${formData.name} (${formData.company}). Service required: ${formData.service}. Phone: ${formData.phone}.`,
+    };
 
-      const data = await res.json();
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
 
-      if (!res.ok) {
-        throw new Error(data.error || "Failed to send message");
-      }
+    const data = await res.json();
 
-      setShowModal(true);
-
-      setFormData({
-        name: "",
-        company: "",
-        phone: "",
-        email: "",
-        service: "",
-        acceptedTerms: false,
-      });
-    } catch (error: any) {
-      alert(error.message);
-    } finally {
-      setSending(false);
+    if (!res.ok) {
+      throw new Error(data.error || "Failed to send message");
     }
-  };
+
+    setShowModal(true);
+
+    setFormData({
+      name: "",
+      company: "",
+      phone: "",
+      email: "",
+      service: "",
+      acceptedTerms: false,
+    });
+  } catch (error: any) {
+    alert(error.message);
+  } finally {
+    setSending(false);
+  }
+};
 
   return (
     <>

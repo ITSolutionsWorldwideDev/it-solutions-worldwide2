@@ -74,3 +74,65 @@ export function assertSmtpConfig(): void {
 }
 
 export const isDev = process.env.NODE_ENV === "development";
+
+// ---------------------------------------------------------------------------
+// Generic field validator — ek hi schema se saare routes (contact, enquiry,
+// career) apni fields clean + validate kar sakte hain. Isse har route mein
+// alag-alag "message.length < 10" jaisi hardcoded checks nahi likhni padtin,
+// aur ek form mein field required hai dusre mein nahi — is tarah ki
+// inconsistency (jo pehle About Us form mein bug ban gayi thi) nahi hogi.
+//
+// Usage:
+//   const { values, errors } = validateFields(data, {
+//     name:    { type: "text",  required: true, minLength: 2, maxLength: 100 },
+//     email:   { type: "email", required: true, maxLength: 150 },
+//     phone:   { type: "phone", required: false, maxLength: 20 },
+//     message: { type: "text",  required: false, minLength: 10, maxLength: 2000 },
+//   });
+//   if (errors.length > 0) return NextResponse.json({ error: "..." }, { status: 400 });
+// ---------------------------------------------------------------------------
+
+export type FieldType = "text" | "email" | "phone";
+
+export type FieldRule = {
+  type: FieldType;
+  required?: boolean;
+  minLength?: number;
+  maxLength: number;
+};
+
+export type FieldSchema = Record<string, FieldRule>;
+
+export function validateFields(
+  data: Record<string, unknown>,
+  schema: FieldSchema
+): { values: Record<string, string>; errors: string[] } {
+  const values: Record<string, string> = {};
+  const errors: string[] = [];
+
+  for (const [key, rule] of Object.entries(schema)) {
+    const value = clean(data[key], rule.maxLength);
+    values[key] = value;
+
+    // Empty + not required = valid, skip further checks (e.g. optional phone).
+    if (!value) {
+      if (rule.required) errors.push(key);
+      continue;
+    }
+
+    if (rule.minLength && value.length < rule.minLength) {
+      errors.push(key);
+      continue;
+    }
+
+    if (rule.type === "email" && !isValidEmail(value)) {
+      errors.push(key);
+    }
+
+    if (rule.type === "phone" && !isValidPhone(value)) {
+      errors.push(key);
+    }
+  }
+
+  return { values, errors };
+}

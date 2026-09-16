@@ -66,6 +66,7 @@ export async function POST(req: NextRequest) {
     const phone = clean(data.phone, 20);
     const company = clean(data.company, 100);
     const service = clean(data.service, 120);
+    const subject = clean(data.subject, 150);
     const message = clean(data.message, 2000);
 
     // ---- Server-side validation (client checks bypass ho sakte hain) -----
@@ -83,7 +84,9 @@ export async function POST(req: NextRequest) {
     }
 
     // ---- Build mail — sab user input escaped ----------------------------
-    const safeSubject = sanitizeHeader(service || "General Enquiry", 120);
+    // Email subject line ke liye form ka "subject" field prefer karo,
+    // warna service, warna generic fallback.
+    const safeSubject = sanitizeHeader(subject || service || "General Enquiry", 120);
     const safeReplyTo = sanitizeHeader(email, 150);
 
     const mailBody = {
@@ -100,6 +103,7 @@ export async function POST(req: NextRequest) {
           <li><strong>Phone:</strong> ${escapeHtml(phone) || "-"}</li>
           <li><strong>Company:</strong> ${escapeHtml(company) || "-"}</li>
           <li><strong>Service Interested In:</strong> ${escapeHtml(service) || "-"}</li>
+          <li><strong>Subject:</strong> ${escapeHtml(subject) || "-"}</li>
         </ul>
         <br/>
         <p><strong>Message:</strong></p>

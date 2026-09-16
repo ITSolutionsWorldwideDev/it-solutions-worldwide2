@@ -41,39 +41,34 @@ const ContactSection: React.FC = () => {
     }
   }, [showModal]);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setSending(true);
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setSending(true);
 
-    try {
-      const formData = new FormData();
-      formData.append("name", name);
-      formData.append("email", email);
-      formData.append("subject", subject);
-      formData.append("message", message);
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, subject, message }),
+    });
 
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        body: formData,
-      });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || "Failed to send message.");
 
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Failed to send message.");
+    setShowModal(true);
+    setStatus("success");
 
-      setShowModal(true);
-      setStatus("success");
-
-      setName("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
-    } catch (err: any) {
-      setStatus("error");
-      setResponseMessage(err.message);
-    } finally {
-      setSending(false);
-    }
-  };
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  } catch (err: any) {
+    setStatus("error");
+    setResponseMessage(err.message);
+  } finally {
+    setSending(false);
+  }
+};
 
   return (
     <div
