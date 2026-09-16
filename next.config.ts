@@ -18,14 +18,18 @@ const ContentSecurityPolicy = `
   img-src 'self' data: blob: https://www.itsolutionsworldwide.com https://images.unsplash.com https://www.google-analytics.com;
   font-src 'self' data:;
   connect-src 'self' https://www.google-analytics.com;
-  frame-src 'self';
+  frame-src 'self' https://www.google.com https://maps.google.com;
   frame-ancestors 'self';
   object-src 'none';
   base-uri 'self';
   form-action 'self';
   upgrade-insecure-requests;
 `
-  .replace(/\s{2,}/g, " ")
+  // NOTE: use \s+ (not \s{2,}) so a single stray newline (e.g. from a line
+  // with no leading indentation) still gets collapsed into a space instead
+  // of leaking a raw \n into the header value, which crashes Node with
+  // "Invalid character in header content".
+  .replace(/\s+/g, " ")
   .trim();
 
 const securityHeaders = [
