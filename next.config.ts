@@ -121,6 +121,8 @@ const nextConfig: NextConfig = {
       { source: "/profile", destination: "/en/profile", permanent: true },
       { source: "/it-support", destination: "/en/it-support", permanent: true },
       { source: "/terms-and-conditions", destination: "/en/terms-and-conditions", permanent: true },
+      { source: "/index.html", destination: "/", permanent: true },
+      { source: "/index", destination: "/", permanent: true },
       {
         source: "/en/digital-services/website-design-%26-development",
         destination: "/en/digital-services/website-design-development",
