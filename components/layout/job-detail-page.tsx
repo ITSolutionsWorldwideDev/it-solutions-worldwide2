@@ -320,7 +320,9 @@ function getJobPostingSchema(job: JobDetail, currentUrl: string) {
             "@type": "Place",
             address: {
               "@type": "PostalAddress",
-              addressLocality: job.location,
+              streetAddress: "Mandenmakerstraat 100C",
+              postalCode: "3194 DG",
+              addressLocality: "Hoogvliet Rotterdam",
               addressCountry: "NL",
             },
           },
