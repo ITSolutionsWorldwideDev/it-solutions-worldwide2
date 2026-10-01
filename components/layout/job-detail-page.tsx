@@ -189,9 +189,9 @@ const COMPANY_PERKS: {
 }[] = [
   {
     icon: "wifi",
-    title: "Remote-First",
+    title: "Growth Mindset",
     description:
-      "Full flexibility — work from wherever you do your best thinking.",
+      "An environment built on continuous learning, innovation, and professional development..",
   },
   {
     icon: "cert",
