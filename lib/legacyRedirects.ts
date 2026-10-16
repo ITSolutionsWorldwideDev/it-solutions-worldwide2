@@ -128,14 +128,64 @@ const LOCALE_LANDING_PAGE =
 
 const BLOG_WITHOUT_LOCALE = /^\/blogs\/([^/]+)\/?$/i;
 
+export const OUTSOURCING_SLUG_CANONICAL_MAP: Record<string, string> = {
+  // Short slugs (crawled with 400 Bad Request error)
+  hr: "hire-hr-assistant",
+  "data-entry": "hire-data-entry-specialist",
+  "customer-support": "hire-customer-support-agent",
+  admin: "hire-administrative-accounting-assistant",
+  "social-media": "hire-social-media-manager",
+  "hire-social-media": "hire-social-media-manager",
+  "power-bi": "hire-power-bi-specialist",
+  "hire-power-bi": "hire-power-bi-specialist",
+  "ga-specialist": "hire-google-analytics-specialist",
+  "google-analytics": "hire-google-analytics-specialist",
+  "ai-ml-engineer": "hire-ai-engineer",
+  "ai-engineer": "hire-ai-engineer",
+  "it-support": "hire-it-support-specialist",
+  "hire-it-support": "hire-it-support-specialist",
+  "qa-tester": "hire-software-tester",
+  "app-dev": "hire-app-developer",
+  "front-end": "hire-frontend-developer",
+  "back-end": "hire-backend-developer",
+  "virtual-assistant": "hire-virtual-assistant",
+  "data-engineer": "hire-data-engineer",
+  "data-analyst": "hire-data-analyst",
+  "content-creator": "hire-content-creator",
+  "online-marketer": "hire-online-marketer",
+  "web-designer": "hire-web-designer",
+  "graphic-designer": "hire-graphics-designer",
+  "ecommerce-assistant": "hire-ecommerce-assistant",
+  "electrical-engineer": "hire-electrical-engineer",
+  "full-stack": "hire-full-stack-developer",
+  "full-stack-developer": "hire-full-stack-developer",
+
+  // Legacy variants with outdated naming
+  "hire-software-tester-qa": "hire-software-tester",
+  "hire-power-bi-tableau-specialist": "hire-power-bi-specialist",
+  "hire-webdesigner-developer": "hire-web-designer",
+  "hire-front-end-developer": "hire-frontend-developer",
+  "hire-back-end-developer": "hire-backend-developer",
+  "hire-graphic-designer": "hire-graphics-designer",
+  "hire-admin-accounting-assistant": "hire-administrative-accounting-assistant",
+  "hire-ai-ml-engineer": "hire-ai-engineer",
+  "hire-app-dev": "hire-app-developer",
+  "hire-qa-tester": "hire-software-tester",
+  "hire-ga-specialist": "hire-google-analytics-specialist",
+};
+
 /**
- * ✅ NEW: Matches old staffing-support hire-* URLs (directly under staffing-support,
- * NOT the google-ads/[slug] variant which is a live route, not a redirect).
+ * Matches old staffing-support hire-* URLs.
  * Example match: /en/staffing-support/hire-software-tester-qa
- * Does NOT match: /en/staffing-support/google-ads/hire-software-tester-qa
  */
 const STAFFING_HIRE_LEGACY =
   /^\/(en|nl)\/staffing-support\/(hire-[^/]+)\/?$/i;
+
+const OUTSOURCING_LEGACY =
+  /^\/(en|nl)\/outsourcing\/([^/]+)\/?$/i;
+
+const OUTSOURCING_NO_LOCALE_LEGACY =
+  /^\/outsourcing\/([^/]+)\/?$/i;
 
 export function getLegacyRedirect(pathname: string): string | null {
   const normalized = normalizeLegacyPathname(pathname);
@@ -147,10 +197,32 @@ export function getLegacyRedirect(pathname: string): string | null {
     return exactRedirect;
   }
 
-  // ✅ NEW: staffing-support/hire-* -> outsourcing/hire-*
+  // ✅ Outsourcing legacy / short slugs redirect to canonical hire-* URLs
+  const outsourcingMatch = normalized.match(OUTSOURCING_LEGACY);
+  if (outsourcingMatch) {
+    const locale = outsourcingMatch[1].toLowerCase();
+    const rawSlug = outsourcingMatch[2].toLowerCase();
+    const targetSlug = OUTSOURCING_SLUG_CANONICAL_MAP[rawSlug];
+    if (targetSlug && targetSlug !== rawSlug) {
+      return `/${locale}/outsourcing/${targetSlug}`;
+    }
+  }
+
+  const outsourcingNoLocaleMatch = normalized.match(OUTSOURCING_NO_LOCALE_LEGACY);
+  if (outsourcingNoLocaleMatch) {
+    const rawSlug = outsourcingNoLocaleMatch[1].toLowerCase();
+    const targetSlug = OUTSOURCING_SLUG_CANONICAL_MAP[rawSlug];
+    if (targetSlug && targetSlug !== rawSlug) {
+      return `/en/outsourcing/${targetSlug}`;
+    }
+  }
+
+  // ✅ staffing-support/hire-* -> outsourcing/hire-* (with canonical slug mapping)
   const staffingHire = normalized.match(STAFFING_HIRE_LEGACY);
   if (staffingHire) {
-    return `/${staffingHire[1].toLowerCase()}/outsourcing/${staffingHire[2]}`;
+    const rawSlug = staffingHire[2].toLowerCase();
+    const targetSlug = OUTSOURCING_SLUG_CANONICAL_MAP[rawSlug] || rawSlug;
+    return `/${staffingHire[1].toLowerCase()}/outsourcing/${targetSlug}`;
   }
 
   const localeIndex = normalized.match(

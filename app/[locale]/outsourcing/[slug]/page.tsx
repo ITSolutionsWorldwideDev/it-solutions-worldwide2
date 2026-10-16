@@ -24,7 +24,8 @@ import SectionWhyChoose from "@/components/layout/outsourcing-v2/section-why-cho
 
 import SectionRelatedServices from "@/components/layout/outsourcing-v2/section-related-services";
 import SectionReadyCTA from "@/components/layout/outsourcing-v2/section-ready-cta";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
+import { OUTSOURCING_SLUG_CANONICAL_MAP } from "@/lib/legacyRedirects";
 // ============================================
 // TYPES
 // ============================================
@@ -199,8 +200,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
-  const canonical = getCanonicalUrl(locale, `/outsourcing/${slug}`);   
-  const languages = getLanguageAlternates(`/outsourcing/${slug}`);     
+  const canonicalSlug = OUTSOURCING_SLUG_CANONICAL_MAP[slug.toLowerCase()] || slug;
+  const canonical = getCanonicalUrl(locale, `/outsourcing/${canonicalSlug}`);   
+  const languages = getLanguageAlternates(`/outsourcing/${canonicalSlug}`);     
 
   if (seoTitle) {
     return {
@@ -210,7 +212,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
   return {
-    title: `Hire Dedicated ${cleanSlugToTitle(slug)} | IT Solutions`,
+    title: `Hire Dedicated ${cleanSlugToTitle(canonicalSlug)} | IT Solutions`,
     alternates: { canonical, languages },
   };
 }
@@ -220,6 +222,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // ============================================
 export default async function Page({ params }: Props) {
   const { slug, locale } = await params;
+
+  // Immediate canonical redirect if visiting legacy or short alias slug
+  const canonicalRedirectSlug = OUTSOURCING_SLUG_CANONICAL_MAP[slug.toLowerCase()];
+  if (canonicalRedirectSlug && canonicalRedirectSlug !== slug.toLowerCase()) {
+    redirect(`/${locale}/outsourcing/${canonicalRedirectSlug}`);
+  }
 
   const i18nInstance = await initServerI18n(locale);
   const t: any = await i18nInstance.getFixedT(locale, "common");
@@ -275,7 +283,7 @@ export default async function Page({ params }: Props) {
 
     <Roles
   roles={t(`${translationPageKey}.services_section`, { returnObjects: true }) as RolesData}
-  isCategory={true}
+  isCategory={false}
   locale={locale}
 />
 
@@ -351,8 +359,33 @@ export default async function Page({ params }: Props) {
   const section3Conclusion = content?.challenges?.conclusion ?? "Our custom staffing models eliminate administrative friction.";
   const section3CtaText = content?.challenges?.cta ?? "Get Started Instantly →";
 
+  const IMAGE_SLUG_MAP: Record<string, string> = {
+    "admin": "admin-accounting-assistant",
+    "administrative-accounting-assistant": "admin-accounting-assistant",
+    "hr": "hr-assistant",
+    "customer-support": "customer-support-agent",
+    "data-entry": "data-entry-specialist",
+    "social-media": "social-media-manager",
+    "power-bi": "power-bi-specialist",
+    "power-bi-tableau-specialist": "power-bi-specialist",
+    "ga-specialist": "google-analytics-specialist",
+    "google-analytics": "google-analytics-specialist",
+    "ai-ml-engineer": "ai-engineer",
+    "it-support": "it-support-specialist",
+    "qa-tester": "software-tester",
+    "software-tester-qa": "software-tester",
+    "app-dev": "app-developer",
+    "front-end": "frontend-developer",
+    "front-end-developer": "frontend-developer",
+    "back-end": "backend-developer",
+    "back-end-developer": "backend-developer",
+    "webdesigner-developer": "web-designer",
+    "graphic-designer": "graphics-designer",
+  };
+
   const cleanImageSlug = slug.replace(/^(hire|outsource|staffing)-/, "").toLowerCase();
-  const section3ImageSrc = content?.challenges?.image ?? `/assets/images/categories/${cleanImageSlug}.webp`;
+  const finalImageSlug = IMAGE_SLUG_MAP[cleanImageSlug] || cleanImageSlug;
+  const section3ImageSrc = content?.challenges?.image ?? `/assets/images/categories/${finalImageSlug}.webp`;
 
   const buildHeading = content?.build?.h2 ?? "Core Responsibilities Handled";
   const buildSubheading =
