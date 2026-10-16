@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.itsolutionsworldwide.com"),
   title: {
-    default: "Smart IT & Business Services in Netherlands | btw",
+    default: " | btw",
     template: "%s",
   },
   

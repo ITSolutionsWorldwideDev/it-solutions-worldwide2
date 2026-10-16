@@ -10,7 +10,7 @@ export const generateMetadata = async (props: { params: Promise<{ locale: string
   const { locale } = params;
 
   return {
-    title: "Smart IT & Business Services in Netherlands | ITWW",
+    title: "Smart IT Support & Business Solutions in Netherlands | ITWW",
     description: " IT Solutions Worldwide delivers supply chain Management, digital marketing, staff outsourcing services in Netherlands. Get a free consultation today.",
     alternates: {
       canonical: getCanonicalUrl(locale, ""),
