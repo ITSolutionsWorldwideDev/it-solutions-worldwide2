@@ -73,7 +73,7 @@ export default async function HomePage({
     <main className="flex flex-col w-full row-start-2">
 <AnimationArea locale={locale} />      
       <BlogCarousel locale={locale} />
-      <Certifications />
+      {/* <Certifications /> */}
       <ContactSection />
     </main>
   );
