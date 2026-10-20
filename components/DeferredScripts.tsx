@@ -19,7 +19,22 @@ export default function DeferredScripts() {
       gtmScript.async = true;
       document.head.appendChild(gtmScript);
 
-      // 2. Meta Pixel
+      // 2. Google Tag (gtag.js)
+      const gtagConfigScript = document.createElement("script");
+      gtagConfigScript.innerHTML = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GT-TQKZR4LS');
+      `;
+      document.head.appendChild(gtagConfigScript);
+
+      const gtagScript = document.createElement("script");
+      gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=GT-TQKZR4LS";
+      gtagScript.async = true;
+      document.head.appendChild(gtagScript);
+
+      // 3. Meta Pixel
       const fbScript = document.createElement("script");
       fbScript.innerHTML = `
         !function(f,b,e,v,n,t,s)
@@ -35,7 +50,7 @@ export default function DeferredScripts() {
       `;
       document.head.appendChild(fbScript);
 
-      // 3. Microsoft Clarity
+      // 4. Microsoft Clarity
       const clarityScript = document.createElement("script");
       clarityScript.innerHTML = `
         (function(c,l,a,r,i,t,y){
