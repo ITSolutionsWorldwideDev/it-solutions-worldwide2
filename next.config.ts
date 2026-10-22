@@ -13,11 +13,11 @@ const withBundleAnalyzer = createBundleAnalyzer({
 // third-party script tags in your layout/head.
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.google.com https://*.google.com https://www.gstatic.com https://*.doubleclick.net https://*.googleadservices.com https://connect.facebook.net https://*.clarity.ms https://snap.licdn.com;
   style-src 'self' 'unsafe-inline';
-  img-src 'self' data: blob: https://www.itsolutionsworldwide.com https://images.unsplash.com https://www.google-analytics.com https://www.gstatic.com;
+  img-src 'self' data: blob: https://www.itsolutionsworldwide.com https://images.unsplash.com https://www.google-analytics.com https://*.google-analytics.com https://www.gstatic.com https://www.google.com https://*.google.com https://*.googletagmanager.com https://*.doubleclick.net https://*.googleadservices.com https://*.facebook.com https://*.clarity.ms https://*.licdn.com https://px.ads.linkedin.com;
   font-src 'self' data:;
-  connect-src 'self' https://www.google-analytics.com;
+  connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.google.com https://*.google.com https://www.googletagmanager.com https://*.googletagmanager.com https://*.doubleclick.net https://*.googleadservices.com https://*.run.app https://*.on.aws https://*.clarity.ms https://*.facebook.com https://*.licdn.com https://px.ads.linkedin.com;
   frame-src 'self' https://www.google.com https://maps.google.com;
   frame-ancestors 'self';
   object-src 'none';

@@ -9,6 +9,7 @@ import dynamic from "next/dynamic";
 import { MetaPixelNoScript } from "@/components/MetaPixel";
 import { GoogleTagManagerNoScript } from "@/components/GoogleTagManager";
 import DeferredScripts from "@/components/DeferredScripts"; // Import here
+import Script from "next/script";
 
 const PageUpButton = dynamic(() => import("@/components/ui/PageUpButton"));
 
@@ -81,6 +82,24 @@ export default async function LocaleLayout(props: {
         <MetaPixelNoScript pixelId="1766535074073515" />
         <GoogleTagManagerNoScript gtmId="GTM-PH8FNRK6" />
         
+        {/* Google Analytics / Google Tag */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=GT-TQKZR4LS"
+        />
+        <Script
+          id="google-analytics-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'GT-TQKZR4LS');
+            `,
+          }}
+        />
+
         {/* Scripts load dynamically after user interaction or delay */}
         <DeferredScripts />
 
