@@ -110,10 +110,15 @@ export default function TransformITBannerSection({
               {/* Address */}
               <div className="flex items-start gap-3 text-xs sm:text-sm text-gray-300">
                 <MapPin className="w-4 h-4 text-teal-300 shrink-0 mt-0.5" />
-                <div className="leading-tight text-gray-300">
-                  <p>Mandenmakerstraat 100C, 3194 DG Hoogvliet</p>
-                  <p className="text-gray-400 mt-0.5">Rotterdam, Netherlands</p>
-                </div>
+                <a
+                  href="https://maps.google.com/?q=Mandenmakerstraat+100C,+3194+DG+Hoogvliet+Rotterdam,+Netherlands"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="leading-tight text-gray-300 hover:text-white transition-colors group"
+                >
+                  <p className="group-hover:text-white">Mandenmakerstraat 100C, 3194 DG Hoogvliet</p>
+                  <p className="text-gray-400 group-hover:text-gray-200 mt-0.5">Rotterdam, Netherlands</p>
+                </a>
               </div>
             </div>
           </div>

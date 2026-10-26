@@ -117,8 +117,7 @@ export default function Footer() {
             <h3 className="text-sm font-bold uppercase tracking-wider">CONTACT</h3>
             <ul className="space-y-3 text-xs text-gray-400">
               <li className="flex gap-2"><FiMail className="text-[#2B8A99] shrink-0 mt-0.5" /><a href="mailto:info@itsolutionsworldwide.com" className="hover:text-white">info@itsolutionsworldwide.com</a></li>
-              <li className="flex gap-2"><FiPhone className="text-[#2B8A99] shrink-0 mt-0.5" /><a href="tel:+31107660786" className="hover:text-white">+31 10 766 0786</a></li>
-              <li className="flex gap-2"><FiMapPin className="text-[#2B8A99] shrink-0 mt-0.5" /><span>Mandenmakerstraat 100C, 3194 DG Hoogvliet Rotterdam, Netherlands</span></li>
+              <li className="flex gap-2"><FiMapPin className="text-[#2B8A99] shrink-0 mt-0.5" /><a href="https://maps.google.com/?q=Mandenmakerstraat+100C,+3194+DG+Hoogvliet+Rotterdam,+Netherlands" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Mandenmakerstraat 100C, 3194 DG Hoogvliet Rotterdam, Netherlands</a></li>
             </ul>
           </div>
         </div>

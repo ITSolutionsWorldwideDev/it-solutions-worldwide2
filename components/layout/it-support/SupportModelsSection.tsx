@@ -65,8 +65,8 @@ export default function SupportModelsSection({
         : "Complete managed IT for companies with [2–150] employees — proactive monitoring and 24/7 support for urgent issues.",
       price: "425",
       priceLine1: isNl
-        ? "basisbedrag per maand + €[XX] per"
-        : "basic amount per month + €[XX] per",
+        ? "basisbedrag per maand + €425 per"
+        : "basic amount per month + €425 per",
       priceLine2: isNl ? "werkplek / maand" : "workstation / month",
       includedTitle: isNl ? "Wat is inbegrepen:" : "What is included:",
       features: isNl
@@ -103,10 +103,10 @@ export default function SupportModelsSection({
       description: isNl
         ? "Voor organisaties die moeten voldoen aan hogere normen en uitzonderlijke serviceniveaus nodig hebben."
         : "For organisations that must meet higher standards and need exceptional service levels.",
-      price: "XX",
+      price: "700",
       priceLine1: isNl
-        ? "basisbedrag per maand + €[XX] per"
-        : "basic amount per month + €[XX] per",
+        ? "basisbedrag per maand + €700 per"
+        : "basic amount per month + €700 per",
       priceLine2: isNl ? "werkplek / maand" : "workstation / month",
       includedTitle: isNl ? "Wat is inbegrepen:" : "What is included:",
       features: isNl
