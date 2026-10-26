@@ -86,6 +86,16 @@ const EXACT_LINKS: Record<string, string> = {
 
   software_development:
     "/it-support/software-development",
+
+  // =========================================================
+  // IT SUPPORT
+  // =========================================================
+
+  automation_services:
+    "/it-support/automation-services",
+
+  erp_implementation:
+    "/it-support/erp-implementation",
 };
 
 

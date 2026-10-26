@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import initServerI18n from "@/utils/serverTranslation";
 import { getCanonicalUrl, getLanguageAlternates } from "@/utils/seo";
-import CategoryListingPage from "@/components/layout/outsourcing/CategoryListingPage";
+import ITSupportPage from "@/components/layout/it-support/ITSupportPage";
 
 export const dynamic = "force-static";
 export const revalidate = 3600;
@@ -26,5 +26,5 @@ export default async function Page({ params }: Props) {
   const i18nInstance = await initServerI18n(locale);
   const t: any = await i18nInstance.getFixedT(locale, "common");
 
-  return <CategoryListingPage translationKey="category-it-support" locale={locale} t={t} />;
+  return <ITSupportPage translationKey="category-it-support" locale={locale} t={t} />;
 }
