@@ -22,7 +22,13 @@ export async function GET(req: NextRequest) {
   try {
     if (job_info_id) {
       const result = await pool.query(
-        `SELECT * FROM jobs_infos WHERE job_info_id = $1`,
+        `SELECT * FROM jobs_infos 
+         WHERE job_info_id = $1 
+           AND title IS NOT NULL AND TRIM(title) != ''
+           AND content IS NOT NULL AND TRIM(content) != ''
+           AND location IS NOT NULL AND TRIM(location) != '' AND LOWER(TRIM(location)) != 'location not set'
+           AND type IS NOT NULL AND TRIM(type) != ''
+           AND (published = 1 OR published IS NULL)`,
         [job_info_id],
       );
       return NextResponse.json(result.rows[0] || null, {
@@ -30,7 +36,14 @@ export async function GET(req: NextRequest) {
       });
     }
 
-    const whereClauses: string[] = [];
+    const whereClauses: string[] = [
+      "i.title IS NOT NULL AND TRIM(i.title) != ''",
+      "i.content IS NOT NULL AND TRIM(i.content) != ''",
+      "i.location IS NOT NULL AND TRIM(i.location) != '' AND LOWER(TRIM(i.location)) != 'location not set'",
+      "i.type IS NOT NULL AND TRIM(i.type) != ''",
+      "(i.published = 1 OR i.published IS NULL)",
+    ];
+
     if (search) {
       const keyword = escape(search.toLowerCase());
       whereClauses.push(
@@ -38,9 +51,7 @@ export async function GET(req: NextRequest) {
       );
     }
 
-    const whereClause = whereClauses.length
-      ? `WHERE ${whereClauses.join(" AND ")}`
-      : "";
+    const whereClause = `WHERE ${whereClauses.join(" AND ")}`;
 
     let sortingOrder = "ORDER BY i.created_at DESC";
     if (sort === "nameDesc") sortingOrder = "ORDER BY i.title DESC";

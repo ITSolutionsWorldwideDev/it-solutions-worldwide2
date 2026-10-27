@@ -69,7 +69,7 @@ export default async function LocaleLayout(props: {
   const organizationSchema = getOrganizationSchema(locale);
 
   return (
-    <html lang={locale} className={lexend.className} suppressHydrationWarning>
+    <html lang={locale} className={`${lexend.className} scroll-smooth`} suppressHydrationWarning>
       <head>
         {/* Completely clean head - No blocking scripts here */}
         <script

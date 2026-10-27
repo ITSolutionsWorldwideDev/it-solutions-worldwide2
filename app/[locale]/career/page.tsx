@@ -64,7 +64,7 @@ export default async function Career({ params }: PageProps) {
         imageAlt={t("career.cta.imageAlt")}
         overlayText={t("career.cta.overlayText")}
         ctaLabel={t("career.cta.ctaLabel")}
-        ctaHref={`/${locale}/careers`}
+        ctaHref="#open-roles"
       />
 
       {/* CAREER GROWTH */}

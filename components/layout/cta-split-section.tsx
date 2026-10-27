@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,6 +42,18 @@ export default function CtaSplitSection({
     );
   };
 
+  const handleScrollClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const targetId = href.replace(/^#/, "");
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+        window.history.pushState(null, "", href);
+      }
+    }
+  };
+
   return (
     <section className="w-full bg-white">
       <div className="mx-auto grid w-full max-w-[1180px] grid-cols-1 items-center gap-8 px-6 py-12 sm:px-8 sm:py-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-0 lg:py-16">
@@ -59,12 +73,22 @@ export default function CtaSplitSection({
           )}
 
           {ctaLabel && ctaHref && (
-            <Link
-              href={ctaHref}
-              className="mt-6 inline-flex w-fit items-center justify-center rounded-xl bg-[#00A896] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
-            >
-              {ctaLabel}
-            </Link>
+            ctaHref.startsWith("#") ? (
+              <a
+                href={ctaHref}
+                onClick={(e) => handleScrollClick(e, ctaHref)}
+                className="mt-6 inline-flex w-fit cursor-pointer items-center justify-center rounded-xl bg-[#00A896] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+              >
+                {ctaLabel}
+              </a>
+            ) : (
+              <Link
+                href={ctaHref}
+                className="mt-6 inline-flex w-fit items-center justify-center rounded-xl bg-[#00A896] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+              >
+                {ctaLabel}
+              </Link>
+            )
           )}
         </div>
 
