@@ -392,6 +392,13 @@ export default function JobDetailPage({ job }: { job: JobDetail }) {
     }
   }, []);
 
+  useEffect(() => {
+    if (job?.title) {
+      const locationSuffix = job.location ? ` - ${job.location}` : "";
+      document.title = `${job.title}${locationSuffix} | Careers at IT Solutions Worldwide`;
+    }
+  }, [job?.title, job?.location]);
+
      // Agar URL mein #apply hash hai (career listing se "Apply Now" click hua),
   // toh form tak scroll karo. Single setTimeout se yeh miss ho sakta tha
   // agar us waqt tak applyFormRef DOM mein attach nahi hua tha — isliye
