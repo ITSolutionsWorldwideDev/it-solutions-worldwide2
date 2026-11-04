@@ -1,5 +1,33 @@
 export const clientLogos = [
   {
+    src: "/assets/images/clients2/alseas.png",
+    alt: "Allseas",
+  },
+  {
+    src: "/assets/images/clients2/grolz.webp",
+    alt: "g-rollz",
+  },
+  {
+    src: "/assets/images/clients2/hasaan.webp",
+    alt: "Hassan Travel",
+  },
+  {
+    src: "/assets/images/clients2/hbc.png",
+    alt: "HBC",
+  },
+  {
+    src: "/assets/images/clients2/rifas.png",
+    alt: "Rifas",
+  },
+  {
+    src: "/assets/images/clients2/taxinet.png",
+    alt: "Taxinet",
+  },
+  {
+    src: "/assets/images/clients2/xtreme.png",
+    alt: "Xtreme Tuning",
+  },
+  {
     src: "/assets/images/logos/albelli.webp",
     alt: "albelli",
   },
@@ -28,7 +56,7 @@ export const clientLogos = [
     alt: "dynamic-ear-company",
   },
   {
-    src: "/assets/images/logos/hassaan-travel.webp",
+    src: "/assets/images/clients2/hasaan.webp",
     alt: "Hassan Travel",
   },
   {
@@ -40,7 +68,7 @@ export const clientLogos = [
     alt: "Portugees To Go",
   },
   {
-    src: "/assets/images/logos/rifas-logo.webp",
+    src: "/assets/images/clients2/rifas.png",
     alt: "Rifas",
   },
   {
@@ -48,7 +76,7 @@ export const clientLogos = [
     alt: "RF Smart",
   },
   {
-    src: "/assets/images/logos/xtreme-tuning.webp",
+    src: "/assets/images/clients2/xtreme.png",
     alt: "Xtreme Tuning",
   },
   {
@@ -64,7 +92,7 @@ export const clientLogos = [
     alt: "Babylon Logistics",
   },
   {
-    src: "/assets/images/g-rollz.webp",
+    src: "/assets/images/clients2/grolz.webp",
     alt: "g-rollz",
   },
  
@@ -95,7 +123,7 @@ export const clientLogos = [
 
 
   {
-    src: "/assets/images/logos/allseas-lg.webp",
+    src: "/assets/images/clients2/alseas.png",
     alt: "Allseas",
   },
   {
@@ -123,37 +151,33 @@ export const logosSlider2 = [
   { src: "/assets/images/albelli.webp" },
   { src: "/assets/images/kent.webp" },
   { src: "/assets/images/ddgroup.webp" },
-  { src: "/assets/images/bol.webp" },
-  { src: "/assets/images/hitech.webp" },
-  { src: "/assets/images/jumbosports.webp" },
-  { src: "/assets/images/albelli.webp" },
-  { src: "/assets/images/kent.webp" },
-  { src: "/assets/images/ddgroup.webp" },
-  { src: "/assets/images/bol.webp" },
-  { src: "/assets/images/hitech.webp" },
-  { src: "/assets/images/jumbosports.webp" },
-  { src: "/assets/images/albelli.webp" },
-  { src: "/assets/images/kent.webp" },
-  { src: "/assets/images/ddgroup.webp" },
+  { src: "/assets/images/clients2/alseas.png" },
+  { src: "/assets/images/clients2/grolz.webp" },
+  { src: "/assets/images/clients2/hasaan.webp" },
+  { src: "/assets/images/clients2/hbc.png" },
+  { src: "/assets/images/clients2/rifas.png" },
+  { src: "/assets/images/clients2/taxinet.png" },
+  { src: "/assets/images/clients2/xtreme.png" },
 ];
 
 export const logosSlider = [
+  "/assets/images/clients2/alseas.png",
+  "/assets/images/clients2/grolz.webp",
+  "/assets/images/clients2/hasaan.webp",
+  "/assets/images/clients2/hbc.png",
+  "/assets/images/clients2/rifas.png",
+  "/assets/images/clients2/taxinet.png",
+  "/assets/images/clients2/xtreme.png",
   "/assets/images/bol.webp",
   "/assets/images/hitech.webp",
   "/assets/images/jumbosports.webp",
   "/assets/images/albelli.webp",
   "/assets/images/kent.webp",
   "/assets/images/ddgroup.webp",
-
   "/assets/images/bosman.svg",
   "/assets/images/babylon.svg",
-  "/assets/images/g-rollz.webp",
   "/assets/images/THE_NEWWAYS_LOGO.webp",
-  "/assets/images/rifasopleidingsinstituut.webp",
-  "/assets/images/x-treme-tunings.webp",
-  "/assets/images/hassan_travels.webp",
   "/assets/images/portugees_to_go.svg",
-  "/assets/images/logos/allseas-lg.webp",
   "/assets/images/logos/altas-corpo.svg",
   "/assets/images/logos/hdp.png",
   "/assets/images/logos/Mel 'n Nel.webp",

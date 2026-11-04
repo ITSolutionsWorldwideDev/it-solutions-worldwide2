@@ -3,106 +3,142 @@ import React, { useState } from "react";
 import { clientLogos, logosSlider } from "@/lib/commonData";
 import Image from "next/image";
 
-// Swiper Components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
-// CSS file load block ko prevent karne ke liye (Swiper CSS global layout shift rokta hai)
 import "swiper/css";
-import "swiper/css/navigation";
 
+type LogoItem = { src: string; alt: string };
+
+// String ya object dono formats handle karega + duplicates hata dega
+const normalize = (list: any[]): LogoItem[] => {
+  const seen = new Set<string>();
+  const result: LogoItem[] = [];
+
+  list.forEach((item, i) => {
+    const src: string = typeof item === "string" ? item : item.src ?? item.img;
+    const alt: string =
+      typeof item === "string"
+        ? `client-logo-${i + 1}`
+        : item.alt ?? item.name ?? `client-logo-${i + 1}`;
+
+    if (!src || seen.has(src)) return;
+    seen.add(src);
+    result.push({ src, alt });
+  });
+
+  return result;
+};
+
+// Loop ke liye enough slides
+const ensureEnough = (logos: LogoItem[], min = 12): LogoItem[] => {
+  if (logos.length === 0) return logos;
+  let result = [...logos];
+  while (result.length < min) result = [...result, ...logos];
+  return result;
+};
+
+// ---------- Swiper version ----------
 export default function LogosSlider() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [swiperRef, setSwiperRef] = useState<any>(null);
+  const logos = ensureEnough(normalize(clientLogos as any[]));
 
   return (
     <div className="container w-full max-w-6xl md:px-5 mx-auto pb-10 relative">
-      <div className="relative z-10 mt-8 px-10 pb-10 mx-auto">
+      <div className="relative z-10 mt-8 px-4 md:px-10 pb-10 mx-auto">
         <Swiper
-          modules={[Navigation, Autoplay]}
-          onSwiper={setSwiperRef}
-          spaceBetween={30}
-          slidesPerView={1}
+          modules={[Autoplay]}
+          loop={true}
+          loopAdditionalSlides={logos.length}
+          speed={3000}
           autoplay={{
-            delay: 2500,
+            delay: 0,
             disableOnInteraction: false,
+            pauseOnMouseEnter: false,
           }}
-          navigation={{
-            prevEl: ".blog-prev-btn",
-            nextEl: ".blog-next-btn",
-          }}
-          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-          className="relative"
+          allowTouchMove={false}
+          spaceBetween={30}
+          slidesPerView={2}
           breakpoints={{
-            640: { slidesPerView: 4 },
+            640: { slidesPerView: 3 },
             768: { slidesPerView: 4 },
-            1024: { slidesPerView: 4 },
+            1024: { slidesPerView: 5 },
           }}
+          className="relative [&_.swiper-wrapper]:!ease-linear"
         >
-          {clientLogos.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex h-32 md:h-40 w-full items-center justify-center">
+          {logos.map((item, index) => (
+            <SwiperSlide key={`${item.src}-${index}`}>
+              <div className="relative mx-auto h-16 w-32 md:h-20 md:w-40 my-8">
                 <Image
                   src={item.src}
-                  width={140} 
-                  height={60} 
                   alt={item.alt}
-                  className="object-contain max-h-14 w-auto"
-                  loading="lazy"
-                  quality={75}
+                  fill
+                  sizes="160px"
+                  unoptimized
+                  className="object-contain"
                 />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-
-        <div className="flex justify-center mt-6 gap-1 z-10 relative">
-          {clientLogos.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => swiperRef?.slideTo(index)}
-              className="w-12 h-12 flex items-center justify-center relative group cursor-pointer" 
-              aria-label={`Go to slide ${index + 1}`} 
-            >
-              <span 
-                className={`w-3 h-3 rounded-full border border-black transition-all block
-                  ${
-                    activeIndex === index
-                      ? "bg-white scale-125"
-                      : "bg-transparent opacity-60"
-                  }`}
-              />
-            </button>
-          ))}
-        </div>
       </div>
     </div>
   );
 }
 
-// Alternate continuous-scroll logos slider with doubled mapping for smooth infinite ticker loops
+// ---------- Pure CSS marquee (home page pe yahi use hota hai) ----------
 export function ClientLogosSlider() {
-  const duplicatedLogos = [...logosSlider, ...logosSlider];
+  const logos = normalize(logosSlider as any[]);
+  const doubled = [...logos, ...logos];
+  const [failed, setFailed] = useState<Record<string, boolean>>({});
 
   return (
     <div className="w-full max-w-6xl mx-auto py-12">
-      <div className="relative overflow-hidden py-8 whitespace-nowrap">
-        <div className="absolute top-0 left-0 w-16 md:w-32 h-full z-10 bg-gradient-to-r from-white via-transparent to-transparent pointer-events-none" />
-        <div className="inline-block animate-slide">
-          {duplicatedLogos.map((src, index) => (
-            <Image
-              key={index}
-              src={src}
-              alt={`logo-${index}`}
-              className="h-14 md:h-20 w-auto mx-4 md:mx-6 inline-block transition-transform duration-300 ease-in-out hover:scale-110 hover:drop-shadow-lg"
-              quality={75}
-              loading="lazy"
-              width={140}
-              height={60}
-            />
-          ))}
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            @keyframes logo-marquee {
+              from { transform: translateX(0); }
+              to { transform: translateX(-50%); }
+            }
+            .logo-marquee-track {
+              display: flex;
+              width: max-content;
+              animation: logo-marquee 40s linear infinite;
+            }
+            .logo-marquee-wrap:hover .logo-marquee-track {
+              animation-play-state: paused;
+            }
+          `,
+        }}
+      />
+      <div className="logo-marquee-wrap relative overflow-hidden py-8">
+        <div className="absolute top-0 left-0 w-16 md:w-32 h-full z-10 bg-gradient-to-r from-white to-transparent pointer-events-none" />
+
+        <div className="logo-marquee-track">
+          {doubled.map((item, index) =>
+            failed[item.src] ? null : (
+              <div
+                key={`${item.src}-${index}`}
+                className="relative shrink-0 h-14 w-28 md:h-20 md:w-40 mx-3 md:mx-5"
+              >
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  sizes="160px"
+                  unoptimized
+                  className="object-contain transition-transform duration-300 hover:scale-110"
+                  onError={() => {
+                    console.warn("Logo load nahi hua:", item.src);
+                    setFailed((prev) => ({ ...prev, [item.src]: true }));
+                  }}
+                />
+              </div>
+            )
+          )}
         </div>
-        <div className="absolute top-0 right-0 w-16 md:w-32 h-full z-10 bg-gradient-to-l from-white via-transparent to-transparent pointer-events-none" />
+
+        <div className="absolute top-0 right-0 w-16 md:w-32 h-full z-10 bg-gradient-to-l from-white to-transparent pointer-events-none" />
       </div>
     </div>
   );

@@ -64,6 +64,7 @@ export default async function AnimationArea({ locale }: { locale: string }) {
             <p className="text-center text-lg md:text-2xl lg:text-3xl font-medium text-[#175864] max-w-4xl mx-auto mb-10">
               {t("homeServices.clientsTagline")}
             </p>
+            {/* Client Logos Slider */}
             <LazyClientLogosSlider />
           </div>
         </section>
