@@ -3,11 +3,6 @@ import React, { useState } from "react";
 import { clientLogos, logosSlider } from "@/lib/commonData";
 import Image from "next/image";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-
-import "swiper/css";
-
 type LogoItem = { src: string; alt: string };
 
 // String ya object dono formats handle karega + duplicates hata dega
@@ -30,66 +25,48 @@ const normalize = (list: any[]): LogoItem[] => {
   return result;
 };
 
-// Loop ke liye enough slides
-const ensureEnough = (logos: LogoItem[], min = 12): LogoItem[] => {
+// Ek group itna lamba ho ke screen se hamesha bada rahe (gap kabhi na aaye)
+const ensureEnough = (logos: LogoItem[], min = 14): LogoItem[] => {
   if (logos.length === 0) return logos;
   let result = [...logos];
   while (result.length < min) result = [...result, ...logos];
   return result;
 };
 
-// ---------- Swiper version ----------
-export default function LogosSlider() {
-  const logos = ensureEnough(normalize(clientLogos as any[]));
+function Marquee({ items }: { items: LogoItem[] }) {
+  const [failed, setFailed] = useState<Record<string, boolean>>({});
+  const group = ensureEnough(items).filter((i) => !failed[i.src]);
 
-  return (
-    <div className="container w-full max-w-6xl md:px-5 mx-auto pb-10 relative">
-      <div className="relative z-10 mt-8 px-4 md:px-10 pb-10 mx-auto">
-        <Swiper
-          modules={[Autoplay]}
-          loop={true}
-          loopAdditionalSlides={logos.length}
-          speed={3000}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: false,
-          }}
-          allowTouchMove={false}
-          spaceBetween={30}
-          slidesPerView={2}
-          breakpoints={{
-            640: { slidesPerView: 3 },
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 5 },
-          }}
-          className="relative [&_.swiper-wrapper]:!ease-linear"
+  if (group.length === 0) return null;
+
+  // Har logo ko ~2.5 sec; zyada logos = lamba duration, speed same rehti hai
+  const duration = Math.max(30, group.length * 2.5);
+
+  const renderGroup = (suffix: string) => (
+    <div className="logo-marquee-group" aria-hidden={suffix === "b"}>
+      {group.map((item, index) => (
+        <div
+          key={`${suffix}-${item.src}-${index}`}
+          className="relative shrink-0 h-14 w-28 md:h-20 md:w-40 mr-6 md:mr-10"
         >
-          {logos.map((item, index) => (
-            <SwiperSlide key={`${item.src}-${index}`}>
-              <div className="relative mx-auto h-16 w-32 md:h-20 md:w-40 my-8">
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  sizes="160px"
-                  unoptimized
-                  className="object-contain"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+          <Image
+            src={item.src}
+            alt={suffix === "b" ? "" : item.alt}
+            fill
+            sizes="160px"
+            unoptimized
+            priority
+            loading="eager"
+            className="object-contain transition-transform duration-300 hover:scale-110"
+            onError={() => {
+              console.warn("Logo load nahi hua:", item.src);
+              setFailed((prev) => ({ ...prev, [item.src]: true }));
+            }}
+          />
+        </div>
+      ))}
     </div>
   );
-}
-
-// ---------- Pure CSS marquee (home page pe yahi use hota hai) ----------
-export function ClientLogosSlider() {
-  const logos = normalize(logosSlider as any[]);
-  const doubled = [...logos, ...logos];
-  const [failed, setFailed] = useState<Record<string, boolean>>({});
 
   return (
     <div className="w-full max-w-6xl mx-auto py-12">
@@ -103,7 +80,13 @@ export function ClientLogosSlider() {
             .logo-marquee-track {
               display: flex;
               width: max-content;
-              animation: logo-marquee 40s linear infinite;
+              animation: logo-marquee ${duration}s linear infinite;
+              will-change: transform;
+            }
+            .logo-marquee-group {
+              display: flex;
+              flex-shrink: 0;
+              align-items: center;
             }
             .logo-marquee-wrap:hover .logo-marquee-track {
               animation-play-state: paused;
@@ -115,31 +98,21 @@ export function ClientLogosSlider() {
         <div className="absolute top-0 left-0 w-16 md:w-32 h-full z-10 bg-gradient-to-r from-white to-transparent pointer-events-none" />
 
         <div className="logo-marquee-track">
-          {doubled.map((item, index) =>
-            failed[item.src] ? null : (
-              <div
-                key={`${item.src}-${index}`}
-                className="relative shrink-0 h-14 w-28 md:h-20 md:w-40 mx-3 md:mx-5"
-              >
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  sizes="160px"
-                  unoptimized
-                  className="object-contain transition-transform duration-300 hover:scale-110"
-                  onError={() => {
-                    console.warn("Logo load nahi hua:", item.src);
-                    setFailed((prev) => ({ ...prev, [item.src]: true }));
-                  }}
-                />
-              </div>
-            )
-          )}
+          {renderGroup("a")}
+          {renderGroup("b")}
         </div>
 
         <div className="absolute top-0 right-0 w-16 md:w-32 h-full z-10 bg-gradient-to-l from-white to-transparent pointer-events-none" />
       </div>
     </div>
   );
+}
+
+// Dono exports ab same seamless marquee use karte hain
+export default function LogosSlider() {
+  return <Marquee items={normalize(clientLogos as any[])} />;
+}
+
+export function ClientLogosSlider() {
+  return <Marquee items={normalize(logosSlider as any[])} />;
 }
