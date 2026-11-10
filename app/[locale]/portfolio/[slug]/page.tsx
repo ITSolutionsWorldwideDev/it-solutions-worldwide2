@@ -1,5 +1,3 @@
-import fs from "fs";
-import path from "path";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import initServerI18n from "@/utils/serverTranslation";
@@ -23,58 +21,6 @@ type PageProps = {
     slug: string;
   }>;
 };
-
-function resolveClientImage(
-  slug: string,
-  index: 1 | 2 | 3,
-  configured?: string,
-  fallback?: string
-): string {
-  if (configured) {
-    const fullPath = path.join(
-      process.cwd(),
-      "public",
-      configured.replace(/^\//, "")
-    );
-    if (fs.existsSync(fullPath)) return configured;
-  }
-
-  const prefix = slug.split("-")[0];
-  const clean = slug.replace(/[^a-zA-Z0-9]/g, "");
-
-  const candidates = [
-    `/assets/images/portfolio/clients/${slug}${index}.webp`,
-    `/assets/images/portfolio/clients/${slug}-${index}.webp`,
-    `/assets/images/portfolio/clients/${prefix}${index}.webp`,
-    `/assets/images/portfolio/clients/${prefix}-${index}.webp`,
-    `/assets/images/portfolio/clients/${clean}${index}.webp`,
-    `/assets/images/portfolio/clients/${clean}${index}.png`,
-    `/assets/images/portfolio/clients/xtreme${index}.webp`,
-    `/assets/images/portfolio/clients/babylon${index}.webp`,
-    `/assets/images/portfolio/clients/alseas${index}.png`,
-    `/assets/images/portfolio/clients/alseas${index}.webp`,
-    `/assets/images/portfolio/clients/hitech${index}.png`,
-    `/assets/images/portfolio/clients/hitech${index}.jpg`,
-    `/assets/images/portfolio/clients/hitech${index}.webp`,
-    `/assets/images/portfolio/clients/jumbo${index}.png`,
-    `/assets/images/portfolio/clients/jumbo${index}.webp`,
-    `/assets/images/portfolio/${slug}${index}.webp`,
-    `/assets/images/portfolio/${slug}-${index}.webp`,
-    `/assets/images/portfolio/${prefix}${index}.webp`,
-    `/assets/images/portfolio/${prefix}-${index}.webp`,
-    `/assets/images/portfolio/clients/${slug}${index}.png`,
-    `/assets/images/portfolio/clients/${prefix}${index}.png`,
-    `/assets/images/portfolio/${slug}${index}.png`,
-    `/assets/images/portfolio/${prefix}${index}.png`,
-  ];
-
-  for (const c of candidates) {
-    const fullPath = path.join(process.cwd(), "public", c.replace(/^\//, ""));
-    if (fs.existsSync(fullPath)) return c;
-  }
-
-  return fallback || "";
-}
 
 export async function generateStaticParams() {
   const locales = ["en", "nl"];
@@ -254,26 +200,17 @@ export default async function ClientDetailPage({ params }: PageProps) {
     story.paragraph4
   );
 
-  // Resolve the 3 dynamic client images (taxinet1, taxinet2, taxinet3, etc.)
-  const heroImage = resolveClientImage(
-    client.slug,
-    1,
-    client.image1 || client.showcaseImage,
-    "/assets/images/portfolio/showcase/taxinet.webp"
-  );
+  const heroImage =
+    client.image1 ||
+    client.showcaseImage ||
+    "/assets/images/portfolio/showcase/taxinet.webp";
 
-  const midBannerImage = resolveClientImage(
-    client.slug,
-    2,
-    client.image2
-  );
+  const midBannerImage = client.image2;
 
-  const bottomBannerImage = resolveClientImage(
-    client.slug,
-    3,
-    client.image3 || client.bannerImage,
-    "/assets/images/portfolio/section3.webp"
-  );
+  const bottomBannerImage =
+    client.image3 ||
+    client.bannerImage ||
+    "/assets/images/portfolio/section3.webp";
 
   const heroHeadlineKey = `portfolio.clientsSection.clients.${client.translationKey}.heroHeadline`;
   const heroSubtextKey = `portfolio.clientsSection.clients.${client.translationKey}.heroSubtext`;

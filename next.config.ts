@@ -77,6 +77,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  outputFileTracingExcludes: {
+    "*": ["./public/**/*", "./public/**"],
+  },
   experimental: {
     optimizeCss: true,
   },
