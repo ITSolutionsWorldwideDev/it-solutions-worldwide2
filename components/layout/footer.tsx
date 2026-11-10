@@ -70,12 +70,13 @@ export default function Footer() {
 
           {/* Col 2: Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-sm font-bold uppercase tracking-wider">QUICK LINKS</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider">{t?.quickLinks || "QUICK LINKS"}</h3>
             <ul className="space-y-2.5 text-xs text-gray-400">
-              <li><Link href={`/${locale}/blogs`} className="hover:text-white">Blogs</Link></li>
-              <li><Link href={`/${locale}/about-us`} className="hover:text-white">About Us</Link></li>
-              <li><Link href={`/${locale}/profile`} className="hover:text-white">Profile</Link></li>
-              <li><Link href={`/${locale}/contact-us`} className="hover:text-white">Contact Us</Link></li>
+              <li><Link href={`/${locale}/portfolio`} className="hover:text-white">{t?.portfolio || "Portfolio"}</Link></li>
+              <li><Link href={`/${locale}/blogs`} className="hover:text-white">{t?.blogs || "Blogs"}</Link></li>
+              <li><Link href={`/${locale}/about-us`} className="hover:text-white">{t?.aboutUs || "About Us"}</Link></li>
+              <li><Link href={`/${locale}/profile`} className="hover:text-white">{t?.profile || "Profile"}</Link></li>
+              <li><Link href={`/${locale}/contact-us`} className="hover:text-white">{t?.contactUs || "Contact Us"}</Link></li>
             </ul>
           </div>
 

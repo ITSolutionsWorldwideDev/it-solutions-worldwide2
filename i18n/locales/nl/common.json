@@ -66,92 +66,69 @@
     "banner_text": "wij regelen alles.",
     "button_text": "Ontdek Nu",
     "button2_text": "Onze Diensten",
-
     "cards_main_heading": "Maak uw bedrijf toekomstbestendig — gebouwd om zich aan te passen, klaar om te leiden.",
     "card_heading_1": "Slimme oplossingen, naadloze werking",
     "card_text_1": "Wij vereenvoudigen complexe workflows met op maat gemaakte IT- en cloudoplossingen die de efficiëntie verhogen, kosten verlagen en met uw groei meegroeien. Van infrastructuur tot automatisering: wij bouwen systemen die zich ontwikkelen met uw bedrijf.",
-
     "card_heading_2": "Digitale groei die resultaat levert",
     "card_text_2": "Onze digitale marketing- en e-commercestrategieën zijn ontworpen om echte resultaten te realiseren — meer zichtbaarheid, betrokkenheid en conversie. Met data-gedreven campagnes en geoptimaliseerde platforms helpen we u te excelleren in de digitale wereld.",
-
     "card_heading_3": "Wendbare ondersteuning, betrouwbaar talent",
     "card_text_3": "Blijf vooroplopen met flexibele staffing en deskundige ondersteuning die zich aanpast aan uw behoeften. Of u nu teams opschaalt of technische uitdagingen oplost, wij bieden de juiste mensen en tools om uw bedrijf vooruit te helpen."
   },
-
   "aboutus": {
     "banner_heading": "OVER ONS",
     "banner_text": "Wij combineren expertise in management consulting en de implementatie van bedrijfsapplicaties.",
-
     "contactheading": "Neem contact op",
-
     "why_us_heading": "Over Ons Bedrijf",
     "why_us_heading_2": "Waarom Kiezen Voor",
     "why_us_text": "Wij onderscheiden ons door technische excellentie, klantgerichtheid en betaalbaarheid. Onze oplossingen zijn van hoge kwaliteit en toch scherp geprijsd, zodat klanten maximale waarde ontvangen. We bouwen geen systemen alleen — we creëren oplossingen die waarde toevoegen, efficiëntie verhogen en veiligheid, schaalbaarheid en prestaties prioriteren. Wij geloven in langdurige partnerschappen. Onze klanten zien ons niet enkel als een leverancier, maar als een strategische partner die vooruitdenkt, deskundig adviseert en betrouwbaar ondersteunt. Transparante processen, duidelijke communicatie en betrouwbare support vormen de basis van het vertrouwen dat wij opbouwen.",
-
     "why_us_widget_heading1": "Impact in Alle Sectoren",
     "why_us_widget_heading2": "Bewezen Expertise",
     "why_us_widget_heading3": "Modernisering Door Talent",
-
     "why_us_widget_text1": "IT Solutions Worldwide levert geavanceerde technologische oplossingen aan diverse industrieën, en stimuleert succes en efficiëntie.",
     "why_us_widget_text2": "Met X jaar ervaring en een bewezen trackrecord zijn wij gespecialiseerd in supply chain optimalisatie, IT-support, digitale marketing en operationele excellentie.",
     "why_us_widget_text3": "Onze hooggekwalificeerde technische professionals helpen bedrijven te evolueren met eenvoudige, innovatieve en toekomstbestendige strategieën.",
-
     "our_mission_main_heading": "Onze Missie",
     "our_mission_main_subheading": "Het Is Tijd Voor Een Revolutie",
-
     "our_mission_heading": "Waar Digitale Excellentie Samenkomen met Naadloze Uitvoering en Schaalbare Groei",
     "our_mission_text": "Bij IT Solutions Worldwide is onze missie eenvoudig: bedrijven helpen groeien met slimme, toekomstbestendige IT-oplossingen. In een snel veranderend technologisch landschap zorgen wij ervoor dat organisaties niet alleen bijblijven — maar vooroplopen. We combineren diepgaande technische expertise met praktische ervaring. Ons team van ontwikkelaars, ontwerpers en marketingspecialisten creëert innovatieve oplossingen die bedrijven digitaal versterken. Of het nu gaat om het bouwen van een gebruiksvriendelijke website, het ontwikkelen van een complexe webapplicatie, het automatiseren van bedrijfsprocessen of het inzetten van AI — wij leveren maatwerkstrategieën die aansluiten op de unieke behoeften van elke klant.",
-
     "our_mission_widget_heading1": "Webontwikkeling & Onderhoud",
     "our_mission_widget_heading2": "Web- & App-ontwikkeling",
     "our_mission_widget_heading3": "E-commerce & Webshops",
     "our_mission_widget_heading4": "Procesautomatisering",
     "our_mission_widget_heading5": "AI-diensten",
     "our_mission_widget_heading6": "Marketing & Campagnes",
-
     "our_mission_widget_text1": "Schaalbare, snelle en veilige websites en platforms, van bedrijfssites tot geavanceerde e-commerceoplossingen in Magento en WooCommerce.",
     "our_mission_widget_text2": "Moderne frameworks en technologieën voor het creëren van web- en mobiele applicaties die processen optimaliseren en bedrijven toekomstbestendig maken.",
     "our_mission_widget_text3": "Gebruiksvriendelijke, conversiegerichte webshops met veilige betalingsoplossingen en naadloze integraties.",
     "our_mission_widget_text4": "Het stroomlijnen van bedrijfsactiviteiten, het verminderen van handmatige werkzaamheden en het verbeteren van efficiëntie in alle afdelingen.",
     "our_mission_widget_text5": "Het implementeren van AI-oplossingen die bruikbare inzichten bieden, besluitvorming verbeteren en innovatie stimuleren.",
     "our_mission_widget_text6": "Complete digitale marketingstrategieën, inclusief branding, SEO, social media beheer en PPC-campagnes voor meetbare resultaten.",
-
     "our_values_main_heading": "Onze Kernwaarden",
     "our_values_main_subheading": "De Fundamenten van Alles Wat Wij Doen",
     "our_values_main_text": "Bij IT Solutions Worldwide sturen onze waarden elke beslissing, elke oplossing en elke samenwerking. Ze weerspiegelen onze toewijding aan excellentie, innovatie en integriteit in een snel evoluerende digitale wereld.",
-
     "our_values_widget_heading1": "Klantgerichtheid & Operationele Excellentie",
     "our_values_widget_heading2": "Innovatie & Aanpassingsvermogen",
     "our_values_widget_heading3": "Samenwerking & Integriteit",
-
     "our_values_widget_text1": "Wij streven ernaar hoogwaardige IT-oplossingen te leveren die bedrijfsprocessen verbeteren, efficiëntie verhogen en duurzame relaties opbouwen met klanten, stakeholders en partners.",
     "our_values_widget_text2": "Wij omarmen moderne technologieën en agile-denken om efficiënte, toekomstgerichte oplossingen te creëren die resultaten leveren in dynamische markten.",
     "our_values_widget_text3": "Wij stimuleren sterke, transparante relaties — intern en extern — gebaseerd op vertrouwen, teamwork en het gezamenlijke streven naar excellentie.",
-
     "creative_team_heading": "Het Creatieve Team Achter de Deur",
     "creative_team_subheading": "Vraag niet wat je teamgenoten voor jou kunnen doen. Vraag wat jij voor je teamgenoten kunt doen.",
-
     "expertise_heading_1": "Supply Chain Services",
     "expertise_text_1": "Optimaliseren van logistiek en operaties voor snellere en slimmere levering.",
-
     "expertise_heading_2": "IT- en Cloudoplossingen",
     "expertise_text_2": "Veilige, schaalbare systemen gebouwd voor de moderne zakelijke behoeften.",
-
     "expertise_heading_3": "Digitale Marketing & E-commerce",
     "expertise_text_3": "Online groei stimuleren via strategie, content en conversie.",
-
     "expertise_heading_4": "Staffing en Ondersteuning",
     "expertise_text_4": "Flexibel talent en technische ondersteuning om uw bedrijfsvoering sterk te houden.",
-
     "our_vision_heading": "Onze Visie voor de Toekomst",
     "our_vision_text": "Technologie staat nooit stil, en wij ook niet. Wij investeren voortdurend in de nieuwste tools, frameworks en innovaties—van AI-integraties tot cloudoplossingen en procesautomatisering—om bedrijven een voorsprong te geven. Met een wereldwijde blik en lokale betrokkenheid bedienen wij klanten in diverse sectoren, van startups en mkb’s tot gevestigde ondernemingen. Ons doel is simpel: digitale oplossingen leveren die bedrijven sterker, slimmer en succesvoller maken, tegen een prijs die bij elk budget past.",
-
     "process_flow_heading": "Onze Expertise",
     "heading_1": "Over Ons | IT Solutions Worldwide",
     "text_1": "Wij combineren expertise in management consulting en de implementatie van bedrijfsapplicaties.",
     "heading_2": "Wie Wij Zijn",
     "text_2": "IT Solutions Worldwide is een toonaangevend bedrijf dat de meest actuele oplossingen biedt aan een breed scala van industrieën. Met X jaar ervaring streven wij ernaar eenvoudige en innovatieve technologische oplossingen te implementeren, zodat bedrijven meer succes en efficiëntie behalen. Met een bewezen staat van dienst optimaliseren wij bedrijven via supply chain management, IT-ondersteuning, digitale marketingdiensten en operationele excellentie. Wij helpen bedrijven te moderniseren met onze beste technische professionals.",
-
     "faq_title": "Veelgestelde vragen",
     "faq_desc": "Bel gerust onze klantenservice-helpdesk.",
     "question1": "Wat doet uw bedrijf?",
@@ -172,14 +149,135 @@
     "text_1": "Wij combineren expertise in managementadvies en de implementatie van bedrijfsapplicaties."
   },
   "career": {
-    "heading_1": "CARRIÈRE",
-    "heading_2": "Word lid van ons team en vorm de toekomst",
-    "text_2": "Ons bedrijf is het toonbeeld van technologie en innovatie. Ons uitzonderlijke team is daar het bewijs van. Wij werven toptalent op de markt en tonen hun expertise in hun respectieve vakgebieden. Bij IT Solutions Worldwide is overleven niet de norm – wij gaan verder. Sluit je aan bij ons team als een bekwame professional die op zoek is naar een uitzonderlijke werkomgeving om te groeien en te bloeien.",
-    "heading_3": "Voordelen",
-    "subtitle_2": "Voordelen die grenzen overstijgen",
-    "text_3": "Ons bedrijf is het toonbeeld van technologie en innovatie. Ons uitzonderlijke team is daar het bewijs van. Wij werven toptalent op de markt en tonen hun expertise in hun respectieve vakgebieden. Bij IT Solutions Worldwide is overleven niet de norm – wij gaan verder. Sluit je aan bij ons team als een bekwame professional die op zoek is naar een uitzonderlijke werkomgeving om te groeien en te bloeien.",
-    "heading_4": "Ontdek ons wereldwijde netwerk van kantoren",
-    "text_4": "Ervaar ons uitgebreide netwerk van kantoren over de hele wereld, zodat u overal toegang hebt tot onze uitzonderlijke diensten."
+    "metadata": {
+      "title": "IT & Supply Chain Banen in Nederland | Solliciteer Nu",
+      "description": "Op zoek naar banen in IT, supply chain of digitale marketing in Nederland? Ontdek carrièremogelijkheden bij IT Solutions Worldwide en groei met ons mee."
+    },
+    "hero": {
+      "eyebrow": "Word Deel Van Ons Team",
+      "heading": "Bouw Aan Je Carrière. Maak Werk Dat Ertoe Doet.",
+      "subtext": "Sluit je aan bij een wereldwijd outsourcingteam dat Nederlandse en internationale bedrijven helpt slimmer te werken, sneller te bewegen en verder te groeien — in supply chain, IT, engineering en datarollen.",
+      "tags": [
+        "40+ Medewerkers",
+        "Internationale Klanten",
+        "31 Openstaande Rollen",
+        "Echte Verantwoordelijkheid"
+      ],
+      "breadcrumbs": {
+        "home": "Home",
+        "careers": "Carrières"
+      }
+    },
+    "cta": {
+      "eyebrow": "Wie is IT Solutions Worldwide?",
+      "heading": "Outsourcing & Staff Augmentation in Rotterdam.",
+      "highlightWord": "Outsourcing",
+      "subtext": "IT Solutions Worldwide is een in Rotterdam gevestigd outsourcing- en staff augmentation-bedrijf met meer dan 40 medewerkers, gevestigd aan de Mandenmakerstraat 100C, 3194 DG Hoogvliet, Rotterdam, Nederland. Het bedrijf werft voor fulltime, parttime, contract- en stagerollen in supply chain, IT-ondersteuning, software engineering, data, financiën en administratieve functies in heel Nederland en heeft een beoordeling van 4.8 op Glassdoor.",
+      "overlayText": "Carrières Open.",
+      "ctaLabel": "Ontdek Carrières",
+      "imageAlt": "Team dat samenwerkt bij IT Solutions Worldwide"
+    },
+    "growth": {
+      "headingPrefix": "Een Plek Waar ",
+      "headingHighlight1": "Carrières",
+      "headingMiddle": " Daadwerkelijk ",
+      "headingHighlight2": "Groeien",
+      "subtext": "We hebben het soort bedrijf gebouwd waar we zelf altijd al wilden werken — en we leggen de lat elk jaar hoger.",
+      "features": {
+        "global": {
+          "badge": "Mondiaal & Internationaal",
+          "title": "Wereldwijd Bereik",
+          "description": "We werken met internationale klanten in supply chain, IT en engineering."
+        },
+        "path": {
+          "badge": "Carrièrepad",
+          "title": "Echte Groei",
+          "description": "Carrièrepaden met echte vooruitgang, niet alleen functietitelveranderingen."
+        },
+        "impact": {
+          "badge": "Impact",
+          "title": "Echte Verantwoordelijkheid",
+          "description": "Nieuwe medewerkers nemen vanaf dag één betekenisvol werk op zich — geen maanden inwerken."
+        },
+        "location": {
+          "badge": "Locatie",
+          "title": "Gevestigd in Rotterdam",
+          "description": "Hoofdkantoor in Hoogvliet, Rotterdam, met rollen door heel Nederland."
+        }
+      }
+    },
+    "jobs": {
+      "eyebrow": "ONS WERK · PORTFOLIO",
+      "headingPrefix": "Vind Je Volgende ",
+      "headingHighlight": "Geweldige Rol",
+      "searchPlaceholder": "Zoek op rol, vaardigheid of locatie...",
+      "positionsFound": "vacatures gevonden",
+      "viewDetails": "Bekijk Vacaturedetails →",
+      "applyNow": "Nu solliciteren",
+      "noResults": "Geen vacatures gevonden die aan je criteria voldoen.",
+      "loading": "Vacatures laden...",
+      "statusActive": "Actief",
+      "tabs": {
+        "all": "Alles",
+        "fullTime": "Fulltime",
+        "partTime": "Parttime",
+        "contract": "Contract",
+        "internship": "Stage"
+      }
+    },
+    "faq": {
+      "eyebrow": "Vragen?",
+      "headingPrefix": "Veelgestelde ",
+      "headingHighlight": "Vragen",
+      "subtext": "Alles wat kandidaten ons vragen voordat ze solliciteren bij IT Solutions Worldwide.",
+      "items": [
+        {
+          "question": "Hoe lang duurt het voordat ik iets hoor na mijn sollicitatie bij IT Solutions Worldwide?",
+          "answer": "We reageren binnen 5 werkdagen na ontvangst van je sollicitatie, of je nu op een openstaande rol hebt gesolliciteerd of een open sollicitatie hebt ingestuurd."
+        },
+        {
+          "question": "Wat gebeurt er met mijn profiel als er nu geen passende rol is?",
+          "answer": "Je profiel blijft 6 maanden actief in ons systeem. We nemen proactief contact op als er een rol vrijkomt die bij je achtergrond past."
+        },
+        {
+          "question": "Biedt IT Solutions Worldwide een aanbevelingsbonus?",
+          "answer": "Ja. We bieden een referral bonus voor succesvolle wervingen via aanbevelingen."
+        },
+        {
+          "question": "Wat kan ik verwachten van het eerste gesprek?",
+          "answer": "Een ontspannen kennismakingsgesprek zonder voorbereiding. We willen je ervaring en wensen begrijpen."
+        },
+        {
+          "question": "Welke werk vormen biedt IT Solutions Worldwide aan?",
+          "answer": "We werven voor fulltime, parttime, contract- en stagerollen in supply chain, IT, software engineering, data, financiën en administratie."
+        },
+        {
+          "question": "Waar is IT Solutions Worldwide gevestigd en waar zijn de rollen?",
+          "answer": "Ons hoofdkantoor staat aan de Mandenmakerstraat 100C, 3194 DG Hoogvliet, Rotterdam. Rollen zijn verspreid over heel Nederland."
+        },
+        {
+          "question": "Is IT Solutions Worldwide een gecertificeerde werkgever?",
+          "answer": "Ja. We staan ingeschreven bij de KVK, voldoen aan de AVG (GDPR) wetgeving en hebben een 4.8 score op Glassdoor."
+        },
+        {
+          "question": "Kan ik solliciteren als er geen passende vacature openstaat?",
+          "answer": "Ja. We accepteren het hele jaar door open sollicitaties."
+        },
+        {
+          "question": "Hoe wordt mijn CV en persoonlijke data verwerkt?",
+          "answer": "Alle gegevens worden strikt verwerkt volgens de AVG (GDPR) richtlijnen en nooit verkocht of gedeeld."
+        },
+        {
+          "question": "Werft IT Solutions Worldwide ook internationaal?",
+          "answer": "De meeste functies zijn in Nederland, maar we ondersteunen ook remote en grensoverschrijdende rollen."
+        }
+      ],
+      "banner": {
+        "title": "Heb je nog vragen?",
+        "subtext": "We helpen je graag verder met je sollicitatieproces.",
+        "button": "Contact Support"
+      }
+    }
   },
   "scmservices": {
     "heading_1": "Supply Chain Management Diensten in Nederland",
@@ -256,19 +354,14 @@
     "text_2": "Zakelijk adviesdiensten helpen organisaties bij het identificeren van uitdagingen, het ontwikkelen van strategieën en het implementeren van effectieve oplossingen voor groei. Of het nu gaat om procesoptimalisatie, veranderingsbeheer of strategische planning, zakelijke consultants brengen expertise om prestaties te verbeteren.",
     "text_3": "Onze consultants werken nauw samen met klanten om kansen te identificeren, operationele efficiëntie te verbeteren en duurzame groei te stimuleren door middel van datagestuurde besluitvorming.",
     "heading_3": "Onze Aanpak",
-
     "card_heading_1": "Strategische Planning en Advies",
     "card_text_1": "Wij helpen bedrijven duidelijke doelen te stellen, middelen op elkaar af te stemmen en uitvoerbare strategieën te ontwikkelen voor duurzame groei.",
-
     "card_heading_2": "Procesoptimalisatie",
     "card_text_2": "Onze experts stroomlijnen werkprocessen, verbeteren de efficiëntie en implementeren oplossingen die kosten verlagen en prestaties verbeteren.",
-
     "card_heading_3": "Digitale Transformatie",
     "card_text_3": "Wij begeleiden organisaties bij het omarmen van moderne technologieën om te innoveren, automatiseren en concurrerend te blijven in een digitale wereld.",
-
     "card_heading_4": "Risico- en Nalevingsbeheer",
     "card_text_4": "Wij identificeren potentiële risico’s, zorgen voor naleving van regelgeving en bouwen raamwerken die uw bedrijfsvoering en reputatie beschermen.",
-
     "step1": "Beoordeling",
     "step1_text": "Analyse van uw huidige bedrijfsprocessen, structuur en strategische doelen.",
     "step2": "Strategieontwikkeling",
@@ -377,10 +470,8 @@
     "card3_text": "Gebruik technologiegestuurde oplossingen voor nauwkeurig voorraadbeheer en orderafhandeling.",
     "card4_heading": "Leveringsbeheer",
     "card4_text": "Zorg voor tijdige en foutloze leveringen met onze geavanceerde leveringsoplossingen.",
-
     "heading_4": "Onze Aanpak van Supply Chain Uitvoering",
     "text_4": "Bij IT Solutions Worldwide combineren we efficiëntie, wendbaarheid en technologie in onze aanpak van supply chain uitvoering om een naadloze end-to-end prestatie te leveren. We integreren ERP-, WMS- en TMS-systemen om realtime zichtbaarheid te creëren binnen uw operaties, zodat elk proces aansluit bij de bedrijfsdoelen en met maximale efficiëntie verloopt. Door gebruik te maken van branchegerichte best practices, nauwe samenwerking met partners te bevorderen en belangrijke prestatie-indicatoren continu te monitoren, maken we snellere en slimmere besluitvorming mogelijk. Onze focus op flexibiliteit, risicobeheer en duurzaamheid zorgt ervoor dat uw supply chain veerkrachtig, adaptief en in staat blijft om blijvende waarde te creëren in een voortdurend veranderende markt.",
-
     "listitem1": "Realtime zichtbaarheid in uw supply chain.",
     "listitem2": "Flexibele en schaalbare oplossingen voor elke sector.",
     "listitem3": "Data-analyse voor continue prestatieverbetering.",
@@ -687,19 +778,14 @@
     "text_2": "Personeelsondersteuning omvat het leveren van tijdelijk, contract- of vast personeel om aan de personeelsbehoeften van organisaties te voldoen. Wij helpen bedrijven bij het vinden van gekwalificeerde professionals die bijdragen aan hun groei.",
     "text_3": "Of u nu op zoek bent naar kortetermijnondersteuning of een gespecialiseerd team, wij bieden betrouwbare en schaalbare oplossingen voor elk type organisatie.",
     "heading_3": "Onze Personeelsdiensten",
-
     "card_heading_1": "Nederland",
     "card_text_1": "Bouw een sterk personeelsbestand op in het innovatiecentrum van Europa met deskundige wervingsoplossingen die aansluiten bij uw bedrijfsvisie.",
-
     "card_heading_2": "Qatar",
     "card_text_2": "Breid met vertrouwen uit in een groeiende markt met toegang tot gekwalificeerde professionals uit meerdere sectoren.",
-
     "card_heading_3": "Saoedi-Arabië",
     "card_text_3": "Versterk uw aanwezigheid in het Koninkrijk met betrouwbare, conforme en hoogwaardige personeelsondersteuning.",
-
     "card_heading_4": "Dubai",
     "card_text_4": "Schaal uw activiteiten op in een van ’s werelds toonaangevende zakencentra met flexibele en efficiënte wervingsdiensten.",
-
     "card1_heading": "IT-personeel",
     "card1_text": "Levering van hooggekwalificeerde IT-professionals voor projecten en ondersteuning.",
     "card2_heading": "Zakelijke Consultants",
@@ -1200,22 +1286,16 @@
     "text_3": "AI in combinatie met cloudservices helpt bedrijven processen te automatiseren, beveiliging te verbeteren en datagestuurde beslissingen te nemen. Door clouddata-oplossingen en AI-technologieën te integreren, kunnen bedrijven sneller groeien, hun time-to-market verkorten en een naadloze workflow creëren.",
     "heading_3": "Onze Diensten",
     "text_4": "Bij IT Solutions Worldwide leveren we end-to-end Cloud-, Data- en AI-diensten die organisaties helpen hun bedrijfsvoering te moderniseren, inzichten te benutten en innovatie te versnellen.",
-
     "card_heading_1": "Cloudstrategie en Migratie",
     "card_text_1": "Beoordeel, plan en implementeer naadloze overgangen naar Oracle Cloud met schaalbare en veilige architecturen.",
-
     "card_heading_2": "Datamodernisering",
     "card_text_2": "Transformeer verouderde systemen in intelligente dataplatforms met gecentraliseerde data lakes, warehouses en realtime datastromen.",
-
     "card_heading_3": "Analyse en Kunstmatige Intelligentie (AI)",
     "card_text_3": "Maak slimmere beslissingen mogelijk via geavanceerde analyses, voorspellende inzichten en AI-gestuurde automatisering.",
-
     "card_heading_4": "Integratie en Governance",
     "card_text_4": "Verbind systemen binnen hybride of multi-cloudomgevingen en waarborg tegelijkertijd databeveiliging en naleving.",
-
     "card_heading_5": "Beheerde Diensten",
     "card_text_5": "Continue monitoring, optimalisatie en ondersteuning om ervoor te zorgen dat uw cloud- en data-ecosysteem optimaal presteert.",
-
     "card_heading_6": "Lorem Ipsum",
     "card_text_6": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida lectus.",
     "card_heading_7": "Lorem Ipsum",
@@ -1598,20 +1678,17 @@
     "heading_2": "Introductie tot Logistiek- en Supply Chain-specialisten",
     "text_2": "Logistiek- en Supply Chain-specialisten zijn verantwoordelijk voor het toezicht op de toeleveringsketen, waaronder voorraadbeheer, opslag, distributie, transport en tijdige leveringen. Zij optimaliseren operationele processen om efficiëntie en productiviteit te verbeteren en vertragingen te minimaliseren.",
     "heading_3": "Soorten Logistieke Specialisten die Wij Aanbieden",
-
     "listitem1": "Experts in Transport- en Vrachtbeheer",
     "listitem2": "Specialisten in Magazijn- en Voorraadbeheer",
     "listitem3": "Douane- en Handelsnalevingsfunctionarissen",
     "listitem4": "Consultants voor Supply Chain Strategie en Planning",
     "listitem5-1": "Integrators van Technologie en Automatisering",
     "listitem6-1": "Experts in Reverse Logistics en Retourbeheer",
-
     "heading_4": "Belangrijkste Diensten",
     "card_heading_1": "Expeditie",
     "card_heading_2": "Magazijn- en Voorraadbeheer",
     "card_heading_3": "Douaneafhandeling en Naleving",
     "card_heading_4": "Transport en Distributie",
-
     "heading_5": "Waarom Kiezen voor Onze Specialisten?",
     "listitem5": "Deskundige logistieke oplossingen",
     "listitem6": "Bewezen staat van dienst",
@@ -1773,17 +1850,13 @@
     "heading_2": "Introductie",
     "text_2": "Bedrijven zoeken niet alleen naar gekwalificeerde kandidaten, maar ook naar professionals die passen bij hun bedrijfscultuur.",
     "text_3": "Gespecialiseerde staffing levert talent met specifieke vaardigheden, certificeringen en branchekennis.",
-
     "heading_3": "Onze Diensten",
     "card_heading_1": "Industriespecifieke Talentverwerving",
     "card_text_1": "Wij vinden en werven professionals met gespecialiseerde expertise die perfect aansluit bij de behoeften van uw sector.",
-
     "card_heading_2": "Oplossingen voor Tijdelijke en Permanente Personeelsinzet",
     "card_text_2": "Flexibele personeelsmodellen die zowel kortetermijncontracten als langdurige plaatsingen bieden om uw teams soepel op te schalen.",
-
     "card_heading_3": "Executive- en Leiderschapsrekrutering",
     "card_text_3": "Gespecialiseerde werving voor senior functies, gericht op strategische aanstellingen die groei en innovatie stimuleren.",
-
     "heading_4": "Waarom Kiezen voor Gespecialiseerde Staffing?",
     "listitem1": "Branchespecifieke kennis",
     "listitem2": "Snellere werving",
@@ -1845,7 +1918,6 @@
     "homeButton": "Terug naar Home",
     "message": "Pagina niet beschikbaar"
   },
-
   "hire_virtual_assistant": {
     "metadata": {
       "meta_title": "Virtuele Assistent Inhuren in Nederland | Toegewijde VA-diensten op Afstand",
@@ -1941,7 +2013,6 @@
         "desc": "Parttime ondersteuning voor essentiële administratieve en operationele taken.",
         "price": "€26.95",
         "unit": "2 uur per dag",
-        
         "features": [
           "Minimum 3 hours",
           "E-mail & agenda ondersteuning",
@@ -1993,7 +2064,6 @@
       ]
     }
   },
-
   "hire_full_stack_developer": {
     "metadata": {
       "meta_title": "Full Stack Developer Inhuren in Nederland | Toegewijde Ontwikkeldiensten",
@@ -2057,7 +2127,13 @@
           "Angular",
           "Responsieve UI-ontwikkeling"
         ],
-        "backend": ["Node.js", "PHP", "Laravel", "Python", "API-ontwikkeling"],
+        "backend": [
+          "Node.js",
+          "PHP",
+          "Laravel",
+          "Python",
+          "API-ontwikkeling"
+        ],
         "support": [
           "Bugfixing",
           "Snelheidsoptimalisatie",
@@ -2598,7 +2674,6 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -2751,7 +2826,6 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -2904,7 +2978,6 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3057,7 +3130,6 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3209,7 +3281,6 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3362,7 +3433,6 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3497,7 +3567,6 @@
       ]
     }
   },
-
   "hire_back_end_developer": {
     "metadata": {
       "meta_title": "Toegewijde Back-End Developer Inhuren in Nederland | Back-End Ontwikkeling",
@@ -3516,7 +3585,6 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3669,7 +3737,6 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3822,7 +3889,6 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -3975,7 +4041,6 @@
         "stat_3": "60% Kostenbesparing"
       }
     },
-
     "consultation_form": {
       "title": "Aan de slag",
       "desc": "Vul het formulier in om personeel in te huren",
@@ -4110,7 +4175,6 @@
       ]
     }
   },
-
   "hire_data_analyst": {
     "metadata": {
       "meta_title": "Huur een Toegewijde Data Analist in Nederland | Data Analyse Diensten",
@@ -5221,17 +5285,53 @@
       "heading": "Waar Uw Klantenservice Reisbureau bij Kan Helpen",
       "description": "Onze toegewijde reis-klantenservicemedewerkers zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw klantcommunicatie en boekingssupport.",
       "category_1": "Aanvraagafhandeling",
-      "cat_1_items": ["Afhandeling van e-mail en chat aanvragen", "Vragen over bestemmingen en pakketten", "Informatie over prijzen en beschikbaarheid", "Beheer van groepsreisaanvragen", "Leadkwalificatie en opvolging"],
+      "cat_1_items": [
+        "Afhandeling van e-mail en chat aanvragen",
+        "Vragen over bestemmingen en pakketten",
+        "Informatie over prijzen en beschikbaarheid",
+        "Beheer van groepsreisaanvragen",
+        "Leadkwalificatie en opvolging"
+      ],
       "category_2": "Boekingsondersteuning",
-      "cat_2_items": ["Boekingsbevestiging en documentondersteuning", "Afhandeling van wijzigingsverzoeken", "Assistentie bij reisdocumenten en vouchers", "Coördinatie van speciale vereisten", "Briefing van klanten voor vertrek"],
+      "cat_2_items": [
+        "Boekingsbevestiging en documentondersteuning",
+        "Afhandeling van wijzigingsverzoeken",
+        "Assistentie bij reisdocumenten en vouchers",
+        "Coördinatie van speciale vereisten",
+        "Briefing van klanten voor vertrek"
+      ],
       "category_3": "Klachtenbeheer",
-      "cat_3_items": ["Klachtenafhandeling en oplossingen", "Ondersteuning bij vluchtvertraging en annulering", "Oplossing van accommodatieproblemen", "Escalatie- en claimbeheer", "Verwerking van compensatieverzoeken"],
+      "cat_3_items": [
+        "Klachtenafhandeling en oplossingen",
+        "Ondersteuning bij vluchtvertraging en annulering",
+        "Oplossing van accommodatieproblemen",
+        "Escalatie- en claimbeheer",
+        "Verwerking van compensatieverzoeken"
+      ],
       "category_4": "Aftersales Zorg",
-      "cat_4_items": ["Verzamelen van feedback na de reis", "Opvolging voor herhaalboekingen", "Afhandeling van terugbetalingen", "Klanttevredenheidsonderzoeken", "Loyaliteits- en retentiecommunicatie"],
+      "cat_4_items": [
+        "Verzamelen van feedback na de reis",
+        "Opvolging voor herhaalboekingen",
+        "Afhandeling van terugbetalingen",
+        "Klanttevredenheidsonderzoeken",
+        "Loyaliteits- en retentiecommunicatie"
+      ],
       "category_5": "Multi-channel Support",
-      "cat_5_items": ["Beheer van e-mail klantenservice", "Afhandeling van live chat support", "WhatsApp reissupport", "Social media berichten en reacties", "Ondersteuning bij telefonische vragen"],
+      "cat_5_items": [
+        "Beheer van e-mail klantenservice",
+        "Afhandeling van live chat support",
+        "WhatsApp reissupport",
+        "Social media berichten en reacties",
+        "Ondersteuning bij telefonische vragen"
+      ],
       "category_6": "CRM & Administratie",
-      "cat_6_items": ["Klantprofiel- en geschiedenisbeheer", "CRM data-entry en updates", "Onderhoud van communicatielogboeken", "Klantsegmentatie", "Rapportage over klantenserviceprestaties"],
+      "cat_6_items": [
+        "Klantprofiel- en geschiedenisbeheer",
+        "CRM data-entry en updates",
+        "Onderhoud van communicatielogboeken",
+        "Klantsegmentatie",
+        "Rapportage over klantenserviceprestaties"
+      ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
@@ -5242,7 +5342,12 @@
         "desc": "Parttime ondersteuning voor essentiële aanvragen en boekingsassistentie.",
         "price": "€26.95",
         "unit": "per uur",
-        "features": ["Afhandeling van e-mail en chat aanvragen", "Basis boekingsondersteuning", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "features": [
+          "Afhandeling van e-mail en chat aanvragen",
+          "Basis boekingsondersteuning",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
@@ -5250,7 +5355,13 @@
         "desc": "Toegewijde ondersteuning voor volledige klantenservice en klachtenbeheer.",
         "price": "€22.95",
         "unit": "per uur",
-        "features": ["Alle Starter-functies", "Klachten- en verstoringsbeheer", "Multi-channel communicatieondersteuning", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "features": [
+          "Alle Starter-functies",
+          "Klachten- en verstoringsbeheer",
+          "Multi-channel communicatieondersteuning",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
@@ -5258,7 +5369,14 @@
         "desc": "Volledige customer success lifecycle en gedetailleerd CRM-beheer.",
         "price": "€18.95",
         "unit": "per uur",
-        "features": ["Alle Growth-functies", "Aftersales- en retentiebeheer", "Volledige CRM- en rapportage-ondersteuning", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "features": [
+          "Alle Growth-functies",
+          "Aftersales- en retentiebeheer",
+          "Volledige CRM- en rapportage-ondersteuning",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
@@ -5267,7 +5385,11 @@
       "heading": "Klaar om uw Klantenservice Reisbureau in te huren?",
       "description": "Laat ons u helpen de perfecte reis-klantenservicemedewerker te vinden voor uw reisbureau en klantenzorg. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   },
   "hire_travel_marketer": {
@@ -5315,17 +5437,53 @@
       "heading": "Waar Uw Reis Marketeer bij Kan Helpen",
       "description": "Onze toegewijde reismarketeers zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij de marketing, contentcreatie en digitale campagnes van uw reismerk.",
       "category_1": "Content Marketing",
-      "cat_1_items": ["Schrijven van reisblogs en artikelen", "Bestemmingsgidsen en route-content", "Merkverhalen voor de reisbranche", "SEO-content voor reiswebsites", "Planning en beheer van contentkalenders"],
+      "cat_1_items": [
+        "Schrijven van reisblogs en artikelen",
+        "Bestemmingsgidsen en route-content",
+        "Merkverhalen voor de reisbranche",
+        "SEO-content voor reiswebsites",
+        "Planning en beheer van contentkalenders"
+      ],
       "category_2": "Social Media",
-      "cat_2_items": ["Reiscontent voor Instagram en Facebook", "TikTok en YouTube short-content ondersteuning", "Betrokkenheid bij reiscommunities", "Coördinatie van influencer outreach", "Strategie voor groei op social media"],
+      "cat_2_items": [
+        "Reiscontent voor Instagram en Facebook",
+        "TikTok en YouTube short-content ondersteuning",
+        "Betrokkenheid bij reiscommunities",
+        "Coördinatie van influencer outreach",
+        "Strategie voor groei op social media"
+      ],
       "category_3": "E-mail Marketing",
-      "cat_3_items": ["Creatie en beheer van reisnieuwsbrieven", "Schrijven van promotionele e-mailcampagnes", "Ontwikkeling van geautomatiseerde e-mailreeksen", "Seizoensgebonden reisaanbiedingen", "Lijstsegmentatie en re-engagement"],
+      "cat_3_items": [
+        "Creatie en beheer van reisnieuwsbrieven",
+        "Schrijven van promotionele e-mailcampagnes",
+        "Ontwikkeling van geautomatiseerde e-mailreeksen",
+        "Seizoensgebonden reisaanbiedingen",
+        "Lijstsegmentatie en re-engagement"
+      ],
       "category_4": "SEO voor Reizen",
-      "cat_4_items": ["Zoekwoordonderzoek en strategie voor reizen", "On-page SEO voor bestemmingspagina's", "Lokale SEO voor reisbureaus", "Linkbuilding voor reiswebsites", "Maandelijkse SEO-rapportage en optimalisatie"],
+      "cat_4_items": [
+        "Zoekwoordonderzoek en strategie voor reizen",
+        "On-page SEO voor bestemmingspagina's",
+        "Lokale SEO voor reisbureaus",
+        "Linkbuilding voor reiswebsites",
+        "Maandelijkse SEO-rapportage en optimalisatie"
+      ],
       "category_5": "Betaalde Marketing",
-      "cat_5_items": ["Google Ads campagnebeheer voor reizen", "Meta Ads voor reispromoties", "Setup en beheer van retargetingcampagnes", "Schrijven van advertentieteksten voor aanbiedingen", "Tracking en rapportage van campagne-prestaties"],
+      "cat_5_items": [
+        "Google Ads campagnebeheer voor reizen",
+        "Meta Ads voor reispromoties",
+        "Setup en beheer van retargetingcampagnes",
+        "Schrijven van advertentieteksten voor aanbiedingen",
+        "Tracking en rapportage van campagne-prestaties"
+      ],
       "category_6": "Analytics & Rapportage",
-      "cat_6_items": ["Maandelijkse marketing-prestatierapporten", "Conversietracking van boekingen", "ROI-analyse van campagnes", "Concurrentie-benchmarking", "Data-gedreven strategie-aanbevelingen"],
+      "cat_6_items": [
+        "Maandelijkse marketing-prestatierapporten",
+        "Conversietracking van boekingen",
+        "ROI-analyse van campagnes",
+        "Concurrentie-benchmarking",
+        "Data-gedreven strategie-aanbevelingen"
+      ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
@@ -5336,7 +5494,12 @@
         "desc": "Parttime ondersteuning voor essentiële reiscontent en sociale media taken.",
         "price": "€41.95",
         "unit": "per uur",
-        "features": ["Reiscontent en social media", "Ondersteuning bij e-mailmarketing", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "features": [
+          "Reiscontent en social media",
+          "Ondersteuning bij e-mailmarketing",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
@@ -5344,7 +5507,13 @@
         "desc": "Toegewijde ondersteuning voor volledige digitale reismarketing activiteiten.",
         "price": "€35.95",
         "unit": "per uur",
-        "features": ["Alle Starter-functies", "SEO en betaalde digitale marketing", "Campagnebeheer en rapportage", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "features": [
+          "Alle Starter-functies",
+          "SEO en betaalde digitale marketing",
+          "Campagnebeheer en rapportage",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
@@ -5352,7 +5521,14 @@
         "desc": "Volledige ondersteuning door marketingteam en geavanceerde strategie-coördinatie.",
         "price": "€29.95",
         "unit": "per uur",
-        "features": ["Alle Growth-functies", "Multi-channel campagne-uitvoering", "Volledige analytics en prestatiestrategie", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "features": [
+          "Alle Growth-functies",
+          "Multi-channel campagne-uitvoering",
+          "Volledige analytics en prestatiestrategie",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
@@ -5361,7 +5537,11 @@
       "heading": "Klaar om uw Reis Marketeer in te huren?",
       "description": "Laat ons u helpen de perfecte reismarketeer te vinden voor de groei van uw reismerk en uw digitale marketingbehoeften. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   },
   "hire_hr_assistant_remote": {
@@ -5561,17 +5741,53 @@
       "heading": "Waar Uw Administratief Boekhoudkundig Assistent bij Kan Helpen",
       "description": "Onze toegewijde assistenten zijn getrainde professionals die onmiddellijk kunnen ondersteunen bij uw financiële administratie en boekhouding.",
       "category_1": "Financiële Administratie",
-      "cat_1_items": ["Dagelijkse financiële dossiervorming", "Registratie van uitgaven en kosten", "Verwerking van bankafschriften", "Transactie-categorisering en codering", "Ondersteuning bij maandafronding"],
+      "cat_1_items": [
+        "Dagelijkse financiële dossiervorming",
+        "Registratie van uitgaven en kosten",
+        "Verwerking van bankafschriften",
+        "Transactie-categorisering en codering",
+        "Ondersteuning bij maandafronding"
+      ],
       "category_2": "Facturatie & Debiteuren",
-      "cat_2_items": ["Aanmaken en verzenden van verkoopfacturen", "Betalingsopvolging en herinneringen", "Beheer van openstaande posten", "Verwerking van creditnota's", "Reconciliatie van klantbetalingen"],
+      "cat_2_items": [
+        "Aanmaken en verzenden van verkoopfacturen",
+        "Betalingsopvolging en herinneringen",
+        "Beheer van openstaande posten",
+        "Verwerking van creditnota's",
+        "Reconciliatie van klantbetalingen"
+      ],
       "category_3": "Crediteurenbeheer",
-      "cat_3_items": ["Verwerking en archivering van inkoopfacturen", "Matching en verificatie van inkooporders", "Crediteurenbeheer en monitoring", "Verwerking van declaraties", "Voorbereiding van leveranciersbetalingen"],
+      "cat_3_items": [
+        "Verwerking en archivering van inkoopfacturen",
+        "Matching en verificatie van inkooporders",
+        "Crediteurenbeheer en monitoring",
+        "Verwerking van declaraties",
+        "Voorbereiding van leveranciersbetalingen"
+      ],
       "category_4": "Boekhoudkundige Ondersteuning",
-      "cat_4_items": ["Invoer van grootboekgegevens", "Ondersteuning bij bankreconciliatie", "Assistentie bij kolommenbalans", "Onderhoud van rekeningschema", "Contact met accountant en documentvoorbereiding"],
+      "cat_4_items": [
+        "Invoer van grootboekgegevens",
+        "Ondersteuning bij bankreconciliatie",
+        "Assistentie bij kolommenbalans",
+        "Onderhoud van rekeningschema",
+        "Contact met accountant en documentvoorbereiding"
+      ],
       "category_5": "Software Administratie",
-      "cat_5_items": ["Exact Online data-entry en beheer", "Administratie van Moneybird en Twinfield", "Recordbeheer in QuickBooks en Xero", "Data-import en export uit software", "Systeemintegriteit en nauwkeurigheid"],
+      "cat_5_items": [
+        "Exact Online data-entry en beheer",
+        "Administratie van Moneybird en Twinfield",
+        "Recordbeheer in QuickBooks en Xero",
+        "Data-import en export uit software",
+        "Systeemintegriteit en nauwkeurigheid"
+      ],
       "category_6": "Financiële Rapportage",
-      "cat_6_items": ["Maandelijkse uitgaven- en kostenrapporten", "Rapportage van openstaande facturen", "Samenvattingen van betalingsstatus", "Archivering van financiële documenten", "Auditvoorbereiding en documentondersteuning"],
+      "cat_6_items": [
+        "Maandelijkse uitgaven- en kostenrapporten",
+        "Rapportage van openstaande facturen",
+        "Samenvattingen van betalingsstatus",
+        "Archivering van financiële documenten",
+        "Auditvoorbereiding en documentondersteuning"
+      ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
@@ -5582,7 +5798,12 @@
         "desc": "Parttime ondersteuning voor facturatie en financiële administratie.",
         "price": "€26.95",
         "unit": "per uur",
-        "features": ["Facturatie en debiteurenbeheer", "Financiële dossierregistratie", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "features": [
+          "Facturatie en debiteurenbeheer",
+          "Financiële dossierregistratie",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
@@ -5590,7 +5811,13 @@
         "desc": "Toegewijde ondersteuning voor boekhouding en softwarebeheer.",
         "price": "€22.95",
         "unit": "per uur",
-        "features": ["Alle Starter-functies", "Crediteuren- en boekhoudondersteuning", "Beheer van boekhoudsoftware", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "features": [
+          "Alle Starter-functies",
+          "Crediteuren- en boekhoudondersteuning",
+          "Beheer van boekhoudsoftware",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
@@ -5598,7 +5825,14 @@
         "desc": "Volledige financiële rapportage en ondersteuning bij audits.",
         "price": "€18.95",
         "unit": "per uur",
-        "features": ["Alle Growth-functies", "Volledige financiële rapportage", "Ondersteuning bij auditvoorbereiding", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "features": [
+          "Alle Growth-functies",
+          "Volledige financiële rapportage",
+          "Ondersteuning bij auditvoorbereiding",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
@@ -5607,7 +5841,11 @@
       "heading": "Klaar om uw Administratief Boekhoudkundig Assistent in te huren?",
       "description": "Laat ons u helpen de perfecte assistent te vinden voor uw financiële administratie en boekhouding. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   },
   "hire_webdesigner_developer": {
@@ -5655,17 +5893,53 @@
       "heading": "Waar Uw Webdesigner & Developer bij Kan Helpen",
       "description": "Onze toegewijde webprofessionals zijn getraind om uw ontwerp- en ontwikkelingsbehoeften aan te pakken voor een krachtige online aanwezigheid.",
       "category_1": "Webdesign",
-      "cat_1_items": ["Website ontwerp op maat", "Landingspagina ontwerp", "UI/UX design en wireframing", "Mobiel-responsief ontwerp", "Merkconsistent visueel ontwerp"],
+      "cat_1_items": [
+        "Website ontwerp op maat",
+        "Landingspagina ontwerp",
+        "UI/UX design en wireframing",
+        "Mobiel-responsief ontwerp",
+        "Merkconsistent visueel ontwerp"
+      ],
       "category_2": "Webontwikkeling",
-      "cat_2_items": ["WordPress ontwikkeling", "Maatwerk HTML/CSS/JS ontwikkeling", "CMS setup en aanpassing", "Website snelheidsoptimalisatie", "Cross-browser compatibiliteit"],
+      "cat_2_items": [
+        "WordPress ontwikkeling",
+        "Maatwerk HTML/CSS/JS ontwikkeling",
+        "CMS setup en aanpassing",
+        "Website snelheidsoptimalisatie",
+        "Cross-browser compatibiliteit"
+      ],
       "category_3": "E-commerce Oplossingen",
-      "cat_3_items": ["Shopify winkel ontwerp", "WooCommerce ontwikkeling", "Productpagina ontwerp", "Checkout flow optimalisatie", "Betalingsgateway integratie"],
+      "cat_3_items": [
+        "Shopify winkel ontwerp",
+        "WooCommerce ontwikkeling",
+        "Productpagina ontwerp",
+        "Checkout flow optimalisatie",
+        "Betalingsgateway integratie"
+      ],
       "category_4": "Landingspagina's",
-      "cat_4_items": ["Hoog-converterende landingspagina's", "A/B test-klare pagina-opbouw", "Lead capture pagina ontwerp", "Verkooppagina ontwikkeling", "CTA en formulier optimalisatie"],
+      "cat_4_items": [
+        "Hoog-converterende landingspagina's",
+        "A/B test-klare pagina-opbouw",
+        "Lead capture pagina ontwerp",
+        "Verkooppagina ontwikkeling",
+        "CTA en formulier optimalisatie"
+      ],
       "category_5": "Onderhoud & Support",
-      "cat_5_items": ["Regelmatige updates en back-ups", "Plugin en thema beheer", "Beveiligingsmonitoring", "Bugfixing en probleemoplossing", "Prestatie-optimalisatie"],
+      "cat_5_items": [
+        "Regelmatige updates en back-ups",
+        "Plugin en thema beheer",
+        "Beveiligingsmonitoring",
+        "Bugfixing en probleemoplossing",
+        "Prestatie-optimalisatie"
+      ],
       "category_6": "Redesign & UX Audit",
-      "cat_6_items": ["Volledig website herontwerp", "User experience audits", "Conversie-optimalisatie ontwerp", "Toegankelijkheidsverbeteringen", "Creatie van prototypes en mockups"],
+      "cat_6_items": [
+        "Volledig website herontwerp",
+        "User experience audits",
+        "Conversie-optimalisatie ontwerp",
+        "Toegankelijkheidsverbeteringen",
+        "Creatie van prototypes en mockups"
+      ],
       "button_middle": "Vertel Ons Wat U Nodig Heeft →"
     },
     "pricing_section": {
@@ -5676,7 +5950,12 @@
         "desc": "Essentiële ondersteuning voor landingspagina's en website updates.",
         "price": "€49,95",
         "unit": "per uur",
-        "features": ["Website updates en onderhoud", "Landingspagina ontwerp", "Wekelijkse rapportages", "E-mail ondersteuning"],
+        "features": [
+          "Website updates en onderhoud",
+          "Landingspagina ontwerp",
+          "Wekelijkse rapportages",
+          "E-mail ondersteuning"
+        ],
         "button": "Aan de slag"
       },
       "plan_2": {
@@ -5684,7 +5963,13 @@
         "desc": "Toegewijde ondersteuning voor maatwerk websites en e-commerce.",
         "price": "€59,95",
         "unit": "per uur",
-        "features": ["Alle Starter-functies", "Maatwerk website ontwerp en bouw", "E-commerce ontwikkeling", "Prioritaire ondersteuning", "Toegewijde accountmanager"],
+        "features": [
+          "Alle Starter-functies",
+          "Maatwerk website ontwerp en bouw",
+          "E-commerce ontwikkeling",
+          "Prioritaire ondersteuning",
+          "Toegewijde accountmanager"
+        ],
         "button": "Aan de slag"
       },
       "plan_3": {
@@ -5692,7 +5977,14 @@
         "desc": "Volledig UI/UX redesign en enterprise websitebeheer.",
         "price": "€69,95",
         "unit": "per uur",
-        "features": ["Alle Growth-functies", "UI/UX en herontwerpprojecten", "Beheer van meerdere sites", "Aangepaste workflows", "Toegewijde accountmanager", "SLA-garantie"],
+        "features": [
+          "Alle Growth-functies",
+          "UI/UX en herontwerpprojecten",
+          "Beheer van meerdere sites",
+          "Aangepaste workflows",
+          "Toegewijde accountmanager",
+          "SLA-garantie"
+        ],
         "button": "Neem contact op"
       },
       "guarantee": "💰 Geld-Terug-Garantie: Niet tevreden in de eerste 14 dagen? Ontvang een volledige terugbetaling."
@@ -5701,144 +5993,768 @@
       "heading": "Klaar om uw Webdesigner & Developer in te huren?",
       "description": "Laat ons u helpen de perfecte webdesigner en developer te vinden voor uw bedrijfswebsite en digitale aanwezigheid. Boek vandaag nog een gratis consultatie en ga binnen 48 uur aan de slag.",
       "button": "Boek een Gratis Consultatie",
-      "footer_checkmarks": ["Geen verplichting", "Gratis consultatie", "Start binnen 48 uur"]
+      "footer_checkmarks": [
+        "Geen verplichting",
+        "Gratis consultatie",
+        "Start binnen 48 uur"
+      ]
     }
   },
-
-
-
-
-  
-  "career": {
-    "metadata": {
-      "title": "IT & Supply Chain Banen in Nederland | Solliciteer Nu",
-      "description": "Op zoek naar banen in IT, supply chain of digitale marketing in Nederland? Ontdek carrièremogelijkheden bij IT Solutions Worldwide en groei met ons mee."
+  "portfolio": {
+    "meta": {
+      "title": "Portfolio | Projecten & Casestudies | IT Solutions Worldwide",
+      "description": "Ontdek projecten die we hebben geleverd aan toonaangevende klanten in heel Europa. Digitale producten, AI-oplossingen en IT-outsourcing door IT Solutions Worldwide."
     },
     "hero": {
-      "eyebrow": "Word Deel Van Ons Team",
-      "heading": "Bouw Aan Je Carrière. Maak Werk Dat Ertoe Doet.",
-      "subtext": "Sluit je aan bij een wereldwijd outsourcingteam dat Nederlandse en internationale bedrijven helpt slimmer te werken, sneller te bewegen en verder te groeien — in supply chain, IT, engineering en datarollen.",
-      "tags": [
-        "40+ Medewerkers",
-        "Internationale Klanten",
-        "31 Openstaande Rollen",
-        "Echte Verantwoordelijkheid"
-      ],
-      "breadcrumbs": {
-        "home": "Home",
-        "careers": "Carrières"
-      }
-    },
-    "cta": {
-      "eyebrow": "Wie is IT Solutions Worldwide?",
-      "heading": "Outsourcing & Staff Augmentation in Rotterdam.",
-      "highlightWord": "Outsourcing",
-      "subtext": "IT Solutions Worldwide is een in Rotterdam gevestigd outsourcing- en staff augmentation-bedrijf met meer dan 40 medewerkers, gevestigd aan de Mandenmakerstraat 100C, 3194 DG Hoogvliet, Rotterdam, Nederland. Het bedrijf werft voor fulltime, parttime, contract- en stagerollen in supply chain, IT-ondersteuning, software engineering, data, financiën en administratieve functies in heel Nederland en heeft een beoordeling van 4.8 op Glassdoor.",
-      "overlayText": "Carrières Open.",
-      "ctaLabel": "Ontdek Carrières",
-      "imageAlt": "Team dat samenwerkt bij IT Solutions Worldwide"
-    },
-    "growth": {
-      "headingPrefix": "Een Plek Waar ",
-      "headingHighlight1": "Carrières",
-      "headingMiddle": " Daadwerkelijk ",
-      "headingHighlight2": "Groeien",
-      "subtext": "We hebben het soort bedrijf gebouwd waar we zelf altijd al wilden werken — en we leggen de lat elk jaar hoger.",
-      "features": {
-        "global": {
-          "badge": "Mondiaal & Internationaal",
-          "title": "Wereldwijd Bereik",
-          "description": "We werken met internationale klanten in supply chain, IT en engineering."
-        },
-        "path": {
-          "badge": "Carrièrepad",
-          "title": "Echte Groei",
-          "description": "Carrièrepaden met echte vooruitgang, niet alleen functietitelveranderingen."
-        },
-        "impact": {
-          "badge": "Impact",
-          "title": "Echte Verantwoordelijkheid",
-          "description": "Nieuwe medewerkers nemen vanaf dag één betekenisvol werk op zich — geen maanden inwerken."
-        },
-        "location": {
-          "badge": "Locatie",
-          "title": "Gevestigd in Rotterdam",
-          "description": "Hoofdkantoor in Hoogvliet, Rotterdam, met rollen door heel Nederland."
-        }
-      }
-    },
-    "jobs": {
       "eyebrow": "ONS WERK · PORTFOLIO",
-      "headingPrefix": "Vind Je Volgende ",
-      "headingHighlight": "Geweldige Rol",
-      "searchPlaceholder": "Zoek op rol, vaardigheid of locatie...",
-      "positionsFound": "vacatures gevonden",
-      "viewDetails": "Bekijk Vacaturedetails →",
-      "applyNow": "Nu solliciteren",
-      "noResults": "Geen vacatures gevonden die aan je criteria voldoen.",
-      "loading": "Vacatures laden...",
-      "statusActive": "Actief",
-      "tabs": {
-        "all": "Alles",
-        "fullTime": "Fulltime",
-        "partTime": "Parttime",
-        "contract": "Contract",
-        "internship": "Stage"
+      "headingPrefix": "Fragmenten Uit Projecten Die",
+      "headingHighlight": "Wij Hebben Geleverd",
+      "headingSuffix": "aan Vooraanstaande Klanten.",
+      "subtext": "Van startups tot gevestigde ondernemingen in heel Europa, we hebben digitale producten, AI-oplossingen, outsourcingdiensten en bedrijfsautomatisering geleverd waarmee bedrijven met vertrouwen kunnen opschalen.",
+      "breadcrumbs": {
+        "home": "HOME",
+        "portfolio": "PORTFOLIO"
       }
     },
-    "faq": {
-      "eyebrow": "Vragen?",
-      "headingPrefix": "Veelgestelde ",
-      "headingHighlight": "Vragen",
-      "subtext": "Alles wat kandidaten ons vragen voordat ze solliciteren bij IT Solutions Worldwide.",
-      "items": [
-        {
-          "question": "Hoe lang duurt het voordat ik iets hoor na mijn sollicitatie bij IT Solutions Worldwide?",
-          "answer": "We reageren binnen 5 werkdagen na ontvangst van je sollicitatie, of je nu op een openstaande rol hebt gesolliciteerd of een open sollicitatie hebt ingestuurd."
+    "clientsSection": {
+      "eyebrow": "ONS WERK · PORTFOLIO",
+      "headingPrefix": "Onze",
+      "headingMiddle": "Bewezen",
+      "headingSuffix": "Digitale Engineering",
+      "clients": {
+        "taxinet": {
+          "name": "Taxinet",
+          "description": "Hoe we de boekings-, route-, live tracking- en wagenparktools bouwden achter een Haagse taxidienst die 24/7 rijdt.",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "Taxinet",
+                "highlight": true
+              },
+              {
+                "text": " Had "
+              },
+              {
+                "text": "Digitale Tools",
+                "highlight": true
+              },
+              {
+                "text": " Nodig Gebouwd Rond Haar Dagelijkse Operatie"
+              }
+            ],
+            "paragraph1": "Opgericht in 1999 biedt Taxinet Haaglanden 24/7 taxidiensten in de regio Den Haag: luchthaventransfers, leerlingenvervoer, zakelijk vervoer, trouwvervoer, rolstoelvervoer en groepsvervoer. Die operatie draaiende houden betekent het gelijktijdig coördineren van ritten, voertuigen en een drukke centrale, en Taxinet kwam naar ons toe om deze werkwijze te optimaliseren.",
+            "paragraph2Lead": "We Bouwden de Tools Waarop Hun Operatie Draait,",
+            "paragraph2Rest": "van ritplanning tot wagenparkbeheer. We ontwikkelden een ritagenda, een reserveringsformulier, een routeplanner, een live track-and-trace tool en een fleet management systeem, met behulp van n8n workflow automatisering en een op maat gebouwde website. Daarnaast leverden we remote personeel ter ondersteuning van de centrale.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "Taxinet ontving planning-, boekings-, route-, live tracking- en fleet management tools speciaal ontwikkeld voor haar eigen bedrijfsvoering, plus deskundige remote teamleden ter ondersteuning van de centrale.",
+            "paragraph4": "Dankzij onze automatiseringskennis konden deze tools als één geïntegreerd geheel worden ontworpen in plaats van losse modules, en door onze mogelijkheid om gekwalificeerd talent tegen een scherp tarief te leveren, ondersteunden we zowel de software als de menselijke kant van de organisatie."
+          },
+          "heroHeadline": "Taxinet: Slimmere Ritten, Slimmere Bedrijfsvoering",
+          "heroSubtext": "Hoe we de boekings-, route-, tracking- en wagenparktools ontwikkelden achter een Haagse taxidienst die 24/7 rijdt.",
+          "pageTitle": "Taxinet Case Study: Taxidienst Platform & Software | ITWW",
+          "metaDescription": "Hoe IT Solutions Worldwide een ritagenda, boekingsformulier, routeplanner, live tracking en fleet management tools ontwikkelde voor Taxinet Haaglanden in Den Haag.",
+          "imageAlt": "Taxinet Haaglanden taxireservering website gebouwd door IT Solutions Worldwide"
         },
-        {
-          "question": "Wat gebeurt er met mijn profiel als er nu geen passende rol is?",
-          "answer": "Je profiel blijft 6 maanden actief in ons systeem. We nemen proactief contact op als er een rol vrijkomt die bij je achtergrond past."
+        "rifas": {
+          "name": "Rifas Opleidingsinstituut",
+          "description": "Een krachtigere website en een online marketingpakket voor een opleidingsinstituut actief in acht Nederlandse steden.",
+          "heroHeadline": "Rifas Opleidingsinstituut: Een Sterke Online Aanwezigheid voor Beroepsopleidingen",
+          "heroSubtext": "Een krachtigere website en een online marketingpakket voor een opleidingsinstituut actief in acht Nederlandse steden.",
+          "pageTitle": "Rifas Opleidingsinstituut Case Study | Web & Marketing | ITWW",
+          "metaDescription": "Ontdek hoe IT Solutions Worldwide de website van Rifas Opleidingsinstituut verbeterde en een online marketingpakket leverde om het klantenbestand te laten groeien.",
+          "imageAlt": "Rifas Opleidingsinstituut trainingswebsite verbeterd door IT Solutions Worldwide",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "Rifas",
+                "highlight": true
+              },
+              {
+                "text": " Had een "
+              },
+              {
+                "text": "Groter Klantenbestand",
+                "highlight": true
+              },
+              {
+                "text": " en een Sterkere Online Zichtbaarheid Nodig"
+              }
+            ],
+            "paragraph1": "Opgericht in 2013 verzorgt Rifas Opleidingsinstituut avondopleidingen voor bedrijven en leidinggevenden (NIS2 cybersecurity, AI voor het MKB, verkoop- en HR-procesoptimalisatie), coaching voor particulieren bij sollicitaties en financiële planning, en een gratis supply chain quickscan in acht Nederlandse steden. Om te blijven groeien wilde Rifas zijn klantendatabase uitbreiden en zijn online aanwezigheid versterken.",
+            "paragraph2Lead": "We Verbeterden de Website en Voegden een Marketingpakket Toe,",
+            "paragraph2Rest": "waarbij we voortbouwden op wat Rifas al had in plaats van opnieuw te beginnen. We voerden verbeteringen door op de bestaande website en leverden een online marketingpakket om meer potentiële klanten te bereiken.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "Het werk bleef gericht op de twee doelen die Rifas stelde: meer klanten in de database en een duidelijkere online aanwezigheid. De combinatie van websiteverbeteringen met gerichte marketing zorgde ervoor dat bezoekers op een professionelere en effectievere site terechtkwamen.",
+            "paragraph4": "Voor een opleidingsaanbieder met cursussen voor zowel bedrijven als particulieren is een website die elk aanbod helder uitlegt het fundament waarop effectieve marketing verder bouwt."
+          }
         },
-        {
-          "question": "Biedt IT Solutions Worldwide een aanbevelingsbonus?",
-          "answer": "Ja. We bieden een referral bonus voor succesvolle wervingen via aanbevelingen."
+        "hassaanTravel": {
+          "name": "Hassaan Travel",
+          "description": "Externe callcenter-capaciteit en een vernieuwde website voor een Rotterdams reisbureau dat al sinds 2013 reizigers bedient.",
+          "heroHeadline": "Hassaan Travel: Een Klantenserviceteam en een Nieuwe Website voor een Druk Reisbureau",
+          "heroSubtext": "Externe callcenter-capaciteit en een vernieuwde website voor een Rotterdams reisbureau dat al sinds 2013 reizigers bedient.",
+          "pageTitle": "Hassaan Travel Case Study: Website & Callcenter Ondersteuning | ITWW",
+          "metaDescription": "Ontdek hoe IT Solutions Worldwide externe callcenter-medewerkers en een vernieuwde website leverde voor het Rotterdamse reisbureau Hassaan Travel.",
+          "imageAlt": "Hassaan Travel reisbureau website vernieuwd door IT Solutions Worldwide",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "Hassaan Travel",
+                "highlight": true
+              },
+              {
+                "text": " Had Hulp Nodig bij "
+              },
+              {
+                "text": "Klantenservice",
+                "highlight": true
+              },
+              {
+                "text": " en een "
+              },
+              {
+                "text": "Duidelijkere Website",
+                "highlight": true
+              }
+            ],
+            "paragraph1": "Opgericht in 2013 door Hassaan Chaudhry is Hassaan Travel een IATA-geaccrediteerd reisbureau in Rotterdam, gespecialiseerd in Umrah- en Hajj-pakketten, visumaanvragen en wereldwijde vluchtboekingen. Met een vestiging in Rotterdam en een kantoor in Lahore kreeg het team dagelijks grote volumes vragen en boekingen te verwerken, terwijl de website verouderd was geraakt.",
+            "paragraph2Lead": "We Leverden Externe Medewerkers en Vernieuwden de Website.",
+            "paragraph2Rest": "We leverden gekwalificeerd extern callcenterpersoneel om vragen, boekingswijzigingen en visumaanvragen af te handelen tegen lagere operationele kosten. Daarnaast vernieuwden we de website zodat reizigers eenvoudig Umrah-pakketten, vluchtopties en visuminformatie kunnen vinden.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "Hassaan Travel kreeg extra operationele slagkracht voor de dagelijkse klantenservice en een website die de diensten en accreditaties helder presenteert.",
+            "paragraph4": "De combinatie van schaalbare personeelscapaciteit en een overzichtelijke website zorgde voor snellere responstijden en een professionele uitstraling naar reizigers in heel Nederland."
+          }
         },
-        {
-          "question": "Wat kan ik verwachten van het eerste gesprek?",
-          "answer": "Een ontspannen kennismakingsgesprek zonder voorbereiding. We willen je ervaring en wensen begrijpen."
+        "babylonLogistics": {
+          "name": "Babylon Logistics",
+          "description": "Een Benelux same-day transportbedrijf krijgt zijn online thuisbasis, gebouwd in slechts vijf dagen.",
+          "heroHeadline": "Babylon Logistics: Binnen Vijf Dagen Online voor een Same-Day Koeriersdienst",
+          "heroSubtext": "Een complete website in vijf dagen voor een Benelux-transportbedrijf dat koel-, vries- en droogtransport verzorgt.",
+          "pageTitle": "Babylon Logistics Case Study: Website Bouw in 5 Dagen | ITWW",
+          "metaDescription": "Ontdek hoe IT Solutions Worldwide de website voor Babylon Logistics binnen vijf dagen ontwierp en lanceerde voor same-day Benelux-transport.",
+          "imageAlt": "Babylon Logistics website voor transport en logistiek gebouwd door IT Solutions Worldwide",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "Babylon Logistics",
+                "highlight": true
+              },
+              {
+                "text": " Begon Zonder "
+              },
+              {
+                "text": "Enige Website",
+                "highlight": true
+              }
+            ],
+            "paragraph1": "Opgericht in 2021 verzorgt Babylon Logistics same-day ophaling en levering door de hele Benelux voor droge, gekoelde (2-4°C) en diepvries (-22°C) goederen, van losse pakketten tot volle pallets. Het bedrijf had nog geen website om deze specialistische transportdiensten te presenteren.",
+            "paragraph2Lead": "We Brachten Het van Niets naar Live in Vijf Dagen.",
+            "paragraph2Rest": "We ontwierpen en bouwden de complete Babylon Logistics website binnen vijf dagen, waardoor het bedrijf direct een representatieve online aanwezigheid kreeg voor zijn logistieke diensten.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "Babylon Logistics ontving een website die transport-, geconditioneerde en palletdiensten overzichtelijk op één plek toont, snel opgeleverd voor een onderneming waarvan de eigen dienstverlening volledig draait om snelheid.",
+            "paragraph4": "Een snelle, doelgerichte oplevering sloot naadloos aan bij een jonge, ambitieuze logistieke dienstverlener die snel online wilde zijn om klanten direct te overtuigen."
+          }
         },
-        {
-          "question": "Welke werk vormen biedt IT Solutions Worldwide aan?",
-          "answer": "We werven voor fulltime, parttime, contract- en stagerollen in supply chain, IT, software engineering, data, financiën en administratie."
+        "dinel": {
+          "name": "Dinel",
+          "description": "Een nieuwe website, online marketingondersteuning en externe administratieve capaciteit voor een technisch detacheringsbureau.",
+          "heroHeadline": "Dinel: Een Nieuwe Website voor een Specialist in Technisch Talent",
+          "heroSubtext": "Een nieuwe website, online marketingondersteuning en externe administratieve capaciteit voor een technisch detacheringsbureau.",
+          "pageTitle": "Dinel Case Study: Nieuwe Website & Externe Capaciteit | ITWW",
+          "metaDescription": "IT Solutions Worldwide bouwde een nieuwe website, ondersteunde de online marketing en leverde externe administratieve ondersteuning voor technisch detacheerder Dinel.",
+          "imageAlt": "Dinel website voor technische detachering gebouwd door IT Solutions Worldwide",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "Dinel",
+                "highlight": true
+              },
+              {
+                "text": " Had Meer "
+              },
+              {
+                "text": "Capaciteit",
+                "highlight": true
+              },
+              {
+                "text": " en Meer "
+              },
+              {
+                "text": "Online Zichtbaarheid",
+                "highlight": true
+              },
+              {
+                "text": " Nodig"
+              }
+            ],
+            "paragraph1": "Meer dan 20 jaar geleden opgericht door Paul Mathey detacheert Dinel technische professionals (MBO, HBO en WO-niveau) op projecten in instrumentatie, elektrotechniek, werktuigbouwkunde, industriële automatisering en infrastructuur, en leidt het een Young Engineering Professionals-programma voor startende ingenieurs. De organisatie had behoefte aan extra capaciteit en wilde haar online marketing versterken.",
+            "paragraph2Lead": "We Lanceerden een Nieuwe Website en Voegden Externe Ondersteuning Toe.",
+            "paragraph2Rest": "We ontwikkelden een moderne nieuwe website, ondersteunden de online marketing en leverden bekwame externe administratieve ondersteuning tegen een scherp budget.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "Dinel ontving drie cruciale elementen van één partner: een nieuwe website, ondersteuning bij online marketing en extra administratieve capaciteit.",
+            "paragraph4": "De externe administratieve krachten gaven het team extra handen voor backoffice-werkzaamheden, terwijl de website en marketingactiviteiten gericht vooruitgingen."
+          }
         },
-        {
-          "question": "Waar is IT Solutions Worldwide gevestigd en waar zijn de rollen?",
-          "answer": "Ons hoofdkantoor staat aan de Mandenmakerstraat 100C, 3194 DG Hoogvliet, Rotterdam. Rollen zijn verspreid over heel Nederland."
+        "xtremetunings": {
+          "name": "X-tremetunings",
+          "description": "Een nieuwe responsieve website voor een Nederlandse specialist in chiptuning en prestatieverbetering.",
+          "heroHeadline": "X-tremetunings: Een Nieuwe Website voor een Nederlandse Chiptuning Specialist",
+          "heroSubtext": "Een nieuwe responsieve website voor een Nederlandse chiptuning- en prestatietuning-specialist.",
+          "pageTitle": "X-tremetunings Case Study: Chiptuning Website Bouw | ITWW",
+          "metaDescription": "Ontdek hoe IT Solutions Worldwide een moderne, responsieve website bouwde voor X-tremetunings, specialist in chiptuning en ECU-optimalisatie in Nederland.",
+          "imageAlt": "X-tremetunings chiptuning website gebouwd door IT Solutions Worldwide",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "X-tremetunings",
+                "highlight": true
+              },
+              {
+                "text": " Had een Nieuwe Website Nodig om Haar "
+              },
+              {
+                "text": "Tuningdiensten",
+                "highlight": true
+              },
+              {
+                "text": " te Presenteren"
+              }
+            ],
+            "paragraph1": "Opgericht in 2018 is X-tremetunings een Nederlandse specialist in chiptuning en ECU-software-optimalisatie, maatwerk motortuning, DSG-afstellingen en prestatiediagnose voor personen- en bedrijfswagens. Het bedrijf had een moderne, snelle website nodig om zijn technische expertise en tuningtrajecten helder aan autobezitters te presenteren.",
+            "paragraph2Lead": "We Bouwden een Snelle, Moderne Website.",
+            "paragraph2Rest": "We ontwikkelden een overzichtelijke en mobielvriendelijke website waarop klanten eenvoudig tuningmogelijkheden per voertuigtype, vermogenswinsten en tarieven kunnen inzien en direct afspraken kunnen inplannen.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "X-tremetunings kreeg een representatieve online aanwezigheid die het vakmanschap en de technische betrouwbaarheid van het bedrijf onderstreept.",
+            "paragraph4": "Een heldere sitestructuur en intuïtieve navigatie zorgden voor een hogere conversie van websitebezoekers naar concrete afspraken in de werkplaats."
+          }
         },
-        {
-          "question": "Is IT Solutions Worldwide een gecertificeerde werkgever?",
-          "answer": "Ja. We staan ingeschreven bij de KVK, voldoen aan de AVG (GDPR) wetgeving en hebben een 4.8 score op Glassdoor."
+        "grollz": {
+          "name": "G-Rollz (Grollz)",
+          "description": "Een nieuwe gecombineerde B2B- en B2C-website, NetSuite go-live ondersteuning en een verkoopstrategie voor een Amsterdams vloeipapiermerk.",
+          "heroHeadline": "G-Rollz: Eén Website voor B2B en B2C, Ondersteund door NetSuite en een Verkoopplan",
+          "heroSubtext": "Een nieuwe website, NetSuite go-live ondersteuning en een verkoopstrategie voor een Amsterdams vloeipapiermerk.",
+          "pageTitle": "G-Rollz Case Study: B2B/B2C Website & NetSuite | ITWW",
+          "metaDescription": "IT Solutions Worldwide bouwde een gecombineerde B2B- en B2C-website voor G-Rollz, begeleidde de NetSuite go-live en voerde een salesproject uit om de omzet te verhogen.",
+          "imageAlt": "G-Rollz B2B en B2C website gebouwd door IT Solutions Worldwide",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "G-Rollz",
+                "highlight": true
+              },
+              {
+                "text": " Had een "
+              },
+              {
+                "text": "Nieuwe Website",
+                "highlight": true
+              },
+              {
+                "text": ", NetSuite Ondersteuning en een "
+              },
+              {
+                "text": "Verkoopinspanning",
+                "highlight": true
+              },
+              {
+                "text": " Nodig"
+              }
+            ],
+            "paragraph1": "Opgericht op 12 oktober 2005 is G-Rollz een Amsterdams merk voor vloeipapier en cones gemaakt van ongebleekte, hennep- en rijstmaterialen, bekend om popcultuur-ontwerpen waaronder een gelicenseerde Banksy-samenwerking. Het merk verkoopt aan consumenten en via het B2B-platform grollz.biz aan winkeliers en distributeurs. G-Rollz had een nieuwe website nodig, ondersteuning bij de NetSuite-implementatie en hulp bij het verhogen van de verkoop.",
+            "paragraph2Lead": "We Leverden de Website, de Systeemondersteuning en het Verkoopplan.",
+            "paragraph2Rest": "We ontwikkelden een nieuwe website die zowel B2B als B2C ondersteunt. Ons functionele NetSuite-ondersteuningsteam begeleidde de implementatie tot aan de livegang, en we leverden een strategisch verkoopplan met een toegewijd projectteam om de verkoop te stimuleren.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "G-Rollz ontving een website gebouwd voor zowel zakelijke als particuliere klanten, NetSuite-ondersteuning van implementatie tot go-live, en een gestructureerd verkoopplan ondersteund door een deskundig team.",
+            "paragraph4": "Onze diepgaande NetSuite-expertise en grondige kennis van de Europese markt vormden zowel de technische inrichting als de commerciële aanpak."
+          }
         },
-        {
-          "question": "Kan ik solliciteren als er geen passende vacature openstaat?",
-          "answer": "Ja. We accepteren het hele jaar door open sollicitaties."
+        "allseas": {
+          "name": "Allseas",
+          "description": "Opschoning van stamgegevens en een supply chain-strategie voor een toonaangevende offshore aannemer.",
+          "heroHeadline": "Allseas: Zuivere Data voor een Soepelere ERP-Overgang van Oracle naar SAP",
+          "heroSubtext": "Opschoning van stamgegevens en een supply chain-strategie voor een toonaangevende offshore aannemer.",
+          "pageTitle": "Allseas Case Study: SAP Master Data & Supply Chain | ITWW",
+          "metaDescription": "Hoe IT Solutions Worldwide stamgegevens opschoonde na een Oracle-naar-SAP migratie en een supply chain-strategie opstelde voor offshore aannemer Allseas.",
+          "imageAlt": "Allseas offshore project ondersteund door IT Solutions Worldwide met SAP master data opschoning",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "Allseas",
+                "highlight": true
+              },
+              {
+                "text": " Had Zuivere Data Nodig om Haar "
+              },
+              {
+                "text": "Nieuwe ERP te Laten Werken",
+                "highlight": true
+              }
+            ],
+            "paragraph1": "Opgericht in 1985 is Allseas een wereldwijd toonaangevende offshore aannemer actief in pijpleidingen op zee, platformtransport en -ontmanteling, en zware hijsconstructies. Toen het ERP-systeem van Oracle naar SAP migreerde, werden verouderde gegevens geïmporteerd in het nieuwe systeem, waardoor complexe logistieke processen het tijdig leveren van projectcomponenten belemmerden.",
+            "paragraph2Lead": "We Schoonden de Data op en Herstructureerden de Supply Chain.",
+            "paragraph2Rest": "We voerden een master data migratieproject uit om de gegevens grondig op te schonen en te optimaliseren, stelden een supply chain management optimalisatiestrategie op en leverden specialistische capaciteit in Nederland om het team te versterken. Het werk omvatte SAP S/4HANA, Power BI en Oracle Fusion.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "Het nieuwe ERP van Allseas kreeg een betrouwbaar en zuiver datafundament dankzij het migratieproject, samen met een heldere supply chain-optimalisatiestrategie om de dagelijkse operaties te stroomlijnen.",
+            "paragraph4": "De extra specialistische capaciteit in Nederland versterkte het interne team van Allseas met diepgaande expertise op het gebied van supply chain en master data."
+          }
         },
-        {
-          "question": "Hoe wordt mijn CV en persoonlijke data verwerkt?",
-          "answer": "Alle gegevens worden strikt verwerkt volgens de AVG (GDPR) richtlijnen en nooit verkocht of gedeeld."
+        "hitachi": {
+          "name": "Hitachi Construction Machinery (Europe) NV",
+          "description": "AI-veiligheidsvoorraad- en dockplanning, data-opschoning en terreinherinrichting hielpen Hitachi Construction Machinery Europe jaarlijkse voorraadverliezen met €4M terug te dringen.",
+          "heroHeadline": "Hitachi Construction Machinery Europe: AI-Planning Die Voorraadverliezen met €4M Verminderde",
+          "heroSubtext": "AI-veiligheidsvoorraad- en dockplanning, zuivere stamgegevens en een heringericht buitenterrein verminderden de jaarlijkse voorraadverliezen met 4 miljoen euro.",
+          "pageTitle": "Hitachi CM Europe Case Study: AI Supply Chain | ITWW",
+          "metaDescription": "AI-veiligheidsvoorraad- en dockplanning, opschoning van stamgegevens en terreinherinrichting hielpen Hitachi Construction Machinery Europe jaarlijks €4M te besparen.",
+          "imageAlt": "Hitachi Construction Machinery Europe supply chain optimalisatieproject door IT Solutions Worldwide",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "Hitachi",
+                "highlight": true
+              },
+              {
+                "text": " Had Betrouwbare Planning Nodig Achter Haar "
+              },
+              {
+                "text": "Onderdelenvoorziening",
+                "highlight": true
+              }
+            ],
+            "paragraph1": "Hitachi Construction Machinery (Europe) NV, opgericht in 2004, produceert, verkoopt en distribueert graafmachines, wielladers en starre dumptrucks, evenals LANDCROS vlootbeheersoftware in Europa, Afrika en het Midden-Oosten. De MRP-parameters vertoonden inconsistenties en inadequate componentenplanning leidde tot substantiële voorraadverliezen.",
+            "paragraph2Lead": "We Combineerden Zuivere Data, AI-Tools en een Slimmere Magazijnstrategie.",
+            "paragraph2Rest": "We schoonden de stamgegevens op en bouwden een overkoepelende supply chain-strategie om magazijn-, inkoop- en planningsprocedures te optimaliseren. We ontwikkelden een AI-gebaseerd veiligheidsvoorraadmodel en een AI-dockplanningstool, richtten het buitenterrein opnieuw in en creëerden Power BI dashboards om operationele KPI's real-time te monitoren.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "De integrale optimalisatie verminderde de jaarlijkse voorraadverliezen van Hitachi met 4 miljoen euro.",
+            "paragraph4": "Door master data, terreininrichting en geavanceerde AI in één samenhangend project te integreren, versterkten de oplossingen elkaar direct, terwijl de Power BI dashboards het management volledige grip gaven op de supply chain."
+          }
         },
-        {
-          "question": "Werft IT Solutions Worldwide ook internationaal?",
-          "answer": "De meeste functies zijn in Nederland, maar we ondersteunen ook remote en grensoverschrijdende rollen."
+        "hbc": {
+          "name": "HBC",
+          "description": "Online marketing voor een halal burger- en kipfranchise met vestigingen door heel Nederland.",
+          "heroHeadline": "HBC: Social Media Campagnes voor een Halal Burger Franchise",
+          "heroSubtext": "Online marketing voor een halal burger- en kipfranchise met vestigingen door heel Nederland.",
+          "pageTitle": "HBC Case Study: Social Media Marketing Campagnes | ITWW",
+          "metaDescription": "IT Solutions Worldwide verzorgde social media marketingcampagnes voor HBC, een halal burger- en kipfranchise met vestigingen in heel Nederland.",
+          "imageAlt": "HBC halal burger en kip franchise ondersteund door IT Solutions Worldwide met social media campagnes",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "HBC",
+                "highlight": true
+              },
+              {
+                "text": " Had "
+              },
+              {
+                "text": "Online Marketingondersteuning",
+                "highlight": true
+              },
+              {
+                "text": " Nodig"
+              }
+            ],
+            "paragraph1": "HBC (Halal Burgers & Chicken) serveert halal burgers, kip, wraps en kindermenu's vanuit vestigingen in Amsterdam, Utrecht, Den Haag, Beverwijk en Arnhem, aangestuurd vanuit Amstelveen, en biedt tevens een franchiseformule. Opgericht in april 2026 had het merk behoefte aan gerichte online marketing.",
+            "paragraph2Lead": "We Verzorgden Hun Social Media Campagnes.",
+            "paragraph2Rest": "We leverden effectieve social media marketingcampagnes voor HBC om de naamsbekendheid en gastenaantallen te vergroten.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "HBC ontving gerichte social media marketingcampagnes ter versterking van de online zichtbaarheid en betrokkenheid rond alle vestigingen.",
+            "paragraph4": "De campagnes versterkten de merkidentiteit en brachten de menukaart en franchiseformule succesvol onder de aandacht bij de juiste doelgroep."
+          }
+        },
+        "jumboSports": {
+          "name": "Jumbo Sports",
+          "description": "Consolidatie van B2B- en B2C-stromen in één distributiecentrum voor Jumbo Sports met magazijnherinrichting, entresolvloer en Storeganizers.",
+          "heroHeadline": "Jumbo Sports: B2B en B2C Onder Één Distributiedak",
+          "heroSubtext": "Een magazijnherinrichting, entresolvloer en slimmere transportroutes voor een golf- en hockeyspecialist met 12 winkels.",
+          "pageTitle": "Jumbo Sports Case Study: Magazijnconsolidatie | ITWW",
+          "metaDescription": "IT Solutions Worldwide voegde B2B- en B2C-stromen samen in één distributiecentrum voor Jumbo Sports met magazijnherinrichting, mezzanine en Storeganizers.",
+          "imageAlt": "Jumbo Sports distributiecentrum heringericht door IT Solutions Worldwide",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "Jumbo Sports",
+                "highlight": true
+              },
+              {
+                "text": " Moest Haar "
+              },
+              {
+                "text": "Externe Magazijn",
+                "highlight": true
+              },
+              {
+                "text": " Afstoten"
+              }
+            ],
+            "paragraph1": "Opgericht in september 2022 is Jumbo Sports een specialist in golf en hockey die clubs, kleding, schoenen, tassen en accessoires, plus hockeysticks, bescherming en schoeisel verkoopt, zowel online als via 12 winkels in Nederland en België. De onderneming moest haar externe magazijn afstoten, wat betekende dat zowel B2B- als B2C-stromen in één centraal distributiecentrum moesten worden ondergebracht.",
+            "paragraph2Lead": "We Richtten het Magazijn Opnieuw in om Meer te Doen met Dezelfde Ruimte.",
+            "paragraph2Rest": "We integreerden B2B en B2C in één centraal magazijn, optimaliseerden de opslagcapaciteit om dezelfde vierkante meters efficiënter te benutten en stroomlijnden de magazijnoperatie en transportroutes om beide stromen vanuit hetzelfde distributiecentrum te bedienen. De herinrichting omvatte Storeganizers en een entresolvloer (mezzanine) die de hoogte optimaal benut.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "Het resultaat is één geïntegreerd distributiecentrum dat zowel B2B- als B2C-stromen efficiënt bedient, met een geherorganiseerde opslag die dezelfde vloeroppervlakte aanzienlijk beter benut.",
+            "paragraph4": "Onze ervaring in supply chain, transportplanning en magazijninrichting dekte de volledige keten af, van slimme opslagoplossingen tot geoptimaliseerde transportroutes."
+          }
+        },
+        "xtremeTuning": {
+          "name": "X-tremetunings",
+          "description": "Een nieuwe responsieve website voor een Nederlandse specialist in chiptuning en prestatieverbetering.",
+          "heroHeadline": "X-tremetunings: Een Nieuwe Website voor een Nederlandse Chiptuning Specialist",
+          "heroSubtext": "Een nieuwe responsieve website voor een Nederlandse chiptuning- en prestatietuning-specialist.",
+          "pageTitle": "X-tremetunings Case Study: Chiptuning Website Bouw | ITWW",
+          "metaDescription": "Ontdek hoe IT Solutions Worldwide een moderne, responsieve website bouwde voor X-tremetunings, specialist in chiptuning en ECU-optimalisatie in Nederland.",
+          "imageAlt": "X-tremetunings chiptuning website gebouwd door IT Solutions Worldwide",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "X-tremetunings",
+                "highlight": true
+              },
+              {
+                "text": " Had een Nieuwe Website Nodig om Haar "
+              },
+              {
+                "text": "Tuningdiensten",
+                "highlight": true
+              },
+              {
+                "text": " te Presenteren"
+              }
+            ],
+            "paragraph1": "Opgericht in 2018 is X-tremetunings een Nederlandse specialist in chiptuning en ECU-software-optimalisatie, maatwerk motortuning, DSG-afstellingen en prestatiediagnose voor personen- en bedrijfswagens. Het bedrijf had een moderne, snelle website nodig om zijn technische expertise en tuningtrajecten helder aan autobezitters te presenteren.",
+            "paragraph2Lead": "We Bouwden een Snelle, Moderne Website.",
+            "paragraph2Rest": "We ontwikkelden een overzichtelijke en mobielvriendelijke website waarop klanten eenvoudig tuningmogelijkheden per voertuigtype, vermogenswinsten en tarieven kunnen inzien en direct afspraken kunnen inplannen.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "X-tremetunings kreeg een representatieve online aanwezigheid die het vakmanschap en de technische betrouwbaarheid van het bedrijf onderstreept.",
+            "paragraph4": "Een heldere sitestructuur en intuïtieve navigatie zorgden voor een hogere conversie van websitebezoekers naar concrete afspraken in de werkplaats."
+          }
+        },
+        "gRollz": {
+          "name": "G-Rollz (Grollz)",
+          "description": "Een nieuwe gecombineerde B2B- en B2C-website, NetSuite go-live ondersteuning en een verkoopstrategie voor een Amsterdams vloeipapiermerk.",
+          "heroHeadline": "G-Rollz: Eén Website voor B2B en B2C, Ondersteund door NetSuite en een Verkoopplan",
+          "heroSubtext": "Een nieuwe website, NetSuite go-live ondersteuning en een verkoopstrategie voor een Amsterdams vloeipapiermerk.",
+          "pageTitle": "G-Rollz Case Study: B2B/B2C Website & NetSuite | ITWW",
+          "metaDescription": "IT Solutions Worldwide bouwde een gecombineerde B2B- en B2C-website voor G-Rollz, begeleidde de NetSuite go-live en voerde een salesproject uit om de omzet te verhogen.",
+          "imageAlt": "G-Rollz B2B en B2C website gebouwd door IT Solutions Worldwide",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "G-Rollz",
+                "highlight": true
+              },
+              {
+                "text": " Had een "
+              },
+              {
+                "text": "Nieuwe Website",
+                "highlight": true
+              },
+              {
+                "text": ", NetSuite Ondersteuning en een "
+              },
+              {
+                "text": "Verkoopinspanning",
+                "highlight": true
+              },
+              {
+                "text": " Nodig"
+              }
+            ],
+            "paragraph1": "Opgericht op 12 oktober 2005 is G-Rollz een Amsterdams merk voor vloeipapier en cones gemaakt van ongebleekte, hennep- en rijstmaterialen, bekend om popcultuur-ontwerpen waaronder een gelicenseerde Banksy-samenwerking. Het merk verkoopt aan consumenten en via het B2B-platform grollz.biz aan winkeliers en distributeurs. G-Rollz had een nieuwe website nodig, ondersteuning bij de NetSuite-implementatie en hulp bij het verhogen van de verkoop.",
+            "paragraph2Lead": "We Leverden de Website, de Systeemondersteuning en het Verkoopplan.",
+            "paragraph2Rest": "We ontwikkelden een nieuwe website die zowel B2B als B2C ondersteunt. Ons functionele NetSuite-ondersteuningsteam begeleidde de implementatie tot aan de livegang, en we leverden een strategisch verkoopplan met een toegewijd projectteam om de verkoop te stimuleren.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "G-Rollz ontving een website gebouwd voor zowel zakelijke als particuliere klanten, NetSuite-ondersteuning van implementatie tot go-live, en een gestructureerd verkoopplan ondersteund door een deskundig team.",
+            "paragraph4": "Onze diepgaande NetSuite-expertise en grondige kennis van de Europese markt vormden zowel de technische inrichting als de commerciële aanpak."
+          }
+        },
+        "hitachiCm": {
+          "name": "Hitachi Construction Machinery (Europe) NV",
+          "description": "AI-veiligheidsvoorraad- en dockplanning, data-opschoning en terreinherinrichting hielpen Hitachi Construction Machinery Europe jaarlijkse voorraadverliezen met €4M terug te dringen.",
+          "heroHeadline": "Hitachi Construction Machinery Europe: AI-Planning Die Voorraadverliezen met €4M Verminderde",
+          "heroSubtext": "AI-veiligheidsvoorraad- en dockplanning, zuivere stamgegevens en een heringericht buitenterrein verminderden de jaarlijkse voorraadverliezen met 4 miljoen euro.",
+          "pageTitle": "Hitachi CM Europe Case Study: AI Supply Chain | ITWW",
+          "metaDescription": "AI-veiligheidsvoorraad- en dockplanning, opschoning van stamgegevens en terreinherinrichting hielpen Hitachi Construction Machinery Europe jaarlijks €4M te besparen.",
+          "imageAlt": "Hitachi Construction Machinery Europe supply chain optimalisatieproject door IT Solutions Worldwide",
+          "caseStudy": {
+            "eyebrow": "ONS WERK · PORTFOLIO",
+            "title1Parts": [
+              {
+                "text": "Hitachi",
+                "highlight": true
+              },
+              {
+                "text": " Had Betrouwbare Planning Nodig Achter Haar "
+              },
+              {
+                "text": "Onderdelenvoorziening",
+                "highlight": true
+              }
+            ],
+            "paragraph1": "Hitachi Construction Machinery (Europe) NV, opgericht in 2004, produceert, verkoopt en distribueert graafmachines, wielladers en starre dumptrucks, evenals LANDCROS vlootbeheersoftware in Europa, Afrika en het Midden-Oosten. De MRP-parameters vertoonden inconsistenties en inadequate componentenplanning leidde tot substantiële voorraadverliezen.",
+            "paragraph2Lead": "We Combineerden Zuivere Data, AI-Tools en een Slimmere Magazijnstrategie.",
+            "paragraph2Rest": "We schoonden de stamgegevens op en bouwden een overkoepelende supply chain-strategie om magazijn-, inkoop- en planningsprocedures te optimaliseren. We ontwikkelden een AI-gebaseerd veiligheidsvoorraadmodel en een AI-dockplanningstool, richtten het buitenterrein opnieuw in en creëerden Power BI dashboards om operationele KPI's real-time te monitoren.",
+            "title2Parts": [
+              {
+                "text": "Een "
+              },
+              {
+                "text": "Partnerschap",
+                "highlight": true
+              },
+              {
+                "text": " Dat "
+              },
+              {
+                "text": "Resultaat Opleverde",
+                "highlight": true
+              }
+            ],
+            "paragraph3": "De integrale optimalisatie verminderde de jaarlijkse voorraadverliezen van Hitachi met 4 miljoen euro.",
+            "paragraph4": "Door master data, terreininrichting en geavanceerde AI in één samenhangend project te integreren, versterkten de oplossingen elkaar direct, terwijl de Power BI dashboards het management volledige grip gaven op de supply chain."
+          }
         }
-      ],
-      "banner": {
-        "title": "Heb je nog vragen?",
-        "subtext": "We helpen je graag verder met je sollicitatieproces.",
-        "button": "Contact Support"
       }
+    },
+    "section3": {
+      "eyebrow": "ONS WERK · PORTFOLIO",
+      "headingPrefix": "Laten We Samen Iets",
+      "headingHighlight": "Buitengewoons",
+      "headingSuffix": "Bouwen.",
+      "subtext": "Vertel ons over uw project. We reageren binnen één werkdag met een op maat gemaakt voorstel."
+    },
+    "contactSection": {
+      "headerTitle": "Laten We Praten",
+      "headerSubtitle": "Klaar om uw bedrijf te transformeren? Neem vandaag nog contact op met onze experts",
+      "getInTouch": "Neem Contact Op",
+      "getInTouchSubtext": "Heeft u een project in gedachten? We horen graag van u. Stuur ons een bericht en we reageren zo snel mogelijk.",
+      "emailUs": "E-mail Ons",
+      "callUs": "Bel Ons",
+      "visitUs": "Bezoek Ons",
+      "followUs": "Volg Ons",
+      "yourName": "Uw Naam",
+      "emailAddress": "E-mailadres",
+      "phoneNumber": "Telefoonnummer",
+      "company": "Bedrijf",
+      "serviceInterested": "Interesse In Dienst",
+      "yourMessage": "Uw Bericht",
+      "namePlaceholder": "Jan Jansen",
+      "emailPlaceholder": "jan@voorbeeld.nl",
+      "phonePlaceholder": "+31 (0)10 000 0000",
+      "companyPlaceholder": "Uw Bedrijf",
+      "servicePlaceholder": "bijv. Webontwikkeling, Cloud, AI...",
+      "messagePlaceholder": "Vertel ons over uw project...",
+      "sendMessage": "Bericht Verzenden",
+      "sending": "Verzenden...",
+      "successMsg": "Bedankt! Uw bericht is succesvol verzonden. We nemen snel contact met u op.",
+      "errorMsg": "Verzenden mislukt. Probeer het opnieuw of stuur ons direct een e-mail."
     }
   }
-
 }
